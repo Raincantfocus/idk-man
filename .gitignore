@@ -1,0 +1,6 @@
+.godot/
+build/
+test-output/
+*.log
+__pycache__/
+*.pyc

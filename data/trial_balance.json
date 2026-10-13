@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "weapons": {
+    "carbine": {"name": "ZL-4 CARBINE", "damage": 24, "rpm": 750, "magazine": 30, "reserve": 150, "reload_seconds": 1.65, "pellets": 1, "spread": 0.007},
+    "shotgun": {"name": "B-8 BREACHER", "damage": 12, "rpm": 180, "magazine": 8, "reserve": 40, "reload_seconds": 1.95, "pellets": 8, "spread": 0.055},
+    "sidearm": {"name": "P-2 SIDEARM", "damage": 20, "rpm": 300, "magazine": 12, "reserve": -1, "reload_seconds": 1.4, "pellets": 1, "spread": 0.005}
+  },
+  "enemies": {
+    "enforcer": {"health": 100, "speed": 3.0, "damage": 10, "fire_interval": 1.5, "score": 100},
+    "rusher": {"health": 85, "speed": 5.6, "damage": 18, "fire_interval": 1.6, "score": 100},
+    "shield": {"health": 150, "speed": 2.3, "damage": 25, "fire_interval": 1.9, "score": 150},
+    "flusher": {"health": 180, "speed": 3.6, "damage": 12, "fire_interval": 1.4, "score": 175},
+    "elite": {"health": 800, "speed": 4.2, "damage": 12, "fire_interval": 1.05, "score": 500}
+  },
+  "waves": [
+    {"roster": {"enforcer": 8}, "cap": 4, "credits": 150, "lesson": "MOVE. KILL. RECOVER."},
+    {"roster": {"enforcer": 8, "rusher": 4}, "cap": 6, "credits": 175, "lesson": "DO NOT LET THEM CLOSE."},
+    {"roster": {"enforcer": 8, "rusher": 4, "shield": 2}, "cap": 8, "credits": 200, "lesson": "BREAK THEIR FORMATION."},
+    {"roster": {"enforcer": 8, "rusher": 4, "shield": 2, "flusher": 2}, "cap": 10, "credits": 225, "lesson": "KEEP YOUR EXIT OPEN."},
+    {"roster": {"enforcer": 8, "rusher": 4, "shield": 2, "flusher": 2, "elite": 1}, "cap": 10, "credits": 250, "lesson": "ANOTHER SUBJECT HAS ARRIVED."},
+    {"roster": {"enforcer": 10, "rusher": 6, "shield": 4, "flusher": 2}, "cap": 12, "credits": 275, "lesson": "OWN THE CROSSING."},
+    {"roster": {"enforcer": 10, "rusher": 6, "shield": 4, "flusher": 4}, "cap": 14, "credits": 300, "lesson": "NOTHING STAYS SAFE."},
+    {"roster": {"enforcer": 10, "rusher": 6, "shield": 4, "flusher": 4, "elite": 1}, "cap": 14, "credits": 325, "lesson": "USE EVERY LEVEL."},
+    {"roster": {"enforcer": 12, "rusher": 8, "shield": 4, "flusher": 4, "elite": 1}, "cap": 16, "credits": 350, "lesson": "HOLD THE ZERO LINE."},
+    {"roster": {"enforcer": 12, "rusher": 8, "shield": 4, "flusher": 4, "elite": 2}, "cap": 18, "credits": 500, "lesson": "FINAL EVALUATION."}
+  ]
+}
