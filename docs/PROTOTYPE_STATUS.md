@@ -1,4 +1,4 @@
-# Prototype 0.1 — implementation record
+# Prototype 0.2 — Phase 1 implementation record
 
 The first playable slice uses Godot 4.6.3, selected with the user's approval because Unreal Engine is not available in the current environment. The Unreal-oriented production design remains the long-term reference. This implementation establishes the combat loop and explicit system boundaries in a runnable project.
 
@@ -10,10 +10,13 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 - Original synthesized audio; no downloaded commercial game assets.
 - Ten authored wave rosters plus bounded endless continuation.
 - A documented regression suite and desktop-browser interaction check.
+- Expanded 96 × 80 m arena, connected 0/4.2/8.4 m routes, Movement Lab, and initial articulated ragdolls. See the [route guide](PHASE_1_MOVEMENT.md).
 
 ## Validation
 
 The gameplay suite executes 47 checks and exits nonzero on any failure. It covers actual physics raycasts and resource transactions as well as pure balance/state checks. All 47 passed in Godot 4.6.3 after fixing a Focus transition issue: changing global time scale in the middle of a tick must not change the player's action step or use the new scale against the previous tick's delta. Normal and Focus sprinting traveled approximately 2.17708 meters over the same 42 physics ticks in the regression test.
+
+The Phase 1 suite adds 32 passing checks: navigation connectivity for both ramp chains and all ten spawn points, actual player ascent on all four ramps, slide-tunnel clearance, a running jump across the upper gap, sustained wall-running, and an enemy physically climbing both elevations. Physics checks cover six-body/five-joint ragdoll creation, floor contact, pause, Focus, active/retained limits, settling, restart cleanup, and return to title. The lab and normal trial transitions are also exercised. Combined, **79 checks pass**. Run both suites with `bash tools/test.sh`.
 
 Native title and combat screens were rendered and inspected through Mesa llvmpipe. The browser export was exercised in Chromium with WebGL 2: title-screen startup, pointer capture, keyboard movement, firing, Focus, pause, resume, and Shroud inputs. Runtime console and browser errors are checked by `tests/browser_smoke.py`. This software-rendered environment does not establish performance on a gaming GPU.
 
@@ -28,10 +31,10 @@ The suite validates the ten roster totals, first-wave completion, hazard-resolut
 | Chamber-aware weapon mechanisms | Magazine/reserve transactions with cancellable out/in stages |
 | Three chosen primary loadouts | Fixed carbine, shotgun, and emergency sidearm |
 | Adaptive pressure estimator | Timed pressure/relief, active caps, attack windup limits |
-| Full multi-floor enemy navigation | Obstacle-aware ground grid with elevated firing targets |
+| Full multi-floor enemy navigation | Static AStar3D graph with stacked height samples and connected ramps |
 | Breakable armor zones and elite scanner | Archetype health pools, directional shield, elite dash |
 | Executions | Ordinary melee and slide-kick only |
-| Articulated ragdolls and localized wounds | Bounded rigid-body corpses and transient impact particles |
+| Anatomical skeletal ragdolls and localized wounds | Six rigid-body proxies joined with pins; capped simulation; existing transient impact particles |
 | Destructible cover | Fixed structural/collision layout |
 | Timestamp-ordered combat event queue | Godot physics node processing order |
 | Pooled FX and production scalability | Hard effect/corpse counts and compatibility rendering |
@@ -39,9 +42,8 @@ The suite validates the ten roster totals, first-wave completion, hazard-resolut
 
 ## Next implementation priorities
 
-1. Human playtests of waves 1–5: tune enemy hit rate, recovery supply, attack tells, and sightline fairness.
-2. Author a proper first-person skeletal weapon/arms rig and separate weapon meshes; replace primitive reload motions and add chamber checks.
-3. Add enemy gallery navigation, elite telegraphs/scanner, attack-token ownership through the entire attack, and staged elite insertion.
-4. Add executions, destructible prop variants, articulated ragdolls, and surface impact decals with measured budgets.
-5. Introduce explicit combat-event ordering, reusable pools, a controller/rebinding interface, and automated complete-run tests.
-6. Profile native packaged builds on the reference GPUs before selecting a performance preset or claiming a frame-rate target.
+1. Complete human movement-route and wave-pressure playtests on the expanded layout. Tune distances, cover, attack tells, and recovery supply before replacing the blockout.
+2. **Phase 2:** author environment/enemy models, a first-person skeletal weapon/arms rig, separate weapon meshes, and proper animation integration.
+3. **Phase 3:** implement gore and final combat feedback, including wound/decal systems with measured budgets. Add anatomical ragdoll constraints and animation blending as the skeletal assets become available.
+4. Continue gameplay milestones separately: executions, destructible props, elite scanner, explicit combat-event ordering, reusable pools, controller/rebinding support, and complete-run automation.
+5. Profile native packaged builds on the reference GPUs before selecting a performance preset or claiming a frame-rate target.

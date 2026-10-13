@@ -83,7 +83,7 @@ func _menu() -> void:
 		var alpha := 0.90 * (1 - float(i) / 48)
 		rect(Vector2(i * 36, 0), Vector2(36, 900), Color(0.025, 0.045, 0.047, alpha))
 	rect(Vector2.ZERO, Vector2(1440, 900), Color(0.025, 0.04, 0.04, 0.12))
-	_brand_header("RESTRICTED ACCESS    /    BUILD 0.1")
+	_brand_header("RESTRICTED ACCESS    /    BUILD 0.2 · PHASE 1")
 	tracked("KINETIC SURVIVAL TRIAL", Vector2(64, 166), 14, 4, acid)
 	text("PROJECT:", Vector2(60, 228), 33, ink)
 	text("ZERO", Vector2(52, 367), 146, ink)
@@ -93,8 +93,8 @@ func _menu() -> void:
 	text("An armed subject. An evolving threat. No safe corners.", Vector2(67, 584), 16, muted)
 	button("start", "ENTER THE TRIAL", Rect2(66, 626, 372, 64), true)
 	text("[ ENTER ]", Vector2(460, 667), 13, muted)
-	tracked("MOVE. KILL. RECOVER.", Vector2(67, 737), 12, 3, ink)
-	text("Run through dropped supplies to stay in the fight.", Vector2(67, 764), 15, muted)
+	button("lab", "MOVEMENT LAB / FREE PRACTICE", Rect2(66, 704, 372, 48))
+	text("Three levels. Keep moving. Recover on the run.", Vector2(67, 786), 15, muted)
 	# A world-facing dossier, rather than a full-screen black menu.
 	rect(Vector2(1046, 132), Vector2(346, 255), panel)
 	rect(Vector2(1046, 132), Vector2(3, 255), acid)
@@ -136,8 +136,11 @@ func _combat() -> void:
 		draw_rect(Rect2(0, 0, 1440, 900), Color(0.68, 0.84, 0.53, game.pickup_flash), false, 7)
 	rect(Vector2(32, 28), Vector2(235, 78), panel)
 	tracked("K—17 / LIVE EVALUATION", Vector2(49, 50), 11, 1.5, muted)
-	text("WAVE %02d" % game.wave, Vector2(48, 87), 28, ink)
-	text("/ " + ("10" if game.wave <= 10 else "END"), Vector2(184, 85), 20, muted)
+	text("MOVEMENT LAB" if game.practice else "WAVE %02d" % game.wave, Vector2(48, 87), 23, ink)
+	if not game.practice:
+		text("/ " + ("10" if game.wave <= 10 else "END"), Vector2(184, 85), 20, muted)
+	else:
+		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
 	var total: int = game.enemies.size() + game.queue.size() + game.pending.size()
 	rect(Vector2(280, 28), Vector2(155, 78), panel)
 	text("THREATS", Vector2(297, 50), 11, muted)
@@ -257,7 +260,8 @@ func _pause() -> void:
 	text("TAKE A BREATH.", Vector2(64, 263), 72, ink)
 	text("The facility can wait.", Vector2(67, 306), 20, muted)
 	button("resume", "RESUME TRIAL", Rect2(66, 362, 360, 64), true)
-	button("start", "RESTART TRIAL", Rect2(66, 448, 360, 60))
+	button("restart", "RESTART SESSION", Rect2(66, 448, 360, 60))
+	button("menu", "RETURN TO TITLE", Rect2(66, 530, 360, 52))
 	var controls := [["W / A / S / D", "MOVE"], ["MOUSE 1 / 2", "FIRE / AIM"], ["SHIFT / C OR CTRL", "SPRINT / SLIDE"], ["SPACE / X OR ALT", "JUMP + WALL RUN / DASH"], ["Q / E", "FOCUS / SHROUD"], ["R / F", "RELOAD / MELEE"], ["1 / 2 / 3", "CARBINE / SHOTGUN / SIDEARM"]]
 	tracked("OPERATOR CONTROLS", Vector2(720, 194), 12, 3, acid)
 	for i in controls.size():
@@ -283,6 +287,9 @@ func _input(event: InputEvent) -> void:
 			if item.rect.has_point(event.position / scale_factor) and item.enabled:
 				match item.id:
 					"start": game.start_run()
+					"lab": game.start_run(true)
+					"restart": game.start_run(game.practice)
+					"menu": game.return_to_menu()
 					"next": game.start_wave()
 					"resume": game.resume_game()
 					_: game.purchase(item.id)

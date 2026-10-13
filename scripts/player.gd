@@ -248,7 +248,7 @@ func _move_player(dt: float) -> void:
 	camera.position.y = lerpf(camera.position.y, 0.90 if crouch else 1.55, minf(1, dt * 16))
 	velocity.x = flat.x
 	velocity.z = flat.z
-	# Small step-up supports the gallery's 30 cm stairs without jumping.
+	# Small step-up handles low lips and continuous ramp transitions.
 	if is_on_floor() and flat.length() > 0.1:
 		var probe := global_position + flat.normalized() * 0.5
 		var step_ray := PhysicsRayQueryParameters3D.create(probe + Vector3.UP * 0.38, probe + Vector3.UP * 0.02, 1)

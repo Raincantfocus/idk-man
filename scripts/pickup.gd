@@ -49,7 +49,7 @@ func _physics_process(delta: float) -> void:
 	if state == State.SPAWNING and age >= 0.08:
 		state = State.AVAILABLE
 	if global_position.y < -3:
-		global_position = Vector3(clampf(global_position.x, -21, 21), 0.4, clampf(global_position.z, -17, 17))
+		global_position = game.arena.nearest_walkable(global_position) + Vector3.UP * 0.4
 		linear_velocity = Vector3.ZERO
 
 func collect(player) -> float:

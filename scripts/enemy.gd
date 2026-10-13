@@ -14,7 +14,7 @@ var path_timer: float = 0
 var sight_timer: float = 0
 var sees_player: bool = false
 var last_known := Vector3.ZERO
-var path := PackedVector2Array()
+var path := PackedVector3Array()
 var path_index: int = 0
 var age: float = 0
 var body := Node3D.new()
@@ -24,6 +24,7 @@ var color: Color
 var elite_dash: float = 0
 var dash_cooldown: float = 6
 var attack_direction := Vector3.ZERO
+var training_dummy: bool = false
 
 func setup(owner_game, archetype: String) -> void:
 	game = owner_game
@@ -79,6 +80,10 @@ func _piece(pos: Vector3, size: Vector3, mat: Material) -> MeshInstance3D:
 func _physics_process(delta: float) -> void:
 	if not alive or not game.is_playing() or game.player.health <= 0:
 		return
+	if training_dummy:
+		velocity = Vector3(0, velocity.y - 16 * delta, 0)
+		move_and_slide()
+		return
 	age += delta
 	stagger = maxf(0, stagger - delta)
 	attack_timer -= delta
@@ -102,19 +107,22 @@ func _physics_process(delta: float) -> void:
 		path_index = 1 if path.size() > 1 else 0
 	var direction := Vector3.ZERO
 	var desired_range: float = 2.0 if kind in ["rusher", "shield"] else 9.0
-	if flat.length() > desired_range or not sees_player:
+	if flat.length() > desired_range or not sees_player or absf(offset.y) > 1.8:
 		if path_index < path.size():
-			var next := Vector3(path[path_index].x, position.y, path[path_index].y)
-			if global_position.distance_to(next) < 0.55:
+			var next := path[path_index]
+			var next_flat := Vector3(next.x - global_position.x, 0, next.z - global_position.z)
+			if next_flat.length() < 0.35 and absf(next.y - global_position.y) < 0.7:
 				path_index += 1
 			else:
-				direction = (next - global_position).normalized()
+				direction = next_flat.normalized()
 	elif sees_player and flat.length() > 4:
 		direction = Vector3(-flat.z, 0, flat.x).normalized() * sin(age * 0.6 + get_instance_id() % 8) * 0.35
 	# Limited pairwise separation prevents formations becoming a single stacked target.
 	for other in game.enemies:
 		if other != self and is_instance_valid(other) and other.alive:
 			var separation: Vector3 = global_position - other.global_position
+			if absf(separation.y) > 1.8:
+				continue
 			separation.y = 0
 			if separation.length_squared() < 1.0 and separation.length_squared() > 0.001:
 				direction += separation.normalized() * 0.6

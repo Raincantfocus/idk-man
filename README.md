@@ -2,7 +2,7 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-This is the first playable slice: original procedural geometry, animated weapon primitives, generated audio, and a complete run/reward/restart loop. The high-fidelity production art and Unreal pipeline in the design document remain future work.
+**Phase 1 / version 0.2:** the arena now spans 96 × 80 meters, with connected 0 m, 4.2 m, and 8.4 m elevations, dedicated traversal routes, a Movement Lab, and initial articulated ragdolls. Original procedural geometry, weapon primitives, and generated audio remain in place. Proper models/animations belong to Phase 2; gore and final combat polish belong to Phase 3.
 
 ## Play
 
@@ -24,6 +24,8 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, and reserve ammunition. The HUD shows movement speed and height. Practice does not submit a best score. See the [Phase 1 route guide](docs/PHASE_1_MOVEMENT.md) for ramp, ledge, wall-run, and jump-gap locations. The command-line equivalent is `godot --path . -- --movement-lab`.
+
 ## Controls
 
 | Input | Action |
@@ -39,6 +41,7 @@ Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrad
 | R / F | Reload / melee |
 | 1 / 2 / 3 | Carbine / shotgun / emergency sidearm |
 | Escape / Enter | Pause / resume or advance the trial |
+| T in Movement Lab | Place a target and refill resources |
 | M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
 | [ / ] in menus | Adjust mouse sensitivity |
 
@@ -46,18 +49,18 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Implemented
 
-- One multi-level industrial arena with a gallery, stairs, flanking cover, wall-run lane, and slide tunnel.
+- A 96 × 80 m industrial arena with paired ramps, two galleries, a crossbridge, upper observation deck, gantry jump, ascending ledges, long wall-run lanes, and a slide tunnel.
 - Accelerated movement, buffered jumps, bounded air momentum, crouching/sliding, slide-kicks, wall-running, and swept directional dashes.
 - Hitscan primary weapons, muzzle obstruction checks, ADS, recoil, reload stages, finite primary reserves, and an infinite-reserve emergency sidearm.
-- Enforcer, rusher, shield, flusher, and elite prototypes; grid navigation around cover, visible projectiles, grenade warnings, and cloak-aware visual perception.
+- Enforcer, rusher, shield, flusher, and elite prototypes; three-dimensional grid navigation across connected levels, visible projectiles, grenade warnings, and cloak-aware visual perception.
 - Ten data-driven rosters, spawn reservations and telegraphs, population caps, pressure/relief intervals, hazard resolution, credits, five purchases, and endless escalation.
 - Physical health/armor/ammo drops; swept proximity queries; partial, one-time resource transactions; end-of-wave recovery.
 - Title screen, combat HUD, pause controls, upgrade shop, defeat/completion results, persistent local settings and best score.
-- Bounded impact particles, tracers, rigid-body corpses, and original synthesized placeholder audio.
+- Bounded impact particles, tracers, six-part articulated ragdolls, and original synthesized placeholder audio. At most six corpses simulate at once; ten are retained, and bodies freeze after six world seconds.
 
 ## Current limits
 
-This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, articulated ragdolls, dismemberment, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons share a primitive visual rig with scale/color changes. Enemy armor is represented by aggregate health except for directional shield blocking. Enemy navigation follows ground routes; enemies can fire at the gallery but do not yet climb it.
+This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, dismemberment, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons share a primitive visual rig with scale/color changes. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
 
 The director uses bounded population, attack windups, and timed relief rather than the full adaptive pressure estimator in the design. Purchase tuning is intentionally simpler than the production attachment system. Effects are capped but not yet pooled. Damage/pickup resolution follows Godot node tick order, rather than the proposed substep timestamp event queue. A full difficulty/playability study is still needed. No 144 FPS claim has been validated.
 
@@ -98,9 +101,11 @@ See [prototype status](docs/PROTOTYPE_STATUS.md) for the validation record and n
 | `scripts/projectile.gd` | Swept enemy projectiles, grenades, explosions |
 | `scripts/pickup.gd` | Physical drop presentation and resource transactions |
 | `scripts/arena.gd` | Arena construction and obstacle-aware AI grid |
+| `scripts/ragdoll.gd` | Articulated corpse physics and settling |
 | `scripts/hud.gd` | Scalable interface and mouse hit targets |
 | `scripts/sound.gd` | Procedural placeholder audio and voice limits |
 | `data/trial_balance.json` | Weapon, enemy, and wave tuning |
 | `tests/smoke.gd` | Automated gameplay/physics regression checks |
+| `tests/phase1.gd` | Three-tier navigation, real traversal, and ragdoll checks |
 
 The engine and its bundled dependencies have their own licenses. See [third-party notices](THIRD_PARTY_NOTICES.md). No commercial-game assets are included.

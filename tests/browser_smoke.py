@@ -57,10 +57,20 @@ with sync_playwright() as playwright:
     page.keyboard.press("e")
     page.wait_for_timeout(400)
     page.screenshot(path=str(output / "web-shroud.png"))
+    page.keyboard.press("Escape")
+    page.wait_for_function("document.pointerLockElement === null", timeout=10000)
+    page.mouse.click(170, 370)  # Return to title.
+    page.wait_for_timeout(400)
+    page.mouse.click(170, 486)  # Movement Lab.
+    page.wait_for_function("document.pointerLockElement !== null", timeout=10000)
+    page.keyboard.press("t")
+    page.wait_for_timeout(400)
+    page.screenshot(path=str(output / "web-movement-lab.png"))
     result = {
         "loaded_web_export": True,
         "start_and_resume_pointer_lock": True,
         "pause_releases_pointer": True,
+        "movement_lab_pointer_lock": True,
         "page_errors": errors,
         "console_errors": console_errors,
     }

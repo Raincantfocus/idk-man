@@ -1,14 +1,26 @@
 extends Node3D
-## Procedural greybox with an authored visual language and deterministic AI grid.
+## Phase 1: three connected elevations, shared geometry/navigation definitions.
 
-var navigation := AStarGrid2D.new()
-var spawn_points: Array[Vector3] = [Vector3(-19, 1, -14), Vector3(19, 1, -14), Vector3(-19, 1, 14), Vector3(19, 1, 14)]
+const BOUNDS := Rect2(-48, -40, 96, 80)
+const PLAYER_START := Vector3(0, 0.05, 31)
+const MID_HEIGHT := 4.2
+const HIGH_HEIGHT := 8.4
+var navigation := AStar3D.new()
+var spawn_points: Array[Vector3] = [
+	Vector3(-26, 0.1, 34), Vector3(26, 0.1, 34),
+	Vector3(-43, 0.1, 7), Vector3(43, 0.1, 7),
+	Vector3(-43, 0.1, -29), Vector3(43, 0.1, -29),
+	Vector3(-34, 4.3, 7), Vector3(34, 4.3, 7),
+	Vector3(-29, 8.5, -29), Vector3(29, 8.5, -29)]
+var lab_stations: Array[Vector3] = [Vector3(0, 0.05, 18), Vector3(-34, 4.25, 1), Vector3(12, 8.45, -29)]
 var concrete: StandardMaterial3D
 var dark: StandardMaterial3D
 var steel: StandardMaterial3D
 var acid: StandardMaterial3D
 var amber: StandardMaterial3D
-var blockers: Array[Rect2] = []
+var blockers: Array[AABB] = []
+var surfaces: Array[Dictionary] = []
+var cells: Dictionary = {}
 
 func material(color: Color, metallic: float = 0.0, emission: float = 0.0) -> StandardMaterial3D:
 	var mat := StandardMaterial3D.new()
@@ -40,7 +52,7 @@ func box(pos: Vector3, size: Vector3, mat: Material, solid: bool = true, nav_blo
 		collider.shape = collision
 		root.add_child(collider)
 	if nav_block:
-		blockers.append(Rect2(Vector2(pos.x - size.x / 2 - 0.55, pos.z - size.z / 2 - 0.55), Vector2(size.x + 1.1, size.z + 1.1)))
+		blockers.append(AABB(pos - size / 2, size))
 	return root
 
 func label_3d(text: String, pos: Vector3, size: int = 100, color: Color = Color("d7dfd8"), rotation_y: float = 0.0) -> Label3D:
@@ -62,16 +74,17 @@ func build() -> void:
 	acid = material(Color("d1e985"), 0.1, 0.8)
 	amber = material(Color("f1a24d"), 0.1, 1.0)
 	var floor_mat := material(Color("283436"), 0.25)
-	box(Vector3(0, -0.5, 0), Vector3(48, 1, 40), floor_mat)
-	box(Vector3(0, 5, -20), Vector3(48, 10, 1), concrete)
-	box(Vector3(0, 5, 20), Vector3(48, 10, 1), concrete)
-	box(Vector3(-24, 5, 0), Vector3(1, 10, 40), concrete)
-	box(Vector3(24, 5, 0), Vector3(1, 10, 40), concrete)
+	box(Vector3(0, -0.5, 0), Vector3(96, 1, 80), floor_mat)
+	surfaces.append({"rect": Rect2(-47, -39, 94, 78), "low": 0.0, "high": 0.0})
+	box(Vector3(0, 9, -40), Vector3(96, 18, 1), concrete)
+	box(Vector3(0, 9, 40), Vector3(96, 18, 1), concrete)
+	box(Vector3(-48, 9, 0), Vector3(1, 18, 80), concrete)
+	box(Vector3(48, 9, 0), Vector3(1, 18, 80), concrete)
 	# Floor seams and the yellow testing boundary are unlit, inexpensive geometry.
-	for x in range(-22, 24, 4):
-		box(Vector3(x, 0.008, 0), Vector3(0.035, 0.008, 38), dark, false)
-	for z in range(-18, 20, 4):
-		box(Vector3(0, 0.009, z), Vector3(46, 0.008, 0.035), dark, false)
+	for x in range(-44, 48, 4):
+		box(Vector3(x, 0.008, 0), Vector3(0.035, 0.008, 78), dark, false)
+	for z in range(-36, 40, 4):
+		box(Vector3(0, 0.009, z), Vector3(94, 0.008, 0.035), dark, false)
 	for x in [-11, 11]:
 		box(Vector3(x, 0.018, 0), Vector3(0.10, 0.012, 25), acid, false)
 	for z in [-12.5, 12.5]:
@@ -88,38 +101,59 @@ func build() -> void:
 		box(pos, Vector3(3.8, 1.3, 1.5), concrete, true, true)
 		box(pos + Vector3(0, 0.68, 0), Vector3(3.9, 0.08, 1.6), steel)
 		box(pos + Vector3(0, 0.43, 0.76), Vector3(3.2, 0.12, 0.025), acid, false)
-	# Gallery and broad staircase; enemies use the ground grid in this first slice.
-	box(Vector3(0, 4.0, -15.4), Vector3(34, 0.4, 6.4), dark)
-	for x in [-16, -8, 8, 16]:
-		box(Vector3(x, 2.0, -17), Vector3(0.65, 4, 0.65), steel, true, true)
-		box(Vector3(x, 4.8, -12.3), Vector3(0.10, 1.35, 0.1), steel)
-	for x in [-10, 10]:
-		box(Vector3(x, 5.25, -12.3), Vector3(12, 0.10, 0.10), steel)
-	for i in range(14):
-		var y := 0.30 * (i + 1)
-		box(Vector3(19.2, y / 2, -4.0 - i * 0.62), Vector3(3.8, y, 0.64), concrete)
-		box(Vector3(19.2, y + 0.007, -3.72 - i * 0.62), Vector3(3.8, 0.01, 0.07), acid, false)
-	blockers.append(Rect2(Vector2(16.7, -13.1), Vector2(5.0, 10.0)))
-	# Wall-running lane and low clearance slide route.
-	box(Vector3(-17, 1.6, 2), Vector3(0.5, 3.2, 12), concrete, true, true)
-	box(Vector3(-16.73, 2.2, 2), Vector3(0.02, 0.18, 11), acid, false)
-	box(Vector3(-10, 1.48, 11), Vector3(7, 0.28, 2.0), steel)
-	for x in [-13.4, -6.6]:
-		box(Vector3(x, 0.65, 11), Vector3(0.22, 1.3, 2), steel, true, true)
-	# Repeated structural bays and overhead light strips.
-	for x in [-21, -14, -7, 0, 7, 14, 21]:
-		box(Vector3(x, 5, -19.35), Vector3(0.28, 10, 0.25), dark)
-		box(Vector3(x, 7.3, 0), Vector3(0.25, 0.35, 40), dark, false)
-		box(Vector3(x, 7.05, -2), Vector3(0.12, 0.10, 23), acid, false)
-	label_3d("ZERO / LINE", Vector3(-7, 6.0, -19.42), 130)
-	label_3d("ADAPTIVE COMBAT SYSTEMS     •     SECTOR 017", Vector3(-7, 4.9, -19.4), 26, Color("d1e985"))
-	label_3d("SURVIVAL IS A PERFORMANCE METRIC.", Vector3(0, 4, 19.42), 62, Color("c4d0c5"), PI)
+	# Broad, connected decks: both sides have independent ground and upper ramps.
+	platform(Rect2(-38, -22, 18, 36), MID_HEIGHT)
+	platform(Rect2(20, -22, 18, 36), MID_HEIGHT)
+	platform(Rect2(-38, -34, 76, 12), HIGH_HEIGHT)
+	platform(Rect2(-20, -18, 40, 6), MID_HEIGHT)
+	for side in [-1, 1]:
+		ramp(Rect2(side * 26 - 3, 14, 6, 16), 0, MID_HEIGHT)
+		ramp(Rect2(side * 29 - 3, -22, 6, 16), MID_HEIGHT, HIGH_HEIGHT)
+		# A wide wall-running bypass with a continuous 28 m wall and exit space.
+		box(Vector3(side * 41, 3, 12), Vector3(0.5, 6, 28), concrete, true, true)
+		box(Vector3(side * 40.73, 2.0, 12), Vector3(0.025, 0.17, 26), acid, false)
+		box(Vector3(side * 40.73, 4.8, 12), Vector3(0.025, 0.08, 26), acid, false)
+		for z in [-30, -12, 8]:
+			box(Vector3(side * 36, 2, z), Vector3(0.6, 4, 0.6), steel, true, true)
+		# Gallery edge barriers leave deliberately open jump/drop access points.
+		for z in [-19, 5]:
+			box(Vector3(side * 20.1, 4.75, z), Vector3(0.20, 1.1, 5), steel, true, true)
+		box(Vector3(side * 33, 4.85, 3), Vector3(3.8, 1.3, 1.5), concrete, true, true)
+		label_3d("02 / GALLERY", Vector3(side * 30, 6.8, -21.6), 58, Color("d1e985"))
+	# Upper gantry with a measured four-meter jump gap. The far pad is player-only.
+	platform(Rect2(-3, -22, 6, 18), HIGH_HEIGHT)
+	platform(Rect2(-3, 0, 6, 8), HIGH_HEIGHT, false)
+	for z in [-4.1, 0.1]:
+		box(Vector3(0, 8.42, z), Vector3(6, 0.02, 0.12), amber, false)
+	label_3d("4m / GAP", Vector3(0, 9.0, -5.2), 34, Color("f1a24d"), PI)
+	for x in [-13, 13]:
+		box(Vector3(x, 9.05, -28), Vector3(4.5, 1.3, 1.5), concrete, true, true)
+	label_3d("03 / OBSERVATION", Vector3(0, 11.3, -33.5), 100, Color("d1e985"))
+	# Jumpable ledges rise in 70 cm increments toward the east gallery.
+	var ledges := [Vector3(10, 0.7, 26), Vector3(14, 1.4, 26), Vector3(18, 2.1, 26), Vector3(18, 2.8, 21), Vector3(18, 3.5, 16)]
+	for p in ledges:
+		box(Vector3(p.x, p.y / 2, p.z), Vector3(2.8, p.y, 2.8), concrete, true, true)
+		box(p + Vector3.UP * 0.015, Vector3(2.8, 0.025, 2.8), steel, false)
+		label_3d("+%.1fm" % p.y, p + Vector3(0, 0.5, 1.42), 24, Color("d1e985"))
+	# Low tunnel across a real movement route: 1.25 m head clearance, 5.5 m length.
+	box(Vector3(-12, 1.4, 26), Vector3(6, 0.3, 5.5), steel)
+	for x in [-15, -9]:
+		box(Vector3(x, 0.625, 26), Vector3(0.2, 1.25, 5.5), steel, true, true)
+	# Exclude this player-only shortcut from standing enemy navigation.
+	blockers.append(AABB(Vector3(-15, 0, 23.25), Vector3(6, 1.55, 5.5)))
+	label_3d("SLIDE / 1.25m", Vector3(-12, 2.1, 29.0), 42, Color("d1e985"))
+	label_3d("LEDGE ROUTE", Vector3(15, 2.8, 30), 48, Color("d1e985"))
+	label_3d("RAMP / 02", Vector3(-26, 2.0, 31), 46, Color("d1e985"))
+	label_3d("RAMP / 02", Vector3(26, 2.0, 31), 46, Color("d1e985"))
+	# Open run-up areas, rather than extra obstacles filling the expanded floor.
+	for x in [-42, -28, -14, 0, 14, 28, 42]:
+		box(Vector3(x, 17, 0), Vector3(0.25, 0.35, 80), dark, false)
+		box(Vector3(x, 16.75, -2), Vector3(0.12, 0.10, 60), acid, false)
+	label_3d("ZERO / LINE", Vector3(0, 14, -39.4), 200)
+	label_3d("PHASE 01 / MOVEMENT EVALUATION", Vector3(0, 4, 39.4), 90, Color("d1e985"), PI)
 	for i in spawn_points.size():
 		var p := spawn_points[i]
-		var back := -19.3 if p.z < 0 else 19.3
-		box(Vector3(p.x, 1.8, back), Vector3(4.1, 3.6, 0.25), dark, false)
-		box(Vector3(p.x, 3.6, back + (0.2 if p.z < 0 else -0.2)), Vector3(4.1, 0.16, 0.15), amber, false)
-		label_3d("0%d / ENTRY" % (i + 1), Vector3(p.x, 4.2, back + (0.2 if p.z < 0 else -0.2)), 38, Color("f1b367"), 0 if p.z < 0 else PI)
+		box(p + Vector3(0, -0.075, 0), Vector3(3, 0.025, 3), amber, false)
 	var environment := WorldEnvironment.new()
 	var settings := Environment.new()
 	settings.background_mode = Environment.BG_COLOR
@@ -130,7 +164,7 @@ func build() -> void:
 	settings.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	settings.fog_enabled = true
 	settings.fog_light_color = Color("354845")
-	settings.fog_density = 0.006
+	settings.fog_density = 0.003
 	environment.environment = settings
 	add_child(environment)
 	var key := DirectionalLight3D.new()
@@ -138,41 +172,116 @@ func build() -> void:
 	key.light_color = Color("dbe6c8")
 	key.light_energy = 1.1
 	key.shadow_enabled = true
-	key.directional_shadow_max_distance = 65
+	key.directional_shadow_max_distance = 115
 	add_child(key)
-	for p in [Vector3(-12, 5, 6), Vector3(12, 5, -8), Vector3(2, 5, 10)]:
+	for p in [Vector3(-27, 10, 7), Vector3(27, 10, 7), Vector3(0, 13, -28), Vector3(0, 8, 22)]:
 		var light := OmniLight3D.new()
 		light.position = p
 		light.light_color = Color("bfdfb3")
-		light.light_energy = 2
-		light.omni_range = 16
+		light.light_energy = 1.1
+		light.omni_range = 24
 		add_child(light)
 	_build_navigation()
 
+func platform(rect: Rect2, height: float, ai_accessible: bool = true) -> void:
+	box(Vector3(rect.get_center().x, height - 0.2, rect.get_center().y), Vector3(rect.size.x, 0.4, rect.size.y), dark)
+	surfaces.append({"rect": rect, "low": height, "high": height, "ai": ai_accessible})
+	box(Vector3(rect.get_center().x, height + 0.015, rect.end.y - 0.08), Vector3(rect.size.x, 0.02, 0.10), acid, false)
+
+func ramp(rect: Rect2, low: float, high: float) -> void:
+	# A continuous convex slab: geometry and AI samples use the same height equation.
+	var vertices := PackedVector3Array()
+	for y_offset in [0.0, -0.35]:
+		vertices.append(Vector3(rect.position.x, high + y_offset, rect.position.y))
+		vertices.append(Vector3(rect.end.x, high + y_offset, rect.position.y))
+		vertices.append(Vector3(rect.end.x, low + y_offset, rect.end.y))
+		vertices.append(Vector3(rect.position.x, low + y_offset, rect.end.y))
+	var body := StaticBody3D.new()
+	body.collision_layer = 1
+	body.collision_mask = 0
+	add_child(body)
+	var shape := ConvexPolygonShape3D.new()
+	shape.points = vertices
+	var collider := CollisionShape3D.new()
+	collider.shape = shape
+	body.add_child(collider)
+	var instance := MeshInstance3D.new()
+	var mesh_builder := SurfaceTool.new()
+	mesh_builder.begin(Mesh.PRIMITIVE_TRIANGLES)
+	for index in [0, 1, 2, 0, 2, 3, 7, 6, 5, 7, 5, 4, 0, 4, 5, 0, 5, 1, 1, 5, 6, 1, 6, 2, 2, 6, 7, 2, 7, 3, 3, 7, 4, 3, 4, 0]:
+		mesh_builder.add_vertex(vertices[index])
+	mesh_builder.generate_normals()
+	instance.mesh = mesh_builder.commit()
+	var ramp_material := concrete.duplicate() as StandardMaterial3D
+	ramp_material.cull_mode = BaseMaterial3D.CULL_DISABLED
+	instance.material_override = ramp_material
+	body.add_child(instance)
+	surfaces.append({"rect": rect, "low": low, "high": high})
+	# Flush lane markers follow the slope instead of creating stair-sized lips.
+	for x in [rect.position.x + 0.15, rect.end.x - 0.15]:
+		var length := Vector2(rect.size.y, high - low).length()
+		var stripe := box(Vector3(x, (low + high) / 2 + 0.025, rect.get_center().y), Vector3(0.10, 0.025, length), acid, false)
+		stripe.rotation.x = atan2(high - low, rect.size.y)
+
+func surface_height(surface: Dictionary, z: float) -> float:
+	return lerpf(surface.high, surface.low, clampf((z - surface.rect.position.y) / surface.rect.size.y, 0, 1))
+
+func walkable(point: Vector3) -> bool:
+	var footprint := Vector2(point.x, point.z)
+	for blocker in blockers:
+		var horizontal := Rect2(blocker.position.x - 0.48, blocker.position.z - 0.48, blocker.size.x + 0.96, blocker.size.z + 0.96)
+		if horizontal.has_point(footprint) and point.y < blocker.end.y - 0.02 and point.y + 1.85 > blocker.position.y:
+			return false
+	for surface in surfaces:
+		if surface.rect.has_point(footprint):
+			var ceiling := surface_height(surface, point.z)
+			if ceiling > point.y + 0.08 and ceiling - 0.4 < point.y + 1.85:
+				return false
+	return true
+
 func _build_navigation() -> void:
-	navigation.region = Rect2i(-23, -19, 46, 38)
-	navigation.cell_size = Vector2.ONE
-	navigation.offset = Vector2(0.5, 0.5)
-	navigation.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES
-	navigation.update()
-	for x in range(-23, 23):
-		for z in range(-19, 19):
-			for rect in blockers:
-				if rect.has_point(Vector2(x + 0.5, z + 0.5)):
-					navigation.set_point_solid(Vector2i(x, z))
-					break
+	navigation.clear()
+	cells.clear()
+	var id: int = 0
+	for surface in surfaces:
+		if not surface.get("ai", true):
+			continue
+		var bounds: Rect2 = surface.rect
+		for x in range(ceili(bounds.position.x), floori(bounds.end.x)):
+			for z in range(ceili(bounds.position.y), floori(bounds.end.y)):
+				var point := Vector3(x + 0.5, surface_height(surface, z + 0.5), z + 0.5)
+				if not walkable(point):
+					continue
+				var cell := Vector2i(x, z)
+				if not cells.has(cell):
+					cells[cell] = []
+				var duplicate := false
+				for existing in cells[cell]:
+					if absf(navigation.get_point_position(existing).y - point.y) < 0.08:
+						duplicate = true
+				if duplicate:
+					continue
+				navigation.add_point(id, point)
+				cells[cell].append(id)
+				id += 1
+	# Cardinal edges keep capsule clearance conservative at cover corners.
+	for cell in cells:
+		for offset in [Vector2i.RIGHT, Vector2i.DOWN]:
+			var neighbor: Vector2i = cell + offset
+			if not cells.has(neighbor):
+				continue
+			for a in cells[cell]:
+				for b in cells[neighbor]:
+					if absf(navigation.get_point_position(a).y - navigation.get_point_position(b).y) <= 0.35:
+						navigation.connect_points(a, b)
 
-func nearest_cell(pos: Vector3) -> Vector2i:
-	var cell := Vector2i(clampi(floori(pos.x), -22, 21), clampi(floori(pos.z), -18, 17))
-	if not navigation.is_point_solid(cell):
-		return cell
-	for radius in range(1, 7):
-		for x in range(-radius, radius + 1):
-			for y in range(-radius, radius + 1):
-				var candidate := cell + Vector2i(x, y)
-				if navigation.is_in_boundsv(candidate) and not navigation.is_point_solid(candidate):
-					return candidate
-	return cell
+func nearest_walkable(pos: Vector3) -> Vector3:
+	var id := navigation.get_closest_point(pos)
+	return navigation.get_point_position(id) if id >= 0 else PLAYER_START
 
-func path_to(from: Vector3, to: Vector3) -> PackedVector2Array:
-	return navigation.get_point_path(nearest_cell(from), nearest_cell(to))
+func path_to(from: Vector3, to: Vector3) -> PackedVector3Array:
+	var start := navigation.get_closest_point(from)
+	var end := navigation.get_closest_point(to)
+	if start < 0 or end < 0:
+		return PackedVector3Array()
+	return navigation.get_point_path(start, end)

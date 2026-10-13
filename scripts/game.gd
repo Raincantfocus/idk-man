@@ -7,6 +7,9 @@ const ProjectileScript = preload("res://scripts/projectile.gd")
 const PickupScript = preload("res://scripts/pickup.gd")
 const HudScript = preload("res://scripts/hud.gd")
 const SoundScript = preload("res://scripts/sound.gd")
+const RagdollScript = preload("res://scripts/ragdoll.gd")
+const MAX_ACTIVE_RAGDOLLS := 6
+const MAX_RETAINED_RAGDOLLS := 10
 
 var balance: Dictionary
 var arena
@@ -51,6 +54,7 @@ var capture_frames: int = 0
 var is_test: bool = false
 var completed_reward: bool = false
 var pause_from_focus: bool = false
+var practice: bool = false
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -71,11 +75,11 @@ func _ready() -> void:
 	player.process_mode = Node.PROCESS_MODE_PAUSABLE
 	add_child(player)
 	player.setup(self)
-	player.position = Vector3(0, 0.1, 13)
-	menu_camera.position = Vector3(16, 10.8, 17)
+	player.position = arena.PLAYER_START
+	menu_camera.position = Vector3(36, 27, 37)
 	menu_camera.fov = 73
 	add_child(menu_camera)
-	menu_camera.look_at(Vector3(-2, 1.5, -4))
+	menu_camera.look_at(Vector3(-2, 4, -6))
 	menu_camera.current = true
 	var layer := CanvasLayer.new()
 	add_child(layer)
@@ -93,9 +97,11 @@ func _ready() -> void:
 			player.pitch = -0.045
 			spawn_pickup(Vector3(1, 0.3, 10), "health")
 			spawn_pickup(Vector3(-1, 0.3, 9), "armor")
+		if arg == "--movement-lab":
+			start_run(true)
 
 func _bind_inputs() -> void:
-	var keys := {"forward": KEY_W, "back": KEY_S, "left": KEY_A, "right": KEY_D, "jump": KEY_SPACE, "sprint": KEY_SHIFT, "slide": KEY_CTRL, "dash": KEY_ALT, "reload": KEY_R, "focus": KEY_Q, "shroud": KEY_E, "melee": KEY_F, "weapon_0": KEY_1, "weapon_1": KEY_2, "weapon_2": KEY_3, "accept": KEY_ENTER, "pause": KEY_ESCAPE}
+	var keys := {"forward": KEY_W, "back": KEY_S, "left": KEY_A, "right": KEY_D, "jump": KEY_SPACE, "sprint": KEY_SHIFT, "slide": KEY_CTRL, "dash": KEY_ALT, "reload": KEY_R, "focus": KEY_Q, "shroud": KEY_E, "melee": KEY_F, "weapon_0": KEY_1, "weapon_1": KEY_2, "weapon_2": KEY_3, "accept": KEY_ENTER, "pause": KEY_ESCAPE, "training_dummy": KEY_T}
 	for action in keys:
 		if not InputMap.has_action(action):
 			InputMap.add_action(action)
@@ -118,6 +124,8 @@ func is_playing() -> bool:
 	return state in ["combat", "resolve"] and not get_tree().paused
 
 func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("training_dummy") and practice and is_playing():
+		spawn_training_dummy()
 	if event.is_action_pressed("pause"):
 		if is_playing():
 			pause_game()
@@ -154,8 +162,8 @@ func _unhandled_input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	var dt := delta / maxf(Engine.time_scale, 0.01)
 	if state == "menu":
-		menu_camera.position.x = 16 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
-		menu_camera.look_at(Vector3(-2, 1.5, -4))
+		menu_camera.position.x = 36 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
+		menu_camera.look_at(Vector3(-2, 4, -6))
 	if is_playing():
 		elapsed += dt
 		message_time = maxf(0, message_time - dt)
@@ -164,7 +172,7 @@ func _process(delta: float) -> void:
 		if combo_time <= 0:
 			combo = move_toward(combo, 1, dt * 0.25)
 		clean_references()
-		if state == "combat":
+		if state == "combat" and not practice:
 			_director(dt)
 		elif state == "resolve":
 			resolve_timer -= dt
@@ -217,15 +225,17 @@ func _spawn_point() -> Vector3:
 		var occlusion := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(player.camera.global_position, candidate + Vector3.UP, 1))
 		if visible and occlusion.is_empty():
 			continue
-		var value: float = distance + rng.randf_range(0, 5)
+		# Favor nearby approaches in the enlarged arena, while preserving occlusion.
+		var value: float = -absf(distance - 24) - absf(candidate.y - player.position.y) * 0.7 + rng.randf_range(0, 5)
 		if value > best_score_value:
 			best = candidate
 			best_score_value = value
 	return best
 
-func start_run() -> void:
+func start_run(training: bool = false) -> void:
 	get_tree().paused = false
 	Engine.time_scale = 1
+	practice = training
 	for group in ["enemy", "pickup", "projectile", "corpse", "transient"]:
 		for node in get_tree().get_nodes_in_group(group):
 			node.free()
@@ -239,7 +249,7 @@ func start_run() -> void:
 	player.process_mode = Node.PROCESS_MODE_PAUSABLE
 	add_child(player)
 	player.setup(self)
-	player.position = Vector3(0, 0.05, 13)
+	player.position = arena.PLAYER_START
 	player.camera.current = true
 	wave = 0
 	score = 0
@@ -252,7 +262,53 @@ func start_run() -> void:
 	effect_count = 0
 	purchased.clear()
 	rng.seed = 17042
-	start_wave()
+	if practice:
+		state = "combat"
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		for point in arena.lab_stations:
+			var dummy = spawn_enemy("enforcer", point)
+			dummy.training_dummy = true
+		notice("MOVEMENT LAB // T: PLACE TEST DUMMY + REFILL", 5.0)
+	else:
+		start_wave()
+
+func return_to_menu() -> void:
+	get_tree().paused = false
+	player.end_ability()
+	Engine.time_scale = 1
+	state = "menu"
+	practice = false
+	sound.stop_all()
+	for group in ["enemy", "pickup", "projectile", "corpse", "transient"]:
+		for node in get_tree().get_nodes_in_group(group):
+			node.queue_free()
+	enemies.clear()
+	pickups.clear()
+	corpses.clear()
+	queue.clear()
+	pending.clear()
+	menu_camera.current = true
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+func spawn_training_dummy() -> void:
+	if not practice:
+		return
+	clean_references()
+	if enemies.size() >= 6:
+		var oldest = enemies.pop_front()
+		oldest.queue_free()
+	var desired: Vector3 = player.global_position - player.global_basis.z * 6
+	var point: Vector3 = arena.nearest_walkable(desired)
+	var dummy = spawn_enemy("enforcer", point + Vector3.UP * 0.05)
+	dummy.training_dummy = true
+	player.health = 100
+	player.armor = 100
+	player.focus = player.focus_max
+	player.shroud = player.shroud_max
+	player.ability_delay = 0
+	for i in range(3):
+		player.reserve[i] = int(balance.weapons[player.weapon_ids[i]].reserve)
+	notice("TEST DUMMY PLACED // RESOURCES REFILLED", 1.5)
 
 func start_wave() -> void:
 	wave += 1
@@ -500,31 +556,30 @@ func impact(point: Vector3, color: Color, count: int) -> void:
 			effect_count = maxi(0, effect_count - 1)
 			instance.queue_free())
 
-func spawn_corpse(body: Node3D, point: Vector3, _color: Color) -> void:
+func spawn_corpse(body: Node3D, point: Vector3, _color: Color):
 	if is_test:
-		return
-	while corpses.size() >= 10:
+		return null
+	clean_references()
+	while corpses.size() >= MAX_RETAINED_RAGDOLLS:
 		var old = corpses.pop_front()
 		if is_instance_valid(old):
 			old.queue_free()
-	var corpse := RigidBody3D.new()
-	corpse.process_mode = Node.PROCESS_MODE_PAUSABLE
-	corpse.collision_layer = 16
-	corpse.collision_mask = 1
-	corpse.mass = 12
+	var active_count := 0
+	for old in corpses:
+		if old.active:
+			active_count += 1
+	for old in corpses:
+		if active_count < MAX_ACTIVE_RAGDOLLS:
+			break
+		if old.active:
+			old.settle()
+			active_count -= 1
+	var corpse = RagdollScript.new()
 	add_child(corpse)
-	corpse.add_to_group("corpse")
-	corpse.position = point + Vector3.UP * 0.9
-	body.reparent(corpse)
-	body.position = Vector3(0, -0.9, 0)
-	var collider := CollisionShape3D.new()
-	var box := BoxShape3D.new()
-	box.size = Vector3(0.6, 1.7, 0.4)
-	collider.shape = box
-	corpse.add_child(collider)
-	corpse.apply_impulse(Vector3(rng.randf_range(-2, 2), 1, -2))
-	corpse.apply_torque_impulse(Vector3(12, 0, rng.randf_range(-4, 4)))
+	var direction: Vector3 = (point - player.global_position).normalized()
+	corpse.setup(body, direction * 2.2 + Vector3.UP * 0.6)
 	corpses.append(corpse)
+	return corpse
 
 func _load_settings() -> void:
 	var config := ConfigFile.new()
@@ -546,5 +601,7 @@ func _save_settings() -> void:
 	config.save("user://profile.cfg")
 
 func _save_score() -> void:
+	if practice:
+		return
 	best_score = maxi(best_score, score)
 	_save_settings()

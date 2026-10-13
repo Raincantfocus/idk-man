@@ -145,10 +145,10 @@ func run() -> void:
 	check(get_nodes_in_group("enemy").is_empty() and get_nodes_in_group("projectile").is_empty() and get_nodes_in_group("pickup").is_empty(), "restart removes old actors and hazards")
 	check(game.wave == 1 and game.kills == 0 and game.credits == 0, "restart clears run progression")
 	# Navigation routes around the central reactor instead of crossing it.
-	var route: PackedVector2Array = game.arena.path_to(Vector3(-6, 0, -1), Vector3(6, 0, -1))
+	var route: PackedVector3Array = game.arena.path_to(Vector3(-6, 0, -1), Vector3(6, 0, -1))
 	var valid_route := route.size() > 2
 	for point in route:
-		if Rect2(-3.5, -5.0, 7, 7).has_point(point):
+		if Rect2(-3, -4.5, 6, 6).grow(0.36).has_point(Vector2(point.x, point.z)):
 			valid_route = false
 	check(valid_route, "enemy navigation routes around structural cover")
 	# Equal physics-tick windows avoid wall-clock timer jitter on shared CI machines.
