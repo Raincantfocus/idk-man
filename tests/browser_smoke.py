@@ -12,6 +12,10 @@ from playwright.sync_api import sync_playwright
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--url", default="http://127.0.0.1:8080")
+parser.add_argument("--startup-timeout-ms", type=int, default=180000,
+                    help="Allow cold WASM compilation on software-rendered CI")
+parser.add_argument("--skip-captures", action="store_true",
+                    help="Check interactions when software-rendered screenshots stall")
 args = parser.parse_args()
 output = Path(__file__).resolve().parents[1] / "test-output"
 output.mkdir(exist_ok=True)
@@ -24,17 +28,31 @@ with sync_playwright() as playwright:
     if os.environ.get("CHROMIUM_BIN"):
         options["executable_path"] = os.environ["CHROMIUM_BIN"]
     browser = playwright.chromium.launch(**options)
-    page = browser.new_page(viewport={"width": 960, "height": 600})
+    # Smaller framebuffer keeps SwiftShader captures practical on shared CPU CI.
+    page = browser.new_page(viewport={"width": 640, "height": 400})
+    page.set_default_timeout(60000)
+    def click(x, y):
+        page.mouse.click(x * 2 / 3, y * 2 / 3)
+    def capture(name):
+        if not args.skip_captures:
+            page.screenshot(path=str(output / name))
     errors = []
     console_errors = []
     page.on("pageerror", lambda error: errors.append(str(error)))
     page.on("console", lambda message: console_errors.append(message.text)
             if message.type == "error" else None)
     page.goto(args.url, wait_until="networkidle", timeout=60000)
-    page.wait_for_function("document.querySelector('#status') === null", timeout=60000)
+    try:
+        page.wait_for_function("document.querySelector('#status') === null",
+                               timeout=args.startup_timeout_ms)
+    except Exception:
+        print(json.dumps({"page_errors": errors, "console_errors": console_errors}, indent=2))
+        browser.close()
+        raise
     page.wait_for_timeout(750)
-    page.screenshot(path=str(output / "web-menu.png"))
-    page.mouse.click(146, 438)
+    print("Web export loaded", flush=True)
+    capture("web-menu.png")
+    click(146, 438)
     page.wait_for_function("document.pointerLockElement !== null", timeout=10000)
     page.keyboard.down("w")
     page.keyboard.down("Shift")
@@ -46,31 +64,32 @@ with sync_playwright() as playwright:
     page.mouse.up()
     page.keyboard.press("q")
     page.wait_for_timeout(400)
-    page.screenshot(path=str(output / "web-focus.png"))
+    capture("web-focus.png")
     page.keyboard.press("Escape")
     page.wait_for_function("document.pointerLockElement === null", timeout=10000)
-    page.screenshot(path=str(output / "web-pause.png"))
-    page.mouse.click(170, 262)
+    capture("web-pause.png")
+    click(170, 262)
     page.wait_for_function("document.pointerLockElement !== null", timeout=10000)
     # Switch directly from active Focus; this avoids measuring gameplay cooldowns
     # against wall time on a software-rendered browser with a low frame rate.
     page.keyboard.press("e")
     page.wait_for_timeout(400)
-    page.screenshot(path=str(output / "web-shroud.png"))
+    capture("web-shroud.png")
     page.keyboard.press("Escape")
     page.wait_for_function("document.pointerLockElement === null", timeout=10000)
-    page.mouse.click(170, 370)  # Return to title.
+    click(170, 370)  # Return to title.
     page.wait_for_timeout(400)
-    page.mouse.click(170, 486)  # Movement Lab.
+    click(170, 486)  # Movement Lab.
     page.wait_for_function("document.pointerLockElement !== null", timeout=10000)
     page.keyboard.press("t")
     page.wait_for_timeout(400)
-    page.screenshot(path=str(output / "web-movement-lab.png"))
+    capture("web-movement-lab.png")
     result = {
         "loaded_web_export": True,
         "start_and_resume_pointer_lock": True,
         "pause_releases_pointer": True,
         "movement_lab_pointer_lock": True,
+        "screenshots_captured": not args.skip_captures,
         "page_errors": errors,
         "console_errors": console_errors,
     }
