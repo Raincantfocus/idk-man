@@ -50,8 +50,9 @@ var recoil_multiplier: float = 1.0
 var pickup_radius: float = 1.1
 var slide_victims: Array[int] = []
 var flash := OmniLight3D.new()
-var gun_color: StandardMaterial3D
-var muzzle: MeshInstance3D
+var weapon_view: Node3D
+var magazine_seated := [true, true, true]
+var reload_had_magazine := true
 var look_delta := Vector2.ZERO
 var visual_roll: float = 0.0
 
@@ -85,41 +86,10 @@ func setup(owner_game) -> void:
 	weapon_root.add_child(flash)
 	add_to_group("player")
 
-func _piece(pos: Vector3, size: Vector3, mat: Material) -> MeshInstance3D:
-	var mesh := MeshInstance3D.new()
-	var cube := BoxMesh.new()
-	cube.size = size
-	mesh.mesh = cube
-	mesh.material_override = mat
-	mesh.position = pos
-	mesh.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
-	weapon_root.add_child(mesh)
-	return mesh
-
 func _build_weapon() -> void:
-	gun_color = game.arena.material(Color("233036"), 0.7)
-	var rail = game.arena.material(Color("63706b"), 0.8)
-	var glove = game.arena.material(Color("3e4b43"))
-	var sleeve = game.arena.material(Color("637260"))
-	_piece(Vector3(0, 0, -0.15), Vector3(0.13, 0.16, 0.53), gun_color)
-	_piece(Vector3(0, 0.008, -0.5), Vector3(0.09, 0.10, 0.34), rail)
-	_piece(Vector3(0, -0.075, 0.12), Vector3(0.12, 0.22, 0.15), gun_color)
-	_piece(Vector3(0, -0.15, -0.12), Vector3(0.075, 0.24, 0.13), rail)
-	_piece(Vector3(0, 0.09, -0.18), Vector3(0.045, 0.025, 0.42), rail)
-	_piece(Vector3(0, 0.125, -0.04), Vector3(0.075, 0.04, 0.065), gun_color)
-	_piece(Vector3(-0.035, 0.16, -0.04), Vector3(0.016, 0.085, 0.06), gun_color)
-	_piece(Vector3(0.035, 0.16, -0.04), Vector3(0.016, 0.085, 0.06), gun_color)
-	_piece(Vector3(0, 0.20, -0.04), Vector3(0.075, 0.015, 0.06), gun_color)
-	_piece(Vector3(0, 0.15, -0.06), Vector3(0.008, 0.009, 0.01), game.arena.acid)
-	_piece(Vector3(0.07, 0.025, -0.04), Vector3(0.015, 0.035, 0.13), rail)
-	_piece(Vector3(0.05, -0.15, 0.15), Vector3(0.115, 0.15, 0.20), glove)
-	_piece(Vector3(0.08, -0.24, 0.25), Vector3(0.13, 0.17, 0.37), sleeve)
-	var hand = _piece(Vector3(-0.04, -0.1, -0.39), Vector3(0.14, 0.10, 0.16), glove)
-	hand.rotation.z = 0.3
-	var arm = _piece(Vector3(-0.14, -0.19, -0.23), Vector3(0.13, 0.13, 0.38), sleeve)
-	arm.rotation.y = -0.55
-	muzzle = _piece(Vector3(0, 0, -0.79), Vector3(0.12, 0.12, 0.22), game.arena.material(Color("ffde88"), 0, 3))
-	muzzle.visible = false
+	weapon_view = preload("res://scripts/weapon_view.gd").new()
+	weapon_root.add_child(weapon_view)
+	weapon_view.setup(self)
 
 func weapon() -> Dictionary:
 	return game.balance.weapons[weapon_ids[weapon_index]]
@@ -387,7 +357,8 @@ func fire() -> bool:
 	var stats := weapon()
 	ammo[weapon_index] -= 1
 	shot_timer = 60.0 / float(stats.rpm)
-	muzzle_timer = 0.045
+	muzzle_timer = 0.035
+	weapon_view.on_fire()
 	recoil = minf(0.12, recoil + 0.055 * recoil_multiplier)
 	var origin := camera.global_position
 	var forward := -camera.global_transform.basis.z
@@ -398,7 +369,7 @@ func fire() -> bool:
 		var hit := get_world_3d().direct_space_state.intersect_ray(ray)
 		var target: Vector3 = hit.position if not hit.is_empty() else origin + direction * 70
 		# Authoritative muzzle obstruction avoids shooting through a nearby wall.
-		var muzzle_position := weapon_root.to_global(Vector3(0, 0, -0.72))
+		var muzzle_position: Vector3 = weapon_view.muzzle_position()
 		var obstruction := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin, muzzle_position, 1))
 		if not obstruction.is_empty():
 			hit = obstruction
@@ -423,6 +394,7 @@ func fire() -> bool:
 func begin_reload() -> bool:
 	if reload_time > 0 or ammo[weapon_index] >= max_ammo() or reserve[weapon_index] == 0:
 		return false
+	reload_had_magazine = magazine_seated[weapon_index]
 	reload_total = weapon().reload_seconds
 	reload_time = reload_total
 	reload_stage = 0
@@ -439,22 +411,25 @@ func _reload_tick(dt: float) -> void:
 			reserve[weapon_index] += ammo[weapon_index]
 		ammo[weapon_index] = 0
 		reload_stage = 1
+		magazine_seated[weapon_index] = false
 	if progress >= 0.78 and reload_stage == 1:
 		var amount: int = max_ammo() if weapon_index == 2 else mini(max_ammo(), reserve[weapon_index])
 		ammo[weapon_index] = amount
 		if weapon_index != 2:
 			reserve[weapon_index] -= amount
 		reload_stage = 2
+		magazine_seated[weapon_index] = true
 		game.sound.play_cue("reload")
 
 func switch_weapon(index: int) -> void:
 	reload_time = 0
 	reload_stage = 0
 	weapon_index = index
+	muzzle_timer = 0
+	flash.light_energy = 0
 	shot_timer = 0.15
 	recoil = 0.10
-	gun_color.albedo_color = [Color("233036"), Color("605e48"), Color("323947")][index]
-	weapon_root.scale = [Vector3.ONE, Vector3(1.15, 1.05, 1.18), Vector3(0.82, 0.85, 0.66)][index]
+	weapon_view.select_weapon(index)
 
 func melee() -> void:
 	if melee_timer > 0:
@@ -481,6 +456,9 @@ func take_damage(amount: float, source: Vector3, armor_fraction: float = 0.75) -
 	game.sound.play_cue("hurt")
 	if health <= 0:
 		traversal.cancel()
+		muzzle_timer = 0
+		weapon_view.muzzle_flash.visible = false
+		flash.light_energy = 0
 		end_ability()
 		game.defeat()
 
@@ -490,15 +468,16 @@ func _visuals(dt: float) -> void:
 	bob += dt * Vector2(velocity.x, velocity.z).length() * 0.95
 	recoil = move_toward(recoil, 0, dt * 0.45)
 	muzzle_timer = maxf(0, muzzle_timer - dt)
-	muzzle.visible = muzzle_timer > 0
+	weapon_view.update_pose(dt)
 	flash.light_energy = 3 if muzzle_timer > 0 else 0
-	var target_pos := Vector3(0.27, -0.26, -0.48)
+	var target_pos: Vector3 = weapon_view.HIP[weapon_index]
 	if ads:
-		target_pos = Vector3(0, -0.153, -0.40)
+		target_pos = weapon_view.ads_position()
 	var bob_strength: float = (0.002 if ads else 0.009) * game.camera_motion
 	target_pos += Vector3(sin(bob) * bob_strength, cos(bob * 2) * bob_strength, recoil)
 	target_pos.x -= clampf(look_delta.x * 0.1, -0.025, 0.025)
-	var tilt := Vector3.ZERO
+	var tilt := Vector3(recoil * (1.6 if weapon_index == 1 else 0.65), 0, 0)
+	target_pos.y -= weapon_view.equip_time * 0.8
 	if traversal.active:
 		target_pos.y -= 0.10
 		tilt.x = -0.15

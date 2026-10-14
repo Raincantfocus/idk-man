@@ -1,0 +1,22 @@
+{
+  "source": "tools/author_first_person.py",
+  "origin": "Original fictional art authored for PROJECT: ZERO-LINE",
+  "models": {
+    "carbine.glb": {
+      "sha256": "82af1694fa0cefb31f555539db51bcbd178b7629d6cce6b0f52513e90949f459",
+      "triangles": 14820
+    },
+    "operator_arms.glb": {
+      "sha256": "8cc1f2fa388d8d3b870ae4d64543cab9e3fafcfff48478041dba4d3531017989",
+      "triangles": 4108
+    },
+    "shotgun.glb": {
+      "sha256": "cdc07479f28b046629a093af61ca90eb49287fa141a854328e4a05d692c4d38d",
+      "triangles": 13632
+    },
+    "sidearm.glb": {
+      "sha256": "c42c02583bd961e0198343f56122daed8dd7f315b80f0d5c4ef8bec31dc699e6",
+      "triangles": 7348
+    }
+  }
+}

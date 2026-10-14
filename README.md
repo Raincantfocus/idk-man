@@ -2,9 +2,9 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Phase 2 / version 0.4:** downhill slides gain speed and sustain on slopes, with a new west-gallery chute and nine Movement Lab routes. Grip-plate ramps, riveted walls, and reactor-panel textures add surface variety. The elite now uses a licensed armored robotic model with skeletal idle/run/hit reactions. Other enemies and first-person weapons/arms remain prototypes. Gore and final combat polish remain Phase 3.
+**Phase 2 / version 0.5:** distinct carbine, box-fed shotgun, and sidearm models replace the shared box-built weapon. A four-bone glove/sleeve rig follows keyed reload poses; actions cycle, the empty sidearm locks open, and capped physical casings eject from the weapons. Downhill slides, the nine practice routes, PBR environment surfaces, and the animated elite remain available. Other enemy models and finer hand animation remain Phase 2 work; gore remains Phase 3.
 
-**Try it:** enter Movement Lab and press **V** to cycle to **DOWNHILL CHUTE**. Sprint toward the descent and press **Ctrl**; downhill momentum extends the slide automatically. Use **Space** to jump out, or hold backward to brake. The observation-deck training target previews the new elite model.
+**Try it:** select Movement Lab, switch weapons with **1/2/3**, aim with **right mouse**, fire, and reload with **R**. Interrupt a reload by switching weapons to check the retained magazine state. Press **V** to visit the downhill chute and other movement routes.
 
 ## Play
 
@@ -65,7 +65,7 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Current limits
 
-This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, dismemberment, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons share a primitive visual rig with scale/color changes. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
+This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, dismemberment, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons now use separate authored meshes and a four-bone glove/sleeve rig; detailed finger animation and full hand-keyed clips remain unfinished. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
 
 The director uses bounded population, attack windups, and timed relief rather than the full adaptive pressure estimator in the design. Purchase tuning is intentionally simpler than the production attachment system. Effects are capped but not yet pooled. Damage/pickup resolution follows Godot node tick order, rather than the proposed substep timestamp event queue. A full difficulty/playability study is still needed. No 144 FPS claim has been validated.
 
@@ -101,7 +101,8 @@ See [prototype status](docs/PROTOTYPE_STATUS.md) for the validation record and n
 | Path | Responsibility |
 |---|---|
 | `scripts/game.gd` | Run state, director, rewards, upgrades, effects, persistence |
-| `scripts/player.gd` | Movement, weapons, reloads, abilities, player attributes |
+| `scripts/player.gd` | Movement, weapon transactions, reloads, abilities, player attributes |
+| `scripts/weapon_view.gd` | Multipart weapon models, skeletal arm poses, sight/muzzle sockets and casings |
 | `scripts/traversal.gd` | Ledge probes, vault/mantle routes, swept movement, and cancellation |
 | `scripts/industrial_art.gd` | Shared PBR materials and fitted authored model instances |
 | `scripts/enemy.gd` | Enemy navigation, perception, attacks, damage |

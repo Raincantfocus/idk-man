@@ -1,4 +1,4 @@
-# Prototype 0.4 — Phase 2 implementation record
+# Prototype 0.5 — Phase 2 implementation record
 
 The first playable slice uses Godot 4.6.3, selected with the user's approval because Unreal Engine is not available in the current environment. The Unreal-oriented production design remains the long-term reference. This implementation establishes the combat loop and explicit system boundaries in a runnable project.
 
@@ -14,9 +14,13 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 
 ## Validation
 
+The v0.5 Linux and Web release exports build successfully, and the Linux Movement Lab launches. Native hip, ADS, and reload views for all three weapons have been rendered and inspected.
+
+Version 0.5 replaces the shared weapon primitive with three original multipart GLBs and a four-bone arm rig. Reload poses follow the existing ammo-transfer stages, with retained magazine state after interruption. Action cycling, sidearm lock-open, true muzzle sockets, and capped cosmetic casings are integrated. See [first-person art notes](PHASE_2_FIRST_PERSON.md).
+
 Version 0.4 adds slope-driven slide acceleration, a connected gallery descent, three additional PBR surface sets, and the first skeletal elite. See [slope and elite notes](PHASE_2_SLOPES_AND_ELITE.md). The elite uses a frozen skeletal pose attached to the corpse torso; per-bone physical animation remains unfinished.
 
-The current pass passes **130 checks**: 47 core gameplay checks, 38 Phase 1 checks, 21 mantle/vault checks, 5 environment-art checks, 10 slope-movement checks, and 9 skeletal-elite checks. See [Phase 2 notes](PHASE_2_TRAVERSAL_AND_ART.md) for the new actions, asset sources, and remaining art work.
+The current pass passes **154 checks**: 47 core gameplay checks, 38 Phase 1 checks, 21 mantle/vault checks, 5 environment-art checks, 10 slope-movement checks, 9 skeletal-elite checks, and 24 first-person weapon checks. See [Phase 2 notes](PHASE_2_TRAVERSAL_AND_ART.md) for the new actions, asset sources, and remaining art work.
 
 For v0.4, the Linux and Web exports build successfully, the Linux Movement Lab launches, and the native elite render has been inspected.
 
@@ -37,7 +41,7 @@ The suite validates the ten roster totals, first-wave completion, hazard-resolut
 | Production design | First implementation |
 |---|---|
 | UE5 C++/GAS/animation pipeline | Godot CharacterBody3D, explicit state, GDScript components |
-| Hand-keyed skeletal weapons and arms | Shared primitive weapon rig, procedural sway/recoil/reload poses |
+| Hand-keyed skeletal weapons and arms | Original multipart weapon meshes, four-bone arm rig, keyed reload pose curves, procedural sway/recoil; fine finger animation pending |
 | Chamber-aware weapon mechanisms | Magazine/reserve transactions with cancellable out/in stages |
 | Three chosen primary loadouts | Fixed carbine, shotgun, and emergency sidearm |
 | Adaptive pressure estimator | Timed pressure/relief, active caps, attack windup limits |
@@ -53,7 +57,7 @@ The suite validates the ten roster totals, first-wave completion, hazard-resolut
 ## Next implementation priorities
 
 1. Complete human movement-route and wave-pressure playtests on the expanded layout. Tune distances, cover, attack tells, and recovery supply alongside further art replacement.
-2. **Phase 2:** continue environment and remaining enemy models, a first-person skeletal weapon/arms rig, separate weapon meshes, and proper animation integration.
+2. **Phase 2:** continue environment and remaining enemy models, finer finger/hand animation, traversal hand placement, and anatomical skeletal physics.
 3. **Phase 3:** implement gore and final combat feedback, including wound/decal systems with measured budgets. Add anatomical ragdoll constraints and animation blending as the skeletal assets become available.
 4. Continue gameplay milestones separately: executions, destructible props, elite scanner, explicit combat-event ordering, reusable pools, controller/rebinding support, and complete-run automation.
 5. Profile native packaged builds on the reference GPUs before selecting a performance preset or claiming a frame-rate target.

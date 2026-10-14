@@ -328,6 +328,7 @@ func refill_practice_resources() -> void:
 	player.dash_cooldown = 0
 	player.reload_time = 0
 	player.reload_stage = 0
+	player.magazine_seated = [true, true, true]
 	for i in range(3):
 		player.reserve[i] = int(balance.weapons[player.weapon_ids[i]].reserve)
 		player.ammo[i] = int(balance.weapons[player.weapon_ids[i]].magazine) + (player.magazine_bonus if i != 2 else 0)
