@@ -1,0 +1,100 @@
+{
+  "revision": "a82f15448e9b015440d3bbdf5e10801b260c4e9f",
+  "license": "CC-BY-3.0",
+  "attribution": "Juan Linietsky and Fernando Miguel Calabr\u00f3, 2018; original Substance Painter materials provided by GameTextures.com",
+  "modifications": "Extracted five individual meshes; runtime materials reassigned and instances fitted to gameplay collision envelopes. Textures unmodified; import resolution capped.",
+  "models": {
+    "cargo_case_a": {
+      "source_mesh": 6,
+      "triangles": 1696
+    },
+    "cargo_case_b": {
+      "source_mesh": 8,
+      "triangles": 1746
+    },
+    "gas_cylinder": {
+      "source_mesh": 21,
+      "triangles": 312
+    },
+    "industrial_drum": {
+      "source_mesh": 32,
+      "triangles": 624
+    },
+    "safety_barrier": {
+      "source_mesh": 40,
+      "triangles": 872
+    }
+  },
+  "sources": [
+    {
+      "path": "level/geometry/models/props.glb",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/geometry/models/props.glb",
+      "sha256": "4c94cb094c0d84df3cc7d9201d3b59188760c837668afce0446b747c2f40693e"
+    },
+    {
+      "path": "level/textures/props/mid_cargo_box_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/props/mid_cargo_box_albedo.png",
+      "sha256": "62dd09b0f01ecaa643b768e0e4bded5c6223a3398548fa9bc0481030409a0894"
+    },
+    {
+      "path": "level/textures/props/mid_cargo_box_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/props/mid_cargo_box_normal.png",
+      "sha256": "a692d09b905a9d55e4acc9382df130ef271576bb12e6ba7b13f94e323eeed5bb"
+    },
+    {
+      "path": "level/textures/props/mid_cargo_box_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/props/mid_cargo_box_orm.png",
+      "sha256": "0c1124b91cdb9f84e84bfc59629142454c96acba5dacd482c32db1718a0f1529"
+    },
+    {
+      "path": "level/textures/structure/tile_simple_floor_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_simple_floor_albedo.png",
+      "sha256": "0b2acd854606a93616f058cafa94ea7ae581cfbbc131580e65baebe69c80c036"
+    },
+    {
+      "path": "level/textures/structure/tile_simple_floor_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_simple_floor_normal.png",
+      "sha256": "29b25d96df7c23eb0969885825b93bb2aade12b6f64f228afdb5e061b02216c5"
+    },
+    {
+      "path": "level/textures/structure/tile_simple_floor_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_simple_floor_orm.png",
+      "sha256": "bbc7c21da5845d21926234d092fcd3dd0ae7f184f676e1aad76bb58e1c70263c"
+    },
+    {
+      "path": "level/textures/structure/tile_default_metal_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_default_metal_albedo.png",
+      "sha256": "eb68b583c6945706291e16037d49f92d1ff8d4b936345161e248b687f64f6578"
+    },
+    {
+      "path": "level/textures/structure/tile_default_metal_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_default_metal_normal.png",
+      "sha256": "d9eec3f6e09f8061616ea63ff3be8f1bf9fd2f05149f370e74e95b6a46a9b783"
+    },
+    {
+      "path": "level/textures/structure/tile_default_metal_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_default_metal_orm.png",
+      "sha256": "afac9939f6a8329c8be11a6de3cb174d1a19c36b2b560b94f1eb79689b4c2fb2"
+    },
+    {
+      "path": "level/textures/structure/tile_painted_gun_metal_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_painted_gun_metal_albedo.png",
+      "sha256": "0a607b5184ecb5d6b2b4bb1aa8b71963a13d1e2830710a0545dd0f41210f02f3"
+    },
+    {
+      "path": "level/textures/structure/tile_painted_gun_metal_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_painted_gun_metal_normal.png",
+      "sha256": "4449828e3a13f66b5de579d7c1de72c8931835be355b0425b96f8a39603621dd"
+    },
+    {
+      "path": "level/textures/structure/tile_painted_gun_metal_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_painted_gun_metal_orm.png",
+      "sha256": "32ac6bdef62596d03db3bf0c224aefd1b63a68658d5f349bc043eacfa599f621"
+    },
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/LICENSE.md",
+      "sha256": "f7bf763d4c378425b99a5abfe42f49bb03fc530e9721cc5943072becf348caff"
+    }
+  ]
+}

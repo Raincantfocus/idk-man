@@ -1,4 +1,6 @@
 extends Node3D
+const ArtScript = preload("res://scripts/industrial_art.gd")
+var art = ArtScript.new()
 ## Phase 1: three connected elevations, shared geometry/navigation definitions.
 
 const BOUNDS := Rect2(-48, -40, 96, 80)
@@ -11,7 +13,9 @@ const PRACTICE_ROUTES := [
 	{"name": "OBSERVATION DECK", "point": Vector3(0, 8.45, -29), "yaw": PI},
 	{"name": "GANTRY JUMP", "point": Vector3(0, 8.45, -9), "yaw": PI},
 	{"name": "WALL-RUN LANE", "point": Vector3(40, 0.05, 30), "yaw": 0.0},
-	{"name": "SLIDE TUNNEL", "point": Vector3(-12, 0.05, 32), "yaw": 0.0}
+	{"name": "SLIDE TUNNEL", "point": Vector3(-12, 0.05, 32), "yaw": 0.0},
+	{"name": "VAULT BAY", "point": Vector3(-5, 0.05, 32), "yaw": 0.0},
+	{"name": "MANTLE BAY", "point": Vector3(5, 0.05, 25), "yaw": 0.0}
 ]
 var navigation := AStar3D.new()
 var spawn_points: Array[Vector3] = [
@@ -76,23 +80,20 @@ func label_3d(text: String, pos: Vector3, size: int = 100, color: Color = Color(
 	return label
 
 func build() -> void:
-	concrete = material(Color("454f51"))
-	dark = material(Color("172528"), 0.4)
-	steel = material(Color("627172"), 0.7)
+	art.setup()
+	concrete = art.pbr("tile_default_metal", 0.5)
+	dark = art.pbr("tile_painted_gun_metal", 0.5)
+	steel = art.pbr("tile_default_metal", 1.0)
 	acid = material(Color("d1e985"), 0.1, 0.8)
 	amber = material(Color("f1a24d"), 0.1, 1.0)
-	var floor_mat := material(Color("283436"), 0.25)
+	var floor_mat := art.pbr("tile_simple_floor", 0.25)
 	box(Vector3(0, -0.5, 0), Vector3(96, 1, 80), floor_mat)
 	surfaces.append({"rect": Rect2(-47, -39, 94, 78), "low": 0.0, "high": 0.0})
 	box(Vector3(0, 9, -40), Vector3(96, 18, 1), concrete)
 	box(Vector3(0, 9, 40), Vector3(96, 18, 1), concrete)
 	box(Vector3(-48, 9, 0), Vector3(1, 18, 80), concrete)
 	box(Vector3(48, 9, 0), Vector3(1, 18, 80), concrete)
-	# Floor seams and the yellow testing boundary are unlit, inexpensive geometry.
-	for x in range(-44, 48, 4):
-		box(Vector3(x, 0.008, 0), Vector3(0.035, 0.008, 78), dark, false)
-	for z in range(-36, 40, 4):
-		box(Vector3(0, 0.009, z), Vector3(94, 0.008, 0.035), dark, false)
+	# The PBR floor supplies seams and surface detail without separate seam meshes.
 	for x in [-11, 11]:
 		box(Vector3(x, 0.018, 0), Vector3(0.10, 0.012, 25), acid, false)
 	for z in [-12.5, 12.5]:
@@ -106,9 +107,7 @@ func build() -> void:
 	label_3d("K—17", Vector3(0, 2.0, 1.515), 110)
 	label_3d("KINETIC EVALUATION / CORE", Vector3(0, 0.75, 1.52), 24, Color("aebeb7"))
 	for pos in [Vector3(-9, 0.65, 5), Vector3(9, 0.65, -6), Vector3(-13, 0.65, -9), Vector3(13, 0.65, 9), Vector3(6.7, 0.65, 7)]:
-		box(pos, Vector3(3.8, 1.3, 1.5), concrete, true, true)
-		box(pos + Vector3(0, 0.68, 0), Vector3(3.9, 0.08, 1.6), steel)
-		box(pos + Vector3(0, 0.43, 0.76), Vector3(3.2, 0.12, 0.025), acid, false)
+		cargo_cover(pos, Vector3(3.8, 1.3, 1.5))
 	# Broad, connected decks: both sides have independent ground and upper ramps.
 	platform(Rect2(-38, -22, 18, 36), MID_HEIGHT)
 	platform(Rect2(20, -22, 18, 36), MID_HEIGHT)
@@ -126,7 +125,7 @@ func build() -> void:
 		# Gallery edge barriers leave deliberately open jump/drop access points.
 		for z in [-19, 5]:
 			box(Vector3(side * 20.1, 4.75, z), Vector3(0.20, 1.1, 5), steel, true, true)
-		box(Vector3(side * 33, 4.85, 3), Vector3(3.8, 1.3, 1.5), concrete, true, true)
+		cargo_cover(Vector3(side * 33, 4.85, 3), Vector3(3.8, 1.3, 1.5))
 		label_3d("02 / GALLERY", Vector3(side * 30, 6.8, -21.6), 58, Color("d1e985"))
 	# Upper gantry with a measured four-meter jump gap. The far pad is player-only.
 	platform(Rect2(-3, -22, 6, 18), HIGH_HEIGHT)
@@ -135,7 +134,7 @@ func build() -> void:
 		box(Vector3(0, 8.42, z), Vector3(6, 0.02, 0.12), amber, false)
 	label_3d("4m / GAP", Vector3(0, 9.0, -5.2), 34, Color("f1a24d"), PI)
 	for x in [-13, 13]:
-		box(Vector3(x, 9.05, -28), Vector3(4.5, 1.3, 1.5), concrete, true, true)
+		cargo_cover(Vector3(x, 9.05, -28), Vector3(4.5, 1.3, 1.5))
 	label_3d("03 / OBSERVATION", Vector3(0, 11.3, -33.5), 100, Color("d1e985"))
 	# Jumpable ledges rise in 70 cm increments toward the east gallery.
 	var ledges := [Vector3(10, 0.7, 26), Vector3(14, 1.4, 26), Vector3(18, 2.1, 26), Vector3(18, 2.8, 21), Vector3(18, 3.5, 16)]
@@ -153,12 +152,22 @@ func build() -> void:
 	label_3d("LEDGE ROUTE", Vector3(15, 2.8, 30), 48, Color("d1e985"))
 	label_3d("RAMP / 02", Vector3(-26, 2.0, 31), 46, Color("d1e985"))
 	label_3d("RAMP / 02", Vector3(26, 2.0, 31), 46, Color("d1e985"))
+	# Clear practice approaches for the new traversal actions.
+	authored_prop("safety_barrier", Vector3(-5, 0.55, 28), Vector3(3.5, 1.1, 0.65))
+	cargo_cover(Vector3(5, 0.825, 21), Vector3(3.0, 1.65, 2.5), 2)
+	label_3d("SPACE / VAULT", Vector3(-5, 1.9, 28.4), 35, Color("d1e985"))
+	label_3d("SPACE / MANTLE", Vector3(5, 2.5, 22.3), 35, Color("d1e985"))
+	for side in [-1, 1]:
+		for z in [-28, -8, 16]:
+			authored_prop("industrial_drum", Vector3(side * 45, 0.7, z), Vector3(1.2, 1.4, 0.75))
+		for z in [-30, -32]:
+			authored_prop("gas_cylinder", Vector3(side * 35, 9.25, z), Vector3(0.45, 1.7, 0.30))
 	# Open run-up areas, rather than extra obstacles filling the expanded floor.
 	for x in [-42, -28, -14, 0, 14, 28, 42]:
 		box(Vector3(x, 17, 0), Vector3(0.25, 0.35, 80), dark, false)
 		box(Vector3(x, 16.75, -2), Vector3(0.12, 0.10, 60), acid, false)
 	label_3d("ZERO / LINE", Vector3(0, 14, -39.4), 200)
-	label_3d("PHASE 01 / MOVEMENT EVALUATION", Vector3(0, 4, 39.4), 90, Color("d1e985"), PI)
+	label_3d("PHASE 02 / TRAVERSAL EVALUATION", Vector3(0, 4, 39.4), 90, Color("d1e985"), PI)
 	for i in spawn_points.size():
 		var p := spawn_points[i]
 		box(p + Vector3(0, -0.075, 0), Vector3(3, 0.025, 3), amber, false)
@@ -190,6 +199,22 @@ func build() -> void:
 		light.omni_range = 24
 		add_child(light)
 	_build_navigation()
+
+func authored_prop(model_name: String, center: Vector3, size: Vector3) -> Node3D:
+	var body := box(center, size, dark, true, true)
+	body.get_child(0).visible = false
+	art.add_model(body, model_name, Vector3(0, -size.y / 2, 0), size)
+	return body
+
+func cargo_cover(center: Vector3, size: Vector3, rows: int = 1) -> Node3D:
+	var body := box(center, size, dark, true, true)
+	body.get_child(0).visible = false
+	for row in rows:
+		for side in [-1, 1]:
+			var dimensions := Vector3(size.x / 2, size.y / rows, size.z)
+			var foot := Vector3(side * size.x / 4, -size.y / 2 + row * dimensions.y, 0)
+			art.add_model(body, "cargo_case_a" if side < 0 else "cargo_case_b", foot, dimensions)
+	return body
 
 func platform(rect: Rect2, height: float, ai_accessible: bool = true) -> void:
 	box(Vector3(rect.get_center().x, height - 0.2, rect.get_center().y), Vector3(rect.size.x, 0.4, rect.size.y), dark)

@@ -51,6 +51,7 @@ var shop_message: String = ""
 var paused_state: String = ""
 var capture_path: String = ""
 var capture_frames: int = 0
+var capture_limit: int = 90
 var is_test: bool = false
 var completed_reward: bool = false
 var pause_from_focus: bool = false
@@ -91,6 +92,8 @@ func _ready() -> void:
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture="):
 			capture_path = arg.trim_prefix("--capture=")
+		if arg.begins_with("--capture-frames="):
+			capture_limit = maxi(1, int(arg.trim_prefix("--capture-frames=")))
 		if arg == "--showcase":
 			start_run()
 			for p in [Vector3(-5, 0.1, 7), Vector3(5, 0.1, 3), Vector3(-7, 0.1, -5)]:
@@ -100,6 +103,10 @@ func _ready() -> void:
 			spawn_pickup(Vector3(-1, 0.3, 9), "armor")
 		if arg == "--movement-lab":
 			start_run(true)
+		if arg == "--art-showcase":
+			start_run(true)
+			player.position = Vector3(-8, 0.05, 31)
+			player.rotation.y = -0.55
 
 func _bind_inputs() -> void:
 	var keys := {"forward": KEY_W, "back": KEY_S, "left": KEY_A, "right": KEY_D, "jump": KEY_SPACE, "sprint": KEY_SHIFT, "slide": KEY_CTRL, "dash": KEY_ALT, "reload": KEY_R, "focus": KEY_Q, "shroud": KEY_E, "melee": KEY_F, "weapon_0": KEY_1, "weapon_1": KEY_2, "weapon_2": KEY_3, "accept": KEY_ENTER, "pause": KEY_ESCAPE, "training_dummy": KEY_T}
@@ -184,7 +191,7 @@ func _process(delta: float) -> void:
 				_finish_wave()
 	if capture_path != "":
 		capture_frames += 1
-		if capture_frames == 90:
+		if capture_frames == capture_limit:
 			await RenderingServer.frame_post_draw
 			var image := get_viewport().get_texture().get_image()
 			var error := image.save_png(capture_path)
@@ -332,6 +339,7 @@ func cycle_practice_route() -> void:
 	var route: Dictionary = arena.PRACTICE_ROUTES[practice_route]
 	player.end_ability()
 	player.position = route.point
+	player.traversal.cancel()
 	player.rotation.y = route.yaw
 	player.pitch = 0
 	player.velocity = Vector3.ZERO

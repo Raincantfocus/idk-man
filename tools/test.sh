@@ -3,3 +3,5 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 "${GODOT_BIN:-godot}" --headless --path . --script tests/smoke.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/phase1.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/traversal.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/industrial_art.gd

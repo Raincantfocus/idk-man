@@ -1,4 +1,6 @@
 extends CharacterBody3D
+const TraversalScript = preload("res://scripts/traversal.gd")
+var traversal = TraversalScript.new()
 
 var game
 var camera := Camera3D.new()
@@ -54,6 +56,7 @@ var visual_roll: float = 0.0
 
 func setup(owner_game) -> void:
 	game = owner_game
+	traversal.setup(self)
 	name = "Operator"
 	collision_layer = 4
 	collision_mask = 3
@@ -143,6 +146,7 @@ func _physics_process(delta: float) -> void:
 	hit_timer = maxf(0, hit_timer - dt)
 	hurt = maxf(0, hurt - dt * 1.5)
 	slide_lock = maxf(0, slide_lock - dt)
+	traversal.cooldown = maxf(0, traversal.cooldown - dt)
 	_abilities(dt)
 	_reload_tick(dt)
 	if Input.is_action_just_pressed("reload"):
@@ -161,8 +165,15 @@ func _physics_process(delta: float) -> void:
 	_visuals(dt)
 
 func _move_player(dt: float) -> void:
+	if traversal.active:
+		traversal.step(dt)
+		return
 	var input := Input.get_vector("left", "right", "forward", "back")
 	var direction := (transform.basis * Vector3(input.x, 0, input.y)).normalized()
+	var grab := Input.is_action_just_pressed("jump") or (Input.is_action_pressed("jump") and not is_on_floor() and velocity.y <= 1.0)
+	if grab and input.y < -0.5 and dash_time <= 0 and slide_time <= 0 and traversal.try_start(-global_basis.z):
+		traversal.step(dt)
+		return
 	var flat := Vector3(velocity.x, 0, velocity.z)
 	if Input.is_action_just_pressed("jump"):
 		jump_buffer = 0.12
@@ -440,6 +451,7 @@ func take_damage(amount: float, source: Vector3, armor_fraction: float = 0.75) -
 	game.combo = maxf(1, game.combo - 0.5)
 	game.sound.play_cue("hurt")
 	if health <= 0:
+		traversal.cancel()
 		end_ability()
 		game.defeat()
 
@@ -458,6 +470,9 @@ func _visuals(dt: float) -> void:
 	target_pos += Vector3(sin(bob) * bob_strength, cos(bob * 2) * bob_strength, recoil)
 	target_pos.x -= clampf(look_delta.x * 0.1, -0.025, 0.025)
 	var tilt := Vector3.ZERO
+	if traversal.active:
+		target_pos.y -= 0.10
+		tilt.x = -0.15
 	if reload_time > 0:
 		var phase := sin((1 - reload_time / reload_total) * PI)
 		target_pos += Vector3(0.08, -0.15, 0.08) * phase

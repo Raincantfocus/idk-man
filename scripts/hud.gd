@@ -83,7 +83,7 @@ func _menu() -> void:
 		var alpha := 0.90 * (1 - float(i) / 48)
 		rect(Vector2(i * 36, 0), Vector2(36, 900), Color(0.025, 0.045, 0.047, alpha))
 	rect(Vector2.ZERO, Vector2(1440, 900), Color(0.025, 0.04, 0.04, 0.12))
-	_brand_header("RESTRICTED ACCESS    /    BUILD 0.2 · PHASE 1")
+	_brand_header("RESTRICTED ACCESS    /    BUILD 0.3 · PHASE 2")
 	tracked("KINETIC SURVIVAL TRIAL", Vector2(64, 166), 14, 4, acid)
 	text("PROJECT:", Vector2(60, 228), 33, ink)
 	text("ZERO", Vector2(52, 367), 146, ink)
@@ -120,6 +120,7 @@ func _settings_footer() -> void:
 	text("H  CAMERA MOTION " + ("ON" if game.camera_motion > 0 else "OFF"), Vector2(390, 850), 12, muted)
 	text("[ / ]  SENSITIVITY %.1f" % (game.mouse_sensitivity * 1000), Vector2(668, 850), 12, muted)
 	right("GODOT 4.6   /   PLAYABLE PROTOTYPE", Vector2(1392, 850), 12, muted)
+	text("Environment art: Juan Linietsky & Fernando Miguel Calabró · CC BY 3.0 · Original materials: GameTextures.com", Vector2(48, 882), 11, muted)
 
 func _combat() -> void:
 	var p = game.player
@@ -185,7 +186,7 @@ func _combat() -> void:
 	right("%02d" % p.ammo[p.weapon_index], Vector2(1325, 832), 48, acid if p.ammo[p.weapon_index] > 0 else red)
 	right("/ " + ("INF" if p.weapon_index == 2 else "%03d" % p.reserve[p.weapon_index]), Vector2(1390, 827), 18, muted)
 	text(p.mode, Vector2(50, 887), 10, muted)
-	right("WASD  MOVE    SHIFT  SPRINT    C/CTRL  SLIDE    X/ALT  DASH    SPACE  JUMP    R  RELOAD    1/2/3  WEAPON    F  MELEE    ESC  PAUSE", Vector2(1392, 887), 10, muted)
+	right("WASD  MOVE    SHIFT  SPRINT    C/CTRL  SLIDE    X/ALT  DASH    SPACE  JUMP / CLIMB    R  RELOAD    1/2/3  WEAPON    F  MELEE    ESC  PAUSE", Vector2(1392, 887), 10, muted)
 	# Readable grenade indicators stay separate from decorative particles.
 	for projectile in game.get_tree().get_nodes_in_group("projectile"):
 		if projectile.grenade and not p.camera.is_position_behind(projectile.global_position):
@@ -270,6 +271,7 @@ func _pause() -> void:
 		text(controls[i][1], Vector2(950, y), 13, muted)
 	text("Hold jump beside a wall at speed to wall-run.", Vector2(720, 632), 15, muted)
 	text("Slide into enemies to stagger them. Run over drops to heal.", Vector2(720, 661), 15, muted)
+	text("Move into cover + Space to vault or mantle. V: lab route.", Vector2(720, 690), 15, muted)
 	rule(816)
 	_settings_footer()
 

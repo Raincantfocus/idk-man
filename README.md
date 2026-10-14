@@ -2,7 +2,7 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Phase 1 / version 0.2:** the arena now spans 96 × 80 meters, with connected 0 m, 4.2 m, and 8.4 m elevations, dedicated traversal routes, a Movement Lab, and initial articulated ragdolls. Original procedural geometry, weapon primitives, and generated audio remain in place. Proper models/animations belong to Phase 2; gore and final combat polish belong to Phase 3.
+**Phase 2 / version 0.3:** mantle and vault across the 96 × 80 m, three-tier arena. The first art pass replaces cover with authored industrial models and adds PBR floor/metal textures. The Movement Lab now has eight practice routes, including dedicated vault and mantle bays. Enemy bodies, first-person weapons/arms, and animation remain prototypes; their replacement is the next Phase 2 art pass. Gore and final combat polish remain Phase 3.
 
 ## Play
 
@@ -24,7 +24,7 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
-Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between six practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [Phase 1 route guide](docs/PHASE_1_MOVEMENT.md) for ramp, ledge, wall-run, and jump-gap locations. The command-line equivalent is `godot --path . -- --movement-lab`.
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between eight practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [route guide](docs/PHASE_1_MOVEMENT.md) and [mantle/vault and art notes](docs/PHASE_2_TRAVERSAL_AND_ART.md). The command-line equivalent is `godot --path . -- --movement-lab`.
 
 ## Controls
 
@@ -34,7 +34,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | Left / right mouse | Fire / aim down sights |
 | Shift | Sprint |
 | C or Ctrl | Slide while sprinting; crouch otherwise |
-| Space | Jump; hold beside a wall at speed to wall-run |
+| Space | Jump; move toward cover to vault/mantle; hold in the air to catch a reachable ledge or wall-run beside a wall |
 | X or Alt | Directional dash; two rechargeable charges |
 | Q | Toggle Focus; world slow motion with normal player speed |
 | E | Toggle Shroud; ordinary AI loses sight and searches last position |
@@ -42,7 +42,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | 1 / 2 / 3 | Carbine / shotgun / emergency sidearm |
 | Escape / Enter | Pause / resume or advance the trial |
 | T in Movement Lab | Place a target and refill resources |
-| V in Movement Lab | Cycle through six movement-route checkpoints |
+| V in Movement Lab | Cycle through eight movement-route checkpoints |
 | M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
 | [ / ] in menus | Adjust mouse sensitivity |
 
@@ -52,6 +52,8 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 - A 96 × 80 m industrial arena with paired ramps, two galleries, a crossbridge, upper observation deck, gantry jump, ascending ledges, long wall-run lanes, and a slide tunnel.
 - Accelerated movement, buffered jumps, bounded air momentum, crouching/sliding, slide-kicks, wall-running, and swept directional dashes.
+- Collision-checked mantles up to 1.85 m above your feet and vaults across shallow cover up to 1.4 m high. Focus preserves traversal speed, and weapons remain usable.
+- Five authored industrial mesh types with shared PBR atlases, normal maps, roughness/metallic/AO maps, mipmaps, and compressed texture imports. Original creators and modifications are credited in the [third-party notices](THIRD_PARTY_NOTICES.md).
 - Hitscan primary weapons, muzzle obstruction checks, ADS, recoil, reload stages, finite primary reserves, and an infinite-reserve emergency sidearm.
 - Enforcer, rusher, shield, flusher, and elite prototypes; three-dimensional grid navigation across connected levels, visible projectiles, grenade warnings, and cloak-aware visual perception.
 - Ten data-driven rosters, spawn reservations and telegraphs, population caps, pressure/relief intervals, hazard resolution, credits, five purchases, and endless escalation.
@@ -98,6 +100,8 @@ See [prototype status](docs/PROTOTYPE_STATUS.md) for the validation record and n
 |---|---|
 | `scripts/game.gd` | Run state, director, rewards, upgrades, effects, persistence |
 | `scripts/player.gd` | Movement, weapons, reloads, abilities, player attributes |
+| `scripts/traversal.gd` | Ledge probes, vault/mantle routes, swept movement, and cancellation |
+| `scripts/industrial_art.gd` | Shared PBR materials and fitted authored model instances |
 | `scripts/enemy.gd` | Enemy navigation, perception, attacks, damage |
 | `scripts/projectile.gd` | Swept enemy projectiles, grenades, explosions |
 | `scripts/pickup.gd` | Physical drop presentation and resource transactions |
@@ -108,5 +112,7 @@ See [prototype status](docs/PROTOTYPE_STATUS.md) for the validation record and n
 | `data/trial_balance.json` | Weapon, enemy, and wave tuning |
 | `tests/smoke.gd` | Automated gameplay/physics regression checks |
 | `tests/phase1.gd` | Three-tier navigation, real traversal, and ragdoll checks |
+| `tests/traversal.gd` | Mantle/vault collision, input, timing, pause, and lifecycle checks |
+| `tests/industrial_art.gd` | Imported model/material integration and collision alignment |
 
-The engine and its bundled dependencies have their own licenses. See [third-party notices](THIRD_PARTY_NOTICES.md). No commercial-game assets are included.
+The engine, its dependencies, and the industrial art have their own licenses. See [third-party notices](THIRD_PARTY_NOTICES.md). No assets from Trepang2 or Call of Duty are included.

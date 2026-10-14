@@ -5,7 +5,7 @@ import zipfile
 root = Path(__file__).resolve().parents[1]
 output = root / "build"
 output.mkdir(exist_ok=True)
-roots = ["data", "docs", "scenes", "scripts", "tests", "tools", "third_party"]
+roots = ["assets", "data", "docs", "scenes", "scripts", "tests", "tools", "third_party"]
 files = [root / name for name in [
     ".gitignore", "project.godot", "export_presets.cfg", "icon.svg",
     "icon.svg.import", "README.md", "THIRD_PARTY_NOTICES.md",

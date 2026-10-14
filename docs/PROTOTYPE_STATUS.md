@@ -1,4 +1,4 @@
-# Prototype 0.2 — Phase 1 implementation record
+# Prototype 0.3 — Phase 2 implementation record
 
 The first playable slice uses Godot 4.6.3, selected with the user's approval because Unreal Engine is not available in the current environment. The Unreal-oriented production design remains the long-term reference. This implementation establishes the combat loop and explicit system boundaries in a runnable project.
 
@@ -14,7 +14,9 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 
 ## Validation
 
-The current improvement pass passes **85 checks**: 47 core gameplay checks and 38 Phase 1 checks.
+The current pass passes **111 checks**: 47 core gameplay checks, 38 Phase 1 checks, 21 mantle/vault checks, and 5 art integration checks. See [Phase 2 notes](PHASE_2_TRAVERSAL_AND_ART.md) for the new actions, asset sources, and remaining art work.
+
+For v0.3, both Linux and Web exports built successfully, and the fresh Linux export launched in Movement Lab. Native renders of the new environment models and textures were inspected. Chromium verified Web startup, pointer capture, pause/resume, combat inputs, and Movement Lab with no browser or runtime console errors. Browser screenshots were skipped under software rendering; visual inspection used the native renderer. These checks do not establish gaming-GPU frame rates.
 
 The gameplay suite executes 47 checks and exits nonzero on any failure. It covers actual physics raycasts and resource transactions as well as pure balance/state checks. All 47 passed in Godot 4.6.3 after fixing a Focus transition issue: changing global time scale in the middle of a tick must not change the player's action step or use the new scale against the previous tick's delta. Normal and Focus sprinting traveled approximately 2.17708 meters over the same 42 physics ticks in the regression test.
 
