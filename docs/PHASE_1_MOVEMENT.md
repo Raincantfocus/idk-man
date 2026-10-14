@@ -21,7 +21,9 @@ The central reactor and low cover retain the previous close-range fighting space
 
 ## Movement Lab
 
-Select **Movement Lab / Free Practice** from the title screen. Waves are disabled. Stationary damageable targets begin on the ground, west gallery, and upper deck. The speed/height HUD helps compare movement routes. **T** places a target near the point six meters ahead, snapped to a navigable surface, and refills health, armor, ability energy, and ammunition reserves. Six living targets are retained at most. Reload normally to refill a magazine.
+Select **Movement Lab / Free Practice** from the title screen. Waves are disabled. Stationary damageable targets begin on the ground, west gallery, and upper deck. The speed/height HUD helps compare movement routes. **T** places a target near the point six meters ahead, snapped to a navigable surface, and refills health, armor, ability energy, magazines, ammunition reserves, and dash charges. Six living targets are retained at most. Refilling cancels any pending reload transaction.
+
+**V** cycles between the ground run-up, west gallery, observation deck, gantry jump, wall-run lane, and slide tunnel. Each checkpoint restores resources, faces the route, and clears velocity, active abilities, and pending slide/dash/jump state. These shortcuts are disabled during normal trials. Standing up after crouching now checks the entire capsule volume, preventing expansion into a roof edge even when the player's center has cleared it.
 
 Shoot a target to test the death-to-ragdoll transition and recovery drops. Test Focus while a body falls, pause mid-fall, and restart from the pause menu. Restart preserves lab mode and clears all corpses and drops. Practice scores are excluded from the persistent best score. Use **Return to Title** in the pause menu to switch back to a normal trial.
 

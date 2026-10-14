@@ -5,6 +5,14 @@ const BOUNDS := Rect2(-48, -40, 96, 80)
 const PLAYER_START := Vector3(0, 0.05, 31)
 const MID_HEIGHT := 4.2
 const HIGH_HEIGHT := 8.4
+const PRACTICE_ROUTES := [
+	{"name": "GROUND RUN-UP", "point": PLAYER_START, "yaw": 0.0},
+	{"name": "WEST GALLERY", "point": Vector3(-26, 4.25, 10), "yaw": 0.0},
+	{"name": "OBSERVATION DECK", "point": Vector3(0, 8.45, -29), "yaw": PI},
+	{"name": "GANTRY JUMP", "point": Vector3(0, 8.45, -9), "yaw": PI},
+	{"name": "WALL-RUN LANE", "point": Vector3(40, 0.05, 30), "yaw": 0.0},
+	{"name": "SLIDE TUNNEL", "point": Vector3(-12, 0.05, 32), "yaw": 0.0}
+]
 var navigation := AStar3D.new()
 var spawn_points: Array[Vector3] = [
 	Vector3(-26, 0.1, 34), Vector3(26, 0.1, 34),

@@ -4,6 +4,7 @@ var game
 var camera := Camera3D.new()
 var weapon_root := Node3D.new()
 var capsule := CollisionShape3D.new()
+var standing_shape := CapsuleShape3D.new()
 var health: float = 100.0
 var armor: float = 75.0
 var focus: float = 100.0
@@ -62,6 +63,8 @@ func setup(owner_game) -> void:
 	shape.radius = 0.34
 	shape.height = 1.72
 	capsule.shape = shape
+	standing_shape.radius = shape.radius
+	standing_shape.height = shape.height
 	capsule.position.y = 0.86
 	add_child(capsule)
 	camera.position.y = 1.55
@@ -239,10 +242,9 @@ func _move_player(dt: float) -> void:
 		velocity.y -= (3.0 if wall_side != 0 else 14.7) * dt
 	elif velocity.y < 0:
 		velocity.y = -0.1
-	# Block capsule expansion under the slide tunnel.
-	if not crouch:
-		var ceiling := PhysicsRayQueryParameters3D.create(global_position + Vector3(0, 0.6, 0), global_position + Vector3(0, 1.85, 0), 1)
-		crouch = not get_world_3d().direct_space_state.intersect_ray(ceiling).is_empty()
+	# Check the whole standing volume, including roof edges beside our center.
+	if not crouch and capsule.shape.height < 1.72:
+		crouch = not can_stand()
 	capsule.shape.height = 1.0 if crouch else 1.72
 	capsule.position.y = capsule.shape.height / 2
 	camera.position.y = lerpf(camera.position.y, 0.90 if crouch else 1.55, minf(1, dt * 16))
@@ -265,6 +267,15 @@ func _move_player(dt: float) -> void:
 		var limited := Vector3(velocity.x, 0, velocity.z).limit_length(11)
 		velocity.x = limited.x
 		velocity.z = limited.z
+
+func can_stand() -> bool:
+	var query := PhysicsShapeQueryParameters3D.new()
+	query.shape = standing_shape
+	query.transform = global_transform.translated_local(Vector3.UP * 0.88)
+	query.collision_mask = collision_mask
+	query.exclude = [get_rid()]
+	query.margin = 0.005
+	return get_world_3d().direct_space_state.intersect_shape(query, 1).is_empty()
 
 func _slide_kick() -> void:
 	if slide_time < 0.55:

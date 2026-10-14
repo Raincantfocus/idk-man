@@ -140,7 +140,7 @@ func _combat() -> void:
 	if not game.practice:
 		text("/ " + ("10" if game.wave <= 10 else "END"), Vector2(184, 85), 20, muted)
 	else:
-		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
+		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL   |   V: NEXT ROUTE" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
 	var total: int = game.enemies.size() + game.queue.size() + game.pending.size()
 	rect(Vector2(280, 28), Vector2(155, 78), panel)
 	text("THREATS", Vector2(297, 50), 11, muted)

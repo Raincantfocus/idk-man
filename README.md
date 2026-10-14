@@ -24,7 +24,7 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
-Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, and reserve ammunition. The HUD shows movement speed and height. Practice does not submit a best score. See the [Phase 1 route guide](docs/PHASE_1_MOVEMENT.md) for ramp, ledge, wall-run, and jump-gap locations. The command-line equivalent is `godot --path . -- --movement-lab`.
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between six practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [Phase 1 route guide](docs/PHASE_1_MOVEMENT.md) for ramp, ledge, wall-run, and jump-gap locations. The command-line equivalent is `godot --path . -- --movement-lab`.
 
 ## Controls
 
@@ -42,6 +42,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | 1 / 2 / 3 | Carbine / shotgun / emergency sidearm |
 | Escape / Enter | Pause / resume or advance the trial |
 | T in Movement Lab | Place a target and refill resources |
+| V in Movement Lab | Cycle through six movement-route checkpoints |
 | M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
 | [ / ] in menus | Adjust mouse sensitivity |
 

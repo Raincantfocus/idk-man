@@ -14,9 +14,11 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 
 ## Validation
 
+The current improvement pass passes **85 checks**: 47 core gameplay checks and 38 Phase 1 checks.
+
 The gameplay suite executes 47 checks and exits nonzero on any failure. It covers actual physics raycasts and resource transactions as well as pure balance/state checks. All 47 passed in Godot 4.6.3 after fixing a Focus transition issue: changing global time scale in the middle of a tick must not change the player's action step or use the new scale against the previous tick's delta. Normal and Focus sprinting traveled approximately 2.17708 meters over the same 42 physics ticks in the regression test.
 
-The Phase 1 suite adds 32 passing checks: navigation connectivity for both ramp chains and all ten spawn points, actual player ascent on all four ramps, slide-tunnel clearance, a running jump across the upper gap, sustained wall-running, and an enemy physically climbing both elevations. Physics checks cover six-body/five-joint ragdoll creation, floor contact, pause, Focus, active/retained limits, settling, restart cleanup, and return to title. The lab and normal trial transitions are also exercised. Combined, **79 checks pass**. Run both suites with `bash tools/test.sh`.
+The Phase 1 suite covers navigation connectivity for both ramp chains and all ten spawn points, actual player ascent on all four ramps, slide-tunnel clearance, a running jump across the upper gap, sustained wall-running, and an enemy physically climbing both elevations. Physics checks cover six-body/five-joint ragdoll creation, floor contact, pause, Focus, active/retained limits, settling, restart cleanup, and return to title. The improvement pass adds full-volume standing clearance at roof edges, practice checkpoint cycling/reset, complete practice refills, and prevention of practice shortcuts during a trial. Run both suites with `bash tools/test.sh`.
 
 The v0.1 native title and combat screens were rendered and inspected through Mesa llvmpipe, and the expanded Phase 1 title screen was rendered and inspected again. The Phase 1 Linux export launches successfully, and both Linux/Web exports build successfully. Source and export ZIP integrity checks pass.
 

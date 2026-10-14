@@ -37,6 +37,25 @@ func run() -> void:
 	game.start_run(true)
 	await ticks(3)
 	check(game.practice and game.wave == 0 and game.queue.is_empty() and game.enemies.size() == 3, "movement lab starts without wave pressure")
+	game.player.ammo[0] = 0
+	game.player.dash_charges = 0
+	game.player.begin_reload()
+	game.refill_practice_resources()
+	check(game.player.ammo[0] == 30 and game.player.dash_charges == 2 and game.player.reload_time == 0, "lab refill restores magazines and dashes without pending reload")
+	game.player.toggle_ability("focus")
+	game.player.dash_time = 0.1
+	game.cycle_practice_route()
+	check(game.player.position.is_equal_approx(Vector3(-26, 4.25, 10)) and game.player.velocity == Vector3.ZERO and game.player.dash_time == 0 and Engine.time_scale == 1, "practice checkpoint clears active movement and Focus")
+	for i in range(game.arena.PRACTICE_ROUTES.size() - 1):
+		game.cycle_practice_route()
+	check(game.practice_route == 0 and game.player.position == game.arena.PLAYER_START, "practice route cycle returns to starting point")
+	# A center ray misses this overhang, but the standing capsule must reject it.
+	game.player.position = Vector3(-12, 0.02, 28.90)
+	await ticks(2)
+	check(not game.player.can_stand(), "standing clearance detects the edge of the slide-tunnel roof")
+	game.player.position = Vector3(-12, 0.02, 30)
+	await ticks(2)
+	check(game.player.can_stand(), "standing clearance accepts unobstructed ground")
 	var arena = game.arena
 	for side in [-1, 1]:
 		var route: PackedVector3Array = arena.path_to(Vector3(side * 26, 0, 33), Vector3(side * 29, 8.4, -30))
@@ -152,6 +171,14 @@ func run() -> void:
 	check(game.state == "menu" and not paused and Engine.time_scale == 1 and get_nodes_in_group("enemy").is_empty(), "return to title clears practice and restores time")
 	game.start_run()
 	check(not game.practice and game.wave == 1 and game.queue.size() > 0, "normal trial remains available after practice")
+	var trial_position: Vector3 = game.player.position
+	game.player.ammo[0] = 5
+	game.cycle_practice_route()
+	game.refill_practice_resources()
+	check(game.player.position == trial_position and game.player.ammo[0] == 5, "practice shortcuts cannot teleport or refill during a trial")
+	game.sound.stop_all()
+	await create_timer(0.10, true, false, true).timeout
 	game.free()
+	await process_frame
 	print("PHASE 1 RESULT: %d passed, %d failed" % [passed, failed])
 	quit(1 if failed else 0)
