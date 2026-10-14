@@ -25,6 +25,7 @@ var elite_dash: float = 0
 var dash_cooldown: float = 6
 var attack_direction := Vector3.ZERO
 var training_dummy: bool = false
+var animated_visual: Node3D
 
 func setup(owner_game, archetype: String) -> void:
 	game = owner_game
@@ -63,6 +64,13 @@ func setup(owner_game, archetype: String) -> void:
 	if kind == "elite":
 		body.scale = Vector3(1.25, 1.12, 1.25)
 		_piece(Vector3(0, 1.15, -0.21), Vector3(0.10, 0.42, 0.025), glowing)
+	if kind == "elite":
+		for child in body.get_children():
+			if child is MeshInstance3D:
+				child.visible = false
+		animated_visual = preload("res://scripts/elite_visual.gd").new()
+		body.add_child(animated_visual)
+		animated_visual.setup()
 	last_known = game.player.global_position
 	path_timer = game.rng.randf_range(0, 0.25)
 	add_to_group("enemy")
@@ -80,6 +88,8 @@ func _piece(pos: Vector3, size: Vector3, mat: Material) -> MeshInstance3D:
 func _physics_process(delta: float) -> void:
 	if not alive or not game.is_playing() or game.player.health <= 0:
 		return
+	if animated_visual != null:
+		animated_visual.update_pose(delta, Vector2(velocity.x, velocity.z).length(), stagger > 0)
 	if training_dummy:
 		velocity = Vector3(0, velocity.y - 16 * delta, 0)
 		move_and_slide()

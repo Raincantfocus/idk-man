@@ -1,6 +1,6 @@
 # Third-party notices
 
-PROJECT: ZERO-LINE uses Godot Engine 4.6.3. Procedural arena/weapon/enemy geometry and synthesized sounds are authored for this prototype. The initial Phase 2 environment models and PBR textures have the separate attribution below.
+PROJECT: ZERO-LINE uses Godot Engine 4.6.3. Procedural arena/weapon/enemy geometry and synthesized sounds are authored for this prototype. The Phase 2 environment and elite character models, animations, and PBR textures have the separate attribution below.
 
 Godot is distributed under the MIT license. Its embedded third-party libraries and default fonts carry additional notices. The engine's complete license and copyright inventory is available from the pinned source release:
 
@@ -16,6 +16,12 @@ Cargo cases, gas cylinders, industrial drums, safety barriers, and the shared ca
 
 **Copyright © 2018 Juan Linietsky and Fernando Miguel Calabró.** Distributed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/). As the upstream notice states, many original Substance Painter materials were kindly provided by **GameTextures.com**.
 
-Modifications: five meshes extracted from the upstream prop scene into standalone GLBs; material assignments rebuilt for this game; model instances scaled to gameplay collision envelopes. Source textures are unchanged. Godot imports use mipmaps, VRAM compression, and 1K surface/2K atlas resolution limits. No upstream scripts, music, or character assets are included.
+Modifications: five meshes extracted from the upstream prop scene into standalone GLBs; material assignments rebuilt for this game; model instances scaled to gameplay collision envelopes. Source textures are unchanged. Godot imports use mipmaps, VRAM compression, and 1K surface/2K atlas resolution limits. No upstream scripts or music are included.
 
 The complete upstream notice is retained in [third_party/tps-demo/LICENSE.md](third_party/tps-demo/LICENSE.md). Exact source paths, URLs, SHA-256 hashes, mesh selections, and triangle counts are recorded in [assets/industrial/provenance.json](assets/industrial/provenance.json). Reproduce this subset with `python tools/import_phase2_assets.py`. Attribution appears in the game's menu and accompanies source and exported packages. These creators do not endorse this project.
+
+## Animated elite and additional surfaces — CC BY 3.0
+
+The armored robotic elite, its idle/run/flinch clips, armor textures, and anti-slip/riveted/technical panel maps use the same pinned TPS Demo source and attribution above. Character geometry and skin are retained; three animations are selected and unused animation buffers removed. Runtime scale, orientation, materials, playback, and a frozen-pose corpse attachment are adapted for ZERO-LINE. Additional source textures are unchanged; anti-slip normal/ORM files are renamed locally for consistent material loading.
+
+Source URLs and SHA-256 hashes are in [assets/elite/provenance.json](assets/elite/provenance.json). Reproduce with `python tools/import_phase2_character.py`. The original complete CC BY notice accompanies all packages.

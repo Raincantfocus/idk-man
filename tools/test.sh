@@ -5,3 +5,5 @@ cd "$(dirname "$0")/.."
 "${GODOT_BIN:-godot}" --headless --path . --script tests/phase1.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/traversal.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/industrial_art.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/slopes.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/elite_visual.gd

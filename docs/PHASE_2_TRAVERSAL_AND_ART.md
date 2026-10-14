@@ -1,5 +1,7 @@
 # Phase 2, first pass — traversal and industrial art
 
+For the subsequent v0.4 slope and skeletal-elite pass, see [the new notes](PHASE_2_SLOPES_AND_ELITE.md).
+
 Version 0.3 adds mantle/vault movement and begins replacing environment placeholders with authored, textured assets. The established wave loop, abilities, loot economy, and three-tier layout remain available.
 
 ## Playing the new actions

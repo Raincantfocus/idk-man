@@ -43,7 +43,12 @@ func setup(source: Node3D, launch_velocity: Vector3) -> void:
 		part.add_child(collider)
 		bodies[region] = part
 	# Transfer the existing visual pose, including the visor, boots, and held gear.
+	# Keep the first skeletal elite's frozen pose attached to the torso proxy.
+	# Full per-bone physical animation remains a later character-art milestone.
 	for visual in source.get_children():
+		if visual.has_method("freeze_pose"):
+			visual.freeze_pose()
+			visual.reparent(bodies.torso, true)
 		if not visual is MeshInstance3D:
 			continue
 		var region := "torso"

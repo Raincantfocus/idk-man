@@ -1,4 +1,4 @@
-# Prototype 0.3 — Phase 2 implementation record
+# Prototype 0.4 — Phase 2 implementation record
 
 The first playable slice uses Godot 4.6.3, selected with the user's approval because Unreal Engine is not available in the current environment. The Unreal-oriented production design remains the long-term reference. This implementation establishes the combat loop and explicit system boundaries in a runnable project.
 
@@ -14,7 +14,11 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 
 ## Validation
 
-The current pass passes **111 checks**: 47 core gameplay checks, 38 Phase 1 checks, 21 mantle/vault checks, and 5 art integration checks. See [Phase 2 notes](PHASE_2_TRAVERSAL_AND_ART.md) for the new actions, asset sources, and remaining art work.
+Version 0.4 adds slope-driven slide acceleration, a connected gallery descent, three additional PBR surface sets, and the first skeletal elite. See [slope and elite notes](PHASE_2_SLOPES_AND_ELITE.md). The elite uses a frozen skeletal pose attached to the corpse torso; per-bone physical animation remains unfinished.
+
+The current pass passes **130 checks**: 47 core gameplay checks, 38 Phase 1 checks, 21 mantle/vault checks, 5 environment-art checks, 10 slope-movement checks, and 9 skeletal-elite checks. See [Phase 2 notes](PHASE_2_TRAVERSAL_AND_ART.md) for the new actions, asset sources, and remaining art work.
+
+For v0.4, the Linux and Web exports build successfully, the Linux Movement Lab launches, and the native elite render has been inspected.
 
 For v0.3, both Linux and Web exports built successfully, and the fresh Linux export launched in Movement Lab. Native renders of the new environment models and textures were inspected. Chromium verified Web startup, pointer capture, pause/resume, combat inputs, and Movement Lab with no browser or runtime console errors. Browser screenshots were skipped under software rendering; visual inspection used the native renderer. These checks do not establish gaming-GPU frame rates.
 
@@ -48,8 +52,8 @@ The suite validates the ten roster totals, first-wave completion, hazard-resolut
 
 ## Next implementation priorities
 
-1. Complete human movement-route and wave-pressure playtests on the expanded layout. Tune distances, cover, attack tells, and recovery supply before replacing the blockout.
-2. **Phase 2:** author environment/enemy models, a first-person skeletal weapon/arms rig, separate weapon meshes, and proper animation integration.
+1. Complete human movement-route and wave-pressure playtests on the expanded layout. Tune distances, cover, attack tells, and recovery supply alongside further art replacement.
+2. **Phase 2:** continue environment and remaining enemy models, a first-person skeletal weapon/arms rig, separate weapon meshes, and proper animation integration.
 3. **Phase 3:** implement gore and final combat feedback, including wound/decal systems with measured budgets. Add anatomical ragdoll constraints and animation blending as the skeletal assets become available.
 4. Continue gameplay milestones separately: executions, destructible props, elite scanner, explicit combat-event ordering, reusable pools, controller/rebinding support, and complete-run automation.
 5. Profile native packaged builds on the reference GPUs before selecting a performance preset or claiming a frame-rate target.

@@ -1,0 +1,78 @@
+{
+  "revision": "a82f15448e9b015440d3bbdf5e10801b260c4e9f",
+  "license": "CC-BY-3.0",
+  "attribution": "Juan Linietsky and Fernando Miguel Calabr\u00f3, 2018; original Substance Painter materials provided by GameTextures.com",
+  "modifications": "Retained three character animations; runtime scale, materials and playback adapted. Additional surface textures unmodified.",
+  "sources": [
+    {
+      "path": "level/textures/structure/tile_anti_slip_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_anti_slip_albedo.png",
+      "sha256": "268380d4e87d46ee8a8dca66e94742c3b2d75040ef914a0293c5f054c3d924f5"
+    },
+    {
+      "path": "level/textures/structure/tile_anti_slip_metal_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_anti_slip_metal_normal.png",
+      "sha256": "bc01e2d3fb28ee007eeaa308441136d77a45527b850cd335748402f0dcd21f9b"
+    },
+    {
+      "path": "level/textures/structure/tile_anti_slip_metal_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_anti_slip_metal_orm.png",
+      "sha256": "a6bd7a0975e8f409892dde95b76e4f39dbdefd46be6acfef5ca95657d6ea365a"
+    },
+    {
+      "path": "level/textures/structure/tile_rivet_panels_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_rivet_panels_albedo.png",
+      "sha256": "70be5b75201dcab727cde44f451781ca62bdf5651e373c72ba0ee4e02bf907af"
+    },
+    {
+      "path": "level/textures/structure/tile_rivet_panels_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_rivet_panels_normal.png",
+      "sha256": "d4486fa4ca62d62897c8f24028c346abba68415534c60da6c9f3622336948188"
+    },
+    {
+      "path": "level/textures/structure/tile_rivet_panels_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_rivet_panels_orm.png",
+      "sha256": "3a11ad024d0c83cb1c4346198269abc8051232a97c13a9d341a29e7df4993c3c"
+    },
+    {
+      "path": "level/textures/structure/tile_tech_panels_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_tech_panels_albedo.png",
+      "sha256": "e01fc45e310ea9d24b1eb99901346cf37230e8cb8be0eaf003b4f73b5aa8dd98"
+    },
+    {
+      "path": "level/textures/structure/tile_tech_panels_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_tech_panels_normal.png",
+      "sha256": "c1f93ae421440b83908aff4bfa486451983e9163e99b8bfcfd822a014bcd7ec9"
+    },
+    {
+      "path": "level/textures/structure/tile_tech_panels_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/level/textures/structure/tile_tech_panels_orm.png",
+      "sha256": "5506b7c38e2e21246b138fd268724576ffcb520fa48e55eb8676022bee8d71f1"
+    },
+    {
+      "path": "player/model/player.glb",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/player/model/player.glb",
+      "sha256": "16b783ec2e19245d034326d401796b9bd2635de75f4e38917854316abeee4f9c"
+    },
+    {
+      "path": "player/textures/player_robot_albedo.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/player/textures/player_robot_albedo.png",
+      "sha256": "1a3e77bc611c7378557a90300204107d8d7c624c765e54022699e6f1a2359b2d"
+    },
+    {
+      "path": "player/textures/player_robot_emissive.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/player/textures/player_robot_emissive.png",
+      "sha256": "b002d15617b5dcde87f85e766221012252a25b50f27504b70798a80921c1bf25"
+    },
+    {
+      "path": "player/textures/player_robot_normal.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/player/textures/player_robot_normal.png",
+      "sha256": "aafc4ad4f93caa0f0cfc607bda0c5eee2389c89696c176cb14f48df963927465"
+    },
+    {
+      "path": "player/textures/player_robot_orm.png",
+      "url": "https://raw.githubusercontent.com/godotengine/tps-demo/a82f15448e9b015440d3bbdf5e10801b260c4e9f/player/textures/player_robot_orm.png",
+      "sha256": "16be14ffcf728fa4168d110c3eb7438bc28de7f15dc22757020bfccdef086a08"
+    }
+  ]
+}

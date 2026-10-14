@@ -278,7 +278,7 @@ func start_run(training: bool = false) -> void:
 		state = "combat"
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		for point in arena.lab_stations:
-			var dummy = spawn_enemy("enforcer", point)
+			var dummy = spawn_enemy("elite" if point.y > 8 else "enforcer", point)
 			dummy.training_dummy = true
 		notice("MOVEMENT LAB // T: PLACE TEST DUMMY + REFILL", 5.0)
 	else:

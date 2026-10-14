@@ -20,6 +20,7 @@ var dash_cooldown: float = 0.0
 var dash_interval: float = 2.5
 var dash_time: float = 0.0
 var dash_dir := Vector3.ZERO
+const SLIDE_MAX_SPEED := 18.0
 var slide_time: float = 0.0
 var slide_lock: float = 0.0
 var wall_time: float = 0.0
@@ -215,8 +216,7 @@ func _move_player(dt: float) -> void:
 		flat = dash_dir * 14
 		mode = "DASH"
 	elif slide_time > 0:
-		slide_time -= dt
-		flat = flat.move_toward(direction * 4, dt * 4)
+		flat = _slide_momentum(flat, direction, dt)
 		mode = "SLIDE"
 		_slide_kick()
 		if slide_time <= 0:
@@ -236,7 +236,7 @@ func _move_player(dt: float) -> void:
 				flat = flat.move_toward(direction * speed, dt * 38)
 		else:
 			flat += direction * dt * 8
-			flat = flat.limit_length(11)
+			flat = flat.limit_length(maxf(11, minf(SLIDE_MAX_SPEED, Vector2(velocity.x, velocity.z).length())))
 		mode = "CROUCH" if crouch else ("SPRINT" if speed > 5 and input.length() > 0 else "READY")
 		if not is_on_floor():
 			mode = "AIRBORNE"
@@ -259,10 +259,14 @@ func _move_player(dt: float) -> void:
 	capsule.shape.height = 1.0 if crouch else 1.72
 	capsule.position.y = capsule.shape.height / 2
 	camera.position.y = lerpf(camera.position.y, 0.90 if crouch else 1.55, minf(1, dt * 16))
+	floor_snap_length = 0.6 if slide_time > 0 else 0.4
+	if slide_time > 0 and is_on_floor() and jump_buffer <= 0:
+		var normal := get_floor_normal()
+		velocity.y = -(normal.x * flat.x + normal.z * flat.z) / maxf(normal.y, 0.1)
 	velocity.x = flat.x
 	velocity.z = flat.z
 	# Small step-up handles low lips and continuous ramp transitions.
-	if is_on_floor() and flat.length() > 0.1:
+	if is_on_floor() and flat.length() > 0.1 and (slide_time <= 0 or get_floor_normal().y > 0.995):
 		var probe := global_position + flat.normalized() * 0.5
 		var step_ray := PhysicsRayQueryParameters3D.create(probe + Vector3.UP * 0.38, probe + Vector3.UP * 0.02, 1)
 		var step := get_world_3d().direct_space_state.intersect_ray(step_ray)
@@ -274,10 +278,35 @@ func _move_player(dt: float) -> void:
 	velocity /= scale_factor
 	move_and_slide()
 	velocity *= scale_factor
-	if dash_time <= 0 and flat.length() > 11:
-		var limited := Vector3(velocity.x, 0, velocity.z).limit_length(11)
+	if dash_time <= 0 and flat.length() > SLIDE_MAX_SPEED:
+		var limited := Vector3(velocity.x, 0, velocity.z).limit_length(SLIDE_MAX_SPEED)
 		velocity.x = limited.x
 		velocity.z = limited.z
+
+func _slide_momentum(flat: Vector3, direction: Vector3, dt: float) -> Vector3:
+	# Gravity projected onto the actual contact plane: no downhill speed bonus
+	# from camera direction, and no acceleration while airborne.
+	slide_time = maxf(0, slide_time - dt)
+	if not is_on_floor():
+		return flat
+	var normal := get_floor_normal()
+	var gravity := Vector3.DOWN * 22.0
+	var slope_force := gravity.slide(normal)
+	slope_force.y = 0
+	var downhill := flat.normalized().dot(slope_force) > 0.6
+	if downhill and flat.length() > 4.0:
+		slide_time = maxf(slide_time, 0.24)
+	var friction := 1.2 if normal.y < 0.995 else 5.0
+	flat = (flat + slope_force * dt).move_toward(Vector3.ZERO, friction * dt)
+	# Steering changes heading, not energy; backward input acts as a brake.
+	if direction.length_squared() > 0.1:
+		if flat.normalized().dot(direction) < -0.5:
+			flat = flat.move_toward(Vector3.ZERO, 9.0 * dt)
+		else:
+			flat = flat.normalized().lerp(direction, dt * 1.3).normalized() * flat.length()
+	if flat.length() < 3.0:
+		slide_time = 0
+	return flat.limit_length(SLIDE_MAX_SPEED)
 
 func can_stand() -> bool:
 	var query := PhysicsShapeQueryParameters3D.new()

@@ -15,7 +15,8 @@ const PRACTICE_ROUTES := [
 	{"name": "WALL-RUN LANE", "point": Vector3(40, 0.05, 30), "yaw": 0.0},
 	{"name": "SLIDE TUNNEL", "point": Vector3(-12, 0.05, 32), "yaw": 0.0},
 	{"name": "VAULT BAY", "point": Vector3(-5, 0.05, 32), "yaw": 0.0},
-	{"name": "MANTLE BAY", "point": Vector3(5, 0.05, 25), "yaw": 0.0}
+	{"name": "MANTLE BAY", "point": Vector3(5, 0.05, 25), "yaw": 0.0},
+	{"name": "DOWNHILL CHUTE", "point": Vector3(-17, 4.25, -2), "yaw": PI}
 ]
 var navigation := AStar3D.new()
 var spawn_points: Array[Vector3] = [
@@ -81,7 +82,7 @@ func label_3d(text: String, pos: Vector3, size: int = 100, color: Color = Color(
 
 func build() -> void:
 	art.setup()
-	concrete = art.pbr("tile_default_metal", 0.5)
+	concrete = art.pbr("tile_rivet_panels", 0.5)
 	dark = art.pbr("tile_painted_gun_metal", 0.5)
 	steel = art.pbr("tile_default_metal", 1.0)
 	acid = material(Color("d1e985"), 0.1, 0.8)
@@ -99,7 +100,7 @@ func build() -> void:
 	for z in [-12.5, 12.5]:
 		box(Vector3(0, 0.018, z), Vector3(22, 0.012, 0.10), acid, false)
 	# Main reactor: opaque mass breaks sight lines, gaps on both flanks.
-	box(Vector3(0, 1.8, -1.5), Vector3(6, 3.6, 6), dark, true, true)
+	box(Vector3(0, 1.8, -1.5), Vector3(6, 3.6, 6), art.pbr("tile_tech_panels", 0.5), true, true)
 	box(Vector3(0, 3.7, -1.5), Vector3(6.4, 0.25, 6.4), steel)
 	for x in [-3.06, 3.06]:
 		for z in range(-4, 2):
@@ -127,6 +128,12 @@ func build() -> void:
 			box(Vector3(side * 20.1, 4.75, z), Vector3(0.20, 1.1, 5), steel, true, true)
 		cargo_cover(Vector3(side * 33, 4.85, 3), Vector3(3.8, 1.3, 1.5))
 		label_3d("02 / GALLERY", Vector3(side * 30, 6.8, -21.6), 58, Color("d1e985"))
+	# West gallery shortcut: a long descent with a clear ground-level run-out.
+	platform(Rect2(-20, -4, 6, 4), MID_HEIGHT)
+	ramp(Rect2(-19, 0, 4, 24), 0, MID_HEIGHT)
+	label_3d("DOWNHILL / SLIDE", Vector3(-17, 5.5, -3.8), 32, Color("f1a24d"), PI)
+	for z in [26, 29, 32, 35]:
+		box(Vector3(-17, 0.025, z), Vector3(2.5, 0.02, 0.12), amber, false)
 	# Upper gantry with a measured four-meter jump gap. The far pad is player-only.
 	platform(Rect2(-3, -22, 6, 18), HIGH_HEIGHT)
 	platform(Rect2(-3, 0, 6, 8), HIGH_HEIGHT, false)
@@ -245,7 +252,7 @@ func ramp(rect: Rect2, low: float, high: float) -> void:
 		mesh_builder.add_vertex(vertices[index])
 	mesh_builder.generate_normals()
 	instance.mesh = mesh_builder.commit()
-	var ramp_material := concrete.duplicate() as StandardMaterial3D
+	var ramp_material := art.pbr("tile_anti_slip", 0.7).duplicate() as StandardMaterial3D
 	ramp_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	instance.material_override = ramp_material
 	body.add_child(instance)

@@ -2,7 +2,9 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Phase 2 / version 0.3:** mantle and vault across the 96 × 80 m, three-tier arena. The first art pass replaces cover with authored industrial models and adds PBR floor/metal textures. The Movement Lab now has eight practice routes, including dedicated vault and mantle bays. Enemy bodies, first-person weapons/arms, and animation remain prototypes; their replacement is the next Phase 2 art pass. Gore and final combat polish remain Phase 3.
+**Phase 2 / version 0.4:** downhill slides gain speed and sustain on slopes, with a new west-gallery chute and nine Movement Lab routes. Grip-plate ramps, riveted walls, and reactor-panel textures add surface variety. The elite now uses a licensed armored robotic model with skeletal idle/run/hit reactions. Other enemies and first-person weapons/arms remain prototypes. Gore and final combat polish remain Phase 3.
+
+**Try it:** enter Movement Lab and press **V** to cycle to **DOWNHILL CHUTE**. Sprint toward the descent and press **Ctrl**; downhill momentum extends the slide automatically. Use **Space** to jump out, or hold backward to brake. The observation-deck training target previews the new elite model.
 
 ## Play
 
@@ -24,7 +26,7 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
-Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between eight practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [route guide](docs/PHASE_1_MOVEMENT.md) and [mantle/vault and art notes](docs/PHASE_2_TRAVERSAL_AND_ART.md). The command-line equivalent is `godot --path . -- --movement-lab`.
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between nine practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [route guide](docs/PHASE_1_MOVEMENT.md), [mantle/vault notes](docs/PHASE_2_TRAVERSAL_AND_ART.md), and [slope/elite notes](docs/PHASE_2_SLOPES_AND_ELITE.md). The command-line equivalent is `godot --path . -- --movement-lab`.
 
 ## Controls
 
@@ -42,7 +44,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | 1 / 2 / 3 | Carbine / shotgun / emergency sidearm |
 | Escape / Enter | Pause / resume or advance the trial |
 | T in Movement Lab | Place a target and refill resources |
-| V in Movement Lab | Cycle through eight movement-route checkpoints |
+| V in Movement Lab | Cycle through nine movement-route checkpoints |
 | M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
 | [ / ] in menus | Adjust mouse sensitivity |
 
