@@ -1,6 +1,6 @@
 # Third-party notices
 
-PROJECT: ZERO-LINE uses Godot Engine 4.6.3. Procedural arena/weapon/enemy geometry and synthesized sounds in this repository are authored for this prototype; no Trepang2 or Call of Duty assets are included.
+PROJECT: ZERO-LINE uses Godot Engine 4.6.3. Procedural arena/weapon/enemy geometry and synthesized sounds in this repository are authored for this prototype.
 
 Godot is distributed under the MIT license. Its embedded third-party libraries and default fonts carry additional notices. The engine's complete license and copyright inventory is available from the pinned source release:
 
