@@ -5,6 +5,7 @@ var animator: AnimationPlayer
 var clips: Dictionary = {}
 var current_clip := ""
 var frozen := false
+var material_refs: Array[Material] = []
 
 func setup() -> void:
 	name = "EliteVisual"
@@ -36,6 +37,7 @@ func setup() -> void:
 	emitter.albedo_color = Color("fa7548")
 	emitter.emission_enabled = true
 	emitter.emission = Color("fa7548")
+	material_refs.assign([armor, emitter])
 	for mesh in model.find_children("*", "MeshInstance3D", true, false):
 		for i in mesh.mesh.get_surface_count():
 			var original: Material = mesh.mesh.surface_get_material(i)
@@ -62,3 +64,6 @@ func update_pose(dt: float, speed: float, staggered: bool) -> void:
 
 func freeze_pose() -> void:
 	frozen = true
+
+func set_windup(value: float) -> void:
+	(material_refs[1] as StandardMaterial3D).emission_energy_multiplier = 1.0 + clampf(value, 0, 1) * 2.0

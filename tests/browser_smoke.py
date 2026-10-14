@@ -81,6 +81,7 @@ with sync_playwright() as playwright:
     page.wait_for_timeout(400)
     click(170, 486)  # Movement Lab.
     page.wait_for_function("document.pointerLockElement !== null", timeout=10000)
+    page.keyboard.press("b")  # Select the next operator variant.
     page.keyboard.press("t")
     page.wait_for_timeout(400)
     capture("web-movement-lab.png")

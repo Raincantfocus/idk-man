@@ -1,0 +1,39 @@
+{
+  "origin": "Original PROJECT: ZERO-LINE armored humanoid art",
+  "source": "tools/author_operators.py",
+  "bones": [
+    "pelvis",
+    "torso",
+    "head",
+    "upper_arm_L",
+    "forearm_L",
+    "hand_L",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "upper_arm_R",
+    "forearm_R",
+    "hand_R",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+  ],
+  "models": {
+    "enforcer.glb": {
+      "sha256": "04b684bf7b5710b6315883ad21cc6b19aa0a073cf5a63088e9acd0bf1f30c9e2",
+      "triangles": 8060
+    },
+    "flusher.glb": {
+      "sha256": "b727334ff0813d513291aa6139624d9e3d5c44b5b1a67bd844efd0434f49a051",
+      "triangles": 8560
+    },
+    "rusher.glb": {
+      "sha256": "22f280afe3b60c1a5b4a01766114e4e053a7fc500eaa880be90a0051bd35f283",
+      "triangles": 6808
+    },
+    "shield.glb": {
+      "sha256": "1bc24aba924664ec561247a683376553323d6695c4fe8544025b6f6fd3bffd2b",
+      "triangles": 7672
+    }
+  }
+}

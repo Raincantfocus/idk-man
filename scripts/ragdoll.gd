@@ -36,6 +36,7 @@ func setup(source: Node3D, launch_velocity: Vector3) -> void:
 		part.physics_material_override = physics_material
 		add_child(part)
 		part.global_transform = Transform3D(pose.basis.orthonormalized(), pose * definition.center)
+		part.force_update_transform()
 		var collider := CollisionShape3D.new()
 		var shape := BoxShape3D.new()
 		shape.size = definition.size * body_scale
@@ -46,6 +47,9 @@ func setup(source: Node3D, launch_velocity: Vector3) -> void:
 	# Keep the first skeletal elite's frozen pose attached to the torso proxy.
 	# Full per-bone physical animation remains a later character-art milestone.
 	for visual in source.get_children():
+		if visual.has_method("attach_to_ragdoll"):
+			visual.attach_to_ragdoll(self, bodies)
+			continue
 		if visual.has_method("freeze_pose"):
 			visual.freeze_pose()
 			visual.reparent(bodies.torso, true)
@@ -63,6 +67,7 @@ func setup(source: Node3D, launch_velocity: Vector3) -> void:
 		var joint := PinJoint3D.new()
 		add_child(joint)
 		joint.global_position = pose * ANCHORS[region]
+		joint.force_update_transform()
 		joint.node_a = joint.get_path_to(bodies.torso)
 		joint.node_b = joint.get_path_to(bodies[region])
 		joint.exclude_nodes_from_collision = true

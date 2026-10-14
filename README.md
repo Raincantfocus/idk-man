@@ -2,9 +2,9 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Phase 2 / version 0.5:** distinct carbine, box-fed shotgun, and sidearm models replace the shared box-built weapon. A four-bone glove/sleeve rig follows keyed reload poses; actions cycle, the empty sidearm locks open, and capped physical casings eject from the weapons. Downhill slides, the nine practice routes, PBR environment surfaces, and the animated elite remain available. Other enemy models and finer hand animation remain Phase 2 work; gore remains Phase 3.
+**Phase 2 / version 0.6:** four original armored enemy models replace the remaining box-built characters. Enforcers, rushers, shield units, and flushers share a 15-bone rig with procedural locomotion, hit reactions, attack cues, and skinned bodies that follow the existing articulated corpse physics. The animated elite, three first-person weapons, and expanded movement routes remain available. Fine hand animation and anatomical ragdoll constraints remain unfinished; gore remains Phase 3.
 
-**Try it:** select Movement Lab, switch weapons with **1/2/3**, aim with **right mouse**, fire, and reload with **R**. Interrupt a reload by switching weapons to check the retained magazine state. Press **V** to visit the downhill chute and other movement routes.
+**Try it:** select Movement Lab, press **B** to choose an enemy type, then **T** to place it and refill your resources. Shoot targets to inspect hit reactions and falling bodies. Press **V** to visit movement routes. See the [enemy art notes](docs/PHASE_2_OPERATORS.md).
 
 ## Play
 
@@ -43,6 +43,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | R / F | Reload / melee |
 | 1 / 2 / 3 | Carbine / shotgun / emergency sidearm |
 | Escape / Enter | Pause / resume or advance the trial |
+| B in Movement Lab | Select the target type for T |
 | T in Movement Lab | Place a target and refill resources |
 | V in Movement Lab | Cycle through nine movement-route checkpoints |
 | M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
@@ -105,6 +106,7 @@ See [prototype status](docs/PROTOTYPE_STATUS.md) for the validation record and n
 | `scripts/weapon_view.gd` | Multipart weapon models, skeletal arm poses, sight/muzzle sockets and casings |
 | `scripts/traversal.gd` | Ledge probes, vault/mantle routes, swept movement, and cancellation |
 | `scripts/industrial_art.gd` | Shared PBR materials and fitted authored model instances |
+| `scripts/operator_visual.gd` | Four armored enemy skins, procedural skeletal poses, and corpse bindings |
 | `scripts/enemy.gd` | Enemy navigation, perception, attacks, damage |
 | `scripts/projectile.gd` | Swept enemy projectiles, grenades, explosions |
 | `scripts/pickup.gd` | Physical drop presentation and resource transactions |

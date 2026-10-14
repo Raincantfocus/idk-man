@@ -83,7 +83,7 @@ func _menu() -> void:
 		var alpha := 0.90 * (1 - float(i) / 48)
 		rect(Vector2(i * 36, 0), Vector2(36, 900), Color(0.025, 0.045, 0.047, alpha))
 	rect(Vector2.ZERO, Vector2(1440, 900), Color(0.025, 0.04, 0.04, 0.12))
-	_brand_header("RESTRICTED ACCESS    /    BUILD 0.5 · PHASE 2")
+	_brand_header("RESTRICTED ACCESS    /    BUILD 0.6 · PHASE 2")
 	tracked("KINETIC SURVIVAL TRIAL", Vector2(64, 166), 14, 4, acid)
 	text("PROJECT:", Vector2(60, 228), 33, ink)
 	text("ZERO", Vector2(52, 367), 146, ink)
@@ -141,7 +141,7 @@ func _combat() -> void:
 	if not game.practice:
 		text("/ " + ("10" if game.wave <= 10 else "END"), Vector2(184, 85), 20, muted)
 	else:
-		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL   |   V: NEXT ROUTE" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
+		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL   |   B: TARGET TYPE   |   V: NEXT ROUTE" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
 	var total: int = game.enemies.size() + game.queue.size() + game.pending.size()
 	rect(Vector2(280, 28), Vector2(155, 78), panel)
 	text("THREATS", Vector2(297, 50), 11, muted)

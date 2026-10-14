@@ -18,8 +18,6 @@ var path := PackedVector3Array()
 var path_index: int = 0
 var age: float = 0
 var body := Node3D.new()
-var visor: MeshInstance3D
-var legs: Array[MeshInstance3D] = []
 var color: Color
 var elite_dash: float = 0
 var dash_cooldown: float = 6
@@ -46,56 +44,32 @@ func setup(owner_game, archetype: String) -> void:
 	add_child(collider)
 	add_child(body)
 	color = {"enforcer": Color("a89d81"), "rusher": Color("b7805c"), "shield": Color("728d8c"), "flusher": Color("929e65"), "elite": Color("9c6c66")}[kind]
-	var armor_mat = game.arena.material(color, 0.55)
-	var cloth = game.arena.material(Color("252e30"))
-	var glowing = game.arena.material(Color("ff734c"), 0, 1.5)
-	_piece(Vector3(0, 1.08, 0), Vector3(0.64, 0.60, 0.38), armor_mat)
-	_piece(Vector3(0, 0.73, 0), Vector3(0.40, 0.20, 0.28), cloth)
-	_piece(Vector3(0, 1.62, 0), Vector3(0.36, 0.35, 0.34), armor_mat)
-	visor = _piece(Vector3(0, 1.65, -0.18), Vector3(0.28, 0.065, 0.025), glowing)
-	for side in [-1, 1]:
-		_piece(Vector3(side * 0.41, 1.14, 0), Vector3(0.20, 0.48, 0.25), armor_mat)
-		legs.append(_piece(Vector3(side * 0.18, 0.35, 0), Vector3(0.24, 0.67, 0.25), cloth))
-		_piece(Vector3(side * 0.18, 0.10, -0.10), Vector3(0.25, 0.16, 0.44), armor_mat)
-	_piece(Vector3(0.25, 1.0, -0.42), Vector3(0.13, 0.15, 0.64), cloth)
-	if kind == "shield":
-		_piece(Vector3(-0.17, 1.03, -0.48), Vector3(0.86, 1.1, 0.10), game.arena.material(Color("415759"), 0.7))
-		_piece(Vector3(-0.17, 1.40, -0.54), Vector3(0.55, 0.13, 0.012), glowing)
 	if kind == "elite":
 		body.scale = Vector3(1.25, 1.12, 1.25)
-		_piece(Vector3(0, 1.15, -0.21), Vector3(0.10, 0.42, 0.025), glowing)
-	if kind == "elite":
-		for child in body.get_children():
-			if child is MeshInstance3D:
-				child.visible = false
 		animated_visual = preload("res://scripts/elite_visual.gd").new()
 		body.add_child(animated_visual)
 		animated_visual.setup()
+	else:
+		animated_visual = preload("res://scripts/operator_visual.gd").new()
+		body.add_child(animated_visual)
+		animated_visual.setup(kind)
 	last_known = game.player.global_position
 	path_timer = game.rng.randf_range(0, 0.25)
 	add_to_group("enemy")
 
-func _piece(pos: Vector3, size: Vector3, mat: Material) -> MeshInstance3D:
-	var instance := MeshInstance3D.new()
-	var mesh := BoxMesh.new()
-	mesh.size = size
-	instance.mesh = mesh
-	instance.material_override = mat
-	instance.position = pos
-	body.add_child(instance)
-	return instance
-
 func _physics_process(delta: float) -> void:
 	if not alive or not game.is_playing() or game.player.health <= 0:
 		return
+	stagger = maxf(0, stagger - delta)
 	if animated_visual != null:
+		if animated_visual.has_method("set_windup"):
+			animated_visual.set_windup(windup / 0.6)
 		animated_visual.update_pose(delta, Vector2(velocity.x, velocity.z).length(), stagger > 0)
 	if training_dummy:
 		velocity = Vector3(0, velocity.y - 16 * delta, 0)
 		move_and_slide()
 		return
 	age += delta
-	stagger = maxf(0, stagger - delta)
 	attack_timer -= delta
 	grenade_timer -= delta
 	dash_cooldown -= delta
@@ -151,13 +125,10 @@ func _physics_process(delta: float) -> void:
 	velocity.z = direction.z * speed
 	velocity.y -= 16 * delta
 	move_and_slide()
-	for i in legs.size():
-		legs[i].rotation.x = sin(age * 9 + i * PI) * direction.length() * 0.25
 	if stagger > 0 or age < 1.2:
 		return
 	if windup > 0:
 		windup -= delta
-		visor.scale = Vector3.ONE * (1 + sin(age * 45) * 0.3)
 		if windup <= 0:
 			_attack()
 	elif sees_player and attack_timer <= 0 and game.attacking_count() < mini(5, 2 + game.wave / 3):
@@ -177,7 +148,8 @@ func _can_see_player() -> bool:
 	return not result.is_empty() and result.collider == game.player
 
 func _attack() -> void:
-	visor.scale = Vector3.ONE
+	if animated_visual.has_method("on_attack"):
+		animated_visual.on_attack()
 	var target := last_known + Vector3.UP * 1.05
 	if kind in ["rusher", "shield"] and global_position.distance_to(last_known) < 2.4:
 		if global_position.distance_to(game.player.global_position) < 2.4:

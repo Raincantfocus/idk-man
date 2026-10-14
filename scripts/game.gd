@@ -57,6 +57,8 @@ var completed_reward: bool = false
 var pause_from_focus: bool = false
 var practice: bool = false
 var practice_route: int = 0
+var practice_dummy_index := 0
+const PRACTICE_KINDS := ["enforcer", "rusher", "shield", "flusher", "elite"]
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -111,6 +113,7 @@ func _ready() -> void:
 func _bind_inputs() -> void:
 	var keys := {"forward": KEY_W, "back": KEY_S, "left": KEY_A, "right": KEY_D, "jump": KEY_SPACE, "sprint": KEY_SHIFT, "slide": KEY_CTRL, "dash": KEY_ALT, "reload": KEY_R, "focus": KEY_Q, "shroud": KEY_E, "melee": KEY_F, "weapon_0": KEY_1, "weapon_1": KEY_2, "weapon_2": KEY_3, "accept": KEY_ENTER, "pause": KEY_ESCAPE, "training_dummy": KEY_T}
 	keys["practice_route"] = KEY_V
+	keys["training_type"] = KEY_B
 	for action in keys:
 		if not InputMap.has_action(action):
 			InputMap.add_action(action)
@@ -133,6 +136,8 @@ func is_playing() -> bool:
 	return state in ["combat", "resolve"] and not get_tree().paused
 
 func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("training_type") and practice and is_playing():
+		cycle_training_type()
 	if event.is_action_pressed("training_dummy") and practice and is_playing():
 		spawn_training_dummy()
 	if event.is_action_pressed("practice_route") and practice and is_playing():
@@ -248,6 +253,7 @@ func start_run(training: bool = false) -> void:
 	Engine.time_scale = 1
 	practice = training
 	practice_route = 0
+	practice_dummy_index = 0
 	for group in ["enemy", "pickup", "projectile", "corpse", "transient"]:
 		for node in get_tree().get_nodes_in_group(group):
 			node.free()
@@ -302,6 +308,11 @@ func return_to_menu() -> void:
 	menu_camera.current = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
+func cycle_training_type() -> void:
+	if not practice or not is_playing(): return
+	practice_dummy_index = (practice_dummy_index + 1) % PRACTICE_KINDS.size()
+	notice("TARGET // " + PRACTICE_KINDS[practice_dummy_index].to_upper() + " // T: PLACE", 2.5)
+
 func spawn_training_dummy() -> void:
 	if not practice:
 		return
@@ -311,7 +322,7 @@ func spawn_training_dummy() -> void:
 		oldest.queue_free()
 	var desired: Vector3 = player.global_position - player.global_basis.z * 6
 	var point: Vector3 = arena.nearest_walkable(desired)
-	var dummy = spawn_enemy("enforcer", point + Vector3.UP * 0.05)
+	var dummy = spawn_enemy(PRACTICE_KINDS[practice_dummy_index], point + Vector3.UP * 0.05)
 	dummy.training_dummy = true
 	refill_practice_resources()
 	notice("TEST DUMMY PLACED // RESOURCES REFILLED", 1.5)

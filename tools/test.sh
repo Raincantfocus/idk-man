@@ -8,3 +8,4 @@ cd "$(dirname "$0")/.."
 "${GODOT_BIN:-godot}" --headless --path . --script tests/slopes.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/elite_visual.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/weapons.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/operators.gd
