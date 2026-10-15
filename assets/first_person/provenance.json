@@ -1,22 +1,22 @@
 {
   "source": "tools/author_first_person.py",
-  "origin": "Original fictional art authored for PROJECT: ZERO-LINE",
+  "origin": "Original visual approximations of M4A1, SPAS-12 and USP .45; no manufacturer assets or endorsements",
   "models": {
     "carbine.glb": {
-      "sha256": "82af1694fa0cefb31f555539db51bcbd178b7629d6cce6b0f52513e90949f459",
-      "triangles": 14820
+      "sha256": "c58265a9aff234398801bcd0dc9e61c1999207378a1b046f8504d41b9c3f283b",
+      "triangles": 18996
     },
     "operator_arms.glb": {
-      "sha256": "8cc1f2fa388d8d3b870ae4d64543cab9e3fafcfff48478041dba4d3531017989",
+      "sha256": "6304f6b87ca325505f270891e3ab00ebfea75c3367e0db7fa7fae2b2592e57ef",
       "triangles": 4108
     },
     "shotgun.glb": {
-      "sha256": "cdc07479f28b046629a093af61ca90eb49287fa141a854328e4a05d692c4d38d",
-      "triangles": 13632
+      "sha256": "b55e5c577f3b0b534ab040e374b53fe73849f724cb4b233f69743e5bbf14fe55",
+      "triangles": 17160
     },
     "sidearm.glb": {
-      "sha256": "c42c02583bd961e0198343f56122daed8dd7f315b80f0d5c4ef8bec31dc699e6",
-      "triangles": 7348
+      "sha256": "84202bd05f04109dd4a6c5571f3451e205067bf2f4de1783ee1143a1539a4911",
+      "triangles": 8768
     }
   }
 }

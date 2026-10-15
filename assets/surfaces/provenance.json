@@ -1,0 +1,23 @@
+{
+  "origin": "Original procedural surface art, not scanned anatomy",
+  "resolution": 2048,
+  "orm_channels": "R ambient occlusion, G roughness, B metallic",
+  "source": "tools/author_surface_maps.py",
+  "files": {
+    "cloth_albedo.png": "ac0f49f66752d709e0d31770159ae228d4d1095397f60203b68f90b1956a0ef0",
+    "cloth_normal.png": "5769e10a3f36af22cb8643a0081a80498419dfa333945857bf1b39bcff115acb",
+    "cloth_orm.png": "326a5225a4074114b4a0032c814c898f29499672dd668a3c6a14e997cd608f1c",
+    "concrete_albedo.png": "cebecebec129e74fcb38ac3d61d75658a5a718945cb71365a406d0c1144c3668",
+    "concrete_normal.png": "cd159864ccd7e953a9c9e7b33b006481bec719cefb333eceb2ffeb5f7c79fa47",
+    "concrete_orm.png": "273d387a27b4d3dd9de723e361e2cd5c8fe6d3ee5d4e90a7c96707d14387d06c",
+    "skin_albedo.png": "289b00e916cdeab987ba3eeb7a91d06fe143f16a7bbc4149d446f1002ea4260b",
+    "skin_normal.png": "cd159864ccd7e953a9c9e7b33b006481bec719cefb333eceb2ffeb5f7c79fa47",
+    "skin_orm.png": "e17dc285088b0a43fb19cc0b825baf6d1aed45f19e8c50dea3584a81125c7db7",
+    "steel_albedo.png": "5e8f73a95c8dcd478809c830793ee626ca0ed25447b3851d032fa1adb32821c8",
+    "steel_normal.png": "9f2c483176b9487aaa9087c13817414441b201eae9d59b0072869ff3d8c3f5c5",
+    "steel_orm.png": "f010ebe91b36753beb36bea557039a990275b66c3edbdbda868d24110cc6d921",
+    "tissue_albedo.png": "c4888b2592e1f2210f80a52692cc66c024918dc68d84c1707a3d7ad25104a2db",
+    "tissue_normal.png": "cd159864ccd7e953a9c9e7b33b006481bec719cefb333eceb2ffeb5f7c79fa47",
+    "tissue_orm.png": "4020221ed9e942678e74303b5d04125faef42a1ceeb23152ef82968edc8f209a"
+  }
+}

@@ -33,27 +33,17 @@ func setup(archetype: String) -> void:
 	visor_material.emission_enabled = true
 	visor_material.emission = Color("ff7c46")
 	visor_material.emission_energy_multiplier = 0.3
-	var armor := StandardMaterial3D.new()
-	armor.albedo_color = COLORS[kind]
-	armor.albedo_texture = preload("res://assets/industrial/tile_painted_gun_metal_albedo.png")
-	armor.roughness_texture = preload("res://assets/industrial/tile_painted_gun_metal_orm.png")
-	armor.roughness_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_GREEN
-	armor.metallic = 0.55
-	armor.roughness = 0.63
-	armor.normal_enabled = true
-	armor.normal_texture = preload("res://assets/industrial/tile_default_metal_normal.png")
-	armor.normal_scale = 0.08
-	armor.uv1_triplanar = true
-	armor.uv1_scale = Vector3.ONE * 5
-	var fabric := ShaderMaterial.new()
-	fabric.shader = preload("res://assets/first_person/fabric.gdshader")
-	fabric.set_shader_parameter("fabric_color", Color("333c36"))
-	owned_materials.assign([armor, fabric])
+	var surfaces = preload("res://scripts/surface_library.gd")
+	var armor: StandardMaterial3D = surfaces.make("cloth", COLORS[kind].lightened(0.25))
+	var fabric: StandardMaterial3D = surfaces.make("cloth", Color("78816c"))
+	var skin: StandardMaterial3D = surfaces.make("skin", Color.WHITE, 5.0)
+	owned_materials.assign([armor, fabric, skin])
 	for mesh in model.find_children("*", "MeshInstance3D", true, false):
 		for i in mesh.mesh.get_surface_count():
 			var mat: Material = mesh.mesh.surface_get_material(i)
 			if mat.resource_name == "Armor": mesh.set_surface_override_material(i, armor)
 			elif mat.resource_name == "Cloth": mesh.set_surface_override_material(i, fabric)
+			elif mat.resource_name == "Skin": mesh.set_surface_override_material(i, skin)
 			elif mat.resource_name == "Visor": mesh.set_surface_override_material(i, visor_material)
 			else: mesh.set_surface_override_material(i, mat)
 	set_physics_process(false)

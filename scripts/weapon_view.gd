@@ -20,6 +20,7 @@ var index := 0
 var action_time := 0.0
 var equip_time := 0.0
 var muzzle_flash := MeshInstance3D.new()
+var material_refs: Array[Material] = []
 var brass := StandardMaterial3D.new()
 
 func setup(owner_player) -> void:
@@ -49,13 +50,10 @@ func setup(owner_player) -> void:
 				var fabric := ShaderMaterial.new()
 				fabric.shader = preload("res://assets/first_person/fabric.gdshader")
 				mesh.set_surface_override_material(surface, fabric)
-			if original is StandardMaterial3D and ("steel" in original.resource_name or "finish" in original.resource_name):
-				var mat: StandardMaterial3D = original.duplicate()
-				mat.normal_enabled = true
-				mat.normal_texture = preload("res://assets/industrial/tile_default_metal_normal.png")
-				mat.normal_scale = 0.10
-				mat.uv1_triplanar = true
-				mat.uv1_scale = Vector3.ONE * 12
+			if original is StandardMaterial3D and ("steel" in original.resource_name or "finish" in original.resource_name or "polymer" in original.resource_name):
+				var stem := "cloth" if "polymer" in original.resource_name else "steel"
+				var mat: StandardMaterial3D = preload("res://scripts/surface_library.gd").make(stem, Color("777e83"), 8)
+				material_refs.append(mat)
 				mesh.set_surface_override_material(surface, mat)
 	var flash_mesh := QuadMesh.new()
 	flash_mesh.size = Vector2(0.17, 0.17)
@@ -135,6 +133,15 @@ func update_pose(dt: float) -> void:
 		left_rotation *= 1.0 - sin(progress * PI)
 		if progress > 0.78:
 			actions[index].position.z = (1.0 - smoothstep(0.78, 0.92, progress)) * 0.045 if index == 2 else sin((progress - 0.78) / 0.22 * PI) * 0.035
+	if index == 1:
+		magazines[1].visible = player.reload_time > 0
+		magazines[1].position = Vector3.ZERO
+		if player.reload_time > 0:
+			var shell_progress: float = 1.0 - player.reload_time / player.reload_total
+			var reach := Vector3(-0.025, -0.12, -0.12) - Vector3(-0.035, -0.102, -0.38)
+			var travel := Vector3(0, -0.18, 0.08) * sin(shell_progress * PI)
+			support = reach + travel
+			magazines[1].position = travel
 	pose_arm("L", support, left_rotation)
 	pose_arm("R", Vector3(-0.015, 0.01, -0.025) if index == 2 else Vector3.ZERO)
 	muzzle_flash.position = muzzles[index].position

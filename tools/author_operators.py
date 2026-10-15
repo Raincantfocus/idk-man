@@ -66,7 +66,7 @@ def build(kind):
   box((x,.88,-.04),(.075,.16,.17),'pelvis',DARK,.02)
   rod((x,1.35,-.15),(x,1.03,-.16),.022,'torso',DARK)
  # Human neck, ears, jaw, facial planes and visible eyes; no robotic faceplate.
- rod((0,1.36,0),(0,1.49,0),.065,'head',SKIN)
+ rod((0,1.25,0),(0,1.49,0),.065,'head',SKIN)
  oval((0,1.62,0),(.125,.18,.125),'head',SKIN)
  oval((0,1.535,-.045),(.091,.08,.085),'head',SKIN)
  oval((0,1.60,-.126),(.026,.045,.033),'head',SKIN)
@@ -126,6 +126,24 @@ def build(kind):
   for i in range(8):box((.22,1.165,-.36-i*.035),(.06,.012,.016),'hand_R',STEEL,.002)
  for o in parts:
   group=o.vertex_groups.new(name=o['bone']);group.add(list(range(len(o.data.vertices))),1,'REPLACE');mod=o.modifiers.new('Skin','ARMATURE');mod.object=rig;o.parent=rig
+ # Proportion pass: 1.80 m adult, ~7.5 head heights, narrower facial width.
+ for o in parts:
+  if o['bone']=='torso' or any(t in o['bone'] for t in ['arm_', 'hand_']):
+   o.location.z += .12
+  if o['bone']=='head':
+   for vert in o.data.vertices:
+    world=o.matrix_world @ vert.co
+    world.x *= .88
+    world.z = 1.56 + (world.z-1.44)*.67
+    vert.co=o.matrix_world.inverted() @ world
+ bpy.context.view_layer.objects.active=rig
+ bpy.ops.object.select_all(action='DESELECT');rig.select_set(True)
+ bpy.ops.object.mode_set(mode='EDIT')
+ for bone in arm.edit_bones:
+  if bone.name=='torso' or any(t in bone.name for t in ['arm_', 'hand_']):
+   bone.head.z += .12;bone.tail.z += .12
+ arm.edit_bones['head'].head=v((0,1.56,0));arm.edit_bones['head'].tail=v((0,1.80,0))
+ bpy.ops.object.mode_set(mode='OBJECT')
  bpy.ops.object.select_all(action='DESELECT')
  for o in parts:o.select_set(True)
  bpy.context.view_layer.objects.active=parts[0];bpy.ops.object.join();bpy.context.object.name='OperatorMesh'

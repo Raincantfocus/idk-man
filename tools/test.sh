@@ -10,3 +10,4 @@ cd "$(dirname "$0")/.."
 "${GODOT_BIN:-godot}" --headless --path . --script tests/weapons.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/operators.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/dismemberment.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/art_damage.gd

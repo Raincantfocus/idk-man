@@ -20,23 +20,23 @@
   ],
   "models": {
     "elite.glb": {
-      "sha256": "4629cbe378a25d7b4445ba268cd94b808e3d35ee6ceb37fc9a8505b0d5cdc7ad",
+      "sha256": "31d8511ea25408f20c429a1c94b2ccd57174298f818f715e29ffd99bd5e2bdac",
       "triangles": 11240
     },
     "enforcer.glb": {
-      "sha256": "e8a550853a23d6cff8429ef81b4264083173f2f9a7e6acdef17d3ef9f19d8d53",
+      "sha256": "06771620b70f3500fd79345844aa427e7448754b1a42fcc791a92d13f946ac97",
       "triangles": 11240
     },
     "flusher.glb": {
-      "sha256": "a59a6657262ca7905e0c2642bcdebd6a471eb94a1b4c044c2fa1ebc116483b16",
+      "sha256": "413351c000f8205e26e9909dd22c3f2005b01ee6439b936cba499f4ce19c1c92",
       "triangles": 11544
     },
     "rusher.glb": {
-      "sha256": "09b57416c74d4f62974b2be290060d167d16ec785e49426c7b4d4dbdd0e0b44f",
+      "sha256": "74852a211319b36fa2cf486b211fad44ebe0d5723bd494eef016bb161cf24e0a",
       "triangles": 9872
     },
     "shield.glb": {
-      "sha256": "2e82fc608ea347728bf86085c187f4091be49a1c76345ac0eccbf14421b1593f",
+      "sha256": "3764c8133682970a92c619a1b089a13e7ea41e81f5c5b73ddca321897cf25e9b",
       "triangles": 10852
     }
   }

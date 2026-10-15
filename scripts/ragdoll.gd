@@ -3,13 +3,13 @@ extends Node3D
 
 const REGIONS := {
 	"torso": {"center": Vector3(0, 1.08, 0), "size": Vector3(0.60, 0.66, 0.36), "mass": 25.0},
-	"head": {"center": Vector3(0, 1.62, 0), "size": Vector3(0.34, 0.34, 0.32), "mass": 5.0},
-	"left_arm": {"center": Vector3(-0.43, 1.08, 0), "size": Vector3(0.20, 0.55, 0.23), "mass": 4.0},
-	"right_arm": {"center": Vector3(0.43, 1.08, 0), "size": Vector3(0.20, 0.55, 0.23), "mass": 4.0},
+	"head": {"center": Vector3(0, 1.68, 0), "size": Vector3(0.24, 0.26, 0.24), "mass": 5.0},
+	"left_arm": {"center": Vector3(-0.43, 1.20, 0), "size": Vector3(0.20, 0.55, 0.23), "mass": 4.0},
+	"right_arm": {"center": Vector3(0.43, 1.20, 0), "size": Vector3(0.20, 0.55, 0.23), "mass": 4.0},
 	"left_leg": {"center": Vector3(-0.18, 0.37, 0), "size": Vector3(0.23, 0.69, 0.26), "mass": 8.5},
 	"right_leg": {"center": Vector3(0.18, 0.37, 0), "size": Vector3(0.23, 0.69, 0.26), "mass": 8.5}
 }
-const ANCHORS := {"head": Vector3(0, 1.44, 0), "left_arm": Vector3(-0.33, 1.31, 0), "right_arm": Vector3(0.33, 1.31, 0), "left_leg": Vector3(-0.18, 0.74, 0), "right_leg": Vector3(0.18, 0.74, 0)}
+const ANCHORS := {"head": Vector3(0, 1.52, 0), "left_arm": Vector3(-0.33, 1.43, 0), "right_arm": Vector3(0.33, 1.43, 0), "left_leg": Vector3(-0.18, 0.74, 0), "right_leg": Vector3(0.18, 0.74, 0)}
 var game
 var region_joints: Dictionary = {}
 var cut_offsets: Dictionary = {}
@@ -112,7 +112,7 @@ func settle() -> void:
 	set_physics_process(false)
 
 func region_at(point: Vector3) -> String:
-	if point.y > 1.43: return "head"
+	if point.y > 1.55: return "head"
 	if point.y < 0.75: return "left_leg" if point.x < 0 else "right_leg"
 	if absf(point.x) > 0.23: return "left_arm" if point.x < 0 else "right_arm"
 	return "torso"
@@ -154,13 +154,12 @@ func sever(region: String) -> bool:
 	part.apply_central_impulse((axis * 2.0 + Vector3.UP * 1.5) * part.mass)
 	part.apply_torque_impulse(Vector3(0.5, 0.3, 0.8) * part.mass)
 	game.impact(cut, Color("7b211c"), 8)
+	game.blood_burst(cut, axis, 12)
 	return true
 
 func _add_cut(parent: RigidBody3D, point: Vector3, axis: Vector3, region: String) -> void:
 	if wound_material == null:
-		wound_material = StandardMaterial3D.new()
-		wound_material.albedo_color = Color("6b221e")
-		wound_material.roughness = 0.8
+		wound_material = preload("res://scripts/surface_library.gd").make("tissue")
 	var cap := MeshInstance3D.new()
 	cap.name = "CutSurface"
 	var mesh := CylinderMesh.new()
@@ -173,3 +172,20 @@ func _add_cut(parent: RigidBody3D, point: Vector3, axis: Vector3, region: String
 	parent.add_child(cap)
 	cap.global_position = point
 	cap.global_basis = Basis(Quaternion(Vector3.UP, axis))
+
+	# Nested cross-section: outer skin/fat, muscle bed, and irregular bone end.
+	for layer in 3:
+		var core := MeshInstance3D.new()
+		core.name = ["FatLayer", "MuscleLayer", "BoneFragment"][layer]
+		var slice := CylinderMesh.new()
+		slice.top_radius = mesh.top_radius * [0.92, 0.77, 0.18][layer]
+		slice.bottom_radius = slice.top_radius * (0.6 if layer == 2 else 1.0)
+		slice.height = 0.055 if layer == 2 else 0.006
+		slice.radial_segments = 5 if layer == 2 else 12
+		core.mesh = slice
+		var tissue := StandardMaterial3D.new()
+		tissue.albedo_color = [Color("ab8762"), Color("63251e"), Color("b9b19b")][layer]
+		tissue.roughness = 0.4 if layer < 2 else 0.72
+		core.material_override = tissue
+		cap.add_child(core)
+		core.position.y = 0.012 + layer * 0.005

@@ -381,7 +381,7 @@ func fire() -> bool:
 				target = hit.position
 		if not hit.is_empty():
 			if hit.collider.has_method("take_damage"):
-				var headshot: bool = target.y - hit.collider.global_position.y > 1.42
+				var headshot: bool = target.y - hit.collider.global_position.y > 1.55
 				hit.collider.take_damage(float(stats.damage) * (2 if headshot else 1), target, headshot)
 				hit_timer = 0.13
 			else:
@@ -405,6 +405,16 @@ func _reload_tick(dt: float) -> void:
 	if reload_time <= 0:
 		return
 	reload_time = maxf(0, reload_time - dt)
+	if weapon_index == 1:
+		# Tube-fed shotgun: each completed cycle commits exactly one shell.
+		if reload_time <= 0:
+			if ammo[1] < max_ammo() and reserve[1] > 0:
+				ammo[1] += 1
+				reserve[1] -= 1
+				game.sound.play_cue("reload")
+			if ammo[1] < max_ammo() and reserve[1] > 0: reload_time = reload_total
+		magazine_seated[1] = true
+		return
 	var progress := 1 - reload_time / reload_total
 	if progress >= 0.28 and reload_stage == 0:
 		if weapon_index != 2:

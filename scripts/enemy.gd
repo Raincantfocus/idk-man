@@ -168,6 +168,7 @@ func take_damage(amount: float, hit_position: Vector3, headshot: bool = false, b
 			game.sound.play_cue("metal")
 			return
 	health -= amount
+	game.blood_burst(hit_position, (hit_position - game.player.camera.global_position).normalized(), 4)
 	game.impact(hit_position, Color("ab493a") if game.gore_enabled else Color("d8cc9e"), 5)
 	if health <= 0:
 		alive = false

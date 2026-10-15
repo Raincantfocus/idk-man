@@ -1,6 +1,6 @@
 # v0.7 — human soldiers and regional dismemberment
 
-All five archetypes use original human soldier meshes and a shared 15-bone rig. Visible faces, ears, eyes, hair, hands, and forearms replace the robotic masks and arm plating. Clothing, plate carriers, weapons, and role equipment remain. The flusher has a small respirator; the elite now uses the same human animation and physics pipeline. Geometry is stylized and procedural, with rigid regional skin weights rather than detailed anatomical deformation. Regenerate with `blender --background --python tools/author_operators.py`.
+All five archetypes use original human soldier meshes and a shared 15-bone rig. Visible faces, ears, eyes, hair, hands, and forearms replace the robotic masks and arm plating. Clothing, plate carriers, weapons, and role equipment remain. The flusher has a small respirator; the elite now uses the same human animation and physics pipeline. Geometry is stylized and procedural, with rigid regional skin weights rather than detailed anatomical deformation. Regenerate with `blender --background --python-exit-code 1 --python tools/author_operators.py`.
 
 ## Damage behavior
 

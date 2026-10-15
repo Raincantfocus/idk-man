@@ -36,8 +36,8 @@ var surfaces: Array[Dictionary] = []
 var cells: Dictionary = {}
 
 func material(color: Color, metallic: float = 0.0, emission: float = 0.0) -> StandardMaterial3D:
-	var mat := StandardMaterial3D.new()
-	mat.albedo_color = color
+	var mat: StandardMaterial3D = preload("res://scripts/surface_library.gd").make("steel" if metallic > 0.3 else "concrete", color.lightened(0.15), 0.6)
+	mat.albedo_color = color.lightened(0.15)
 	mat.metallic = metallic
 	mat.roughness = 0.78
 	if emission > 0:

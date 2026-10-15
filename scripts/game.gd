@@ -661,3 +661,15 @@ func _save_score() -> void:
 		return
 	best_score = maxi(best_score, score)
 	_save_settings()
+
+func blood_burst(point: Vector3, direction: Vector3, count: int = 8) -> void:
+	if not gore_enabled or is_test: return
+	for i in mini(count, 12):
+		var drops := get_tree().get_nodes_in_group("blood_drop")
+		if drops.size() >= 48: drops[0].free()
+		var drop = preload("res://scripts/blood_drop.gd").new()
+		drop.game = self
+		add_child(drop)
+		drop.global_position = point
+		var spread := Vector3(sin(i * 2.4), cos(i * 1.7), sin(i * 3.1)) * 0.45
+		drop.velocity = (direction.normalized() + spread).normalized() * (3.0 + i * 0.6)

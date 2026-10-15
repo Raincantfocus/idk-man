@@ -1,4 +1,4 @@
-"""Original fictional FPS art. Run with blender --background --python this_file.
+"""Original game-art approximations of M4A1, SPAS-12, and USP .45 silhouettes. Run with blender --background --python this_file.
 Coordinates below are Godot meters (X right, Y up, -Z forward).
 This is visual game geometry, not manufacturing or functional weapon data.
 """
@@ -65,6 +65,11 @@ def pack_weapon(name, muzzle, eject, left_grip, sight):
         obj=bpy.context.object; obj.name=group
         bpy.context.scene.cursor.location=(0,0,0); bpy.ops.object.origin_set(type='ORIGIN_CURSOR')
     empty('MuzzleSocket',muzzle); empty('EjectionSocket',eject); empty('SupportGrip',left_grip); empty('SightLine',sight)
+    scale={'carbine':.66,'shotgun':.76,'sidearm':.72}[name]
+    for obj in bpy.context.scene.objects:
+        obj.location *= scale
+        if obj.type=='MESH':
+            for vert in obj.data.vertices: vert.co *= scale
     bpy.ops.export_scene.gltf(filepath=str(ROOT/(name+'.glb')),export_format='GLB',export_cameras=False,export_lights=False,export_extras=False)
 
 def weapon(kind):
@@ -88,10 +93,13 @@ def weapon(kind):
         for x in [-.027,.027]: box('Rear sight',(x,.083,.005),(.016,.022,.03),POLY,.002)
         box('Front sight',(0,.083,-.24),(.012,.022,.018),POLY,.002)
         box('Front dot',(0,.085,-.229),(.005,.006,.001),LUME,.0003)
-        mark('P / 2',(.041,.035,-.15),.012)
-        pack_weapon(kind,(0,.03,-.29),(.05,.035,-.075),(-.055,-.13,.01),(0,.085,0))
+        box('Safety decocker',(-.044,.004,.01),(.015,.015,.045),METAL,.003)
+        box('Slide release',(-.044,-.014,-.04),(.012,.013,.055),METAL,.003)
+        rod('Thread protector',(0,.03,-.28),(0,.03,-.31),.019,METAL)
+        mark('USP .45',(.041,.035,-.15),.012)
+        pack_weapon(kind,(0,.03,-.315),(.05,.035,-.075),(-.055,-.13,.01),(0,.085,0))
         return
-    finish_mat=PAINT if shotgun else METAL
+    finish_mat=METAL
     box('Receiver',(0,0,-.10),(.115,.13,.34),finish_mat,.016)
     box('Lower',(0,-.075,-.06),(.10,.07,.25),METAL,.010)
     box('Pistol grip',(0,-.17,.06),(.08,.20,.10),POLY,.014)
@@ -99,14 +107,25 @@ def weapon(kind):
     box('Trigger guard bottom',(0,-.15,-.04),(.075,.012,.12),METAL,.004)
     box('Trigger guard front',(0,-.11,-.103),(.075,.075,.012),METAL,.004)
     rod('Trigger',(0,-.08,-.045),(0,-.13,-.025),.008,EDGE,group='Trigger')
-    rod('Buffer',(0,.01,.06),(0,.01,.31),.033,METAL)
-    box('Stock cheek',(0,.015,.26),(.105,.085,.24),POLY,.018)
-    box('Stock heel',(0,-.035,.39),(.11,.19,.045),POLY,.013)
-    box('Buttpad',(0,-.035,.417),(.115,.20,.025),RUBBER,.008)
-    box('Magazine',(0,-.19,-.13),(.083 if shotgun else .065,.24,.14 if shotgun else .115),METAL,.01,'Magazine')
-    box('Magazine base',(0,-.315,-.13),(.095 if shotgun else .077,.018,.15 if shotgun else .127),POLY,.004,'Magazine')
-    for side in [-1,1]:
-        for z in [-.17,-.125,-.08]: box('Magazine stamp',(side*(.043 if shotgun else .034),-.20,z),(.004,.17,.012),EDGE,.002,'Magazine')
+    if shotgun:
+        for side in [-1,1]:
+            rod('Stock hinge',(side*.05,.03,.06),(side*.08,.03,.06),.027,EDGE)
+            box('Folding stock strut',(side*.06,.08,.23),(.018,.045,.39),METAL,.005,'Stock')
+        box('Folding butt plate',(0,.025,.42),(.14,.19,.025),METAL,.005,'Stock')
+        rod('Shell loading proxy',(0,-.12,-.12),(0,-.12,-.19),.018,RED,group='Magazine')
+        box('Loading port',(0,-.105,-.12),(.055,.006,.12),POLY,.005)
+        box('Mode selector',(-.065,-.03,-.34),(.02,.023,.04),EDGE,.004)
+    else:
+        rod('Buffer',(0,.01,.06),(0,.01,.31),.033,METAL)
+        box('Stock cheek',(0,.015,.26),(.105,.085,.24),POLY,.018)
+        box('Stock heel',(0,-.035,.39),(.11,.19,.045),POLY,.013)
+        box('Buttpad',(0,-.035,.417),(.115,.20,.025),RUBBER,.008)
+        box('Magazine upper',(0,-.16,-.13),(.065,.17,.115),METAL,.01,'Magazine')
+        box('Magazine curved lower',(0,-.285,-.11),(.065,.12,.115),METAL,.01,'Magazine')
+        for side in [-1,1]:
+            for z in [-.16,-.115,-.07]: box('Magazine stamp',(side*.034,-.20,z),(.004,.17,.012),EDGE,.002,'Magazine')
+        box('Forward assist',(.075,.02,.015),(.04,.035,.045),METAL,.008)
+        box('Selector',(-.061,-.045,.01),(.012,.015,.035),EDGE,.003)
     box('Ejection port',(.059,.015,-.11),(.003,.047,.115),POLY,.005)
     box('Bolt',(.062,.015,-.11),(.007,.035,.084),EDGE,.004,'Action')
     rod('Charging handle',(.06,.012,-.09),(.10,.012,-.09),.012,METAL,group='Action')
@@ -118,6 +137,8 @@ def weapon(kind):
         rod('Underbarrel',(0,-.052,-.25),(0,-.052,-.76),.019,EDGE)
         box('Foreend',(0,-.035,-.43),(.115,.12,.25),POLY,.02)
         for i in range(9): box('Foreend rib',(0,-.035,-.32-i*.025),(.124,.125,.008),RUBBER,.003)
+        for side in [-1,1]:
+            for i in range(12): box('Heat shield vent',(side*.028,.044,-.29-i*.042),(.009,.024,.022),POLY,.004)
         for i in range(4):
             z=-.21+i*.052
             rod('Shell carrier',(-.07,-.04,z),(-.07,.055,z),.018,RED)
@@ -131,13 +152,24 @@ def weapon(kind):
     rod('Muzzle device',(0,.012,end+.065),(0,.012,end),.031,METAL)
     rod('Dark bore',(0,.012,end-.001),(0,.012,end-.004),.016,POLY)
     for i in range(20): box('Rail tooth',(0,.078,.04-i*.03),(.063,.018,.014),EDGE,.002)
-    # Open aperture sight, aligned to the front post at Y=.15.
-    for x in [-.033,.033]: box('Sight ear',(x,.122,.015),(.018,.084,.035),METAL,.004)
-    box('Sight bridge',(0,.167,.015),(.085,.012,.035),METAL,.003)
-    box('Front post',(0,.12,-.57),(.017,.060,.025),METAL,.003)
-    box('Sight dot',(0,.147,-.553),(.006,.006,.002),LUME,.0005)
-    mark('B / 8' if shotgun else 'ZL / 4',(.059,.035,-.23))
-    pack_weapon(kind,(0,.012,end-.01),(.085,.02,-.10),(-.04,-.10,-.43 if shotgun else -.38),(0,.15,0))
+    if not shotgun:
+        # Open optic tube, rings, mount and reticle. Magnification is not simulated.
+        for z in [-.19,.015]:
+            for j in range(24):
+                angle=j*math.tau/24; a2=(j+1)*math.tau/24
+                rod('Optic ring',(math.cos(angle)*.043,.17+math.sin(angle)*.043,z),(math.cos(a2)*.043,.17+math.sin(a2)*.043,z),.006,METAL)
+        for j in range(24):
+            angle=j*math.tau/24
+            rod('Optic housing',(math.cos(angle)*.043,.17+math.sin(angle)*.043,-.19),(math.cos(angle)*.043,.17+math.sin(angle)*.043,.015),.006,METAL)
+        box('Optic mount',(0,.105,-.08),(.055,.045,.16),METAL,.004)
+        rod('Elevation turret',(0,.21,-.07),(0,.237,-.07),.018,METAL)
+        rod('Reticle horizontal',(-.029,.17,-.18),(.029,.17,-.18),.001,LUME)
+        rod('Reticle vertical',(0,.141,-.18),(0,.199,-.18),.001,LUME)
+    else:
+        for x in [-.033,.033]: box('Sight ear',(x,.122,.015),(.018,.084,.035),METAL,.004)
+        box('Front post',(0,.12,-.57),(.017,.060,.025),METAL,.003)
+    mark('SPAS-12' if shotgun else 'M4A1',(.059,.035,-.23))
+    pack_weapon(kind,(0,.012,end-.01),(.085,.02,-.10),(-.04,-.10,-.43 if shotgun else -.38),(0,.15 if shotgun else .17,0))
 
 for kind in ['carbine','shotgun','sidearm']: weapon(kind)
 
@@ -187,13 +219,13 @@ bpy.ops.object.select_all(action='DESELECT')
 for o in parts: o.select_set(True)
 bpy.context.view_layer.objects.active=parts[0]; bpy.ops.object.join(); bpy.context.object.name='GlovesAndSleeves'
 bpy.ops.export_scene.gltf(filepath=str(ROOT/'operator_arms.glb'),export_format='GLB',export_cameras=False,export_lights=False,export_extras=False)
-print('Authored three fictional weapons and a four-bone first-person arm rig.')
+print('Authored three reference-based weapon approximations and a four-bone first-person arm rig.')
 
 # Record original source and geometry budgets with the generated assets.
 import hashlib
 import json
 import struct
-manifest = {'source': 'tools/author_first_person.py', 'origin': 'Original fictional art authored for PROJECT: ZERO-LINE', 'models': {}}
+manifest = {'source': 'tools/author_first_person.py', 'origin': 'Original visual approximations of M4A1, SPAS-12 and USP .45; no manufacturer assets or endorsements', 'models': {}}
 for path in sorted(ROOT.glob('*.glb')):
     data = path.read_bytes()
     length = struct.unpack_from('<I', data, 12)[0]

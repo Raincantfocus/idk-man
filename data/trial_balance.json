@@ -1,9 +1,9 @@
 {
   "version": 1,
   "weapons": {
-    "carbine": {"name": "ZL-4 CARBINE", "damage": 24, "rpm": 750, "magazine": 30, "reserve": 150, "reload_seconds": 1.65, "pellets": 1, "spread": 0.007},
-    "shotgun": {"name": "B-8 BREACHER", "damage": 12, "rpm": 180, "magazine": 8, "reserve": 40, "reload_seconds": 1.95, "pellets": 8, "spread": 0.055},
-    "sidearm": {"name": "P-2 SIDEARM", "damage": 20, "rpm": 300, "magazine": 12, "reserve": -1, "reload_seconds": 1.4, "pellets": 1, "spread": 0.005}
+    "carbine": {"name": "M4A1", "damage": 24, "rpm": 750, "magazine": 30, "reserve": 150, "reload_seconds": 1.65, "pellets": 1, "spread": 0.007},
+    "shotgun": {"name": "SPAS-12", "damage": 12, "rpm": 180, "magazine": 8, "reserve": 40, "reload_seconds": 0.65, "pellets": 8, "spread": 0.055},
+    "sidearm": {"name": "USP .45", "damage": 20, "rpm": 300, "magazine": 12, "reserve": -1, "reload_seconds": 1.4, "pellets": 1, "spread": 0.005}
   },
   "enemies": {
     "enforcer": {"health": 100, "speed": 3.0, "damage": 10, "fire_interval": 1.5, "score": 100},

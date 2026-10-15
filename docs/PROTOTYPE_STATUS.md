@@ -1,4 +1,4 @@
-# Prototype 0.7 — Phase 2 implementation record
+# Prototype 0.8 — Phase 2 implementation record
 
 The first playable slice uses Godot 4.6.3, selected with the user's approval because Unreal Engine is not available in the current environment. The Unreal-oriented production design remains the long-term reference. This implementation establishes the combat loop and explicit system boundaries in a runnable project.
 
@@ -13,6 +13,8 @@ The first playable slice uses Godot 4.6.3, selected with the user's approval bec
 - Expanded 96 × 80 m arena, connected 0/4.2/8.4 m routes, Movement Lab, and initial articulated ragdolls. See the [route guide](PHASE_1_MOVEMENT.md).
 
 ## Validation
+
+Version 0.8 adds the playable art/material/blood pass described in [art and trauma specification](ART_AND_TRAUMA_SPEC.md). That document distinguishes shipped behavior from the remaining high-fidelity anatomy, fracture and viscera pipeline. All **215 assertions** passed (198 existing and 17 new material, tube-reload and blood-effect checks). Linux and Web release exports build; the native Linux Movement Lab launches. Native human lineup, rifle/pistol ADS and shotgun hip views were inspected. The initial nine-view weapon capture was stopped after eight views under slow software rendering; the remaining pistol reload view was captured and inspected separately. Chromium verified startup, pointer capture, pause/resume, combat and Movement Lab inputs with no page or console errors; browser screenshots were skipped. No gaming-GPU performance claim is made. Headless shutdown intermittently reports retained AudioStreamWAV/AudioStreamPlaybackWAV resources after passing assertions; verbose diagnostics identify audio playback references, and an extra mute/drain attempt did not eliminate the warning. This remains an engine/audio teardown limitation to investigate, rather than a clean-shutdown claim.
 
 Version 0.7 replaces all active enemy models with human soldiers and adds regional dismemberment on lethal hits and corpse damage. See [human/dismemberment notes](HUMANS_AND_DISMEMBERMENT.md) for exact behavior and limitations. All **198 checks** pass: the existing 180 checks (including updated human-elite coverage) and 18 dismemberment checks. Native renders verify the five human variants and physically separated body parts. Linux and Web exports build successfully, and the Linux Movement Lab launches. The v0.7 Chromium smoke check passes startup, pointer capture, pause/resume, combat inputs, and Movement Lab B/T inputs without page or console errors. Browser screenshots were skipped under software rendering; native captures supply the visual checks.
 
