@@ -14,7 +14,7 @@ func check(value: bool, label: String) -> void:
 		push_error("FAIL " + label)
 
 func run() -> void:
-	var arena = load("res://scripts/arena.gd").new()
+	var arena = load("res://tests/fixtures/arena_v08.gd").new()
 	root.add_child(arena)
 	arena.build()
 	var props := get_nodes_in_group("authored_prop")

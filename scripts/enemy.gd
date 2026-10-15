@@ -23,6 +23,11 @@ var elite_dash: float = 0
 var dash_cooldown: float = 6
 var attack_direction := Vector3.ZERO
 var training_dummy: bool = false
+var descent_time := 0.0
+var descent_total := 3.0
+var descent_from := Vector3.ZERO
+var descent_to := Vector3.ZERO
+var rope: MeshInstance3D
 var animated_visual: Node3D
 
 func setup(owner_game, archetype: String) -> void:
@@ -55,6 +60,13 @@ func setup(owner_game, archetype: String) -> void:
 
 func _physics_process(delta: float) -> void:
 	if not alive or not game.is_playing() or game.player.health <= 0:
+		return
+	if descent_time > 0:
+		descent_time = maxf(0,descent_time-delta)
+		global_position = descent_from.lerp(descent_to,1-descent_time/descent_total)
+		if descent_time <= 0:
+			collision_layer = 2
+			if is_instance_valid(rope): rope.queue_free()
 		return
 	stagger = maxf(0, stagger - delta)
 	if animated_visual != null:
@@ -181,3 +193,21 @@ func take_damage(amount: float, hit_position: Vector3, headshot: bool = false, b
 			var region: String = corpse.region_at(local_hit)
 			if region != "torso": corpse.sever(region)
 		queue_free()
+
+func begin_descent(from: Vector3, to: Vector3, duration: float) -> void:
+	descent_time = duration
+	descent_total = duration
+	descent_from = from
+	descent_to = to
+	global_position = from
+	collision_layer = 2
+	rope = MeshInstance3D.new()
+	var mesh := CylinderMesh.new()
+	mesh.top_radius = .025
+	mesh.bottom_radius = .025
+	mesh.height = from.distance_to(to)
+	rope.mesh = mesh
+	rope.material_override = game.arena.material(Color("49473e"))
+	add_child(rope)
+	rope.set_as_top_level(true)
+	rope.global_position = (from+to)/2

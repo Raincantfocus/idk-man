@@ -6,6 +6,9 @@ var game
 var camera := Camera3D.new()
 var weapon_root := Node3D.new()
 var capsule := CollisionShape3D.new()
+var jump_speed := 5.6
+var slope_boost := 0.0
+var on_boost_slope := false
 var standing_shape := CapsuleShape3D.new()
 var health: float = 100.0
 var armor: float = 75.0
@@ -72,6 +75,7 @@ func setup(owner_game) -> void:
 	standing_shape.height = shape.height
 	capsule.position.y = 0.86
 	add_child(capsule)
+	if game.arena.has_method("configure_player"): game.arena.configure_player(self)
 	camera.position.y = 1.55
 	camera.fov = 86
 	camera.near = 0.045
@@ -117,6 +121,8 @@ func _physics_process(delta: float) -> void:
 	hit_timer = maxf(0, hit_timer - dt)
 	hurt = maxf(0, hurt - dt * 1.5)
 	slide_lock = maxf(0, slide_lock - dt)
+	slope_boost = maxf(0,slope_boost-dt)
+	if slide_time <= 0: on_boost_slope = false
 	traversal.cooldown = maxf(0, traversal.cooldown - dt)
 	_abilities(dt)
 	_reload_tick(dt)
@@ -129,7 +135,8 @@ func _physics_process(delta: float) -> void:
 		fire()
 	if Input.is_action_just_pressed("melee"):
 		melee()
-	_move_player(dt)
+	if not game.arena.has_method("configure_player") or game.arena.zip_time <= 0:
+		_move_player(dt)
 	game.collect_along(previous + Vector3(0, 0.55, 0), global_position + Vector3(0, 0.55, 0))
 	if position.y < -8:
 		take_damage(1000, global_position, 0)
@@ -176,7 +183,7 @@ func _move_player(dt: float) -> void:
 		for side in [-1.0, 1.0]:
 			var ray := PhysicsRayQueryParameters3D.create(global_position + Vector3.UP, global_position + Vector3.UP + transform.basis.x * side * 0.8, 1)
 			var result := get_world_3d().direct_space_state.intersect_ray(ray)
-			if not result.is_empty() and absf(result.normal.y) < 0.2:
+			if not result.is_empty() and absf(result.normal.y) < 0.2 and result.collider.get_meta("surface_tag","WALLRUN_OK") == "WALLRUN_OK":
 				wall_side = side
 				wall_normal = result.normal
 				break
@@ -211,7 +218,7 @@ func _move_player(dt: float) -> void:
 		if not is_on_floor():
 			mode = "AIRBORNE"
 	if jump_buffer > 0 and (coyote > 0 or wall_side != 0):
-		velocity.y = 5.6
+		velocity.y = jump_speed
 		if wall_side != 0:
 			flat += wall_normal * 5
 			wall_time = 1.25
@@ -224,9 +231,9 @@ func _move_player(dt: float) -> void:
 	elif velocity.y < 0:
 		velocity.y = -0.1
 	# Check the whole standing volume, including roof edges beside our center.
-	if not crouch and capsule.shape.height < 1.72:
+	if not crouch and capsule.shape.height < standing_shape.height:
 		crouch = not can_stand()
-	capsule.shape.height = 1.0 if crouch else 1.72
+	capsule.shape.height = 1.0 if crouch else standing_shape.height
 	capsule.position.y = capsule.shape.height / 2
 	camera.position.y = lerpf(camera.position.y, 0.90 if crouch else 1.55, minf(1, dt * 16))
 	floor_snap_length = 0.6 if slide_time > 0 else 0.4
@@ -264,6 +271,15 @@ func _slide_momentum(flat: Vector3, direction: Vector3, dt: float) -> Vector3:
 	var slope_force := gravity.slide(normal)
 	slope_force.y = 0
 	var downhill := flat.normalized().dot(slope_force) > 0.6
+	var tagged := false
+	for i in get_slide_collision_count():
+		var hit := get_slide_collision(i)
+		if hit.get_normal().y > .5 and hit.get_collider().get_meta("surface_tag","") == "SLIDE_OK": tagged = true
+	if on_boost_slope and normal.y > .995:
+		slope_boost = 2.0
+		flat = (flat*1.25).limit_length(SLIDE_MAX_SPEED)
+	on_boost_slope = downhill and tagged
+	if slope_boost > 0: slide_time = maxf(slide_time,.24)
 	if downhill and flat.length() > 4.0:
 		slide_time = maxf(slide_time, 0.24)
 	var friction := 1.2 if normal.y < 0.995 else 5.0
@@ -281,7 +297,7 @@ func _slide_momentum(flat: Vector3, direction: Vector3, dt: float) -> Vector3:
 func can_stand() -> bool:
 	var query := PhysicsShapeQueryParameters3D.new()
 	query.shape = standing_shape
-	query.transform = global_transform.translated_local(Vector3.UP * 0.88)
+	query.transform = global_transform.translated_local(Vector3.UP * (standing_shape.height/2+.02))
 	query.collision_mask = collision_mask
 	query.exclude = [get_rid()]
 	query.margin = 0.005

@@ -1,0 +1,4989 @@
+{
+  "objects": [
+    {
+      "name": "floor_west",
+      "position": [
+        -16,
+        -0.3,
+        0
+      ],
+      "size": [
+        28,
+        0.6,
+        30
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "floor_east",
+      "position": [
+        16,
+        -0.3,
+        0
+      ],
+      "size": [
+        28,
+        0.6,
+        30
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "floor_south",
+      "position": [
+        0,
+        -0.3,
+        -8.5
+      ],
+      "size": [
+        4,
+        0.6,
+        13
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "floor_north",
+      "position": [
+        0,
+        -0.3,
+        8.5
+      ],
+      "size": [
+        4,
+        0.6,
+        13
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "pit_panel",
+      "position": [
+        0,
+        -0.15,
+        0
+      ],
+      "size": [
+        4,
+        0.3,
+        4
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "pit",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "wall_z_-1",
+      "position": [
+        0,
+        7,
+        -15.25
+      ],
+      "size": [
+        60,
+        14,
+        0.5
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "wall_x_-1",
+      "position": [
+        -30.25,
+        7,
+        0
+      ],
+      "size": [
+        0.5,
+        14,
+        30
+      ],
+      "material": "concrete",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "catwalk_-1",
+      "position": [
+        0.0,
+        4.35,
+        -13.75
+      ],
+      "size": [
+        44,
+        0.3,
+        2.5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "rail_-1_-19.4",
+      "position": [
+        -15.45,
+        5.05,
+        -12.5
+      ],
+      "size": [
+        7.899999999999999,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_-1_-8.5",
+      "position": [
+        0.0,
+        5.05,
+        -12.5
+      ],
+      "size": [
+        17.0,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_-1_11.5",
+      "position": [
+        15.45,
+        5.05,
+        -12.5
+      ],
+      "size": [
+        7.899999999999999,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_-1",
+      "position": [
+        0,
+        2.5,
+        -10
+      ],
+      "size": [
+        24,
+        5,
+        0.25
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_launch_-1_-14.5",
+      "position": [
+        -14.5,
+        0.5,
+        -9
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_launch_-1_14.5",
+      "position": [
+        14.5,
+        0.5,
+        -9
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "staging_-1",
+      "position": [
+        19,
+        5.9,
+        -13.6
+      ],
+      "size": [
+        4,
+        2.8,
+        0.2
+      ],
+      "material": "blue",
+      "tag": "NO_GRIP",
+      "role": "staging",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "kick_pillar_-1_-10",
+      "position": [
+        -10,
+        2.5,
+        -11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "kick_pillar_-1_0",
+      "position": [
+        0,
+        2.5,
+        -11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "kick_pillar_-1_10",
+      "position": [
+        10,
+        2.5,
+        -11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "wall_z_1",
+      "position": [
+        0,
+        7,
+        15.25
+      ],
+      "size": [
+        60,
+        14,
+        0.5
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "wall_x_1",
+      "position": [
+        30.25,
+        7,
+        0
+      ],
+      "size": [
+        0.5,
+        14,
+        30
+      ],
+      "material": "concrete",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "catwalk_1",
+      "position": [
+        0.0,
+        4.35,
+        13.75
+      ],
+      "size": [
+        44,
+        0.3,
+        2.5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "rail_1_-22",
+      "position": [
+        -20.3,
+        5.05,
+        12.5
+      ],
+      "size": [
+        3.3999999999999986,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_1_-15.4",
+      "position": [
+        -14.7,
+        5.05,
+        12.5
+      ],
+      "size": [
+        1.4000000000000004,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_1_-12",
+      "position": [
+        -11.75,
+        5.05,
+        12.5
+      ],
+      "size": [
+        0.5,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_1_-8.5",
+      "position": [
+        0.0,
+        5.05,
+        12.5
+      ],
+      "size": [
+        17.0,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_1_11.5",
+      "position": [
+        13.45,
+        5.05,
+        12.5
+      ],
+      "size": [
+        3.9000000000000004,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "rail_1_18.6",
+      "position": [
+        20.3,
+        5.05,
+        12.5
+      ],
+      "size": [
+        3.3999999999999986,
+        1.1,
+        0.12
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_1",
+      "position": [
+        0,
+        2.5,
+        10
+      ],
+      "size": [
+        24,
+        5,
+        0.25
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_launch_1_-14.5",
+      "position": [
+        -14.5,
+        0.5,
+        9
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "runway_launch_1_14.5",
+      "position": [
+        14.5,
+        0.5,
+        9
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "staging_1",
+      "position": [
+        19,
+        5.9,
+        13.6
+      ],
+      "size": [
+        4,
+        2.8,
+        0.2
+      ],
+      "material": "blue",
+      "tag": "NO_GRIP",
+      "role": "staging",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "kick_pillar_1_-10",
+      "position": [
+        -10,
+        2.5,
+        11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "kick_pillar_1_0",
+      "position": [
+        0,
+        2.5,
+        11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "kick_pillar_1_10",
+      "position": [
+        10,
+        2.5,
+        11.3
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "steel",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_ramp_0",
+      "position": [
+        -17,
+        2.25,
+        6.318
+      ],
+      "size": [
+        3,
+        4.5,
+        12.364
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "ramp",
+      "solid": true,
+      "block": false,
+      "rect": [
+        -18.5,
+        0.13599999999999923,
+        3,
+        12.364
+      ],
+      "high": 0,
+      "low": 4.5
+    },
+    {
+      "name": "slide_ramp_1",
+      "position": [
+        17,
+        2.25,
+        6.318
+      ],
+      "size": [
+        3,
+        4.5,
+        12.364
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "ramp",
+      "solid": true,
+      "block": false,
+      "rect": [
+        15.5,
+        0.13599999999999923,
+        3,
+        12.364
+      ],
+      "high": 0,
+      "low": 4.5
+    },
+    {
+      "name": "slide_ramp_2",
+      "position": [
+        -21,
+        2.25,
+        -6.318
+      ],
+      "size": [
+        3,
+        4.5,
+        12.364
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "ramp",
+      "solid": true,
+      "block": false,
+      "rect": [
+        -22.5,
+        -12.5,
+        3,
+        12.364
+      ],
+      "high": 4.5,
+      "low": 0
+    },
+    {
+      "name": "slide_ramp_3",
+      "position": [
+        21,
+        2.25,
+        -6.318
+      ],
+      "size": [
+        3,
+        4.5,
+        12.364
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "ramp",
+      "solid": true,
+      "block": false,
+      "rect": [
+        19.5,
+        -12.5,
+        3,
+        12.364
+      ],
+      "high": 4.5,
+      "low": 0
+    },
+    {
+      "name": "mezzanine_west",
+      "position": [
+        -27.75,
+        4.35,
+        0.0
+      ],
+      "size": [
+        4.5,
+        0.3,
+        25
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "mezzanine_east",
+      "position": [
+        -22.25,
+        4.35,
+        0.0
+      ],
+      "size": [
+        0.5,
+        0.3,
+        25
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "mezzanine_stair_head",
+      "position": [
+        -24.0,
+        4.35,
+        -12.0
+      ],
+      "size": [
+        3,
+        0.3,
+        1
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "mezzanine_south",
+      "position": [
+        -24.0,
+        4.35,
+        7.0
+      ],
+      "size": [
+        3,
+        0.3,
+        11
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "west_catwalk_link_-13.75",
+      "position": [
+        -26.0,
+        4.35,
+        -13.75
+      ],
+      "size": [
+        8,
+        0.3,
+        2.5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "west_catwalk_link_13.75",
+      "position": [
+        -26.0,
+        4.35,
+        13.75
+      ],
+      "size": [
+        8,
+        0.3,
+        2.5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "office_pillar",
+      "position": [
+        -29,
+        2.25,
+        9
+      ],
+      "size": [
+        1,
+        4.5,
+        1
+      ],
+      "material": "hazard",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_window_wall_-9",
+      "position": [
+        -22.1,
+        6,
+        -9
+      ],
+      "size": [
+        0.2,
+        3,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_window_wall_0",
+      "position": [
+        -22.1,
+        6,
+        0
+      ],
+      "size": [
+        0.2,
+        3,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_window_wall_9",
+      "position": [
+        -22.1,
+        6,
+        9
+      ],
+      "size": [
+        0.2,
+        3,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_window_sill_-5",
+      "position": [
+        -22.1,
+        4.85,
+        -5
+      ],
+      "size": [
+        0.25,
+        0.7,
+        3
+      ],
+      "material": "steel",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_desk_-5",
+      "position": [
+        -28,
+        5,
+        -5
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_window_sill_5",
+      "position": [
+        -22.1,
+        4.85,
+        5
+      ],
+      "size": [
+        0.25,
+        0.7,
+        3
+      ],
+      "material": "steel",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_desk_5",
+      "position": [
+        -28,
+        5,
+        5
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "office_stairs",
+      "position": [
+        -24,
+        2.25,
+        -5
+      ],
+      "size": [
+        3,
+        4.5,
+        13
+      ],
+      "material": "steel",
+      "tag": "CLIMB_MANTLE",
+      "role": "ramp",
+      "solid": true,
+      "block": false,
+      "rect": [
+        -25.5,
+        -11.5,
+        3,
+        13
+      ],
+      "high": 4.5,
+      "low": 0
+    },
+    {
+      "name": "stair_tread_0",
+      "position": [
+        -24,
+        4.5,
+        -11.5
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_1",
+      "position": [
+        -24,
+        4.2,
+        -10.633333333333333
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_2",
+      "position": [
+        -24,
+        3.9,
+        -9.766666666666666
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_3",
+      "position": [
+        -24,
+        3.6,
+        -8.9
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_4",
+      "position": [
+        -24,
+        3.3,
+        -8.033333333333333
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_5",
+      "position": [
+        -24,
+        3.0,
+        -7.166666666666666
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_6",
+      "position": [
+        -24,
+        2.7,
+        -6.3
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_7",
+      "position": [
+        -24,
+        2.4,
+        -5.433333333333334
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_8",
+      "position": [
+        -24,
+        2.1,
+        -4.566666666666666
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_9",
+      "position": [
+        -24,
+        1.8000000000000003,
+        -3.6999999999999993
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_10",
+      "position": [
+        -24,
+        1.5,
+        -2.833333333333332
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_11",
+      "position": [
+        -24,
+        1.2000000000000002,
+        -1.9666666666666668
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_12",
+      "position": [
+        -24,
+        0.9000000000000004,
+        -1.0999999999999996
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_13",
+      "position": [
+        -24,
+        0.6000000000000001,
+        -0.2333333333333325
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "stair_tread_14",
+      "position": [
+        -24,
+        0.2999999999999998,
+        0.6333333333333329
+      ],
+      "size": [
+        3,
+        0.05,
+        0.8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "east_shutter_-8",
+      "position": [
+        29.6,
+        2,
+        -8
+      ],
+      "size": [
+        0.3,
+        4,
+        5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "door",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_baffle_-8",
+      "position": [
+        27.2,
+        1.8,
+        -5.6
+      ],
+      "size": [
+        3.6,
+        3.6,
+        0.3
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "dock_ramp_-8",
+      "position": [
+        24,
+        0.28,
+        -8
+      ],
+      "size": [
+        4,
+        0.56,
+        4
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "dock",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_platform_-8",
+      "position": [
+        28.0,
+        0.41000000000000003,
+        -8.0
+      ],
+      "size": [
+        4,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "east_shutter_0",
+      "position": [
+        29.6,
+        2,
+        0
+      ],
+      "size": [
+        0.3,
+        4,
+        5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "door",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_baffle_0",
+      "position": [
+        27.2,
+        1.8,
+        2.4
+      ],
+      "size": [
+        3.6,
+        3.6,
+        0.3
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "dock_ramp_0",
+      "position": [
+        24,
+        0.28,
+        0
+      ],
+      "size": [
+        4,
+        0.56,
+        4
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "dock",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_platform_0",
+      "position": [
+        28.0,
+        0.41000000000000003,
+        0.0
+      ],
+      "size": [
+        4,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "east_shutter_8",
+      "position": [
+        29.6,
+        2,
+        8
+      ],
+      "size": [
+        0.3,
+        4,
+        5
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "door",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_baffle_8",
+      "position": [
+        27.2,
+        1.8,
+        10.4
+      ],
+      "size": [
+        3.6,
+        3.6,
+        0.3
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "dock_ramp_8",
+      "position": [
+        24,
+        0.28,
+        8
+      ],
+      "size": [
+        4,
+        0.56,
+        4
+      ],
+      "material": "floor",
+      "tag": "SLIDE_OK",
+      "role": "dock",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "dock_platform_8",
+      "position": [
+        28.0,
+        0.41000000000000003,
+        8.0
+      ],
+      "size": [
+        4,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "west_door",
+      "position": [
+        -29.6,
+        2,
+        0
+      ],
+      "size": [
+        0.3,
+        4,
+        4
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "door",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "west_spawn_baffle",
+      "position": [
+        -26,
+        1.8,
+        0
+      ],
+      "size": [
+        0.25,
+        3.6,
+        4
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "service_fence_-10",
+      "position": [
+        -26,
+        1.5,
+        -10
+      ],
+      "size": [
+        0.08,
+        3,
+        4
+      ],
+      "material": "fence",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "service_fence_10",
+      "position": [
+        -26,
+        1.5,
+        10
+      ],
+      "size": [
+        0.08,
+        3,
+        4
+      ],
+      "material": "fence",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_0",
+      "position": [
+        -7.5,
+        1,
+        -7
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_1",
+      "position": [
+        -7.5,
+        1,
+        0
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_2",
+      "position": [
+        -7.5,
+        1,
+        7
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_3",
+      "position": [
+        7.5,
+        1,
+        -7
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_4",
+      "position": [
+        7.5,
+        1,
+        0
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "forklift_5",
+      "position": [
+        7.5,
+        1,
+        7
+      ],
+      "size": [
+        4,
+        2,
+        2
+      ],
+      "material": "yellow",
+      "tag": "CLIMB_MANTLE",
+      "role": "forklift",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_0",
+      "position": [
+        -4.5,
+        1.2,
+        -8
+      ],
+      "size": [
+        2.5,
+        0.2,
+        0.4
+      ],
+      "material": "hazard",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_0_-1",
+      "position": [
+        -5.7,
+        0.55,
+        -8
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_0_1",
+      "position": [
+        -3.3,
+        0.55,
+        -8
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_1",
+      "position": [
+        -4.5,
+        0.5,
+        -4
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_2",
+      "position": [
+        -4.5,
+        0.5,
+        0
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_3",
+      "position": [
+        -4.5,
+        1.2,
+        4
+      ],
+      "size": [
+        2.5,
+        0.2,
+        0.4
+      ],
+      "material": "hazard",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_3_-1",
+      "position": [
+        -5.7,
+        0.55,
+        4
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_3_1",
+      "position": [
+        -3.3,
+        0.55,
+        4
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_4",
+      "position": [
+        -4.5,
+        0.5,
+        8
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_5",
+      "position": [
+        -4.5,
+        0.5,
+        9
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_6",
+      "position": [
+        4.5,
+        1.2,
+        -8
+      ],
+      "size": [
+        2.5,
+        0.2,
+        0.4
+      ],
+      "material": "hazard",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_6_-1",
+      "position": [
+        3.3,
+        0.55,
+        -8
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_6_1",
+      "position": [
+        5.7,
+        0.55,
+        -8
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_7",
+      "position": [
+        4.5,
+        0.5,
+        -4
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_8",
+      "position": [
+        4.5,
+        0.5,
+        0
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_9",
+      "position": [
+        4.5,
+        1.2,
+        4
+      ],
+      "size": [
+        2.5,
+        0.2,
+        0.4
+      ],
+      "material": "hazard",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_9_-1",
+      "position": [
+        3.3,
+        0.55,
+        4
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "slide_gate_post_9_1",
+      "position": [
+        5.7,
+        0.55,
+        4
+      ],
+      "size": [
+        0.15,
+        1.1,
+        0.4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_10",
+      "position": [
+        4.5,
+        0.5,
+        8
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "barrier_11",
+      "position": [
+        4.5,
+        0.5,
+        9
+      ],
+      "size": [
+        2.5,
+        1,
+        0.45
+      ],
+      "material": "hazard",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_0_0",
+      "position": [
+        -9.5,
+        0.5,
+        -8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_0_1",
+      "position": [
+        -7.0,
+        0.7,
+        -8
+      ],
+      "size": [
+        1,
+        1.4,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_0_2",
+      "position": [
+        -4.5,
+        0.9,
+        -8
+      ],
+      "size": [
+        1,
+        1.8,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_1_0",
+      "position": [
+        -9.5,
+        0.5,
+        3
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_1_1",
+      "position": [
+        -7.0,
+        0.7,
+        3
+      ],
+      "size": [
+        1,
+        1.4,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_1_2",
+      "position": [
+        -4.5,
+        0.9,
+        3
+      ],
+      "size": [
+        1,
+        1.8,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_2_0",
+      "position": [
+        4.5,
+        0.5,
+        -8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_2_1",
+      "position": [
+        7.0,
+        0.7,
+        -8
+      ],
+      "size": [
+        1,
+        1.4,
+        1
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_2_2",
+      "position": [
+        9.5,
+        0.9,
+        -8
+      ],
+      "size": [
+        1,
+        1.8,
+        1
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_3_0",
+      "position": [
+        4.5,
+        0.5,
+        3
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_3_1",
+      "position": [
+        7.0,
+        0.7,
+        3
+      ],
+      "size": [
+        1,
+        1.4,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_3_2",
+      "position": [
+        9.5,
+        0.9,
+        3
+      ],
+      "size": [
+        1,
+        1.8,
+        1
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_4_0",
+      "position": [
+        -9.5,
+        0.5,
+        8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_4_1",
+      "position": [
+        -7.0,
+        0.7,
+        8
+      ],
+      "size": [
+        1,
+        1.4,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "mantle_4_2",
+      "position": [
+        -4.5,
+        0.9,
+        8
+      ],
+      "size": [
+        1,
+        1.8,
+        1
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_-1_0",
+      "position": [
+        -13.7,
+        0.5,
+        -9.0
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_-1_1",
+      "position": [
+        -14.35,
+        1.0,
+        -9.95
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_-1_2",
+      "position": [
+        -15.0,
+        1.5,
+        -10.9
+      ],
+      "size": [
+        2,
+        3,
+        2
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_-1_3",
+      "position": [
+        -15.649999999999999,
+        2.25,
+        -11.85
+      ],
+      "size": [
+        2,
+        4.5,
+        2
+      ],
+      "material": "red",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_1_0",
+      "position": [
+        13.7,
+        0.5,
+        9.0
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_1_1",
+      "position": [
+        14.35,
+        1.0,
+        9.95
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_1_2",
+      "position": [
+        15.0,
+        1.5,
+        10.9
+      ],
+      "size": [
+        2,
+        3,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "container_step_1_3",
+      "position": [
+        15.649999999999999,
+        2.25,
+        11.85
+      ],
+      "size": [
+        2,
+        4.5,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "hanging_crate_0",
+      "position": [
+        -4,
+        5.5,
+        -5
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "chain_0_-0.8",
+      "position": [
+        -4.8,
+        9.75,
+        -5
+      ],
+      "size": [
+        0.05,
+        8.5,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "chain_0_0.8",
+      "position": [
+        -3.2,
+        9.75,
+        -5
+      ],
+      "size": [
+        0.05,
+        8.5,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "hanging_crate_1",
+      "position": [
+        4,
+        6.5,
+        -5
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "chain_1_-0.8",
+      "position": [
+        3.2,
+        10.25,
+        -5
+      ],
+      "size": [
+        0.05,
+        7.5,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "chain_1_0.8",
+      "position": [
+        4.8,
+        10.25,
+        -5
+      ],
+      "size": [
+        0.05,
+        7.5,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "hanging_crate_2",
+      "position": [
+        -4,
+        7,
+        5
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "chain_2_-0.8",
+      "position": [
+        -4.8,
+        10.5,
+        5
+      ],
+      "size": [
+        0.05,
+        7,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "chain_2_0.8",
+      "position": [
+        -3.2,
+        10.5,
+        5
+      ],
+      "size": [
+        0.05,
+        7,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "hanging_crate_3",
+      "position": [
+        4,
+        8,
+        5
+      ],
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "material": "olive",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "chain_3_-0.8",
+      "position": [
+        3.2,
+        11.0,
+        5
+      ],
+      "size": [
+        0.05,
+        6,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "chain_3_0.8",
+      "position": [
+        4.8,
+        11.0,
+        5
+      ],
+      "size": [
+        0.05,
+        6,
+        0.05
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "red_crane_beam",
+      "position": [
+        -14,
+        11,
+        6
+      ],
+      "size": [
+        18,
+        0.6,
+        0.7
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "blue_stack",
+      "position": [
+        13,
+        1.5,
+        -12
+      ],
+      "size": [
+        4,
+        3,
+        2
+      ],
+      "material": "blue",
+      "tag": "CLIMB_MANTLE",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "hazard_landmark",
+      "position": [
+        -14.5,
+        3,
+        -9
+      ],
+      "size": [
+        1.1,
+        6,
+        1.1
+      ],
+      "material": "hazard",
+      "tag": "WALLRUN_OK",
+      "role": "box",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "broken_water_tank",
+      "position": [
+        25,
+        2,
+        12
+      ],
+      "size": [
+        3,
+        4,
+        3
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "tank",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "crane_load_0",
+      "position": [
+        -5,
+        9,
+        2
+      ],
+      "size": [
+        10,
+        2,
+        5
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "crane",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "crane_wire_0",
+      "position": [
+        -5,
+        12,
+        2
+      ],
+      "size": [
+        0.08,
+        4,
+        0.08
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "crane_load_1",
+      "position": [
+        5,
+        9,
+        2
+      ],
+      "size": [
+        10,
+        2,
+        5
+      ],
+      "material": "blue",
+      "tag": "NO_GRIP",
+      "role": "crane",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "crane_wire_1",
+      "position": [
+        5,
+        12,
+        2
+      ],
+      "size": [
+        0.08,
+        4,
+        0.08
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "fuel_0",
+      "position": [
+        -13,
+        0.7,
+        -8
+      ],
+      "size": [
+        0.7,
+        1.4,
+        0.7
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "fuel",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "fuel_1",
+      "position": [
+        13,
+        0.7,
+        -8
+      ],
+      "size": [
+        0.7,
+        1.4,
+        0.7
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "fuel",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "fuel_2",
+      "position": [
+        -13,
+        0.7,
+        8
+      ],
+      "size": [
+        0.7,
+        1.4,
+        0.7
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "fuel",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "fuel_3",
+      "position": [
+        13,
+        0.7,
+        8
+      ],
+      "size": [
+        0.7,
+        1.4,
+        0.7
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "fuel",
+      "solid": true,
+      "block": true
+    },
+    {
+      "name": "electric_0",
+      "position": [
+        -10,
+        0.025,
+        4
+      ],
+      "size": [
+        3,
+        0.05,
+        2
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "electric",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "electric_1",
+      "position": [
+        10,
+        0.025,
+        4
+      ],
+      "size": [
+        3,
+        0.05,
+        2
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "electric",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "ammo_0",
+      "position": [
+        -27,
+        0.5,
+        -12
+      ],
+      "size": [
+        0.8,
+        1,
+        0.6
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "ammo",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "ammo_1",
+      "position": [
+        27,
+        0.5,
+        -12
+      ],
+      "size": [
+        0.8,
+        1,
+        0.6
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "ammo",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "ammo_2",
+      "position": [
+        -27,
+        0.5,
+        12
+      ],
+      "size": [
+        0.8,
+        1,
+        0.6
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "ammo",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "ammo_3",
+      "position": [
+        27,
+        0.5,
+        12
+      ],
+      "size": [
+        0.8,
+        1,
+        0.6
+      ],
+      "material": "olive",
+      "tag": "NO_GRIP",
+      "role": "ammo",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "health_0",
+      "position": [
+        -27,
+        5,
+        0
+      ],
+      "size": [
+        0.8,
+        1,
+        0.5
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "health",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "health_1",
+      "position": [
+        26,
+        0.5,
+        0
+      ],
+      "size": [
+        0.8,
+        1,
+        0.5
+      ],
+      "material": "red",
+      "tag": "NO_GRIP",
+      "role": "health",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "weapon_cache",
+      "position": [
+        0,
+        5,
+        13.8
+      ],
+      "size": [
+        1.4,
+        1,
+        0.7
+      ],
+      "material": "blue",
+      "tag": "NO_GRIP",
+      "role": "cache",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "zipline_start",
+      "position": [
+        -12.8,
+        5.5,
+        13.5
+      ],
+      "size": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "material": "yellow",
+      "tag": "NO_GRIP",
+      "role": "zipline",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "zipline_lead",
+      "position": [
+        -12.8,
+        5.55,
+        12.65
+      ],
+      "size": [
+        0.04,
+        0.04,
+        1.7
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "zipline_cable",
+      "position": [
+        -12.8,
+        3.325,
+        7.9
+      ],
+      "size": [
+        0.04,
+        0.04,
+        8.98
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "sprint_lane_-12",
+      "position": [
+        -12,
+        0.012,
+        0
+      ],
+      "size": [
+        0.08,
+        0.01,
+        19
+      ],
+      "material": "yellow",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "sprint_lane_0",
+      "position": [
+        0,
+        0.012,
+        0
+      ],
+      "size": [
+        0.08,
+        0.01,
+        19
+      ],
+      "material": "yellow",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "sprint_lane_12",
+      "position": [
+        12,
+        0.012,
+        0
+      ],
+      "size": [
+        0.08,
+        0.01,
+        19
+      ],
+      "material": "yellow",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "skylight_-8_-5",
+      "position": [
+        -8,
+        13.95,
+        -5
+      ],
+      "size": [
+        4,
+        0.08,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "skylight_-8_5",
+      "position": [
+        -8,
+        13.95,
+        5
+      ],
+      "size": [
+        4,
+        0.08,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "skylight_8_-5",
+      "position": [
+        8,
+        13.95,
+        -5
+      ],
+      "size": [
+        4,
+        0.08,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "skylight_8_5",
+      "position": [
+        8,
+        13.95,
+        5
+      ],
+      "size": [
+        4,
+        0.08,
+        4
+      ],
+      "material": "glass",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_-28",
+      "position": [
+        -28,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_-28",
+      "position": [
+        -28,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_-20",
+      "position": [
+        -20,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_-20",
+      "position": [
+        -20,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_-12",
+      "position": [
+        -12,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_-12",
+      "position": [
+        -12,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_-4",
+      "position": [
+        -4,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_-4",
+      "position": [
+        -4,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_4",
+      "position": [
+        4,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_4",
+      "position": [
+        4,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_12",
+      "position": [
+        12,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_12",
+      "position": [
+        12,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_20",
+      "position": [
+        20,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_20",
+      "position": [
+        20,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_beam_28",
+      "position": [
+        28,
+        13.7,
+        0
+      ],
+      "size": [
+        0.2,
+        0.45,
+        30
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "strip_light_28",
+      "position": [
+        28,
+        13.4,
+        0
+      ],
+      "size": [
+        0.12,
+        0.08,
+        22
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_0",
+      "position": [
+        -23,
+        11,
+        -8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_1",
+      "position": [
+        -23,
+        11,
+        8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_2",
+      "position": [
+        0,
+        11,
+        -6
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_3",
+      "position": [
+        0,
+        11,
+        6
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_4",
+      "position": [
+        23,
+        11,
+        -8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "light_5",
+      "position": [
+        23,
+        11,
+        8
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "material": "white",
+      "tag": "NO_GRIP",
+      "role": "light",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "oil_0",
+      "position": [
+        -5,
+        0.018,
+        -6
+      ],
+      "size": [
+        2,
+        0.01,
+        1.4
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "oil_1",
+      "position": [
+        4,
+        0.018,
+        6
+      ],
+      "size": [
+        2,
+        0.01,
+        1.4
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "oil_2",
+      "position": [
+        -19,
+        0.018,
+        0
+      ],
+      "size": [
+        2,
+        0.01,
+        1.4
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "oil_3",
+      "position": [
+        24,
+        0.018,
+        4
+      ],
+      "size": [
+        2,
+        0.01,
+        1.4
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_0",
+      "position": [
+        -18,
+        0.02,
+        -8
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_1",
+      "position": [
+        -18,
+        0.02,
+        -6
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_2",
+      "position": [
+        -18,
+        0.02,
+        -4
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_3",
+      "position": [
+        -18,
+        0.02,
+        -2
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_4",
+      "position": [
+        -18,
+        0.02,
+        0
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_5",
+      "position": [
+        -18,
+        0.02,
+        2
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_6",
+      "position": [
+        -18,
+        0.02,
+        4
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_7",
+      "position": [
+        -18,
+        0.02,
+        6
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_8",
+      "position": [
+        -18,
+        0.02,
+        8
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_9",
+      "position": [
+        18,
+        0.02,
+        -8
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_10",
+      "position": [
+        18,
+        0.02,
+        -6
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_11",
+      "position": [
+        18,
+        0.02,
+        -4
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_12",
+      "position": [
+        18,
+        0.02,
+        -2
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_13",
+      "position": [
+        18,
+        0.02,
+        0
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_14",
+      "position": [
+        18,
+        0.02,
+        2
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_15",
+      "position": [
+        18,
+        0.02,
+        4
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_16",
+      "position": [
+        18,
+        0.02,
+        6
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "tire_17",
+      "position": [
+        18,
+        0.02,
+        8
+      ],
+      "size": [
+        0.12,
+        0.01,
+        1.5
+      ],
+      "material": "oil",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "roof_-30_-15",
+      "position": [
+        -20.0,
+        14.15,
+        -11.0
+      ],
+      "size": [
+        20,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-30_-7",
+      "position": [
+        -20.0,
+        14.15,
+        -5.0
+      ],
+      "size": [
+        20,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-30_-3",
+      "position": [
+        -20.0,
+        14.15,
+        0.0
+      ],
+      "size": [
+        20,
+        0.3,
+        6
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-30_3",
+      "position": [
+        -20.0,
+        14.15,
+        5.0
+      ],
+      "size": [
+        20,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-30_7",
+      "position": [
+        -20.0,
+        14.15,
+        11.0
+      ],
+      "size": [
+        20,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-10_-15",
+      "position": [
+        -8.0,
+        14.15,
+        -11.0
+      ],
+      "size": [
+        4,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-10_-3",
+      "position": [
+        -8.0,
+        14.15,
+        0.0
+      ],
+      "size": [
+        4,
+        0.3,
+        6
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-10_7",
+      "position": [
+        -8.0,
+        14.15,
+        11.0
+      ],
+      "size": [
+        4,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-6_-15",
+      "position": [
+        0.0,
+        14.15,
+        -11.0
+      ],
+      "size": [
+        12,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-6_-7",
+      "position": [
+        0.0,
+        14.15,
+        -5.0
+      ],
+      "size": [
+        12,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-6_-3",
+      "position": [
+        0.0,
+        14.15,
+        0.0
+      ],
+      "size": [
+        12,
+        0.3,
+        6
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-6_3",
+      "position": [
+        0.0,
+        14.15,
+        5.0
+      ],
+      "size": [
+        12,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_-6_7",
+      "position": [
+        0.0,
+        14.15,
+        11.0
+      ],
+      "size": [
+        12,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_6_-15",
+      "position": [
+        8.0,
+        14.15,
+        -11.0
+      ],
+      "size": [
+        4,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_6_-3",
+      "position": [
+        8.0,
+        14.15,
+        0.0
+      ],
+      "size": [
+        4,
+        0.3,
+        6
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_6_7",
+      "position": [
+        8.0,
+        14.15,
+        11.0
+      ],
+      "size": [
+        4,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_10_-15",
+      "position": [
+        20.0,
+        14.15,
+        -11.0
+      ],
+      "size": [
+        20,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_10_-7",
+      "position": [
+        20.0,
+        14.15,
+        -5.0
+      ],
+      "size": [
+        20,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_10_-3",
+      "position": [
+        20.0,
+        14.15,
+        0.0
+      ],
+      "size": [
+        20,
+        0.3,
+        6
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_10_3",
+      "position": [
+        20.0,
+        14.15,
+        5.0
+      ],
+      "size": [
+        20,
+        0.3,
+        4
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "roof_10_7",
+      "position": [
+        20.0,
+        14.15,
+        11.0
+      ],
+      "size": [
+        20,
+        0.3,
+        8
+      ],
+      "material": "steel",
+      "tag": "NO_GRIP",
+      "role": "box",
+      "solid": true,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_0",
+      "position": [
+        28,
+        2.64,
+        -8
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_1",
+      "position": [
+        28,
+        2.64,
+        0
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_2",
+      "position": [
+        28,
+        2.64,
+        8
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_3",
+      "position": [
+        -28,
+        2.08,
+        0
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_4",
+      "position": [
+        -8,
+        2.08,
+        -5
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_5",
+      "position": [
+        -8,
+        2.08,
+        5
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_6",
+      "position": [
+        8,
+        2.08,
+        -5
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_7",
+      "position": [
+        8,
+        2.08,
+        5
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_8",
+      "position": [
+        19,
+        6.58,
+        -14.2
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    },
+    {
+      "name": "spawn_beacon_9",
+      "position": [
+        19,
+        6.58,
+        14.2
+      ],
+      "size": [
+        0.2,
+        0.3,
+        0.2
+      ],
+      "material": "amber",
+      "tag": "NO_GRIP",
+      "role": "beacon",
+      "solid": false,
+      "block": false
+    }
+  ],
+  "surfaces": [
+    {
+      "rect": [
+        -30,
+        -15,
+        28,
+        30
+      ],
+      "high": 0,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        2,
+        -15,
+        28,
+        30
+      ],
+      "high": 0,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        -2,
+        -15,
+        4,
+        13
+      ],
+      "high": 0,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        -2,
+        2,
+        4,
+        13
+      ],
+      "high": 0,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        -2,
+        -2,
+        4,
+        4
+      ],
+      "high": 0,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        -22,
+        -15,
+        44,
+        2.5
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -22,
+        12.5,
+        44,
+        2.5
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -18.5,
+        0.13599999999999923,
+        3,
+        12.364
+      ],
+      "high": 0,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        15.5,
+        0.13599999999999923,
+        3,
+        12.364
+      ],
+      "high": 0,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -22.5,
+        -12.5,
+        3,
+        12.364
+      ],
+      "high": 4.5,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        19.5,
+        -12.5,
+        3,
+        12.364
+      ],
+      "high": 4.5,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        -30,
+        -12.5,
+        4.5,
+        25
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -22.5,
+        -12.5,
+        0.5,
+        25
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -25.5,
+        -12.5,
+        3,
+        1
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -25.5,
+        1.5,
+        3,
+        11
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -30,
+        -15.0,
+        8,
+        2.5
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -30,
+        12.5,
+        8,
+        2.5
+      ],
+      "high": 4.5,
+      "low": 4.5,
+      "ai": true
+    },
+    {
+      "rect": [
+        -25.5,
+        -11.5,
+        3,
+        13
+      ],
+      "high": 4.5,
+      "low": 0,
+      "ai": true
+    },
+    {
+      "rect": [
+        22,
+        -10,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0,
+      "ai": true,
+      "axis": "x"
+    },
+    {
+      "rect": [
+        26,
+        -10,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0.56,
+      "ai": true
+    },
+    {
+      "rect": [
+        22,
+        -2,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0,
+      "ai": true,
+      "axis": "x"
+    },
+    {
+      "rect": [
+        26,
+        -2,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0.56,
+      "ai": true
+    },
+    {
+      "rect": [
+        22,
+        6,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0,
+      "ai": true,
+      "axis": "x"
+    },
+    {
+      "rect": [
+        26,
+        6,
+        4,
+        4
+      ],
+      "high": 0.56,
+      "low": 0.56,
+      "ai": true
+    }
+  ],
+  "spawns": [
+    {
+      "name": "EAST -8",
+      "position": [
+        28,
+        0.64,
+        -8
+      ],
+      "type": "east",
+      "capacity": 4,
+      "warning": 5,
+      "unlock": 1,
+      "cue": "Amber beacon + gear/siren",
+      "door": "east_shutter_-8"
+    },
+    {
+      "name": "EAST 0",
+      "position": [
+        28,
+        0.64,
+        0
+      ],
+      "type": "east",
+      "capacity": 4,
+      "warning": 5,
+      "unlock": 1,
+      "cue": "Amber beacon + gear/siren",
+      "door": "east_shutter_0"
+    },
+    {
+      "name": "EAST 8",
+      "position": [
+        28,
+        0.64,
+        8
+      ],
+      "type": "east",
+      "capacity": 4,
+      "warning": 5,
+      "unlock": 1,
+      "cue": "Amber beacon + gear/siren",
+      "door": "east_shutter_8"
+    },
+    {
+      "name": "WEST",
+      "position": [
+        -28,
+        0.08,
+        0
+      ],
+      "type": "west",
+      "capacity": 4,
+      "warning": 5,
+      "unlock": 1,
+      "cue": "Red beacon + distinct low siren",
+      "door": "west_door"
+    },
+    {
+      "name": "SKY -8 -5",
+      "position": [
+        -8,
+        14,
+        -5
+      ],
+      "landing": [
+        -8,
+        0.08,
+        -5
+      ],
+      "type": "sky",
+      "capacity": 4,
+      "warning": 2,
+      "unlock": 3,
+      "cue": "Red landing marker, 3-second rope descent"
+    },
+    {
+      "name": "SKY -8 5",
+      "position": [
+        -8,
+        14,
+        5
+      ],
+      "landing": [
+        -8,
+        0.08,
+        5
+      ],
+      "type": "sky",
+      "capacity": 4,
+      "warning": 2,
+      "unlock": 3,
+      "cue": "Red landing marker, 3-second rope descent"
+    },
+    {
+      "name": "SKY 8 -5",
+      "position": [
+        8,
+        14,
+        -5
+      ],
+      "landing": [
+        8,
+        0.08,
+        -5
+      ],
+      "type": "sky",
+      "capacity": 4,
+      "warning": 2,
+      "unlock": 3,
+      "cue": "Red landing marker, 3-second rope descent"
+    },
+    {
+      "name": "SKY 8 5",
+      "position": [
+        8,
+        14,
+        5
+      ],
+      "landing": [
+        8,
+        0.08,
+        5
+      ],
+      "type": "sky",
+      "capacity": 4,
+      "warning": 2,
+      "unlock": 3,
+      "cue": "Red landing marker, 3-second rope descent"
+    },
+    {
+      "name": "CATWALK -1",
+      "position": [
+        19,
+        4.58,
+        -14.2
+      ],
+      "type": "catwalk",
+      "capacity": 3,
+      "warning": 3,
+      "unlock": 5,
+      "cue": "Red beacon + staging door",
+      "door": "staging_-1"
+    },
+    {
+      "name": "CATWALK 1",
+      "position": [
+        19,
+        4.58,
+        14.2
+      ],
+      "type": "catwalk",
+      "capacity": 3,
+      "warning": 3,
+      "unlock": 5,
+      "cue": "Red beacon + staging door",
+      "door": "staging_1"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ func ray(from: Vector3, to: Vector3) -> Dictionary:
 func clear_at(foot: Vector3) -> bool:
 	var query := PhysicsShapeQueryParameters3D.new()
 	query.shape = player.standing_shape
-	query.transform = Transform3D(Basis.IDENTITY, foot + Vector3.UP * 0.86)
+	query.transform = Transform3D(Basis.IDENTITY, foot + Vector3.UP * (player.standing_shape.height/2))
 	query.collision_mask = player.collision_mask
 	query.exclude = [player.get_rid()]
 	query.margin = 0.005
@@ -45,7 +45,7 @@ func find_route(direction: Vector3) -> Dictionary:
 	var face := ray(start + Vector3.UP * 0.35, start + Vector3.UP * 0.35 + direction * REACH)
 	if face.is_empty():
 		face = ray(start + Vector3.UP, start + Vector3.UP + direction * REACH)
-	if face.is_empty() or absf(face.normal.y) > 0.2 or face.normal.dot(-direction) < 0.6:
+	if face.is_empty() or face.collider.get_meta("surface_tag","") == "NO_GRIP" or absf(face.normal.y) > 0.2 or face.normal.dot(-direction) < 0.6:
 		return {}
 	var probe: Vector3 = face.position + direction * 0.48
 	var top := ray(Vector3(probe.x, start.y + MAX_HEIGHT + 0.08, probe.z), Vector3(probe.x, start.y + MIN_HEIGHT, probe.z))

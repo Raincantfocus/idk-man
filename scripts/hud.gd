@@ -83,7 +83,7 @@ func _menu() -> void:
 		var alpha := 0.90 * (1 - float(i) / 48)
 		rect(Vector2(i * 36, 0), Vector2(36, 900), Color(0.025, 0.045, 0.047, alpha))
 	rect(Vector2.ZERO, Vector2(1440, 900), Color(0.025, 0.04, 0.04, 0.12))
-	_brand_header("RESTRICTED ACCESS    /    BUILD 0.8 · PHASE 2")
+	_brand_header("RESTRICTED ACCESS    /    BUILD 0.9 · PHASE 2")
 	tracked("KINETIC SURVIVAL TRIAL", Vector2(64, 166), 14, 4, acid)
 	text("PROJECT:", Vector2(60, 228), 33, ink)
 	text("ZERO", Vector2(52, 367), 146, ink)
@@ -142,6 +142,11 @@ func _combat() -> void:
 		text("/ " + ("10" if game.wave <= 10 else "END"), Vector2(184, 85), 20, muted)
 	else:
 		text("%.1f m/s   |   HEIGHT %.1f m   |   T: TARGET + REFILL   |   B: TARGET TYPE   |   V: NEXT ROUTE" % [Vector2(p.velocity.x, p.velocity.z).length(), p.position.y], Vector2(48, 132), 14, acid)
+	for entry in game.pending:
+		if not entry.has("type"): continue
+		var direction: Vector3 = p.camera.global_basis.inverse() * (entry.position-p.position)
+		var x := clampf(720+direction.x*12,100,1340)
+		text("▼ "+entry.type.to_upper()+" %.0fs" % maxf(0,entry.time),Vector2(x,185),14,Color("ed9956"))
 	var total: int = game.enemies.size() + game.queue.size() + game.pending.size()
 	rect(Vector2(280, 28), Vector2(155, 78), panel)
 	text("THREATS", Vector2(297, 50), 11, muted)

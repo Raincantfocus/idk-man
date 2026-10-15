@@ -13,6 +13,8 @@ const MAX_RETAINED_RAGDOLLS := 10
 
 var balance: Dictionary
 var arena
+var arena_factory = ArenaScript
+var spawn_type_counts: Dictionary = {}
 var player
 var hud
 var sound
@@ -66,9 +68,10 @@ func _ready() -> void:
 	balance = JSON.parse_string(FileAccess.get_file_as_string("res://data/trial_balance.json"))
 	_bind_inputs()
 	_load_settings()
-	arena = ArenaScript.new()
+	arena = arena_factory.new()
 	add_child(arena)
 	arena.build()
+	if arena.has_method("choose_spawn"): arena.game = self
 	sound = SoundScript.new()
 	sound.process_mode = Node.PROCESS_MODE_PAUSABLE
 	add_child(sound)
@@ -80,10 +83,10 @@ func _ready() -> void:
 	add_child(player)
 	player.setup(self)
 	player.position = arena.PLAYER_START
-	menu_camera.position = Vector3(36, 27, 37)
+	menu_camera.position = Vector3(0, 11, -12)
 	menu_camera.fov = 73
 	add_child(menu_camera)
-	menu_camera.look_at(Vector3(-2, 4, -6))
+	menu_camera.look_at(Vector3(0, 2, 3))
 	menu_camera.current = true
 	var layer := CanvasLayer.new()
 	add_child(layer)
@@ -178,8 +181,8 @@ func _unhandled_input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	var dt := delta / maxf(Engine.time_scale, 0.01)
 	if state == "menu":
-		menu_camera.position.x = 36 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
-		menu_camera.look_at(Vector3(-2, 4, -6))
+		menu_camera.position.x = 0 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
+		menu_camera.look_at(Vector3(0, 2, 3))
 	if is_playing():
 		elapsed += dt
 		message_time = maxf(0, message_time - dt)
@@ -212,17 +215,37 @@ func _director(dt: float) -> void:
 		# Spawn tells respect world time and cannot release while Focus is active.
 		pending[i].time -= dt * Engine.time_scale
 		if pending[i].time <= 0 and player.ability != "focus":
-			spawn_enemy(pending[i].kind, pending[i].position)
+			var entry: Dictionary = pending[i]
+			if arena.has_method("safe_spawn") and not arena.safe_spawn(entry.position):
+				pending[i].time = .5
+				pending[i].retries = pending[i].get("retries",0)+1
+				if pending[i].retries > 8:
+					queue.push_front(entry.kind)
+					pending.remove_at(i)
+				continue
+			var enemy = spawn_enemy(entry.kind,entry.position)
+			if entry.get("type","") == "sky":
+				enemy.begin_descent(entry.position+Vector3.UP*13.9,entry.position,3.0)
 			pending.remove_at(i)
 	spawn_timer -= dt
 	if spawn_timer <= 0 and not relief and player.ability != "focus" and not queue.is_empty():
 		var cap: int = int(balance.waves[mini(wave - 1, 9)].cap) if wave <= 10 else 20
 		if enemies.size() + pending.size() < cap:
-			var point := _spawn_point()
-			if point != Vector3.INF:
-				pending.append({"kind": queue.pop_front(), "position": point, "time": 0.8})
-				impact(point + Vector3.UP * 0.2, Color("e4b679"), 4)
-			spawn_timer = 0.9 if wave > 3 else 1.35
+			if arena.has_method("choose_spawn"):
+				var choice: Dictionary = arena.choose_spawn()
+				if not choice.is_empty():
+					var source: Dictionary = arena.spawns[choice.index]
+					var batch: int = mini(2 if source.type=="sky" else 1,mini(queue.size(),cap-enemies.size()-pending.size()))
+					for j in batch:
+						var offset := Vector3((j-.5)*1.0,0,0) if batch>1 else Vector3.ZERO
+						pending.append({"kind":queue.pop_front(),"position":choice.point+offset,"time":source.warning,"source":choice.index,"type":source.type})
+					spawn_type_counts[source.type] = spawn_type_counts.get(source.type,0)+batch
+					arena.warn_spawn(choice.index)
+			else:
+				var point := _spawn_point()
+				if point != Vector3.INF:
+					pending.append({"kind":queue.pop_front(),"position":point,"time":.8})
+			spawn_timer = .9 if wave > 3 else 1.35
 	if queue.is_empty() and pending.is_empty() and enemies.is_empty():
 		state = "resolve"
 		resolve_timer = 2.0
@@ -251,6 +274,7 @@ func _spawn_point() -> Vector3:
 func start_run(training: bool = false) -> void:
 	get_tree().paused = false
 	Engine.time_scale = 1
+	if arena.has_method("reset_map"): arena.reset_map()
 	practice = training
 	practice_route = 0
 	practice_dummy_index = 0
@@ -367,6 +391,8 @@ func cycle_practice_route() -> void:
 
 func start_wave() -> void:
 	wave += 1
+	spawn_type_counts.clear()
+	if arena.has_method("apply_wave"): arena.apply_wave(wave)
 	completed_reward = false
 	wave_style_start = score
 	queue.clear()

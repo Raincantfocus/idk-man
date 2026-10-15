@@ -1,0 +1,45 @@
+COORDINATE SYSTEM
+Units: meters. Origin (0,0,0) = center of the arena floor. X = East(+)/West(-), Z = North(+)/South(-), Y = up.
+Arena footprint: 60m (X: -30 to +30) by 30m (Z: -15 to +15). Ceiling height: 14m.
+Player capsule: 1.8m tall, 0.5m radius. Max step height 0.4m. Jump height 1.2m. All traversal routes must respect these numbers.
+
+THEME & MATERIALS
+Active industrial shipping warehouse crossed with a decommissioned military testing facility. Gritty concrete floor with tire marks and oil stains, rusted steel beams, chain-link fencing, corrugated steel walls, yellow/black hazard striping, stacked cargo containers (rust red, faded blue, olive green), forklift tracks painted on the floor. Lighting: cold white overhead strips, amber hazard lamps, dust shafts of light from skylights.
+Assign every surface a material tag: WALLRUN_OK (smooth corrugated steel/concrete), SLIDE_OK (polished slope), CLIMB_MANTLE, NO_GRIP (glass, grate edges, fences), so the movement system can read them.
+
+ZONES (exact placement)
+1. CENTRAL KILLZONE: Open floor X -14 to +14, Z -10 to +10 (28m x 20m). Contains 6 to 8 forklift husks (4m x 2m x 2m, climbable, not blocking sightlines above 2m) and 10 to 12 half-height barriers (1.0m high, slide-under gaps of 0.9m on 4 of them). Keep at least 3 clear sprint lanes 3m wide through the area.
+2. PERIMETER CATWALKS: Steel-grate walkways at Y = +4.5m, 2.5m wide, running along the full North (Z = +15) and South (Z = -15) walls from X -22 to +22. Railings 1.1m high with 2 gaps per catwalk for jump-downs. Connect to the mezzanine on the west end.
+3. LOADING DOCK (EAST): X +22 to +30. Three rolling shutter bays, each 5m wide x 4m high, at Z = -8, 0, +8. Floor ramps down to the killzone at 8 degrees. This is the main ground breach point.
+4. OFFICE MEZZANINE (WEST): X -30 to -22. Two-story glass-walled office, upper floor at Y = +4.5m, blown-out windows (NO_GRIP glass frames, open gaps wide enough to vault through). Interior has desks as 1m cover and one reinforced pillar. This is the player's high-ground fallback.
+5. WEST SERVICE CORRIDOR: A 4m wide ground-level corridor behind the mezzanine at X -30 to -26, containing the West breach door at Z = 0.
+
+MOVEMENT-DRIVEN GEOMETRY
+- WALLRUN RUNWAYS: Two uninterrupted smooth corrugated walls, 24m long and 5m high, along the north and south edges of the killzone (Z = ±10, X -12 to +12). No protrusions, pipes, or doors on these faces. Mark WALLRUN_OK. Place a ramp or crate at each end to launch into the run.
+- SLIDE RAMPS: Four polished-concrete ramps (two to each catwalk), 12m long, 20 degree slope, 3m wide, rising from the killzone floor to Y = +4.5m. Mark SLIDE_OK. Sliding down grants a momentum boost (spec: +25% speed for 2s). The bottom of each ramp must exit into an open 8m clear lane so the player can't slam into cover.
+- WALL KICK GAPS: Place 6 free-standing pillars (1m x 1m, 5m tall) in the 3m gaps between catwalk sections, spaced 4 to 6m apart, so a missed jump can be saved with a wall kick. Add 4 hanging crates on chains at Y = +5 to +8 as optional aerial platforms.
+- MANTLE CHAINS: Place 5 clusters of cover at 1.0m, 1.4m and 1.8m high, spaced 2.5m apart, so a slide-under leads into a mantle without stopping. Each cluster sits on a different sprint lane.
+- VERTICAL ROUTES: At least 4 ways up (2 ramps, 2 container stacks with mantle ledges) and at least 3 ways down (jump-downs, ramps, a zipline from catwalk to killzone floor).
+
+NEW FEATURES (add these)
+1. WAVE-REACTIVE ARENA: Every 3 waves the map changes. Wave 3: a shutter collapses and blocks one wallrun lane. Wave 6: the catwalk power cuts, leaving only emergency red lighting. Wave 9: a section of the central floor lowers 1m to form a pit. Define a trigger, effect and geometry for each.
+2. HAZARDS: Two overhead cranes carrying containers that the player can shoot down to crush enemies (3s warning alarm, 50m^2 damage zone). Four explosive fuel barrels on the killzone edges. Two electrified floor grates that pulse every 6s (visible spark telegraph).
+3. PICKUPS: Ammo crates at 4 fixed spots, health stations at the mezzanine and the east dock (each usable once per wave), and one weapon cache on the north catwalk that rotates weapons each wave. Spread them so the player must move to resupply. Never place two within 15m of each other.
+4. DEFENSIBLE FALLBACK: The mezzanine has a single stairwell and two window approaches, so it can be held but not camped forever. Enemy flankers and drop-ins should pressure it after 20s of the player standing still.
+5. LANDMARKS: Give each quadrant one unique visual landmark (red crane, blue container stack, hazard-striped pillar, broken water tank) for quick orientation.
+6. EASY-TO-READ COMBAT: Enemy-visible hazard lights on all spawn points; avoid dead-end pockets smaller than 4m wide.
+
+ENEMY SPAWN & RAID SYSTEM
+Define each spawn point with position, type, capacity, warning time and cue.
+- SKYLIGHT DROP-INS: 4 skylights at Y = +14, positioned at (X,Z) = (-8,-5), (8,-5), (-8,5), (8,5), each 4m x 4m. Enemies rappel down ropes (3s descent) or crash through glass (2s) with dust and smoke particles. Each skylight spawns 2 to 4 enemies per trigger. Show a red laser dot or glass crack sound 2s beforehand.
+- EAST BREACH (loading dock): 3 shutters at Z = -8, 0, +8. Amber/red rotating lights and a siren start 5s before the wave. Heavy boot stomping and shutter gear audio at 3s. Enemies cut the door with plasma torches (2s sparks) or blow it with a breach charge (1s warning beep). Shutters open fully so enemies can sprint out. Doors are blocked from the player's side by debris and one-way barricades.
+- WEST BREACH (service corridor): One reinforced door at Z = 0, same cue sequence, with shouting audio instead of boots so the player can tell sides apart.
+- CATWALK STAGING ROOMS: Two hidden rooms (4m x 6m) behind doors at the north and south ends of the catwalks, opened on later waves for flankers. They are not visible or reachable by the player until triggered.
+- Spawn rules: Never spawn within 12m of the player or in line of sight. Distribute enemies across at least 2 spawn types per wave. Escalate: waves 1 to 2 use ground breaches only, wave 3+ adds skylights, wave 5+ adds catwalk staging, and boss waves use all points at once.
+- Telegraphing: direction-specific audio and light cues start 3 to 5 seconds before every breach. Add a small HUD arrow pointing at the incoming side.
+
+NAVIGATION & PERFORMANCE
+Provide a navmesh note: all enemy paths must connect to the killzone, with no unreachable pockets. Place nav links for enemy jumps from the catwalk ramps. Keep draw count under 2000 and light sources under 24 dynamic lights.
+
+OUTPUT FORMAT
+Return in this order: (1) one-paragraph design summary, (2) a table of every object with name, position (X,Y,Z), size (W x H x D), material tag, and purpose, (3) spawn table (position, type, trigger, cue, warning time), (4) wave-event table, (5) ASSUMPTIONS list, (6) a top-down ASCII map at 1 character = 2m, marking zones and spawn points.

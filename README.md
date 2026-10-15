@@ -2,9 +2,11 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Version 0.8 — weapon, material and damage pass:** original M4A1-, SPAS-12-, and USP .45-based visual approximations; a shell-by-shell shotgun reload; revised human head proportions; five original 2K PBR surface sets; ballistic blood drops and world-surface stains; layered sever caps with exposed bone. Character art remains stylized. Full fractures, anatomical organ simulation, magnified optics and final high-fidelity assets are specified in the [art and trauma document](docs/ART_AND_TRAUMA_SPEC.md), not implemented yet.
+**Version 0.9 — warehouse revamp:** a 60 × 30 m multi-tier warehouse with office fallback, loading docks, four slide ramps, catwalks, wall-run lanes, mantle chains, forklift cover, and a rideable zipline. Waves change the arena; shootable crane loads and fuel barrels, pulsing electric grates, fixed resupply stations, and telegraphed breaches add tactical choices. Existing human enemies, weapons, dismemberment, and PBR surfaces remain in place.
 
-**Try it:** Movement Lab **B/T** selects/spawns targets. Use **1/2/3** to inspect weapons. Reload the shotgun with **R**, then fire or switch weapons to interrupt after a shell inserts. **G** in menus controls gore. Shoot near a floor or wall to inspect directional blood marks.
+**Try it:** enter Movement Lab and press **V** to visit nine new route checkpoints. Hold **Space** near the north catwalk zipline anchor to ride down. Start the trial to test the wave-3 obstruction, wave-6 emergency lighting, and wave-9 pit. See the [complete warehouse layout](docs/WAREHOUSE_LAYOUT.md) for the object inventory, spawn table, wave events, assumptions, and map.
+
+![Warehouse overview](docs/warehouse-overview.png)
 
 ## Play
 
@@ -26,7 +28,7 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
-Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between nine practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. See the [route guide](docs/PHASE_1_MOVEMENT.md), [mantle/vault notes](docs/PHASE_2_TRAVERSAL_AND_ART.md), and [slope/elite notes](docs/PHASE_2_SLOPES_AND_ELITE.md). The command-line equivalent is `godot --path . -- --movement-lab`.
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between nine practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. The older route documents describe the previous arena; use the [warehouse layout](docs/WAREHOUSE_LAYOUT.md) for current geometry. See the [route guide](docs/PHASE_1_MOVEMENT.md), [mantle/vault notes](docs/PHASE_2_TRAVERSAL_AND_ART.md), and [slope/elite notes](docs/PHASE_2_SLOPES_AND_ELITE.md). The command-line equivalent is `godot --path . -- --movement-lab`.
 
 ## Controls
 
@@ -53,7 +55,7 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Implemented
 
-- A 96 × 80 m industrial arena with paired ramps, two galleries, a crossbridge, upper observation deck, gantry jump, ascending ledges, long wall-run lanes, and a slide tunnel.
+- A 60 × 30 m warehouse with connected floor and 4.5 m catwalk/office routes, four slide ramps, mantle chains, wall-run lanes, and a zipline.
 - Accelerated movement, buffered jumps, bounded air momentum, crouching/sliding, slide-kicks, wall-running, and swept directional dashes.
 - Collision-checked mantles up to 1.85 m above your feet and vaults across shallow cover up to 1.4 m high. Focus preserves traversal speed, and weapons remain usable.
 - Five authored industrial mesh types with shared PBR atlases, normal maps, roughness/metallic/AO maps, mipmaps, and compressed texture imports. Original creators and modifications are credited in the [third-party notices](THIRD_PARTY_NOTICES.md).
