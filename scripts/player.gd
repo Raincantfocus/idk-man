@@ -365,7 +365,7 @@ func fire() -> bool:
 	var spread: float = stats.spread * (0.35 if Input.is_action_pressed("aim") else 1.0)
 	for pellet in int(stats.pellets):
 		var direction: Vector3 = (forward + camera.global_basis.x * game.rng.randf_range(-spread, spread) + camera.global_basis.y * game.rng.randf_range(-spread, spread)).normalized()
-		var ray := PhysicsRayQueryParameters3D.create(origin, origin + direction * 90, 3)
+		var ray := PhysicsRayQueryParameters3D.create(origin, origin + direction * 90, 19)
 		var hit := get_world_3d().direct_space_state.intersect_ray(ray)
 		var target: Vector3 = hit.position if not hit.is_empty() else origin + direction * 70
 		# Authoritative muzzle obstruction avoids shooting through a nearby wall.
@@ -375,7 +375,7 @@ func fire() -> bool:
 			hit = obstruction
 			target = hit.position
 		elif not hit.is_empty():
-			var muzzle_hit := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(muzzle_position, target + direction * 0.05, 3))
+			var muzzle_hit := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(muzzle_position, target + direction * 0.05, 19))
 			if not muzzle_hit.is_empty():
 				hit = muzzle_hit
 				target = hit.position

@@ -15,6 +15,10 @@ DARK=mat('Rubber',(.025,.03,.028),0,.85)
 STEEL=mat('Metal',(.11,.13,.14),.8,.36)
 ACCENT=mat('Accent',(.46,.33,.10),.3,.6)
 VISOR=mat('Visor',(.5,.13,.04),.4,.25)
+SKIN=mat('Skin',(.52,.30,.19),0,.86)
+HAIR=mat('Hair',(.045,.028,.018),0,.95)
+EYE=mat('Eye',(.65,.62,.54),0,.4)
+LIP=mat('Lip',(.24,.095,.065),0,.9)
 parts=[]
 def finish(o,bone,material):
  o.data.materials.append(material);o['bone']=bone;parts.append(o);return o
@@ -61,16 +65,25 @@ def build(kind):
  for x in [-.21,.21]:
   box((x,.88,-.04),(.075,.16,.17),'pelvis',DARK,.02)
   rod((x,1.35,-.15),(x,1.03,-.16),.022,'torso',DARK)
- rod((0,1.36,0),(0,1.48,0),.072,'head',CLOTH)
- oval((0,1.62,0),(.165,.195,.16),'head',ARMOR)
- box((0,1.72,-.015),(.30,.065,.27),'head',ARMOR,.025)
- box((0,1.635,-.148),(.27,.075,.032),'head',DARK,.016)
- box((0,1.646,-.170),(.235,.026,.012),'head',VISOR,.005)
- box((0,1.54,-.14),(.19,.11,.07),'head',DARK,.018)
- for x in [-.17,.17]:
-  box((x,1.62,0),(.045,.12,.11),'head',STEEL,.018)
+ # Human neck, ears, jaw, facial planes and visible eyes; no robotic faceplate.
+ rod((0,1.36,0),(0,1.49,0),.065,'head',SKIN)
+ oval((0,1.62,0),(.125,.18,.125),'head',SKIN)
+ oval((0,1.535,-.045),(.091,.08,.085),'head',SKIN)
+ oval((0,1.60,-.126),(.026,.045,.033),'head',SKIN)
+ oval((0,1.565,-.137),(.031,.018,.022),'head',SKIN)
+ oval((0,1.522,-.112),(.046,.009,.012),'head',LIP)
+ for x in [-1,1]:
+  oval((x*.125,1.61,0),(.024,.045,.028),'head',SKIN)
+  oval((x*.052,1.638,-.112),(.032,.013,.013),'head',EYE)
+  oval((x*.052,1.638,-.124),(.011,.011,.005),'head',HAIR)
+  rod((x*.028,1.663,-.114),(x*.079,1.66,-.108),.008,'head',HAIR)
+ oval((0,1.745,.015),(.127,.064,.12),'head',HAIR)
+ if kind in ('enforcer','shield','elite'):
+  oval((0,1.765,.015),(.143,.058,.14),'head',CLOTH)
+  box((0,1.735,-.13),(.25,.018,.12),'head',CLOTH,.008)
  if kind=='flusher':
-  for x in [-.075,.075]:rod((x,1.52,-.16),(x,1.52,-.24),.047,'head',STEEL)
+  # Half-mask leaves the eyes and forehead visibly human.
+  oval((0,1.53,-.13),(.075,.055,.035),'head',DARK)
   for x in [-.115,.115]:
    rod((x,.98,.23),(x,1.36,.23),.085,'torso',ACCENT)
    box((x,1.1,.23),(.18,.045,.18),'torso',DARK,.01)
@@ -80,19 +93,19 @@ def build(kind):
  for side,x in [('L',-1),('R',1)]:
   upper='upper_arm_'+side;fore='forearm_'+side;hand='hand_'+side;thigh='thigh_'+side;shin='shin_'+side;foot='foot_'+side
   a,b,_=BONES[upper];rod(a,b,.080,upper,CLOTH,r2=.068)
-  a,b,_=BONES[fore];rod(a,b,.068,fore,CLOTH,r2=.052)
-  oval((x*.31,1.28,.01),(.105,.105,.13),upper,ARMOR)
-  if kind!='rusher':box((x*.365,1.18,-.01),(.09,.16,.16),upper,ARMOR,.025)
+  a,b,_=BONES[fore];rod(a,b,.063,fore,SKIN,r2=.043)
+  oval((x*.31,1.28,.01),(.095,.105,.10),upper,CLOTH)
+  oval((x*.36,1.02,-.03),(.07,.085,.07),upper,CLOTH)
   oval((x*.36,1.02,-.03),(.078,.073,.075),fore,DARK)
-  box((x*.305,1.04,-.19),(.13,.12,.16),fore,ARMOR,.025)
-  oval((x*.235,1.065,-.37),(.065,.06,.09),hand,DARK)
-  for j in range(3):box((x*.235,1.12,-.34-j*.028),(.11,.02,.018),hand,STEEL,.004)
+
+  oval((x*.235,1.065,-.37),(.065,.06,.09),hand,SKIN)
+  for j in range(4):oval((x*.235+(j-1.5)*.022,1.065,-.425),(.013,.035,.035),hand,SKIN)
   a,b,_=BONES[thigh];rod(a,b,.105,thigh,CLOTH,r2=.083)
-  box((x*.17,.62,-.075),(.17,.23,.065),thigh,ARMOR,.025)
+  box((x*.17,.62,-.075),(.17,.23,.065),thigh,CLOTH,.025)
   a,b,_=BONES[shin];rod(a,b,.081,shin,CLOTH,r2=.065)
   oval((x*.17,.43,-.04),(.092,.085,.075),shin,DARK)
   box((x*.17,.43,-.09),(.16,.12,.06),shin,ARMOR,.025)
-  box((x*.17,.255,-.06),(.13,.20,.06),shin,ARMOR,.02)
+
   box((x*.17,.08,-.075),(.18,.14,.30),foot,DARK,.035)
   box((x*.17,.025,-.075),(.185,.035,.31),foot,STEEL,.009)
  if kind=='shield':
@@ -117,9 +130,9 @@ def build(kind):
  for o in parts:o.select_set(True)
  bpy.context.view_layer.objects.active=parts[0];bpy.ops.object.join();bpy.context.object.name='OperatorMesh'
  bpy.ops.export_scene.gltf(filepath=str(ROOT/(kind+'.glb')),export_format='GLB',export_cameras=False,export_lights=False,export_extras=False)
-for kind in ('enforcer','rusher','shield','flusher'):build(kind)
-manifest={'origin':'Original PROJECT: ZERO-LINE armored humanoid art','source':'tools/author_operators.py','bones':list(BONES),'models':{}}
+for kind in ('enforcer','rusher','shield','flusher','elite'):build(kind)
+manifest={'origin':'Original PROJECT: ZERO-LINE human soldier art','source':'tools/author_operators.py','bones':list(BONES),'models':{}}
 for p in sorted(ROOT.glob('*.glb')):
  d=p.read_bytes();n=struct.unpack_from('<I',d,12)[0];g=json.loads(d[20:20+n]);tri=sum(g['accessors'][q['indices']]['count']//3 for m in g['meshes'] for q in m['primitives']);manifest['models'][p.name]={'sha256':hashlib.sha256(d).hexdigest(),'triangles':tri}
 (ROOT/'provenance.json').write_text(json.dumps(manifest,indent=2)+'\n')
-print('Exported four armored humanoids with a shared 15-bone skin.')
+print('Exported five human soldiers with a shared 15-bone skin.')

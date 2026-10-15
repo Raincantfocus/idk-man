@@ -83,7 +83,7 @@ func _menu() -> void:
 		var alpha := 0.90 * (1 - float(i) / 48)
 		rect(Vector2(i * 36, 0), Vector2(36, 900), Color(0.025, 0.045, 0.047, alpha))
 	rect(Vector2.ZERO, Vector2(1440, 900), Color(0.025, 0.04, 0.04, 0.12))
-	_brand_header("RESTRICTED ACCESS    /    BUILD 0.6 · PHASE 2")
+	_brand_header("RESTRICTED ACCESS    /    BUILD 0.7 · PHASE 2")
 	tracked("KINETIC SURVIVAL TRIAL", Vector2(64, 166), 14, 4, acid)
 	text("PROJECT:", Vector2(60, 228), 33, ink)
 	text("ZERO", Vector2(52, 367), 146, ink)

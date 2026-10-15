@@ -632,6 +632,7 @@ func spawn_corpse(body: Node3D, point: Vector3, _color: Color):
 	var corpse = RagdollScript.new()
 	add_child(corpse)
 	var direction: Vector3 = (point - player.global_position).normalized()
+	corpse.game = self
 	corpse.setup(body, direction * 2.2 + Vector3.UP * 0.6)
 	corpses.append(corpse)
 	return corpse

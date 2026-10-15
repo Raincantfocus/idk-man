@@ -10,9 +10,9 @@ func capture() -> void:
 	game.menu_camera.position = Vector3(0, 1.5, 24)
 	game.menu_camera.fov = 65
 	game.menu_camera.look_at(Vector3(0, 1, 28))
-	for i in 4:
-		var kind: String = ["enforcer", "rusher", "shield", "flusher"][i]
-		var enemy = game.spawn_enemy(kind, Vector3((i - 1.5)*1.3, 0.03, 28))
+	for i in 5:
+		var kind: String = ["enforcer", "rusher", "shield", "flusher", "elite"][i]
+		var enemy = game.spawn_enemy(kind, Vector3((i - 2)*1.05, 0.03, 28))
 		enemy.set_physics_process(false)
 		enemy.animated_visual.update_pose(0.15, 0, false)
 	for i in 8: await process_frame

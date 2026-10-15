@@ -1,7 +1,7 @@
 extends Node3D
 ## Original 15-bone armored humanoids; animation never moves the gameplay capsule.
-const MODELS := {"enforcer": preload("res://assets/operators/enforcer.glb"), "rusher": preload("res://assets/operators/rusher.glb"), "shield": preload("res://assets/operators/shield.glb"), "flusher": preload("res://assets/operators/flusher.glb")}
-const COLORS := {"enforcer": Color("6b7566"), "rusher": Color("91664d"), "shield": Color("53717e"), "flusher": Color("93834a")}
+const MODELS := {"elite": preload("res://assets/operators/elite.glb"),"enforcer": preload("res://assets/operators/enforcer.glb"), "rusher": preload("res://assets/operators/rusher.glb"), "shield": preload("res://assets/operators/shield.glb"), "flusher": preload("res://assets/operators/flusher.glb")}
+const COLORS := {"elite": Color("554b44"),"enforcer": Color("6b7566"), "rusher": Color("91664d"), "shield": Color("53717e"), "flusher": Color("93834a")}
 var skeleton: Skeleton3D
 var kind := "enforcer"
 var phase := 0.0

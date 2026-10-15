@@ -1,5 +1,5 @@
 {
-  "origin": "Original PROJECT: ZERO-LINE armored humanoid art",
+  "origin": "Original PROJECT: ZERO-LINE human soldier art",
   "source": "tools/author_operators.py",
   "bones": [
     "pelvis",
@@ -19,21 +19,25 @@
     "foot_R"
   ],
   "models": {
+    "elite.glb": {
+      "sha256": "4629cbe378a25d7b4445ba268cd94b808e3d35ee6ceb37fc9a8505b0d5cdc7ad",
+      "triangles": 11240
+    },
     "enforcer.glb": {
-      "sha256": "04b684bf7b5710b6315883ad21cc6b19aa0a073cf5a63088e9acd0bf1f30c9e2",
-      "triangles": 8060
+      "sha256": "e8a550853a23d6cff8429ef81b4264083173f2f9a7e6acdef17d3ef9f19d8d53",
+      "triangles": 11240
     },
     "flusher.glb": {
-      "sha256": "b727334ff0813d513291aa6139624d9e3d5c44b5b1a67bd844efd0434f49a051",
-      "triangles": 8560
+      "sha256": "a59a6657262ca7905e0c2642bcdebd6a471eb94a1b4c044c2fa1ebc116483b16",
+      "triangles": 11544
     },
     "rusher.glb": {
-      "sha256": "22f280afe3b60c1a5b4a01766114e4e053a7fc500eaa880be90a0051bd35f283",
-      "triangles": 6808
+      "sha256": "09b57416c74d4f62974b2be290060d167d16ec785e49426c7b4d4dbdd0e0b44f",
+      "triangles": 9872
     },
     "shield.glb": {
-      "sha256": "1bc24aba924664ec561247a683376553323d6695c4fe8544025b6f6fd3bffd2b",
-      "triangles": 7672
+      "sha256": "2e82fc608ea347728bf86085c187f4091be49a1c76345ac0eccbf14421b1593f",
+      "triangles": 10852
     }
   }
 }

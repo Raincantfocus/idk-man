@@ -2,9 +2,9 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Phase 2 / version 0.6:** four original armored enemy models replace the remaining box-built characters. Enforcers, rushers, shield units, and flushers share a 15-bone rig with procedural locomotion, hit reactions, attack cues, and skinned bodies that follow the existing articulated corpse physics. The animated elite, three first-person weapons, and expanded movement routes remain available. Fine hand animation and anatomical ragdoll constraints remain unfinished; gore remains Phase 3.
+**Version 0.7 — human soldiers and dismemberment:** all five enemy types now have human faces, visible skin, hair, and cloth uniforms. The elite also uses the human rig. These are stylized original models, not photorealistic scanned characters. Lethal hits to the head, arms, or legs detach that body region; repeated shots into a corpse can break the remaining attachments. Detached skin and clothing follow physical body parts, with cut surfaces at both ends.
 
-**Try it:** select Movement Lab, press **B** to choose an enemy type, then **T** to place it and refill your resources. Shoot targets to inspect hit reactions and falling bodies. Press **V** to visit movement routes. See the [enemy art notes](docs/PHASE_2_OPERATORS.md).
+**Try it:** enter Movement Lab, press **B** to select an enemy and **T** to place it. Shoot its head or legs for a lethal sever, or shoot a corpse's limbs repeatedly. **G** in menus toggles new gore/dismemberment. Existing detached bodies remain until cleanup or restart. See [human and dismemberment notes](docs/HUMANS_AND_DISMEMBERMENT.md).
 
 ## Play
 
@@ -46,7 +46,7 @@ Click **Movement Lab / Free Practice** to explore without waves. Three stationar
 | B in Movement Lab | Select the target type for T |
 | T in Movement Lab | Place a target and refill resources |
 | V in Movement Lab | Cycle through nine movement-route checkpoints |
-| M / G / H in menus | Toggle audio / blood-colored impact effects / camera motion |
+| M / G / H in menus | Toggle audio / gore and dismemberment / camera motion |
 | [ / ] in menus | Adjust mouse sensitivity |
 
 Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick damage breaks Shroud. Focus and Shroud are mutually exclusive. Run over red bandages, cyan armor, or lime ammunition packs to recover automatically. Supplies behind solid cover cannot be collected through the wall. Full resources leave drops available; partial use retains the remainder.
@@ -66,7 +66,7 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Current limits
 
-This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, dismemberment, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons now use separate authored meshes and a four-bone glove/sleeve rig; detailed finger animation and full hand-keyed clips remain unfinished. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
+This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, persistent wound/blood decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons now use separate authored meshes and a four-bone glove/sleeve rig; detailed finger animation and full hand-keyed clips remain unfinished. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
 
 The director uses bounded population, attack windups, and timed relief rather than the full adaptive pressure estimator in the design. Purchase tuning is intentionally simpler than the production attachment system. Effects are capped but not yet pooled. Damage/pickup resolution follows Godot node tick order, rather than the proposed substep timestamp event queue. A full difficulty/playability study is still needed. No 144 FPS claim has been validated.
 

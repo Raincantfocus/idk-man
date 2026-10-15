@@ -45,14 +45,10 @@ func setup(owner_game, archetype: String) -> void:
 	add_child(body)
 	color = {"enforcer": Color("a89d81"), "rusher": Color("b7805c"), "shield": Color("728d8c"), "flusher": Color("929e65"), "elite": Color("9c6c66")}[kind]
 	if kind == "elite":
-		body.scale = Vector3(1.25, 1.12, 1.25)
-		animated_visual = preload("res://scripts/elite_visual.gd").new()
-		body.add_child(animated_visual)
-		animated_visual.setup()
-	else:
-		animated_visual = preload("res://scripts/operator_visual.gd").new()
-		body.add_child(animated_visual)
-		animated_visual.setup(kind)
+		body.scale = Vector3(1.12, 1.06, 1.12)
+	animated_visual = preload("res://scripts/operator_visual.gd").new()
+	body.add_child(animated_visual)
+	animated_visual.setup(kind)
 	last_known = game.player.global_position
 	path_timer = game.rng.randf_range(0, 0.25)
 	add_to_group("enemy")
@@ -178,5 +174,9 @@ func take_damage(amount: float, hit_position: Vector3, headshot: bool = false, b
 		collision_layer = 0
 		collision_mask = 0
 		game.enemy_killed(self, headshot)
-		game.spawn_corpse(body, global_position, color)
+		var local_hit := body.to_local(hit_position)
+		var corpse = game.spawn_corpse(body, global_position, color)
+		if corpse != null and game.gore_enabled:
+			var region: String = corpse.region_at(local_hit)
+			if region != "torso": corpse.sever(region)
 		queue_free()
