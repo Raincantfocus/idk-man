@@ -1,0 +1,146 @@
+{
+  "source_hashes_verified": 37,
+  "exports": [
+    {
+      "file": "broad_lod0.glb",
+      "triangles": 26756,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 60.17
+    },
+    {
+      "file": "broad_lod1.glb",
+      "triangles": 12000,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 68.52
+    },
+    {
+      "file": "broad_lod2.glb",
+      "triangles": 4500,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 73.54
+    },
+    {
+      "file": "broad_lod3.glb",
+      "triangles": 1200,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 80.32
+    },
+    {
+      "file": "lean_lod0.glb",
+      "triangles": 26756,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 60.17
+    },
+    {
+      "file": "lean_lod1.glb",
+      "triangles": 12000,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 68.37
+    },
+    {
+      "file": "lean_lod2.glb",
+      "triangles": 4500,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 73.8
+    },
+    {
+      "file": "lean_lod3.glb",
+      "triangles": 1200,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 80.83
+    },
+    {
+      "file": "slender_lod0.glb",
+      "triangles": 26756,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 60.17
+    },
+    {
+      "file": "slender_lod1.glb",
+      "triangles": 12000,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 68.5
+    },
+    {
+      "file": "slender_lod2.glb",
+      "triangles": 4500,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 73.84
+    },
+    {
+      "file": "slender_lod3.glb",
+      "triangles": 1200,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 80.66
+    },
+    {
+      "file": "standard_lod0.glb",
+      "triangles": 26756,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 60.17
+    },
+    {
+      "file": "standard_lod1.glb",
+      "triangles": 12000,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 68.29
+    },
+    {
+      "file": "standard_lod2.glb",
+      "triangles": 4500,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 73.56
+    },
+    {
+      "file": "standard_lod3.glb",
+      "triangles": 1200,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 80.61
+    },
+    {
+      "file": "stocky_lod0.glb",
+      "triangles": 26756,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 60.17
+    },
+    {
+      "file": "stocky_lod1.glb",
+      "triangles": 12000,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 68.42
+    },
+    {
+      "file": "stocky_lod2.glb",
+      "triangles": 4500,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 73.71
+    },
+    {
+      "file": "stocky_lod3.glb",
+      "triangles": 1200,
+      "bones": 72,
+      "materials": 1,
+      "blended_vertices_percent": 80.39
+    }
+  ],
+  "production_ready": false
+}

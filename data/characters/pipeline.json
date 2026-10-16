@@ -1,0 +1,32 @@
+{
+ "schema": 1,
+ "height_m": 1.80,
+ "target_head_height_m": 0.24,
+ "max_materials": 3,
+ "max_skin_influences": 4,
+ "lod_soldier_triangles": [[35000,50000],[15000,20000],[5000,8000],[1500,2000]],
+ "body_lod_targets": [26756,12000,4500,1200],
+ "lod_ranges_m": [0,12,25,45],
+ "lod_hysteresis_m": 1.0,
+ "body_texels_per_meter": 1024,
+ "gear_texels_per_meter": 1024,
+ "head_texels_per_meter": 2048,
+ "uv_padding_px_2k": 16,
+ "body_shapes": [
+  {"id":"lean","shoulders":-0.15,"pelvis":-0.08,"soft_tissue":0.0},
+  {"id":"standard","shoulders":0.0,"pelvis":0.0,"soft_tissue":0.10},
+  {"id":"broad","shoulders":0.25,"pelvis":0.08,"soft_tissue":0.08},
+  {"id":"stocky","shoulders":0.15,"pelvis":0.20,"soft_tissue":0.32},
+  {"id":"slender","shoulders":-0.10,"pelvis":0.08,"soft_tissue":0.03}
+ ],
+ "roles": {
+  "rusher":{"parts":["fatigues_light","boots","webbing"],"camo":[0.24,0.29,0.18]},
+  "enforcer":{"parts":["fatigues","boots","plate_carrier","helmet","radio","magazines"],"camo":[0.22,0.26,0.20]},
+  "shield":{"parts":["fatigues","boots","plate_carrier","helmet","shield_harness","shoulder_guards","shield"],"camo":[0.16,0.21,0.25]},
+  "flusher":{"parts":["fatigues","boots","plate_carrier","respirator","utility_packs"],"camo":[0.31,0.27,0.16]},
+  "elite":{"parts":["fatigues","boots","heavy_carrier","helmet","shoulder_guards","utility_packs"],"camo":[0.22,0.19,0.17]}
+ },
+ "palette_names": ["olive","sand","grey","woodland","charcoal"],
+ "palettes": [[0.25,0.30,0.18],[0.42,0.36,0.25],[0.25,0.28,0.29],[0.18,0.25,0.15],[0.12,0.14,0.15]],
+ "release_gates": {"licensed_parts":true,"pbr_atlases":true,"joint_correctives":true,"wound_seams":true,"four_lod_budgets":true}
+}

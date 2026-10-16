@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="ZLCharacterVariant" format=3]
+
+[ext_resource type="PackedScene" path="res://assets/characters/generated/slender_lod0.glb" id="1_kw0li"]
+[ext_resource type="PackedScene" path="res://assets/characters/generated/slender_lod1.glb" id="2_ke5lf"]
+[ext_resource type="PackedScene" path="res://assets/characters/generated/slender_lod2.glb" id="3_gscc2"]
+[ext_resource type="PackedScene" path="res://assets/characters/generated/slender_lod3.glb" id="4_5yvai"]
+[ext_resource type="Script" path="res://scripts/characters/character_part.gd" id="5_a5t1m"]
+[ext_resource type="Script" path="res://scripts/characters/character_variant.gd" id="6_xhgyw"]
+
+[sub_resource type="SkeletonProfileHumanoid" id="SkeletonProfileHumanoid_el5fo"]
+
+[sub_resource type="BoneMap" id="BoneMap_uq7te"]
+profile = SubResource("SkeletonProfileHumanoid_el5fo")
+bone_map/Root = &"Root"
+bone_map/Hips = &"Hips"
+bone_map/Spine = &"Spine"
+bone_map/Chest = &"Chest"
+bone_map/UpperChest = &"UpperChest"
+bone_map/Neck = &"Neck"
+bone_map/Head = &"Head"
+bone_map/LeftEye = &"LeftEye"
+bone_map/RightEye = &"RightEye"
+bone_map/Jaw = &"Jaw"
+bone_map/LeftShoulder = &"LeftShoulder"
+bone_map/LeftUpperArm = &"LeftUpperArm"
+bone_map/LeftLowerArm = &"LeftLowerArm"
+bone_map/LeftHand = &"LeftHand"
+bone_map/LeftThumbMetacarpal = &"LeftThumbMetacarpal"
+bone_map/LeftThumbProximal = &"LeftThumbProximal"
+bone_map/LeftThumbDistal = &"LeftThumbDistal"
+bone_map/LeftIndexProximal = &"LeftIndexProximal"
+bone_map/LeftIndexIntermediate = &"LeftIndexIntermediate"
+bone_map/LeftIndexDistal = &"LeftIndexDistal"
+bone_map/LeftMiddleProximal = &"LeftMiddleProximal"
+bone_map/LeftMiddleIntermediate = &"LeftMiddleIntermediate"
+bone_map/LeftMiddleDistal = &"LeftMiddleDistal"
+bone_map/LeftRingProximal = &"LeftRingProximal"
+bone_map/LeftRingIntermediate = &"LeftRingIntermediate"
+bone_map/LeftRingDistal = &"LeftRingDistal"
+bone_map/LeftLittleProximal = &"LeftLittleProximal"
+bone_map/LeftLittleIntermediate = &"LeftLittleIntermediate"
+bone_map/LeftLittleDistal = &"LeftLittleDistal"
+bone_map/RightShoulder = &"RightShoulder"
+bone_map/RightUpperArm = &"RightUpperArm"
+bone_map/RightLowerArm = &"RightLowerArm"
+bone_map/RightHand = &"RightHand"
+bone_map/RightThumbMetacarpal = &"RightThumbMetacarpal"
+bone_map/RightThumbProximal = &"RightThumbProximal"
+bone_map/RightThumbDistal = &"RightThumbDistal"
+bone_map/RightIndexProximal = &"RightIndexProximal"
+bone_map/RightIndexIntermediate = &"RightIndexIntermediate"
+bone_map/RightIndexDistal = &"RightIndexDistal"
+bone_map/RightMiddleProximal = &"RightMiddleProximal"
+bone_map/RightMiddleIntermediate = &"RightMiddleIntermediate"
+bone_map/RightMiddleDistal = &"RightMiddleDistal"
+bone_map/RightRingProximal = &"RightRingProximal"
+bone_map/RightRingIntermediate = &"RightRingIntermediate"
+bone_map/RightRingDistal = &"RightRingDistal"
+bone_map/RightLittleProximal = &"RightLittleProximal"
+bone_map/RightLittleIntermediate = &"RightLittleIntermediate"
+bone_map/RightLittleDistal = &"RightLittleDistal"
+bone_map/LeftUpperLeg = &"LeftUpperLeg"
+bone_map/LeftLowerLeg = &"LeftLowerLeg"
+bone_map/LeftFoot = &"LeftFoot"
+bone_map/LeftToes = &"LeftToes"
+bone_map/RightUpperLeg = &"RightUpperLeg"
+bone_map/RightLowerLeg = &"RightLowerLeg"
+bone_map/RightFoot = &"RightFoot"
+bone_map/RightToes = &"RightToes"
+
+[resource]
+script = ExtResource("6_xhgyw")
+variant_id = &"rusher_slender"
+role = &"rusher"
+body_shape = &"slender"
+shape_parameters = Vector3(-0.1, 0.08, 0.03)
+body_lods = Array[PackedScene]([ExtResource("1_kw0li"), ExtResource("2_ke5lf"), ExtResource("3_gscc2"), ExtResource("4_5yvai")])
+required_parts = Array[StringName]([&"fatigues_light", &"boots", &"webbing"])
+camo_primary = Color(0.12, 0.14, 0.15, 1)
+camo_secondary = Color(0.077999994, 0.091, 0.097500004, 1)
+camo_tertiary = Color(0.384, 0.398, 0.40500003, 1)
+bone_map = SubResource("BoneMap_uq7te")
+lod_ranges = PackedFloat32Array(0, 12, 25, 45)

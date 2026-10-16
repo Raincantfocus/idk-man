@@ -8,6 +8,8 @@ A playable first-person survival prototype in **Godot 4.6.3**, built from the [t
 
 ![Warehouse overview](docs/warehouse-overview.png)
 
+Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER_PIPELINE_PHASE_1.md). Run `godot --path . scenes/characters/character_review.tscn` to inspect the CC0 human bodies, five shape presets and explicit LODs. Tactical gear, textures, correctives and wound seams remain open gates; playable enemies have not been switched to these unfinished assets.
+
 ## Play
 
 **Godot editor:** import `project.godot` with Godot 4.6.3 and press **F6/F5** to run the main scene/project. Or, from this directory:

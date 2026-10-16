@@ -1,0 +1,172 @@
+{
+  "source_revision": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "production_ready": false,
+  "body_only": true,
+  "bones": 72,
+  "source_quads": 13378,
+  "source_deformation_triangles": 0,
+  "missing": [
+    "tactical garments/gear",
+    "UV-specific PBR textures",
+    "joint corrective shapes",
+    "wound boundary seams"
+  ],
+  "lod_method": "Blender collapse candidates; require artist-retopologized deformation loops and seam review",
+  "variants": {
+    "lean": {
+      "shape": {
+        "id": "lean",
+        "shoulders": -0.15,
+        "pelvis": -0.08,
+        "soft_tissue": 0.0
+      },
+      "height_m": 1.8,
+      "lods": [
+        {
+          "path": "assets/characters/generated/lean_lod0.glb",
+          "triangles": 26756,
+          "sha256": "e12cd79448e2f0dfa447c11a1c8b42c48c0b110f6540fc19279b34a618b6ec91"
+        },
+        {
+          "path": "assets/characters/generated/lean_lod1.glb",
+          "triangles": 12000,
+          "sha256": "1b8652a6553b7db6108565386951a3a4d1018515361d5ec9c893365c60ef6657"
+        },
+        {
+          "path": "assets/characters/generated/lean_lod2.glb",
+          "triangles": 4500,
+          "sha256": "e1a1ef7b13c132439b082b7a0ed7fe56634614104c36c170fea06823d7a1dfbf"
+        },
+        {
+          "path": "assets/characters/generated/lean_lod3.glb",
+          "triangles": 1200,
+          "sha256": "e01fdae4a2979df6ba940df2bf1b85c600261b3a5d1244c599b86a603e044244"
+        }
+      ]
+    },
+    "standard": {
+      "shape": {
+        "id": "standard",
+        "shoulders": 0.0,
+        "pelvis": 0.0,
+        "soft_tissue": 0.1
+      },
+      "height_m": 1.8,
+      "lods": [
+        {
+          "path": "assets/characters/generated/standard_lod0.glb",
+          "triangles": 26756,
+          "sha256": "da6a7a00aefa256d774db862825fb6084098391df089040518548c7f73d6cb45"
+        },
+        {
+          "path": "assets/characters/generated/standard_lod1.glb",
+          "triangles": 12000,
+          "sha256": "3127da24cc84aea395198bb22fbafce6304377779ac3c73a485a5c08a48e923e"
+        },
+        {
+          "path": "assets/characters/generated/standard_lod2.glb",
+          "triangles": 4500,
+          "sha256": "3e28b4f52fa30d25737746374df654b76fddd3c7a7f030883258ac2b3c061a4d"
+        },
+        {
+          "path": "assets/characters/generated/standard_lod3.glb",
+          "triangles": 1200,
+          "sha256": "8e174f598e3a456f2559853e753af177381d2b0f8a13d960c61b4bb015b49d73"
+        }
+      ]
+    },
+    "broad": {
+      "shape": {
+        "id": "broad",
+        "shoulders": 0.25,
+        "pelvis": 0.08,
+        "soft_tissue": 0.08
+      },
+      "height_m": 1.8,
+      "lods": [
+        {
+          "path": "assets/characters/generated/broad_lod0.glb",
+          "triangles": 26756,
+          "sha256": "4802cf2aefef6e9c04afa513ab22013a2d17c8d4aabf83878764bc6e40f9c7c9"
+        },
+        {
+          "path": "assets/characters/generated/broad_lod1.glb",
+          "triangles": 12000,
+          "sha256": "e68a2c44afe45a4589d0ffb57b9528620671572ead48b77a066dc7aa2239dabf"
+        },
+        {
+          "path": "assets/characters/generated/broad_lod2.glb",
+          "triangles": 4500,
+          "sha256": "0af9ac51c359bff952b9a6dbcc91ab7f4730f437ba6cb1a3fc2eb2fcca3f54a3"
+        },
+        {
+          "path": "assets/characters/generated/broad_lod3.glb",
+          "triangles": 1200,
+          "sha256": "9d70d99cc24efa413f5d729907aabfa209873c03c8a0ed2587ccde23a210383f"
+        }
+      ]
+    },
+    "stocky": {
+      "shape": {
+        "id": "stocky",
+        "shoulders": 0.15,
+        "pelvis": 0.2,
+        "soft_tissue": 0.32
+      },
+      "height_m": 1.8,
+      "lods": [
+        {
+          "path": "assets/characters/generated/stocky_lod0.glb",
+          "triangles": 26756,
+          "sha256": "6e8e4a9596e2df0cb853cdf09c2ba0faedcbc46adbd5aa2e900bd82db92e9092"
+        },
+        {
+          "path": "assets/characters/generated/stocky_lod1.glb",
+          "triangles": 12000,
+          "sha256": "7c6abc9e97e0e764b0ead136f29fb2e9be2c8fa4ca0232b6297cc41d8ff8a6d3"
+        },
+        {
+          "path": "assets/characters/generated/stocky_lod2.glb",
+          "triangles": 4500,
+          "sha256": "a92930504b9a8ddd8c8b26affddea7ee38403290f34792998e0744b0b5b348a8"
+        },
+        {
+          "path": "assets/characters/generated/stocky_lod3.glb",
+          "triangles": 1200,
+          "sha256": "64c462520c9b38966e2d75e41ba31226e0ddea96456aa1093a93f8410a82fcdb"
+        }
+      ]
+    },
+    "slender": {
+      "shape": {
+        "id": "slender",
+        "shoulders": -0.1,
+        "pelvis": 0.08,
+        "soft_tissue": 0.03
+      },
+      "height_m": 1.8,
+      "lods": [
+        {
+          "path": "assets/characters/generated/slender_lod0.glb",
+          "triangles": 26756,
+          "sha256": "99e42bb4cacff6a371b681586a3ecf9b8ebeaa133ddc1236bdaa11f228aca4a2"
+        },
+        {
+          "path": "assets/characters/generated/slender_lod1.glb",
+          "triangles": 12000,
+          "sha256": "cf799782fa53a88253d2ebe581b13b473552d5ff3bb129a711905b11d81374d6"
+        },
+        {
+          "path": "assets/characters/generated/slender_lod2.glb",
+          "triangles": 4500,
+          "sha256": "42661b73981a96f03ed91c0b258809493f699baad0c9f62040d63b1e4ec165d4"
+        },
+        {
+          "path": "assets/characters/generated/slender_lod3.glb",
+          "triangles": 1200,
+          "sha256": "284c2937372d6234741d203667049df1322697aeaf092f1f3b76ea473a8c9453"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schema": 1,
+  "upstream_revision": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "assets": [
+    {
+      "path": "assets/characters/licenses/LICENSE.md",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.md",
+      "license": "upstream license documentation",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/licenses/LICENSE.ASSETS.md",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.ASSETS.md",
+      "license": "upstream license documentation",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/base.obj",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/default.mhskel",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default.mhskel",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "99f179bce0aa850b45d4191a1d0d234c5851f881c057439470ded3bddf729a24",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/default_weights.mhw",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default_weights.mhw",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "0f3641d651ae3d00ad6b4ccee43142edb109d3bd909d27d9e4139ef1beed8625",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/caucasian-male-young.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/macrodetails/caucasian-male-young.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "70e228ba7164737dae664454394536fc5935fa48d333c1a97d77e2dc6eacc5f5",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/universal-male-young-averagemuscle-averageweight.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "4ba5396ddabda448ece15650a566fbebfbb10239256ccb201e8f883429e12249",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/universal-male-young-averagemuscle-maxweight.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "3e77ff5a07a9b870db5226507e1cf8a295f0e09c109fb72142770f5f50427b5e",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/measure-shoulder-dist-incr.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/measure/measure-shoulder-dist-incr.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "af7394300c91d64fb0b032377aae72e546c778d1d5c00daed88858c04ee9150b",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/measure-shoulder-dist-decr.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/measure/measure-shoulder-dist-decr.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "15034d390da69ce7a3e46dfee0e248d0649bf6fc0bfec575b4cacf48b7a1ba5a",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/hip-scale-horiz-incr.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/hip/hip-scale-horiz-incr.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "2863ee4478f548cd2cdd932037fcd21e6b364b9a2d86911d3b603be18f598da7",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/source/hip-scale-horiz-decr.target",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/hip/hip-scale-horiz-decr.target",
+      "license": "CC0-1.0",
+      "authors": "MakeHuman contributors; copyright notices retained in source data",
+      "sha256": "b841b486b0f404249d47e0076c31f95c33e358f1cc45e47b499484c84b901330",
+      "modifications": "None; unmodified source data"
+    },
+    {
+      "path": "assets/characters/generated/broad_lod0.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "4802cf2aefef6e9c04afa513ab22013a2d17c8d4aabf83878764bc6e40f9c7c9",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/broad_lod1.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "e68a2c44afe45a4589d0ffb57b9528620671572ead48b77a066dc7aa2239dabf",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/broad_lod2.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "0af9ac51c359bff952b9a6dbcc91ab7f4730f437ba6cb1a3fc2eb2fcca3f54a3",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/broad_lod3.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "9d70d99cc24efa413f5d729907aabfa209873c03c8a0ed2587ccde23a210383f",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/lean_lod0.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "e12cd79448e2f0dfa447c11a1c8b42c48c0b110f6540fc19279b34a618b6ec91",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/lean_lod1.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "1b8652a6553b7db6108565386951a3a4d1018515361d5ec9c893365c60ef6657",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/lean_lod2.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "e1a1ef7b13c132439b082b7a0ed7fe56634614104c36c170fea06823d7a1dfbf",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/lean_lod3.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "e01fdae4a2979df6ba940df2bf1b85c600261b3a5d1244c599b86a603e044244",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/slender_lod0.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "99e42bb4cacff6a371b681586a3ecf9b8ebeaa133ddc1236bdaa11f228aca4a2",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/slender_lod1.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "cf799782fa53a88253d2ebe581b13b473552d5ff3bb129a711905b11d81374d6",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/slender_lod2.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "42661b73981a96f03ed91c0b258809493f699baad0c9f62040d63b1e4ec165d4",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/slender_lod3.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "284c2937372d6234741d203667049df1322697aeaf092f1f3b76ea473a8c9453",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/standard_lod0.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "da6a7a00aefa256d774db862825fb6084098391df089040518548c7f73d6cb45",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/standard_lod1.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "3127da24cc84aea395198bb22fbafce6304377779ac3c73a485a5c08a48e923e",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/standard_lod2.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "3e28b4f52fa30d25737746374df654b76fddd3c7a7f030883258ac2b3c061a4d",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/standard_lod3.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "8e174f598e3a456f2559853e753af177381d2b0f8a13d960c61b4bb015b49d73",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/stocky_lod0.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "6e8e4a9596e2df0cb853cdf09c2ba0faedcbc46adbd5aa2e900bd82db92e9092",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/stocky_lod1.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "7c6abc9e97e0e764b0ead136f29fb2e9be2c8fa4ca0232b6297cc41d8ff8a6d3",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/stocky_lod2.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "a92930504b9a8ddd8c8b26affddea7ee38403290f34792998e0744b0b5b348a8",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "assets/characters/generated/stocky_lod3.glb",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "64c462520c9b38966e2d75e41ba31226e0ddea96456aa1093a93f8410a82fcdb",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "art/characters/broad.blend",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "cc3f8bd31756faccb9cf612c14352d9715d628f6bc8e1f7cf4997db9f66241c5",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "art/characters/lean.blend",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "c8aa590a6cb0727dc74b366ef4c1ed169f591ea055ea78f832bdd6601d82a633",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "art/characters/slender.blend",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "cb6d688f9343e29d86bbafaf94dbfa3bac737efa55f6d2fa9873f97efa53ddb7",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "art/characters/standard.blend",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "d1e8204a7a2a629ce58c04e1fdc680e6ce0cc23b363ff1933f83a58fede2447c",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "art/characters/stocky.blend",
+      "license": "CC0-1.0",
+      "source": "MakeHuman base mesh, morph targets, rig and weights at a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+      "generated": true,
+      "generator": "tools/characters/build_body.py",
+      "sha256": "4a02beb26e96129abf601c29dcaed5f8a17f4a7a735185d3556f12235db7fbb1",
+      "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    }
+  ],
+  "production_ready": false,
+  "missing": [
+    "licensed tactical garments and gear",
+    "authored skin and garment PBR atlases",
+    "joint corrective shapes",
+    "authored wound boundary loops and fitted LODs"
+  ]
+}

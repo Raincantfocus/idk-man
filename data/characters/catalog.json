@@ -1,0 +1,1525 @@
+{
+	"schema": 1,
+	"variants": [
+		{
+			"body_lods": [
+				"res://assets/characters/generated/lean_lod0.glb",
+				"res://assets/characters/generated/lean_lod1.glb",
+				"res://assets/characters/generated/lean_lod2.glb",
+				"res://assets/characters/generated/lean_lod3.glb"
+			],
+			"body_shape": "lean",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.300000011920929,
+				0.180000007152557
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.195000007748604,
+				0.116999998688698
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.509999990463257,
+				0.425999999046326
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues_light",
+				"Missing part: boots",
+				"Missing part: webbing",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues_light",
+				"boots",
+				"webbing"
+			],
+			"resource": "res://data/characters/variants/rusher_lean.tres",
+			"role": "rusher",
+			"schema": 1,
+			"shape_parameters": [
+				-0.150000005960464,
+				-0.0799999982118607,
+				0.0
+			],
+			"variant_id": "rusher_lean"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/standard_lod0.glb",
+				"res://assets/characters/generated/standard_lod1.glb",
+				"res://assets/characters/generated/standard_lod2.glb",
+				"res://assets/characters/generated/standard_lod3.glb"
+			],
+			"body_shape": "standard",
+			"bone_map": "",
+			"camo_primary": [
+				0.419999986886978,
+				0.360000014305115,
+				0.25
+			],
+			"camo_secondary": [
+				0.272999972105026,
+				0.233999997377396,
+				0.162499994039536
+			],
+			"camo_tertiary": [
+				0.593999981880188,
+				0.552000045776367,
+				0.475000023841858
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues_light",
+				"Missing part: boots",
+				"Missing part: webbing",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues_light",
+				"boots",
+				"webbing"
+			],
+			"resource": "res://data/characters/variants/rusher_standard.tres",
+			"role": "rusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.0,
+				0.0,
+				0.100000001490116
+			],
+			"variant_id": "rusher_standard"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/broad_lod0.glb",
+				"res://assets/characters/generated/broad_lod1.glb",
+				"res://assets/characters/generated/broad_lod2.glb",
+				"res://assets/characters/generated/broad_lod3.glb"
+			],
+			"body_shape": "broad",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.280000001192093,
+				0.28999999165535
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.181999996304512,
+				0.188499987125397
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.496000021696091,
+				0.503000020980835
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues_light",
+				"Missing part: boots",
+				"Missing part: webbing",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues_light",
+				"boots",
+				"webbing"
+			],
+			"resource": "res://data/characters/variants/rusher_broad.tres",
+			"role": "rusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.25,
+				0.0799999982118607,
+				0.0799999982118607
+			],
+			"variant_id": "rusher_broad"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/stocky_lod0.glb",
+				"res://assets/characters/generated/stocky_lod1.glb",
+				"res://assets/characters/generated/stocky_lod2.glb",
+				"res://assets/characters/generated/stocky_lod3.glb"
+			],
+			"body_shape": "stocky",
+			"bone_map": "",
+			"camo_primary": [
+				0.180000007152557,
+				0.25,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.116999998688698,
+				0.162499994039536,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.425999999046326,
+				0.475000023841858,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues_light",
+				"Missing part: boots",
+				"Missing part: webbing",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues_light",
+				"boots",
+				"webbing"
+			],
+			"resource": "res://data/characters/variants/rusher_stocky.tres",
+			"role": "rusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.150000005960464,
+				0.200000002980232,
+				0.319999992847443
+			],
+			"variant_id": "rusher_stocky"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/slender_lod0.glb",
+				"res://assets/characters/generated/slender_lod1.glb",
+				"res://assets/characters/generated/slender_lod2.glb",
+				"res://assets/characters/generated/slender_lod3.glb"
+			],
+			"body_shape": "slender",
+			"bone_map": "",
+			"camo_primary": [
+				0.119999997317791,
+				0.140000000596046,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.0779999941587448,
+				0.090999998152256,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.38400000333786,
+				0.398000001907349,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues_light",
+				"Missing part: boots",
+				"Missing part: webbing",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues_light",
+				"boots",
+				"webbing"
+			],
+			"resource": "res://data/characters/variants/rusher_slender.tres",
+			"role": "rusher",
+			"schema": 1,
+			"shape_parameters": [
+				-0.100000001490116,
+				0.0799999982118607,
+				0.0299999993294477
+			],
+			"variant_id": "rusher_slender"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/lean_lod0.glb",
+				"res://assets/characters/generated/lean_lod1.glb",
+				"res://assets/characters/generated/lean_lod2.glb",
+				"res://assets/characters/generated/lean_lod3.glb"
+			],
+			"body_shape": "lean",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.300000011920929,
+				0.180000007152557
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.195000007748604,
+				0.116999998688698
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.509999990463257,
+				0.425999999046326
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: radio",
+				"Missing part: magazines",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"radio",
+				"magazines"
+			],
+			"resource": "res://data/characters/variants/enforcer_lean.tres",
+			"role": "enforcer",
+			"schema": 1,
+			"shape_parameters": [
+				-0.150000005960464,
+				-0.0799999982118607,
+				0.0
+			],
+			"variant_id": "enforcer_lean"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/standard_lod0.glb",
+				"res://assets/characters/generated/standard_lod1.glb",
+				"res://assets/characters/generated/standard_lod2.glb",
+				"res://assets/characters/generated/standard_lod3.glb"
+			],
+			"body_shape": "standard",
+			"bone_map": "",
+			"camo_primary": [
+				0.419999986886978,
+				0.360000014305115,
+				0.25
+			],
+			"camo_secondary": [
+				0.272999972105026,
+				0.233999997377396,
+				0.162499994039536
+			],
+			"camo_tertiary": [
+				0.593999981880188,
+				0.552000045776367,
+				0.475000023841858
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: radio",
+				"Missing part: magazines",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"radio",
+				"magazines"
+			],
+			"resource": "res://data/characters/variants/enforcer_standard.tres",
+			"role": "enforcer",
+			"schema": 1,
+			"shape_parameters": [
+				0.0,
+				0.0,
+				0.100000001490116
+			],
+			"variant_id": "enforcer_standard"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/broad_lod0.glb",
+				"res://assets/characters/generated/broad_lod1.glb",
+				"res://assets/characters/generated/broad_lod2.glb",
+				"res://assets/characters/generated/broad_lod3.glb"
+			],
+			"body_shape": "broad",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.280000001192093,
+				0.28999999165535
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.181999996304512,
+				0.188499987125397
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.496000021696091,
+				0.503000020980835
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: radio",
+				"Missing part: magazines",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"radio",
+				"magazines"
+			],
+			"resource": "res://data/characters/variants/enforcer_broad.tres",
+			"role": "enforcer",
+			"schema": 1,
+			"shape_parameters": [
+				0.25,
+				0.0799999982118607,
+				0.0799999982118607
+			],
+			"variant_id": "enforcer_broad"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/stocky_lod0.glb",
+				"res://assets/characters/generated/stocky_lod1.glb",
+				"res://assets/characters/generated/stocky_lod2.glb",
+				"res://assets/characters/generated/stocky_lod3.glb"
+			],
+			"body_shape": "stocky",
+			"bone_map": "",
+			"camo_primary": [
+				0.180000007152557,
+				0.25,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.116999998688698,
+				0.162499994039536,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.425999999046326,
+				0.475000023841858,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: radio",
+				"Missing part: magazines",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"radio",
+				"magazines"
+			],
+			"resource": "res://data/characters/variants/enforcer_stocky.tres",
+			"role": "enforcer",
+			"schema": 1,
+			"shape_parameters": [
+				0.150000005960464,
+				0.200000002980232,
+				0.319999992847443
+			],
+			"variant_id": "enforcer_stocky"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/slender_lod0.glb",
+				"res://assets/characters/generated/slender_lod1.glb",
+				"res://assets/characters/generated/slender_lod2.glb",
+				"res://assets/characters/generated/slender_lod3.glb"
+			],
+			"body_shape": "slender",
+			"bone_map": "",
+			"camo_primary": [
+				0.119999997317791,
+				0.140000000596046,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.0779999941587448,
+				0.090999998152256,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.38400000333786,
+				0.398000001907349,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: radio",
+				"Missing part: magazines",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"radio",
+				"magazines"
+			],
+			"resource": "res://data/characters/variants/enforcer_slender.tres",
+			"role": "enforcer",
+			"schema": 1,
+			"shape_parameters": [
+				-0.100000001490116,
+				0.0799999982118607,
+				0.0299999993294477
+			],
+			"variant_id": "enforcer_slender"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/lean_lod0.glb",
+				"res://assets/characters/generated/lean_lod1.glb",
+				"res://assets/characters/generated/lean_lod2.glb",
+				"res://assets/characters/generated/lean_lod3.glb"
+			],
+			"body_shape": "lean",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.300000011920929,
+				0.180000007152557
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.195000007748604,
+				0.116999998688698
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.509999990463257,
+				0.425999999046326
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: shield_harness",
+				"Missing part: shoulder_guards",
+				"Missing part: shield",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"shield_harness",
+				"shoulder_guards",
+				"shield"
+			],
+			"resource": "res://data/characters/variants/shield_lean.tres",
+			"role": "shield",
+			"schema": 1,
+			"shape_parameters": [
+				-0.150000005960464,
+				-0.0799999982118607,
+				0.0
+			],
+			"variant_id": "shield_lean"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/standard_lod0.glb",
+				"res://assets/characters/generated/standard_lod1.glb",
+				"res://assets/characters/generated/standard_lod2.glb",
+				"res://assets/characters/generated/standard_lod3.glb"
+			],
+			"body_shape": "standard",
+			"bone_map": "",
+			"camo_primary": [
+				0.419999986886978,
+				0.360000014305115,
+				0.25
+			],
+			"camo_secondary": [
+				0.272999972105026,
+				0.233999997377396,
+				0.162499994039536
+			],
+			"camo_tertiary": [
+				0.593999981880188,
+				0.552000045776367,
+				0.475000023841858
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: shield_harness",
+				"Missing part: shoulder_guards",
+				"Missing part: shield",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"shield_harness",
+				"shoulder_guards",
+				"shield"
+			],
+			"resource": "res://data/characters/variants/shield_standard.tres",
+			"role": "shield",
+			"schema": 1,
+			"shape_parameters": [
+				0.0,
+				0.0,
+				0.100000001490116
+			],
+			"variant_id": "shield_standard"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/broad_lod0.glb",
+				"res://assets/characters/generated/broad_lod1.glb",
+				"res://assets/characters/generated/broad_lod2.glb",
+				"res://assets/characters/generated/broad_lod3.glb"
+			],
+			"body_shape": "broad",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.280000001192093,
+				0.28999999165535
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.181999996304512,
+				0.188499987125397
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.496000021696091,
+				0.503000020980835
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: shield_harness",
+				"Missing part: shoulder_guards",
+				"Missing part: shield",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"shield_harness",
+				"shoulder_guards",
+				"shield"
+			],
+			"resource": "res://data/characters/variants/shield_broad.tres",
+			"role": "shield",
+			"schema": 1,
+			"shape_parameters": [
+				0.25,
+				0.0799999982118607,
+				0.0799999982118607
+			],
+			"variant_id": "shield_broad"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/stocky_lod0.glb",
+				"res://assets/characters/generated/stocky_lod1.glb",
+				"res://assets/characters/generated/stocky_lod2.glb",
+				"res://assets/characters/generated/stocky_lod3.glb"
+			],
+			"body_shape": "stocky",
+			"bone_map": "",
+			"camo_primary": [
+				0.180000007152557,
+				0.25,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.116999998688698,
+				0.162499994039536,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.425999999046326,
+				0.475000023841858,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: shield_harness",
+				"Missing part: shoulder_guards",
+				"Missing part: shield",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"shield_harness",
+				"shoulder_guards",
+				"shield"
+			],
+			"resource": "res://data/characters/variants/shield_stocky.tres",
+			"role": "shield",
+			"schema": 1,
+			"shape_parameters": [
+				0.150000005960464,
+				0.200000002980232,
+				0.319999992847443
+			],
+			"variant_id": "shield_stocky"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/slender_lod0.glb",
+				"res://assets/characters/generated/slender_lod1.glb",
+				"res://assets/characters/generated/slender_lod2.glb",
+				"res://assets/characters/generated/slender_lod3.glb"
+			],
+			"body_shape": "slender",
+			"bone_map": "",
+			"camo_primary": [
+				0.119999997317791,
+				0.140000000596046,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.0779999941587448,
+				0.090999998152256,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.38400000333786,
+				0.398000001907349,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: helmet",
+				"Missing part: shield_harness",
+				"Missing part: shoulder_guards",
+				"Missing part: shield",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"helmet",
+				"shield_harness",
+				"shoulder_guards",
+				"shield"
+			],
+			"resource": "res://data/characters/variants/shield_slender.tres",
+			"role": "shield",
+			"schema": 1,
+			"shape_parameters": [
+				-0.100000001490116,
+				0.0799999982118607,
+				0.0299999993294477
+			],
+			"variant_id": "shield_slender"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/lean_lod0.glb",
+				"res://assets/characters/generated/lean_lod1.glb",
+				"res://assets/characters/generated/lean_lod2.glb",
+				"res://assets/characters/generated/lean_lod3.glb"
+			],
+			"body_shape": "lean",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.300000011920929,
+				0.180000007152557
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.195000007748604,
+				0.116999998688698
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.509999990463257,
+				0.425999999046326
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: respirator",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"respirator",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/flusher_lean.tres",
+			"role": "flusher",
+			"schema": 1,
+			"shape_parameters": [
+				-0.150000005960464,
+				-0.0799999982118607,
+				0.0
+			],
+			"variant_id": "flusher_lean"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/standard_lod0.glb",
+				"res://assets/characters/generated/standard_lod1.glb",
+				"res://assets/characters/generated/standard_lod2.glb",
+				"res://assets/characters/generated/standard_lod3.glb"
+			],
+			"body_shape": "standard",
+			"bone_map": "",
+			"camo_primary": [
+				0.419999986886978,
+				0.360000014305115,
+				0.25
+			],
+			"camo_secondary": [
+				0.272999972105026,
+				0.233999997377396,
+				0.162499994039536
+			],
+			"camo_tertiary": [
+				0.593999981880188,
+				0.552000045776367,
+				0.475000023841858
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: respirator",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"respirator",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/flusher_standard.tres",
+			"role": "flusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.0,
+				0.0,
+				0.100000001490116
+			],
+			"variant_id": "flusher_standard"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/broad_lod0.glb",
+				"res://assets/characters/generated/broad_lod1.glb",
+				"res://assets/characters/generated/broad_lod2.glb",
+				"res://assets/characters/generated/broad_lod3.glb"
+			],
+			"body_shape": "broad",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.280000001192093,
+				0.28999999165535
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.181999996304512,
+				0.188499987125397
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.496000021696091,
+				0.503000020980835
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: respirator",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"respirator",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/flusher_broad.tres",
+			"role": "flusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.25,
+				0.0799999982118607,
+				0.0799999982118607
+			],
+			"variant_id": "flusher_broad"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/stocky_lod0.glb",
+				"res://assets/characters/generated/stocky_lod1.glb",
+				"res://assets/characters/generated/stocky_lod2.glb",
+				"res://assets/characters/generated/stocky_lod3.glb"
+			],
+			"body_shape": "stocky",
+			"bone_map": "",
+			"camo_primary": [
+				0.180000007152557,
+				0.25,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.116999998688698,
+				0.162499994039536,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.425999999046326,
+				0.475000023841858,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: respirator",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"respirator",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/flusher_stocky.tres",
+			"role": "flusher",
+			"schema": 1,
+			"shape_parameters": [
+				0.150000005960464,
+				0.200000002980232,
+				0.319999992847443
+			],
+			"variant_id": "flusher_stocky"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/slender_lod0.glb",
+				"res://assets/characters/generated/slender_lod1.glb",
+				"res://assets/characters/generated/slender_lod2.glb",
+				"res://assets/characters/generated/slender_lod3.glb"
+			],
+			"body_shape": "slender",
+			"bone_map": "",
+			"camo_primary": [
+				0.119999997317791,
+				0.140000000596046,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.0779999941587448,
+				0.090999998152256,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.38400000333786,
+				0.398000001907349,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: plate_carrier",
+				"Missing part: respirator",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"plate_carrier",
+				"respirator",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/flusher_slender.tres",
+			"role": "flusher",
+			"schema": 1,
+			"shape_parameters": [
+				-0.100000001490116,
+				0.0799999982118607,
+				0.0299999993294477
+			],
+			"variant_id": "flusher_slender"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/lean_lod0.glb",
+				"res://assets/characters/generated/lean_lod1.glb",
+				"res://assets/characters/generated/lean_lod2.glb",
+				"res://assets/characters/generated/lean_lod3.glb"
+			],
+			"body_shape": "lean",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.300000011920929,
+				0.180000007152557
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.195000007748604,
+				0.116999998688698
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.509999990463257,
+				0.425999999046326
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: heavy_carrier",
+				"Missing part: helmet",
+				"Missing part: shoulder_guards",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"heavy_carrier",
+				"helmet",
+				"shoulder_guards",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/elite_lean.tres",
+			"role": "elite",
+			"schema": 1,
+			"shape_parameters": [
+				-0.150000005960464,
+				-0.0799999982118607,
+				0.0
+			],
+			"variant_id": "elite_lean"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/standard_lod0.glb",
+				"res://assets/characters/generated/standard_lod1.glb",
+				"res://assets/characters/generated/standard_lod2.glb",
+				"res://assets/characters/generated/standard_lod3.glb"
+			],
+			"body_shape": "standard",
+			"bone_map": "",
+			"camo_primary": [
+				0.419999986886978,
+				0.360000014305115,
+				0.25
+			],
+			"camo_secondary": [
+				0.272999972105026,
+				0.233999997377396,
+				0.162499994039536
+			],
+			"camo_tertiary": [
+				0.593999981880188,
+				0.552000045776367,
+				0.475000023841858
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: heavy_carrier",
+				"Missing part: helmet",
+				"Missing part: shoulder_guards",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"heavy_carrier",
+				"helmet",
+				"shoulder_guards",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/elite_standard.tres",
+			"role": "elite",
+			"schema": 1,
+			"shape_parameters": [
+				0.0,
+				0.0,
+				0.100000001490116
+			],
+			"variant_id": "elite_standard"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/broad_lod0.glb",
+				"res://assets/characters/generated/broad_lod1.glb",
+				"res://assets/characters/generated/broad_lod2.glb",
+				"res://assets/characters/generated/broad_lod3.glb"
+			],
+			"body_shape": "broad",
+			"bone_map": "",
+			"camo_primary": [
+				0.25,
+				0.280000001192093,
+				0.28999999165535
+			],
+			"camo_secondary": [
+				0.162499994039536,
+				0.181999996304512,
+				0.188499987125397
+			],
+			"camo_tertiary": [
+				0.475000023841858,
+				0.496000021696091,
+				0.503000020980835
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: heavy_carrier",
+				"Missing part: helmet",
+				"Missing part: shoulder_guards",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"heavy_carrier",
+				"helmet",
+				"shoulder_guards",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/elite_broad.tres",
+			"role": "elite",
+			"schema": 1,
+			"shape_parameters": [
+				0.25,
+				0.0799999982118607,
+				0.0799999982118607
+			],
+			"variant_id": "elite_broad"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/stocky_lod0.glb",
+				"res://assets/characters/generated/stocky_lod1.glb",
+				"res://assets/characters/generated/stocky_lod2.glb",
+				"res://assets/characters/generated/stocky_lod3.glb"
+			],
+			"body_shape": "stocky",
+			"bone_map": "",
+			"camo_primary": [
+				0.180000007152557,
+				0.25,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.116999998688698,
+				0.162499994039536,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.425999999046326,
+				0.475000023841858,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: heavy_carrier",
+				"Missing part: helmet",
+				"Missing part: shoulder_guards",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"heavy_carrier",
+				"helmet",
+				"shoulder_guards",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/elite_stocky.tres",
+			"role": "elite",
+			"schema": 1,
+			"shape_parameters": [
+				0.150000005960464,
+				0.200000002980232,
+				0.319999992847443
+			],
+			"variant_id": "elite_stocky"
+		},
+		{
+			"body_lods": [
+				"res://assets/characters/generated/slender_lod0.glb",
+				"res://assets/characters/generated/slender_lod1.glb",
+				"res://assets/characters/generated/slender_lod2.glb",
+				"res://assets/characters/generated/slender_lod3.glb"
+			],
+			"body_shape": "slender",
+			"bone_map": "",
+			"camo_primary": [
+				0.119999997317791,
+				0.140000000596046,
+				0.150000005960464
+			],
+			"camo_secondary": [
+				0.0779999941587448,
+				0.090999998152256,
+				0.0975000038743019
+			],
+			"camo_tertiary": [
+				0.38400000333786,
+				0.398000001907349,
+				0.405000030994415
+			],
+			"lod_margin": 1.0,
+			"lod_ranges": [
+				0.0,
+				12.0,
+				25.0,
+				45.0
+			],
+			"parts": [],
+			"release_blockers": [
+				"Missing part: fatigues",
+				"Missing part: boots",
+				"Missing part: heavy_carrier",
+				"Missing part: helmet",
+				"Missing part: shoulder_guards",
+				"Missing part: utility_packs",
+				"UV-specific body PBR atlas missing",
+				"Joint corrective shapes not reviewed",
+				"Wound boundary seams not reviewed",
+				"Assembled soldier LOD budgets not reviewed"
+			],
+			"required_parts": [
+				"fatigues",
+				"boots",
+				"heavy_carrier",
+				"helmet",
+				"shoulder_guards",
+				"utility_packs"
+			],
+			"resource": "res://data/characters/variants/elite_slender.tres",
+			"role": "elite",
+			"schema": 1,
+			"shape_parameters": [
+				-0.100000001490116,
+				0.0799999982118607,
+				0.0299999993294477
+			],
+			"variant_id": "elite_slender"
+		}
+	]
+}
