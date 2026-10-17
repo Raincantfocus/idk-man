@@ -99,17 +99,12 @@ func _apply_materials(root: Node3D,part: ZLCharacterPart) -> void:
   var mesh: MeshInstance3D=node as MeshInstance3D
   for i: int in mini(mesh.mesh.get_surface_count(),part.materials.size()):
    var source: Material=part.materials[i]
-   if not material_cache.has(source):
-    var material: Material=source
-    if material is ShaderMaterial:
-     var shader_material: ShaderMaterial=material.duplicate() as ShaderMaterial
-     if shader_material.shader==preload("res://scripts/characters/camo_pbr.gdshader"):
-      shader_material.set_shader_parameter("primary_color",variant.camo_primary)
-      shader_material.set_shader_parameter("secondary_color",variant.camo_secondary)
-      shader_material.set_shader_parameter("tertiary_color",variant.camo_tertiary)
-     material=shader_material
-    material_cache[source]=material
-   mesh.set_surface_override_material(i,material_cache[source])
+   material_cache[source]=source
+   if source is ShaderMaterial and (source as ShaderMaterial).shader==preload("res://scripts/characters/camo_pbr.gdshader"):
+    mesh.set_instance_shader_parameter("primary_color",variant.camo_primary)
+    mesh.set_instance_shader_parameter("secondary_color",variant.camo_secondary)
+    mesh.set_instance_shader_parameter("tertiary_color",variant.camo_tertiary)
+   mesh.set_surface_override_material(i,source)
 
 func _fail(message: String) -> bool:
  setup_errors.append(message)

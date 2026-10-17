@@ -330,5 +330,47 @@
     "authored skin and garment PBR atlases",
     "joint corrective shapes",
     "authored wound boundary loops and fitted LODs"
+  ],
+  "external_supplied_assets": [
+    {
+      "name": "GROM",
+      "source": "User-uploaded split ZIP",
+      "license": "User reports purchase; supplier and redistribution license not supplied",
+      "public_redistribution_verified": false,
+      "sha256": "719e6e0363cec5974856dc528e5c50035dd89232b50a823b04d6305f656b985e",
+      "crc32": "787a3ce5",
+      "storage": "Private staging outside checkout",
+      "integrated": false
+    },
+    {
+      "name": "Konig",
+      "source": "User-uploaded split ZIP",
+      "license": "User reports purchase; supplier and redistribution license not supplied",
+      "public_redistribution_verified": false,
+      "sha256": "92908516017e79d58237810bbcc5836eed808e2ea8b3525fab4f818ff5864151",
+      "crc32": "26e344b6",
+      "storage": "Private staging outside checkout",
+      "integrated": false
+    },
+    {
+      "name": "Soup_masked",
+      "source": "User-uploaded split ZIP",
+      "license": "User reports purchase; supplier and redistribution license not supplied",
+      "public_redistribution_verified": false,
+      "sha256": "8d48cfa3045986c8f62f9447d2224f9f97530e9f98c86d1e76136927c5fd2165",
+      "crc32": "3189412c",
+      "storage": "Private staging outside checkout",
+      "integrated": false
+    },
+    {
+      "name": "Makarov (shaded soldier)",
+      "source": "User-uploaded split ZIP",
+      "license": "User reports purchase; supplier and redistribution license not supplied",
+      "public_redistribution_verified": false,
+      "sha256": "c924ab384fd7d36fc696b1883584a3d3a8fbce3fbafa149652ca4a75ace0f119",
+      "crc32": "09639638",
+      "storage": "Private staging outside checkout",
+      "integrated": false
+    }
   ]
 }

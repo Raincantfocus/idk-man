@@ -1,0 +1,405 @@
+{
+  "approved_variants": 0,
+  "complete": false,
+  "next_phase_authorized_by_user": true,
+  "next_phase_ready": false,
+  "pending_evidence": [
+    "anatomical_landmarks",
+    "modular_role_kits",
+    "atlas_and_patterns",
+    "deformation_and_seams",
+    "live_cosmetic_lifecycle",
+    "contact_sheet_20m",
+    "role_identification",
+    "rendering_budget"
+  ],
+  "phase": 1,
+  "total_variants": 25,
+  "variants": [
+    {
+      "blockers": [
+        "Missing part: fatigues_light",
+        "Missing part: boots",
+        "Missing part: webbing",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "rusher_lean"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues_light",
+        "Missing part: boots",
+        "Missing part: webbing",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "rusher_standard"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues_light",
+        "Missing part: boots",
+        "Missing part: webbing",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "rusher_broad"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues_light",
+        "Missing part: boots",
+        "Missing part: webbing",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "rusher_stocky"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues_light",
+        "Missing part: boots",
+        "Missing part: webbing",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "rusher_slender"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: radio",
+        "Missing part: magazines",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "enforcer_lean"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: radio",
+        "Missing part: magazines",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "enforcer_standard"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: radio",
+        "Missing part: magazines",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "enforcer_broad"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: radio",
+        "Missing part: magazines",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "enforcer_stocky"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: radio",
+        "Missing part: magazines",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "enforcer_slender"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: shield_harness",
+        "Missing part: shoulder_guards",
+        "Missing part: shield",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "shield_lean"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: shield_harness",
+        "Missing part: shoulder_guards",
+        "Missing part: shield",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "shield_standard"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: shield_harness",
+        "Missing part: shoulder_guards",
+        "Missing part: shield",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "shield_broad"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: shield_harness",
+        "Missing part: shoulder_guards",
+        "Missing part: shield",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "shield_stocky"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: helmet",
+        "Missing part: shield_harness",
+        "Missing part: shoulder_guards",
+        "Missing part: shield",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "shield_slender"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: respirator",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "flusher_lean"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: respirator",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "flusher_standard"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: respirator",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "flusher_broad"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: respirator",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "flusher_stocky"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: plate_carrier",
+        "Missing part: respirator",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "flusher_slender"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: heavy_carrier",
+        "Missing part: helmet",
+        "Missing part: shoulder_guards",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "elite_lean"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: heavy_carrier",
+        "Missing part: helmet",
+        "Missing part: shoulder_guards",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "elite_standard"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: heavy_carrier",
+        "Missing part: helmet",
+        "Missing part: shoulder_guards",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "elite_broad"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: heavy_carrier",
+        "Missing part: helmet",
+        "Missing part: shoulder_guards",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "elite_stocky"
+    },
+    {
+      "blockers": [
+        "Missing part: fatigues",
+        "Missing part: boots",
+        "Missing part: heavy_carrier",
+        "Missing part: helmet",
+        "Missing part: shoulder_guards",
+        "Missing part: utility_packs",
+        "UV-specific body PBR atlas missing",
+        "Joint corrective shapes not reviewed",
+        "Wound boundary seams not reviewed",
+        "Assembled soldier LOD budgets not reviewed"
+      ],
+      "production_gate_passed": false,
+      "variant": "elite_slender"
+    }
+  ]
+}

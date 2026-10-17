@@ -63,6 +63,20 @@ func run() -> void:
  with_part.parts=[part,part,part]
  check(assembly.configure(with_part,false),"modular gear shares its camo material within the three-material budget")
  check(assembly.material_cache.size()==1,"one camo material instance is shared across parts and LODs")
+ check(assembly.material_cache[camo]==camo,"camo material is never duplicated")
+ var other := ZLCharacterAssembly.new()
+ root.add_child(other)
+ var other_variant: ZLCharacterVariant=with_part.duplicate() as ZLCharacterVariant
+ other_variant.camo_primary=Color.RED
+ check(other.configure(other_variant,false),"second character assembles")
+ check(other.material_cache[camo]==assembly.material_cache[camo],"characters share the same material resource")
+ var colors_match: bool=true
+ for node: Node in other.lod_roots[0].find_children("*","MeshInstance3D",true,false):
+  var mesh: MeshInstance3D=node as MeshInstance3D
+  if mesh.get_active_material(0)==camo:
+   colors_match=colors_match and mesh.get_instance_shader_parameter("primary_color")==Color.RED
+ check(colors_match,"character tint is stored on mesh instances")
+ other.free()
  part.body_shape=&"broad"
  check(not assembly.configure(with_part,false) and assembly.get_child_count()==0,"mismatched fitted part rejects and rolls back partial assembly")
  part.body_shape=definition.body_shape

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "acceptance": [
+    {"id":"anatomical_landmarks", "status":"pending", "requirement":"Barefoot 1.80 m and crown-to-chin 0.24 m validated across body morphs"},
+    {"id":"modular_role_kits", "status":"pending", "requirement":"Five fitted role kits, four base bodies and three legal head choices per role"},
+    {"id":"atlas_and_patterns", "status":"pending", "requirement":"Shared atlas, six authored camo patterns, skin/dirt/wear masks; maximum three materials"},
+    {"id":"deformation_and_seams", "status":"pending", "requirement":"Correctives, deformation loops, skin weights and wound boundaries inspected"},
+    {"id":"live_cosmetic_lifecycle", "status":"pending", "requirement":"Approved art connected to spawn, corpse and pooling lifecycle without gameplay changes"},
+    {"id":"contact_sheet_20m", "status":"pending", "requirement":"20 enemies, four per role, rendered at 20 m; color and grayscale, front and back"},
+    {"id":"role_identification", "status":"pending", "requirement":"User correctly identifies shuffled grayscale role silhouettes"},
+    {"id":"rendering_budget", "status":"pending", "requirement":"Per-enemy triangles, bones, surfaces/materials and measured draw calls meet agreed budgets"}
+  ]
+}

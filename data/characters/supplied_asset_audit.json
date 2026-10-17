@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-17",
+  "source_files_preserved": true,
+  "GROM_blender_version_warning": "File saved by Blender 4.5; audited provisionally in 4.3.2",
+  "assets": [
+    {
+      "name": "GROM",
+      "sha256": "719e6e0363cec5974856dc528e5c50035dd89232b50a823b04d6305f656b985e",
+      "triangles_all_non_widget_source_meshes": 77336,
+      "unique_materials": 23,
+      "skinned_triangles": 77336,
+      "rigs": [
+        {
+          "name": "Joints",
+          "bones": 261,
+          "deform": 261
+        }
+      ],
+      "animation_actions": 0,
+      "shape_key_meshes": 0
+    },
+    {
+      "name": "Konig",
+      "sha256": "92908516017e79d58237810bbcc5836eed808e2ea8b3525fab4f818ff5864151",
+      "triangles_all_non_widget_source_meshes": 126458,
+      "unique_materials": 54,
+      "skinned_triangles": 63355,
+      "rigs": [
+        {
+          "name": "rig",
+          "bones": 706,
+          "deform": 160
+        }
+      ],
+      "animation_actions": 0,
+      "shape_key_meshes": 0
+    },
+    {
+      "name": "Soup_masked",
+      "sha256": "8d48cfa3045986c8f62f9447d2224f9f97530e9f98c86d1e76136927c5fd2165",
+      "triangles_all_non_widget_source_meshes": 178652,
+      "unique_materials": 54,
+      "skinned_triangles": 63267,
+      "rigs": [
+        {
+          "name": "rig",
+          "bones": 918,
+          "deform": 171
+        }
+      ],
+      "animation_actions": 0,
+      "shape_key_meshes": 0
+    },
+    {
+      "name": "Makarov (shaded soldier)",
+      "sha256": "c924ab384fd7d36fc696b1883584a3d3a8fbce3fbafa149652ca4a75ace0f119",
+      "triangles_all_non_widget_source_meshes": 81054,
+      "unique_materials": 38,
+      "skinned_triangles": 69243,
+      "rigs": [
+        {
+          "name": "rig",
+          "bones": 706,
+          "deform": 160
+        }
+      ],
+      "animation_actions": 0,
+      "shape_key_meshes": 0
+    }
+  ]
+}

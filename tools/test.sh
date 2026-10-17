@@ -13,3 +13,4 @@ cd "$(dirname "$0")/.."
 "${GODOT_BIN:-godot}" --headless --path . --script tests/art_damage.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/warehouse.gd
 "${GODOT_BIN:-godot}" --headless --path . --script tests/character_pipeline.gd
+"${GODOT_BIN:-godot}" --headless --path . --script tests/cosmetic_selection.gd

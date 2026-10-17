@@ -33,6 +33,8 @@ for source in FILES:
   'sha256':hashlib.sha256(data).hexdigest(),'modifications':'None; unmodified source data'})
 existing=ROOT/'assets/characters/provenance.json'
 if existing.exists():
- manifest['assets'] += [a for a in json.loads(existing.read_text()).get('assets',[]) if a.get('generated',False)]
+ previous=json.loads(existing.read_text())
+ manifest['assets'] += [a for a in previous.get('assets',[]) if a.get('generated',False)]
+ if 'external_supplied_assets' in previous: manifest['external_supplied_assets']=previous['external_supplied_assets']
 (ROOT/'assets/characters/provenance.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('Pinned CC0 source files:',len(FILES))
