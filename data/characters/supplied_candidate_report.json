@@ -1,0 +1,651 @@
+{
+  "note": "Fitted candidate outfits, not five role kits. Missing helmet, masks, correctives and wound seams.",
+  "production_ready": false,
+  "variants": [
+    {
+      "costs": [
+        {
+          "bones": 72,
+          "lod": 0,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 38999
+        },
+        {
+          "bones": 72,
+          "lod": 1,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 16494
+        },
+        {
+          "bones": 72,
+          "lod": 2,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 5471
+        },
+        {
+          "bones": 72,
+          "lod": 3,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 1720
+        }
+      ],
+      "definition": {
+        "body_lods": [
+          "res://head_lean_lod0.glb",
+          "res://head_lean_lod1.glb",
+          "res://head_lean_lod2.glb",
+          "res://head_lean_lod3.glb"
+        ],
+        "body_materials": [
+          "res://shared_materials/head.tres"
+        ],
+        "body_shape": "lean",
+        "bone_map": "res://humanoid_bone_map.tres",
+        "camo_primary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_secondary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_tertiary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lod_margin": 1.0,
+        "lod_ranges": [
+          0.0,
+          12.0,
+          25.0,
+          45.0
+        ],
+        "parts": [
+          {
+            "body_shape": "lean",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://fatigues_lean_lod0.glb",
+              "res://fatigues_lean_lod1.glb",
+              "res://fatigues_lean_lod2.glb",
+              "res://fatigues_lean_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/fatigues.tres"
+            ],
+            "part_id": "fatigues",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          },
+          {
+            "body_shape": "lean",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://carrier_lean_lod0.glb",
+              "res://carrier_lean_lod1.glb",
+              "res://carrier_lean_lod2.glb",
+              "res://carrier_lean_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/carrier.tres"
+            ],
+            "part_id": "carrier",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          }
+        ],
+        "release_blockers": [
+          "Part fit not reviewed: fatigues",
+          "Part fit not reviewed: carrier",
+          "Missing part: helmet",
+          "UV-specific body PBR atlas missing",
+          "Joint corrective shapes not reviewed",
+          "Wound boundary seams not reviewed",
+          "Assembled soldier LOD budgets not reviewed"
+        ],
+        "required_parts": [
+          "fatigues",
+          "carrier",
+          "helmet"
+        ],
+        "role": "enforcer",
+        "schema": 1,
+        "shape_parameters": [
+          -0.150000005960464,
+          -0.0799999982118607,
+          0.0
+        ],
+        "variant_id": "supplied_review_lean"
+      }
+    },
+    {
+      "costs": [
+        {
+          "bones": 72,
+          "lod": 0,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 38997
+        },
+        {
+          "bones": 72,
+          "lod": 1,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 16495
+        },
+        {
+          "bones": 72,
+          "lod": 2,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 5470
+        },
+        {
+          "bones": 72,
+          "lod": 3,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 1704
+        }
+      ],
+      "definition": {
+        "body_lods": [
+          "res://head_standard_lod0.glb",
+          "res://head_standard_lod1.glb",
+          "res://head_standard_lod2.glb",
+          "res://head_standard_lod3.glb"
+        ],
+        "body_materials": [
+          "res://shared_materials/head.tres"
+        ],
+        "body_shape": "standard",
+        "bone_map": "res://humanoid_bone_map.tres",
+        "camo_primary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_secondary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_tertiary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lod_margin": 1.0,
+        "lod_ranges": [
+          0.0,
+          12.0,
+          25.0,
+          45.0
+        ],
+        "parts": [
+          {
+            "body_shape": "standard",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://fatigues_standard_lod0.glb",
+              "res://fatigues_standard_lod1.glb",
+              "res://fatigues_standard_lod2.glb",
+              "res://fatigues_standard_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/fatigues.tres"
+            ],
+            "part_id": "fatigues",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          },
+          {
+            "body_shape": "standard",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://carrier_standard_lod0.glb",
+              "res://carrier_standard_lod1.glb",
+              "res://carrier_standard_lod2.glb",
+              "res://carrier_standard_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/carrier.tres"
+            ],
+            "part_id": "carrier",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          }
+        ],
+        "release_blockers": [
+          "Part fit not reviewed: fatigues",
+          "Part fit not reviewed: carrier",
+          "Missing part: helmet",
+          "UV-specific body PBR atlas missing",
+          "Joint corrective shapes not reviewed",
+          "Wound boundary seams not reviewed",
+          "Assembled soldier LOD budgets not reviewed"
+        ],
+        "required_parts": [
+          "fatigues",
+          "carrier",
+          "helmet"
+        ],
+        "role": "enforcer",
+        "schema": 1,
+        "shape_parameters": [
+          0.0,
+          0.0,
+          0.100000001490116
+        ],
+        "variant_id": "supplied_review_standard"
+      }
+    },
+    {
+      "costs": [
+        {
+          "bones": 72,
+          "lod": 0,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 38999
+        },
+        {
+          "bones": 72,
+          "lod": 1,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 16495
+        },
+        {
+          "bones": 72,
+          "lod": 2,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 5471
+        },
+        {
+          "bones": 72,
+          "lod": 3,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 1708
+        }
+      ],
+      "definition": {
+        "body_lods": [
+          "res://head_broad_lod0.glb",
+          "res://head_broad_lod1.glb",
+          "res://head_broad_lod2.glb",
+          "res://head_broad_lod3.glb"
+        ],
+        "body_materials": [
+          "res://shared_materials/head.tres"
+        ],
+        "body_shape": "broad",
+        "bone_map": "res://humanoid_bone_map.tres",
+        "camo_primary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_secondary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_tertiary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lod_margin": 1.0,
+        "lod_ranges": [
+          0.0,
+          12.0,
+          25.0,
+          45.0
+        ],
+        "parts": [
+          {
+            "body_shape": "broad",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://fatigues_broad_lod0.glb",
+              "res://fatigues_broad_lod1.glb",
+              "res://fatigues_broad_lod2.glb",
+              "res://fatigues_broad_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/fatigues.tres"
+            ],
+            "part_id": "fatigues",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          },
+          {
+            "body_shape": "broad",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://carrier_broad_lod0.glb",
+              "res://carrier_broad_lod1.glb",
+              "res://carrier_broad_lod2.glb",
+              "res://carrier_broad_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/carrier.tres"
+            ],
+            "part_id": "carrier",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          }
+        ],
+        "release_blockers": [
+          "Part fit not reviewed: fatigues",
+          "Part fit not reviewed: carrier",
+          "Missing part: helmet",
+          "UV-specific body PBR atlas missing",
+          "Joint corrective shapes not reviewed",
+          "Wound boundary seams not reviewed",
+          "Assembled soldier LOD budgets not reviewed"
+        ],
+        "required_parts": [
+          "fatigues",
+          "carrier",
+          "helmet"
+        ],
+        "role": "enforcer",
+        "schema": 1,
+        "shape_parameters": [
+          0.25,
+          0.0799999982118607,
+          0.0799999982118607
+        ],
+        "variant_id": "supplied_review_broad"
+      }
+    },
+    {
+      "costs": [
+        {
+          "bones": 72,
+          "lod": 0,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 38999
+        },
+        {
+          "bones": 72,
+          "lod": 1,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 16495
+        },
+        {
+          "bones": 72,
+          "lod": 2,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 5471
+        },
+        {
+          "bones": 72,
+          "lod": 3,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 1720
+        }
+      ],
+      "definition": {
+        "body_lods": [
+          "res://head_stocky_lod0.glb",
+          "res://head_stocky_lod1.glb",
+          "res://head_stocky_lod2.glb",
+          "res://head_stocky_lod3.glb"
+        ],
+        "body_materials": [
+          "res://shared_materials/head.tres"
+        ],
+        "body_shape": "stocky",
+        "bone_map": "res://humanoid_bone_map.tres",
+        "camo_primary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_secondary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_tertiary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lod_margin": 1.0,
+        "lod_ranges": [
+          0.0,
+          12.0,
+          25.0,
+          45.0
+        ],
+        "parts": [
+          {
+            "body_shape": "stocky",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://fatigues_stocky_lod0.glb",
+              "res://fatigues_stocky_lod1.glb",
+              "res://fatigues_stocky_lod2.glb",
+              "res://fatigues_stocky_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/fatigues.tres"
+            ],
+            "part_id": "fatigues",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          },
+          {
+            "body_shape": "stocky",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://carrier_stocky_lod0.glb",
+              "res://carrier_stocky_lod1.glb",
+              "res://carrier_stocky_lod2.glb",
+              "res://carrier_stocky_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/carrier.tres"
+            ],
+            "part_id": "carrier",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          }
+        ],
+        "release_blockers": [
+          "Part fit not reviewed: fatigues",
+          "Part fit not reviewed: carrier",
+          "Missing part: helmet",
+          "UV-specific body PBR atlas missing",
+          "Joint corrective shapes not reviewed",
+          "Wound boundary seams not reviewed",
+          "Assembled soldier LOD budgets not reviewed"
+        ],
+        "required_parts": [
+          "fatigues",
+          "carrier",
+          "helmet"
+        ],
+        "role": "enforcer",
+        "schema": 1,
+        "shape_parameters": [
+          0.150000005960464,
+          0.200000002980232,
+          0.319999992847443
+        ],
+        "variant_id": "supplied_review_stocky"
+      }
+    },
+    {
+      "costs": [
+        {
+          "bones": 72,
+          "lod": 0,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 38998
+        },
+        {
+          "bones": 72,
+          "lod": 1,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 16494
+        },
+        {
+          "bones": 72,
+          "lod": 2,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 5470
+        },
+        {
+          "bones": 72,
+          "lod": 3,
+          "materials": 3,
+          "triangle_budget_passed": true,
+          "triangles": 1702
+        }
+      ],
+      "definition": {
+        "body_lods": [
+          "res://head_slender_lod0.glb",
+          "res://head_slender_lod1.glb",
+          "res://head_slender_lod2.glb",
+          "res://head_slender_lod3.glb"
+        ],
+        "body_materials": [
+          "res://shared_materials/head.tres"
+        ],
+        "body_shape": "slender",
+        "bone_map": "res://humanoid_bone_map.tres",
+        "camo_primary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_secondary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "camo_tertiary": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "lod_margin": 1.0,
+        "lod_ranges": [
+          0.0,
+          12.0,
+          25.0,
+          45.0
+        ],
+        "parts": [
+          {
+            "body_shape": "slender",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://fatigues_slender_lod0.glb",
+              "res://fatigues_slender_lod1.glb",
+              "res://fatigues_slender_lod2.glb",
+              "res://fatigues_slender_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/fatigues.tres"
+            ],
+            "part_id": "fatigues",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          },
+          {
+            "body_shape": "slender",
+            "license_id": "User-purchased; redistribution terms unverified",
+            "lod_scenes": [
+              "res://carrier_slender_lod0.glb",
+              "res://carrier_slender_lod1.glb",
+              "res://carrier_slender_lod2.glb",
+              "res://carrier_slender_lod3.glb"
+            ],
+            "material_slots": 1,
+            "materials": [
+              "res://shared_materials/carrier.tres"
+            ],
+            "part_id": "carrier",
+            "reviewed": false,
+            "socket_bone": "",
+            "socket_transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+            "source_url": "user-upload:Makarov (shaded soldier).blend"
+          }
+        ],
+        "release_blockers": [
+          "Part fit not reviewed: fatigues",
+          "Part fit not reviewed: carrier",
+          "Missing part: helmet",
+          "UV-specific body PBR atlas missing",
+          "Joint corrective shapes not reviewed",
+          "Wound boundary seams not reviewed",
+          "Assembled soldier LOD budgets not reviewed"
+        ],
+        "required_parts": [
+          "fatigues",
+          "carrier",
+          "helmet"
+        ],
+        "role": "enforcer",
+        "schema": 1,
+        "shape_parameters": [
+          -0.100000001490116,
+          0.0799999982118607,
+          0.0299999993294477
+        ],
+        "variant_id": "supplied_review_slender"
+      }
+    }
+  ]
+}

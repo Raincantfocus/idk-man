@@ -6,6 +6,7 @@ class_name ZLCharacterVariant
 @export var body_shape: StringName
 @export var shape_parameters: Vector3 = Vector3.ZERO
 @export var body_lods: Array[PackedScene] = []
+@export var body_materials: Array[Material] = []
 @export var parts: Array[ZLCharacterPart] = []
 @export var required_parts: Array[StringName] = []
 @export var camo_primary: Color = Color.WHITE
@@ -41,11 +42,13 @@ func blockers() -> PackedStringArray:
 func to_data() -> Dictionary:
  var paths: Array[String] = []
  var part_data: Array[Dictionary] = []
+ var body_material_paths: Array[String] = []
+ for material: Material in body_materials: body_material_paths.append(material.resource_path)
  for scene: PackedScene in body_lods: paths.append(scene.resource_path)
  for part: ZLCharacterPart in parts: part_data.append(part.to_data())
  return {"schema":1,"variant_id":String(variant_id),"role":String(role),"body_shape":String(body_shape),
   "shape_parameters":[shape_parameters.x,shape_parameters.y,shape_parameters.z],"body_lods":paths,
-  "parts":part_data,"required_parts":Array(required_parts),"bone_map":bone_map.resource_path if bone_map else "",
+  "body_materials":body_material_paths,"parts":part_data,"required_parts":Array(required_parts),"bone_map":bone_map.resource_path if bone_map else "",
   "camo_primary":[camo_primary.r,camo_primary.g,camo_primary.b],
   "camo_secondary":[camo_secondary.r,camo_secondary.g,camo_secondary.b],
   "camo_tertiary":[camo_tertiary.r,camo_tertiary.g,camo_tertiary.b],

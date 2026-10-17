@@ -382,6 +382,21 @@
       "distribution": "Source and derived art kept outside repository",
       "operations": "Source mesh extraction, unit/orientation conversion, PBR rebake, candidate LOD decimation, static Head socket fitting",
       "production_approved": false
+    },
+    {
+      "asset": "Makarov garment/carrier and Soup head candidates, five shape fits",
+      "source": [
+        "user-upload:Makarov (shaded soldier).blend",
+        "user-upload:Soup_masked.blend"
+      ],
+      "source_sha256": [
+        "c924ab384fd7d36fc696b1883584a3d3a8fbce3fbafa149652ca4a75ace0f119",
+        "8d48cfa3045986c8f62f9447d2224f9f97530e9f98c86d1e76136927c5fd2165"
+      ],
+      "license": "User reports purchase; redistribution terms unverified",
+      "distribution": "Source, derived meshes, textures and captures retained outside repository",
+      "operations": "Rest-space skin-weight transfer, limited clearance correction, authored-UV repack/PBR bake, MakeHuman shape-delta wrapping and explicit candidate LOD export",
+      "production_approved": false
     }
   ]
 }

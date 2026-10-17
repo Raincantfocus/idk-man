@@ -76,6 +76,42 @@ func run() -> void:
   if mesh.get_active_material(0)==camo:
    colors_match=colors_match and mesh.get_instance_shader_parameter("primary_color")==Color.RED
  check(colors_match,"character tint is stored on mesh instances")
+ var look := ZLCosmeticLook.new()
+ look.look_id=&"appearance_fixture"
+ look.role=&"enforcer"
+ look.base_body_id=&"standard"
+ look.camo_id=&"pattern_5"
+ look.camo_layer=5
+ look.headgear_id=&"helmet_fixture"
+ look.head_id=&"head_fixture"
+ look.glove_id=&"glove_fixture"
+ look.boot_id=&"boot_fixture"
+ look.sleeve_id=&"sleeve_fixture"
+ look.kit_id=&"kit_fixture"
+ with_part.body_materials=[camo]
+ look.definition=with_part
+ look.skin_tone=Color(.7,.5,.3)
+ look.accent=Color.RED
+ look.dirt=.4
+ look.wear=.2
+ check(other.configure_look(look,false),"complete appearance applies in explicit review mode")
+ var appearance_matches: bool=true
+ for node: Node in other.lod_roots[0].find_children("*","MeshInstance3D",true,false):
+  var mesh: MeshInstance3D=node as MeshInstance3D
+  if mesh.get_active_material(0)==camo:
+   appearance_matches=appearance_matches and mesh.get_instance_shader_parameter("camo_layer")==5 and mesh.get_instance_shader_parameter("skin_tone")==look.skin_tone and mesh.get_instance_shader_parameter("role_accent")==look.accent
+ check(appearance_matches,"pattern, skin and role accent stay on each mesh instance")
+ check(other.material_cache.size()==1,"body and gear share the same material across all LODs")
+ check(other.cosmetic_look.definition.to_data().body_materials.size()==1,"body material bindings survive JSON export")
+ look.accent=Color.BLUE
+ look.camo_layer=0
+ check(other.cosmetic_look.accent==Color.RED and other.cosmetic_look.camo_layer==5,"assembled look snapshots survive later source Resource edits")
+ check(other.material_cache[camo]==assembly.material_cache[camo],"full appearance application preserves shared materials")
+ look.camo_layer=6
+ check(not other.configure_look(look,false) and other.get_child_count()==0,"out-of-range camouflage fails closed and removes stale appearance")
+ look.camo_layer=0
+ look.role=&"shield"
+ check(not other.configure_look(look,false),"appearance cannot use a different role definition")
  other.free()
  part.body_shape=&"broad"
  check(not assembly.configure(with_part,false) and assembly.get_child_count()==0,"mismatched fitted part rejects and rolls back partial assembly")

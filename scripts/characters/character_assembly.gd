@@ -1,6 +1,7 @@
 extends Node3D
 class_name ZLCharacterAssembly
 ## Asset review assembly only. No gameplay controller or procedural animation.
+var cosmetic_look: ZLCosmeticLook
 var variant: ZLCharacterVariant
 var lod_roots: Array[Node3D] = []
 var skeletons: Array[Skeleton3D] = []
@@ -9,16 +10,15 @@ var setup_errors := PackedStringArray()
 var material_cache: Dictionary[Material,Material] = {}
 
 func configure(definition: ZLCharacterVariant, require_production: bool = true) -> bool:
+ cosmetic_look=null
  setup_errors.clear()
  if definition==null:
-  setup_errors.append("Variant missing")
-  return false
+  return _fail("Variant missing")
  if require_production:
   setup_errors=definition.blockers()
-  if not setup_errors.is_empty(): return false
+  if not setup_errors.is_empty(): return _fail("Production art gate failed")
  if definition.body_lods.size()!=4:
-  setup_errors.append("Four body LOD scenes required")
-  return false
+  return _fail("Four body LOD scenes required")
  for child: Node in get_children(): child.free()
  lod_roots.clear()
  skeletons.clear()
@@ -31,6 +31,7 @@ func configure(definition: ZLCharacterVariant, require_production: bool = true) 
   lod_roots.append(branch)
   var body: Node3D = definition.body_lods[lod].instantiate() as Node3D
   branch.add_child(body)
+  _apply_shared_materials(body,definition.body_materials)
   var found: Array[Node] = body.find_children("*","Skeleton3D",true,false)
   if found.size()!=1:
    return _fail("Body must have exactly one skeleton")
@@ -76,6 +77,31 @@ func configure(definition: ZLCharacterVariant, require_production: bool = true) 
  set_lod(0)
  return true
 
+func configure_look(look: ZLCosmeticLook, require_production: bool = true) -> bool:
+ setup_errors.clear()
+ if look==null: return _fail("Appearance missing")
+ var errors: PackedStringArray=look.blockers(require_production)
+ if not errors.is_empty(): return _fail("; ".join(errors))
+ if look.definition==null or look.definition.role!=look.role:
+  return _fail("Appearance definition role mismatch")
+ if not configure(look.definition,require_production): return false
+ cosmetic_look=look.snapshot()
+ for branch: Node3D in lod_roots:
+  for node: Node in branch.find_children("*","MeshInstance3D",true,false):
+   var mesh: MeshInstance3D=node as MeshInstance3D
+   var uses_camo: bool=false
+   for surface: int in mesh.mesh.get_surface_count():
+    var material: Material=mesh.get_active_material(surface)
+    if material is ShaderMaterial and (material as ShaderMaterial).shader==preload("res://scripts/characters/camo_pbr.gdshader"):
+     uses_camo=true
+   if uses_camo:
+    mesh.set_instance_shader_parameter("skin_tone",cosmetic_look.skin_tone)
+    mesh.set_instance_shader_parameter("role_accent",cosmetic_look.accent)
+    mesh.set_instance_shader_parameter("dirt_amount",cosmetic_look.dirt)
+    mesh.set_instance_shader_parameter("wear_amount",cosmetic_look.wear)
+    mesh.set_instance_shader_parameter("camo_layer",cosmetic_look.camo_layer)
+ return true
+
 func _same_rest(a: Skeleton3D,b: Skeleton3D) -> bool:
  if a.get_bone_count()!=b.get_bone_count(): return false
  for i: int in a.get_bone_count():
@@ -95,10 +121,13 @@ func update_distance(distance_m: float) -> void:
  if next!=visible_lod: set_lod(next)
 
 func _apply_materials(root: Node3D,part: ZLCharacterPart) -> void:
+ _apply_shared_materials(root,part.materials)
+
+func _apply_shared_materials(root: Node3D,shared: Array[Material]) -> void:
  for node: Node in root.find_children("*","MeshInstance3D",true,false):
   var mesh: MeshInstance3D=node as MeshInstance3D
-  for i: int in mini(mesh.mesh.get_surface_count(),part.materials.size()):
-   var source: Material=part.materials[i]
+  for i: int in mini(mesh.mesh.get_surface_count(),shared.size()):
+   var source: Material=shared[i]
    material_cache[source]=source
    if source is ShaderMaterial and (source as ShaderMaterial).shader==preload("res://scripts/characters/camo_pbr.gdshader"):
     mesh.set_instance_shader_parameter("primary_color",variant.camo_primary)
@@ -113,6 +142,7 @@ func _fail(message: String) -> bool:
  skeletons.clear()
  material_cache.clear()
  variant=null
+ cosmetic_look=null
  return false
 
 func _safe_state(state: SceneState) -> bool:

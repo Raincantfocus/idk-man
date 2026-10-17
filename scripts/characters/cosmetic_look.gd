@@ -5,6 +5,7 @@ class_name ZLCosmeticLook
 @export var role: StringName
 @export var base_body_id: StringName
 @export var camo_id: StringName
+@export_range(0,5) var camo_layer: int = 0
 @export var headgear_id: StringName
 @export var head_id: StringName
 @export var hair_id: StringName
@@ -36,6 +37,7 @@ func blockers(production: bool = true) -> PackedStringArray:
 		if id.is_empty(): errors.append("Required appearance ID empty")
 	if role == &"rusher" and not String(headgear_id).begins_with("bare_"): errors.append("Rusher must be bareheaded")
 	if not build.is_finite() or absf(build.x)>1 or absf(build.y)>1 or absf(build.z)>1 or absf(build.w)>0.05: errors.append("Build outside authored limits")
+	if camo_layer<0 or camo_layer>5: errors.append("Camouflage layer outside six-layer atlas")
 	if not is_finite(dirt) or not is_finite(wear) or dirt<0 or dirt>1 or wear<0 or wear>1: errors.append("Invalid dirt/wear")
 	if production:
 		if definition == null: errors.append("Fitted definition missing")
@@ -46,7 +48,7 @@ func blockers(production: bool = true) -> PackedStringArray:
 
 func to_data() -> Dictionary:
 	return {"schema":1,"look_id":String(look_id),"role":String(role),"base_body_id":String(base_body_id),
-		"camo_id":String(camo_id),"headgear_id":String(headgear_id),"head_id":String(head_id),
+		"camo_id":String(camo_id),"camo_layer":camo_layer,"headgear_id":String(headgear_id),"head_id":String(head_id),
 		"hair_id":String(hair_id),"facial_hair_id":String(facial_hair_id),"glove_id":String(glove_id),
 		"boot_id":String(boot_id),"sleeve_id":String(sleeve_id),"kit_id":String(kit_id),"part_ids":Array(part_ids),
 		"build":[build.x,build.y,build.z,build.w],"skin_tone":[skin_tone.r,skin_tone.g,skin_tone.b,skin_tone.a],

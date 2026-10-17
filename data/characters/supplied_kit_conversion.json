@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "source": "Makarov (shaded soldier).blend",
+  "source_meters_per_unit": 0.01,
+  "atlas_size": 2048,
+  "bake_margin_px": 8,
+  "groups": {
+    "fatigues": {
+      "objects": [
+        "Body",
+        "Legs",
+        "Boots",
+        "Gloves"
+      ],
+      "lod_triangle_targets": [
+        23000,
+        10000,
+        3300,
+        800
+      ],
+      "force_metallic_zero": true
+    },
+    "carrier": {
+      "objects": [
+        "Vest",
+        "Belt",
+        "Pouch_body_back_L",
+        "Pouch_body_back_R",
+        "Pouch_body_front",
+        "Radio",
+        "Knee_pads",
+        "Holster",
+        "Holster_belt",
+        "Tourniquet"
+      ],
+      "lod_triangle_targets": [
+        11000,
+        4500,
+        1500,
+        350
+      ]
+    },
+    "head": {
+      "source": "Soup_masked.blend",
+      "source_rig": "rig",
+      "source_meters_per_unit": 0.0254,
+      "objects": [
+        "Headmask",
+        "Eyes"
+      ],
+      "rigid_source_bindings": {
+        "Eyes": "DEF-spine.006"
+      },
+      "lod_triangle_targets": [
+        5000,
+        2000,
+        700,
+        200
+      ],
+      "merge_facial_weights_to_head": true,
+      "apply_clearance": false,
+      "force_metallic_zero": true
+    }
+  },
+  "approval": "Unapproved fitted garment candidates; no topology, corrective, wound seam or full-body budget acceptance",
+  "rigid_source_bindings": {
+    "Holster": "DEF-thigh.R.001"
+  },
+  "fit_clearance_m": 0.004,
+  "max_clearance_correction_m": 0.035,
+  "uv_padding_px": 16,
+  "unit_assumptions": "Makarov uses a 0.01 metre conversion and Soup a 0.0254 metre conversion based on source geometry envelopes; anatomical landmark approval is still required."
+}

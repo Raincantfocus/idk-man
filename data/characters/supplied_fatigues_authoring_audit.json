@@ -1,0 +1,40 @@
+{
+  "source": "fatigues_standard.blend",
+  "visual_approval": false,
+  "meshes": [
+    {
+      "name": "fatigues",
+      "vertices": 13683,
+      "triangles": 25886,
+      "materials": 1,
+      "nonquad_deformation_faces": 15936,
+      "bad_weight_vertices": 0,
+      "missing_correctives": [
+        "corr_shoulder_forward_L",
+        "corr_shoulder_forward_R",
+        "corr_shoulder_up_L",
+        "corr_shoulder_up_R",
+        "corr_elbow_L",
+        "corr_elbow_R",
+        "corr_knee_L",
+        "corr_knee_R"
+      ],
+      "missing_seam_attributes": [
+        "wound_seam_id",
+        "wound_seam_vertex_id"
+      ],
+      "aggregate_texels_per_meter": 882.2035195058635,
+      "uv_triangle_area_sum": 0.5665542681464952,
+      "surface_area_m2": 3.053260421934478,
+      "zero_area_uv_triangles": 0,
+      "density_note": "Aggregate area ratio; overlapping islands and local stretch require separate visual review"
+    }
+  ],
+  "failures": [
+    "fatigues: nonquad_deformation_faces",
+    "fatigues: missing_correctives",
+    "fatigues: missing_seam_attributes"
+  ],
+  "bones": 72,
+  "machine_preflight_passed": false
+}

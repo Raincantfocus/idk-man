@@ -1,0 +1,16 @@
+{
+  "assembled_draw_calls": 4,
+  "baseline_draw_calls": 1,
+  "bones": 72,
+  "frame_time_valid": false,
+  "materials": 3,
+  "poses": [
+    "rest front",
+    "rest side",
+    "rest back",
+    "static forearm 70deg/lower-leg 60deg diagnostic"
+  ],
+  "production_ready": false,
+  "renderer": "gl_compatibility",
+  "triangles": 38997
+}

@@ -1,5 +1,7 @@
 # Character pipeline — Phase 1 review
 
+Latest supplied-asset work and current verification: [Phase 1 supplied-character review](PHASE_1_SUPPLIED_CHARACTER_REVIEW.md). The body-only measurements below describe the earlier foundation pass.
+
 Status: **pipeline foundation implemented; production character acceptance blocked by art dependencies**. The game still uses its existing enemy presentation. The new bodies are isolated in a review scene so incomplete anatomy-only assets cannot enter combat. No movement, damage, attacks, drops, scoring, director, weapon or pickup code changed.
 
 ## Review and reproduce

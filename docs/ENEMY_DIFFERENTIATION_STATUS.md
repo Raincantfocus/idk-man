@@ -48,3 +48,7 @@ Three fixed-slot instance color uniforms replace per-character camo material dup
 3. **RNG exclusions or corpse retention fail at density:** test clustered maximum wave density, exact 8 m boundaries, moving ragdoll anchors, exhausted catalogues and pool reuse; assert unchanged gameplay RNG.
 4. **Shared materials still exceed draw budgets:** measure exported surfaces and one-versus-twenty-soldier Godot draw deltas with identical shadows/depth settings; consolidate compatible surfaces before acceptance.
 5. **Roles depend on color:** capture the actual shuffled 20-person lineup at fixed distance/FOV in color and grayscale, front/back and in motion; obtain the user's role identifications and revise geometry on failures.
+
+## Latest supplied-asset conversion
+
+See [Phase 1 supplied-character review](PHASE_1_SUPPLIED_CHARACTER_REVIEW.md) for five fitted candidates, measured per-LOD costs, shared-material implementation, actual captures and the remaining character-artist deliverables. These candidates do not satisfy the five-role/20-look acceptance gate.

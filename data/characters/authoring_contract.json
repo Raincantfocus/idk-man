@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "bone_count": [65, 75],
+  "max_influences": 4,
+  "weight_sum_tolerance": 0.001,
+  "atlas_resolution": 2048,
+  "texels_per_meter_target": 1024,
+  "deformation_group_tokens": ["UpperArm", "LowerArm", "UpperLeg", "LowerLeg", "Shoulder"],
+  "deformation_min_weight": 0.1,
+  "required_correctives": ["corr_shoulder_forward_L", "corr_shoulder_forward_R", "corr_shoulder_up_L", "corr_shoulder_up_R", "corr_elbow_L", "corr_elbow_R", "corr_knee_L", "corr_knee_R"],
+  "seam_attributes": ["wound_seam_id", "wound_seam_vertex_id"],
+  "note": "Machine preflight only. Passing cannot replace reviewed deformation, wound continuity or silhouette captures. Correctives apply to deforming body/garments, not rigid props."
+}
