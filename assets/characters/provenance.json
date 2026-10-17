@@ -372,5 +372,16 @@
       "storage": "Private staging outside checkout",
       "integrated": false
     }
+  ],
+  "private_derived_reviews": [
+    {
+      "asset": "Makarov Helmet",
+      "source": "user-upload:Makarov (shaded soldier).blend",
+      "source_sha256": "c924ab384fd7d36fc696b1883584a3d3a8fbce3fbafa149652ca4a75ace0f119",
+      "license": "User reports purchase; redistribution terms unverified",
+      "distribution": "Source and derived art kept outside repository",
+      "operations": "Source mesh extraction, unit/orientation conversion, PBR rebake, candidate LOD decimation, static Head socket fitting",
+      "production_approved": false
+    }
   ]
 }

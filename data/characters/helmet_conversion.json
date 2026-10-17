@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "source_meters_per_unit": 0.01,
+  "atlas_size": 2048,
+  "bake_margin_px": 12,
+  "lod_triangle_targets": [
+    9071,
+    4500,
+    1800,
+    500
+  ],
+  "scope": "Private rigid helmet conversion review; not a production soldier atlas",
+  "review_fit_world_origin_m": [
+    0,
+    1.7,
+    0.035
+  ]
+}

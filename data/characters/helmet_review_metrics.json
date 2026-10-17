@@ -1,0 +1,33 @@
+{
+  "baseline_draw_calls": 1,
+  "body_bones": 72,
+  "body_only_draw_calls": 2,
+  "lod0": {
+    "materials": 1,
+    "scene_draw_calls": 3,
+    "surfaces": 1,
+    "triangles": 9071
+  },
+  "lod1": {
+    "materials": 1,
+    "scene_draw_calls": 3,
+    "surfaces": 1,
+    "triangles": 4499
+  },
+  "lod2": {
+    "materials": 1,
+    "scene_draw_calls": 3,
+    "surfaces": 1,
+    "triangles": 1800
+  },
+  "lod3": {
+    "materials": 1,
+    "scene_draw_calls": 3,
+    "surfaces": 1,
+    "triangles": 493
+  },
+  "performance_note": "Software renderer: frame timings are not target hardware evidence",
+  "renderer": "gl_compatibility",
+  "socket_bone": "Head",
+  "socket_transform": "Transform3D(1, -3.0165867e-10, 3.0263142e-10, 3.0264205e-10, 0.9999946, -0.003282324, -3.0167113e-10, 0.0032822047, 0.9999948, -1.9616309e-11, 0.051673293, -0.013224967)"
+}
