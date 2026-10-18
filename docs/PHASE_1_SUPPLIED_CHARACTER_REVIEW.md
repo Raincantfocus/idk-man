@@ -1,5 +1,7 @@
 # Phase 1 supplied-character implementation and art blocker
 
+Latest: [automated head/neck region review](PHASE_1_HEAD_NECK_REVIEW.md). The user’s anatomy addendum supersedes the earlier blanket requirement for external character-artist work. Production acceptance remains closed.
+
 Latest follow-up: [modular source-part extraction and measured draw costs](PHASE_1_MODULAR_PARTS_REVIEW.md). Phase 1 remains incomplete.
 
 Phase 1 is incomplete. This pass produces a usable private conversion/review pipeline and five fitted candidates of one outfit. It does not produce five finished enemy roles, four accepted base bodies or the requested twenty distinct looks. Production gates remain closed, and gameplay continues to use its existing presentation.

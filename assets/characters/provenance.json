@@ -406,6 +406,15 @@
       "distribution": "Derived meshes, textures, authoring files and captures remain outside repository",
       "operations": "Preserved source part face IDs through atlas baking; extracted UV/skin-preserving modular meshes and combined single-surface review kits",
       "production_approved": false
+    },
+    {
+      "asset": "Soup head/neck region authoring pilot",
+      "source": "user-upload:Soup_masked.blend, via private fitted head_standard.blend",
+      "source_sha256": "8d48cfa3045986c8f62f9447d2224f9f97530e9f98c86d1e76136927c5fd2165",
+      "license": "User reports purchase; redistribution terms unverified",
+      "distribution": "Derived art, vertex-bearing manifests, Blender files and captures remain outside repository",
+      "operations": "Source closure repair, local quad recovery, matching neck split, generated layered caps/stubs/interior proxies, measured corrective shape generation and private native review",
+      "production_approved": false
     }
   ]
 }

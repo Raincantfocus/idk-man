@@ -1,0 +1,1256 @@
+{
+  "production_ready": false,
+  "source": "User-supplied Soup head on the existing shared fitted rig; one region pilot",
+  "authoring_attempts": [
+    {
+      "operation": "source closure",
+      "attempt": 1,
+      "method": "boundary polygon fill",
+      "before": 567,
+      "after": 22,
+      "new_faces": 6
+    },
+    {
+      "operation": "source closure",
+      "attempt": 2,
+      "method": "local non-planar loop center fan",
+      "after": 0
+    },
+    {
+      "operation": "neck joint quad recovery",
+      "attempt": 1,
+      "method": "UV-preserving adjacent triangle join, 30 degree limit",
+      "triangles_before": 1349,
+      "triangles_after": 499
+    },
+    {
+      "operation": "neck joint quad recovery",
+      "attempt": 2,
+      "method": "UV-preserving adjacent triangle join, 80 degree limit",
+      "triangles_before": 499,
+      "triangles_after": 169
+    }
+  ],
+  "cranial_fit": {
+    "method": "585 joint-bounded samples, conservative maximum-clearance inscribed proxy",
+    "clearance_m": 0.05258059874176979,
+    "radius_m": 0.047322538867592814,
+    "not_a_medical_skull": true
+  },
+  "authoring_failures": [
+    "Neck deformation zone retains 169 triangles after two UV-preserving join passes; no all-quad claim"
+  ],
+  "authoring_limitations": [
+    "Full-volume skin/fat shell thickness and 3D surface intersections remain unverified; cut-plane checks are reported separately",
+    "UV overlap and local texel density not certified; procedural interior UV seams require review",
+    "No reduced LOD acceptance; region currently exports only LOD0",
+    "Mandible and cervical meshes are simplified arch/ring proxies; art-directed dimensions lack a verified published anthropometric reference",
+    "Four vessel/tendon stubs per half are generated; final garment-to-skin cut correspondence remains unfinished",
+    "Damaged mask appearance is implemented in review shader only; no gameplay activation"
+  ],
+  "corrective_measurements": [
+    {
+      "mesh": "HN_intact",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.006821906376814152,
+      "dq_target_volume_m3": 0.006830901155272972,
+      "corrected_volume_m3": 0.006830794627662591,
+      "relative_error_to_dq": 1.5594957086896983e-05,
+      "max_rest_delta_m": 0.004205309298999971
+    },
+    {
+      "mesh": "HN_intact",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.006911177107713167,
+      "dq_target_volume_m3": 0.0069215106360249225,
+      "corrected_volume_m3": 0.006921576693328855,
+      "relative_error_to_dq": 9.54376976444621e-06,
+      "max_rest_delta_m": 0.0025102308359649735
+    },
+    {
+      "mesh": "HN_intact",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.006882009002607071,
+      "dq_target_volume_m3": 0.006889990357804671,
+      "corrected_volume_m3": 0.006889919134559046,
+      "relative_error_to_dq": 1.033720541340931e-05,
+      "max_rest_delta_m": 0.001971867470593024
+    },
+    {
+      "mesh": "HN_intact",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.00686639466871458,
+      "dq_target_volume_m3": 0.0068735188590187835,
+      "corrected_volume_m3": 0.0068735651978409475,
+      "relative_error_to_dq": 6.741644725855998e-06,
+      "max_rest_delta_m": 0.001971912946916293
+    },
+    {
+      "mesh": "HN_intact",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.006383992590272857,
+      "dq_target_volume_m3": 0.006829963291799442,
+      "corrected_volume_m3": 0.006829921205350869,
+      "relative_error_to_dq": 6.162031445064367e-06,
+      "max_rest_delta_m": 0.01517442156546752
+    },
+    {
+      "mesh": "HN_intact",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.0064546392958251654,
+      "dq_target_volume_m3": 0.006915526832333545,
+      "corrected_volume_m3": 0.006915526936836446,
+      "relative_error_to_dq": 1.5111343453356193e-08,
+      "max_rest_delta_m": 0.015174382304436742
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.006053889405488186,
+      "dq_target_volume_m3": 0.00604877639543304,
+      "corrected_volume_m3": 0.006048669823712152,
+      "relative_error_to_dq": 1.7618723841187916e-05,
+      "max_rest_delta_m": 0.0017585891163063075
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0060811695412613335,
+      "dq_target_volume_m3": 0.006079519267833454,
+      "corrected_volume_m3": 0.0060795855121593976,
+      "relative_error_to_dq": 1.0896309893197777e-05,
+      "max_rest_delta_m": 0.001067610017966217
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.006070999823652574,
+      "dq_target_volume_m3": 0.006069084974351371,
+      "corrected_volume_m3": 0.006069014368546569,
+      "relative_error_to_dq": 1.1633682029519853e-05,
+      "max_rest_delta_m": 0.0007018275942049789
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.006065067990300156,
+      "dq_target_volume_m3": 0.006062851927595471,
+      "corrected_volume_m3": 0.006062897948079537,
+      "relative_error_to_dq": 7.590567049220009e-06,
+      "max_rest_delta_m": 0.0007017736309744882
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.005680843400834778,
+      "dq_target_volume_m3": 0.00603290635047482,
+      "corrected_volume_m3": 0.006032863933403263,
+      "relative_error_to_dq": 7.030951434226092e-06,
+      "max_rest_delta_m": 0.01517442156546752
+    },
+    {
+      "mesh": "HN_head_v0",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.005724449832996092,
+      "dq_target_volume_m3": 0.006085705336821388,
+      "corrected_volume_m3": 0.0060857052495611914,
+      "relative_error_to_dq": 1.4338551019947165e-08,
+      "max_rest_delta_m": 0.015174382304436742
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.0007684790255868646,
+      "dq_target_volume_m3": 0.0007825757968749,
+      "corrected_volume_m3": 0.0007825758291243371,
+      "relative_error_to_dq": 4.120934635414352e-08,
+      "max_rest_delta_m": 0.004205309298999971
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008304767515344277,
+      "dq_target_volume_m3": 0.0008424546496293503,
+      "corrected_volume_m3": 0.0008424544538148751,
+      "relative_error_to_dq": 2.3243325357547447e-07,
+      "max_rest_delta_m": 0.0025102308359649735
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.0008114466955047613,
+      "dq_target_volume_m3": 0.0008213502962340653,
+      "corrected_volume_m3": 0.0008213496644988636,
+      "relative_error_to_dq": 7.69142233941357e-07,
+      "max_rest_delta_m": 0.001971867470593024
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008017835187751639,
+      "dq_target_volume_m3": 0.0008111320968514376,
+      "corrected_volume_m3": 0.0008111324065616361,
+      "relative_error_to_dq": 3.818246125015993e-07,
+      "max_rest_delta_m": 0.001971912946916293
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.0007036604689851884,
+      "dq_target_volume_m3": 0.000797681801729458,
+      "corrected_volume_m3": 0.0007976821393412517,
+      "relative_error_to_dq": 4.2324118845535876e-07,
+      "max_rest_delta_m": 0.01167712106275651
+    },
+    {
+      "mesh": "HN_stump_v0",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.0007307290422407642,
+      "dq_target_volume_m3": 0.0008303931937707131,
+      "corrected_volume_m3": 0.0008303933969060342,
+      "relative_error_to_dq": 2.4462546488570397e-07,
+      "max_rest_delta_m": 0.011677107275636549
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.006051750260658314,
+      "dq_target_volume_m3": 0.006046576394539503,
+      "corrected_volume_m3": 0.0060464700929784175,
+      "relative_error_to_dq": 1.7580454483584086e-05,
+      "max_rest_delta_m": 0.0017593832176800862
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.006079111205181308,
+      "dq_target_volume_m3": 0.0060774284504493846,
+      "corrected_volume_m3": 0.006077494828956547,
+      "relative_error_to_dq": 1.092213716761927e-05,
+      "max_rest_delta_m": 0.0010681184359994436
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.006069007418419592,
+      "dq_target_volume_m3": 0.006067065693691807,
+      "corrected_volume_m3": 0.006066995115518468,
+      "relative_error_to_dq": 1.1632999690778673e-05,
+      "max_rest_delta_m": 0.0007049214896648977
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.006062848538283515,
+      "dq_target_volume_m3": 0.006060593735542663,
+      "corrected_volume_m3": 0.006060639688148773,
+      "relative_error_to_dq": 7.582195427579078e-06,
+      "max_rest_delta_m": 0.0007050213813438672
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.005680172708186939,
+      "dq_target_volume_m3": 0.006032059582269825,
+      "corrected_volume_m3": 0.0060320172015356265,
+      "relative_error_to_dq": 7.02591438629959e-06,
+      "max_rest_delta_m": 0.01517442156546752
+    },
+    {
+      "mesh": "HN_head_v1",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.005721719063819072,
+      "dq_target_volume_m3": 0.006082295797141902,
+      "corrected_volume_m3": 0.006082296086174086,
+      "relative_error_to_dq": 4.752024467582174e-08,
+      "max_rest_delta_m": 0.015174382304436742
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.0007704377623471572,
+      "dq_target_volume_m3": 0.0007846015499316602,
+      "corrected_volume_m3": 0.0007846013121163655,
+      "relative_error_to_dq": 3.0310326905786633e-07,
+      "max_rest_delta_m": 0.004205309298999971
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008323709124011719,
+      "dq_target_volume_m3": 0.0008443856284527433,
+      "corrected_volume_m3": 0.0008443853004205978,
+      "relative_error_to_dq": 3.884861779347419e-07,
+      "max_rest_delta_m": 0.0025102308359649735
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.0008133008949752114,
+      "dq_target_volume_m3": 0.0008232287749099445,
+      "corrected_volume_m3": 0.0008232281158256615,
+      "relative_error_to_dq": 8.006088989040911e-07,
+      "max_rest_delta_m": 0.001971867470593024
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008038204787806089,
+      "dq_target_volume_m3": 0.0008132029033288866,
+      "corrected_volume_m3": 0.0008132032872469094,
+      "relative_error_to_dq": 4.7210606508550854e-07,
+      "max_rest_delta_m": 0.001971912946916293
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.0007042297850033555,
+      "dq_target_volume_m3": 0.0007985188280233686,
+      "corrected_volume_m3": 0.0007985191285759416,
+      "relative_error_to_dq": 3.763875846224027e-07,
+      "max_rest_delta_m": 0.011658782388607425
+    },
+    {
+      "mesh": "HN_stump_v1",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.0007331374110958953,
+      "dq_target_volume_m3": 0.0008335098035007254,
+      "corrected_volume_m3": 0.000833509629025079,
+      "relative_error_to_dq": 2.0932644794679163e-07,
+      "max_rest_delta_m": 0.011658773650683995
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.006052824252897509,
+      "dq_target_volume_m3": 0.006047514696161454,
+      "corrected_volume_m3": 0.006047408355609749,
+      "relative_error_to_dq": 1.758417416876622e-05,
+      "max_rest_delta_m": 0.0017635243161877748
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.006080240423485016,
+      "dq_target_volume_m3": 0.006078479144574473,
+      "corrected_volume_m3": 0.00607854536567791,
+      "relative_error_to_dq": 1.0894353976000273e-05,
+      "max_rest_delta_m": 0.001070652143736848
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.006070019531489961,
+      "dq_target_volume_m3": 0.0060679791083038045,
+      "corrected_volume_m3": 0.006067908247775557,
+      "relative_error_to_dq": 1.1677780523375878e-05,
+      "max_rest_delta_m": 0.0007091009382717968
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0060640272686554855,
+      "dq_target_volume_m3": 0.006061682359889555,
+      "corrected_volume_m3": 0.006061728238541713,
+      "relative_error_to_dq": 7.568633497078341e-06,
+      "max_rest_delta_m": 0.0007091630530814093
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.005680954412841787,
+      "dq_target_volume_m3": 0.006032502088868311,
+      "corrected_volume_m3": 0.006032459747413532,
+      "relative_error_to_dq": 7.018887711135802e-06,
+      "max_rest_delta_m": 0.01517442156546752
+    },
+    {
+      "mesh": "HN_head_v2",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.00572336054615725,
+      "dq_target_volume_m3": 0.006083808362801549,
+      "corrected_volume_m3": 0.006083808203129429,
+      "relative_error_to_dq": 2.624542237722805e-08,
+      "max_rest_delta_m": 0.015174382304436742
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_neck_forward",
+      "rotation_degrees": 45,
+      "lbs_volume_m3": 0.0007693479444968932,
+      "dq_target_volume_m3": 0.0007836687758686286,
+      "corrected_volume_m3": 0.0007836686048903001,
+      "relative_error_to_dq": 2.181767779519095e-07,
+      "max_rest_delta_m": 0.004205309298999971
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_neck_back",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008312674607891184,
+      "dq_target_volume_m3": 0.00084337600179306,
+      "corrected_volume_m3": 0.0008433758432506113,
+      "relative_error_to_dq": 1.8798548733136164e-07,
+      "max_rest_delta_m": 0.0025102308359649735
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_neck_left",
+      "rotation_degrees": 35,
+      "lbs_volume_m3": 0.0008122993262638029,
+      "dq_target_volume_m3": 0.0008223209845861965,
+      "corrected_volume_m3": 0.0008223206067068183,
+      "relative_error_to_dq": 4.5952783069147397e-07,
+      "max_rest_delta_m": 0.001971867470593024
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_neck_right",
+      "rotation_degrees": -35,
+      "lbs_volume_m3": 0.0008026868469388897,
+      "dq_target_volume_m3": 0.0008121562475705621,
+      "corrected_volume_m3": 0.0008121566999342993,
+      "relative_error_to_dq": 5.569910205504414e-07,
+      "max_rest_delta_m": 0.001971912946916293
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_head_twist_left",
+      "rotation_degrees": 60,
+      "lbs_volume_m3": 0.0007033496247788721,
+      "dq_target_volume_m3": 0.0007981713679621949,
+      "corrected_volume_m3": 0.0007981716402756622,
+      "relative_error_to_dq": 3.411716810183506e-07,
+      "max_rest_delta_m": 0.011663005155822425
+    },
+    {
+      "mesh": "HN_stump_v2",
+      "key": "corr_head_twist_right",
+      "rotation_degrees": -60,
+      "lbs_volume_m3": 0.0007312444540491839,
+      "dq_target_volume_m3": 0.0008318726842716095,
+      "corrected_volume_m3": 0.0008318729654129298,
+      "relative_error_to_dq": 3.379619569306119e-07,
+      "max_rest_delta_m": 0.011662995662259316
+    }
+  ],
+  "interior_measurements": [
+    {
+      "name": "HN_skull",
+      "triangles": 528,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "conservative cranial solid proxy with frontal recesses; not hollow skull"
+    },
+    {
+      "name": "HN_mandible",
+      "triangles": 400,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "mandibular arch"
+    },
+    {
+      "name": "HN_cervical_1",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_2",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_3",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_4",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_5",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_6",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_cervical_7",
+      "triangles": 384,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "cervical annular proxy"
+    },
+    {
+      "name": "HN_neck_muscle_L",
+      "triangles": 528,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "neck muscle envelope with longitudinal fiber data"
+    },
+    {
+      "name": "HN_neck_muscle_R",
+      "triangles": 528,
+      "non_manifold_edges": 0,
+      "containment_attempts": [
+        {
+          "attempt": 1,
+          "vertices_outside_1mm_clearance": 0
+        }
+      ],
+      "outside_triangle_centers": 0,
+      "kind": "neck muscle envelope with longitudinal fiber data"
+    }
+  ],
+  "geometry": {
+    "production_ready": false,
+    "meshes": [
+      {
+        "name": "HN_cervical_1",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_2",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_3",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_4",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_5",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_6",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_cervical_7",
+        "triangles": 384,
+        "vertices": 192,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_head_v0",
+        "triangles": 23826,
+        "vertices": 11937,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_head_v1",
+        "triangles": 23826,
+        "vertices": 11937,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_head_v2",
+        "triangles": 23826,
+        "vertices": 11937,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_intact",
+        "triangles": 23634,
+        "vertices": 11833,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_mandible",
+        "triangles": 400,
+        "vertices": 202,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_neck_muscle_L",
+        "triangles": 528,
+        "vertices": 266,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_neck_muscle_R",
+        "triangles": 528,
+        "vertices": 266,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_skull",
+        "triangles": 528,
+        "vertices": 266,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 1,
+        "materials": 1
+      },
+      {
+        "name": "HN_stump_v0",
+        "triangles": 1524,
+        "vertices": 772,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_stump_v1",
+        "triangles": 1524,
+        "vertices": 772,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      },
+      {
+        "name": "HN_stump_v2",
+        "triangles": 1524,
+        "vertices": 772,
+        "non_manifold_edges": 0,
+        "bad_weight_vertices": 0,
+        "skin_group_names": 72,
+        "materials": 2
+      }
+    ],
+    "seams": [
+      {
+        "variant": 0,
+        "boundary_vertices": 73,
+        "max_shape_seam_error_m": {
+          "Basis": 0.0,
+          "corr_neck_forward": 0.0,
+          "corr_neck_back": 0.0,
+          "corr_neck_left": 0.0,
+          "corr_neck_right": 0.0,
+          "corr_head_twist_left": 0.0,
+          "corr_head_twist_right": 0.0,
+          "fractured_closed": 0.0
+        },
+        "layer_thickness": {
+          "skin": {
+            "min_mm": 1.999938904077644,
+            "max_mm": 2.00005797692215,
+            "target_mm": 2,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          },
+          "fat": {
+            "min_mm": 3.999939598361901,
+            "max_mm": 4.000039159874394,
+            "target_mm": 4,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          }
+        },
+        "outer_self_intersections": 0
+      },
+      {
+        "variant": 1,
+        "boundary_vertices": 73,
+        "max_shape_seam_error_m": {
+          "Basis": 0.0,
+          "corr_neck_forward": 0.0,
+          "corr_neck_back": 0.0,
+          "corr_neck_left": 0.0,
+          "corr_neck_right": 0.0,
+          "corr_head_twist_left": 0.0,
+          "corr_head_twist_right": 0.0,
+          "fractured_closed": 0.0
+        },
+        "layer_thickness": {
+          "skin": {
+            "min_mm": 1.9999449438662815,
+            "max_mm": 2.0000517811595024,
+            "target_mm": 2,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          },
+          "fat": {
+            "min_mm": 3.9999296932343293,
+            "max_mm": 4.000055757955769,
+            "target_mm": 4,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          }
+        },
+        "outer_self_intersections": 0
+      },
+      {
+        "variant": 2,
+        "boundary_vertices": 73,
+        "max_shape_seam_error_m": {
+          "Basis": 0.0,
+          "corr_neck_forward": 0.0,
+          "corr_neck_back": 0.0,
+          "corr_neck_left": 0.0,
+          "corr_neck_right": 0.0,
+          "corr_head_twist_left": 0.0,
+          "corr_head_twist_right": 0.0,
+          "fractured_closed": 0.0
+        },
+        "layer_thickness": {
+          "skin": {
+            "min_mm": 1.9999287998257531,
+            "max_mm": 2.0000636131310743,
+            "target_mm": 2,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          },
+          "fat": {
+            "min_mm": 3.99994990137388,
+            "max_mm": 4.000052858980768,
+            "target_mm": 4,
+            "self_intersections": 0,
+            "method": "Minimum cut-plane distance from each inner vertex to the previous closed layer polyline"
+          }
+        },
+        "outer_self_intersections": 0
+      }
+    ],
+    "uv": [
+      {
+        "mesh": "HN_intact",
+        "channel": "UV0, textured exterior material only",
+        "positive_overlap_triangle_pairs": 3571,
+        "examples": [
+          [
+            19313,
+            20199
+          ],
+          [
+            19292,
+            20199
+          ],
+          [
+            19293,
+            20199
+          ],
+          [
+            19293,
+            20200
+          ],
+          [
+            21200,
+            21203
+          ],
+          [
+            21196,
+            21205
+          ],
+          [
+            21198,
+            21205
+          ],
+          [
+            21199,
+            21205
+          ],
+          [
+            21200,
+            21205
+          ],
+          [
+            21199,
+            21206
+          ]
+        ],
+        "zero_area_uv_triangles": 7,
+        "aggregate_texels_per_meter_at_2048": 2812.275744264906,
+        "density_is_local_stretch_approval": false
+      },
+      {
+        "mesh": "HN_head_v0",
+        "channel": "UV0, textured exterior material only",
+        "positive_overlap_triangle_pairs": 3569,
+        "examples": [
+          [
+            20542,
+            20545
+          ],
+          [
+            20538,
+            20547
+          ],
+          [
+            20540,
+            20547
+          ],
+          [
+            20541,
+            20547
+          ],
+          [
+            20542,
+            20547
+          ],
+          [
+            20541,
+            20548
+          ],
+          [
+            20542,
+            20548
+          ],
+          [
+            20529,
+            20563
+          ],
+          [
+            20530,
+            20563
+          ],
+          [
+            20535,
+            20563
+          ]
+        ],
+        "zero_area_uv_triangles": 7,
+        "aggregate_texels_per_meter_at_2048": 2794.998160567799,
+        "density_is_local_stretch_approval": false
+      },
+      {
+        "mesh": "HN_stump_v0",
+        "channel": "UV0, textured exterior material only",
+        "positive_overlap_triangle_pairs": 0,
+        "examples": [],
+        "zero_area_uv_triangles": 0,
+        "aggregate_texels_per_meter_at_2048": 2903.3398703566436,
+        "density_is_local_stretch_approval": false
+      }
+    ],
+    "failures": [
+      "HN_intact: exterior UV overlaps or zero-area triangles",
+      "HN_head_v0: exterior UV overlaps or zero-area triangles"
+    ],
+    "unverified": [
+      "Full-volume skin/fat shell thickness",
+      "Surface-to-surface interior intersection beyond the cut plane",
+      "Reduced LOD topology and seam identity",
+      "Published anthropometric ratios",
+      "Full-body garment and role silhouette acceptance"
+    ],
+    "uv_note": "Tissue and interior materials use vertex colors; their UV0/UV2 overlap is not certified as a unique baked atlas.",
+    "lods": [
+      {
+        "lod": 0,
+        "available": true,
+        "optimized": false
+      },
+      {
+        "lod": 1,
+        "available": false
+      },
+      {
+        "lod": 2,
+        "available": false
+      },
+      {
+        "lod": 3,
+        "available": false
+      }
+    ],
+    "machine_passed": false
+  },
+  "native": {
+    "captures": [
+      "captures_godot/intact_rest_front.png",
+      "captures_godot/intact_rest_side.png",
+      "captures_godot/intact_rest_back.png",
+      "captures_godot/intact_corr_neck_forward_front.png",
+      "captures_godot/intact_corr_neck_forward_side.png",
+      "captures_godot/intact_corr_neck_forward_back.png",
+      "captures_godot/intact_corr_neck_back_front.png",
+      "captures_godot/intact_corr_neck_back_side.png",
+      "captures_godot/intact_corr_neck_back_back.png",
+      "captures_godot/intact_corr_neck_left_front.png",
+      "captures_godot/intact_corr_neck_left_side.png",
+      "captures_godot/intact_corr_neck_left_back.png",
+      "captures_godot/intact_corr_neck_right_front.png",
+      "captures_godot/intact_corr_neck_right_side.png",
+      "captures_godot/intact_corr_neck_right_back.png",
+      "captures_godot/intact_corr_head_twist_left_front.png",
+      "captures_godot/intact_corr_head_twist_left_side.png",
+      "captures_godot/intact_corr_head_twist_left_back.png",
+      "captures_godot/intact_corr_head_twist_right_front.png",
+      "captures_godot/intact_corr_head_twist_right_side.png",
+      "captures_godot/intact_corr_head_twist_right_back.png",
+      "captures_godot/damaged_rest_front.png",
+      "captures_godot/damaged_rest_side.png",
+      "captures_godot/damaged_rest_back.png",
+      "captures_godot/damaged_corr_neck_forward_front.png",
+      "captures_godot/damaged_corr_neck_forward_side.png",
+      "captures_godot/damaged_corr_neck_forward_back.png",
+      "captures_godot/damaged_corr_neck_back_front.png",
+      "captures_godot/damaged_corr_neck_back_side.png",
+      "captures_godot/damaged_corr_neck_back_back.png",
+      "captures_godot/damaged_corr_neck_left_front.png",
+      "captures_godot/damaged_corr_neck_left_side.png",
+      "captures_godot/damaged_corr_neck_left_back.png",
+      "captures_godot/damaged_corr_neck_right_front.png",
+      "captures_godot/damaged_corr_neck_right_side.png",
+      "captures_godot/damaged_corr_neck_right_back.png",
+      "captures_godot/damaged_corr_head_twist_left_front.png",
+      "captures_godot/damaged_corr_head_twist_left_side.png",
+      "captures_godot/damaged_corr_head_twist_left_back.png",
+      "captures_godot/damaged_corr_head_twist_right_front.png",
+      "captures_godot/damaged_corr_head_twist_right_side.png",
+      "captures_godot/damaged_corr_head_twist_right_back.png",
+      "captures_godot/fractured_closed_rest_front.png",
+      "captures_godot/fractured_closed_rest_side.png",
+      "captures_godot/fractured_closed_rest_back.png",
+      "captures_godot/fractured_closed_corr_neck_forward_front.png",
+      "captures_godot/fractured_closed_corr_neck_forward_side.png",
+      "captures_godot/fractured_closed_corr_neck_forward_back.png",
+      "captures_godot/fractured_closed_corr_neck_back_front.png",
+      "captures_godot/fractured_closed_corr_neck_back_side.png",
+      "captures_godot/fractured_closed_corr_neck_back_back.png",
+      "captures_godot/fractured_closed_corr_neck_left_front.png",
+      "captures_godot/fractured_closed_corr_neck_left_side.png",
+      "captures_godot/fractured_closed_corr_neck_left_back.png",
+      "captures_godot/fractured_closed_corr_neck_right_front.png",
+      "captures_godot/fractured_closed_corr_neck_right_side.png",
+      "captures_godot/fractured_closed_corr_neck_right_back.png",
+      "captures_godot/fractured_closed_corr_head_twist_left_front.png",
+      "captures_godot/fractured_closed_corr_head_twist_left_side.png",
+      "captures_godot/fractured_closed_corr_head_twist_left_back.png",
+      "captures_godot/fractured_closed_corr_head_twist_right_front.png",
+      "captures_godot/fractured_closed_corr_head_twist_right_side.png",
+      "captures_godot/fractured_closed_corr_head_twist_right_back.png",
+      "captures_godot/fractured_open_rest_front.png",
+      "captures_godot/fractured_open_rest_side.png",
+      "captures_godot/fractured_open_rest_back.png",
+      "captures_godot/fractured_open_corr_neck_forward_front.png",
+      "captures_godot/fractured_open_corr_neck_forward_side.png",
+      "captures_godot/fractured_open_corr_neck_forward_back.png",
+      "captures_godot/fractured_open_corr_neck_back_front.png",
+      "captures_godot/fractured_open_corr_neck_back_side.png",
+      "captures_godot/fractured_open_corr_neck_back_back.png",
+      "captures_godot/fractured_open_corr_neck_left_front.png",
+      "captures_godot/fractured_open_corr_neck_left_side.png",
+      "captures_godot/fractured_open_corr_neck_left_back.png",
+      "captures_godot/fractured_open_corr_neck_right_front.png",
+      "captures_godot/fractured_open_corr_neck_right_side.png",
+      "captures_godot/fractured_open_corr_neck_right_back.png",
+      "captures_godot/fractured_open_corr_head_twist_left_front.png",
+      "captures_godot/fractured_open_corr_head_twist_left_side.png",
+      "captures_godot/fractured_open_corr_head_twist_left_back.png",
+      "captures_godot/fractured_open_corr_head_twist_right_front.png",
+      "captures_godot/fractured_open_corr_head_twist_right_side.png",
+      "captures_godot/fractured_open_corr_head_twist_right_back.png",
+      "captures_godot/detached_rest_front.png",
+      "captures_godot/detached_rest_side.png",
+      "captures_godot/detached_rest_back.png",
+      "captures_godot/detached_corr_neck_forward_front.png",
+      "captures_godot/detached_corr_neck_forward_side.png",
+      "captures_godot/detached_corr_neck_forward_back.png",
+      "captures_godot/detached_corr_neck_back_front.png",
+      "captures_godot/detached_corr_neck_back_side.png",
+      "captures_godot/detached_corr_neck_back_back.png",
+      "captures_godot/detached_corr_neck_left_front.png",
+      "captures_godot/detached_corr_neck_left_side.png",
+      "captures_godot/detached_corr_neck_left_back.png",
+      "captures_godot/detached_corr_neck_right_front.png",
+      "captures_godot/detached_corr_neck_right_side.png",
+      "captures_godot/detached_corr_neck_right_back.png",
+      "captures_godot/detached_corr_head_twist_left_front.png",
+      "captures_godot/detached_corr_head_twist_left_side.png",
+      "captures_godot/detached_corr_head_twist_left_back.png",
+      "captures_godot/detached_corr_head_twist_right_front.png",
+      "captures_godot/detached_corr_head_twist_right_side.png",
+      "captures_godot/detached_corr_head_twist_right_back.png",
+      "captures_godot/fractured_open_v1_front.png",
+      "captures_godot/fractured_open_v1_side.png",
+      "captures_godot/fractured_open_v1_back.png",
+      "captures_godot/fractured_open_v2_front.png",
+      "captures_godot/fractured_open_v2_side.png",
+      "captures_godot/fractured_open_v2_back.png",
+      "captures_godot/detached_v1_front.png",
+      "captures_godot/detached_v1_side.png",
+      "captures_godot/detached_v1_back.png",
+      "captures_godot/detached_v2_front.png",
+      "captures_godot/detached_v2_side.png",
+      "captures_godot/detached_v2_back.png",
+      "captures_godot/interiors_front.png",
+      "captures_godot/interiors_side.png",
+      "captures_godot/interiors_back.png"
+    ],
+    "frame_time_valid": false,
+    "production_ready": false,
+    "renderer": "gl_compatibility",
+    "states": [
+      {
+        "base_material_resources": 2,
+        "bones": 72,
+        "isolated_draw_calls": 2,
+        "state": "intact",
+        "visible_triangles": 23634
+      },
+      {
+        "base_material_resources": 2,
+        "bones": 72,
+        "isolated_draw_calls": 3,
+        "state": "damaged",
+        "visible_triangles": 23634
+      },
+      {
+        "base_material_resources": 2,
+        "bones": 72,
+        "isolated_draw_calls": 2,
+        "state": "fractured_closed",
+        "visible_triangles": 23634
+      },
+      {
+        "base_material_resources": 2,
+        "bones": 72,
+        "isolated_draw_calls": 4,
+        "state": "fractured_open",
+        "visible_triangles": 25350
+      },
+      {
+        "base_material_resources": 2,
+        "bones": 72,
+        "isolated_draw_calls": 4,
+        "state": "detached",
+        "visible_triangles": 25350
+      }
+    ]
+  },
+  "source_uv_baseline": {
+    "uv": [
+      {
+        "mesh": "head",
+        "channel": "UV0, textured exterior material only",
+        "positive_overlap_triangle_pairs": 3567,
+        "examples": [
+          [
+            21202,
+            21205
+          ],
+          [
+            21198,
+            21207
+          ],
+          [
+            21200,
+            21207
+          ],
+          [
+            21201,
+            21207
+          ],
+          [
+            21202,
+            21207
+          ],
+          [
+            21201,
+            21208
+          ],
+          [
+            21202,
+            21208
+          ],
+          [
+            21189,
+            21223
+          ],
+          [
+            21190,
+            21223
+          ],
+          [
+            21195,
+            21223
+          ]
+        ],
+        "zero_area_uv_triangles": 7,
+        "aggregate_texels_per_meter_at_2048": 2812.4287156709634,
+        "density_is_local_stretch_approval": false
+      }
+    ],
+    "failures": [
+      "head: exterior UV overlaps or zero-area triangles"
+    ]
+  },
+  "regression": {
+    "suite": "tests/character_pipeline.gd",
+    "passed": 105,
+    "failed": 0
+  },
+  "phase_gate": {
+    "production_definitions": 0,
+    "total_definitions": 25,
+    "pending_evidence": 8
+  },
+  "capture_environment": "Godot 4.6.3 Compatibility/llvmpipe; Blender 4.3.2 Cycles CPU",
+  "visual_approved": false
+}

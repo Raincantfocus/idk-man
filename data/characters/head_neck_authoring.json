@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "region": "head_neck",
+  "source_object": "head",
+  "source_bones": [
+    "Neck",
+    "Head"
+  ],
+  "cut_fraction_neck_to_head_joint": 0.35,
+  "skin_thickness_m": 0.002,
+  "fat_thickness_m": 0.004,
+  "bone_radius_to_neck_joint_length": 0.085,
+  "marrow_radius_to_bone_radius": 0.42,
+  "torn_variants": 3,
+  "tear_amplitude_m": 0.0012,
+  "source_head_lod_targets": [
+    5000,
+    2000,
+    700,
+    200
+  ],
+  "anatomy_note": "Game-plausible proxy geometry, not medical anatomy. Lengths use supplied fitted rig landmarks. Head/stature reference 1/7.5 is the user's art target, not a validated anthropometric population ratio. Other dimensionless values are art parameters; published anthropometric source retrieval was blocked (HTTP 403).",
+  "approval": "Review required; no gameplay activation",
+  "corrective_distance_m": 15,
+  "review_offsets": {
+    "fractured_open": [
+      0,
+      0.025,
+      0
+    ],
+    "detached": [
+      0.055,
+      0.075,
+      0
+    ]
+  },
+  "corrective_poses": [
+    [
+      "corr_neck_forward",
+      "Neck",
+      0,
+      45
+    ],
+    [
+      "corr_neck_back",
+      "Neck",
+      0,
+      -35
+    ],
+    [
+      "corr_neck_left",
+      "Neck",
+      2,
+      35
+    ],
+    [
+      "corr_neck_right",
+      "Neck",
+      2,
+      -35
+    ],
+    [
+      "corr_head_twist_left",
+      "Head",
+      1,
+      60
+    ],
+    [
+      "corr_head_twist_right",
+      "Head",
+      1,
+      -60
+    ]
+  ]
+}

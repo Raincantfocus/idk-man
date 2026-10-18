@@ -1,5 +1,7 @@
 # Phase 1: modular parts checkpoint
 
+Latest: [automated head/neck region review](PHASE_1_HEAD_NECK_REVIEW.md). The user’s anatomy addendum supersedes the earlier blanket requirement for external character-artist work. Production acceptance remains closed.
+
 Phase 1 remains **incomplete**. This checkpoint makes the supplied Makarov outfit editable as fourteen source-derived parts. It does not provide five finished role silhouettes or replace the live enemy presentation. Movement, weapons, damage, waves, drops and rewards are unchanged.
 
 The earlier [character review](PHASE_1_SUPPLIED_CHARACTER_REVIEW.md) remains applicable. Purchased geometry, textures, Blender files and review captures remain in `/workspace/private-soldier-intake/converted/`, outside the repository. Source attribution and the user's reported purchase are recorded in `assets/characters/provenance.json`; redistribution terms remain unverified.
