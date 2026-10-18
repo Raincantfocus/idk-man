@@ -43,8 +43,12 @@ if cfg.get('merge_facial_weights_to_head',False):
    mapping[bone.name]='Head';fit_group[bone.name]='DEF-spine.006'
 # Snapshot original rest mesh and its weights before deleting control rigs.
 objects=[];raw={}
-for name in spec['objects']:
+for part_id,name in enumerate(spec['objects'],1):
  obj=bpy.data.objects[name];world=obj.matrix_world.copy()
+ # Semantic face IDs survive atlas baking and joining; never encode IDs as skin weights.
+ attr=obj.data.attributes.get('source_part_id') or obj.data.attributes.new('source_part_id','INT','FACE')
+ assert attr.domain=='FACE' and attr.data_type=='INT'
+ for value in attr.data:value.value=part_id
  weights=[]
  for v in obj.data.vertices:
   row={obj.vertex_groups[g.group].name:g.weight for g in v.groups if g.weight>1e-6}
@@ -112,6 +116,7 @@ for obj in objects:
 bpy.ops.object.select_all(action='DESELECT')
 for obj in objects:obj.select_set(True)
 bpy.context.view_layer.objects.active=objects[0];bpy.ops.object.join();obj=bpy.context.object;obj.name=group
+obj['source_parts_json']=json.dumps({str(i):name for i,name in enumerate(spec['objects'],1)})
 source_tris=sum(len(p.vertices)-2 for p in obj.data.polygons)
 bake(obj,out,dict(cfg,force_metallic_zero=spec.get('force_metallic_zero',False)),group)
 base=obj.data.copy();lods=[]
@@ -138,5 +143,5 @@ bpy.data.orphans_purge(do_recursive=True)
 authoring=out/'authoring';authoring.mkdir(exist_ok=True);(authoring/'.gdignore').touch()
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(authoring/f'{group}_{shape}.blend'))
-report={'group':group,'shape':shape,'source_objects':spec['objects'],'source_triangles':source_tris,'clearance':clearance_report,'lods':lods,'production_ready':False,'blockers':['Joint topology still triangulated','Correctives absent','Wound boundaries absent','Fitting and deformation not approved','Combined soldier budgets unverified']}
+report={'group':group,'shape':shape,'source_objects':spec['objects'],'semantic_parts':{str(i):name for i,name in enumerate(spec['objects'],1)},'source_triangles':source_tris,'clearance':clearance_report,'lods':lods,'production_ready':False,'blockers':['Joint topology still triangulated','Correctives absent','Wound boundaries absent','Fitting and deformation not approved','Combined soldier budgets unverified']}
 (out/f'{group}_{shape}.json').write_text(json.dumps(report,indent=2));print('KIT_COMPLETE',json.dumps(report),flush=True)

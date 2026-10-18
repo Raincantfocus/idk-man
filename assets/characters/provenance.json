@@ -397,6 +397,15 @@
       "distribution": "Source, derived meshes, textures and captures retained outside repository",
       "operations": "Rest-space skin-weight transfer, limited clearance correction, authored-UV repack/PBR bake, MakeHuman shape-delta wrapping and explicit candidate LOD export",
       "production_approved": false
+    },
+    {
+      "asset": "Makarov fourteen semantic garment/gear parts and preassembled kit review",
+      "source": "user-upload:Makarov (shaded soldier).blend",
+      "source_sha256": "c924ab384fd7d36fc696b1883584a3d3a8fbce3fbafa149652ca4a75ace0f119",
+      "license": "User reports purchase; redistribution terms unverified",
+      "distribution": "Derived meshes, textures, authoring files and captures remain outside repository",
+      "operations": "Preserved source part face IDs through atlas baking; extracted UV/skin-preserving modular meshes and combined single-surface review kits",
+      "production_approved": false
     }
   ]
 }

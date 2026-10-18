@@ -1,0 +1,449 @@
+{
+  "production_ready": false,
+  "renderer": "Godot 4.6.3 Compatibility / llvmpipe",
+  "frame_time_valid": false,
+  "groups": {
+    "carrier": {
+      "exports": {
+        "schema": 1,
+        "production_ready": false,
+        "source_triangles": 21918,
+        "part_count": 10,
+        "parts": [
+          {
+            "part": "Vest",
+            "source_ids": [
+              1
+            ],
+            "path": "Vest.glb",
+            "triangles": 2314,
+            "vertices": 1231,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "3f8ca94965185e4ddb53db476dd1f8818630c117c6d4dd2c614498c9d8280c7c"
+          },
+          {
+            "part": "Belt",
+            "source_ids": [
+              2
+            ],
+            "path": "Belt.glb",
+            "triangles": 4906,
+            "vertices": 2488,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "e2789e27d75710f21df17fb188df81ce3376bfa897c4ea499c00602a1dff145d"
+          },
+          {
+            "part": "Pouch_body_back_L",
+            "source_ids": [
+              3
+            ],
+            "path": "Pouch_body_back_L.glb",
+            "triangles": 1982,
+            "vertices": 1003,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "f12fc417b3b7b0094bda387c95785c5c7ee4e1690770ecc4d7aca9dff596e659"
+          },
+          {
+            "part": "Pouch_body_back_R",
+            "source_ids": [
+              4
+            ],
+            "path": "Pouch_body_back_R.glb",
+            "triangles": 1486,
+            "vertices": 806,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "784b490b90be4ba093e2e0920f8c178a64c3b46189b6f21d868a0e944fc01a40"
+          },
+          {
+            "part": "Pouch_body_front",
+            "source_ids": [
+              5
+            ],
+            "path": "Pouch_body_front.glb",
+            "triangles": 1016,
+            "vertices": 526,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "80588d456de0ebce8ea81f364958a9536c335c9a5c969dcba681768bdcaa7b1c"
+          },
+          {
+            "part": "Radio",
+            "source_ids": [
+              6
+            ],
+            "path": "Radio.glb",
+            "triangles": 3871,
+            "vertices": 2016,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "931bfe1691a628e2ff4e0bac06be4bc2bdfa078cbc0ed2c7c9282c76ff97082c"
+          },
+          {
+            "part": "Knee_pads",
+            "source_ids": [
+              7
+            ],
+            "path": "Knee_pads.glb",
+            "triangles": 2198,
+            "vertices": 1122,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "7a8ed428f3745500a971a39ca61e89bdd298079a0e6aba5aed68d40e4eeffd55"
+          },
+          {
+            "part": "Holster",
+            "source_ids": [
+              8
+            ],
+            "path": "Holster.glb",
+            "triangles": 906,
+            "vertices": 494,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "fb7318c934ad5e8d72fd9d04f8003eebeba02c92edb26bba461a9bd1ce0c01f3"
+          },
+          {
+            "part": "Holster_belt",
+            "source_ids": [
+              9
+            ],
+            "path": "Holster_belt.glb",
+            "triangles": 1750,
+            "vertices": 916,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "3062c7aa8398de63ec5f09d99534eff432ee48611256fe389178f359fb27275d"
+          },
+          {
+            "part": "Tourniquet",
+            "source_ids": [
+              10
+            ],
+            "path": "Tourniquet.glb",
+            "triangles": 1489,
+            "vertices": 789,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "335308c680d4a4855553fc16d61a5537376553f6ea7cc54ffc8633167e43d923"
+          },
+          {
+            "part": "complete_kit",
+            "source_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "path": "complete_kit.glb",
+            "triangles": 21918,
+            "vertices": 11391,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "90288c7fa6db28ba441ffa69e1a7cd5e126058916bcd35b780207f853071e336"
+          }
+        ],
+        "kits": [
+          {
+            "part": "vest_radio",
+            "source_ids": [
+              1,
+              6
+            ],
+            "path": "vest_radio.glb",
+            "triangles": 6185,
+            "vertices": 3247,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "70b6430f14a4c2a9b24215f2a45e9bde8b30256fffa6917c7d4531c0abc266b8"
+          },
+          {
+            "part": "waist_equipment",
+            "source_ids": [
+              2,
+              3,
+              4,
+              5,
+              8,
+              9,
+              10
+            ],
+            "path": "waist_equipment.glb",
+            "triangles": 13535,
+            "vertices": 7022,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "carrier",
+            "sha256": "9ee6b76045f3e83acc0338cd91d4cd3aa02669712cb17d10d9e945013d6fbcaf"
+          }
+        ],
+        "budget_note": "Individual parts share one material but require one surface each. Use a preassembled single-surface kit for runtime; these unreduced exports are not final LODs.",
+        "blockers": [
+          "Role kits incomplete",
+          "Fit and deformation unapproved",
+          "No corrective shapes or wound seams",
+          "Unreduced geometry; final LODs required"
+        ]
+      },
+      "godot": {
+        "baseline_draw_calls": 0,
+        "bones": 72,
+        "complete_draw_calls": 1,
+        "frame_time_valid": false,
+        "kits": [
+          {
+            "name": "vest_radio",
+            "surfaces": 1,
+            "triangles": 6185.0
+          },
+          {
+            "name": "waist_equipment",
+            "surfaces": 1,
+            "triangles": 13535.0
+          }
+        ],
+        "materials": 1,
+        "parts": [
+          {
+            "name": "Vest",
+            "surfaces": 1,
+            "triangles": 2314
+          },
+          {
+            "name": "Belt",
+            "surfaces": 1,
+            "triangles": 4906
+          },
+          {
+            "name": "Pouch_body_back_L",
+            "surfaces": 1,
+            "triangles": 1982
+          },
+          {
+            "name": "Pouch_body_back_R",
+            "surfaces": 1,
+            "triangles": 1486
+          },
+          {
+            "name": "Pouch_body_front",
+            "surfaces": 1,
+            "triangles": 1016
+          },
+          {
+            "name": "Radio",
+            "surfaces": 1,
+            "triangles": 3871
+          },
+          {
+            "name": "Knee_pads",
+            "surfaces": 1,
+            "triangles": 2198
+          },
+          {
+            "name": "Holster",
+            "surfaces": 1,
+            "triangles": 906
+          },
+          {
+            "name": "Holster_belt",
+            "surfaces": 1,
+            "triangles": 1750
+          },
+          {
+            "name": "Tourniquet",
+            "surfaces": 1,
+            "triangles": 1489
+          }
+        ],
+        "production_ready": false,
+        "renderer": "gl_compatibility",
+        "separate_draw_calls": 10,
+        "triangles": 21918
+      },
+      "front_view_difference": {
+        "identical": true,
+        "mean_absolute_rgb_difference": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "adjusted_vertices": 1239,
+        "unresolved_deep_vertices": 80,
+        "max_displacement_m": 0.03496823045052588
+      }
+    },
+    "fatigues": {
+      "exports": {
+        "schema": 1,
+        "production_ready": false,
+        "source_triangles": 25886,
+        "part_count": 4,
+        "parts": [
+          {
+            "part": "Body",
+            "source_ids": [
+              1
+            ],
+            "path": "Body.glb",
+            "triangles": 9530,
+            "vertices": 4853,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "fatigues",
+            "sha256": "b703500d4746c19e6a35d384e8e65db5c9ef03911a29f67513512cef89ad4881"
+          },
+          {
+            "part": "Legs",
+            "source_ids": [
+              2
+            ],
+            "path": "Legs.glb",
+            "triangles": 6412,
+            "vertices": 3289,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "fatigues",
+            "sha256": "f2d460e8c4d6188f5d20b524292f367a06bf4b17f9564b24c89638d8c542a8b4"
+          },
+          {
+            "part": "Boots",
+            "source_ids": [
+              3
+            ],
+            "path": "Boots.glb",
+            "triangles": 3192,
+            "vertices": 1736,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "fatigues",
+            "sha256": "d85bcf06c21fb6155a675069c6b3dab93ae2eb6eb523f87b3a1e2ab27511e34d"
+          },
+          {
+            "part": "Gloves",
+            "source_ids": [
+              4
+            ],
+            "path": "Gloves.glb",
+            "triangles": 6752,
+            "vertices": 3805,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "fatigues",
+            "sha256": "e13ce315503e4e55b4631f89a95c836deb77cd14105920cdc88e6b2b049d440e"
+          },
+          {
+            "part": "complete_kit",
+            "source_ids": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "path": "complete_kit.glb",
+            "triangles": 25886,
+            "vertices": 13683,
+            "bones": 72,
+            "expected_visible_surfaces": 1,
+            "embedded_materials": 0,
+            "shared_atlas_group": "fatigues",
+            "sha256": "f3f62cf846864a34cfd35543af141ddda84af7e55902b4b96d4dc7d053e3f25b"
+          }
+        ],
+        "budget_note": "Individual parts share one material but require one surface each. Use a preassembled single-surface kit for runtime; these unreduced exports are not final LODs.",
+        "blockers": [
+          "Role kits incomplete",
+          "Fit and deformation unapproved",
+          "No corrective shapes or wound seams",
+          "Unreduced geometry; final LODs required"
+        ]
+      },
+      "godot": {
+        "baseline_draw_calls": 0,
+        "bones": 72,
+        "complete_draw_calls": 1,
+        "frame_time_valid": false,
+        "kits": [],
+        "materials": 1,
+        "parts": [
+          {
+            "name": "Body",
+            "surfaces": 1,
+            "triangles": 9530
+          },
+          {
+            "name": "Legs",
+            "surfaces": 1,
+            "triangles": 6412
+          },
+          {
+            "name": "Boots",
+            "surfaces": 1,
+            "triangles": 3192
+          },
+          {
+            "name": "Gloves",
+            "surfaces": 1,
+            "triangles": 6752
+          }
+        ],
+        "production_ready": false,
+        "renderer": "gl_compatibility",
+        "separate_draw_calls": 4,
+        "triangles": 25886
+      },
+      "front_view_difference": {
+        "identical": false,
+        "mean_absolute_rgb_difference": [
+          6.060606060606061e-06,
+          6.060606060606061e-06,
+          1.0101010101010101e-05
+        ]
+      },
+      "fit": {
+        "adjusted_vertices": 2853,
+        "unresolved_deep_vertices": 66,
+        "max_displacement_m": 0.034828164525900096
+      }
+    }
+  }
+}
