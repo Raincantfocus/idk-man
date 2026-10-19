@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "name": "Leftshoulder",
+      "bone": "LeftUpperArm",
+      "start_degrees": 25,
+      "full_degrees": 80,
+      "axis": "angle"
+    },
+    {
+      "name": "Leftelbow",
+      "bone": "LeftLowerArm",
+      "start_degrees": 40,
+      "full_degrees": 110,
+      "axis": "angle"
+    },
+    {
+      "name": "Leftknee",
+      "bone": "LeftLowerLeg",
+      "start_degrees": 40,
+      "full_degrees": 110,
+      "axis": "angle"
+    },
+    {
+      "name": "Rightshoulder",
+      "bone": "RightUpperArm",
+      "start_degrees": 25,
+      "full_degrees": 80,
+      "axis": "angle"
+    },
+    {
+      "name": "Rightelbow",
+      "bone": "RightLowerArm",
+      "start_degrees": 40,
+      "full_degrees": 110,
+      "axis": "angle"
+    },
+    {
+      "name": "Rightknee",
+      "bone": "RightLowerLeg",
+      "start_degrees": 40,
+      "full_degrees": 110,
+      "axis": "angle"
+    },
+    {
+      "name": "chest_twist",
+      "bone": "Chest",
+      "start_degrees": 15,
+      "full_degrees": 45,
+      "axis": "yaw"
+    }
+  ],
+  "body_delta_mm": -2,
+  "gear_delta_mm": 3,
+  "near_distance_m": 8
+}

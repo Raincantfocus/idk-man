@@ -1,0 +1,19 @@
+{
+ "pass_margin_mm": 2.0,
+ "shell_search_mm": 120.0,
+ "max_influences": 4,
+ "weight_mismatch_l1_threshold": 0.05,
+ "weight_smoothing_iterations": 2,
+ "weight_smoothing_factor": 0.15,
+ "offset_mm": {"fabric":3.0,"jacket":8.0,"armor":20.0,"boot_glove":3.0},
+ "body_shrink_min_mm":2.0,
+ "body_shrink_max_mm":10.0,
+ "seam_lock_band_mm":6.0,
+ "body_falloff_mm":15.0,
+ "covered_mask_shell_distance_mm":30.0,
+ "covered_mask_margin_mm":3.0,
+ "corrective_near_distance_m":8.0,
+ "available_fixture":{"role":"enforcer_review_kit","body":"standard"},
+ "unavailable_clips":["flinch","death"],
+ "full_acceptance":false
+}
