@@ -9,7 +9,8 @@
       "parent": "neck",
       "implemented": true,
       "can_sever": true,
-      "children": []
+      "children": [],
+      "logic_implemented": true
     },
     {
       "id": "neck",
@@ -20,7 +21,8 @@
       "can_sever": true,
       "children": [
         "head"
-      ]
+      ],
+      "logic_implemented": true
     },
     {
       "id": "chest",
@@ -34,7 +36,9 @@
         "abdomen",
         "left_shoulder",
         "right_shoulder"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "pending"
     },
     {
       "id": "abdomen",
@@ -45,7 +49,9 @@
       "can_sever": false,
       "children": [
         "waist"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "pending"
     },
     {
       "id": "waist",
@@ -56,7 +62,9 @@
       "can_sever": true,
       "children": [
         "pelvis"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "pelvis",
@@ -68,7 +76,9 @@
       "children": [
         "left_hip",
         "right_hip"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "pending"
     },
     {
       "id": "left_shoulder",
@@ -79,7 +89,9 @@
       "can_sever": true,
       "children": [
         "left_upper_arm"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_upper_arm",
@@ -90,7 +102,9 @@
       "can_sever": true,
       "children": [
         "left_forearm"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_forearm",
@@ -101,7 +115,9 @@
       "can_sever": true,
       "children": [
         "left_hand"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_hand",
@@ -110,7 +126,9 @@
       "parent": "left_forearm",
       "implemented": false,
       "can_sever": true,
-      "children": []
+      "children": [],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_hip",
@@ -121,7 +139,9 @@
       "can_sever": true,
       "children": [
         "left_thigh"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_thigh",
@@ -132,7 +152,9 @@
       "can_sever": true,
       "children": [
         "left_shin"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_shin",
@@ -143,7 +165,9 @@
       "can_sever": true,
       "children": [
         "left_foot"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "left_foot",
@@ -152,7 +176,9 @@
       "parent": "left_shin",
       "implemented": false,
       "can_sever": true,
-      "children": []
+      "children": [],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_shoulder",
@@ -163,7 +189,9 @@
       "can_sever": true,
       "children": [
         "right_upper_arm"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_upper_arm",
@@ -174,7 +202,9 @@
       "can_sever": true,
       "children": [
         "right_forearm"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_forearm",
@@ -185,7 +215,9 @@
       "can_sever": true,
       "children": [
         "right_hand"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_hand",
@@ -194,7 +226,9 @@
       "parent": "right_forearm",
       "implemented": false,
       "can_sever": true,
-      "children": []
+      "children": [],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_hip",
@@ -205,7 +239,9 @@
       "can_sever": true,
       "children": [
         "right_thigh"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_thigh",
@@ -216,7 +252,9 @@
       "can_sever": true,
       "children": [
         "right_shin"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_shin",
@@ -227,7 +265,9 @@
       "can_sever": true,
       "children": [
         "right_foot"
-      ]
+      ],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     },
     {
       "id": "right_foot",
@@ -236,7 +276,9 @@
       "parent": "right_shin",
       "implemented": false,
       "can_sever": true,
-      "children": []
+      "children": [],
+      "logic_implemented": true,
+      "art_status": "canonical_left_rest_pose_review"
     }
   ]
 }

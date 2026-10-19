@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_mjcag"]
+
+[resource]
+script = ExtResource("1_mjcag")
+id = &"left_shin"
+bone = &"LeftLowerLeg"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+cap_variants = {
+"explosive": ["shin_shared_0", "shin_shared_1", "shin_shared_2"],
+"melee": ["shin_shared_0", "shin_shared_1", "shin_shared_2"],
+"rifle": ["shin_shared_0", "shin_shared_1", "shin_shared_2"],
+"shotgun": ["shin_shared_0", "shin_shared_1", "shin_shared_2"]
+}
+parent_zone = &"left_thigh"
+child_zones = PackedStringArray("left_foot")

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_4gbvh"]
+
+[resource]
+script = ExtResource("1_4gbvh")
+id = &"left_hand"
+bone = &"LeftHand"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+cap_variants = {
+"explosive": ["hand_shared_0", "hand_shared_1", "hand_shared_2"],
+"melee": ["hand_shared_0", "hand_shared_1", "hand_shared_2"],
+"rifle": ["hand_shared_0", "hand_shared_1", "hand_shared_2"],
+"shotgun": ["hand_shared_0", "hand_shared_1", "hand_shared_2"]
+}
+parent_zone = &"left_forearm"
+child_zones = PackedStringArray()

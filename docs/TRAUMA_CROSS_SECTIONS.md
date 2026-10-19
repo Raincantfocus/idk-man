@@ -17,7 +17,7 @@ Engine tested: Godot 4.6.3. Dimensions are meters. These are game-plausible art 
 
 Chest, abdomen and pelvis use cavity states and cannot sever. Head/neck share one sever chain. Upper/lower limb chains are shoulder → upper arm → forearm → hand and hip → thigh → shin → foot. Waist may detach the lower hierarchy only in presentation. No live gameplay damage collider is added or changed.
 
-The list contains 22 zones. Head/neck resources are implemented first. Other entries are specifications only until the head/neck review is approved. No model for another region is generated during this gate.
+The list contains 22 zones. The user authorized expansion after the head/neck review. All 22 now have typed Resources. Nine additional cut families have isolated rest-pose review meshes; chest/abdomen/pelvis have cavity logic but no cavity art. See BODY_ZONE_REVIEW.md for explicit remaining failures. Authorization to proceed does not make the earlier head/neck defects pass.
 
 LOD0 asset reservation: neck, upper arm and thigh each reserve 12 weapon/variant cap meshes (36 total); forearm, shin and waist reserve three each (9); shoulder, hip, hand and foot reserve three each (12). Total planned maximum: **57 unique cap meshes**. Left/right and opposing stump surfaces reuse the same geometry with a proper rotated local basis. No negative-scale normal inversion is needed. LOD1/2 are separate reduced assets, not counted as additional LOD0 variants. Full caps for Tier A override the lower-priority generic clip-plane method. Tier B clip-plane boundaries require closed original geometry and protrusion props; a shader backface is not accepted as a sealed arbitrary cut.
 

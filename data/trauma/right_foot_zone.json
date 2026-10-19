@@ -1,0 +1,55 @@
+{
+  "trauma_hp": 100.0,
+  "thresholds": [
+    10,
+    30,
+    60,
+    100
+  ],
+  "sever_threshold": 100.0,
+  "allowed_weapon_classes": [
+    "melee",
+    "rifle",
+    "shotgun",
+    "explosive"
+  ],
+  "weapon_multipliers": {
+    "melee": 1.0,
+    "rifle": 1.0,
+    "shotgun": 1.5,
+    "explosive": 1.8
+  },
+  "min_impact_energy": 1.0,
+  "max_tilt_degrees": 30.0,
+  "close_shotgun_m": 6.0,
+  "distance_falloff_per_m": 0.015,
+  "gameplay_consequences": false,
+  "hit_zone_collider": "",
+  "id": "right_foot",
+  "bone": "RightFoot",
+  "parent_zone": "right_shin",
+  "child_zones": [],
+  "can_sever": true,
+  "cap_variants": {
+    "melee": [
+      "foot_shared_0",
+      "foot_shared_1",
+      "foot_shared_2"
+    ],
+    "rifle": [
+      "foot_shared_0",
+      "foot_shared_1",
+      "foot_shared_2"
+    ],
+    "shotgun": [
+      "foot_shared_0",
+      "foot_shared_1",
+      "foot_shared_2"
+    ],
+    "explosive": [
+      "foot_shared_0",
+      "foot_shared_1",
+      "foot_shared_2"
+    ]
+  }
+}

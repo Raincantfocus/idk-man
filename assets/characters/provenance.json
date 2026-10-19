@@ -337,6 +337,13 @@
         "Source-derived rigid head fragments"
       ],
       "production_ready": false
+    },
+    {
+      "path": "downloads/zero-line-body-zone-review.zip",
+      "source": "Existing CC0 MakeHuman-derived assets/characters/generated/standard_lod0.glb; original tissue atlas and CDT authoring scripts",
+      "license": "CC0 base body; original project-authored tissue geometry and textures; see bundled license documentation",
+      "modifications": "Rest-pose cut contours from authored body, nine game-plausible anatomy layouts, 45 cap variants and measured LOD reductions. No purchased gear geometry added.",
+      "production_approved": false
     }
   ],
   "production_ready": false,

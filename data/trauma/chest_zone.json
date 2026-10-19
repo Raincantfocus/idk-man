@@ -1,0 +1,39 @@
+{
+  "trauma_hp": 100.0,
+  "thresholds": [
+    10,
+    30,
+    60,
+    100
+  ],
+  "sever_threshold": 100.0,
+  "allowed_weapon_classes": [
+    "melee",
+    "rifle",
+    "shotgun",
+    "explosive"
+  ],
+  "weapon_multipliers": {
+    "melee": 1.0,
+    "rifle": 1.0,
+    "shotgun": 1.5,
+    "explosive": 1.8
+  },
+  "min_impact_energy": 1.0,
+  "max_tilt_degrees": 30.0,
+  "close_shotgun_m": 6.0,
+  "distance_falloff_per_m": 0.015,
+  "gameplay_consequences": false,
+  "hit_zone_collider": "",
+  "id": "chest",
+  "bone": "Chest",
+  "parent_zone": "",
+  "child_zones": [
+    "neck",
+    "abdomen",
+    "left_shoulder",
+    "right_shoulder"
+  ],
+  "can_sever": false,
+  "cap_variants": {}
+}

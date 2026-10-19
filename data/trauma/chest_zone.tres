@@ -1,0 +1,12 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_tk73k"]
+
+[resource]
+script = ExtResource("1_tk73k")
+id = &"chest"
+bone = &"Chest"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+child_zones = PackedStringArray("neck", "abdomen", "left_shoulder", "right_shoulder")
+can_sever = false

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_tjbuw"]
+
+[resource]
+script = ExtResource("1_tjbuw")
+id = &"left_upper_arm"
+bone = &"LeftUpperArm"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+cap_variants = {
+"explosive": ["upper_arm_explosive_0", "upper_arm_explosive_1", "upper_arm_explosive_2"],
+"melee": ["upper_arm_melee_0", "upper_arm_melee_1", "upper_arm_melee_2"],
+"rifle": ["upper_arm_rifle_0", "upper_arm_rifle_1", "upper_arm_rifle_2"],
+"shotgun": ["upper_arm_shotgun_0", "upper_arm_shotgun_1", "upper_arm_shotgun_2"]
+}
+parent_zone = &"left_shoulder"
+child_zones = PackedStringArray("left_forearm")

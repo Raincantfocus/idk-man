@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_36n7q"]
+
+[resource]
+script = ExtResource("1_36n7q")
+id = &"right_shoulder"
+bone = &"RightShoulder"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+cap_variants = {
+"explosive": ["shoulder_shared_0", "shoulder_shared_1", "shoulder_shared_2"],
+"melee": ["shoulder_shared_0", "shoulder_shared_1", "shoulder_shared_2"],
+"rifle": ["shoulder_shared_0", "shoulder_shared_1", "shoulder_shared_2"],
+"shotgun": ["shoulder_shared_0", "shoulder_shared_1", "shoulder_shared_2"]
+}
+parent_zone = &"chest"
+child_zones = PackedStringArray("right_upper_arm")

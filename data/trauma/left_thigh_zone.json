@@ -1,0 +1,57 @@
+{
+  "trauma_hp": 100.0,
+  "thresholds": [
+    10,
+    30,
+    60,
+    100
+  ],
+  "sever_threshold": 100.0,
+  "allowed_weapon_classes": [
+    "melee",
+    "rifle",
+    "shotgun",
+    "explosive"
+  ],
+  "weapon_multipliers": {
+    "melee": 1.0,
+    "rifle": 1.0,
+    "shotgun": 1.5,
+    "explosive": 1.8
+  },
+  "min_impact_energy": 1.0,
+  "max_tilt_degrees": 30.0,
+  "close_shotgun_m": 6.0,
+  "distance_falloff_per_m": 0.015,
+  "gameplay_consequences": false,
+  "hit_zone_collider": "",
+  "id": "left_thigh",
+  "bone": "LeftUpperLeg",
+  "parent_zone": "left_hip",
+  "child_zones": [
+    "left_shin"
+  ],
+  "can_sever": true,
+  "cap_variants": {
+    "melee": [
+      "thigh_melee_0",
+      "thigh_melee_1",
+      "thigh_melee_2"
+    ],
+    "rifle": [
+      "thigh_rifle_0",
+      "thigh_rifle_1",
+      "thigh_rifle_2"
+    ],
+    "shotgun": [
+      "thigh_shotgun_0",
+      "thigh_shotgun_1",
+      "thigh_shotgun_2"
+    ],
+    "explosive": [
+      "thigh_explosive_0",
+      "thigh_explosive_1",
+      "thigh_explosive_2"
+    ]
+  }
+}

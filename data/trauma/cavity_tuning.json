@@ -1,0 +1,1 @@
+{"zones":["chest","abdomen","pelvis"],"thresholds":[10,60,100],"settle_seconds":4.0,"max_simulated_contents_per_corpse":4,"gameplay_consequences":false,"art_status":"not_authored"}
