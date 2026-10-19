@@ -1,0 +1,5258 @@
+{
+  "validation.json": {
+    "engine": "4.6.3",
+    "production_approved": false,
+    "source": "Soup supplied fitted head",
+    "cap_local_axes": "+X right, -Y anterior, +Z outward",
+    "meshes": [
+      {
+        "name": "neck_melee_0_LOD0",
+        "triangles": 3688,
+        "non_manifold_edges": 0,
+        "vertices": 1906,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.028963484801352024,
+        "weapon": "melee",
+        "variant": 0,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 60,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 780,
+            "vertex_count": 60,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 840,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 876,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 912,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 978,
+            "vertex_count": 70,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1048,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1082,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1116,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1188,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1230,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1286,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1306,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1354,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1372,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1420,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1442,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1490,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1508,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1556,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1578,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1626,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1674,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1722,
+            "vertex_count": 50,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1772,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1828,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1852,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1872,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1886,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.00900967329242341
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0026079128109024784
+          ],
+          "skin_flap": [
+            0.0005999999999999998,
+            0.00445653994228133
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.009120682136481635
+          ],
+          "SCM_R": [
+            -0.009000000000000001,
+            0.0055904958117779895
+          ],
+          "strap_L": [
+            -0.009000000000000001,
+            0.004957975892504524
+          ],
+          "strap_R": [
+            -0.009,
+            0.005465949631967716
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.0060057570966009655
+          ],
+          "trapezius_R": [
+            -0.009,
+            0.004831535037334158
+          ],
+          "deep_L": [
+            -0.009,
+            0.009806818630614805
+          ],
+          "deep_R": [
+            -0.009000000000000001,
+            0.007739200388155083
+          ],
+          "trachea": [
+            -0.009668749699853206,
+            0.01366874969985427
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007909439771522796
+          ],
+          "esophagus": [
+            -0.009692104997075764,
+            0.008492104997074153
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007945142648965425
+          ],
+          "carotid_-1": [
+            -0.009513484813957165,
+            0.015463484813959604
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.00792801820756613
+          ],
+          "jugular_-1": [
+            -0.009513484813957165,
+            0.010263484813959604
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007907720429530096
+          ],
+          "carotid_1": [
+            -0.009513484813957165,
+            0.015463484813959604
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007912042642794272
+          ],
+          "jugular_1": [
+            -0.009513484813957165,
+            0.010263484813959604
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007953479725665145
+          ],
+          "C_cartilage": [
+            0.00975,
+            0.010725
+          ],
+          "vertebral_body": [
+            -0.0135,
+            0.006946355586336561
+          ],
+          "spinal_canal": [
+            -0.009692104997075764,
+            0.005892104997074154
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.00792619233941769
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003207006787145104
+          ],
+          "spinous_process": [
+            -0.012149999999999998,
+            0.00613133951702934
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0030869784816382325
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_melee_0_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 14,
+        "relief_m": 0.028784412890672684,
+        "lod": 1
+      },
+      {
+        "name": "neck_melee_0_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006988055189140141,
+        "lod": 2
+      },
+      {
+        "name": "neck_melee_1_LOD0",
+        "triangles": 3700,
+        "non_manifold_edges": 0,
+        "vertices": 1912,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.02914601843804121,
+        "weapon": "melee",
+        "variant": 1,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 784,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 848,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 884,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 920,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 988,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1056,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1090,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1124,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1196,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1238,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1294,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1314,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1362,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1380,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1428,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1450,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1498,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1516,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1564,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1586,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1634,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1682,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1730,
+            "vertex_count": 48,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1778,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1834,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1858,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1878,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1892,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009003377884393152
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.002536790239849728
+          ],
+          "skin_flap": [
+            0.0005999999999999998,
+            0.004790200112669479
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.009737434266047949
+          ],
+          "SCM_R": [
+            -0.009,
+            0.004559218556939642
+          ],
+          "strap_L": [
+            -0.009,
+            0.006255333119500541
+          ],
+          "strap_R": [
+            -0.009,
+            0.007490434184719798
+          ],
+          "trapezius_L": [
+            -0.009000000000000001,
+            0.007873753483685325
+          ],
+          "trapezius_R": [
+            -0.009,
+            0.006103380264413855
+          ],
+          "deep_L": [
+            -0.009,
+            0.008839792149521955
+          ],
+          "deep_R": [
+            -0.009000000000000001,
+            0.0060343820051522055
+          ],
+          "trachea": [
+            -0.009640048805009203,
+            0.013640048805007753
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007920404562729185
+          ],
+          "esophagus": [
+            -0.009695158271781017,
+            0.008495158271779754
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007928154689322828
+          ],
+          "carotid_-1": [
+            -0.009696017901744612,
+            0.015646017901744996
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007900153205949492
+          ],
+          "jugular_-1": [
+            -0.009696017901744612,
+            0.010446017901744995
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.00794151532546702
+          ],
+          "carotid_1": [
+            -0.009696017901744612,
+            0.015646017901744996
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007908786344519993
+          ],
+          "jugular_1": [
+            -0.009696017901744612,
+            0.010446017901744995
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00791422187651996
+          ],
+          "C_cartilage": [
+            0.00975,
+            0.010725
+          ],
+          "vertebral_body": [
+            -0.0135,
+            0.006920416127441972
+          ],
+          "spinal_canal": [
+            -0.009695158271781017,
+            0.005895158271779754
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007906223446104916
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0032710933042430944
+          ],
+          "spinous_process": [
+            -0.012149999999999998,
+            0.005993707521187898
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.003184192160647006
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_melee_1_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.029124443419277668,
+        "lod": 1
+      },
+      {
+        "name": "neck_melee_1_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006947783753275871,
+        "lod": 2
+      },
+      {
+        "name": "neck_melee_2_LOD0",
+        "triangles": 3692,
+        "non_manifold_edges": 0,
+        "vertices": 1908,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.02902371436357498,
+        "weapon": "melee",
+        "variant": 2,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 786,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 852,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 886,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 920,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 986,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1054,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1088,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1122,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1194,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1236,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1292,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1312,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1360,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1378,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1426,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1448,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1496,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1514,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1562,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1584,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1632,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1680,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1728,
+            "vertex_count": 46,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1774,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1830,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1854,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1874,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1888,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009001198569953132
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.002540854120773102
+          ],
+          "skin_flap": [
+            0.0005999999999999998,
+            0.00453804915384102
+          ],
+          "SCM_L": [
+            -0.009,
+            0.009207438244688764
+          ],
+          "SCM_R": [
+            -0.008999999999999998,
+            0.005009826643080475
+          ],
+          "strap_L": [
+            -0.008999999999999998,
+            0.008110793235586125
+          ],
+          "strap_R": [
+            -0.009,
+            0.00908709278876864
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.009305506548066675
+          ],
+          "trapezius_R": [
+            -0.008999999999999998,
+            0.00791480044260695
+          ],
+          "deep_L": [
+            -0.009000000000000001,
+            0.0070954738044230435
+          ],
+          "deep_R": [
+            -0.009,
+            0.0047053166932275415
+          ],
+          "trachea": [
+            -0.009697382828001363,
+            0.013697382828001056
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007909686386508418
+          ],
+          "esophagus": [
+            -0.009698606926647244,
+            0.008498606926646566
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007906156993416168
+          ],
+          "carotid_-1": [
+            -0.009573713887487748,
+            0.015523713887485692
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.00792197753796957
+          ],
+          "jugular_-1": [
+            -0.009573713887487748,
+            0.010323713887485693
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007923742250429756
+          ],
+          "carotid_1": [
+            -0.009573713887487748,
+            0.015523713887485692
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007903961068476984
+          ],
+          "jugular_1": [
+            -0.009573713887487748,
+            0.010323713887485693
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00790399804896307
+          ],
+          "C_cartilage": [
+            0.00975,
+            0.010725
+          ],
+          "vertebral_body": [
+            -0.0135,
+            0.006830769255082415
+          ],
+          "spinal_canal": [
+            -0.009698606926647244,
+            0.005898606926646566
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.00792459526737844
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0031966904379223163
+          ],
+          "spinous_process": [
+            -0.012149999999999998,
+            0.005877695859886847
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0031892397512877212
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_melee_2_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 17,
+        "relief_m": 0.028859620913863182,
+        "lod": 1
+      },
+      {
+        "name": "neck_melee_2_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006998801836743951,
+        "lod": 2
+      },
+      {
+        "name": "neck_rifle_0_LOD0",
+        "triangles": 3704,
+        "non_manifold_edges": 0,
+        "vertices": 1914,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.03666192479431629,
+        "weapon": "rifle",
+        "variant": 0,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 786,
+            "vertex_count": 62,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 848,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 884,
+            "vertex_count": 36,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 920,
+            "vertex_count": 70,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 990,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1058,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1092,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1126,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1198,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1240,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1296,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1316,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1364,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1382,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1430,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1452,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1500,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1518,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1566,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1588,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1636,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1684,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1732,
+            "vertex_count": 48,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1780,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1836,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1860,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1880,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1894,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009015665369354102
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0025869942708232813
+          ],
+          "skin_flap": [
+            0.002,
+            0.006086801303526332
+          ],
+          "SCM_L": [
+            -0.009,
+            0.013712117600614967
+          ],
+          "SCM_R": [
+            -0.008999999999999998,
+            0.011332052667122793
+          ],
+          "strap_L": [
+            -0.009000000000000001,
+            0.008257818805332507
+          ],
+          "strap_R": [
+            -0.009,
+            0.008122286019304798
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.009190593910749114
+          ],
+          "trapezius_R": [
+            -0.009000000000000001,
+            0.008440547110134597
+          ],
+          "deep_L": [
+            -0.008999999999999998,
+            0.016248374041730154
+          ],
+          "deep_R": [
+            -0.009,
+            0.0143706407601915
+          ],
+          "trachea": [
+            -0.009661925216319806,
+            0.020661925216320973
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007918079329314629
+          ],
+          "esophagus": [
+            -0.009695176693258645,
+            0.012695176693255131
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007926257720253358
+          ],
+          "carotid_-1": [
+            -0.009661925216319806,
+            0.023661925216320972
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007961979719824706
+          ],
+          "jugular_-1": [
+            -0.009661925216319806,
+            0.01566192521632097
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007904280008602632
+          ],
+          "carotid_1": [
+            -0.009661925216319806,
+            0.023661925216320972
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007935061228692891
+          ],
+          "jugular_1": [
+            -0.009661925216319806,
+            0.01566192521632097
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007925182059315864
+          ],
+          "C_cartilage": [
+            0.015,
+            0.0165
+          ],
+          "vertebral_body": [
+            -0.01,
+            0.011450167794314771
+          ],
+          "spinal_canal": [
+            -0.009695176693258645,
+            0.008695176693255131
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.00793515817015092
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003128691297826724
+          ],
+          "spinous_process": [
+            -0.009,
+            0.009998050446826999
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.003007257497610178
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_rifle_0_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 14,
+        "relief_m": 0.0367793757468462,
+        "lod": 1
+      },
+      {
+        "name": "neck_rifle_0_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006954663316719234,
+        "lod": 2
+      },
+      {
+        "name": "neck_rifle_1_LOD0",
+        "triangles": 3704,
+        "non_manifold_edges": 0,
+        "vertices": 1914,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.036606552079319954,
+        "weapon": "rifle",
+        "variant": 1,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 786,
+            "vertex_count": 62,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 848,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 886,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 924,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 992,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1060,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1094,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1128,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1200,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1242,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1298,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1318,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1366,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1384,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1432,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1454,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1502,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1520,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1568,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1590,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1638,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1686,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1734,
+            "vertex_count": 46,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1780,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1836,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1860,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1880,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1894,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009011749925951683
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.002638658941702199
+          ],
+          "skin_flap": [
+            0.002,
+            0.006063662940064354
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.015508962263929362
+          ],
+          "SCM_R": [
+            -0.009,
+            0.008891136559085487
+          ],
+          "strap_L": [
+            -0.009,
+            0.008889938753569995
+          ],
+          "strap_R": [
+            -0.009,
+            0.01046726326404698
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.011638115614833541
+          ],
+          "trapezius_R": [
+            -0.009,
+            0.009143140213866701
+          ],
+          "deep_L": [
+            -0.009,
+            0.01583737324728536
+          ],
+          "deep_R": [
+            -0.009000000000000001,
+            0.012167432384543278
+          ],
+          "trachea": [
+            -0.009699999679718806,
+            0.020699999679718806
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007908322537611019
+          ],
+          "esophagus": [
+            -0.009692081459676852,
+            0.012692081459678468
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007949946895964646
+          ],
+          "carotid_-1": [
+            -0.009606552316257176,
+            0.023606552316258966
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.00791063403872346
+          ],
+          "jugular_-1": [
+            -0.009606552316257176,
+            0.015606552316258966
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.00792033407435596
+          ],
+          "carotid_1": [
+            -0.009606552316257176,
+            0.023606552316258966
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007904686129907645
+          ],
+          "jugular_1": [
+            -0.009606552316257176,
+            0.015606552316258966
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007940938151802412
+          ],
+          "C_cartilage": [
+            0.015,
+            0.0165
+          ],
+          "vertebral_body": [
+            -0.01,
+            0.011404769322238498
+          ],
+          "spinal_canal": [
+            -0.009692081459676852,
+            0.008692081459678468
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007917716341812538
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003250319414889846
+          ],
+          "spinous_process": [
+            -0.009,
+            0.009792822614169507
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.003136506307761912
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_rifle_1_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 14,
+        "relief_m": 0.03642097860574722,
+        "lod": 1
+      },
+      {
+        "name": "neck_rifle_1_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006988250417634845,
+        "lod": 2
+      },
+      {
+        "name": "neck_rifle_2_LOD0",
+        "triangles": 3680,
+        "non_manifold_edges": 0,
+        "vertices": 1902,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.03668684512376785,
+        "weapon": "rifle",
+        "variant": 2,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 62,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 782,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 846,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 880,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 914,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 982,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1050,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1082,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1114,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1186,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1228,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1284,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1304,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1352,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1370,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1418,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1440,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1488,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1506,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1554,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1576,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1624,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1672,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1720,
+            "vertex_count": 48,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1768,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1824,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1848,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1868,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1882,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009004905998256178
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0025028210753881425
+          ],
+          "skin_flap": [
+            0.002,
+            0.006155113280772503
+          ],
+          "SCM_L": [
+            -0.008999999999999998,
+            0.016122810893883253
+          ],
+          "SCM_R": [
+            -0.009,
+            0.00834527114039672
+          ],
+          "strap_L": [
+            -0.008999999999999998,
+            0.011982906230886669
+          ],
+          "strap_R": [
+            -0.009000000000000001,
+            0.013915664403754763
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.014207529731521264
+          ],
+          "trapezius_R": [
+            -0.009000000000000001,
+            0.011491193880701892
+          ],
+          "deep_L": [
+            -0.009000000000000001,
+            0.013902469594351279
+          ],
+          "deep_R": [
+            -0.008999999999999998,
+            0.009501991340661119
+          ],
+          "trachea": [
+            -0.009662359674021423,
+            0.020662359674022586
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007922932842085683
+          ],
+          "esophagus": [
+            -0.009699680240262047,
+            0.012699680240262374
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007920012258422541
+          ],
+          "carotid_-1": [
+            -0.009686845370093622,
+            0.02368684537009293
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.00790332511275037
+          ],
+          "jugular_-1": [
+            -0.009686845370093622,
+            0.01568684537009293
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007937003443266484
+          ],
+          "carotid_1": [
+            -0.009686845370093622,
+            0.02368684537009293
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007918230599158041
+          ],
+          "jugular_1": [
+            -0.009686845370093622,
+            0.01568684537009293
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00790394640317876
+          ],
+          "C_cartilage": [
+            0.015,
+            0.0165
+          ],
+          "vertebral_body": [
+            -0.01,
+            0.011204132588047946
+          ],
+          "spinal_canal": [
+            -0.009699680240262047,
+            0.008699680240262374
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007908171021649051
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0032559510980167744
+          ],
+          "spinous_process": [
+            -0.009,
+            0.009197371065406487
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0031990797471064957
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_rifle_2_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 17,
+        "relief_m": 0.036740127950906754,
+        "lod": 1
+      },
+      {
+        "name": "neck_rifle_2_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.0069950701436027884,
+        "lod": 2
+      },
+      {
+        "name": "neck_shotgun_0_LOD0",
+        "triangles": 3688,
+        "non_manifold_edges": 0,
+        "vertices": 1906,
+        "materials": 1,
+        "max_vertex_edge_valence": 10,
+        "relief_m": 0.04014749825000763,
+        "weapon": "shotgun",
+        "variant": 0,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 788,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 852,
+            "vertex_count": 30,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 882,
+            "vertex_count": 30,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 912,
+            "vertex_count": 70,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 982,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1050,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1084,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1118,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1190,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1232,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1288,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1308,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1356,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1374,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1422,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1444,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1492,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1510,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1558,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1580,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1628,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1676,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1724,
+            "vertex_count": 48,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1772,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1828,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1852,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1872,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1886,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009012510564644709
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0025104709229449946
+          ],
+          "skin_flap": [
+            0.0032000000000000006,
+            0.00736076948576834
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.015387946672434951
+          ],
+          "SCM_R": [
+            -0.009,
+            0.01612243119856207
+          ],
+          "strap_L": [
+            -0.009000000000000001,
+            0.005309733009385594
+          ],
+          "strap_R": [
+            -0.009,
+            0.006003902947448838
+          ],
+          "trapezius_L": [
+            -0.009000000000000001,
+            0.010364851944923746
+          ],
+          "trapezius_R": [
+            -0.008999999999999998,
+            0.01114030878621023
+          ],
+          "deep_L": [
+            -0.008999999999999998,
+            0.018286958635425083
+          ],
+          "deep_R": [
+            -0.009,
+            0.01889311332654604
+          ],
+          "trachea": [
+            -0.009697497252177353,
+            0.02369749725217705
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007918552592667893
+          ],
+          "esophagus": [
+            -0.009697497252177353,
+            0.014497497252176444
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007919996060303287
+          ],
+          "carotid_-1": [
+            -0.009697497252177353,
+            0.02714749725217705
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007946146994295711
+          ],
+          "jugular_-1": [
+            -0.009697497252177353,
+            0.01794749725217705
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007912499663636626
+          ],
+          "carotid_1": [
+            -0.009697497252177353,
+            0.02714749725217705
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007954953922954004
+          ],
+          "jugular_1": [
+            -0.009697497252177353,
+            0.01794749725217705
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007909870739150114
+          ],
+          "C_cartilage": [
+            0.017249999999999998,
+            0.018975
+          ],
+          "vertebral_body": [
+            -0.0085,
+            0.01373516118780797
+          ],
+          "spinal_canal": [
+            -0.009697497252177353,
+            0.009897497252176445
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007916734856272489
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0031207847000632193
+          ],
+          "spinous_process": [
+            -0.0076500000000000005,
+            0.011770991436446384
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0029506064526189976
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_shotgun_0_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 12,
+        "relief_m": 0.04002054035663605,
+        "lod": 1
+      },
+      {
+        "name": "neck_shotgun_0_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006987489759922028,
+        "lod": 2
+      },
+      {
+        "name": "neck_shotgun_1_LOD0",
+        "triangles": 3676,
+        "non_manifold_edges": 0,
+        "vertices": 1900,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.04001469910144806,
+        "weapon": "shotgun",
+        "variant": 1,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 784,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 850,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 882,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 914,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 980,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1048,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1080,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1112,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1184,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1226,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1282,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1302,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1350,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1368,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1416,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1438,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1486,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1504,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1552,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1574,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1622,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1670,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1718,
+            "vertex_count": 48,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1766,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1822,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1846,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1866,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1880,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009012635120540168
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0026066613175078114
+          ],
+          "skin_flap": [
+            0.0032000000000000006,
+            0.007115752018316703
+          ],
+          "SCM_L": [
+            -0.009,
+            0.01762589513925636
+          ],
+          "SCM_R": [
+            -0.009000000000000001,
+            0.012083299135662775
+          ],
+          "strap_L": [
+            -0.009,
+            0.006029849055155676
+          ],
+          "strap_R": [
+            -0.009,
+            0.005477089384157948
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.012898558030050926
+          ],
+          "trapezius_R": [
+            -0.009000000000000001,
+            0.011073310593950506
+          ],
+          "deep_L": [
+            -0.008999999999999998,
+            0.018564239434709726
+          ],
+          "deep_R": [
+            -0.008999999999999998,
+            0.01617775241100408
+          ],
+          "trachea": [
+            -0.00964058990997338,
+            0.023640589909974828
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.00791204505914675
+          ],
+          "esophagus": [
+            -0.009688256854707413,
+            0.014488256854712882
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007938813030615981
+          ],
+          "carotid_-1": [
+            -0.009564699180475048,
+            0.027014699180477168
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007936488842706951
+          ],
+          "jugular_-1": [
+            -0.009564699180475048,
+            0.017814699180477168
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007905096441848307
+          ],
+          "carotid_1": [
+            -0.009564699180475048,
+            0.027014699180477168
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007917024658684836
+          ],
+          "jugular_1": [
+            -0.009564699180475048,
+            0.017814699180477168
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00794459603054806
+          ],
+          "C_cartilage": [
+            0.017249999999999998,
+            0.018975
+          ],
+          "vertebral_body": [
+            -0.0085,
+            0.013740695355817602
+          ],
+          "spinal_canal": [
+            -0.009688256854707413,
+            0.009888256854712882
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.00793001790136712
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003185077201136872
+          ],
+          "spinous_process": [
+            -0.0076500000000000005,
+            0.01190429085469761
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0030657903454860552
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_shotgun_1_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 12,
+        "relief_m": 0.03984745033085346,
+        "lod": 1
+      },
+      {
+        "name": "neck_shotgun_1_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006985538639128208,
+        "lod": 2
+      },
+      {
+        "name": "neck_shotgun_2_LOD0",
+        "triangles": 3684,
+        "non_manifold_edges": 0,
+        "vertices": 1904,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.04013285972177982,
+        "weapon": "shotgun",
+        "variant": 2,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 784,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 848,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 880,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 912,
+            "vertex_count": 72,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 984,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1050,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1084,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1118,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1190,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1232,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1288,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1308,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1356,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1374,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1422,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1444,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1492,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1510,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1558,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1580,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1628,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1676,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1724,
+            "vertex_count": 46,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1770,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1826,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1850,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1870,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1884,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009011704219621164
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.002563326575302603
+          ],
+          "skin_flap": [
+            0.0032000000000000006,
+            0.007375212938129313
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.019554484830490604
+          ],
+          "SCM_R": [
+            -0.009,
+            0.010966835032684613
+          ],
+          "strap_L": [
+            -0.009,
+            0.005705421153006551
+          ],
+          "strap_R": [
+            -0.009,
+            0.00742061409214631
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.015768837469742426
+          ],
+          "trapezius_R": [
+            -0.008999999999999998,
+            0.012568922091769005
+          ],
+          "deep_L": [
+            -0.009,
+            0.01810900917038918
+          ],
+          "deep_R": [
+            -0.009,
+            0.013738109227524614
+          ],
+          "trachea": [
+            -0.009668352790032995,
+            0.02366835279003193
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007915534491906202
+          ],
+          "esophagus": [
+            -0.009699997550541815,
+            0.014499997550541788
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.00793307031365097
+          ],
+          "carotid_-1": [
+            -0.00968285921908854,
+            0.027132859219089325
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.00790135235249919
+          ],
+          "jugular_-1": [
+            -0.00968285921908854,
+            0.017932859219089325
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007940305744828707
+          ],
+          "carotid_1": [
+            -0.00968285921908854,
+            0.027132859219089325
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007905994139871572
+          ],
+          "jugular_1": [
+            -0.00968285921908854,
+            0.017932859219089325
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00792027938583749
+          ],
+          "C_cartilage": [
+            0.017249999999999998,
+            0.018975
+          ],
+          "vertebral_body": [
+            -0.0085,
+            0.013625247590307591
+          ],
+          "spinal_canal": [
+            -0.009699997550541815,
+            0.009899997550541788
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007907787791030409
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003270179257880268
+          ],
+          "spinous_process": [
+            -0.0076500000000000005,
+            0.011272575322077035
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0031739077787210157
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_shotgun_2_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 16,
+        "relief_m": 0.04000932537019253,
+        "lod": 1
+      },
+      {
+        "name": "neck_shotgun_2_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006974472431465983,
+        "lod": 2
+      },
+      {
+        "name": "neck_explosive_0_LOD0",
+        "triangles": 3712,
+        "non_manifold_edges": 0,
+        "vertices": 1918,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.04121413640677929,
+        "weapon": "explosive",
+        "variant": 0,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 788,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 852,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 890,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 928,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 996,
+            "vertex_count": 72,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1068,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1100,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1132,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1204,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1246,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1302,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1322,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1370,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1388,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1436,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1458,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1506,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1524,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1572,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1594,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1642,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1690,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1738,
+            "vertex_count": 46,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1784,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1840,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1864,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1884,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1898,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009037607590143366
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.002518187249392488
+          ],
+          "skin_flap": [
+            0.004,
+            0.008036808729032237
+          ],
+          "SCM_L": [
+            -0.009,
+            0.01467795192205178
+          ],
+          "SCM_R": [
+            -0.008999999999999998,
+            0.018996534298362233
+          ],
+          "strap_L": [
+            -0.009,
+            0.011906421080255842
+          ],
+          "strap_R": [
+            -0.008999999999999998,
+            0.011700399195083812
+          ],
+          "trapezius_L": [
+            -0.008999999999999998,
+            0.012125512594281754
+          ],
+          "trapezius_R": [
+            -0.009000000000000001,
+            0.013295044752181183
+          ],
+          "deep_L": [
+            -0.009000000000000001,
+            0.01906649997691772
+          ],
+          "deep_R": [
+            -0.008999999999999998,
+            0.021022828549296723
+          ],
+          "trachea": [
+            -0.009614135345722651,
+            0.02461413534572093
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007934259607482808
+          ],
+          "esophagus": [
+            -0.009699064166475709,
+            0.015099064166475152
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007927517887263856
+          ],
+          "carotid_-1": [
+            -0.009614135345722651,
+            0.02821413534572093
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007923652753223024
+          ],
+          "jugular_-1": [
+            -0.009614135345722651,
+            0.018614135345720928
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.00790571782782596
+          ],
+          "carotid_1": [
+            -0.009614135345722651,
+            0.02821413534572093
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007957145574509389
+          ],
+          "jugular_1": [
+            -0.009614135345722651,
+            0.018614135345720928
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.00790473780150721
+          ],
+          "C_cartilage": [
+            0.018,
+            0.0198
+          ],
+          "vertebral_body": [
+            -0.008,
+            0.014786051762110126
+          ],
+          "spinal_canal": [
+            -0.009699064166475709,
+            0.010299064166475152
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.00791069556949392
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0032003192535966923
+          ],
+          "spinous_process": [
+            -0.0072,
+            0.012792927432446432
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0029959137104178793
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_explosive_0_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 12,
+        "relief_m": 0.041046470403671265,
+        "lod": 1
+      },
+      {
+        "name": "neck_explosive_0_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006851934245787561,
+        "lod": 2
+      },
+      {
+        "name": "neck_explosive_1_LOD0",
+        "triangles": 3720,
+        "non_manifold_edges": 0,
+        "vertices": 1922,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.04128368943929672,
+        "weapon": "explosive",
+        "variant": 1,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 64,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 784,
+            "vertex_count": 60,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 844,
+            "vertex_count": 40,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 884,
+            "vertex_count": 40,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 924,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 992,
+            "vertex_count": 72,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1064,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1098,
+            "vertex_count": 34,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1132,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1204,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1246,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1302,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1322,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1370,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1388,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1436,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1458,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1506,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1524,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1572,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1594,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1642,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1690,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1738,
+            "vertex_count": 50,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1788,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1844,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1868,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1888,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1902,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009011238375323031
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0025573886257950575
+          ],
+          "skin_flap": [
+            0.004,
+            0.008126955550319207
+          ],
+          "SCM_L": [
+            -0.009,
+            0.017802825398099208
+          ],
+          "SCM_R": [
+            -0.009000000000000001,
+            0.01621808174727432
+          ],
+          "strap_L": [
+            -0.008999999999999998,
+            0.011733079581425023
+          ],
+          "strap_R": [
+            -0.008999999999999998,
+            0.011744809571650902
+          ],
+          "trapezius_L": [
+            -0.009,
+            0.01285403037207503
+          ],
+          "trapezius_R": [
+            -0.009000000000000001,
+            0.01209271589866982
+          ],
+          "deep_L": [
+            -0.009000000000000001,
+            0.02092400050620396
+          ],
+          "deep_R": [
+            -0.009,
+            0.019429568141098752
+          ],
+          "trachea": [
+            -0.009683688589356693,
+            0.024683688589357464
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007916734478083413
+          ],
+          "esophagus": [
+            -0.009683688589353612,
+            0.015083688589355923
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.00792317010856269
+          ],
+          "carotid_-1": [
+            -0.009683688589356693,
+            0.028283688589357463
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007961008560254224
+          ],
+          "jugular_-1": [
+            -0.009683688589356693,
+            0.018683688589357463
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007906275905445277
+          ],
+          "carotid_1": [
+            -0.009683688589356693,
+            0.028283688589357463
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.007943609458472741
+          ],
+          "jugular_1": [
+            -0.009683688589356693,
+            0.018683688589357463
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007919494455479107
+          ],
+          "C_cartilage": [
+            0.018,
+            0.0198
+          ],
+          "vertebral_body": [
+            -0.008,
+            0.014957538608935061
+          ],
+          "spinal_canal": [
+            -0.009683688589353612,
+            0.010283688589355923
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007928759837603784
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.0031214237623073456
+          ],
+          "spinous_process": [
+            -0.0072,
+            0.012768793974511267
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0029845018812470763
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_explosive_1_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 14,
+        "relief_m": 0.04131886921823025,
+        "lod": 1
+      },
+      {
+        "name": "neck_explosive_1_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.006980802281759679,
+        "lod": 2
+      },
+      {
+        "name": "neck_explosive_2_LOD0",
+        "triangles": 3708,
+        "non_manifold_edges": 0,
+        "vertices": 1916,
+        "materials": 1,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.041162434965372086,
+        "weapon": "explosive",
+        "variant": 2,
+        "parts": [
+          {
+            "name": "recessed_connective_bed",
+            "first_vertex": 0,
+            "vertex_count": 290,
+            "tissue": 7
+          },
+          {
+            "name": "retracted_skin",
+            "first_vertex": 290,
+            "vertex_count": 292,
+            "tissue": 0
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 582,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 600,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 618,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 636,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "fat_lobule",
+            "first_vertex": 654,
+            "vertex_count": 18,
+            "tissue": 1
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 672,
+            "vertex_count": 16,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 688,
+            "vertex_count": 18,
+            "tissue": 0
+          },
+          {
+            "name": "skin_flap",
+            "first_vertex": 706,
+            "vertex_count": 14,
+            "tissue": 0
+          },
+          {
+            "name": "SCM_L",
+            "first_vertex": 720,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "SCM_R",
+            "first_vertex": 786,
+            "vertex_count": 68,
+            "tissue": 2
+          },
+          {
+            "name": "strap_L",
+            "first_vertex": 854,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "strap_R",
+            "first_vertex": 892,
+            "vertex_count": 38,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_L",
+            "first_vertex": 930,
+            "vertex_count": 70,
+            "tissue": 2
+          },
+          {
+            "name": "trapezius_R",
+            "first_vertex": 1000,
+            "vertex_count": 66,
+            "tissue": 2
+          },
+          {
+            "name": "deep_L",
+            "first_vertex": 1066,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "deep_R",
+            "first_vertex": 1098,
+            "vertex_count": 32,
+            "tissue": 2
+          },
+          {
+            "name": "trachea",
+            "first_vertex": 1130,
+            "vertex_count": 72,
+            "tissue": 3
+          },
+          {
+            "name": "trachea_lumen",
+            "first_vertex": 1202,
+            "vertex_count": 42,
+            "tissue": 6
+          },
+          {
+            "name": "esophagus",
+            "first_vertex": 1244,
+            "vertex_count": 56,
+            "tissue": 2
+          },
+          {
+            "name": "esophagus_lumen",
+            "first_vertex": 1300,
+            "vertex_count": 20,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_-1",
+            "first_vertex": 1320,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_-1_lumen",
+            "first_vertex": 1368,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_-1",
+            "first_vertex": 1386,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_-1_lumen",
+            "first_vertex": 1434,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "carotid_1",
+            "first_vertex": 1456,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "carotid_1_lumen",
+            "first_vertex": 1504,
+            "vertex_count": 18,
+            "tissue": 6
+          },
+          {
+            "name": "jugular_1",
+            "first_vertex": 1522,
+            "vertex_count": 48,
+            "tissue": 2
+          },
+          {
+            "name": "jugular_1_lumen",
+            "first_vertex": 1570,
+            "vertex_count": 22,
+            "tissue": 6
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1592,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1640,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "C_cartilage",
+            "first_vertex": 1688,
+            "vertex_count": 48,
+            "tissue": 5
+          },
+          {
+            "name": "vertebral_body",
+            "first_vertex": 1736,
+            "vertex_count": 46,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal",
+            "first_vertex": 1782,
+            "vertex_count": 56,
+            "tissue": 4
+          },
+          {
+            "name": "spinal_canal_lumen",
+            "first_vertex": 1838,
+            "vertex_count": 24,
+            "tissue": 6
+          },
+          {
+            "name": "spinal_cord",
+            "first_vertex": 1862,
+            "vertex_count": 20,
+            "tissue": 3
+          },
+          {
+            "name": "spinous_process",
+            "first_vertex": 1882,
+            "vertex_count": 14,
+            "tissue": 4
+          },
+          {
+            "name": "nuchal_ligament",
+            "first_vertex": 1896,
+            "vertex_count": 20,
+            "tissue": 3
+          }
+        ],
+        "boundary_match_max_error_m": 0.0,
+        "tube_wall_min_m": 0.00065,
+        "tube_wall_max_m": 0.002,
+        "height_bands_m": {
+          "recessed_connective_bed": [
+            -0.013000000000000001,
+            -0.009001127296836614
+          ],
+          "retracted_skin": [
+            -0.008,
+            0.00117519311606884
+          ],
+          "fat_lobule": [
+            -0.007,
+            -0.0026221497588374185
+          ],
+          "skin_flap": [
+            0.004,
+            0.007994920827121093
+          ],
+          "SCM_L": [
+            -0.009000000000000001,
+            0.02102000951326236
+          ],
+          "SCM_R": [
+            -0.009000000000000001,
+            0.013251995818365107
+          ],
+          "strap_L": [
+            -0.009,
+            0.012882381810344505
+          ],
+          "strap_R": [
+            -0.009000000000000001,
+            0.014961555081997965
+          ],
+          "trapezius_L": [
+            -0.008999999999999998,
+            0.015626678579524447
+          ],
+          "trapezius_R": [
+            -0.008999999999999998,
+            0.012850311181182301
+          ],
+          "deep_L": [
+            -0.008999999999999998,
+            0.017550816861721323
+          ],
+          "deep_R": [
+            -0.009,
+            0.01588915800973534
+          ],
+          "trachea": [
+            -0.00969544981007473,
+            0.02469544981007514
+          ],
+          "trachea_lumen": [
+            -0.009000000000000001,
+            -0.007907761872764646
+          ],
+          "esophagus": [
+            -0.009699558514629983,
+            0.015099558514630367
+          ],
+          "esophagus_lumen": [
+            -0.009000000000000001,
+            -0.007956850160575712
+          ],
+          "carotid_-1": [
+            -0.00956243513414437,
+            0.028162435134146506
+          ],
+          "carotid_-1_lumen": [
+            -0.009000000000000001,
+            -0.007916396448440447
+          ],
+          "jugular_-1": [
+            -0.00956243513414437,
+            0.018562435134146505
+          ],
+          "jugular_-1_lumen": [
+            -0.009000000000000001,
+            -0.007914566323714038
+          ],
+          "carotid_1": [
+            -0.00956243513414437,
+            0.028162435134146506
+          ],
+          "carotid_1_lumen": [
+            -0.009000000000000001,
+            -0.00790649596946215
+          ],
+          "jugular_1": [
+            -0.00956243513414437,
+            0.018562435134146505
+          ],
+          "jugular_1_lumen": [
+            -0.009000000000000001,
+            -0.007950390045966621
+          ],
+          "C_cartilage": [
+            0.018,
+            0.0198
+          ],
+          "vertebral_body": [
+            -0.008,
+            0.014590410865079763
+          ],
+          "spinal_canal": [
+            -0.009699558514629983,
+            0.010299558514630366
+          ],
+          "spinal_canal_lumen": [
+            -0.009000000000000001,
+            -0.007922139335830566
+          ],
+          "spinal_cord": [
+            -0.005999999999999999,
+            0.003236344893754561
+          ],
+          "spinous_process": [
+            -0.0072,
+            0.012515054682609583
+          ],
+          "nuchal_ligament": [
+            -0.007,
+            0.0031187663477024144
+          ]
+        },
+        "thickness_method": "Analytic tube radial wall dimensions; skin lip 1.2\u20132.4 mm radial inset. Full-volume surface clearance not certified."
+      },
+      {
+        "name": "neck_explosive_2_LOD1",
+        "triangles": 800,
+        "non_manifold_edges": 0,
+        "vertices": 462,
+        "materials": 1,
+        "max_vertex_edge_valence": 15,
+        "relief_m": 0.04094289802014828,
+        "lod": 1
+      },
+      {
+        "name": "neck_explosive_2_LOD2",
+        "triangles": 288,
+        "non_manifold_edges": 0,
+        "vertices": 146,
+        "materials": 1,
+        "max_vertex_edge_valence": 13,
+        "relief_m": 0.0069758587051182985,
+        "lod": 2
+      }
+    ],
+    "boundary_count": 73,
+    "cap_unique_lod0": 12,
+    "atlas_dimension": 2048,
+    "scope": "Head/neck only",
+    "unverified": [
+      "Full posed skin-under-cloth continuity",
+      "General 3D inter-tissue intersection",
+      "Hardware GPU frame-time",
+      "Detailed skull cortex/marrow fragment layers and live corpse integration"
+    ],
+    "head_exterior": {
+      "name": "Supplied_head",
+      "triangles": 23187,
+      "non_manifold_edges": 73,
+      "vertices": 11645,
+      "materials": 2,
+      "max_vertex_edge_valence": 27,
+      "relief_m": 0.2801462262868881
+    },
+    "stump_exterior": {
+      "name": "Supplied_stump",
+      "triangles": 885,
+      "non_manifold_edges": 73,
+      "vertices": 480,
+      "materials": 2,
+      "max_vertex_edge_valence": 19,
+      "relief_m": 0.052687881514430046
+    },
+    "head_pop_fragments": [
+      {
+        "name": "head_pop_jaw",
+        "triangles": 2014,
+        "non_manifold_edges": 0,
+        "vertices": 1009,
+        "materials": 3,
+        "max_vertex_edge_valence": 9,
+        "relief_m": 0.09011917561292648
+      },
+      {
+        "name": "head_pop_cranial_left",
+        "triangles": 12864,
+        "non_manifold_edges": 0,
+        "vertices": 6444,
+        "materials": 3,
+        "max_vertex_edge_valence": 27,
+        "relief_m": 0.19775718450546265
+      },
+      {
+        "name": "head_pop_cranial_front",
+        "triangles": 10458,
+        "non_manifold_edges": 0,
+        "vertices": 5239,
+        "materials": 3,
+        "max_vertex_edge_valence": 27,
+        "relief_m": 0.1975187435746193
+      },
+      {
+        "name": "head_pop_cranial_back",
+        "triangles": 2260,
+        "non_manifold_edges": 0,
+        "vertices": 1134,
+        "materials": 3,
+        "max_vertex_edge_valence": 14,
+        "relief_m": 0.19728828966617584
+      }
+    ],
+    "atlas_uncompressed_rgba8_mip_bytes": 89478485,
+    "source_exteriors_closed": false,
+    "mesh_file_bytes": 5100276,
+    "checks": {
+      "caps_closed": true,
+      "lod0_budget": true,
+      "boundary_match": true,
+      "minimum_relief": true,
+      "no_high_valence_fan": true
+    },
+    "limitations": [
+      "Exterior and cap shells are separately closed at matching border positions, not a single welded surface",
+      "LOD2 uses one shared baked tile per weapon family; variant-specific small tears intentionally collapse at distance",
+      "Source original face repair may still contain a center fan away from cut; replacement caps do not use center fans",
+      "LOD1/2 require visual lumen and skin-border preservation review",
+      "New caps use rigid region transforms; full posed skin/cloth continuity is not certified"
+    ]
+  },
+  "export_validation.json": {
+    "files": [
+      {
+        "variant": "melee_0",
+        "lod": 0,
+        "triangles": 3688,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 300072
+      },
+      {
+        "variant": "melee_0",
+        "lod": 1,
+        "triangles": 796,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 100268
+      },
+      {
+        "variant": "melee_0",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27596
+      },
+      {
+        "variant": "melee_1",
+        "lod": 0,
+        "triangles": 3700,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 300928
+      },
+      {
+        "variant": "melee_1",
+        "lod": 1,
+        "triangles": 797,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 98372
+      },
+      {
+        "variant": "melee_1",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "melee_2",
+        "lod": 0,
+        "triangles": 3692,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 299984
+      },
+      {
+        "variant": "melee_2",
+        "lod": 1,
+        "triangles": 797,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 98652
+      },
+      {
+        "variant": "melee_2",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "rifle_0",
+        "lod": 0,
+        "triangles": 3704,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 301792
+      },
+      {
+        "variant": "rifle_0",
+        "lod": 1,
+        "triangles": 794,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 94096
+      },
+      {
+        "variant": "rifle_0",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "rifle_1",
+        "lod": 0,
+        "triangles": 3704,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 301176
+      },
+      {
+        "variant": "rifle_1",
+        "lod": 1,
+        "triangles": 794,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 95328
+      },
+      {
+        "variant": "rifle_1",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "rifle_2",
+        "lod": 0,
+        "triangles": 3680,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 299464
+      },
+      {
+        "variant": "rifle_2",
+        "lod": 1,
+        "triangles": 795,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 96176
+      },
+      {
+        "variant": "rifle_2",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "shotgun_0",
+        "lod": 0,
+        "triangles": 3688,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 301644
+      },
+      {
+        "variant": "shotgun_0",
+        "lod": 1,
+        "triangles": 792,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 93640
+      },
+      {
+        "variant": "shotgun_0",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "shotgun_1",
+        "lod": 0,
+        "triangles": 3676,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 300844
+      },
+      {
+        "variant": "shotgun_1",
+        "lod": 1,
+        "triangles": 794,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 94884
+      },
+      {
+        "variant": "shotgun_1",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "shotgun_2",
+        "lod": 0,
+        "triangles": 3684,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 301564
+      },
+      {
+        "variant": "shotgun_2",
+        "lod": 1,
+        "triangles": 792,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 94816
+      },
+      {
+        "variant": "shotgun_2",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27600
+      },
+      {
+        "variant": "explosive_0",
+        "lod": 0,
+        "triangles": 3712,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 303360
+      },
+      {
+        "variant": "explosive_0",
+        "lod": 1,
+        "triangles": 793,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 94380
+      },
+      {
+        "variant": "explosive_0",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27716
+      },
+      {
+        "variant": "explosive_1",
+        "lod": 0,
+        "triangles": 3720,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 306428
+      },
+      {
+        "variant": "explosive_1",
+        "lod": 1,
+        "triangles": 793,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 93708
+      },
+      {
+        "variant": "explosive_1",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27604
+      },
+      {
+        "variant": "explosive_2",
+        "lod": 0,
+        "triangles": 3708,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 3.0351401758446804e-07,
+        "file_bytes": 303448
+      },
+      {
+        "variant": "explosive_2",
+        "lod": 1,
+        "triangles": 793,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 93932
+      },
+      {
+        "variant": "explosive_2",
+        "lod": 2,
+        "triangles": 288,
+        "surfaces": 1,
+        "uv_zero_area_triangles": 0,
+        "uv_out_of_range_vertices": 0,
+        "matching_underside_max_error_m": 0.0,
+        "file_bytes": 27604
+      }
+    ],
+    "checks": {
+      "one_surface": true,
+      "lod0_budget": true,
+      "lod1_budget": true,
+      "lod2_single_cap_budget": true,
+      "uv_range": true,
+      "uv_area": true,
+      "matching_underside": true
+    }
+  },
+  "runtime_validation.json": {
+    "checks_passed": 26,
+    "engine": "4.6.3-stable (official)",
+    "gameplay_integration": false,
+    "physics": "Jolt Physics"
+  },
+  "test_counts": {
+    "zones": 56,
+    "budgets": 9,
+    "runtime": 26,
+    "character_pipeline": 105
+  },
+  "visual_approved": false,
+  "frame_time_valid": false,
+  "visual_findings": [
+    "Cap topology and UV checks pass; separate-shell junction remains visible in close side view",
+    "Head breakup retains patchy triangular material transitions after two automatic material/geometry revisions",
+    "Full posed seams, fine anatomical fragmentation and hardware frame cost remain unverified"
+  ],
+  "capture_count": 108,
+  "package_verification": {
+    "bytes": 76728137,
+    "hashes_verified": 219,
+    "runtime_assertions": 26,
+    "native_variant_lod_loads": 36,
+    "gore_visibility_modes": 3,
+    "ui_controls": 9
+  }
+}

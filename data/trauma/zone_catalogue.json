@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "gameplay_consequences": false,
+  "zones": [
+    {
+      "id": "head",
+      "bone": "Head",
+      "tier": "A",
+      "parent": "neck",
+      "implemented": true,
+      "can_sever": true,
+      "children": []
+    },
+    {
+      "id": "neck",
+      "bone": "Neck",
+      "tier": "A",
+      "parent": "chest",
+      "implemented": true,
+      "can_sever": true,
+      "children": [
+        "head"
+      ]
+    },
+    {
+      "id": "chest",
+      "bone": "Chest",
+      "tier": "C",
+      "parent": "",
+      "implemented": false,
+      "can_sever": false,
+      "children": [
+        "neck",
+        "abdomen",
+        "left_shoulder",
+        "right_shoulder"
+      ]
+    },
+    {
+      "id": "abdomen",
+      "bone": "Spine",
+      "tier": "C",
+      "parent": "chest",
+      "implemented": false,
+      "can_sever": false,
+      "children": [
+        "waist"
+      ]
+    },
+    {
+      "id": "waist",
+      "bone": "Spine",
+      "tier": "A",
+      "parent": "abdomen",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "pelvis"
+      ]
+    },
+    {
+      "id": "pelvis",
+      "bone": "Hips",
+      "tier": "C",
+      "parent": "waist",
+      "implemented": false,
+      "can_sever": false,
+      "children": [
+        "left_hip",
+        "right_hip"
+      ]
+    },
+    {
+      "id": "left_shoulder",
+      "bone": "LeftShoulder",
+      "tier": "B",
+      "parent": "chest",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_upper_arm"
+      ]
+    },
+    {
+      "id": "left_upper_arm",
+      "bone": "LeftUpperArm",
+      "tier": "A",
+      "parent": "left_shoulder",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_forearm"
+      ]
+    },
+    {
+      "id": "left_forearm",
+      "bone": "LeftLowerArm",
+      "tier": "A",
+      "parent": "left_upper_arm",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_hand"
+      ]
+    },
+    {
+      "id": "left_hand",
+      "bone": "LeftHand",
+      "tier": "B",
+      "parent": "left_forearm",
+      "implemented": false,
+      "can_sever": true,
+      "children": []
+    },
+    {
+      "id": "left_hip",
+      "bone": "LeftUpperLeg",
+      "tier": "B",
+      "parent": "pelvis",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_thigh"
+      ]
+    },
+    {
+      "id": "left_thigh",
+      "bone": "LeftUpperLeg",
+      "tier": "A",
+      "parent": "left_hip",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_shin"
+      ]
+    },
+    {
+      "id": "left_shin",
+      "bone": "LeftLowerLeg",
+      "tier": "A",
+      "parent": "left_thigh",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "left_foot"
+      ]
+    },
+    {
+      "id": "left_foot",
+      "bone": "LeftFoot",
+      "tier": "B",
+      "parent": "left_shin",
+      "implemented": false,
+      "can_sever": true,
+      "children": []
+    },
+    {
+      "id": "right_shoulder",
+      "bone": "RightShoulder",
+      "tier": "B",
+      "parent": "chest",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_upper_arm"
+      ]
+    },
+    {
+      "id": "right_upper_arm",
+      "bone": "RightUpperArm",
+      "tier": "A",
+      "parent": "right_shoulder",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_forearm"
+      ]
+    },
+    {
+      "id": "right_forearm",
+      "bone": "RightLowerArm",
+      "tier": "A",
+      "parent": "right_upper_arm",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_hand"
+      ]
+    },
+    {
+      "id": "right_hand",
+      "bone": "RightHand",
+      "tier": "B",
+      "parent": "right_forearm",
+      "implemented": false,
+      "can_sever": true,
+      "children": []
+    },
+    {
+      "id": "right_hip",
+      "bone": "RightUpperLeg",
+      "tier": "B",
+      "parent": "pelvis",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_thigh"
+      ]
+    },
+    {
+      "id": "right_thigh",
+      "bone": "RightUpperLeg",
+      "tier": "A",
+      "parent": "right_hip",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_shin"
+      ]
+    },
+    {
+      "id": "right_shin",
+      "bone": "RightLowerLeg",
+      "tier": "A",
+      "parent": "right_thigh",
+      "implemented": false,
+      "can_sever": true,
+      "children": [
+        "right_foot"
+      ]
+    },
+    {
+      "id": "right_foot",
+      "bone": "RightFoot",
+      "tier": "B",
+      "parent": "right_shin",
+      "implemented": false,
+      "can_sever": true,
+      "children": []
+    }
+  ]
+}

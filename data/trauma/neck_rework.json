@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "engine": "4.6.3",
+  "seed": 410731,
+  "region": "neck",
+  "source_variant": 0,
+  "weapons": {
+    "melee": {
+      "relief": 0.65,
+      "tear": 0.3
+    },
+    "rifle": {
+      "relief": 1.0,
+      "tear": 1.0
+    },
+    "shotgun": {
+      "relief": 1.15,
+      "tear": 1.6
+    },
+    "explosive": {
+      "relief": 1.2,
+      "tear": 2.0
+    }
+  },
+  "variants_per_weapon": 3,
+  "shotgun_close_distance_m": 6.0,
+  "tilt_limit_degrees": 30.0,
+  "skin_retraction_m": [
+    0.003,
+    0.01
+  ],
+  "muscle_proud_m": [
+    0.005,
+    0.025
+  ],
+  "tube_length_m": [
+    0.008,
+    0.03
+  ],
+  "skin_wall_m": 0.0018,
+  "fat_wall_m": 0.0025,
+  "tube_wall_m": 0.0012,
+  "lod_triangles": [
+    4000,
+    800,
+    320
+  ],
+  "atlas_size": 2048,
+  "budgets": {
+    "corpses": 18,
+    "gibs": 16,
+    "decals": 96,
+    "fragments_per_corpse": 4,
+    "blood_drops": 48,
+    "stains": 64,
+    "wound_regions": 4
+  },
+  "arterial_duration_s": [
+    3.0,
+    6.0
+  ],
+  "arterial_frequency_hz": 1.4,
+  "head_mass_kg": 4.5,
+  "max_launch_impulse_ns": 9.0,
+  "max_angular_speed": 8.0,
+  "gameplay_consequences": false,
+  "capture_distances_m": [
+    0.5,
+    2.0,
+    8.0
+  ],
+  "capture_fov_degrees": 50.0,
+  "notes": "Game-plausible authored cross-section proportions; not medical simulation. Cap remains a review-only cosmetic assembly.",
+  "head_collider": {
+    "radius_m": 0.085,
+    "height_m": 0.25,
+    "center_y_m": 0.115
+  },
+  "effects": {
+    "artery_particles_full": 16,
+    "artery_particles_reduced": 4,
+    "ooze_particles_full": 4,
+    "ooze_particles_reduced": 2,
+    "lifetime_s": 0.45,
+    "arterial_velocity_mps": [
+      1.1,
+      2.4
+    ],
+    "ooze_velocity_mps": [
+      0.04,
+      0.2
+    ],
+    "gravity_mps2": 9.8,
+    "pool_growth_s": 4.0,
+    "pool_width_m": 0.32,
+    "pool_dry_s": 30.0
+  }
+}

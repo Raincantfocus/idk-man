@@ -322,6 +322,21 @@
       "generator": "tools/characters/build_body.py",
       "sha256": "4a02beb26e96129abf601c29dcaed5f8a17f4a7a735185d3556f12235db7fbb1",
       "modifications": "Authored target fitting; 1.80 m normalization; 72-bone subset; merged/normalized top-four weights; candidate LOD reduction; original UVs retained. No production textures or animation."
+    },
+    {
+      "path": "downloads/zero-line-neck-rework-review.zip",
+      "asset": "Soup head/neck cap rework and source-derived head breakup",
+      "source": "User-supplied purchased Soup model; original generated tissue geometry and atlas",
+      "license": "Source soldier purchase reported by user; original source terms still apply",
+      "distribution_authorization": "User explicitly authorized public GitHub archive delivery in this conversation",
+      "operations": [
+        "Constrained Delaunay tissue islands",
+        "Hollow airway and vessel meshes",
+        "LOD reduction and geometric atlas bake",
+        "Boundary-preserving underside shader",
+        "Source-derived rigid head fragments"
+      ],
+      "production_ready": false
     }
   ],
   "production_ready": false,

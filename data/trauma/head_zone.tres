@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/trauma/trauma_zone.gd" id="1_47lq6"]
+
+[resource]
+script = ExtResource("1_47lq6")
+id = &"head"
+bone = &"Head"
+thresholds = PackedFloat32Array(10, 30, 60, 100)
+allowed_weapon_classes = PackedStringArray("melee", "rifle", "shotgun", "explosive")
+cap_variants = {
+"explosive": ["explosive_0", "explosive_1", "explosive_2"],
+"melee": ["melee_0", "melee_1", "melee_2"],
+"rifle": ["rifle_0", "rifle_1", "rifle_2"],
+"shotgun": ["shotgun_0", "shotgun_1", "shotgun_2"]
+}
+parent_zone = &"neck"
+child_zones = PackedStringArray()

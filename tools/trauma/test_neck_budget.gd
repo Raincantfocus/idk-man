@@ -1,0 +1,21 @@
+extends SceneTree
+const Budget=preload("res://scripts/trauma/cosmetic_budget.gd")
+const Effect=preload("res://scripts/trauma/neck_wound_effect.gd")
+const Pool=preload("res://scripts/trauma/head_review_pool.gd")
+const Decals=preload("res://scripts/trauma/corpse_blood_pool.gd")
+func _initialize() -> void:
+ var b:=Budget.new();b.configure(JSON.parse_string(FileAccess.get_file_as_string("res://data/trauma/neck_rework.json")))
+ var resets: Array[int]=[]
+ for i: int in 20:b.reserve(&"gibs",i,1,func() -> void:resets.append(1))
+ assert(b.total(&"gibs")==16 and resets.size()==4)
+ for i: int in 6:b.reserve(&"gibs",200,1,Callable())
+ assert(b.owner_cost(&"gibs",200)==4)
+ for i: int in 110:b.reserve(&"decals",i,1,Callable())
+ assert(b.total(&"decals")==96)
+ for i: int in 20:b.reserve(&"corpses",i,1,Callable())
+ assert(b.total(&"corpses")==18)
+ b.reserve(&"blood_drops",1,44,Callable());b.reserve(&"blood_drops",2,44,Callable())
+ assert(b.total(&"blood_drops")==44)
+ b.release_owner(200);assert(b.owner_cost(&"gibs",200)==0)
+ b.set_gore_mode(0);assert(b.entries.is_empty());assert(b.reserve(&"gibs",1,1,Callable())==-1)
+ print("NECK_BUDGET_TESTS 9 passed");quit()
