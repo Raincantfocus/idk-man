@@ -90,7 +90,7 @@ These are acceptance requirements for the next asset intake, not claims about th
 - [ ] Matched wound seams and accepted low-LOD topology.
 - [ ] Every complete-soldier budget and moving-distance visual test.
 
-Phase 1 is **not production-accepted**. The pipeline work is reviewable; unavailable authored assets remain a real dependency. Phase 2 has not started.
+Phase 1 is **not production-accepted**. The pipeline work is reviewable; unavailable authored assets remain a real dependency. Animation integration has since started in an isolated review; see [ANIMATION_INTEGRATION_REVIEW.md](ANIMATION_INTEGRATION_REVIEW.md). Phase 1 acceptance remains open.
 
 ## Five likely failure points and tests
 

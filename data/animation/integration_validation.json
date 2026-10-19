@@ -1,0 +1,454 @@
+{
+  "retarget": {
+    "clips": [
+      {
+        "id": "run_stop",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.30389840346908,
+        "root_translation_removed": true,
+        "sample_count": 171,
+        "seconds": 2.83333325386047,
+        "target_bones": 72
+      },
+      {
+        "id": "run_loop",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.223152980338152,
+        "root_translation_removed": true,
+        "sample_count": 39,
+        "seconds": 0.633333325386047,
+        "target_bones": 72
+      },
+      {
+        "id": "run_start",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.255674017947251,
+        "root_translation_removed": true,
+        "sample_count": 148,
+        "seconds": 2.43333339691162,
+        "target_bones": 72
+      },
+      {
+        "id": "fire",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.252021987393975,
+        "root_translation_removed": true,
+        "sample_count": 238,
+        "seconds": 3.93333339691162,
+        "target_bones": 72
+      },
+      {
+        "id": "reload_cover",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.605735474956671,
+        "root_translation_removed": true,
+        "sample_count": 294,
+        "seconds": 4.88333320617676,
+        "target_bones": 72
+      },
+      {
+        "id": "turn_left",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.399743529787928,
+        "root_translation_removed": true,
+        "sample_count": 181,
+        "seconds": 3.0,
+        "target_bones": 72
+      },
+      {
+        "id": "side_shoot",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.576950315395097,
+        "root_translation_removed": true,
+        "sample_count": 624,
+        "seconds": 10.3833332061768,
+        "target_bones": 72
+      },
+      {
+        "id": "turn_right",
+        "mapped_bones": 55,
+        "max_vertical_displacement_m": 0.107644615026632,
+        "root_translation_removed": true,
+        "sample_count": 171,
+        "seconds": 2.83333325386047,
+        "target_bones": 72
+      }
+    ],
+    "engine": "4.6.3-stable (official)",
+    "idle_is_static_extracted_hold": true
+  },
+  "tests": {
+    "engine": "4.6.3-stable (official)",
+    "failed": 0,
+    "passed": 1429
+  },
+  "captures": {
+    "captures": [
+      {
+        "draw_calls_scene": 35,
+        "file": "hold_10.png",
+        "primitives_scene": 73121
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "hold_50.png",
+        "primitives_scene": 73121
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "hold_85.png",
+        "primitives_scene": 73121
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_start_10.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_start_50.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_start_85.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_loop_10.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_loop_50.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_loop_85.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_stop_10.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_stop_50.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_stop_85.png",
+        "primitives_scene": 73129
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "fire_10.png",
+        "primitives_scene": 73119
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "fire_50.png",
+        "primitives_scene": 73119
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "fire_85.png",
+        "primitives_scene": 73119
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "reload_cover_10.png",
+        "primitives_scene": 73137
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "reload_cover_50.png",
+        "primitives_scene": 73137
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "reload_cover_85.png",
+        "primitives_scene": 73137
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_left_10.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_left_50.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_left_85.png",
+        "primitives_scene": 73131
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_right_10.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_right_50.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "turn_right_85.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "side_shoot_10.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "side_shoot_50.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "side_shoot_85.png",
+        "primitives_scene": 73133
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_fire_layer.png",
+        "primitives_scene": 73013
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_000.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_001.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_002.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_003.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_004.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_005.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_006.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_007.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_008.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_009.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_010.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_011.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_012.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_013.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_014.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_015.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_016.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_017.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_018.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_019.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_020.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_021.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_022.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_023.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_024.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_025.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_026.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_027.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_028.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_029.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_030.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_031.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_032.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_033.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_034.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_035.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_036.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_037.png",
+        "primitives_scene": 73009
+      },
+      {
+        "draw_calls_scene": 35,
+        "file": "run_frame_038.png",
+        "primitives_scene": 73009
+      }
+    ],
+    "engine": "4.6.3-stable (official)",
+    "geometry": [
+      {
+        "name": "Body_LOD0",
+        "surfaces": 1,
+        "triangles": 26756
+      },
+      {
+        "name": "fatigues",
+        "surfaces": 1,
+        "triangles": 22999
+      },
+      {
+        "name": "complete_kit",
+        "surfaces": 1,
+        "triangles": 21918
+      }
+    ],
+    "hardware_frame_time_valid": false,
+    "renderer": "gl_compatibility"
+  },
+  "production_accepted": false,
+  "live_enemy_enabled": false,
+  "package": {
+    "bytes": 51271024,
+    "sha256_files_passed": 127,
+    "fresh_import_passed": true,
+    "fresh_test_assertions": 1429,
+    "native_smoke_passed": true,
+    "visual_acceptance": false
+  }
+}

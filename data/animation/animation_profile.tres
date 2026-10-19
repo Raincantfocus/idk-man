@@ -1,0 +1,8 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/animation/animation_profile.gd" id="1_uwbtv"]
+
+[resource]
+script = ExtResource("1_uwbtv")
+missing_clips = PackedStringArray("idle_loop", "patrol", "strafe_8_way", "cover_enter", "cover_exit", "shield_bash", "elite_dash", "flinch_4_way", "stagger", "directional_deaths_4")
+upper_body_roots = PackedStringArray("Spine")

@@ -344,6 +344,14 @@
       "license": "CC0 base body; original project-authored tissue geometry and textures; see bundled license documentation",
       "modifications": "Rest-pose cut contours from authored body, nine game-plausible anatomy layouts, 45 cap variants and measured LOD reductions. No purchased gear geometry added.",
       "production_approved": false
+    },
+    {
+      "path": "downloads/zero-line-animation-review.zip",
+      "source": "User-supplied ActorCore packs 453647, 454899, 455890, 461004, 462034, 462347; existing CC0-derived body and supplied fitted fatigues/carrier",
+      "license": "ActorCore and supplied garment assets: user reports purchased; original license terms apply. CC0-derived body attribution retained.",
+      "modifications": "FBX to glTF conversion, BoneMap/SkeletonProfileHumanoid retarget, sampled 72-bone rotation library, root translation removal, shared skeleton clothing review",
+      "source_hash_manifest": "motions/source_manifest.json inside archive",
+      "production_approved": false
     }
   ],
   "production_ready": false,
