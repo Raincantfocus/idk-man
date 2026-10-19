@@ -106,4 +106,3 @@ def stats(obj):
 def export(obj,path):
  bpy.ops.object.select_all(action='DESELECT');obj.hide_set(False);obj.select_set(True);bpy.context.view_layer.objects.active=obj
  bpy.ops.export_scene.gltf(filepath=str(path),export_format='GLB',use_selection=True,export_animations=False,export_yup=True,export_all_vertex_colors=True,export_tangents=True,export_materials='NONE')
-
