@@ -1,0 +1,110 @@
+[
+  {
+    "direction": "back",
+    "flying": false,
+    "id": "death_from_back_headshot",
+    "root_motion_distance": 1.24179643284879,
+    "samples": 40,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "death_from_front_headshot",
+    "root_motion_distance": 1.04583279825772,
+    "samples": 31,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "right",
+    "flying": false,
+    "id": "death_from_right",
+    "root_motion_distance": 1.04555874983998,
+    "samples": 35,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "death_from_the_front",
+    "root_motion_distance": 1.47269215623237,
+    "samples": 37,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "death",
+    "root_motion_distance": 1.21035445955749,
+    "samples": 33,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": true,
+    "id": "flying_back_death",
+    "root_motion_distance": 1.94899334288215,
+    "samples": 33,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "pro_rifle_pack_death_crouching_headshot_front",
+    "root_motion_distance": 1.38463636458774,
+    "samples": 21,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "back",
+    "flying": false,
+    "id": "pro_rifle_pack_death_from_back_headshot",
+    "root_motion_distance": 1.23292493007102,
+    "samples": 40,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "pro_rifle_pack_death_from_front_headshot",
+    "root_motion_distance": 1.04357873901636,
+    "samples": 31,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "right",
+    "flying": false,
+    "id": "pro_rifle_pack_death_from_right",
+    "root_motion_distance": 1.04351536154076,
+    "samples": 35,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "back",
+    "flying": false,
+    "id": "pro_rifle_pack_death_from_the_back",
+    "root_motion_distance": 1.45391923614079,
+    "samples": 32,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "id": "pro_rifle_pack_death_from_the_front",
+    "root_motion_distance": 1.45195735888132,
+    "samples": 37,
+    "usable_data": true,
+    "visual_approval": false
+  }
+]

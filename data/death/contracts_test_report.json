@@ -1,0 +1,13 @@
+{
+  "authoritative_event_count": 1,
+  "focus_elapsed_six_ticks": 0.0333333333333333,
+  "freeze_pose_delta_m": 0.000000342402614705861,
+  "full_budget": 6,
+  "handoff_count": 1,
+  "lite_bodies": 7,
+  "lite_collision_shapes": 15,
+  "note": "No gameplay reward callbacks exist in this presentation fixture; live game integration is not claimed",
+  "passed": true,
+  "pause_preserved": true,
+  "self_collision_root_error_m": 0.000000804662704467773
+}

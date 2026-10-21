@@ -1,0 +1,33 @@
+{
+ "world_mask": 1, "prop_mask": 4, "corpse_layer": 16, "collision_mask": 21,
+ "max_full_ragdolls": 6, "max_corpses": 18, "max_lite_bodies": 8,
+ "handoff_fraction": 0.65, "flying_handoff_fraction": 0.35,
+ "blend_seconds": 0.18, "blocked_root_fraction": 0.6, "blocked_root_ticks": 3,
+ "support_distance_m": 0.3, "disturbance_impulse_threshold": 8.0,
+ "max_hit_impulse": 80.0, "max_linear_speed": 5.0, "max_angular_speed": 8.0,
+ "linear_damping": 1.5, "angular_damping": 2.5, "settle_seconds": 5.0,
+ "query_margin_m": 0.002, "max_depenetration_m": 0.009,
+ "sleep_linear_speed": 0.1, "sleep_angular_speed": 0.15, "sleep_stable_seconds": 0.6,
+ "clearance_interval_seconds": 0.1, "handoff_pop_limit_m": 0.01,
+ "penetration_limit_m": 0.02, "penetration_frames_limit": 2,
+ "flying_allowed_tags": ["shotgun", "high_caliber"],
+ "weapons": {"m4a1": [], "usp45": [], "spas12": ["shotgun"]},
+ "key_radii": {"Head":0.07,"Chest":0.10,"Hips":0.10,"LeftHand":0.035,"RightHand":0.035,"LeftFoot":0.035,"RightFoot":0.035,"LeftLowerLeg":0.045,"RightLowerLeg":0.045},
+ "bones": [
+  {"name":"Hips","tip":"Chest","mass":12,"radius":0.10,"swing":25,"twist":20},
+  {"name":"Chest","tip":"Neck","mass":22,"radius":0.12,"swing":30,"twist":25},
+  {"name":"Head","tip":"","mass":5,"radius":0.09,"swing":35,"twist":40},
+  {"name":"LeftUpperArm","tip":"LeftLowerArm","mass":2.5,"radius":0.045,"swing":75,"twist":45},
+  {"name":"RightUpperArm","tip":"RightLowerArm","mass":2.5,"radius":0.045,"swing":75,"twist":45},
+  {"name":"LeftLowerArm","tip":"LeftHand","mass":1.5,"radius":0.035,"swing":60,"twist":20},
+  {"name":"RightLowerArm","tip":"RightHand","mass":1.5,"radius":0.035,"swing":60,"twist":20},
+  {"name":"LeftHand","tip":"","mass":0.5,"radius":0.035,"swing":25,"twist":20},
+  {"name":"RightHand","tip":"","mass":0.5,"radius":0.035,"swing":25,"twist":20},
+  {"name":"LeftUpperLeg","tip":"LeftLowerLeg","mass":8,"radius":0.065,"swing":55,"twist":30},
+  {"name":"RightUpperLeg","tip":"RightLowerLeg","mass":8,"radius":0.065,"swing":55,"twist":30},
+  {"name":"LeftLowerLeg","tip":"LeftFoot","mass":4,"radius":0.045,"swing":65,"twist":10},
+  {"name":"RightLowerLeg","tip":"RightFoot","mass":4,"radius":0.045,"swing":65,"twist":10},
+  {"name":"LeftFoot","tip":"","mass":1.5,"radius":0.045,"swing":25,"twist":15},
+  {"name":"RightFoot","tip":"","mass":1.5,"radius":0.045,"swing":25,"twist":15}
+ ]
+}

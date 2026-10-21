@@ -1,0 +1,131 @@
+{
+  "clips": [
+    {
+      "id": "basic_shooter_pack_hit_reaction",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.0532741145696252,
+      "root_translation_removed": true,
+      "sample_count": 28,
+      "seconds": 0.433333337306976,
+      "target_bones": 72
+    },
+    {
+      "id": "death_from_back_headshot",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.813753081953847,
+      "root_translation_removed": true,
+      "sample_count": 224,
+      "seconds": 3.70000004768372,
+      "target_bones": 72
+    },
+    {
+      "id": "death_from_front_headshot",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.830956909628416,
+      "root_translation_removed": true,
+      "sample_count": 171,
+      "seconds": 2.83333325386047,
+      "target_bones": 72
+    },
+    {
+      "id": "death_from_right",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.828151266793693,
+      "root_translation_removed": true,
+      "sample_count": 198,
+      "seconds": 3.28333330154419,
+      "target_bones": 72
+    },
+    {
+      "id": "death_from_the_front",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.786441031300895,
+      "root_translation_removed": true,
+      "sample_count": 207,
+      "seconds": 3.41666674613953,
+      "target_bones": 72
+    },
+    {
+      "id": "death",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.81355777249481,
+      "root_translation_removed": true,
+      "sample_count": 182,
+      "seconds": 3.01666665077209,
+      "target_bones": 72
+    },
+    {
+      "id": "flying_back_death",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.827150675512947,
+      "root_translation_removed": true,
+      "sample_count": 182,
+      "seconds": 3.01666665077209,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_crouching_headshot_front",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.856032411723885,
+      "root_translation_removed": true,
+      "sample_count": 115,
+      "seconds": 1.89999997615814,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_from_back_headshot",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.813753076713296,
+      "root_translation_removed": true,
+      "sample_count": 224,
+      "seconds": 3.70000004768372,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_from_front_headshot",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.830835747512987,
+      "root_translation_removed": true,
+      "sample_count": 171,
+      "seconds": 2.83333325386047,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_from_right",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.827276362552054,
+      "root_translation_removed": true,
+      "sample_count": 199,
+      "seconds": 3.29999995231628,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_from_the_back",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.799767314007885,
+      "root_translation_removed": true,
+      "sample_count": 180,
+      "seconds": 2.96666669845581,
+      "target_bones": 72
+    },
+    {
+      "id": "pro_rifle_pack_death_from_the_front",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.77750823231037,
+      "root_translation_removed": true,
+      "sample_count": 208,
+      "seconds": 3.43333339691162,
+      "target_bones": 72
+    },
+    {
+      "id": "strafe",
+      "mapped_bones": 52,
+      "max_vertical_displacement_m": 0.121902842494004,
+      "root_translation_removed": true,
+      "sample_count": 66,
+      "seconds": 1.06666672229767,
+      "target_bones": 72
+    }
+  ],
+  "engine": "4.6.3-stable (official)"
+}

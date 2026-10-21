@@ -1,0 +1,1777 @@
+{
+  "all_acceptance_passed": false,
+  "cases": [
+    {
+      "audit_query_cpu_us_per_tick": 120.693333333333,
+      "budget_evictions": 0,
+      "case": "open",
+      "clip": "flying_back_death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.283333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00594711676239967,
+      "max_joint_length_error_m": 0.0237003937363625,
+      "pass": false,
+      "reason": "no_support",
+      "trace": [
+        {
+          "clip": "flying_back_death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "no_support",
+          "time": 0.283333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 81.2133333333333,
+      "budget_evictions": 0,
+      "case": "open",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.11666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 3,
+      "max_depth_m": 0.0286334808915854,
+      "max_joint_length_error_m": 0.00764528941363096,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.11666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 121.966666666667,
+      "budget_evictions": 0,
+      "case": "open",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00857581198215485,
+      "max_joint_length_error_m": 0.0373219437897205,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 67.6466666666667,
+      "budget_evictions": 0,
+      "case": "open",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00384056917391717,
+      "max_joint_length_error_m": 0.00462097814306617,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 173.68,
+      "budget_evictions": 0,
+      "case": "wall_touch",
+      "clip": "none",
+      "direction": "front",
+      "handoff_pop_m": 0.00900000333786011,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0633698999881744,
+      "longest_penetration_frames": 8,
+      "max_depth_m": 0.0488329231739044,
+      "max_joint_length_error_m": 0.0564393252134323,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            },
+            {
+              "id": "death",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "death_from_front_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "death_from_the_front",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_front_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_front",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.00900000333786011,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 114.813333333333,
+      "budget_evictions": 0,
+      "case": "wall_touch",
+      "clip": "none",
+      "direction": "back",
+      "handoff_pop_m": 0.00900000333786011,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0633698999881744,
+      "longest_penetration_frames": 8,
+      "max_depth_m": 0.0488329231739044,
+      "max_joint_length_error_m": 0.0564393252134323,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_back",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.00900000333786011,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 104.726666666667,
+      "budget_evictions": 0,
+      "case": "wall_touch",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.00900000333786011,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0633698999881744,
+      "longest_penetration_frames": 14,
+      "max_depth_m": 0.0488329231739044,
+      "max_joint_length_error_m": 0.060701958835125,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.00900000333786011,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 112.673333333333,
+      "budget_evictions": 0,
+      "case": "wall_touch",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.00900000333786011,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0633698999881744,
+      "longest_penetration_frames": 9,
+      "max_depth_m": 0.0488329231739044,
+      "max_joint_length_error_m": 0.0558827891945839,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.00900000333786011,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 87.1666666666667,
+      "budget_evictions": 0,
+      "case": "wall_20cm",
+      "clip": "death_from_front_headshot",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.3,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 62,
+      "max_depth_m": 0.0401022024452686,
+      "max_joint_length_error_m": 0.0157812871038914,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_front_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            },
+            {
+              "id": "death",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.3
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 65.4133333333333,
+      "budget_evictions": 0,
+      "case": "wall_20cm",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.11666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 3,
+      "max_depth_m": 0.0286334808915854,
+      "max_joint_length_error_m": 0.00764528941363096,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.11666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 106.62,
+      "budget_evictions": 0,
+      "case": "wall_20cm",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00857581198215485,
+      "max_joint_length_error_m": 0.0373219437897205,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 66.1066666666667,
+      "budget_evictions": 0,
+      "case": "wall_20cm",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00384057289920747,
+      "max_joint_length_error_m": 0.00462159095332026,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 101.66,
+      "budget_evictions": 0,
+      "case": "crate",
+      "clip": "death_from_front_headshot",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.3,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 62,
+      "max_depth_m": 0.045538816601038,
+      "max_joint_length_error_m": 0.0290094651281834,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_front_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            },
+            {
+              "id": "death",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.3
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 123.973333333333,
+      "budget_evictions": 0,
+      "case": "crate",
+      "clip": "pro_rifle_pack_death_from_the_back",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.81666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00606608763337135,
+      "max_joint_length_error_m": 0.0149135505780578,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "pro_rifle_pack_death_from_the_back",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_back_headshot",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.81666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 134.613333333333,
+      "budget_evictions": 0,
+      "case": "crate",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0119290202856064,
+      "max_joint_length_error_m": 0.0411352179944515,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 114.68,
+      "budget_evictions": 0,
+      "case": "crate",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0119290202856064,
+      "max_joint_length_error_m": 0.0411352179944515,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 118.2,
+      "budget_evictions": 0,
+      "case": "corridor",
+      "clip": "none",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0139791965484619,
+      "max_joint_length_error_m": 0.0369921512901783,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            },
+            {
+              "id": "death",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "death_from_front_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "death_from_the_front",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_front_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_front",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 115.266666666667,
+      "budget_evictions": 0,
+      "case": "corridor",
+      "clip": "none",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0141679644584656,
+      "max_joint_length_error_m": 0.0336640663444996,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_back",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 122.893333333333,
+      "budget_evictions": 0,
+      "case": "corridor",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0144662857055664,
+      "max_joint_length_error_m": 0.0333870388567448,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 115.126666666667,
+      "budget_evictions": 0,
+      "case": "corridor",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0139791965484619,
+      "max_joint_length_error_m": 0.0369921512901783,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 80.5133333333333,
+      "budget_evictions": 0,
+      "case": "ledge",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.61666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00882764160633087,
+      "max_joint_length_error_m": 0.00723458500579,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.61666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 65.24,
+      "budget_evictions": 0,
+      "case": "ledge",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.11666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0,
+      "max_joint_length_error_m": 0.00645113550126553,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.11666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 123.573333333333,
+      "budget_evictions": 0,
+      "case": "ledge",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00757177174091339,
+      "max_joint_length_error_m": 0.0264103058725595,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 71.0333333333333,
+      "budget_evictions": 0,
+      "case": "ledge",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00332120410166681,
+      "max_joint_length_error_m": 0.0233362969011068,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 86.36,
+      "budget_evictions": 0,
+      "case": "stairs",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.28333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.015332106500864,
+      "max_joint_length_error_m": 0.0124223325401545,
+      "pass": true,
+      "reason": "no_support",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "no_support",
+          "time": 1.28333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 111.513333333333,
+      "budget_evictions": 0,
+      "case": "stairs",
+      "clip": "none",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0165886282920837,
+      "max_joint_length_error_m": 0.0479247160255909,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_back",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 105.96,
+      "budget_evictions": 0,
+      "case": "stairs",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0165886282920837,
+      "max_joint_length_error_m": 0.0479247160255909,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 114.94,
+      "budget_evictions": 0,
+      "case": "stairs",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 1,
+      "max_depth_m": 0.0206623375415802,
+      "max_joint_length_error_m": 0.0556858666241169,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 109.98,
+      "budget_evictions": 0,
+      "case": "explosion_pillar",
+      "clip": "flying_back_death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.283333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00630921497941017,
+      "max_joint_length_error_m": 0.0240405444055796,
+      "pass": false,
+      "reason": "no_support",
+      "trace": [
+        {
+          "clip": "flying_back_death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "no_support",
+          "time": 0.283333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 67.6866666666667,
+      "budget_evictions": 0,
+      "case": "explosion_pillar",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.11666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00737125054001808,
+      "max_joint_length_error_m": 0.0149150416254997,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.11666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 117.986666666667,
+      "budget_evictions": 0,
+      "case": "explosion_pillar",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00857581198215485,
+      "max_joint_length_error_m": 0.0373219437897205,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 64.7666666666667,
+      "budget_evictions": 0,
+      "case": "explosion_pillar",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00341893709264696,
+      "max_joint_length_error_m": 0.00858128909021616,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 89.8666666666667,
+      "budget_evictions": 0,
+      "case": "adjacent",
+      "clip": "death_from_front_headshot",
+      "direction": "front",
+      "handoff_pop_m": 0.00220107473433018,
+      "handoff_time": 1.11666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 4,
+      "max_depth_m": 0.0296992585062981,
+      "max_joint_length_error_m": 0.0337846614420414,
+      "pass": false,
+      "reason": "disturbed",
+      "trace": [
+        {
+          "clip": "death_from_front_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            },
+            {
+              "id": "death",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.00220107473433018,
+          "reason": "disturbed",
+          "time": 1.11666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 129.2,
+      "budget_evictions": 0,
+      "case": "adjacent",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.233333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0137141384184361,
+      "max_joint_length_error_m": 0.0376333631575108,
+      "pass": false,
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.233333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 141.36,
+      "budget_evictions": 0,
+      "case": "adjacent",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0136708654463291,
+      "max_joint_length_error_m": 0.0344764851033688,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 128.84,
+      "budget_evictions": 0,
+      "case": "adjacent",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0136708654463291,
+      "max_joint_length_error_m": 0.0344764851033688,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 107.58,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.3,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 12,
+      "max_depth_m": 0.0300482865422964,
+      "max_joint_length_error_m": 0.0221583750098944,
+      "pass": false,
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.3
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 109.106666666667,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.183333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 2,
+      "max_depth_m": 0.0212902165949345,
+      "max_joint_length_error_m": 0.0393899902701378,
+      "pass": false,
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.183333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 204.646666666667,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.018158420920372,
+      "max_joint_length_error_m": 0.0556611195206642,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 67.3533333333333,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00380105129443109,
+      "max_joint_length_error_m": 0.00460495706647635,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 123.44,
+      "budget_evictions": 0,
+      "case": "second_hit",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0833333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 11,
+      "max_depth_m": 0.0342477411031723,
+      "max_joint_length_error_m": 0.0908190384507179,
+      "pass": false,
+      "reason": "disturbed",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "disturbed",
+          "time": 0.0833333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 90.1133333333333,
+      "budget_evictions": 0,
+      "case": "second_hit",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0833333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0198020078241825,
+      "max_joint_length_error_m": 0.0259118750691414,
+      "pass": false,
+      "reason": "disturbed",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "disturbed",
+          "time": 0.0833333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 87.7333333333333,
+      "budget_evictions": 0,
+      "case": "second_hit",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00857581198215485,
+      "max_joint_length_error_m": 0.0373219437897205,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 120.653333333333,
+      "budget_evictions": 0,
+      "case": "second_hit",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0833333333333333,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 14,
+      "max_depth_m": 0.02490309253335,
+      "max_joint_length_error_m": 0.0341434627771378,
+      "pass": false,
+      "reason": "disturbed",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "disturbed",
+          "time": 0.0833333333333333
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 116.08,
+      "budget_evictions": 0,
+      "case": "moving_prop",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.633333333333334,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 11,
+      "max_depth_m": 0.0252378024160862,
+      "max_joint_length_error_m": 0.029349360615015,
+      "pass": false,
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.633333333333334
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 102.366666666667,
+      "budget_evictions": 0,
+      "case": "moving_prop",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.11666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0122045315802097,
+      "max_joint_length_error_m": 0.0399011597037315,
+      "pass": false,
+      "reason": "disturbed",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "disturbed",
+          "time": 1.11666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 89.8333333333333,
+      "budget_evictions": 0,
+      "case": "moving_prop",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0165190249681473,
+      "max_joint_length_error_m": 0.048955611884594,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 124.613333333333,
+      "budget_evictions": 0,
+      "case": "moving_prop",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0166110843420029,
+      "max_joint_length_error_m": 0.0469414107501507,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 109.646666666667,
+      "budget_evictions": 1,
+      "case": "budget_full",
+      "clip": "death",
+      "direction": "front",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.61666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00876094400882721,
+      "max_joint_length_error_m": 0.00705741252750158,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.61666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 78.16,
+      "budget_evictions": 1,
+      "case": "budget_full",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.11666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 3,
+      "max_depth_m": 0.0286702550947666,
+      "max_joint_length_error_m": 0.00794759765267372,
+      "pass": false,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.11666666666666
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 158.853333333333,
+      "budget_evictions": 1,
+      "case": "budget_full",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0139484703540802,
+      "max_joint_length_error_m": 0.0336215905845165,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 90.0266666666667,
+      "budget_evictions": 1,
+      "case": "budget_full",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 2.01666666666666,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00357449403963983,
+      "max_joint_length_error_m": 0.00488454103469849,
+      "pass": true,
+      "reason": "planned",
+      "trace": [
+        {
+          "clip": "death_from_right",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 2.01666666666666
+        }
+      ]
+    }
+  ],
+  "checks": 208,
+  "engine": "4.6.3-stable (official)",
+  "hardware_frame_cost_valid": false
+}

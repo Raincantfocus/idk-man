@@ -1,0 +1,55 @@
+{
+  "checks": 10,
+  "left_fallback": true,
+  "passed": true,
+  "rows": [
+    {
+      "clip": "death",
+      "flying": false,
+      "selection_cpu_us": 1206,
+      "tag": ""
+    },
+    {
+      "clip": "death",
+      "flying": false,
+      "selection_cpu_us": 530,
+      "tag": "rifle"
+    },
+    {
+      "clip": "death",
+      "flying": false,
+      "selection_cpu_us": 695,
+      "tag": "pistol"
+    },
+    {
+      "clip": "death",
+      "flying": false,
+      "selection_cpu_us": 696,
+      "tag": "unknown"
+    },
+    {
+      "clip": "flying_back_death",
+      "flying": true,
+      "selection_cpu_us": 450,
+      "tag": "shotgun"
+    },
+    {
+      "clip": "flying_back_death",
+      "flying": true,
+      "selection_cpu_us": 407,
+      "tag": "high_caliber"
+    },
+    {
+      "clip": "flying_back_death",
+      "gore": "off"
+    },
+    {
+      "clip": "flying_back_death",
+      "gore": "reduced"
+    },
+    {
+      "clip": "flying_back_death",
+      "gore": "full"
+    }
+  ]
+}
