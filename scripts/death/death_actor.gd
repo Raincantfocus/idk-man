@@ -13,6 +13,7 @@ var simulator: PhysicalBoneSimulator3D
 var physical: Dictionary={}
 var proxy_offsets: Dictionary={}
 var joint_links: Dictionary={}
+var frozen_joint_error: float=0.0
 var excluded: Array[RID]=[]
 var clips: Array=[]
 var selected: Clip
@@ -61,6 +62,9 @@ func _build_bodies() -> void:
   var segment: Vector3=end-rest.origin;var center: Vector3=(rest.origin+end)*.5
   var basis:=Basis(Quaternion(Vector3.UP,segment.normalized()))
   var bone:=PhysicalBone3D.new();bone.name="Physical_"+String(definition.name);simulator.add_child(bone);bone.set("bone_name",StringName(definition.name));bone.body_offset=rest.affine_inverse()*Transform3D(basis,center)
+  # Godot cone twist uses local X; our capsule/bone length is local Y.
+  var axis: Array=tuning.cone_axis_rotation_radians
+  bone.joint_rotation=Vector3(float(axis[0]),float(axis[1]),float(axis[2]))
   bone.mass=float(definition.mass);bone.linear_damp=float(tuning.linear_damping);bone.angular_damp=float(tuning.angular_damping);bone.friction=.8;bone.bounce=0.0;bone.can_sleep=true;bone.collision_layer=int(tuning.corpse_layer);bone.collision_mask=int(tuning.collision_mask)
   bone.joint_type=PhysicalBone3D.JOINT_TYPE_CONE;bone.set("joint_constraints/swing_span",float(definition.swing));bone.set("joint_constraints/twist_span",float(definition.twist))
   var collider:=CollisionShape3D.new();var shape:=CapsuleShape3D.new();shape.radius=float(definition.radius);shape.height=maxf(shape.radius*2.0,segment.length()*.8);collider.shape=shape;bone.add_child(collider)
@@ -131,7 +135,7 @@ func _physics_process(delta: float) -> void:
    bone.linear_velocity=bone.linear_velocity.limit_length(float(tuning.max_linear_speed));bone.angular_velocity=bone.angular_velocity.limit_length(float(tuning.max_angular_speed))
    quiet=quiet and bone.linear_velocity.length()<float(tuning.sleep_linear_speed) and bone.angular_velocity.length()<float(tuning.sleep_angular_speed)
   stable_elapsed=stable_elapsed+delta if quiet else 0.0
-  if stable_elapsed>=float(tuning.sleep_stable_seconds) or handoff_elapsed>=float(tuning.settle_seconds):freeze_corpse()
+  if stable_elapsed>=float(tuning.sleep_stable_seconds) or (quiet and handoff_elapsed>=float(tuning.settle_seconds)):freeze_corpse()
 func _handoff(trigger: String) -> void:
  if handoff_count>0:return
  handoff_count=1;reason=trigger;player.pause()
@@ -192,7 +196,14 @@ func is_simulating() -> bool:return state==State.BLENDING or state==State.RAGDOL
 func freeze_corpse() -> bool:
  if not allow_eviction:return false
  if state==State.FROZEN:return true
+ # Budget eviction and timeout must not suspend a corpse over a void.
+ var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+ var key_points: Dictionary=points()
+ if not query.supported(space,key_points,excluded):return false
+ for name: String in key_points:
+  if query.penetration(space,name,key_points[name],excluded).length()>float(tuning.penetration_limit_m):return false
  var pose: Array[Transform3D]=capture_pose()
+ frozen_joint_error=joint_error()
  for bone: PhysicalBone3D in physical.values():
   var frozen:=StaticBody3D.new();frozen.collision_layer=int(tuning.corpse_layer);frozen.collision_mask=int(tuning.world_mask)|int(tuning.prop_mask);add_child(frozen);frozen.global_transform=bone.global_transform
   for child: Node in bone.get_children():
@@ -203,6 +214,7 @@ func freeze_corpse() -> bool:
  return true
 
 func joint_error() -> float:
+ if state==State.FROZEN:return frozen_joint_error
  var maximum: float=0.0
  for name: String in joint_links:
   var link: Dictionary=joint_links[name]

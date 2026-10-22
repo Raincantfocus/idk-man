@@ -45,9 +45,18 @@ func run() -> void:
  for bone: PhysicalBone3D in lite.physical.values():shape_count+=bone.get_child_count()
  assert(shape_count==15)
  for i: int in 30:await physics_frame
+ var before_joint_error: float=lite.joint_error()
  var before: Array[Transform3D]=lite.capture_pose();assert(lite.freeze_corpse());var after: Array[Transform3D]=lite.capture_pose();var delta: float=0.0
  for i: int in before.size():delta=maxf(delta,before[i].origin.distance_to(after[i].origin))
  assert(delta<.0001)
+ assert(absf(lite.joint_error()-before_joint_error)<.000001)
  assert(lite.lethal_events_received==1 and lite.handoff_count==1)
- var result: Dictionary={"passed":true,"self_collision_root_error_m":root_error,"pause_preserved":true,"focus_elapsed_six_ticks":focused,"full_budget":strict_pool.active.size(),"lite_bodies":lite.physical.size(),"lite_collision_shapes":shape_count,"freeze_pose_delta_m":delta,"authoritative_event_count":lite.lethal_events_received,"handoff_count":lite.handoff_count,"note":"No gameplay reward callbacks exist in this presentation fixture; live game integration is not claimed"}
+ var air_settings: Dictionary=settings.duplicate(true);air_settings.settle_seconds=.05
+ var air_pool:=Pool.new();air_pool.configure(air_settings)
+ var airborne:=Actor.new();world.add_child(airborne);airborne.position=Vector3(0,20,-10);airborne.setup(air_settings,air_pool)
+ for i: int in 3:await physics_frame
+ airborne.begin_death(Vector3(1,0,0),PackedStringArray())
+ for i: int in 30:await physics_frame
+ assert(airborne.state!=Actor.State.FROZEN and not airborne.freeze_corpse(), "Airborne corpse frozen by timeout or budget eviction")
+ var result: Dictionary={"passed":true,"airborne_freeze_refused":true,"self_collision_root_error_m":root_error,"pause_preserved":true,"focus_elapsed_six_ticks":focused,"full_budget":strict_pool.active.size(),"lite_bodies":lite.physical.size(),"lite_collision_shapes":shape_count,"freeze_pose_delta_m":delta,"authoritative_event_count":lite.lethal_events_received,"handoff_count":lite.handoff_count,"note":"No gameplay reward callbacks exist in this presentation fixture; live game integration is not claimed"}
  var file:=FileAccess.open("res://data/death/contracts_test_report.json",FileAccess.WRITE);file.store_string(JSON.stringify(result,"  "));file.close();print("CONTRACT_TEST_PASS ",JSON.stringify(result));quit()

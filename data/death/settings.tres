@@ -117,6 +117,7 @@ values = {
 }],
 "clearance_interval_seconds": 0.1,
 "collision_mask": 21.0,
+"cone_axis_rotation_radians": [0.0, 0.0, 1.5707963267948966],
 "corpse_layer": 16.0,
 "disturbance_impulse_threshold": 8.0,
 "flying_allowed_tags": ["shotgun", "high_caliber"],

@@ -13,6 +13,7 @@
  "flying_allowed_tags": ["shotgun", "high_caliber"],
  "weapons": {"m4a1": [], "usp45": [], "spas12": ["shotgun"]},
  "key_radii": {"Head":0.07,"Chest":0.10,"Hips":0.10,"LeftHand":0.035,"RightHand":0.035,"LeftFoot":0.035,"RightFoot":0.035,"LeftLowerLeg":0.045,"RightLowerLeg":0.045},
+ "cone_axis_rotation_radians": [0.0, 0.0, 1.5707963267948966],
  "bones": [
   {"name":"Hips","tip":"Chest","mass":12,"radius":0.10,"swing":25,"twist":20},
   {"name":"Chest","tip":"Neck","mass":22,"radius":0.12,"swing":30,"twist":25},

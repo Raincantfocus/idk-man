@@ -2,7 +2,7 @@
   "all_acceptance_passed": false,
   "cases": [
     {
-      "audit_query_cpu_us_per_tick": 279.286666666667,
+      "audit_query_cpu_us_per_tick": 280.34,
       "budget_evictions": 0,
       "case": "wall_touch",
       "clip": "none",
@@ -10,9 +10,9 @@
       "handoff_pop_m": 0.00900000333786011,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0633698999881744,
-      "longest_penetration_frames": 8,
-      "max_depth_m": 0.0488329231739044,
-      "max_joint_length_error_m": 0.0606391094624996,
+      "longest_penetration_frames": 5,
+      "max_depth_m": 0.0488328337669373,
+      "max_joint_length_error_m": 0.0182393342256546,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -57,58 +57,36 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 295.646666666667,
+      "audit_query_cpu_us_per_tick": 292.88,
       "budget_evictions": 0,
-      "case": "corpse_behind",
-      "clip": "death_from_back_headshot",
+      "case": "stairs",
+      "clip": "none",
       "direction": "back",
       "handoff_pop_m": 0.0,
-      "handoff_time": 0.183333333333333,
+      "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 3,
-      "max_depth_m": 0.0212902165949345,
-      "max_joint_length_error_m": 0.0393899902701378,
+      "longest_penetration_frames": 30,
+      "max_depth_m": 0.0253951847553253,
+      "max_joint_length_error_m": 0.0162137057632208,
       "pass": false,
-      "reason": "root_blocked",
+      "reason": "ragdoll_now",
       "trace": [
         {
-          "clip": "death_from_back_headshot",
+          "clip": "none",
           "event": "selection",
-          "reason": "clear",
-          "rejected": []
-        },
-        {
-          "event": "handoff",
-          "full_ragdoll": true,
-          "pop_m": 0.0,
-          "reason": "root_blocked",
-          "time": 0.183333333333333
-        }
-      ]
-    },
-    {
-      "audit_query_cpu_us_per_tick": 348.913333333333,
-      "budget_evictions": 0,
-      "case": "second_hit",
-      "clip": "death",
-      "direction": "front",
-      "handoff_pop_m": 0.0,
-      "handoff_time": 0.0666666666666667,
-      "initial_depth_m": 0.0,
-      "longest_penetration_frames": 11,
-      "max_depth_m": 0.029406413435936,
-      "max_joint_length_error_m": 0.0882344990968704,
-      "pass": false,
-      "reason": "disturbed",
-      "trace": [
-        {
-          "clip": "death",
-          "event": "selection",
-          "reason": "clear",
+          "reason": "ragdoll_now",
           "rejected": [
             {
-              "id": "flying_back_death",
-              "reason": "weapon_not_eligible"
+              "id": "death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_back_headshot",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_the_back",
+              "reason": "clearance_blocked"
             }
           ]
         },
@@ -116,8 +94,47 @@
           "event": "handoff",
           "full_ragdoll": true,
           "pop_m": 0.0,
-          "reason": "disturbed",
-          "time": 0.0666666666666667
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 320.906666666667,
+      "budget_evictions": 0,
+      "case": "adjacent",
+      "clip": "none",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 9,
+      "max_depth_m": 0.0233328975737095,
+      "max_joint_length_error_m": 0.0158075988292694,
+      "pass": false,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": [
+            {
+              "id": "death_from_right",
+              "reason": "clearance_blocked"
+            },
+            {
+              "id": "pro_rifle_pack_death_from_right",
+              "reason": "clearance_blocked"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
         }
       ]
     }

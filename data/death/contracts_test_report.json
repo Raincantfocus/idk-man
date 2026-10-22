@@ -1,7 +1,8 @@
 {
+  "airborne_freeze_refused": true,
   "authoritative_event_count": 1,
   "focus_elapsed_six_ticks": 0.0333333333333333,
-  "freeze_pose_delta_m": 0.000000342402614705861,
+  "freeze_pose_delta_m": 0.000000321326524499455,
   "full_budget": 6,
   "handoff_count": 1,
   "lite_bodies": 7,

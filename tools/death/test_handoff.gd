@@ -25,7 +25,7 @@ func run() -> void:
  for scenario: String in ["open","wall_touch","wall_20cm","crate","corridor","ledge","stairs","explosion_pillar","adjacent","corpse_behind","second_hit","moving_prop","budget_full"]:
   if OS.get_cmdline_user_args().has("quick") and scenario!="open":continue
   for direction: String in directions:
-   if capture_mode and not [scenario,direction] in [["corpse_behind","back"],["wall_touch","front"],["second_hit","front"]]:continue
+   if capture_mode and not [scenario,direction] in [["stairs","back"],["wall_touch","front"],["adjacent","right"]]:continue
    await run_case(scenario,direction,directions[direction])
  var file:=FileAccess.open("res://data/death/handoff_capture_report.json" if capture_mode else "res://data/death/handoff_test_report.json",FileAccess.WRITE)
  file.store_string(JSON.stringify({"engine":Engine.get_version_info().string,"cases":report,"checks":checks,"all_acceptance_passed":report.all(func(row: Dictionary)->bool:return row.pass),"hardware_frame_cost_valid":false},"  "));file.close()
@@ -66,7 +66,7 @@ func run_case(scenario: String,direction: String,incoming: Vector3) -> void:
   other.begin_death(Vector3(0,0,-1),PackedStringArray());other.notify_hit(true,Vector3.ZERO)
   if scenario=="corpse_behind":
    for tick: int in 120:await physics_frame
-   other.freeze_corpse()
+   assert(other.freeze_corpse(), "Corpse-behind fixture must start with a frozen corpse")
  var tags:=PackedStringArray(["shotgun"]) if scenario in ["open","explosion_pillar"] else PackedStringArray()
  var impulse:=Vector3(0,3,60) if scenario=="explosion_pillar" else Vector3.ZERO
  var initial_depth: float=0.0
@@ -88,12 +88,12 @@ func run_case(scenario: String,direction: String,incoming: Vector3) -> void:
   peak_constraint=maxf(peak_constraint,actor.joint_error())
   if capture_mode and max_depth>captured_peak:
    captured_peak=max_depth;paused=true
-   capture_label.text="UNAPPROVED HANDOFF | %s / %s | frame %d\nReason %s | peak penetration %.1f mm | joint error %.1f mm\nObserved failure capture; no acceptance claim" % [scenario,direction,frame,actor.reason,max_depth*1000,peak_constraint*1000]
+   capture_label.text="UNAPPROVED HANDOFF | %s / %s | frame %d\nReason %s | peak penetration %.1f mm | joint error %.1f mm\nDiagnostic capture; acceptance requires full logs" % [scenario,direction,frame,actor.reason,max_depth*1000,peak_constraint*1000]
    await process_frame
    await RenderingServer.frame_post_draw
    assert(root.get_texture().get_image().save_png("res://death_captures/"+scenario+"_"+direction+".png")==OK)
    paused=false
-  frames.append({"case":scenario,"direction":direction,"frame":frame,"state":actor.state,"depth_m":depth_by_bone})
+  frames.append({"case":scenario,"direction":direction,"frame":frame,"state":actor.state,"depth_m":depth_by_bone,"joint_anchor_error_m":actor.joint_error()})
  assert(actor.lethal_events_received==1 and actor.handoff_count==1);checks+=1
  var flying_legal: bool=actor.selected==null or not actor.selected.flying or tags.has("shotgun") or tags.has("high_caliber");assert(flying_legal);checks+=1
  var passed: bool=longest<=int(settings.penetration_frames_limit) and actor.max_handoff_pop<=float(settings.handoff_pop_limit_m) and peak_constraint<=0.02

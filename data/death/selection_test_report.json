@@ -6,37 +6,37 @@
     {
       "clip": "death",
       "flying": false,
-      "selection_cpu_us": 1206,
+      "selection_cpu_us": 1037,
       "tag": ""
     },
     {
       "clip": "death",
       "flying": false,
-      "selection_cpu_us": 530,
+      "selection_cpu_us": 528,
       "tag": "rifle"
     },
     {
       "clip": "death",
       "flying": false,
-      "selection_cpu_us": 695,
+      "selection_cpu_us": 431,
       "tag": "pistol"
     },
     {
       "clip": "death",
       "flying": false,
-      "selection_cpu_us": 696,
+      "selection_cpu_us": 460,
       "tag": "unknown"
     },
     {
       "clip": "flying_back_death",
       "flying": true,
-      "selection_cpu_us": 450,
+      "selection_cpu_us": 325,
       "tag": "shotgun"
     },
     {
       "clip": "flying_back_death",
       "flying": true,
-      "selection_cpu_us": 407,
+      "selection_cpu_us": 259,
       "tag": "high_caliber"
     },
     {

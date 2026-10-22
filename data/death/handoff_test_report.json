@@ -2,7 +2,7 @@
   "all_acceptance_passed": false,
   "cases": [
     {
-      "audit_query_cpu_us_per_tick": 120.693333333333,
+      "audit_query_cpu_us_per_tick": 101.933333333333,
       "budget_evictions": 0,
       "case": "open",
       "clip": "flying_back_death",
@@ -11,9 +11,9 @@
       "handoff_time": 0.283333333333333,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00594711676239967,
-      "max_joint_length_error_m": 0.0237003937363625,
-      "pass": false,
+      "max_depth_m": 0.0149143375456333,
+      "max_joint_length_error_m": 0.0147479800507426,
+      "pass": true,
       "reason": "no_support",
       "trace": [
         {
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 81.2133333333333,
+      "audit_query_cpu_us_per_tick": 60.7266666666667,
       "budget_evictions": 0,
       "case": "open",
       "clip": "death_from_back_headshot",
@@ -40,10 +40,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 2.11666666666666,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 3,
-      "max_depth_m": 0.0286334808915854,
-      "max_joint_length_error_m": 0.00764528941363096,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00398168386891484,
+      "max_joint_length_error_m": 0.00993718765676022,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 121.966666666667,
+      "audit_query_cpu_us_per_tick": 103.38,
       "budget_evictions": 0,
       "case": "open",
       "clip": "none",
@@ -71,9 +71,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00857581198215485,
-      "max_joint_length_error_m": 0.0373219437897205,
-      "pass": false,
+      "max_depth_m": 0.0163401402533054,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 67.6466666666667,
+      "audit_query_cpu_us_per_tick": 64.3266666666667,
       "budget_evictions": 0,
       "case": "open",
       "clip": "death_from_right",
@@ -101,8 +101,8 @@
       "handoff_time": 2.01666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00384056917391717,
-      "max_joint_length_error_m": 0.00462097814306617,
+      "max_depth_m": 0.0039084292948246,
+      "max_joint_length_error_m": 0.00355879566632211,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 173.68,
+      "audit_query_cpu_us_per_tick": 106.34,
       "budget_evictions": 0,
       "case": "wall_touch",
       "clip": "none",
@@ -130,9 +130,9 @@
       "handoff_pop_m": 0.00900000333786011,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0633698999881744,
-      "longest_penetration_frames": 8,
-      "max_depth_m": 0.0488329231739044,
-      "max_joint_length_error_m": 0.0564393252134323,
+      "longest_penetration_frames": 49,
+      "max_depth_m": 0.0488328337669373,
+      "max_joint_length_error_m": 0.0191659424453974,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 114.813333333333,
+      "audit_query_cpu_us_per_tick": 109.5,
       "budget_evictions": 0,
       "case": "wall_touch",
       "clip": "none",
@@ -185,9 +185,9 @@
       "handoff_pop_m": 0.00900000333786011,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0633698999881744,
-      "longest_penetration_frames": 8,
-      "max_depth_m": 0.0488329231739044,
-      "max_joint_length_error_m": 0.0564393252134323,
+      "longest_penetration_frames": 49,
+      "max_depth_m": 0.0488328337669373,
+      "max_joint_length_error_m": 0.0191659424453974,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 104.726666666667,
+      "audit_query_cpu_us_per_tick": 106.513333333333,
       "budget_evictions": 0,
       "case": "wall_touch",
       "clip": "none",
@@ -228,9 +228,9 @@
       "handoff_pop_m": 0.00900000333786011,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0633698999881744,
-      "longest_penetration_frames": 14,
-      "max_depth_m": 0.0488329231739044,
-      "max_joint_length_error_m": 0.060701958835125,
+      "longest_penetration_frames": 25,
+      "max_depth_m": 0.0488328337669373,
+      "max_joint_length_error_m": 0.0190064460039139,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 112.673333333333,
+      "audit_query_cpu_us_per_tick": 124.68,
       "budget_evictions": 0,
       "case": "wall_touch",
       "clip": "none",
@@ -258,9 +258,9 @@
       "handoff_pop_m": 0.00900000333786011,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0633698999881744,
-      "longest_penetration_frames": 9,
-      "max_depth_m": 0.0488329231739044,
-      "max_joint_length_error_m": 0.0558827891945839,
+      "longest_penetration_frames": 36,
+      "max_depth_m": 0.0488328337669373,
+      "max_joint_length_error_m": 0.0186996553093195,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 87.1666666666667,
+      "audit_query_cpu_us_per_tick": 106.826666666667,
       "budget_evictions": 0,
       "case": "wall_20cm",
       "clip": "death_from_front_headshot",
@@ -297,10 +297,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 1.3,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 62,
-      "max_depth_m": 0.0401022024452686,
-      "max_joint_length_error_m": 0.0157812871038914,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00949502363801003,
+      "max_joint_length_error_m": 0.00537441251799464,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -328,7 +328,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 65.4133333333333,
+      "audit_query_cpu_us_per_tick": 65.4466666666667,
       "budget_evictions": 0,
       "case": "wall_20cm",
       "clip": "death_from_back_headshot",
@@ -336,10 +336,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 2.11666666666666,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 3,
-      "max_depth_m": 0.0286334808915854,
-      "max_joint_length_error_m": 0.00764528941363096,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00398168386891484,
+      "max_joint_length_error_m": 0.00993718765676022,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -358,7 +358,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 106.62,
+      "audit_query_cpu_us_per_tick": 108.066666666667,
       "budget_evictions": 0,
       "case": "wall_20cm",
       "clip": "none",
@@ -367,9 +367,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00857581198215485,
-      "max_joint_length_error_m": 0.0373219437897205,
-      "pass": false,
+      "max_depth_m": 0.0106781162321568,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -388,7 +388,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 66.1066666666667,
+      "audit_query_cpu_us_per_tick": 77.78,
       "budget_evictions": 0,
       "case": "wall_20cm",
       "clip": "death_from_right",
@@ -397,8 +397,8 @@
       "handoff_time": 2.01666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00384057289920747,
-      "max_joint_length_error_m": 0.00462159095332026,
+      "max_depth_m": 0.00390834361314774,
+      "max_joint_length_error_m": 0.00355879566632211,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -418,7 +418,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 101.66,
+      "audit_query_cpu_us_per_tick": 85.5,
       "budget_evictions": 0,
       "case": "crate",
       "clip": "death_from_front_headshot",
@@ -426,10 +426,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 1.3,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 62,
-      "max_depth_m": 0.045538816601038,
-      "max_joint_length_error_m": 0.0290094651281834,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0127112902700901,
+      "max_joint_length_error_m": 0.0097522372379899,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -457,7 +457,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 123.973333333333,
+      "audit_query_cpu_us_per_tick": 70.4133333333333,
       "budget_evictions": 0,
       "case": "crate",
       "clip": "pro_rifle_pack_death_from_the_back",
@@ -466,7 +466,7 @@
       "handoff_time": 1.81666666666667,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00606608763337135,
+      "max_depth_m": 0.00866738334298134,
       "max_joint_length_error_m": 0.0149135505780578,
       "pass": true,
       "reason": "planned",
@@ -496,7 +496,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 134.613333333333,
+      "audit_query_cpu_us_per_tick": 101.913333333333,
       "budget_evictions": 0,
       "case": "crate",
       "clip": "none",
@@ -505,9 +505,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0119290202856064,
-      "max_joint_length_error_m": 0.0411352179944515,
-      "pass": false,
+      "max_depth_m": 0.00667277351021767,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -526,7 +526,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 114.68,
+      "audit_query_cpu_us_per_tick": 103.186666666667,
       "budget_evictions": 0,
       "case": "crate",
       "clip": "none",
@@ -535,9 +535,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0119290202856064,
-      "max_joint_length_error_m": 0.0411352179944515,
-      "pass": false,
+      "max_depth_m": 0.00667277351021767,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -565,7 +565,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 118.2,
+      "audit_query_cpu_us_per_tick": 99.34,
       "budget_evictions": 0,
       "case": "corridor",
       "clip": "none",
@@ -574,9 +574,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0139791965484619,
-      "max_joint_length_error_m": 0.0369921512901783,
-      "pass": false,
+      "max_depth_m": 0.00866946578025818,
+      "max_joint_length_error_m": 0.0142887141555548,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -620,7 +620,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 115.266666666667,
+      "audit_query_cpu_us_per_tick": 106.66,
       "budget_evictions": 0,
       "case": "corridor",
       "clip": "none",
@@ -629,9 +629,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0141679644584656,
-      "max_joint_length_error_m": 0.0336640663444996,
-      "pass": false,
+      "max_depth_m": 0.0099455751478672,
+      "max_joint_length_error_m": 0.0139697352424264,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 122.893333333333,
+      "audit_query_cpu_us_per_tick": 100.093333333333,
       "budget_evictions": 0,
       "case": "corridor",
       "clip": "none",
@@ -672,9 +672,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0144662857055664,
-      "max_joint_length_error_m": 0.0333870388567448,
-      "pass": false,
+      "max_depth_m": 0.00866946578025818,
+      "max_joint_length_error_m": 0.0142887141555548,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 115.126666666667,
+      "audit_query_cpu_us_per_tick": 98.6866666666667,
       "budget_evictions": 0,
       "case": "corridor",
       "clip": "none",
@@ -702,9 +702,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0139791965484619,
-      "max_joint_length_error_m": 0.0369921512901783,
-      "pass": false,
+      "max_depth_m": 0.0099455751478672,
+      "max_joint_length_error_m": 0.0139697352424264,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 80.5133333333333,
+      "audit_query_cpu_us_per_tick": 71.2533333333333,
       "budget_evictions": 0,
       "case": "ledge",
       "clip": "death",
@@ -741,8 +741,8 @@
       "handoff_time": 1.61666666666667,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00882764160633087,
-      "max_joint_length_error_m": 0.00723458500579,
+      "max_depth_m": 0.00379089987836778,
+      "max_joint_length_error_m": 0.00170941557735205,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -767,7 +767,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 65.24,
+      "audit_query_cpu_us_per_tick": 56.3133333333333,
       "budget_evictions": 0,
       "case": "ledge",
       "clip": "death_from_back_headshot",
@@ -777,7 +777,7 @@
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
       "max_depth_m": 0.0,
-      "max_joint_length_error_m": 0.00645113550126553,
+      "max_joint_length_error_m": 0.00332997762598097,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -797,7 +797,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 123.573333333333,
+      "audit_query_cpu_us_per_tick": 89.2533333333333,
       "budget_evictions": 0,
       "case": "ledge",
       "clip": "none",
@@ -806,9 +806,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00757177174091339,
-      "max_joint_length_error_m": 0.0264103058725595,
-      "pass": false,
+      "max_depth_m": 0.000214222716749646,
+      "max_joint_length_error_m": 0.0125386770814657,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -827,7 +827,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 71.0333333333333,
+      "audit_query_cpu_us_per_tick": 62.14,
       "budget_evictions": 0,
       "case": "ledge",
       "clip": "death_from_right",
@@ -836,9 +836,9 @@
       "handoff_time": 2.01666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00332120410166681,
-      "max_joint_length_error_m": 0.0233362969011068,
-      "pass": false,
+      "max_depth_m": 0.00220997980795801,
+      "max_joint_length_error_m": 0.00520687224343419,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -857,7 +857,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 86.36,
+      "audit_query_cpu_us_per_tick": 79.9266666666667,
       "budget_evictions": 0,
       "case": "stairs",
       "clip": "death",
@@ -866,8 +866,8 @@
       "handoff_time": 1.28333333333333,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.015332106500864,
-      "max_joint_length_error_m": 0.0124223325401545,
+      "max_depth_m": 0.00466058030724525,
+      "max_joint_length_error_m": 0.00512109464034438,
       "pass": true,
       "reason": "no_support",
       "trace": [
@@ -892,7 +892,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 111.513333333333,
+      "audit_query_cpu_us_per_tick": 114.06,
       "budget_evictions": 0,
       "case": "stairs",
       "clip": "none",
@@ -900,9 +900,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0165886282920837,
-      "max_joint_length_error_m": 0.0479247160255909,
+      "longest_penetration_frames": 19,
+      "max_depth_m": 0.0253951847553253,
+      "max_joint_length_error_m": 0.0162137057632208,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -935,7 +935,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 105.96,
+      "audit_query_cpu_us_per_tick": 125.086666666667,
       "budget_evictions": 0,
       "case": "stairs",
       "clip": "none",
@@ -943,9 +943,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0165886282920837,
-      "max_joint_length_error_m": 0.0479247160255909,
+      "longest_penetration_frames": 19,
+      "max_depth_m": 0.0253951847553253,
+      "max_joint_length_error_m": 0.0162137057632208,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -965,7 +965,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 114.94,
+      "audit_query_cpu_us_per_tick": 114.213333333333,
       "budget_evictions": 0,
       "case": "stairs",
       "clip": "none",
@@ -973,10 +973,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 1,
-      "max_depth_m": 0.0206623375415802,
-      "max_joint_length_error_m": 0.0556858666241169,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0142790675163269,
+      "max_joint_length_error_m": 0.0162496790289879,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -1004,7 +1004,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 109.98,
+      "audit_query_cpu_us_per_tick": 95.7266666666667,
       "budget_evictions": 0,
       "case": "explosion_pillar",
       "clip": "flying_back_death",
@@ -1013,9 +1013,9 @@
       "handoff_time": 0.283333333333333,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00630921497941017,
-      "max_joint_length_error_m": 0.0240405444055796,
-      "pass": false,
+      "max_depth_m": 0.0183451808989048,
+      "max_joint_length_error_m": 0.0181811545044184,
+      "pass": true,
       "reason": "no_support",
       "trace": [
         {
@@ -1034,7 +1034,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 67.6866666666667,
+      "audit_query_cpu_us_per_tick": 73.12,
       "budget_evictions": 0,
       "case": "explosion_pillar",
       "clip": "death_from_back_headshot",
@@ -1043,8 +1043,8 @@
       "handoff_time": 2.11666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00737125054001808,
-      "max_joint_length_error_m": 0.0149150416254997,
+      "max_depth_m": 0.00504082813858986,
+      "max_joint_length_error_m": 0.00451035145670176,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -1064,7 +1064,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 117.986666666667,
+      "audit_query_cpu_us_per_tick": 111.76,
       "budget_evictions": 0,
       "case": "explosion_pillar",
       "clip": "none",
@@ -1073,9 +1073,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00857581198215485,
-      "max_joint_length_error_m": 0.0373219437897205,
-      "pass": false,
+      "max_depth_m": 0.0106781162321568,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -1094,7 +1094,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 64.7666666666667,
+      "audit_query_cpu_us_per_tick": 76.5333333333333,
       "budget_evictions": 0,
       "case": "explosion_pillar",
       "clip": "death_from_right",
@@ -1103,8 +1103,8 @@
       "handoff_time": 2.01666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00341893709264696,
-      "max_joint_length_error_m": 0.00858128909021616,
+      "max_depth_m": 0.00265026465058327,
+      "max_joint_length_error_m": 0.00710088899359107,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -1124,19 +1124,19 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 89.8666666666667,
+      "audit_query_cpu_us_per_tick": 81.2933333333333,
       "budget_evictions": 0,
       "case": "adjacent",
       "clip": "death_from_front_headshot",
       "direction": "front",
-      "handoff_pop_m": 0.00220107473433018,
-      "handoff_time": 1.11666666666667,
+      "handoff_pop_m": 0.0,
+      "handoff_time": 1.3,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 4,
-      "max_depth_m": 0.0296992585062981,
-      "max_joint_length_error_m": 0.0337846614420414,
-      "pass": false,
-      "reason": "disturbed",
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0110337175428867,
+      "max_joint_length_error_m": 0.0144763831049204,
+      "pass": true,
+      "reason": "planned",
       "trace": [
         {
           "clip": "death_from_front_headshot",
@@ -1156,26 +1156,26 @@
         {
           "event": "handoff",
           "full_ragdoll": true,
-          "pop_m": 0.00220107473433018,
-          "reason": "disturbed",
-          "time": 1.11666666666667
+          "pop_m": 0.0,
+          "reason": "planned",
+          "time": 1.3
         }
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 129.2,
+      "audit_query_cpu_us_per_tick": 73.02,
       "budget_evictions": 0,
       "case": "adjacent",
       "clip": "death_from_back_headshot",
       "direction": "back",
       "handoff_pop_m": 0.0,
-      "handoff_time": 0.233333333333333,
+      "handoff_time": 2.11666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0137141384184361,
-      "max_joint_length_error_m": 0.0376333631575108,
-      "pass": false,
-      "reason": "root_blocked",
+      "max_depth_m": 0.00687256827950478,
+      "max_joint_length_error_m": 0.0106454063206911,
+      "pass": true,
+      "reason": "planned",
       "trace": [
         {
           "clip": "death_from_back_headshot",
@@ -1187,13 +1187,13 @@
           "event": "handoff",
           "full_ragdoll": true,
           "pop_m": 0.0,
-          "reason": "root_blocked",
-          "time": 0.233333333333333
+          "reason": "planned",
+          "time": 2.11666666666666
         }
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 141.36,
+      "audit_query_cpu_us_per_tick": 111.566666666667,
       "budget_evictions": 0,
       "case": "adjacent",
       "clip": "none",
@@ -1202,9 +1202,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0136708654463291,
-      "max_joint_length_error_m": 0.0344764851033688,
-      "pass": false,
+      "max_depth_m": 0.0152407325804234,
+      "max_joint_length_error_m": 0.0161950066685677,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -1223,7 +1223,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 128.84,
+      "audit_query_cpu_us_per_tick": 112.806666666667,
       "budget_evictions": 0,
       "case": "adjacent",
       "clip": "none",
@@ -1231,9 +1231,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0136708654463291,
-      "max_joint_length_error_m": 0.0344764851033688,
+      "longest_penetration_frames": 17,
+      "max_depth_m": 0.0255652703344822,
+      "max_joint_length_error_m": 0.0158075988292694,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -1262,114 +1262,114 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 107.58,
+      "audit_query_cpu_us_per_tick": 115.233333333333,
       "budget_evictions": 0,
       "case": "corpse_behind",
       "clip": "death",
       "direction": "front",
       "handoff_pop_m": 0.0,
-      "handoff_time": 0.3,
-      "initial_depth_m": 0.0,
-      "longest_penetration_frames": 12,
-      "max_depth_m": 0.0300482865422964,
-      "max_joint_length_error_m": 0.0221583750098944,
-      "pass": false,
-      "reason": "root_blocked",
-      "trace": [
-        {
-          "clip": "death",
-          "event": "selection",
-          "reason": "clear",
-          "rejected": [
-            {
-              "id": "flying_back_death",
-              "reason": "weapon_not_eligible"
-            }
-          ]
-        },
-        {
-          "event": "handoff",
-          "full_ragdoll": true,
-          "pop_m": 0.0,
-          "reason": "root_blocked",
-          "time": 0.3
-        }
-      ]
-    },
-    {
-      "audit_query_cpu_us_per_tick": 109.106666666667,
-      "budget_evictions": 0,
-      "case": "corpse_behind",
-      "clip": "death_from_back_headshot",
-      "direction": "back",
-      "handoff_pop_m": 0.0,
-      "handoff_time": 0.183333333333333,
-      "initial_depth_m": 0.0,
-      "longest_penetration_frames": 2,
-      "max_depth_m": 0.0212902165949345,
-      "max_joint_length_error_m": 0.0393899902701378,
-      "pass": false,
-      "reason": "root_blocked",
-      "trace": [
-        {
-          "clip": "death_from_back_headshot",
-          "event": "selection",
-          "reason": "clear",
-          "rejected": []
-        },
-        {
-          "event": "handoff",
-          "full_ragdoll": true,
-          "pop_m": 0.0,
-          "reason": "root_blocked",
-          "time": 0.183333333333333
-        }
-      ]
-    },
-    {
-      "audit_query_cpu_us_per_tick": 204.646666666667,
-      "budget_evictions": 0,
-      "case": "corpse_behind",
-      "clip": "none",
-      "direction": "left",
-      "handoff_pop_m": 0.0,
-      "handoff_time": 0.0,
+      "handoff_time": 0.166666666666667,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.018158420920372,
-      "max_joint_length_error_m": 0.0556611195206642,
-      "pass": false,
-      "reason": "ragdoll_now",
-      "trace": [
-        {
-          "clip": "none",
-          "event": "selection",
-          "reason": "ragdoll_now",
-          "rejected": []
-        },
-        {
-          "event": "handoff",
-          "full_ragdoll": true,
-          "pop_m": 0.0,
-          "reason": "ragdoll_now",
-          "time": 0.0
-        }
-      ]
-    },
-    {
-      "audit_query_cpu_us_per_tick": 67.3533333333333,
-      "budget_evictions": 0,
-      "case": "corpse_behind",
-      "clip": "death_from_right",
-      "direction": "right",
-      "handoff_pop_m": 0.0,
-      "handoff_time": 2.01666666666666,
-      "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.00380105129443109,
-      "max_joint_length_error_m": 0.00460495706647635,
+      "max_depth_m": 0.0128575004637241,
+      "max_joint_length_error_m": 0.00988461077213287,
       "pass": true,
-      "reason": "planned",
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": [
+            {
+              "id": "flying_back_death",
+              "reason": "weapon_not_eligible"
+            }
+          ]
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.166666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 126.066666666667,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "death_from_back_headshot",
+      "direction": "back",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.216666666666667,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0130766779184341,
+      "max_joint_length_error_m": 0.0201048273593187,
+      "pass": false,
+      "reason": "root_blocked",
+      "trace": [
+        {
+          "clip": "death_from_back_headshot",
+          "event": "selection",
+          "reason": "clear",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "root_blocked",
+          "time": 0.216666666666667
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 170.413333333333,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "none",
+      "direction": "left",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.0,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0154696144163609,
+      "max_joint_length_error_m": 0.0174083542078733,
+      "pass": true,
+      "reason": "ragdoll_now",
+      "trace": [
+        {
+          "clip": "none",
+          "event": "selection",
+          "reason": "ragdoll_now",
+          "rejected": []
+        },
+        {
+          "event": "handoff",
+          "full_ragdoll": true,
+          "pop_m": 0.0,
+          "reason": "ragdoll_now",
+          "time": 0.0
+        }
+      ]
+    },
+    {
+      "audit_query_cpu_us_per_tick": 183.7,
+      "budget_evictions": 0,
+      "case": "corpse_behind",
+      "clip": "death_from_right",
+      "direction": "right",
+      "handoff_pop_m": 0.0,
+      "handoff_time": 0.1,
+      "initial_depth_m": 0.0,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0192827023565769,
+      "max_joint_length_error_m": 0.016322972252965,
+      "pass": true,
+      "reason": "root_blocked",
       "trace": [
         {
           "clip": "death_from_right",
@@ -1381,13 +1381,13 @@
           "event": "handoff",
           "full_ragdoll": true,
           "pop_m": 0.0,
-          "reason": "planned",
-          "time": 2.01666666666666
+          "reason": "root_blocked",
+          "time": 0.1
         }
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 123.44,
+      "audit_query_cpu_us_per_tick": 125.113333333333,
       "budget_evictions": 0,
       "case": "second_hit",
       "clip": "death",
@@ -1395,9 +1395,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0833333333333333,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 11,
-      "max_depth_m": 0.0342477411031723,
-      "max_joint_length_error_m": 0.0908190384507179,
+      "longest_penetration_frames": 6,
+      "max_depth_m": 0.0224832631647587,
+      "max_joint_length_error_m": 0.0171154253184795,
       "pass": false,
       "reason": "disturbed",
       "trace": [
@@ -1422,7 +1422,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 90.1133333333333,
+      "audit_query_cpu_us_per_tick": 147.32,
       "budget_evictions": 0,
       "case": "second_hit",
       "clip": "death_from_back_headshot",
@@ -1430,10 +1430,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0833333333333333,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0198020078241825,
-      "max_joint_length_error_m": 0.0259118750691414,
-      "pass": false,
+      "longest_penetration_frames": 1,
+      "max_depth_m": 0.0204664506018162,
+      "max_joint_length_error_m": 0.00793769489973783,
+      "pass": true,
       "reason": "disturbed",
       "trace": [
         {
@@ -1452,7 +1452,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 87.7333333333333,
+      "audit_query_cpu_us_per_tick": 130.86,
       "budget_evictions": 0,
       "case": "second_hit",
       "clip": "none",
@@ -1461,9 +1461,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00857581198215485,
-      "max_joint_length_error_m": 0.0373219437897205,
-      "pass": false,
+      "max_depth_m": 0.0163401402533054,
+      "max_joint_length_error_m": 0.0159521922469139,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -1482,7 +1482,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 120.653333333333,
+      "audit_query_cpu_us_per_tick": 124.873333333333,
       "budget_evictions": 0,
       "case": "second_hit",
       "clip": "death_from_right",
@@ -1490,9 +1490,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0833333333333333,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 14,
-      "max_depth_m": 0.02490309253335,
-      "max_joint_length_error_m": 0.0341434627771378,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.0190862491726875,
+      "max_joint_length_error_m": 0.0204759109765291,
       "pass": false,
       "reason": "disturbed",
       "trace": [
@@ -1512,7 +1512,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 116.08,
+      "audit_query_cpu_us_per_tick": 107.22,
       "budget_evictions": 0,
       "case": "moving_prop",
       "clip": "death",
@@ -1520,9 +1520,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.633333333333334,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 11,
-      "max_depth_m": 0.0252378024160862,
-      "max_joint_length_error_m": 0.029349360615015,
+      "longest_penetration_frames": 16,
+      "max_depth_m": 0.0254227258265018,
+      "max_joint_length_error_m": 0.0133874379098415,
       "pass": false,
       "reason": "root_blocked",
       "trace": [
@@ -1547,7 +1547,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 102.366666666667,
+      "audit_query_cpu_us_per_tick": 94.6466666666667,
       "budget_evictions": 0,
       "case": "moving_prop",
       "clip": "death_from_back_headshot",
@@ -1556,9 +1556,9 @@
       "handoff_time": 1.11666666666667,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0122045315802097,
-      "max_joint_length_error_m": 0.0399011597037315,
-      "pass": false,
+      "max_depth_m": 0.00973505154252052,
+      "max_joint_length_error_m": 0.0193334370851517,
+      "pass": true,
       "reason": "disturbed",
       "trace": [
         {
@@ -1577,7 +1577,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 89.8333333333333,
+      "audit_query_cpu_us_per_tick": 133.073333333333,
       "budget_evictions": 0,
       "case": "moving_prop",
       "clip": "none",
@@ -1585,9 +1585,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0165190249681473,
-      "max_joint_length_error_m": 0.048955611884594,
+      "longest_penetration_frames": 25,
+      "max_depth_m": 0.0223770588636398,
+      "max_joint_length_error_m": 0.0135796796530485,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -1607,7 +1607,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 124.613333333333,
+      "audit_query_cpu_us_per_tick": 148.473333333333,
       "budget_evictions": 0,
       "case": "moving_prop",
       "clip": "none",
@@ -1615,9 +1615,9 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 0,
-      "max_depth_m": 0.0166110843420029,
-      "max_joint_length_error_m": 0.0469414107501507,
+      "longest_penetration_frames": 23,
+      "max_depth_m": 0.0234564282000065,
+      "max_joint_length_error_m": 0.0135796796530485,
       "pass": false,
       "reason": "ragdoll_now",
       "trace": [
@@ -1646,7 +1646,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 109.646666666667,
+      "audit_query_cpu_us_per_tick": 80.3466666666667,
       "budget_evictions": 1,
       "case": "budget_full",
       "clip": "death",
@@ -1655,8 +1655,8 @@
       "handoff_time": 1.61666666666667,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00876094400882721,
-      "max_joint_length_error_m": 0.00705741252750158,
+      "max_depth_m": 0.00376327335834503,
+      "max_joint_length_error_m": 0.00170945411082357,
       "pass": true,
       "reason": "planned",
       "trace": [
@@ -1681,7 +1681,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 78.16,
+      "audit_query_cpu_us_per_tick": 68.5533333333333,
       "budget_evictions": 1,
       "case": "budget_full",
       "clip": "death_from_back_headshot",
@@ -1689,10 +1689,10 @@
       "handoff_pop_m": 0.0,
       "handoff_time": 2.11666666666666,
       "initial_depth_m": 0.0,
-      "longest_penetration_frames": 3,
-      "max_depth_m": 0.0286702550947666,
-      "max_joint_length_error_m": 0.00794759765267372,
-      "pass": false,
+      "longest_penetration_frames": 0,
+      "max_depth_m": 0.00635099783539772,
+      "max_joint_length_error_m": 0.00990855880081654,
+      "pass": true,
       "reason": "planned",
       "trace": [
         {
@@ -1711,7 +1711,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 158.853333333333,
+      "audit_query_cpu_us_per_tick": 113.446666666667,
       "budget_evictions": 1,
       "case": "budget_full",
       "clip": "none",
@@ -1720,9 +1720,9 @@
       "handoff_time": 0.0,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.0139484703540802,
-      "max_joint_length_error_m": 0.0336215905845165,
-      "pass": false,
+      "max_depth_m": 0.0154696144163609,
+      "max_joint_length_error_m": 0.0174083542078733,
+      "pass": true,
       "reason": "ragdoll_now",
       "trace": [
         {
@@ -1741,7 +1741,7 @@
       ]
     },
     {
-      "audit_query_cpu_us_per_tick": 90.0266666666667,
+      "audit_query_cpu_us_per_tick": 76.8866666666667,
       "budget_evictions": 1,
       "case": "budget_full",
       "clip": "death_from_right",
@@ -1750,8 +1750,8 @@
       "handoff_time": 2.01666666666666,
       "initial_depth_m": 0.0,
       "longest_penetration_frames": 0,
-      "max_depth_m": 0.00357449403963983,
-      "max_joint_length_error_m": 0.00488454103469849,
+      "max_depth_m": 0.00390547863207757,
+      "max_joint_length_error_m": 0.00355227966792881,
       "pass": true,
       "reason": "planned",
       "trace": [
