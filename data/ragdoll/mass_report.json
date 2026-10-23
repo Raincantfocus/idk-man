@@ -1,0 +1,250 @@
+{
+  "base_kg": 80,
+  "profiles": {
+    "rusher": {
+      "total_kg": 84.0,
+      "bodies": {
+        "Hips": 16.080000000000002,
+        "Spine": 11.200000000000001,
+        "Chest": 16.4,
+        "Head": 6.4,
+        "LeftUpperArm": 2.2399999999999998,
+        "RightUpperArm": 2.2399999999999998,
+        "LeftLowerArm": 1.2800000000000002,
+        "RightLowerArm": 1.2800000000000002,
+        "LeftHand": 0.48,
+        "RightHand": 0.48,
+        "LeftUpperLeg": 8.0,
+        "RightUpperLeg": 8.0,
+        "LeftLowerLeg": 3.7600000000000002,
+        "RightLowerLeg": 3.7600000000000002,
+        "LeftFoot": 1.2000000000000002,
+        "RightFoot": 1.2000000000000002
+      }
+    },
+    "enforcer": {
+      "total_kg": 92.0,
+      "bodies": {
+        "Hips": 17.080000000000002,
+        "Spine": 11.200000000000001,
+        "Chest": 22.4,
+        "Head": 7.4,
+        "LeftUpperArm": 2.2399999999999998,
+        "RightUpperArm": 2.2399999999999998,
+        "LeftLowerArm": 1.2800000000000002,
+        "RightLowerArm": 1.2800000000000002,
+        "LeftHand": 0.48,
+        "RightHand": 0.48,
+        "LeftUpperLeg": 8.0,
+        "RightUpperLeg": 8.0,
+        "LeftLowerLeg": 3.7600000000000002,
+        "RightLowerLeg": 3.7600000000000002,
+        "LeftFoot": 1.2000000000000002,
+        "RightFoot": 1.2000000000000002
+      }
+    },
+    "shield": {
+      "total_kg": 102.0,
+      "bodies": {
+        "Hips": 19.080000000000002,
+        "Spine": 11.200000000000001,
+        "Chest": 29.4,
+        "Head": 8.4,
+        "LeftUpperArm": 2.2399999999999998,
+        "RightUpperArm": 2.2399999999999998,
+        "LeftLowerArm": 1.2800000000000002,
+        "RightLowerArm": 1.2800000000000002,
+        "LeftHand": 0.48,
+        "RightHand": 0.48,
+        "LeftUpperLeg": 8.0,
+        "RightUpperLeg": 8.0,
+        "LeftLowerLeg": 3.7600000000000002,
+        "RightLowerLeg": 3.7600000000000002,
+        "LeftFoot": 1.2000000000000002,
+        "RightFoot": 1.2000000000000002
+      }
+    },
+    "flusher": {
+      "total_kg": 89.0,
+      "bodies": {
+        "Hips": 17.080000000000002,
+        "Spine": 11.200000000000001,
+        "Chest": 19.4,
+        "Head": 7.4,
+        "LeftUpperArm": 2.2399999999999998,
+        "RightUpperArm": 2.2399999999999998,
+        "LeftLowerArm": 1.2800000000000002,
+        "RightLowerArm": 1.2800000000000002,
+        "LeftHand": 0.48,
+        "RightHand": 0.48,
+        "LeftUpperLeg": 8.0,
+        "RightUpperLeg": 8.0,
+        "LeftLowerLeg": 3.7600000000000002,
+        "RightLowerLeg": 3.7600000000000002,
+        "LeftFoot": 1.2000000000000002,
+        "RightFoot": 1.2000000000000002
+      }
+    },
+    "elite": {
+      "total_kg": 96.0,
+      "bodies": {
+        "Hips": 17.580000000000002,
+        "Spine": 11.200000000000001,
+        "Chest": 25.4,
+        "Head": 7.9,
+        "LeftUpperArm": 2.2399999999999998,
+        "RightUpperArm": 2.2399999999999998,
+        "LeftLowerArm": 1.2800000000000002,
+        "RightLowerArm": 1.2800000000000002,
+        "LeftHand": 0.48,
+        "RightHand": 0.48,
+        "LeftUpperLeg": 8.0,
+        "RightUpperLeg": 8.0,
+        "LeftLowerLeg": 3.7600000000000002,
+        "RightLowerLeg": 3.7600000000000002,
+        "LeftFoot": 1.2000000000000002,
+        "RightFoot": 1.2000000000000002
+      }
+    }
+  },
+  "adjacent_ratio_exceptions": [
+    {
+      "role": "rusher",
+      "body": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "rusher",
+      "body": "LeftUpperArm",
+      "parent": "Chest",
+      "ratio": 7.321428571428571
+    },
+    {
+      "role": "rusher",
+      "body": "RightFoot",
+      "parent": "RightLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "rusher",
+      "body": "RightUpperArm",
+      "parent": "Chest",
+      "ratio": 7.321428571428571
+    },
+    {
+      "role": "enforcer",
+      "body": "Head",
+      "parent": "Chest",
+      "ratio": 3.0270270270270268
+    },
+    {
+      "role": "enforcer",
+      "body": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "enforcer",
+      "body": "LeftUpperArm",
+      "parent": "Chest",
+      "ratio": 10.0
+    },
+    {
+      "role": "enforcer",
+      "body": "RightFoot",
+      "parent": "RightLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "enforcer",
+      "body": "RightUpperArm",
+      "parent": "Chest",
+      "ratio": 10.0
+    },
+    {
+      "role": "shield",
+      "body": "Head",
+      "parent": "Chest",
+      "ratio": 3.4999999999999996
+    },
+    {
+      "role": "shield",
+      "body": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "shield",
+      "body": "LeftUpperArm",
+      "parent": "Chest",
+      "ratio": 13.125
+    },
+    {
+      "role": "shield",
+      "body": "RightFoot",
+      "parent": "RightLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "shield",
+      "body": "RightUpperArm",
+      "parent": "Chest",
+      "ratio": 13.125
+    },
+    {
+      "role": "flusher",
+      "body": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "flusher",
+      "body": "LeftUpperArm",
+      "parent": "Chest",
+      "ratio": 8.660714285714286
+    },
+    {
+      "role": "flusher",
+      "body": "RightFoot",
+      "parent": "RightLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "flusher",
+      "body": "RightUpperArm",
+      "parent": "Chest",
+      "ratio": 8.660714285714286
+    },
+    {
+      "role": "elite",
+      "body": "Head",
+      "parent": "Chest",
+      "ratio": 3.2151898734177213
+    },
+    {
+      "role": "elite",
+      "body": "LeftFoot",
+      "parent": "LeftLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "elite",
+      "body": "LeftUpperArm",
+      "parent": "Chest",
+      "ratio": 11.339285714285715
+    },
+    {
+      "role": "elite",
+      "body": "RightFoot",
+      "parent": "RightLowerLeg",
+      "ratio": 3.133333333333333
+    },
+    {
+      "role": "elite",
+      "body": "RightUpperArm",
+      "parent": "Chest",
+      "ratio": 11.339285714285715
+    }
+  ]
+}

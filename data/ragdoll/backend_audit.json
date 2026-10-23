@@ -1,0 +1,72 @@
+{
+  "backend": "Jolt Physics",
+  "engine": "4.6.3-stable (official)",
+  "tests": [
+    {
+      "honored": true,
+      "property": "CONE_TWIST_JOINT_SWING_SPAN",
+      "read": 0.600000023841858,
+      "set": 0.6
+    },
+    {
+      "honored": true,
+      "property": "CONE_TWIST_JOINT_TWIST_SPAN",
+      "read": 0.400000005960464,
+      "set": 0.4
+    },
+    {
+      "honored": false,
+      "property": "CONE_TWIST_JOINT_BIAS",
+      "read": 0.300000011920929,
+      "set": 0.9
+    },
+    {
+      "honored": false,
+      "property": "CONE_TWIST_JOINT_SOFTNESS",
+      "read": 0.800000011920929,
+      "set": 0.2
+    },
+    {
+      "honored": false,
+      "property": "CONE_TWIST_JOINT_RELAXATION",
+      "read": 1.0,
+      "set": 0.5
+    },
+    {
+      "honored": true,
+      "property": "HINGE_JOINT_LIMIT_LOWER",
+      "read": -0.100000001490116,
+      "set": -0.1
+    },
+    {
+      "honored": true,
+      "property": "HINGE_JOINT_LIMIT_UPPER",
+      "read": 2.40000009536743,
+      "set": 2.4
+    },
+    {
+      "honored": false,
+      "property": "HINGE_JOINT_BIAS",
+      "read": 0.300000011920929,
+      "set": 0.9
+    },
+    {
+      "honored": false,
+      "property": "HINGE_JOINT_LIMIT_BIAS",
+      "read": 0.300000011920929,
+      "set": 0.9
+    },
+    {
+      "honored": false,
+      "property": "HINGE_JOINT_LIMIT_SOFTNESS",
+      "read": 0.899999976158142,
+      "set": 0.2
+    },
+    {
+      "honored": false,
+      "property": "HINGE_JOINT_LIMIT_RELAXATION",
+      "read": 1.0,
+      "set": 0.5
+    }
+  ]
+}

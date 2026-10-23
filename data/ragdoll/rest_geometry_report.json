@@ -1,0 +1,204 @@
+{
+  "bodies": {
+    "Chest": {
+      "center_m": [
+        -0.0000000000609534644979703,
+        1.38567280769348,
+        -0.0140172345563769
+      ],
+      "height_m": 0.293142348527908,
+      "mass_kg": 22.3999996185303,
+      "parent": "Spine",
+      "radius_m": 0.119999997317791,
+      "shape": "CapsuleShape3D"
+    },
+    "Head": {
+      "center_m": [
+        -0.00000000012190598530637,
+        1.73294568061829,
+        -0.0280344765633345
+      ],
+      "height_m": 0.180000007152557,
+      "mass_kg": 7.40000009536743,
+      "parent": "Chest",
+      "radius_m": 0.0900000035762787,
+      "shape": "SphereShape3D"
+    },
+    "Hips": {
+      "center_m": [
+        0.0,
+        1.01266968250275,
+        0.0000000149011611938477
+      ],
+      "mass_kg": 17.0799999237061,
+      "parent": "",
+      "shape": "BoxShape3D",
+      "size_m": [
+        0.200000002980232,
+        0.0799999982118607,
+        0.140000000596046
+      ]
+    },
+    "LeftFoot": {
+      "center_m": [
+        0.113021925091743,
+        0.0935797244310379,
+        0.133638128638268
+      ],
+      "height_m": 0.123886562883854,
+      "mass_kg": 1.20000004768372,
+      "parent": "LeftLowerLeg",
+      "radius_m": 0.025000000372529,
+      "shape": "CapsuleShape3D"
+    },
+    "LeftHand": {
+      "center_m": [
+        0.728568613529205,
+        1.56221890449524,
+        0.0140172839164734
+      ],
+      "height_m": 0.096000000834465,
+      "mass_kg": 0.479999989271164,
+      "parent": "LeftLowerArm",
+      "radius_m": 0.0350000001490116,
+      "shape": "CapsuleShape3D"
+    },
+    "LeftLowerArm": {
+      "center_m": [
+        0.59346616268158,
+        1.50221884250641,
+        0.0140172895044088
+      ],
+      "height_m": 0.216163873672485,
+      "mass_kg": 1.27999997138977,
+      "parent": "LeftUpperArm",
+      "radius_m": 0.0350000001490116,
+      "shape": "CapsuleShape3D"
+    },
+    "LeftLowerLeg": {
+      "center_m": [
+        0.113021925091743,
+        0.318693429231644,
+        0.0562090389430523
+      ],
+      "height_m": 0.360181957483292,
+      "mass_kg": 3.75999999046326,
+      "parent": "LeftUpperLeg",
+      "radius_m": 0.0450000017881393,
+      "shape": "CapsuleShape3D"
+    },
+    "LeftUpperArm": {
+      "center_m": [
+        0.327464044094086,
+        1.50221884250641,
+        0.0140172997489572
+      ],
+      "height_m": 0.209439590573311,
+      "mass_kg": 2.24000000953674,
+      "parent": "Chest",
+      "radius_m": 0.0450000017881393,
+      "shape": "CapsuleShape3D"
+    },
+    "LeftUpperLeg": {
+      "center_m": [
+        0.113021925091743,
+        0.764997005462646,
+        0.056209035217762
+      ],
+      "height_m": 0.353903830051422,
+      "mass_kg": 8.0,
+      "parent": "Hips",
+      "radius_m": 0.0649999976158142,
+      "shape": "CapsuleShape3D"
+    },
+    "RightFoot": {
+      "center_m": [
+        -0.113021925091743,
+        0.0935797244310379,
+        0.13363815844059
+      ],
+      "height_m": 0.123886562883854,
+      "mass_kg": 1.20000004768372,
+      "parent": "RightLowerLeg",
+      "radius_m": 0.025000000372529,
+      "shape": "CapsuleShape3D"
+    },
+    "RightHand": {
+      "center_m": [
+        -0.728568613529205,
+        1.56221890449524,
+        0.0140172839164734
+      ],
+      "height_m": 0.096000000834465,
+      "mass_kg": 0.479999989271164,
+      "parent": "RightLowerArm",
+      "radius_m": 0.0350000001490116,
+      "shape": "CapsuleShape3D"
+    },
+    "RightLowerArm": {
+      "center_m": [
+        -0.59346616268158,
+        1.50221884250641,
+        0.0140172895044088
+      ],
+      "height_m": 0.216163873672485,
+      "mass_kg": 1.27999997138977,
+      "parent": "RightUpperArm",
+      "radius_m": 0.0350000001490116,
+      "shape": "CapsuleShape3D"
+    },
+    "RightLowerLeg": {
+      "center_m": [
+        -0.113021925091743,
+        0.318693429231644,
+        0.0562090501189232
+      ],
+      "height_m": 0.360181957483292,
+      "mass_kg": 3.75999999046326,
+      "parent": "RightUpperLeg",
+      "radius_m": 0.0450000017881393,
+      "shape": "CapsuleShape3D"
+    },
+    "RightUpperArm": {
+      "center_m": [
+        -0.327464044094086,
+        1.50221884250641,
+        0.0140172997489572
+      ],
+      "height_m": 0.209439590573311,
+      "mass_kg": 2.24000000953674,
+      "parent": "Chest",
+      "radius_m": 0.0450000017881393,
+      "shape": "CapsuleShape3D"
+    },
+    "RightUpperLeg": {
+      "center_m": [
+        -0.113021925091743,
+        0.764997005462646,
+        0.0562090426683426
+      ],
+      "height_m": 0.353903830051422,
+      "mass_kg": 8.0,
+      "parent": "Hips",
+      "radius_m": 0.0649999976158142,
+      "shape": "CapsuleShape3D"
+    },
+    "Spine": {
+      "center_m": [
+        -0.0000000000000000251534904016637,
+        1.13508379459381,
+        0.0000000149011611938477
+      ],
+      "mass_kg": 11.1999998092651,
+      "parent": "Hips",
+      "shape": "BoxShape3D",
+      "size_m": [
+        0.180000007152557,
+        0.0799999982118607,
+        0.119999997317791
+      ]
+    }
+  },
+  "method": "Jolt shape contacts in skeleton rest space; zero query margin",
+  "overlaps": []
+}

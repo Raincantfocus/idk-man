@@ -1,0 +1,296 @@
+{
+  "world_mask": 1,
+  "prop_mask": 4,
+  "corpse_layer": 16,
+  "collision_mask": 21,
+  "max_full_ragdolls": 6,
+  "max_corpses": 18,
+  "max_lite_bodies": 8,
+  "handoff_fraction": 0.65,
+  "flying_handoff_fraction": 0.35,
+  "blend_seconds": 0.18,
+  "blocked_root_fraction": 0.6,
+  "blocked_root_ticks": 3,
+  "support_distance_m": 0.3,
+  "disturbance_impulse_threshold": 8.0,
+  "max_hit_impulse": 160.0,
+  "max_linear_speed": 12.0,
+  "max_angular_speed": 25.0,
+  "linear_damping": 0.2,
+  "angular_damping": 2.0,
+  "settle_seconds": 7.0,
+  "query_margin_m": 0.002,
+  "max_depenetration_m": 0.009,
+  "sleep_linear_speed": 0.1,
+  "sleep_angular_speed": 0.15,
+  "sleep_stable_seconds": 0.6,
+  "clearance_interval_seconds": 0.1,
+  "handoff_pop_limit_m": 0.01,
+  "penetration_limit_m": 0.02,
+  "penetration_frames_limit": 2,
+  "flying_allowed_tags": [
+    "shotgun",
+    "high_caliber"
+  ],
+  "weapons": {
+    "m4a1": [],
+    "usp45": [],
+    "spas12": [
+      "shotgun"
+    ]
+  },
+  "key_radii": {
+    "Head": 0.07,
+    "Chest": 0.1,
+    "Hips": 0.1,
+    "LeftHand": 0.035,
+    "RightHand": 0.035,
+    "LeftFoot": 0.025,
+    "RightFoot": 0.025,
+    "LeftLowerLeg": 0.045,
+    "RightLowerLeg": 0.045
+  },
+  "cone_axis_rotation_radians": [
+    0.0,
+    0.0,
+    1.5707963267948966
+  ],
+  "bones": [
+    {
+      "name": "Hips",
+      "tip": "Spine",
+      "mass": 17.080000000000002,
+      "radius": 0.1,
+      "swing": 12.0,
+      "twist": 12.0,
+      "base_mass": 14.080000000000002,
+      "joint_kind": "cone",
+      "shape_kind": "box",
+      "box_size_m": [
+        0.2,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "name": "Spine",
+      "tip": "Chest",
+      "radius": 0.085,
+      "swing": 12.0,
+      "twist": 12.0,
+      "base_mass": 11.200000000000001,
+      "mass": 11.200000000000001,
+      "joint_kind": "cone",
+      "shape_kind": "box",
+      "box_size_m": [
+        0.18,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "name": "Chest",
+      "tip": "Neck",
+      "mass": 22.4,
+      "radius": 0.12,
+      "swing": 12.0,
+      "twist": 12.0,
+      "base_mass": 14.4,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "Head",
+      "tip": "",
+      "mass": 7.4,
+      "radius": 0.09,
+      "swing": 38.0,
+      "twist": 40.0,
+      "base_mass": 6.4,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "LeftUpperArm",
+      "tip": "LeftLowerArm",
+      "mass": 2.2399999999999998,
+      "radius": 0.045,
+      "swing": 85.0,
+      "twist": 40.0,
+      "base_mass": 2.2399999999999998,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "RightUpperArm",
+      "tip": "RightLowerArm",
+      "mass": 2.2399999999999998,
+      "radius": 0.045,
+      "swing": 85.0,
+      "twist": 40.0,
+      "base_mass": 2.2399999999999998,
+      "joint_kind": "cone",
+      "neutral_twist_degrees": -90.0
+    },
+    {
+      "name": "LeftLowerArm",
+      "tip": "LeftHand",
+      "mass": 1.2800000000000002,
+      "radius": 0.035,
+      "swing": 60,
+      "twist": 20,
+      "base_mass": 1.2800000000000002,
+      "joint_kind": "hinge",
+      "lower_degrees": -5.0,
+      "upper_degrees": 145.0
+    },
+    {
+      "name": "RightLowerArm",
+      "tip": "RightHand",
+      "mass": 1.2800000000000002,
+      "radius": 0.035,
+      "swing": 60,
+      "twist": 20,
+      "base_mass": 1.2800000000000002,
+      "joint_kind": "hinge",
+      "lower_degrees": -5.0,
+      "upper_degrees": 145.0
+    },
+    {
+      "name": "LeftHand",
+      "tip": "",
+      "mass": 0.48,
+      "radius": 0.035,
+      "swing": 45.0,
+      "twist": 20.0,
+      "base_mass": 0.48,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "RightHand",
+      "tip": "",
+      "mass": 0.48,
+      "radius": 0.035,
+      "swing": 45.0,
+      "twist": 20.0,
+      "base_mass": 0.48,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "LeftUpperLeg",
+      "tip": "LeftLowerLeg",
+      "mass": 8.0,
+      "radius": 0.065,
+      "swing": 65.0,
+      "twist": 30.0,
+      "base_mass": 8.0,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "RightUpperLeg",
+      "tip": "RightLowerLeg",
+      "mass": 8.0,
+      "radius": 0.065,
+      "swing": 65.0,
+      "twist": 30.0,
+      "base_mass": 8.0,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "LeftLowerLeg",
+      "tip": "LeftFoot",
+      "mass": 3.7600000000000002,
+      "radius": 0.045,
+      "swing": 65,
+      "twist": 10,
+      "base_mass": 3.7600000000000002,
+      "joint_kind": "hinge",
+      "lower_degrees": 0.0,
+      "upper_degrees": 140.0
+    },
+    {
+      "name": "RightLowerLeg",
+      "tip": "RightFoot",
+      "mass": 3.7600000000000002,
+      "radius": 0.045,
+      "swing": 65,
+      "twist": 10,
+      "base_mass": 3.7600000000000002,
+      "joint_kind": "hinge",
+      "lower_degrees": 0.0,
+      "upper_degrees": 140.0
+    },
+    {
+      "name": "LeftFoot",
+      "tip": "LeftToes",
+      "mass": 1.2000000000000002,
+      "radius": 0.025,
+      "swing": 25.0,
+      "twist": 8.0,
+      "base_mass": 1.2000000000000002,
+      "joint_kind": "cone"
+    },
+    {
+      "name": "RightFoot",
+      "tip": "RightToes",
+      "mass": 1.2000000000000002,
+      "radius": 0.025,
+      "swing": 25.0,
+      "twist": 8.0,
+      "base_mass": 1.2000000000000002,
+      "joint_kind": "cone",
+      "neutral_twist_degrees": 15.0
+    }
+  ],
+  "gravity_scale": 1.4,
+  "friction": 0.9,
+  "bounce": 0.02,
+  "mass_role": "enforcer",
+  "settle_curve": {
+    "start_seconds": 0.3,
+    "end_seconds": 1.5,
+    "linear_start": 0.2,
+    "linear_end": 0.5,
+    "angular_start": 2.0,
+    "angular_end": 5.0
+  },
+  "guard": {
+    "soft_m": 0.01,
+    "hard_m": 0.025,
+    "angle_extra_degrees": 10.0,
+    "consecutive_ticks": 3,
+    "boost_ticks": 6,
+    "boost_damping": 5.0,
+    "relative_speed_cap": 0.5
+  },
+  "transfer": {
+    "linear_cap": 5.0,
+    "angular_cap": 8.0,
+    "delta_v_cap": 5.0,
+    "distance_floor_m": 0.25
+  },
+  "roles": {
+    "rusher": {
+      "Chest": 2.0,
+      "Hips": 2.0,
+      "Head": 0.0
+    },
+    "enforcer": {
+      "Chest": 8.0,
+      "Hips": 3.0,
+      "Head": 1.0
+    },
+    "shield": {
+      "Chest": 15.0,
+      "Hips": 5.0,
+      "Head": 2.0
+    },
+    "flusher": {
+      "Chest": 5.0,
+      "Hips": 3.0,
+      "Head": 1.0
+    },
+    "elite": {
+      "Chest": 11.0,
+      "Hips": 3.5,
+      "Head": 1.5
+    }
+  }
+}
