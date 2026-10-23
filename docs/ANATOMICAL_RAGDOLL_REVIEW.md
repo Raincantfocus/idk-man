@@ -2,6 +2,18 @@
 
 2026-10-23. Godot 4.6.3 official (`7d41c59c4`), Jolt. This is a separate experimental review. The previous death-handoff review and playable game are unchanged. This does **not** complete the supplied requirements.
 
+## Playback fix — 2026-10-23
+
+The previous download defaulted directly to collision-aware death selection. Clearance could reject all candidates, and floor contact could interrupt a selected clip before visible motion. The failed ragdoll guard then froze the pose. Changing the scenario did restart the test, but did not provide a usable animation preview.
+
+The review now defaults to **Animation preview**. Each of the 12 death clips has a button; selecting one replays the full authored motion without clearance interruption or ragdoll handoff. **Restart** and scenario changes replay the selection. Direction buttons return to automatic directional selection. Switching to rifle disables flying clips and falls back to an eligible clip. **Collision test** explicitly restores collision-aware selection and the existing unapproved ragdoll behavior. Selecting an individual clip returns to preview mode. Preview may pass through obstacles: it does not certify collision, skinning or ragdoll quality.
+
+`tools/ragdoll/test_preview.gd` emits the actual button signals: all 12 clips change 71 bone transforms and reach their end; all seven scenarios start playback; pause/restart resumes; rifle disables flying; collision mode receives exactly one lethal presentation event. Native screenshots at 0.1, 0.8 and 1.4 seconds of `death_from_right` were captured and inspected, showing different poses. Software-rendered captures are not performance evidence.
+
+![Preview early pose](ragdoll-captures/preview_early.png)
+
+![Preview later pose](ragdoll-captures/preview_late.png)
+
 ## Result and scope
 
 Twenty rifle cases (five mass profiles × four hit directions), 180 ticks each at 60 Hz: **0/20 accepted** under the new criteria. All 20 reached exactly one presentation handoff. Rest-pose collider audit: **16 bodies, zero overlapping pairs** in native Jolt shape queries with zero query margin. Three earlier overlaps were removed by using pelvis/abdomen boxes and toe-aligned foot capsules.
@@ -136,7 +148,7 @@ The capture script selects the three largest joint-separation rows from the head
 
 ## Run
 
-Use the separate `zero-line-anatomical-ragdoll-review.zip`, open `project.godot` in Godot 4.6.3 and press F5. It displays **REJECTED CANDIDATE** and a per-joint limits/separation overlay. The prior death-handoff ZIP remains unchanged.
+Use the separate `zero-line-anatomical-ragdoll-review.zip`, open `project.godot` in Godot 4.6.3 and press F5. It opens in **Animation preview**. **Collision test** displays **REJECTED CANDIDATE** and the per-joint limits/separation overlay. The prior death-handoff ZIP remains unchanged.
 
 ```sh
 godot --headless --path . --script tools/ragdoll/check_api.gd

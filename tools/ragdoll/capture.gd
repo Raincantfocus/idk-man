@@ -7,7 +7,7 @@ func run() -> void:
  cases.sort_custom(func(a:Dictionary,b:Dictionary)->bool:return float(a.max_joint_separation_cm)>float(b.max_joint_separation_cm))
  for row: Dictionary in cases.slice(0,3):
   var direction: String=row.direction
-  var scene: Node=(load("res://ragdoll_review.tscn") as PackedScene).instantiate();root.add_child(scene);scene.settings.mass_role=row.role_mass_profile;scene.select("rifle");scene.select(direction)
+  var scene: Node=(load("res://ragdoll_review.tscn") as PackedScene).instantiate();root.add_child(scene);scene.settings.mass_role=row.role_mass_profile;scene.select("Collision test");scene.select("rifle");scene.select(direction)
   for i: int in 180:await physics_frame
   var actor: Node=scene.actor
   actor.simulator.physical_bones_stop_simulation();actor.simulator.active=false;actor.simulator.influence=0.0
