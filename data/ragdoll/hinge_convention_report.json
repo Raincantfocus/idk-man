@@ -1,0 +1,62 @@
+{
+  "backend": "Jolt Physics",
+  "cases": [
+    {
+      "final_flexion_degrees": -5.00025701522827,
+      "initial_flexion_degrees": -60.0,
+      "lower": -5.0,
+      "pass": true,
+      "upper": 145.0
+    },
+    {
+      "final_flexion_degrees": 60.0,
+      "initial_flexion_degrees": 60.0,
+      "lower": -5.0,
+      "pass": true,
+      "upper": 145.0
+    },
+    {
+      "final_flexion_degrees": 120.0,
+      "initial_flexion_degrees": 120.0,
+      "lower": -5.0,
+      "pass": true,
+      "upper": 145.0
+    },
+    {
+      "final_flexion_degrees": 145.000213623047,
+      "initial_flexion_degrees": 170.0,
+      "lower": -5.0,
+      "pass": true,
+      "upper": 145.0
+    },
+    {
+      "final_flexion_degrees": -0.000284128938801587,
+      "initial_flexion_degrees": -60.0,
+      "lower": 0.0,
+      "pass": true,
+      "upper": 140.0
+    },
+    {
+      "final_flexion_degrees": 60.0,
+      "initial_flexion_degrees": 60.0,
+      "lower": 0.0,
+      "pass": true,
+      "upper": 140.0
+    },
+    {
+      "final_flexion_degrees": 120.0,
+      "initial_flexion_degrees": 120.0,
+      "lower": 0.0,
+      "pass": true,
+      "upper": 140.0
+    },
+    {
+      "final_flexion_degrees": 140.000259399414,
+      "initial_flexion_degrees": 170.0,
+      "lower": 0.0,
+      "pass": true,
+      "upper": 140.0
+    }
+  ],
+  "engine": "4.6.3-stable (official)"
+}

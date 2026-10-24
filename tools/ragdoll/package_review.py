@@ -20,7 +20,7 @@ for name in ('project.godot', 'death_review.tscn'):
 files['ragdoll_review.tscn'] = repo / 'tools/ragdoll/ragdoll_review.tscn'
 for source in (repo / 'data/ragdoll').glob('*'):
     if source.is_file(): files['data/ragdoll/' + source.name] = source
-for name in ('docs/RAGDOLL_REQUIREMENTS.md', 'docs/ANATOMICAL_RAGDOLL_REVIEW.md', 'docs/DEATH_HANDOFF_REVIEW.md', 'docs/BODY_GEAR_CLIPPING_REVIEW.md',
+for name in ('docs/HINGE_CONVENTION_REVIEW.md', 'docs/RAGDOLL_REQUIREMENTS.md', 'docs/ANATOMICAL_RAGDOLL_REVIEW.md', 'docs/DEATH_HANDOFF_REVIEW.md', 'docs/BODY_GEAR_CLIPPING_REVIEW.md',
              'assets/characters/provenance.json', 'assets/characters/licenses/LICENSE.md',
              'assets/characters/licenses/LICENSE.ASSETS.md', 'THIRD_PARTY_NOTICES.md'):
     files[name] = repo / name

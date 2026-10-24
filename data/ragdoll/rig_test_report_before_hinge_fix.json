@@ -1,0 +1,1629 @@
+{
+  "cases": [
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "front",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 375.0,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.3690572607638,
+      "max_joint_separation_cm": 3.36275510489941,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689948081970215,
+      "max_spin_rad_s": 10.590235710144,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "rusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "back",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 404.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.3691043721115,
+      "max_joint_separation_cm": 3.36275473237038,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689948260784149,
+      "max_spin_rad_s": 10.5874347686768,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "rusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "left",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 417.8,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.3690829578629,
+      "max_joint_separation_cm": 3.36275286972523,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414194371509,
+      "max_speed_m_s": 0.689933478832245,
+      "max_spin_rad_s": 10.5869026184082,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "rusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "right",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 736.8,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.3691043721115,
+      "max_joint_separation_cm": 3.36275473237038,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689948260784149,
+      "max_spin_rad_s": 10.5874347686768,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "rusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "front",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 380.4,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.6909622267265,
+      "max_joint_separation_cm": 3.42369601130486,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414505394752,
+      "max_speed_m_s": 0.689413368701935,
+      "max_spin_rad_s": 10.7718057632446,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "enforcer",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "back",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 433.0,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.6909819191849,
+      "max_joint_separation_cm": 3.42369824647903,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.68941342830658,
+      "max_spin_rad_s": 10.7706909179688,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "enforcer",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "left",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 352.6,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.6909947620923,
+      "max_joint_separation_cm": 3.42369377613068,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414194371509,
+      "max_speed_m_s": 0.689398944377899,
+      "max_spin_rad_s": 10.7698230743408,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "enforcer",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "right",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 372.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.6909819191849,
+      "max_joint_separation_cm": 3.42369824647903,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.68941342830658,
+      "max_spin_rad_s": 10.7706909179688,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "enforcer",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "front",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 500.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.9267674960934,
+      "max_joint_separation_cm": 3.4688375890255,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.688985347747803,
+      "max_spin_rad_s": 10.952898979187,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "shield",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "back",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 481.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.9267846148067,
+      "max_joint_separation_cm": 3.46884839236736,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.688985168933868,
+      "max_spin_rad_s": 10.958477973938,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "shield",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "left",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 370.8,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.9267572248653,
+      "max_joint_separation_cm": 3.46885547041893,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414194371509,
+      "max_speed_m_s": 0.688970923423767,
+      "max_spin_rad_s": 10.955849647522,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "shield",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "right",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 352.4,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.9267846148067,
+      "max_joint_separation_cm": 3.46884839236736,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.688985168933868,
+      "max_spin_rad_s": 10.958477973938,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "shield",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "front",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 1499.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.5506609238661,
+      "max_joint_separation_cm": 3.39712910354137,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414505394752,
+      "max_speed_m_s": 0.689641356468201,
+      "max_spin_rad_s": 10.7152643203735,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "flusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "back",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 355.6,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.550587705559,
+      "max_joint_separation_cm": 3.39712984859943,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689641833305359,
+      "max_spin_rad_s": 10.7052536010742,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "flusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "left",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 432.0,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.550694321688,
+      "max_joint_separation_cm": 3.39714586734772,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414194371509,
+      "max_speed_m_s": 0.689627528190613,
+      "max_spin_rad_s": 10.7028532028198,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "flusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "right",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 500.8,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.550587705559,
+      "max_joint_separation_cm": 3.39712984859943,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689641833305359,
+      "max_spin_rad_s": 10.7052536010742,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "flusher",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "front",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 367.6,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.8050873754626,
+      "max_joint_separation_cm": 3.44547815620899,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689188241958618,
+      "max_spin_rad_s": 10.849006652832,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "elite",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "back",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 442.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.8050723942887,
+      "max_joint_separation_cm": 3.4454707056284,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689188301563263,
+      "max_spin_rad_s": 10.8483743667603,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "elite",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "left",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 458.2,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.8050762465906,
+      "max_joint_separation_cm": 3.44548970460892,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23414194371509,
+      "max_speed_m_s": 0.689173877239227,
+      "max_spin_rad_s": 10.8487482070923,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "elite",
+      "sampled_skin_edges": 152
+    },
+    {
+      "angle_violation_ticks": 2,
+      "body_count": 16,
+      "direction": "right",
+      "exclusions": [
+        [
+          "Hips",
+          "Spine"
+        ],
+        [
+          "Hips",
+          "LeftUpperLeg"
+        ],
+        [
+          "Hips",
+          "RightUpperLeg"
+        ],
+        [
+          "Chest",
+          "Spine"
+        ],
+        [
+          "Chest",
+          "Head"
+        ],
+        [
+          "Chest",
+          "LeftUpperArm"
+        ],
+        [
+          "Chest",
+          "RightUpperArm"
+        ],
+        [
+          "LeftLowerArm",
+          "LeftUpperArm"
+        ],
+        [
+          "RightLowerArm",
+          "RightUpperArm"
+        ],
+        [
+          "LeftHand",
+          "LeftLowerArm"
+        ],
+        [
+          "RightHand",
+          "RightLowerArm"
+        ],
+        [
+          "LeftLowerLeg",
+          "LeftUpperLeg"
+        ],
+        [
+          "RightLowerLeg",
+          "RightUpperLeg"
+        ],
+        [
+          "LeftFoot",
+          "LeftLowerLeg"
+        ],
+        [
+          "RightFoot",
+          "RightLowerLeg"
+        ]
+      ],
+      "frozen": true,
+      "guard_cpu_us_per_tick": 453.8,
+      "guard_freezes": 1,
+      "max_angle_error_degrees": 40.8050723942887,
+      "max_joint_separation_cm": 3.4454707056284,
+      "max_proxy_penetration_cm": 0.0,
+      "max_sampled_skin_edge_ratio": 1.23415556438814,
+      "max_speed_m_s": 0.689188301563263,
+      "max_spin_rad_s": 10.8483743667603,
+      "no_valid_snapshot_ticks": 0,
+      "one_handoff": true,
+      "pass": false,
+      "role_mass_profile": "elite",
+      "sampled_skin_edges": 152
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "hardware_frame_cost_valid": false,
+  "renderer": "headless",
+  "scope": "20 role-mass/direction rifle cases, 180 ticks each; shared review mesh, not five approved role assets",
+  "skin_stretch_measured": "Sparse edges outside corrective zones, every 15th tick; not exhaustive"
+}

@@ -2,6 +2,8 @@
 
 2026-10-23. Godot 4.6.3 official (`7d41c59c4`), Jolt. This is a separate experimental review. The previous death-handoff review and playable game are unchanged. This does **not** complete the supplied requirements.
 
+**Latest numerical results:** [Hinge convention correction, 2026-10-24](HINGE_CONVENTION_REVIEW.md). The matrix below is the pre-fix baseline. The overall rig is still unapproved.
+
 ## Playback fix — 2026-10-23
 
 The previous download defaulted directly to collision-aware death selection. Clearance could reject all candidates, and floor contact could interrupt a selected clip before visible motion. The failed ragdoll guard then froze the pose. Changing the scenario did restart the test, but did not provide a usable animation preview.

@@ -1,7 +1,7 @@
 {
   "cases": [
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 9,
       "body_count": 16,
       "direction": "front",
       "exclusions": [
@@ -67,22 +67,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 375.0,
+      "guard_cpu_us_per_tick": 469.823529411765,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.3690572607638,
-      "max_joint_separation_cm": 3.36275510489941,
-      "max_proxy_penetration_cm": 0.0,
+      "max_angle_error_degrees": 13.5500050886282,
+      "max_joint_separation_cm": 0.527456821873784,
+      "max_proxy_penetration_cm": 0.143292348366231,
       "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689948081970215,
-      "max_spin_rad_s": 10.590235710144,
+      "max_speed_m_s": 3.37130975723267,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "rusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.369487901702309,
+          "separation_m": 0.000048185967898462
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000462120078736916
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.22475867811662,
+          "separation_m": 0.00481382245197892
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000286421300188522
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000766887387726456
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0279764551182933,
+          "separation_m": 0.000289092597085983
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000127573175632278
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000178842718014494
+        },
+        "RightFoot": {
+          "angle_error_degrees": 4.6905523504881,
+          "separation_m": 0.00527456821873784
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000430527552452986
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000220457623072434
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.366908392413198,
+          "separation_m": 0.000463497766759247
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000289711424557026
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000188440782949328
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000155567220645025
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 9,
       "body_count": 16,
       "direction": "back",
       "exclusions": [
@@ -148,22 +210,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 404.2,
+      "guard_cpu_us_per_tick": 378.0,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.3691043721115,
-      "max_joint_separation_cm": 3.36275473237038,
-      "max_proxy_penetration_cm": 0.0,
+      "max_angle_error_degrees": 13.5494625697411,
+      "max_joint_separation_cm": 0.52745109423995,
+      "max_proxy_penetration_cm": 0.143315806053579,
       "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689948260784149,
-      "max_spin_rad_s": 10.5874347686768,
+      "max_speed_m_s": 3.37128067016602,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "rusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.369519786372701,
+          "separation_m": 0.0000481741299154237
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000462203061033506
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.22470272006645,
+          "separation_m": 0.00481380522251129
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000284034263131616
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000770521182857919
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0279764551182933,
+          "separation_m": 0.000289145449642092
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000128637529996922
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000178818707354367
+        },
+        "RightFoot": {
+          "angle_error_degrees": 4.69055924527477,
+          "separation_m": 0.0052745109423995
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000429422425440862
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000222715098061599
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.366908392413198,
+          "separation_m": 0.000463433942059055
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000289760137093253
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000188444144441746
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000155550354975276
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 9,
       "body_count": 16,
       "direction": "left",
       "exclusions": [
@@ -229,22 +353,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 417.8,
+      "guard_cpu_us_per_tick": 361.294117647059,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.3690829578629,
-      "max_joint_separation_cm": 3.36275286972523,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414194371509,
-      "max_speed_m_s": 0.689933478832245,
-      "max_spin_rad_s": 10.5869026184082,
+      "max_angle_error_degrees": 13.5498626095447,
+      "max_joint_separation_cm": 0.527449371293187,
+      "max_proxy_penetration_cm": 0.212839245796204,
+      "max_sampled_skin_edge_ratio": 1.23415524263996,
+      "max_speed_m_s": 3.37129187583923,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "rusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.369471959336771,
+          "separation_m": 0.0000481716851936653
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000462280077044852
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.22470272006645,
+          "separation_m": 0.00481383316218853
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000300608530778845
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000775324497226393
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0279764551182933,
+          "separation_m": 0.000289145624265075
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000128717938423506
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000178856542333961
+        },
+        "RightFoot": {
+          "angle_error_degrees": 4.69053856091042,
+          "separation_m": 0.00527449371293187
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000434350295108743
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000221604659600416
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.366908392413198,
+          "separation_m": 0.000463546952232718
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000028850441594841
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000188473175512627
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000155555564560927
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 9,
       "body_count": 16,
       "direction": "right",
       "exclusions": [
@@ -310,22 +496,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 736.8,
+      "guard_cpu_us_per_tick": 340.588235294118,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.3691043721115,
-      "max_joint_separation_cm": 3.36275473237038,
-      "max_proxy_penetration_cm": 0.0,
+      "max_angle_error_degrees": 13.5494625697411,
+      "max_joint_separation_cm": 0.52745109423995,
+      "max_proxy_penetration_cm": 0.143315806053579,
       "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689948260784149,
-      "max_spin_rad_s": 10.5874347686768,
+      "max_speed_m_s": 3.37128067016602,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "rusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.369519786372701,
+          "separation_m": 0.0000481741299154237
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000462203061033506
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.22470272006645,
+          "separation_m": 0.00481380522251129
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000284034263131616
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000770521182857919
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0279764551182933,
+          "separation_m": 0.000289145449642092
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000128637529996922
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000178818707354367
+        },
+        "RightFoot": {
+          "angle_error_degrees": 4.69055924527477,
+          "separation_m": 0.0052745109423995
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000429422425440862
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000222715098061599
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.366908392413198,
+          "separation_m": 0.000463433942059055
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000289760137093253
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000188444144441746
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000155550354975276
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "front",
       "exclusions": [
@@ -391,22 +639,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 380.4,
+      "guard_cpu_us_per_tick": 364.444444444444,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.6909622267265,
-      "max_joint_separation_cm": 3.42369601130486,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414505394752,
-      "max_speed_m_s": 0.689413368701935,
-      "max_spin_rad_s": 10.7718057632446,
+      "max_angle_error_degrees": 13.3872010235497,
+      "max_joint_separation_cm": 0.533074885606766,
+      "max_proxy_penetration_cm": 0.143792747985572,
+      "max_sampled_skin_edge_ratio": 1.38410822891972,
+      "max_speed_m_s": 3.58716726303101,
+      "max_spin_rad_s": 24.9999980926514,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "enforcer",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.507523984982555,
+          "separation_m": 0.0000214496740227332
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000021664618543582
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.80399534166593,
+          "separation_m": 0.00392623990774155
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000856006522553798
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000149606466948171
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216999440453947
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000229706370191707
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000131934764795005
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.00630278596349,
+          "separation_m": 0.00533074885606766
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000205878836823103
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000870758412929717
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000468865066068247
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000100098823168082
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164039549417794
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000609609705861658
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "back",
       "exclusions": [
@@ -472,22 +782,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 433.0,
+      "guard_cpu_us_per_tick": 338.555555555556,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.6909819191849,
-      "max_joint_separation_cm": 3.42369824647903,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.68941342830658,
-      "max_spin_rad_s": 10.7706909179688,
+      "max_angle_error_degrees": 13.3867940521447,
+      "max_joint_separation_cm": 0.533074326813221,
+      "max_proxy_penetration_cm": 0.143786636181176,
+      "max_sampled_skin_edge_ratio": 1.38413345732805,
+      "max_speed_m_s": 3.58716726303101,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "enforcer",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.50761859964631,
+          "separation_m": 0.0000214874362427508
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000216538282984402
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.80388540642381,
+          "separation_m": 0.0039262087084353
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000758387102450797
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000151120104874281
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216993779758923
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000221527943722322
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000131920867715962
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.00632211622461,
+          "separation_m": 0.00533074326813221
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000210760572372237
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000869069936015876
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000468851736513898
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000989395084616262
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00016400872846134
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000609073940722737
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "left",
       "exclusions": [
@@ -553,22 +925,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 352.6,
+      "guard_cpu_us_per_tick": 309.777777777778,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.6909947620923,
-      "max_joint_separation_cm": 3.42369377613068,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414194371509,
-      "max_speed_m_s": 0.689398944377899,
-      "max_spin_rad_s": 10.7698230743408,
+      "max_angle_error_degrees": 13.3859470999545,
+      "max_joint_separation_cm": 0.533071905374527,
+      "max_proxy_penetration_cm": 0.213381508365273,
+      "max_sampled_skin_edge_ratio": 1.38412123979697,
+      "max_speed_m_s": 3.58717083930969,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "enforcer",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.507476677386558,
+          "separation_m": 0.000021492931409739
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000216389289562358
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.80401595448283,
+          "separation_m": 0.00392630835995078
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000825670895210351
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000160630440859677
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000217014705413021
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000222526773541176
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0001318908034591
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.00634788988987,
+          "separation_m": 0.00533071905374527
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000221827190216572
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000880038169270847
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000468878453830257
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000100088345789118
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164052573381923
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000608687550993636
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "right",
       "exclusions": [
@@ -634,22 +1068,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 372.2,
+      "guard_cpu_us_per_tick": 317.833333333333,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.6909819191849,
-      "max_joint_separation_cm": 3.42369824647903,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.68941342830658,
-      "max_spin_rad_s": 10.7706909179688,
+      "max_angle_error_degrees": 13.3867940521447,
+      "max_joint_separation_cm": 0.533074326813221,
+      "max_proxy_penetration_cm": 0.143786636181176,
+      "max_sampled_skin_edge_ratio": 1.38413345732805,
+      "max_speed_m_s": 3.58716726303101,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "enforcer",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.50761859964631,
+          "separation_m": 0.0000214874362427508
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000216538282984402
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.80388540642381,
+          "separation_m": 0.0039262087084353
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000758387102450797
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000151120104874281
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216993779758923
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000221527943722322
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000131920867715962
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.00632211622461,
+          "separation_m": 0.00533074326813221
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000210760572372237
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000869069936015876
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000468851736513898
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000989395084616262
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00016400872846134
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000609073940722737
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "front",
       "exclusions": [
@@ -715,22 +1211,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 500.2,
+      "guard_cpu_us_per_tick": 331.055555555556,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.9267674960934,
-      "max_joint_separation_cm": 3.4688375890255,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.688985347747803,
-      "max_spin_rad_s": 10.952898979187,
+      "max_angle_error_degrees": 13.2890702286453,
+      "max_joint_separation_cm": 0.536081381142139,
+      "max_proxy_penetration_cm": 0.144400703720748,
+      "max_sampled_skin_edge_ratio": 1.37031225629397,
+      "max_speed_m_s": 3.58642339706421,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "shield",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.509463444835678,
+          "separation_m": 0.0000300535048154416
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000022829703084426
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.82412102869067,
+          "separation_m": 0.00398986553773284
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000113376199806225
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000199525379684928
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.00022284705482889
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000306663582705369
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000133961366373114
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.09028455713236,
+          "separation_m": 0.00536081381142139
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000212293184631562
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000933692990656709
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451541496315804,
+          "separation_m": 0.000475518492748961
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000106375428003957
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000165818419191055
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000727998121874407
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "back",
       "exclusions": [
@@ -796,22 +1354,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 481.2,
+      "guard_cpu_us_per_tick": 315.944444444444,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.9267846148067,
-      "max_joint_separation_cm": 3.46884839236736,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.688985168933868,
-      "max_spin_rad_s": 10.958477973938,
+      "max_angle_error_degrees": 13.2884474234699,
+      "max_joint_separation_cm": 0.536072393879294,
+      "max_proxy_penetration_cm": 0.144388736225665,
+      "max_sampled_skin_edge_ratio": 1.37033177260985,
+      "max_speed_m_s": 3.58642315864563,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "shield",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.509510745037995,
+          "separation_m": 0.0000299697585433023
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000228187145694392
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.82419656264076,
+          "separation_m": 0.00398984597995877
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000103624688563286
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000202152523343102
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000222796574234962
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000301935187962954
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00013391392712947
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.09031027053796,
+          "separation_m": 0.00536072393879294
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000220859146793373
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000090927487690351
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451541496315804,
+          "separation_m": 0.000475450593512505
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000106257639345131
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000165817036759108
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000727338338037953
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "left",
       "exclusions": [
@@ -877,22 +1497,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 370.8,
+      "guard_cpu_us_per_tick": 322.555555555556,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.9267572248653,
-      "max_joint_separation_cm": 3.46885547041893,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414194371509,
-      "max_speed_m_s": 0.688970923423767,
-      "max_spin_rad_s": 10.955849647522,
+      "max_angle_error_degrees": 13.287471861843,
+      "max_joint_separation_cm": 0.536076910793781,
+      "max_proxy_penetration_cm": 0.214054784737527,
+      "max_sampled_skin_edge_ratio": 1.37036334778757,
+      "max_speed_m_s": 3.58643341064453,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "shield",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.509463444835678,
+          "separation_m": 0.0000301025447697612
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000228161370614544
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.82421716277882,
+          "separation_m": 0.00398992700502276
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000114751037472161
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000206338040698029
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000222805785597302
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000305300204672676
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000133950772578828
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.09025884370836,
+          "separation_m": 0.00536076910793781
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000023337331640505
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000932390048546949
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451541496315804,
+          "separation_m": 0.000475597742479295
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000107293590190238
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000165825593285263
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000726703437976539
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "right",
       "exclusions": [
@@ -958,22 +1640,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 352.4,
+      "guard_cpu_us_per_tick": 331.5,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.9267846148067,
-      "max_joint_separation_cm": 3.46884839236736,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.688985168933868,
-      "max_spin_rad_s": 10.958477973938,
+      "max_angle_error_degrees": 13.2884474234699,
+      "max_joint_separation_cm": 0.536072393879294,
+      "max_proxy_penetration_cm": 0.144388736225665,
+      "max_sampled_skin_edge_ratio": 1.37033177260985,
+      "max_speed_m_s": 3.58642315864563,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "shield",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.509510745037995,
+          "separation_m": 0.0000299697585433023
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000228187145694392
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.82419656264076,
+          "separation_m": 0.00398984597995877
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000103624688563286
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000202152523343102
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000222796574234962
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000301935187962954
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00013391392712947
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.09031027053796,
+          "separation_m": 0.00536072393879294
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000220859146793373
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000090927487690351
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451541496315804,
+          "separation_m": 0.000475450593512505
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000106257639345131
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000165817036759108
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000727338338037953
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "front",
       "exclusions": [
@@ -1039,22 +1783,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 1499.2,
+      "guard_cpu_us_per_tick": 328.333333333333,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.5506609238661,
-      "max_joint_separation_cm": 3.39712910354137,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414505394752,
-      "max_speed_m_s": 0.689641356468201,
-      "max_spin_rad_s": 10.7152643203735,
+      "max_angle_error_degrees": 13.4062531011672,
+      "max_joint_separation_cm": 0.532412249594927,
+      "max_proxy_penetration_cm": 0.143671024125069,
+      "max_sampled_skin_edge_ratio": 1.37808419275202,
+      "max_speed_m_s": 3.58886504173279,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "flusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.502413746799116,
+          "separation_m": 0.0000198604138859082
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000022381123926607
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.79363232626292,
+          "separation_m": 0.00392676796764135
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000723282141734671
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000121130949537473
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216901185922325
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000157600470629404
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132446672068909
+        },
+        "RightFoot": {
+          "angle_error_degrees": 6.99294952564211,
+          "separation_m": 0.00532412249594927
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000203011563826294
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000843574161990546
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.450239589262305,
+          "separation_m": 0.000467693840619177
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000096858702818281
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000163926903042011
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000057428449508734
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "back",
       "exclusions": [
@@ -1120,22 +1926,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 355.6,
+      "guard_cpu_us_per_tick": 387.444444444444,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.550587705559,
-      "max_joint_separation_cm": 3.39712984859943,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689641833305359,
-      "max_spin_rad_s": 10.7052536010742,
+      "max_angle_error_degrees": 13.4054394961658,
+      "max_joint_separation_cm": 0.532407779246569,
+      "max_proxy_penetration_cm": 0.143674004357308,
+      "max_sampled_skin_edge_ratio": 1.37804071738169,
+      "max_speed_m_s": 3.58886122703552,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "flusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.502350644593918,
+          "separation_m": 0.0000198335092136404
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000223599909077166
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.79366669180249,
+          "separation_m": 0.00392678612843156
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000720976004231488
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000114032832243538
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216893196920864
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000158347188516927
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132370085339062
+        },
+        "RightFoot": {
+          "angle_error_degrees": 6.99291729649855,
+          "separation_m": 0.00532407779246569
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000211181577469688
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000843870293465443
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.450239589262305,
+          "separation_m": 0.000467629142804071
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000979723336058669
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000163924822118133
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000057317429309478
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "left",
       "exclusions": [
@@ -1201,22 +2069,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 432.0,
+      "guard_cpu_us_per_tick": 359.777777777778,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.550694321688,
-      "max_joint_separation_cm": 3.39714586734772,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414194371509,
-      "max_speed_m_s": 0.689627528190613,
-      "max_spin_rad_s": 10.7028532028198,
+      "max_angle_error_degrees": 13.4061926310265,
+      "max_joint_separation_cm": 0.532399211078882,
+      "max_proxy_penetration_cm": 0.213274359703064,
+      "max_sampled_skin_edge_ratio": 1.37811069051423,
+      "max_speed_m_s": 3.58887004852295,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "flusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.502618826801495,
+          "separation_m": 0.0000199120750039583
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000224029790842906
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.7936117069219,
+          "separation_m": 0.00392684806138277
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000836624224120897
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000123347058433865
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216893167817034
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000156172768583929
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132423709146678
+        },
+        "RightFoot": {
+          "angle_error_degrees": 6.99291085066637,
+          "separation_m": 0.00532399211078882
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000219735284190392
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000831634315545671
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.450673976154961,
+          "separation_m": 0.000467672623926774
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000979229935182957
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000163924822118133
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000574582481931429
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "right",
       "exclusions": [
@@ -1282,22 +2212,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 500.8,
+      "guard_cpu_us_per_tick": 362.888888888889,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.550587705559,
-      "max_joint_separation_cm": 3.39712984859943,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689641833305359,
-      "max_spin_rad_s": 10.7052536010742,
+      "max_angle_error_degrees": 13.4054394961658,
+      "max_joint_separation_cm": 0.532407779246569,
+      "max_proxy_penetration_cm": 0.143674004357308,
+      "max_sampled_skin_edge_ratio": 1.37804071738169,
+      "max_speed_m_s": 3.58886122703552,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "flusher",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.502350644593918,
+          "separation_m": 0.0000198335092136404
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000223599909077166
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.79366669180249,
+          "separation_m": 0.00392678612843156
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000720976004231488
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000114032832243538
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000216893196920864
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000158347188516927
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132370085339062
+        },
+        "RightFoot": {
+          "angle_error_degrees": 6.99291729649855,
+          "separation_m": 0.00532407779246569
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000211181577469688
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000843870293465443
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.450239589262305,
+          "separation_m": 0.000467629142804071
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000979723336058669
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000163924822118133
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000057317429309478
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "front",
       "exclusions": [
@@ -1363,22 +2355,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 367.6,
+      "guard_cpu_us_per_tick": 388.055555555556,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.8050873754626,
-      "max_joint_separation_cm": 3.44547815620899,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689188241958618,
-      "max_spin_rad_s": 10.849006652832,
+      "max_angle_error_degrees": 13.3511313849936,
+      "max_joint_separation_cm": 0.534192146733403,
+      "max_proxy_penetration_cm": 0.143974949605763,
+      "max_sampled_skin_edge_ratio": 1.37827903857233,
+      "max_speed_m_s": 3.58611536026001,
+      "max_spin_rad_s": 24.9999980926514,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "elite",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.510913904322951,
+          "separation_m": 0.0000251229939749464
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000222239923459711
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.8143619546113,
+          "separation_m": 0.00394276017323136
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000950993012338586
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000016885060176719
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000218609318835661
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000259443936556636
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132103989017196
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.03484865667009,
+          "separation_m": 0.00534192146733403
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000210438997783058
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000866320260684006
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000471304490929469
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000101496607385343
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164515469805337
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000661722297081724
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "back",
       "exclusions": [
@@ -1444,22 +2498,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 442.2,
+      "guard_cpu_us_per_tick": 391.777777777778,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.8050723942887,
-      "max_joint_separation_cm": 3.4454707056284,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689188301563263,
-      "max_spin_rad_s": 10.8483743667603,
+      "max_angle_error_degrees": 13.3511093691335,
+      "max_joint_separation_cm": 0.534191960468888,
+      "max_proxy_penetration_cm": 0.144001340959221,
+      "max_sampled_skin_edge_ratio": 1.37828808271871,
+      "max_speed_m_s": 3.58611702919006,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "elite",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.510976964025165,
+          "separation_m": 0.000025096920580836
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000221999107452575
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.81451993597746,
+          "separation_m": 0.00394276017323136
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000092303042720232
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000016906087694224
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000218610017327592
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000257226361100038
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132059649331495
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.03493879262805,
+          "separation_m": 0.00534191960468888
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000215938348446798
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000087720263763913
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000471272243885323
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000101518035080517
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164515353390016
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000066116095695179
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "left",
       "exclusions": [
@@ -1525,22 +2641,84 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 458.2,
+      "guard_cpu_us_per_tick": 433.444444444444,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.8050762465906,
-      "max_joint_separation_cm": 3.44548970460892,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23414194371509,
-      "max_speed_m_s": 0.689173877239227,
-      "max_spin_rad_s": 10.8487482070923,
+      "max_angle_error_degrees": 13.3509937856928,
+      "max_joint_separation_cm": 0.534182600677013,
+      "max_proxy_penetration_cm": 0.21363440901041,
+      "max_sampled_skin_edge_ratio": 1.37832410063501,
+      "max_speed_m_s": 3.58612537384033,
+      "max_spin_rad_s": 25.0,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "elite",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.510992728901845,
+          "separation_m": 0.0000251727869908791
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000222140788537217
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.81451306723822,
+          "separation_m": 0.00394280580803752
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000000920501065593271
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000178006519035989
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000218603076064028
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000253272628469858
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132038083393127
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.03484865667009,
+          "separation_m": 0.00534182600677013
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000225165376832592
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000865962647367269
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000471278879558668
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000102502881418332
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164529701578431
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000661564918118529
+        }
+      }
     },
     {
-      "angle_violation_ticks": 2,
+      "angle_violation_ticks": 10,
       "body_count": 16,
       "direction": "right",
       "exclusions": [
@@ -1606,19 +2784,81 @@
         ]
       ],
       "frozen": true,
-      "guard_cpu_us_per_tick": 453.8,
+      "guard_cpu_us_per_tick": 297.333333333333,
       "guard_freezes": 1,
-      "max_angle_error_degrees": 40.8050723942887,
-      "max_joint_separation_cm": 3.4454707056284,
-      "max_proxy_penetration_cm": 0.0,
-      "max_sampled_skin_edge_ratio": 1.23415556438814,
-      "max_speed_m_s": 0.689188301563263,
-      "max_spin_rad_s": 10.8483743667603,
+      "max_angle_error_degrees": 13.3511093691335,
+      "max_joint_separation_cm": 0.534191960468888,
+      "max_proxy_penetration_cm": 0.144001340959221,
+      "max_sampled_skin_edge_ratio": 1.37828808271871,
+      "max_speed_m_s": 3.58611702919006,
+      "max_spin_rad_s": 25.0000019073486,
       "no_valid_snapshot_ticks": 0,
       "one_handoff": true,
       "pass": false,
       "role_mass_profile": "elite",
-      "sampled_skin_edges": 152
+      "sampled_skin_edges": 152,
+      "worst_joint_metrics": {
+        "Chest": {
+          "angle_error_degrees": 0.510976964025165,
+          "separation_m": 0.000025096920580836
+        },
+        "Head": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000221999107452575
+        },
+        "LeftFoot": {
+          "angle_error_degrees": 4.81451993597746,
+          "separation_m": 0.00394276017323136
+        },
+        "LeftHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000092303042720232
+        },
+        "LeftLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000016906087694224
+        },
+        "LeftLowerLeg": {
+          "angle_error_degrees": 0.0197823410294464,
+          "separation_m": 0.000218610017327592
+        },
+        "LeftUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000257226361100038
+        },
+        "LeftUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000132059649331495
+        },
+        "RightFoot": {
+          "angle_error_degrees": 7.03493879262805,
+          "separation_m": 0.00534191960468888
+        },
+        "RightHand": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.00000215938348446798
+        },
+        "RightLowerArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000087720263763913
+        },
+        "RightLowerLeg": {
+          "angle_error_degrees": 0.451107944770795,
+          "separation_m": 0.000471272243885323
+        },
+        "RightUpperArm": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.0000101518035080517
+        },
+        "RightUpperLeg": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000164515353390016
+        },
+        "Spine": {
+          "angle_error_degrees": 0.0,
+          "separation_m": 0.000066116095695179
+        }
+      }
     }
   ],
   "engine": "4.6.3-stable (official)",

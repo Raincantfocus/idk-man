@@ -1,0 +1,185 @@
+{
+  "cases": [
+    {
+      "clip": "death",
+      "handoff_seconds": 1.6,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.20319368839264,
+        "Head": 1.54262595653534,
+        "Hips": 0.834953570365906,
+        "LeftFoot": -0.00138897597789765,
+        "LeftHand": 1.30951258182526,
+        "LeftLowerLeg": 0.252438204288483,
+        "RightFoot": 0.00437319502234459,
+        "RightHand": 1.31182428836823,
+        "RightLowerLeg": 0.236051307916641
+      }
+    },
+    {
+      "clip": "death_from_back_headshot",
+      "handoff_seconds": 2.1,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247439861298,
+        "Head": 1.54833786964416,
+        "Hips": 0.813734376430511,
+        "LeftFoot": -0.00483314469456673,
+        "LeftHand": 1.05189403533936,
+        "LeftLowerLeg": 0.246563391685486,
+        "RightFoot": -0.00437880456447601,
+        "RightHand": 1.06015702724457,
+        "RightLowerLeg": 0.236188726425171
+      }
+    },
+    {
+      "clip": "death_from_front_headshot",
+      "handoff_seconds": 1.3,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247451782227,
+        "Head": 1.5483295249939,
+        "Hips": 0.813734436035156,
+        "LeftFoot": -0.00483358055353165,
+        "LeftHand": 1.05192312240601,
+        "LeftLowerLeg": 0.246562974452972,
+        "RightFoot": -0.00437913239002228,
+        "RightHand": 1.06015678882599,
+        "RightLowerLeg": 0.236188517808914
+      }
+    },
+    {
+      "clip": "death_from_right",
+      "handoff_seconds": 2.0,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247475624084,
+        "Head": 1.54832964420319,
+        "Hips": 0.813734674453735,
+        "LeftFoot": -0.00483307763934136,
+        "LeftHand": 1.05192216873169,
+        "LeftLowerLeg": 0.246563510894775,
+        "RightFoot": -0.00437888279557228,
+        "RightHand": 1.06015738487244,
+        "RightLowerLeg": 0.236188726425171
+      }
+    },
+    {
+      "clip": "death_from_the_front",
+      "handoff_seconds": 1.7,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247475624084,
+        "Head": 1.54832976341248,
+        "Hips": 0.813734674453735,
+        "LeftFoot": -0.0048329807817936,
+        "LeftHand": 1.05192443370819,
+        "LeftLowerLeg": 0.246563540697098,
+        "RightFoot": -0.00437912866473198,
+        "RightHand": 1.06015655040741,
+        "RightLowerLeg": 0.236188488006592
+      }
+    },
+    {
+      "clip": "flying_back_death",
+      "handoff_seconds": 0.9,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.1002911567688,
+        "Head": 1.46321504592896,
+        "Hips": 0.729697728157043,
+        "LeftFoot": -0.0163427457213402,
+        "LeftHand": 1.0179568195343,
+        "LeftLowerLeg": 0.234490768909454,
+        "RightFoot": -0.0107003353536129,
+        "RightHand": 0.969939675331116,
+        "RightLowerLeg": 0.205870704650879
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_crouching_headshot_front",
+      "handoff_seconds": 1.0,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 0.73199143409729,
+        "Head": 1.05782764434814,
+        "Hips": 0.361424171924591,
+        "LeftFoot": 0.0619901031255722,
+        "LeftHand": 0.695800747871399,
+        "LeftLowerLeg": 0.293650614023209,
+        "RightFoot": 0.101965790987015,
+        "RightHand": 0.707588758468628,
+        "RightLowerLeg": 0.0747969987988472
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_from_back_headshot",
+      "handoff_seconds": 2.1,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247404098511,
+        "Head": 1.54833763122559,
+        "Hips": 0.813733959197998,
+        "LeftFoot": -0.0048334650695324,
+        "LeftHand": 1.05189379692078,
+        "LeftLowerLeg": 0.246563034057617,
+        "RightFoot": -0.00437918454408646,
+        "RightHand": 1.06015690803528,
+        "RightLowerLeg": 0.236188309192657
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_from_front_headshot",
+      "handoff_seconds": 1.4,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247404098511,
+        "Head": 1.54832928657532,
+        "Hips": 0.813734018802643,
+        "LeftFoot": -0.00483387485146523,
+        "LeftHand": 1.05192240715027,
+        "LeftLowerLeg": 0.246562676429749,
+        "RightFoot": -0.00437963530421257,
+        "RightHand": 1.06015643119812,
+        "RightLowerLeg": 0.236188011169434
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_from_right",
+      "handoff_seconds": 2.0,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247427940369,
+        "Head": 1.54832940578461,
+        "Hips": 0.813734316825867,
+        "LeftFoot": -0.00483348369598389,
+        "LeftHand": 1.05192157268524,
+        "LeftLowerLeg": 0.246563093662262,
+        "RightFoot": -0.00437924042344093,
+        "RightHand": 1.06015714645386,
+        "RightLowerLeg": 0.23618833899498
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_from_the_back",
+      "handoff_seconds": 1.8,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247404098511,
+        "Head": 1.54832928657532,
+        "Hips": 0.813734078407288,
+        "LeftFoot": -0.0048337034881115,
+        "LeftHand": 1.05191954612732,
+        "LeftLowerLeg": 0.24656282544136,
+        "RightFoot": -0.00437973216176033,
+        "RightHand": 1.06015082836151,
+        "RightLowerLeg": 0.236187802553177
+      }
+    },
+    {
+      "clip": "pro_rifle_pack_death_from_the_front",
+      "handoff_seconds": 1.7,
+      "initial_proxy_bottom_y_m": {
+        "Chest": 1.18247427940369,
+        "Head": 1.5483295249939,
+        "Hips": 0.813734316825867,
+        "LeftFoot": -0.00483314841985703,
+        "LeftHand": 1.05192371845245,
+        "LeftLowerLeg": 0.246563391685486,
+        "RightFoot": -0.00437960922718048,
+        "RightHand": 1.06015619277954,
+        "RightLowerLeg": 0.236188011169434
+      }
+    }
+  ],
+  "scope": "Initial animation-pose proxy bottoms against a horizontal floor at y=0; not mesh penetration or a full clip pass"
+}

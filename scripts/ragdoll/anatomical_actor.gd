@@ -81,7 +81,9 @@ func _configure_joint_frames(captured: Dictionary) -> void:
   var world_a: Basis;var world_b: Basis
   if definition.joint_kind=="hinge":
    var upper: Vector3=parent_pose.basis.y.normalized();var lower: Vector3=child_pose.basis.y.normalized()
-   var normal: Vector3=upper.cross(lower)
+   # Godot/Jolt hinge limits measure A relative to B, opposite the
+   # B-relative-to-A quaternion used by our diagnostics. Keep flexion positive.
+   var normal: Vector3=lower.cross(upper)
    if normal.length()<.001:normal=upper.cross(Vector3.FORWARD)
    if normal.length()<.001:normal=upper.cross(Vector3.RIGHT)
    normal=normal.normalized()
@@ -121,7 +123,7 @@ func _angle_error(name: String, link: Dictionary) -> float:
  var q: Quaternion=relative.get_rotation_quaternion()
  var definition: Dictionary=definitions[name]
  if definition.joint_kind=="hinge":
-  var angle: float=wrapf(rad_to_deg(2.0*atan2(q.z,q.w)),-180.0,180.0)
+  var angle: float=wrapf(-rad_to_deg(2.0*atan2(q.z,q.w)),-180.0,180.0)
   var off_axis: float=rad_to_deg(acos(clampf(relative.z.dot(Vector3.BACK),-1.0,1.0)))
   return maxf(off_axis,maxf(float(definition.lower_degrees)-angle,angle-float(definition.upper_degrees)))
  var swing: float=rad_to_deg(acos(clampf(relative.x.dot(Vector3.RIGHT),-1.0,1.0)))
