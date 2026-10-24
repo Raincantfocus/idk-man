@@ -1,0 +1,138 @@
+{
+  "cases": [
+    {
+      "animation_ticks": 99,
+      "authored_elapsed": 1.65,
+      "clip": "death",
+      "handoffs": 1,
+      "lift_mm": 4.38897591084242,
+      "planned_handoff": 1.65,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 7,
+      "authored_elapsed": 0.133333333333333,
+      "clip": "death_from_back_headshot",
+      "handoffs": 1,
+      "lift_mm": 7.8331446275115,
+      "planned_handoff": 0.133333333333333,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 90,
+      "authored_elapsed": 1.5,
+      "clip": "death_from_front_headshot",
+      "handoffs": 1,
+      "lift_mm": 7.83358048647642,
+      "planned_handoff": 1.5,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 0,
+      "authored_elapsed": 0.0166666666666667,
+      "clip": "death_from_right",
+      "handoffs": 1,
+      "lift_mm": 7.83307757228613,
+      "planned_handoff": 0.0166666666666667,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 28,
+      "authored_elapsed": 0.466666666666667,
+      "clip": "death_from_the_front",
+      "handoffs": 1,
+      "lift_mm": 7.83298071473837,
+      "planned_handoff": 0.466666666666667,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 18,
+      "authored_elapsed": 0.316666666666667,
+      "clip": "flying_back_death",
+      "handoffs": 1,
+      "lift_mm": 19.3427465856075,
+      "planned_handoff": 0.983333333333333,
+      "reason": "no_support",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 24,
+      "authored_elapsed": 0.4,
+      "clip": "pro_rifle_pack_death_crouching_headshot_front",
+      "handoffs": 1,
+      "lift_mm": 3.00000002607703,
+      "planned_handoff": 0.4,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 7,
+      "authored_elapsed": 0.133333333333333,
+      "clip": "pro_rifle_pack_death_from_back_headshot",
+      "handoffs": 1,
+      "lift_mm": 7.83346500247717,
+      "planned_handoff": 0.133333333333333,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 91,
+      "authored_elapsed": 1.51666666666667,
+      "clip": "pro_rifle_pack_death_from_front_headshot",
+      "handoffs": 1,
+      "lift_mm": 7.83387478441,
+      "planned_handoff": 1.51666666666667,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 2,
+      "authored_elapsed": 0.0333333333333333,
+      "clip": "pro_rifle_pack_death_from_right",
+      "handoffs": 1,
+      "lift_mm": 7.83348362892866,
+      "planned_handoff": 0.0333333333333333,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 111,
+      "authored_elapsed": 1.85,
+      "clip": "pro_rifle_pack_death_from_the_back",
+      "handoffs": 1,
+      "lift_mm": 7.83370342105627,
+      "planned_handoff": 1.85,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    },
+    {
+      "animation_ticks": 29,
+      "authored_elapsed": 0.483333333333333,
+      "clip": "pro_rifle_pack_death_from_the_front",
+      "handoffs": 1,
+      "lift_mm": 7.8331483528018,
+      "planned_handoff": 0.483333333333333,
+      "reason": "planned",
+      "selected": true,
+      "wall_rejected": true
+    }
+  ],
+  "engine": "4.6.3-stable (official)",
+  "scope": "Single-clip selection on flat floor; not full ragdoll acceptance"
+}

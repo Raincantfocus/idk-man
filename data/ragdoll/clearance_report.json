@@ -1,0 +1,134 @@
+[
+  {
+    "direction": "back",
+    "flying": false,
+    "handoff_seconds": 0.133333333333333,
+    "id": "death_from_back_headshot",
+    "lift_m": 0.00783314469456673,
+    "root_motion_distance": 1.24179643284879,
+    "samples": 225,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 1.5,
+    "id": "death_from_front_headshot",
+    "lift_m": 0.00783358055353165,
+    "root_motion_distance": 1.04583279825772,
+    "samples": 172,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "right",
+    "flying": false,
+    "handoff_seconds": 0.0166666666666667,
+    "id": "death_from_right",
+    "lift_m": 0.00783307763934135,
+    "root_motion_distance": 1.04555874983998,
+    "samples": 199,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 0.466666666666667,
+    "id": "death_from_the_front",
+    "lift_m": 0.00783298078179359,
+    "root_motion_distance": 1.47269215623237,
+    "samples": 208,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 1.65,
+    "id": "death",
+    "lift_m": 0.00438897597789765,
+    "root_motion_distance": 1.21035445955749,
+    "samples": 183,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": true,
+    "handoff_seconds": 0.983333333333333,
+    "id": "flying_back_death",
+    "lift_m": 0.0193427457213402,
+    "root_motion_distance": 1.94899334288215,
+    "samples": 183,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 0.4,
+    "id": "pro_rifle_pack_death_crouching_headshot_front",
+    "lift_m": 0.003,
+    "root_motion_distance": 1.38463636458774,
+    "samples": 116,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "back",
+    "flying": false,
+    "handoff_seconds": 0.133333333333333,
+    "id": "pro_rifle_pack_death_from_back_headshot",
+    "lift_m": 0.00783346506953239,
+    "root_motion_distance": 1.23292493007102,
+    "samples": 225,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 1.51666666666667,
+    "id": "pro_rifle_pack_death_from_front_headshot",
+    "lift_m": 0.00783387485146523,
+    "root_motion_distance": 1.04357873901636,
+    "samples": 172,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "right",
+    "flying": false,
+    "handoff_seconds": 0.0333333333333333,
+    "id": "pro_rifle_pack_death_from_right",
+    "lift_m": 0.00783348369598389,
+    "root_motion_distance": 1.04351536154076,
+    "samples": 200,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "back",
+    "flying": false,
+    "handoff_seconds": 1.85,
+    "id": "pro_rifle_pack_death_from_the_back",
+    "lift_m": 0.0078337034881115,
+    "root_motion_distance": 1.45391923614079,
+    "samples": 181,
+    "usable_data": true,
+    "visual_approval": false
+  },
+  {
+    "direction": "front",
+    "flying": false,
+    "handoff_seconds": 0.483333333333333,
+    "id": "pro_rifle_pack_death_from_the_front",
+    "lift_m": 0.00783314841985703,
+    "root_motion_distance": 1.45195735888132,
+    "samples": 209,
+    "usable_data": true,
+    "visual_approval": false
+  }
+]

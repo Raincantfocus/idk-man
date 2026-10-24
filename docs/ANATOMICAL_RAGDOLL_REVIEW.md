@@ -2,7 +2,7 @@
 
 2026-10-23. Godot 4.6.3 official (`7d41c59c4`), Jolt. This is a separate experimental review. The previous death-handoff review and playable game are unchanged. This does **not** complete the supplied requirements.
 
-**Latest numerical results:** [Hinge convention correction, 2026-10-24](HINGE_CONVENTION_REVIEW.md). The matrix below is the pre-fix baseline. The overall rig is still unapproved.
+**Latest results:** [Ground-contact and handoff revision](GROUND_HANDOFF_REVIEW.md). Earlier matrices below and in the hinge report are historical baselines; the overall rig is still unapproved.
 
 ## Playback fix — 2026-10-23
 

@@ -7,6 +7,7 @@ var state: State=State.READY
 var tuning: Dictionary
 var budget: RefCounted
 var query: Query
+var presentation: Node3D
 var skeleton: Skeleton3D
 var player: AnimationPlayer
 var simulator: PhysicalBoneSimulator3D
@@ -37,7 +38,7 @@ func setup(settings: Dictionary, pool: RefCounted) -> void:
  tuning=settings;budget=pool;query=Query.new();query.configure(tuning)
  collision_layer=8;collision_mask=int(tuning.collision_mask)
  body_collider=CollisionShape3D.new();var capsule:=CapsuleShape3D.new();capsule.radius=.22;capsule.height=1.8;body_collider.shape=capsule;body_collider.position.y=.9;add_child(body_collider)
- var model: Node3D=(load("res://models/body.glb") as PackedScene).instantiate();add_child(model)
+ var model: Node3D=(load("res://models/body.glb") as PackedScene).instantiate();add_child(model);presentation=model
  skeleton=model.find_children("*","Skeleton3D",true,false)[0]
  for file: String in ["fatigues","carrier"]:
   var donor: Node3D=(load("res://models/"+file+".glb") as PackedScene).instantiate();add_child(donor)
@@ -50,8 +51,9 @@ func setup(settings: Dictionary, pool: RefCounted) -> void:
  assert(player.add_animation_library(&"",load("res://data/death/death_library.res"))==OK)
  assert(player.add_animation_library(&"base",load("res://data/animation/actorcore_library.res"))==OK)
  player.play(&"base/hold");player.seek(0,true);player.pause();skeleton.force_update_all_bone_transforms()
- for file: String in DirAccess.get_files_at("res://data/death/clips"):
-  if file.ends_with(".tres"):clips.append(load("res://data/death/clips/"+file))
+ var clip_directory: String=String(tuning.get("clip_directory","res://data/death/clips"))
+ for file: String in DirAccess.get_files_at(clip_directory):
+  if file.ends_with(".tres"):clips.append(load(clip_directory+"/"+file))
  _build_bodies();excluded.append(get_rid());pose_history.append(capture_pose());set_physics_process(true)
 func _build_bodies() -> void:
  simulator=PhysicalBoneSimulator3D.new();skeleton.add_child(simulator);simulator.influence=0.0;simulator.active=false
@@ -102,7 +104,11 @@ func begin_death(incoming: Vector3, tags: PackedStringArray, impulse: Vector3=Ve
  var choice: Dictionary=query.choose(get_world_3d().direct_space_state,clips,query.hit_direction(global_basis,incoming),tags,global_transform,excluded,crouched)
  selected=choice.clip;trace.append({"event":"selection","clip":String(selected.id) if selected!=null else "none","reason":choice.reason,"rejected":choice.rejected})
  if selected==null:_handoff("ragdoll_now");return true
- state=State.ANIMATING;elapsed=0.0;player.play(selected.animation);player.pause()
+ presentation.position=selected.presentation_offset
+ state=State.ANIMATING;elapsed=0.0;player.play(selected.animation);player.seek(0,true);player.pause()
+ skeleton.force_update_all_bone_transforms()
+ # Seed velocity history from this clip, not the unrelated rifle-hold pose.
+ pose_history.clear();pose_history.append(capture_pose())
  return true
 func notify_hit(heavy_or_lethal: bool, impulse: Vector3) -> void:
  if state==State.ANIMATING and (heavy_or_lethal or impulse.length()>=float(tuning.disturbance_impulse_threshold)):
@@ -110,12 +116,13 @@ func notify_hit(heavy_or_lethal: bool, impulse: Vector3) -> void:
 func _physics_process(delta: float) -> void:
  if delta<=0.0 or state==State.READY or state==State.FROZEN:return
  if state==State.ANIMATING:
-  var previous: Array[Transform3D]=capture_pose();var old_points: Dictionary=points();var expected: Vector3=global_basis*(selected.root_at(elapsed+delta)-selected.root_at(elapsed));var before: Vector3=global_position
+  var next: float=minf(elapsed+delta,minf(selected.duration,selected.handoff_time))
+  var previous: Array[Transform3D]=capture_pose();var old_points: Dictionary=points();var expected: Vector3=global_basis*(selected.root_at(next)-selected.root_at(elapsed));var before: Vector3=global_position
   if expected.length_squared()>0.00000001:move_and_collide(expected)
   var fraction: float=global_position.distance_to(before)/maxf(expected.length(),.000001)
   root_blocked_ticks=root_blocked_ticks+1 if expected.length()>.0001 and fraction<float(tuning.blocked_root_fraction) else 0
   if root_blocked_ticks>=int(tuning.blocked_root_ticks):_handoff("root_blocked");return
-  var next: float=minf(elapsed+delta,selected.duration);player.seek(next,true);skeleton.force_update_all_bone_transforms();var new_points: Dictionary=points();var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+  player.seek(next,true);skeleton.force_update_all_bone_transforms();var new_points: Dictionary=points();var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
   for name: String in new_points:
    if query.obstruction(space,name,old_points[name],new_points[name],excluded):
     restore_pose(previous)

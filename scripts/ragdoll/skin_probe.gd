@@ -1,5 +1,8 @@
 extends RefCounted
 ## Sparse CPU skin audit; not a proof for unsampled edges or GPU corrective output.
+var worst_edge: Dictionary={}
+var bone_names: Array[String]=[]
+var lifetime_peak: float=1.0
 var vertices: PackedVector3Array
 var bones: PackedInt32Array
 var weights: PackedFloat32Array
@@ -11,6 +14,7 @@ func setup(actor: Node) -> void:
  for candidate: Node in actor.find_children("*","MeshInstance3D",true,false):
   if candidate.name=="Body_LOD0":mesh=candidate;break
  assert(mesh!=null and mesh.skin!=null)
+ for i: int in actor.skeleton.get_bone_count():bone_names.append(actor.skeleton.get_bone_name(i))
  var arrays: Array=mesh.mesh.surface_get_arrays(0);vertices=arrays[Mesh.ARRAY_VERTEX];bones=arrays[Mesh.ARRAY_BONES];weights=arrays[Mesh.ARRAY_WEIGHTS]
  for i: int in mesh.skin.get_bind_count():
   bind_poses.append(mesh.skin.get_bind_pose(i))
@@ -38,5 +42,17 @@ func skin(vertex: int, pose: Array[Transform3D]) -> Vector3:
  return result
 func measure(actor: Node) -> float:
  var pose: Array[Transform3D]=actor.capture_pose();var peak: float=1.0
- for edge: Dictionary in edges:peak=maxf(peak,skin(edge.a,pose).distance_to(skin(edge.b,pose))/float(edge.rest))
+ for edge: Dictionary in edges:
+  var ratio: float=skin(edge.a,pose).distance_to(skin(edge.b,pose))/float(edge.rest)
+  peak=maxf(peak,ratio)
+  if ratio>lifetime_peak:
+   lifetime_peak=ratio
+   worst_edge={"actor_state":int(actor.state),"authored_time":float(actor.elapsed),"a":edge.a,"b":edge.b,"ratio":ratio,"a_weights":influences(edge.a),"b_weights":influences(edge.b)}
  return peak
+
+func influences(vertex: int) -> Dictionary:
+ var result: Dictionary={}
+ for slot: int in 4:
+  var index: int=vertex*4+slot
+  if weights[index]>.00001:result[bone_names[mapped[bones[index]]]]=weights[index]
+ return result

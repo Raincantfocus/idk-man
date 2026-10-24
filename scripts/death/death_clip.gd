@@ -1,5 +1,6 @@
 extends Resource
 ## Cosmetic clip metadata. The authoritative lethal-hit event belongs to gameplay.
+@export var presentation_offset: Vector3=Vector3.ZERO
 @export var id: StringName
 @export var direction: StringName=&"front"
 @export var animation: StringName
@@ -16,7 +17,7 @@ extends Resource
 @export var clearance_samples: Array[Dictionary]=[]
 @export var root_samples: Array[Dictionary]=[]
 func to_dictionary() -> Dictionary:
- return {"id":String(id),"direction":String(direction),"animation":String(animation),"root_motion_distance":root_motion_distance,"handoff_time":handoff_time,"duration":duration,"ends_lying":ends_lying,"flying":flying,"requires_crouch":requires_crouch,"min_clearance_behind_cm":min_clearance_behind_cm,"priority":priority,"key_bones":Array(key_bones),"swept_capsule_radius":swept_capsule_radius,"clearance_samples":clearance_samples,"root_samples":root_samples}
+ return {"presentation_offset":[presentation_offset.x,presentation_offset.y,presentation_offset.z],"id":String(id),"direction":String(direction),"animation":String(animation),"root_motion_distance":root_motion_distance,"handoff_time":handoff_time,"duration":duration,"ends_lying":ends_lying,"flying":flying,"requires_crouch":requires_crouch,"min_clearance_behind_cm":min_clearance_behind_cm,"priority":priority,"key_bones":Array(key_bones),"swept_capsule_radius":swept_capsule_radius,"clearance_samples":clearance_samples,"root_samples":root_samples}
 func root_at(time: float) -> Vector3:
  if root_samples.is_empty():return Vector3.ZERO
  var index: int=mini(int(time*60.0),root_samples.size()-1)

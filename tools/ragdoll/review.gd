@@ -89,6 +89,7 @@ func _start_preview() -> void:
   candidates.sort_custom(func(a:Resource,b:Resource)->bool:return a.priority>b.priority if a.priority!=b.priority else String(a.id)<String(b.id))
   preview_clip=candidates[0]
  if preview_clip!=null:
+  actor.presentation.position=preview_clip.presentation_offset
   actor.player.play(preview_clip.animation);actor.player.seek(0,true);actor.player.pause()
 func _physics_process(_delta: float) -> void:
  if actor==null:return

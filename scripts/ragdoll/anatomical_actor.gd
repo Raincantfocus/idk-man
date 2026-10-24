@@ -6,6 +6,7 @@ var boost_ticks: Dictionary={}
 var last_valid_pose: Array[Transform3D]=[]
 var last_valid_bodies: Dictionary={}
 var joint_metrics: Dictionary={}
+var initial_joint_metrics: Dictionary={}
 var worst_pose: Array[Transform3D]=[]
 var worst_joint_metrics: Dictionary={}
 var worst_separation: float=-1.0
@@ -69,6 +70,14 @@ func _handoff(trigger: String) -> void:
   body.apply_central_impulse((impulse*(float(weights[name])/maxf(total,.001))).limit_length(body.mass*float(tuning.transfer.delta_v_cap)))
  incoming_pose=capture_pose();incoming_bodies=captured.duplicate()
  _sample_guard(false)
+ initial_joint_metrics=joint_metrics.duplicate(true)
+ if last_valid_pose.is_empty():
+  # An authored pose already outside the allowed range must not be fed to
+  # the solver for three ticks. This is a rejected pose, never an approval.
+  guard_missing_snapshot+=1
+  last_valid_pose=incoming_pose;last_valid_bodies=incoming_bodies;snapshot_joint_error=joint_error()
+  trace.append({"event":"invalid_initial_pose_rejected","acceptance_failure":true,"before_solver_step":true})
+  _freeze_guard_snapshot()
 func _configure_joint_frames(captured: Dictionary) -> void:
  joint_links.clear()
  for name: String in physical:
@@ -116,19 +125,19 @@ func _configure_joint_frames(captured: Dictionary) -> void:
    body.set("joint_constraints/swing_span",float(definition.swing));body.set("joint_constraints/twist_span",float(definition.twist))
   joint_links[name]={"parent":parent_name,"parent_anchor":local_a.origin,"child_anchor":body.joint_offset.origin,"parent_basis":local_a.basis,"child_basis":body.joint_offset.basis}
   body.global_transform=child_pose
-func _angle_error(name: String, link: Dictionary) -> float:
+func _joint_coordinates(name: String, link: Dictionary) -> Dictionary:
  var a: Basis=physical[link.parent].global_basis*link.parent_basis
  var b: Basis=physical[name].global_basis*link.child_basis
  var relative: Basis=(a.inverse()*b).orthonormalized()
  var q: Quaternion=relative.get_rotation_quaternion()
+ if definitions[name].joint_kind=="hinge":
+  return {"flexion_degrees":wrapf(-rad_to_deg(2.0*atan2(q.z,q.w)),-180.0,180.0),"off_axis_degrees":rad_to_deg(acos(clampf(relative.z.dot(Vector3.BACK),-1.0,1.0)))}
+ return {"swing_degrees":rad_to_deg(acos(clampf(relative.x.dot(Vector3.RIGHT),-1.0,1.0))),"twist_degrees":wrapf(rad_to_deg(2.0*atan2(q.x,q.w)),-180.0,180.0)}
+func _angle_error(name: String, coordinates: Dictionary) -> float:
  var definition: Dictionary=definitions[name]
  if definition.joint_kind=="hinge":
-  var angle: float=wrapf(-rad_to_deg(2.0*atan2(q.z,q.w)),-180.0,180.0)
-  var off_axis: float=rad_to_deg(acos(clampf(relative.z.dot(Vector3.BACK),-1.0,1.0)))
-  return maxf(off_axis,maxf(float(definition.lower_degrees)-angle,angle-float(definition.upper_degrees)))
- var swing: float=rad_to_deg(acos(clampf(relative.x.dot(Vector3.RIGHT),-1.0,1.0)))
- var twist: float=absf(wrapf(rad_to_deg(2.0*atan2(q.x,q.w)),-180.0,180.0))
- return maxf(0.0,maxf(swing-float(definition.swing),twist-float(definition.twist)))
+  return maxf(float(coordinates.off_axis_degrees),maxf(float(definition.lower_degrees)-float(coordinates.flexion_degrees),float(coordinates.flexion_degrees)-float(definition.upper_degrees)))
+ return maxf(0.0,maxf(float(coordinates.swing_degrees)-float(definition.swing),absf(float(coordinates.twist_degrees))-float(definition.twist)))
 func _physics_process(delta: float) -> void:
  super._physics_process(delta)
  if not is_simulating():return
@@ -147,8 +156,9 @@ func _sample_guard(enforce: bool) -> void:
  for name: String in joint_links:
   var link: Dictionary=joint_links[name];var child: PhysicalBone3D=physical[name];var parent: PhysicalBone3D=physical[link.parent]
   var separation: float=(parent.global_transform*link.parent_anchor).distance_to(child.global_transform*link.child_anchor)
-  var angle: float=_angle_error(name,link);max_angle_error=maxf(max_angle_error,angle)
-  joint_metrics[name]={"separation_m":separation,"angle_error_degrees":angle}
+  var coordinates: Dictionary=_joint_coordinates(name,link)
+  var angle: float=_angle_error(name,coordinates);max_angle_error=maxf(max_angle_error,angle)
+  joint_metrics[name]={"separation_m":separation,"angle_error_degrees":angle,"coordinates":coordinates}
   valid=valid and separation<=float(tuning.guard.soft_m) and angle<=5.0
   if enforce and separation>float(tuning.guard.soft_m):
    boost_ticks[name]=int(tuning.guard.boost_ticks);boost_ticks[link.parent]=int(tuning.guard.boost_ticks)
