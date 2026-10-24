@@ -3,6 +3,7 @@ func _initialize() -> void:call_deferred("run")
 func run() -> void:
  DirAccess.make_dir_recursive_absolute("res://preview_captures")
  var scene: Node=load("res://ragdoll_review.tscn").instantiate();root.add_child(scene)
+ scene.select("Animation preview")
  scene.select("Clip: death_from_right")
  for i: int in 5:await physics_frame
  for time: float in [.1,.8,1.4]:

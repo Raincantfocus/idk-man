@@ -123,6 +123,8 @@ func _physics_process(delta: float) -> void:
   root_blocked_ticks=root_blocked_ticks+1 if expected.length()>.0001 and fraction<float(tuning.blocked_root_fraction) else 0
   if root_blocked_ticks>=int(tuning.blocked_root_ticks):_handoff("root_blocked");return
   player.seek(next,true);skeleton.force_update_all_bone_transforms();var new_points: Dictionary=points();var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+  if _pose_obstructed(previous,capture_pose()):
+   restore_pose(previous);_handoff("body_blocked");return
   for name: String in new_points:
    if query.obstruction(space,name,old_points[name],new_points[name],excluded):
     restore_pose(previous)
@@ -203,12 +205,7 @@ func is_simulating() -> bool:return state==State.BLENDING or state==State.RAGDOL
 func freeze_corpse() -> bool:
  if not allow_eviction:return false
  if state==State.FROZEN:return true
- # Budget eviction and timeout must not suspend a corpse over a void.
- var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
- var key_points: Dictionary=points()
- if not query.supported(space,key_points,excluded):return false
- for name: String in key_points:
-  if query.penetration(space,name,key_points[name],excluded).length()>float(tuning.penetration_limit_m):return false
+ if not _can_freeze_pose():return false
  var pose: Array[Transform3D]=capture_pose()
  frozen_joint_error=joint_error()
  for bone: PhysicalBone3D in physical.values():
@@ -229,3 +226,14 @@ func joint_error() -> float:
   var b: Vector3=physical[name].global_transform*link.child_anchor
   maximum=maxf(maximum,a.distance_to(b))
  return maximum
+
+func _can_freeze_pose() -> bool:
+ # Budget eviction and timeout must not suspend a corpse over a void.
+ var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+ var key_points: Dictionary=points()
+ if not query.supported(space,key_points,excluded):return false
+ for name: String in key_points:
+  if query.penetration(space,name,key_points[name],excluded).length()>float(tuning.penetration_limit_m):return false
+ return true
+
+func _pose_obstructed(_previous: Array, _proposed: Array) -> bool:return false

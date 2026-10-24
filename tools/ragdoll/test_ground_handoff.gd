@@ -31,7 +31,7 @@ func run() -> void:
    if actor.state==actor.State.ANIMATING:animation_ticks+=1
    if actor.handoff_count>0:break
   assert(selected and actor.handoff_count==1,"Selection/handoff failed: "+String(clip.id))
-  assert(actor.reason=="planned" or (clip.flying and actor.reason=="no_support"),"Unexpected interruption: "+actor.reason)
+  assert(actor.reason in ["planned","body_blocked"] or (clip.flying and actor.reason=="no_support"),"Unexpected interruption: "+actor.reason)
   rows.append({"wall_rejected":true,"clip":String(clip.id),"selected":selected,"animation_ticks":animation_ticks,"authored_elapsed":actor.elapsed,"planned_handoff":clip.handoff_time,"reason":actor.reason,"handoffs":actor.handoff_count,"lift_mm":clip.presentation_offset.y*1000})
   print("GROUND_CASE ",JSON.stringify(rows.back()));actor.free();await physics_frame
  var output:=FileAccess.open("res://data/ragdoll/ground_handoff_report.json",FileAccess.WRITE);output.store_string(JSON.stringify({"engine":Engine.get_version_info().string,"scope":"Single-clip selection on flat floor; not full ragdoll acceptance","cases":rows},"  "));output.close()

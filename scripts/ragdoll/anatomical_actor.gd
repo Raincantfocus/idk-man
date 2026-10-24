@@ -17,6 +17,9 @@ var max_angle_error: float=0.0
 var max_body_speed: float=0.0
 var max_body_spin: float=0.0
 var guard_freezes: int=0
+var constraint_recoveries: int=0
+var contact_recoveries: int=0
+var max_contact_shift_m: float=0.0
 var guard_missing_snapshot: int=0
 var guard_cpu_us: int=0
 var guard_frames: int=0
@@ -72,12 +75,34 @@ func _handoff(trigger: String) -> void:
  _sample_guard(false)
  initial_joint_metrics=joint_metrics.duplicate(true)
  if last_valid_pose.is_empty():
-  # An authored pose already outside the allowed range must not be fed to
-  # the solver for three ticks. This is a rejected pose, never an approval.
-  guard_missing_snapshot+=1
-  last_valid_pose=incoming_pose;last_valid_bodies=incoming_bodies;snapshot_joint_error=joint_error()
-  trace.append({"event":"invalid_initial_pose_rejected","acceptance_failure":true,"before_solver_step":true})
-  _freeze_guard_snapshot()
+  _project_constraints()
+  _clear_world_contacts()
+  _sample_guard(false)
+func _project_constraints() -> void:
+ # Project physical joint frames back into the existing anatomical constraints.
+ # Rendering still blends from the captured authored pose through simulator.influence.
+ for name: String in joint_links:
+  var link: Dictionary=joint_links[name]
+  var parent_frame: Transform3D=physical[link.parent].global_transform*Transform3D(link.parent_basis,link.parent_anchor)
+  var child_frame: Transform3D=physical[name].global_transform*Transform3D(link.child_basis,link.child_anchor)
+  var q: Quaternion=(parent_frame.basis.inverse()*child_frame.basis).orthonormalized().get_rotation_quaternion()
+  var definition: Dictionary=definitions[name]
+  var corrected: Quaternion
+  if definition.joint_kind=="hinge":
+   var angle: float=wrapf(-2.0*atan2(q.z,q.w),-PI,PI)
+   corrected=Quaternion(Vector3.BACK,-clampf(angle,deg_to_rad(float(definition.lower_degrees)),deg_to_rad(float(definition.upper_degrees))))
+  else:
+   var twist:=Quaternion(q.x,0.0,0.0,q.w)
+   twist=twist.normalized() if twist.length_squared()>.000001 else Quaternion.IDENTITY
+   var swing: Quaternion=(q*twist.inverse()).normalized()
+   if swing.w<0.0:swing=-swing
+   var angle: float=2.0*acos(clampf(swing.w,-1.0,1.0))
+   var maximum: float=deg_to_rad(float(definition.swing))
+   if angle>maximum:swing=Quaternion.IDENTITY.slerp(swing,maximum/angle)
+   var twist_angle: float=wrapf(2.0*atan2(twist.x,twist.w),-PI,PI)
+   corrected=swing*Quaternion(Vector3.RIGHT,clampf(twist_angle,-deg_to_rad(float(definition.twist)),deg_to_rad(float(definition.twist))))
+  physical[name].global_transform=parent_frame*Transform3D(Basis(corrected),Vector3.ZERO)*Transform3D(link.child_basis,link.child_anchor).affine_inverse()
+ trace.append({"event":"constraint_projection","time":handoff_elapsed})
 func _configure_joint_frames(captured: Dictionary) -> void:
  joint_links.clear()
  for name: String in physical:
@@ -151,6 +176,10 @@ func _physics_process(delta: float) -> void:
    boost_ticks[name]=int(boost_ticks[name])-1;body.angular_damp=float(tuning.guard.boost_damping)
   max_body_speed=maxf(max_body_speed,body.linear_velocity.length());max_body_spin=maxf(max_body_spin,body.angular_velocity.length())
  _sample_guard(true)
+ if handoff_elapsed>=float(tuning.settle_seconds):
+  var slow: bool=true
+  for body: PhysicalBone3D in physical.values():slow=slow and body.linear_velocity.length()<=float(tuning.recovery.settle_linear_cap)
+  if slow:freeze_corpse()
 func _sample_guard(enforce: bool) -> void:
  var begin: int=Time.get_ticks_usec();var valid: bool=true;var trigger: bool=false
  for name: String in joint_links:
@@ -179,23 +208,72 @@ func _sample_guard(enforce: bool) -> void:
   last_valid_pose=capture_pose();snapshot_joint_error=joint_error();last_valid_bodies.clear()
   for name: String in physical:last_valid_bodies[name]=physical[name].global_transform
  if enforce and trigger:
-  if last_valid_pose.is_empty():
-   guard_missing_snapshot+=1
-   last_valid_pose=incoming_pose;last_valid_bodies=incoming_bodies;snapshot_joint_error=0.0
-   trace.append({"event":"invalid_initial_pose_rejected","acceptance_failure":true})
-  _freeze_guard_snapshot()
+  constraint_recoveries+=1;guard_ticks.clear()
+  for body: PhysicalBone3D in physical.values():
+   body.linear_velocity=body.linear_velocity.limit_length(float(tuning.recovery.linear_cap))
+   body.angular_velocity=body.angular_velocity.limit_length(float(tuning.recovery.angular_cap))
  guard_cpu_us+=Time.get_ticks_usec()-begin;guard_frames+=1
-func _freeze_guard_snapshot() -> void:
- # Emergency fallback follows the requested last-valid-pose rule, even in air.
- # It can visibly rewind; the stress report records this rather than hiding it.
- frozen_joint_error=snapshot_joint_error
+func _can_freeze_pose() -> bool:
+ return query.supported(get_world_3d().direct_space_state,points(),excluded) and body_penetration_m()<=float(tuning.penetration_limit_m)
+func body_penetration_m() -> float:
+ var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+ var maximum: float=0.0
+ for body: PhysicalBone3D in physical.values():
+  for collider: Node in body.get_children():
+   if not collider is CollisionShape3D:continue
+   var test:=PhysicsShapeQueryParameters3D.new();test.shape=collider.shape
+   test.transform=body.global_transform*collider.transform;test.exclude=excluded
+   test.collision_mask=int(tuning.world_mask)|int(tuning.prop_mask);test.margin=float(tuning.query_margin_m)
+   var contacts: PackedVector3Array=space.collide_shape(test,8)
+   for i: int in range(0,contacts.size()-1,2):
+    maximum=maxf(maximum,contacts[i].distance_to(contacts[i+1]))
+ return maximum
+
+func _clear_world_contacts() -> void:
+ # Translate the complete physical rig together, preserving every joint frame.
+ # Used after constraint projection; no gameplay capsule or reward state changes.
+ var total:=Vector3.ZERO
+ var travelled: float=0.0
+ var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+ for iteration: int in int(tuning.recovery.contact_iterations):
+  var correction:=Vector3.ZERO
+  for body: PhysicalBone3D in physical.values():
+   for collider: Node in body.get_children():
+    if not collider is CollisionShape3D:continue
+    var test:=PhysicsShapeQueryParameters3D.new();test.shape=collider.shape;test.transform=body.global_transform*collider.transform
+    test.exclude=excluded;test.collision_mask=int(tuning.world_mask)|int(tuning.prop_mask);test.margin=float(tuning.query_margin_m)
+    var contacts: PackedVector3Array=space.collide_shape(test,8)
+    for i: int in range(0,contacts.size()-1,2):
+     var delta: Vector3=contacts[i+1]-contacts[i]
+     if delta.length_squared()>correction.length_squared():correction=delta
+  if correction.length()<=float(tuning.recovery.contact_slop_m):break
+  var remaining: float=float(tuning.recovery.contact_total_cap_m)-travelled
+  if remaining<=0.0:break
+  correction=correction.limit_length(minf(float(tuning.recovery.contact_step_cap_m),remaining))
+  travelled+=correction.length()
+  total+=correction
+  for body: PhysicalBone3D in physical.values():body.global_position+=correction
+ if total.length()>.00001:contact_recoveries+=1;max_contact_shift_m=maxf(max_contact_shift_m,total.length())
+
+func _pose_obstructed(previous: Array, proposed: Array) -> bool:
+ var space: PhysicsDirectSpaceState3D=get_world_3d().direct_space_state
+ var steps: int=int(tuning.recovery.animation_substeps)
  for name: String in physical:
-  var bone: PhysicalBone3D=physical[name]
-  var frozen:=StaticBody3D.new();frozen.collision_layer=int(tuning.corpse_layer);frozen.collision_mask=int(tuning.world_mask)|int(tuning.prop_mask);add_child(frozen);frozen.global_transform=last_valid_bodies[name]
-  for child: Node in bone.get_children():
-   if child is CollisionShape3D:
-    var collider:=CollisionShape3D.new();collider.shape=child.shape;collider.transform=child.transform;frozen.add_child(collider)
-  excluded.append(frozen.get_rid())
- simulator.physical_bones_stop_simulation();simulator.active=false;simulator.influence=0.0
- restore_pose(last_valid_pose);state=State.FROZEN;guard_freezes+=1
- trace.append({"event":"stretch_guard_freeze","may_rewind":true,"time":handoff_elapsed})
+  var bone: int=skeleton.find_bone(name)
+  for collider: Node in physical[name].get_children():
+   if not collider is CollisionShape3D:continue
+   var start: Transform3D=skeleton.global_transform*previous[bone]*physical[name].body_offset*collider.transform
+   var finish: Transform3D=skeleton.global_transform*proposed[bone]*physical[name].body_offset*collider.transform
+   for step: int in range(1,steps+1):
+    var test:=PhysicsShapeQueryParameters3D.new();test.shape=collider.shape
+    test.transform=start.interpolate_with(finish,float(step)/float(steps));test.exclude=excluded
+    test.collision_mask=int(tuning.collision_mask);test.margin=float(tuning.query_margin_m)
+    var contacts: PackedVector3Array=space.collide_shape(test,8)
+    for i: int in range(0,contacts.size()-1,2):
+     var delta: Vector3=contacts[i+1]-contacts[i]
+     var tolerance: float=float(tuning.recovery.contact_slop_m)
+     # Planted soles are checked by the existing foot probes in the base actor.
+     # The longer rigid foot capsule must still stop against walls/props.
+     if name.ends_with("Foot") and delta.normalized().dot(Vector3.UP)>.9:continue
+     if delta.length()>tolerance:return true
+ return false

@@ -2,7 +2,7 @@
 
 2026-10-23. Godot 4.6.3 official (`7d41c59c4`), Jolt. This is a separate experimental review. The previous death-handoff review and playable game are unchanged. This does **not** complete the supplied requirements.
 
-**Latest results:** [Ground-contact and handoff revision](GROUND_HANDOFF_REVIEW.md). Earlier matrices below and in the hinge report are historical baselines; the overall rig is still unapproved.
+**Latest results:** [Death playback and ragdoll transition fix](PLAYBACK_TRANSITION_FIX.md). Default playback now includes collision and ragdoll; earlier freezes and default-preview behavior below are historical. Anatomy/skin acceptance remains pending.
 
 ## Playback fix — 2026-10-23
 

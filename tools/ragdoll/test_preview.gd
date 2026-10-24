@@ -8,6 +8,7 @@ func click(scene: Node, title: String) -> void:
  assert(false,"Missing button: "+title)
 func run() -> void:
  var scene: Node=load("res://ragdoll_review.tscn").instantiate();root.add_child(scene)
+ click(scene,"Animation preview")
  var ids: Array=[]
  for clip: Resource in scene.actor.clips:ids.append(String(clip.id))
  for id: String in ids:

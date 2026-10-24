@@ -20,7 +20,7 @@ for name in ('project.godot', 'death_review.tscn'):
 files['ragdoll_review.tscn'] = repo / 'tools/ragdoll/ragdoll_review.tscn'
 for source in (repo / 'data/ragdoll').rglob('*'):
     if source.is_file(): files[source.relative_to(repo).as_posix()] = source
-for name in ('docs/GROUND_HANDOFF_REVIEW.md', 'docs/HINGE_CONVENTION_REVIEW.md', 'docs/RAGDOLL_REQUIREMENTS.md', 'docs/ANATOMICAL_RAGDOLL_REVIEW.md', 'docs/DEATH_HANDOFF_REVIEW.md', 'docs/BODY_GEAR_CLIPPING_REVIEW.md',
+for name in ('docs/PLAYBACK_TRANSITION_FIX.md', 'docs/GROUND_HANDOFF_REVIEW.md', 'docs/HINGE_CONVENTION_REVIEW.md', 'docs/RAGDOLL_REQUIREMENTS.md', 'docs/ANATOMICAL_RAGDOLL_REVIEW.md', 'docs/DEATH_HANDOFF_REVIEW.md', 'docs/BODY_GEAR_CLIPPING_REVIEW.md',
              'assets/characters/provenance.json', 'assets/characters/licenses/LICENSE.md',
              'assets/characters/licenses/LICENSE.ASSETS.md', 'THIRD_PARTY_NOTICES.md'):
     files[name] = repo / name
@@ -40,7 +40,7 @@ args.output.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(args.output, 'w', zipfile.ZIP_DEFLATED) as archive:
     for name, data in contents.items(): archive.writestr('death-review/' + name, data)
     archive.writestr('death-review/SHA256SUMS.json', json.dumps(manifest, indent=2) + '\n')
-    archive.writestr('death-review/README.txt', 'REJECTED anatomical ragdoll candidate. Godot 4.6.3. Import project.godot and press F5.\nRead docs/ANATOMICAL_RAGDOLL_REVIEW.md for failures, controls and tests.\nThis is an isolated review, not the playable game.\n')
+    archive.writestr('death-review/README.txt', 'Godot 4.6.3 death playback review. Import project.godot and press F5. Default clip playback includes collisions and ragdoll; Animation preview is an explicit bypass.\nRead docs/PLAYBACK_TRANSITION_FIX.md for fixes, measurements and remaining quality limits.\nThis is an isolated review, not the playable game.\n')
 with zipfile.ZipFile(args.output) as archive:
     assert archive.testzip() is None
     for name, digest in manifest.items():
