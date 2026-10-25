@@ -297,7 +297,11 @@
   "ground_alignment": {
     "clearance_m": 0.003,
     "maximum_lift_m": 0.025,
-    "plant_window_seconds": 0.0
+    "plant_window_seconds": 0.0,
+    "clip_plant_windows": {
+      "death_from_right": 0.2,
+      "pro_rifle_pack_death_from_right": 0.2
+    }
   },
   "recovery": {
     "linear_cap": 4.0,

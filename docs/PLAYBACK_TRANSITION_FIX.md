@@ -1,5 +1,7 @@
 # Death playback and ragdoll transition fix — 2026-10-24
 
+Latest follow-up: [right-side death foot-plant correction](RIGHT_DEATH_PLANT_FIX.md). The table below is the pre-follow-up baseline; current machine results are in `data/ragdoll/playback_transition_report.json`.
+
 ## Fixed behavior
 
 The review now opens in collision-aware death playback. Clicking a clip respects that mode; it no longer silently activates collision-free preview. Full authored preview remains an explicit option. Joint diagnostics are behind **Joint debug** so the controls do not obscure the corpse.

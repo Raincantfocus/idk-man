@@ -26,7 +26,9 @@ func run() -> void:
    var p:=Vector3(row.position[0],row.position[1],row.position[2]);clip.root_motion_distance+=p.distance_to(previous);previous=p
   player.play(clip.id);player.seek(0,true);sk.force_update_all_bone_transforms()
   var minimum: float=0.0
-  for frame: int in int(ceil(float(config.ground_alignment.plant_window_seconds)*60.0))+1:
+  # Short authored foot-plant drift is calibrated per clip, never by disabling collision.
+  var plant_window: float=float(config.ground_alignment.get("clip_plant_windows",{}).get(String(clip.id),config.ground_alignment.plant_window_seconds))
+  for frame: int in int(ceil(plant_window*60.0))+1:
    var time: float=minf(float(frame)/60.0,clip.duration)
    player.seek(time,true);sk.force_update_all_bone_transforms()
    for name: String in ["LeftFoot","RightFoot"]:
@@ -61,4 +63,6 @@ func run() -> void:
   assert(ResourceSaver.save(clip,"res://data/ragdoll/clips/"+String(clip.id)+".tres")==OK)
   var file:=FileAccess.open("res://data/ragdoll/clips/"+String(clip.id)+".json",FileAccess.WRITE);file.store_string(JSON.stringify(clip.to_dictionary(),"  "));file.close()
   reports.append({"lift_m":lift,"handoff_seconds":clip.handoff_time,"id":clip.id,"direction":clip.direction,"samples":clip.clearance_samples.size(),"root_motion_distance":clip.root_motion_distance,"flying":clip.flying,"usable_data":true,"visual_approval":false})
+ var settings=preload("res://scripts/death/death_settings.gd").new();settings.values=config
+ assert(ResourceSaver.save(settings,"res://data/ragdoll/settings.tres")==OK)
  var file:=FileAccess.open("res://data/ragdoll/clearance_report.json",FileAccess.WRITE);file.store_string(JSON.stringify(reports,"  "));file.close();scene.free();print("DEATH_CLEARANCE_BAKED ",reports.size());quit()

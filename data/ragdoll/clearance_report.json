@@ -24,9 +24,9 @@
   {
     "direction": "right",
     "flying": false,
-    "handoff_seconds": 0.0166666666666667,
+    "handoff_seconds": 0.45,
     "id": "death_from_right",
-    "lift_m": 0.00783307763934135,
+    "lift_m": 0.0147124296724796,
     "root_motion_distance": 1.04555874983998,
     "samples": 199,
     "usable_data": true,
@@ -101,9 +101,9 @@
   {
     "direction": "right",
     "flying": false,
-    "handoff_seconds": 0.0333333333333333,
+    "handoff_seconds": 0.366666666666667,
     "id": "pro_rifle_pack_death_from_right",
-    "lift_m": 0.00783348369598389,
+    "lift_m": 0.0115968799889088,
     "root_motion_distance": 1.04351536154076,
     "samples": 200,
     "usable_data": true,
