@@ -9,6 +9,8 @@ A playable first-person survival prototype in **Godot 4.6.3**, built from the [t
 ![Restored arena](docs/restored-arena.png)
 
 
+Bullet wounds now use a bone-attached FIFO pool with textured normal/ORM effects and a Compatibility parallax fallback; see [implementation and limitations](docs/BULLET_WOUNDS.md).
+
 Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER_PIPELINE_PHASE_1.md). Run `godot --path . scenes/characters/character_review.tscn` to inspect the CC0 human bodies, five shape presets and explicit LODs. Tactical gear, textures, correctives and wound seams remain open gates; the playable test now uses a shared review soldier fallback; full role variants remain unfinished.
 
 ## Playable integration test (2026-10-26)
@@ -75,7 +77,7 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Current limits
 
-This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, localized persistent wound decals, elite scanners, controller support, or an in-game rebinding UI. The three weapons now use separate authored meshes and a four-bone glove/sleeve rig; detailed finger animation and full hand-keyed clips remain unfinished. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
+This prototype does not yet contain hand-keyed skeletal weapon animation, a separate chamber-round simulation, chamber checks, executions, destructible cover, elite scanners, controller support, or an in-game rebinding UI. The three weapons now use separate authored meshes and a four-bone glove/sleeve rig; detailed finger animation and full hand-keyed clips remain unfinished. Enemy armor is represented by aggregate health except for directional shield blocking. Enemies use ramps between floors; the jump ledges, upper gap landing, and low slide tunnel remain player-only shortcuts. Ragdolls use box proxies and pin joints without anatomical angular limits; they collide with the world but do not obstruct the player or other corpses.
 
 The director uses bounded population, attack windups, and timed relief rather than the full adaptive pressure estimator in the design. Purchase tuning is intentionally simpler than the production attachment system. Effects are capped but not yet pooled. Damage/pickup resolution follows Godot node tick order, rather than the proposed substep timestamp event queue. A full difficulty/playability study is still needed. No 144 FPS claim has been validated.
 

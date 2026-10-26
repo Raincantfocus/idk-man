@@ -398,6 +398,7 @@ func fire() -> bool:
 		if not hit.is_empty():
 			if hit.collider.has_method("take_damage"):
 				var headshot: bool = target.y - hit.collider.global_position.y > 1.55
+				hit.collider.set_meta("cosmetic_surface_hit", {"point": target, "normal": hit.normal, "direction": direction})
 				hit.collider.take_damage(float(stats.damage) * (2 if headshot else 1), target, headshot)
 				hit_timer = 0.13
 			else:

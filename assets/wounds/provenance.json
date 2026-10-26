@@ -1,0 +1,1 @@
+{"source":"tools/wounds/build_textures.py","authorship":"Project-authored mathematical texture maps; no external image source","seed":7319,"resolution":[512,512],"normal_convention":"OpenGL +Y, do not invert green","orm":"R occlusion, G roughness, B metallic (zero)","height":"white high, black recess; shader samples 1-height as depth"}

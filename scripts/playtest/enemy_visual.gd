@@ -63,13 +63,18 @@ func resolved_hit(amount: float, point: Vector3, headshot: bool) -> void:
  var weapon: StringName=&"shotgun" if runtime.game.player.weapon_index==1 else &"rifle"
  trauma.apply_hit(hit_sequence,zone,amount,weapon,point.distance_to(runtime.game.player.global_position),amount,(point-runtime.game.player.global_position).normalized(),Vector3.UP)
  if runtime.game.gore_level>0:
-  runtime.wound(actor,point)
+  var surface: Dictionary=owner_enemy.get_meta("cosmetic_surface_hit",{})
+  if not surface.get("point",Vector3.INF).is_equal_approx(point):surface={}
+  var normal: Vector3=surface.get("normal",Vector3.ZERO)
+  runtime.wound(actor,point,normal,surface.get("direction",Vector3.ZERO))
 
  request_state("flinch")
 func die(point: Vector3) -> Node3D:
  if dead:return null
  dead=true;animator.freeze_pose()
+ actor.set_meta("wound_reparent",true)
  actor.reparent(runtime.game,true);actor.add_to_group("corpse")
+ actor.set_meta("wound_reparent",false)
  actor.set_meta("playtest_look",look);actor.set_meta("role",kind)
  actor.process_mode=Node.PROCESS_MODE_PAUSABLE
  actor.body_collider.disabled=false;actor.collision_mask=int(runtime.rig_settings.collision_mask)

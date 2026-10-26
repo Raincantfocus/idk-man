@@ -1,0 +1,22 @@
+{
+  "engine": "Godot 4.6.3",
+  "pool_limit_per_character": 50,
+  "global_pool": 128,
+  "repeated_hits": 55,
+  "new_nodes_during_repeated_hits": 0,
+  "ragdoll_attachment_pass": true,
+  "corpse_deletion_reclaims_pool": true,
+  "gore_off_clears": true,
+  "native_compatibility_event_cpu_ms": [
+    54.211,
+    0.166,
+    0.128
+  ],
+  "headless_event_cpu_ms": [
+    110.727,
+    0.113
+  ],
+  "native_decal_visual_verified": false,
+  "native_decal_visual_blocker": "Vulkan VK_KHR_surface unavailable; engine fell back to Compatibility",
+  "hardware_frame_cost_verified": false
+}

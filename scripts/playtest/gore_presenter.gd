@@ -132,6 +132,7 @@ func sever(key: String,direction: Vector3) -> bool:
  var collider:=CollisionShape3D.new();var shape:=BoxShape3D.new();shape.size=bounds.size.max(Vector3.ONE*.03);collider.shape=shape;collider.position=bounds.get_center();gib.add_child(collider)
  gib.linear_velocity=direction.limit_length(1)*2+Vector3.UP
  gib.angular_velocity=Vector3(1,2,-1)
+ service.wound_pool.remove_chain(actor,d.bone)
  cuts[key]=true
  actor.set_meta("last_cut_ms",float(Time.get_ticks_usec()-started)/1000.0)
  service.game.blood_burst(frame.origin,direction,12)

@@ -14,7 +14,7 @@ var logged: Dictionary={}
 var new_enemies: bool=true
 var forced_clip: String=""
 var corpse_nodes: Array[Node]=[]
-var wounds: Array[Node]=[]
+var wound_pool: Node
 var palette: Array[Color]=[Color("9b9b91"),Color("737e69"),Color("9b8872"),Color("6e7a80"),Color("807b69"),Color("625c57")]
 var shared_materials: Dictionary={}
 var blood_budget:=preload("res://scripts/trauma/cosmetic_budget.gd").new()
@@ -22,6 +22,7 @@ var pools:=preload("res://scripts/trauma/corpse_blood_pool.gd").new()
 var pool_owners: Dictionary={}
 var log_file: FileAccess
 func setup(owner_game: Node) -> void:
+ wound_pool=preload("wound_pool.gd").new();add_child(wound_pool)
  game=owner_game;get_window().focus_exited.connect(_on_focus_exited);process_mode=Node.PROCESS_MODE_PAUSABLE;rng.seed=778431
  rig_settings=JSON.parse_string(FileAccess.get_file_as_string("res://data/ragdoll/settings.json"));rig_settings.collision_mask=17;rig_settings.prop_mask=0;ragdoll_budget.configure(rig_settings)
  clip_catalogue=JSON.parse_string(FileAccess.get_file_as_string("res://data/ragdoll/clearance_report.json"))
@@ -94,17 +95,10 @@ func register_corpse(actor: Node) -> void:
  )
  while corpse_nodes.size()>18:
   var old: Node=corpse_nodes.pop_front();if is_instance_valid(old):old.queue_free()
-func wound(actor: Node,point: Vector3) -> void:
- wounds=wounds.filter(func(n)->bool:return is_instance_valid(n))
- # A bone-attached stain is the supported unfinished-zone fallback, never a cut mesh.
- var attached: Array=actor.get_meta("wounds",[]).filter(func(n)->bool:return is_instance_valid(n))
- if attached.size()>=4:return
- var socket:=BoneAttachment3D.new();socket.bone_name="Chest";actor.skeleton.add_child(socket)
- var visual:=MeshInstance3D.new();var quad:=QuadMesh.new();quad.size=Vector2(.09,.09);visual.mesh=quad
- var mat:=StandardMaterial3D.new();mat.albedo_color=Color(.16,.012,.009);mat.roughness=.4;mat.cull_mode=BaseMaterial3D.CULL_DISABLED;visual.material_override=mat
- socket.add_child(visual);visual.global_position=point
- visual.look_at(game.player.camera.global_position,Vector3.UP)
- attached.append(socket);actor.set_meta("wounds",attached);wounds.append(socket)
+func wound(actor: Node,point: Vector3,normal: Vector3=Vector3.ZERO,direction: Vector3=Vector3.ZERO) -> void:
+ if game.gore_level==0:return
+ if normal.length_squared()<.001:normal=(game.player.camera.global_position-point).normalized()
+ wound_pool.add_wound(actor,point,normal,direction)
 func set_gore(mode: int) -> void:
  blood_budget.set_gore_mode(mode)
  if mode==0:
@@ -115,9 +109,7 @@ func set_gore(mode: int) -> void:
   for corpse: Node in game.corpses:
    if is_instance_valid(corpse):corpse.queue_free()
   game.corpses.clear()
-  for node: Node in wounds:
-   if is_instance_valid(node):node.queue_free()
-  wounds.clear()
+  wound_pool.clear()
   for group: String in ["blood_drop","blood_stain","gib"]:
    for node: Node in get_tree().get_nodes_in_group(group):node.queue_free()
 func _physics_process(delta: float) -> void:
@@ -135,7 +127,7 @@ func clear_corpses() -> void:
  corpse_nodes.clear();ragdoll_budget.active.clear();ragdoll_budget.corpses.clear()
  blood_budget.set_gore_mode(0);blood_budget.set_gore_mode(game.gore_level);pool_owners.clear()
 func reset_run() -> void:
- clear_corpses();looks.clear();wounds.clear();last_look=-1;sequence=0;rng.seed=778431
+ clear_corpses();looks.clear();wound_pool.clear();last_look=-1;sequence=0;rng.seed=778431
 func toggle_models() -> void:
  clear_corpses()
  new_enemies=not new_enemies

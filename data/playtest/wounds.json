@@ -1,0 +1,12 @@
+{
+  "per_character": 50,
+  "global_pool": 128,
+  "diameter_m": 0.085,
+  "projection_depth_m": 0.12,
+  "surface_offset_m": 0.001,
+  "parallax_depth_uv": 0.075,
+  "parallax_steps": 12,
+  "distance_fade_begin_m": 18.0,
+  "distance_fade_length_m": 12.0,
+  "max_surface_refinements_per_frame": 1
+}

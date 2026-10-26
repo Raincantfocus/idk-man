@@ -12,3 +12,5 @@ Read `PLAYTEST_NOTES.md` for exact results, export commands, ranked known issues
 
 Map rollback: the classic 96 × 80 m arena is restored, including galleries, gantries, downhill chute and nine movement practice routes. New enemies and gore remain enabled. Current movement checks and Linux export smoke passed.
 The ten-wave automated integration run passed on the restored map.
+
+Bullet wounds now use bone-attached textured effects and a preallocated FIFO pool (50 per character, 128 global). Compatibility uses parallax patches; native Decal nodes are selected on Forward+/Mobile. Surface-query cost and extreme-joint clipping remain limitations; see BULLET_WOUNDS.md.

@@ -3,52 +3,52 @@
   "budget_gibs": 16,
   "cut_times": [
     {
-      "cut_ms": 10.949,
+      "cut_ms": 11.749,
       "mode": 1,
       "role": "rusher"
     },
     {
-      "cut_ms": 11.714,
+      "cut_ms": 12.219,
       "mode": 1,
       "role": "enforcer"
     },
     {
-      "cut_ms": 13.495,
+      "cut_ms": 12.396,
       "mode": 1,
       "role": "shield"
     },
     {
-      "cut_ms": 12.952,
+      "cut_ms": 14.148,
       "mode": 1,
       "role": "flusher"
     },
     {
-      "cut_ms": 10.686,
+      "cut_ms": 12.145,
       "mode": 1,
       "role": "elite"
     },
     {
-      "cut_ms": 11.961,
+      "cut_ms": 11.105,
       "mode": 2,
       "role": "rusher"
     },
     {
-      "cut_ms": 11.689,
+      "cut_ms": 11.127,
       "mode": 2,
       "role": "enforcer"
     },
     {
-      "cut_ms": 10.919,
+      "cut_ms": 11.392,
       "mode": 2,
       "role": "shield"
     },
     {
-      "cut_ms": 12.967,
+      "cut_ms": 11.404,
       "mode": 2,
       "role": "flusher"
     },
     {
-      "cut_ms": 15.936,
+      "cut_ms": 12.35,
       "mode": 2,
       "role": "elite"
     }
@@ -70,7 +70,7 @@
     "rng": -5619958169121644969,
     "score": 1906
   },
-  "last_warm_head_cut_ms": 12.497,
+  "last_warm_head_cut_ms": 11.82,
   "off": {
     "credits": 0,
     "drops": [
@@ -105,8 +105,8 @@
     "score": 1906
   },
   "restart_nodes": [
-    1314,
-    1314
+    938,
+    938
   ],
   "settled_hit_sever_pass": true
 }

@@ -15,6 +15,8 @@ for mode, folder in [('debug', 'windows-debug'), ('release', 'windows')]:
         z.write(root / 'docs/PLAYABLE_TEST_BUILD.md', 'PLAYTEST_NOTES.md')
         z.write(root / 'docs/PLAYTEST_RELEASE_NOTES.md', 'READ_ME_FIRST.md')
         z.write(root / 'docs/NEW_MODEL_GORE.md', 'NEW_MODEL_GORE.md')
+        z.write(root / 'docs/BULLET_WOUNDS.md', 'BULLET_WOUNDS.md')
+        z.write(root / 'docs/wound-captures/compatibility.png', 'wound-captures/compatibility.png')
         for image in (root/'docs/new-gore-captures').glob('*.png'):z.write(image,'new-gore-captures/'+image.name)
         z.write(root / 'THIRD_PARTY_NOTICES.md', 'THIRD_PARTY_NOTICES.md')
     with zipfile.ZipFile(archive) as z:

@@ -1,33 +1,33 @@
 {
   "debug": {
-    "zip_bytes": 150809115,
-    "zip_sha256": "270f88842683af0a7aca25dbed797e4c48d6b5f54ad385c1bd43acfefbe9aaf3",
+    "zip_bytes": 152320301,
+    "zip_sha256": "5a767925064734147c067584b84a1e6c36a67607ed4060cc0b0c078fcde0fd67",
     "parts": [
       {
         "name": "zero-line-windows-debug.zip.part01",
         "bytes": 83886080,
-        "sha256": "cd2d6c9ad3c66bbec8b8023a9340f9fcf744f387d62c6d15914a740f0c2db52f"
+        "sha256": "7ba7cb804ffb334d00ef633faf95018dc98cb55415ff9d5d8caf034701f63306"
       },
       {
         "name": "zero-line-windows-debug.zip.part02",
-        "bytes": 66923035,
-        "sha256": "2b4ced3c46227948f71abda9b020774c6e1d1e67348f9d6fca1a0638ca3b4873"
+        "bytes": 68434221,
+        "sha256": "95cd41b0092cb699a04b8ae71afddb6b1c6d720e37f5d6dd63663a127388f06d"
       }
     ]
   },
   "release": {
-    "zip_bytes": 153338816,
-    "zip_sha256": "ad75d11830fe86bb83a8bb6f61c324aae30557c94f93b388b913af9847729562",
+    "zip_bytes": 154854619,
+    "zip_sha256": "30fef828fe22fe5d34502f2ed03d45b71249294df57d476a0a0bafdcbc372351",
     "parts": [
       {
         "name": "zero-line-windows-release.zip.part01",
         "bytes": 83886080,
-        "sha256": "49c69efd86024075d0361509140ea2c8971b3c0b898f9925595399a164f2ee24"
+        "sha256": "43fd84e0a9ec48c65a8298b67dc9e896f900b293633b570e3530cab13f20c86f"
       },
       {
         "name": "zero-line-windows-release.zip.part02",
-        "bytes": 69452736,
-        "sha256": "de497215bd9b89c8f20016b461ec9cb435c44191eb6c73fcbd4fd0cc6134ee0a"
+        "bytes": 70968539,
+        "sha256": "f978625da0815900341b2f7f563b1983b69789276a8047fa76f443f8d9ac9ef6"
       }
     ]
   }
