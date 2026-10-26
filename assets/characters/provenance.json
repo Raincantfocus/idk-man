@@ -446,5 +446,15 @@
       "operations": "Source closure repair, local quad recovery, matching neck split, generated layered caps/stubs/interior proxies, measured corrective shape generation and private native review",
       "production_approved": false
     }
-  ]
+  ],
+  "playable_integration": {
+    "date": "2026-10-26",
+    "source_review": "zero-line-anatomical-ragdoll-review at fb0fb3cd4a5fc38bb21734a8953e7b74d8f2d783",
+    "files": [
+      "models/body.glb",
+      "models/fatigues.glb",
+      "models/carrier.glb"
+    ],
+    "note": "Existing reviewed derivatives copied without new modeling. Existing MakeHuman and user-supplied clothing provenance/license records above apply. Shared fallback for all roles, not finished variants."
+  }
 }

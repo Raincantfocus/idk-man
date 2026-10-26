@@ -1,0 +1,34 @@
+{
+  "debug": {
+    "zip_bytes": 134103954,
+    "zip_sha256": "4ee125bf7224f5329098e80f3b21a45bac8ca90ed02f7740c9b0bf909fe39e07",
+    "parts": [
+      {
+        "name": "zero-line-windows-debug.zip.part01",
+        "bytes": 83886080,
+        "sha256": "d9f55e65329c0cb5f965bd5f135cccce8d11ebf0964897c07d31cc9bb956dcc8"
+      },
+      {
+        "name": "zero-line-windows-debug.zip.part02",
+        "bytes": 50217874,
+        "sha256": "4e6be113b9622e6d7d871b0ee37c0140d93f4ec8bca620c8ba9661be697cd25c"
+      }
+    ]
+  },
+  "release": {
+    "zip_bytes": 136637907,
+    "zip_sha256": "8dc9f6a51c16f94aaae8dfb3b598492e03afd4c34418bb9d3ace8c1896d06261",
+    "parts": [
+      {
+        "name": "zero-line-windows-release.zip.part01",
+        "bytes": 83886080,
+        "sha256": "78f8642921774374c4218aef9146092e37efafe2ac2fd7ef5149a920ac14de54"
+      },
+      {
+        "name": "zero-line-windows-release.zip.part02",
+        "bytes": 52751827,
+        "sha256": "4451d823dfcfae222eff42084025d908415bcff3fa4849ac6a1526392ef4579a"
+      }
+    ]
+  }
+}

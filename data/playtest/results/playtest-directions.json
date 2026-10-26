@@ -1,0 +1,202 @@
+[
+  {
+    "animation_seconds": 1.65,
+    "clip": "death",
+    "deaths": 1,
+    "direction": "front",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "rusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.133333333333333,
+    "clip": "death_from_back_headshot",
+    "deaths": 1,
+    "direction": "back",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "rusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "left",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "rusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "right",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "rusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 1.65,
+    "clip": "death",
+    "deaths": 1,
+    "direction": "front",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "enforcer",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.133333333333333,
+    "clip": "death_from_back_headshot",
+    "deaths": 1,
+    "direction": "back",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "enforcer",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "left",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "enforcer",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "right",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "enforcer",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 1.65,
+    "clip": "death",
+    "deaths": 1,
+    "direction": "front",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "shield",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.133333333333333,
+    "clip": "death_from_back_headshot",
+    "deaths": 1,
+    "direction": "back",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "shield",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "left",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "shield",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "right",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "shield",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 1.65,
+    "clip": "death",
+    "deaths": 1,
+    "direction": "front",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "flusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.133333333333333,
+    "clip": "death_from_back_headshot",
+    "deaths": 1,
+    "direction": "back",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "flusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "left",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "flusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "right",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "flusher",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 1.65,
+    "clip": "death",
+    "deaths": 1,
+    "direction": "front",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "elite",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.133333333333333,
+    "clip": "death_from_back_headshot",
+    "deaths": 1,
+    "direction": "back",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "elite",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "left",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "elite",
+    "state": "FROZEN"
+  },
+  {
+    "animation_seconds": 0.45,
+    "clip": "death_from_right",
+    "deaths": 1,
+    "direction": "right",
+    "handoff": 1,
+    "reason": "planned",
+    "role": "elite",
+    "state": "FROZEN"
+  }
+]

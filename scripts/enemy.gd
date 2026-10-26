@@ -49,11 +49,7 @@ func setup(owner_game, archetype: String) -> void:
 	add_child(collider)
 	add_child(body)
 	color = {"enforcer": Color("a89d81"), "rusher": Color("b7805c"), "shield": Color("728d8c"), "flusher": Color("929e65"), "elite": Color("9c6c66")}[kind]
-	if kind == "elite":
-		body.scale = Vector3(1.12, 1.06, 1.12)
-	animated_visual = preload("res://scripts/operator_visual.gd").new()
-	body.add_child(animated_visual)
-	animated_visual.setup(kind)
+	rebuild_visual()
 	last_known = game.player.global_position
 	path_timer = game.rng.randf_range(0, 0.25)
 	add_to_group("enemy")
@@ -179,6 +175,8 @@ func take_damage(amount: float, hit_position: Vector3, headshot: bool = false, b
 			game.impact(hit_position, Color("ffda99"), 5)
 			game.sound.play_cue("metal")
 			return
+	if animated_visual.has_method("resolved_hit"):
+		animated_visual.resolved_hit(amount, hit_position, headshot)
 	health -= amount
 	game.blood_burst(hit_position, (hit_position - game.player.camera.global_position).normalized(), 4)
 	game.impact(hit_position, Color("ab493a") if game.gore_enabled else Color("d8cc9e"), 5)
@@ -187,11 +185,14 @@ func take_damage(amount: float, hit_position: Vector3, headshot: bool = false, b
 		collision_layer = 0
 		collision_mask = 0
 		game.enemy_killed(self, headshot)
-		var local_hit := body.to_local(hit_position)
-		var corpse = game.spawn_corpse(body, global_position, color)
-		if corpse != null and game.gore_enabled:
-			var region: String = corpse.region_at(local_hit)
-			if region != "torso": corpse.sever(region)
+		if animated_visual.has_method("die"):
+			animated_visual.die(hit_position)
+		else:
+			var local_hit := body.to_local(hit_position)
+			var corpse = game.spawn_corpse(body, global_position, color)
+			if corpse != null and game.gore_enabled:
+				var region: String = corpse.region_at(local_hit)
+				if region != "torso" and game.presentation.can_legacy_sever(corpse): corpse.sever(region)
 		queue_free()
 
 func begin_descent(from: Vector3, to: Vector3, duration: float) -> void:
@@ -211,3 +212,16 @@ func begin_descent(from: Vector3, to: Vector3, duration: float) -> void:
 	add_child(rope)
 	rope.set_as_top_level(true)
 	rope.global_position = (from+to)/2
+
+func rebuild_visual() -> void:
+	if is_instance_valid(animated_visual): animated_visual.free()
+	body.scale = Vector3.ONE
+	if game.presentation != null and game.presentation.new_enemies:
+		animated_visual = preload("res://scripts/playtest/enemy_visual.gd").new()
+		body.add_child(animated_visual)
+		animated_visual.setup_live(self, game.presentation)
+	else:
+		if kind == "elite": body.scale = Vector3(1.12, 1.06, 1.12)
+		animated_visual = preload("res://scripts/operator_visual.gd").new()
+		body.add_child(animated_visual)
+		animated_visual.setup(kind)

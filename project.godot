@@ -23,6 +23,17 @@ anti_aliasing/quality/msaa_3d=1
 
 [physics]
 common/physics_ticks_per_second=120
+3d/physics_engine="Jolt Physics"
+jolt_physics_3d/simulation/penetration_slop=0.002
+jolt_physics_3d/simulation/velocity_steps=20
+jolt_physics_3d/simulation/position_steps=32
 
 [audio]
 driver/enable_input=false
+
+[zero_line]
+playtest/new_enemies=true
+
+[debug]
+file_logging/enable_file_logging=true
+file_logging/log_path="user://logs/godot.log"

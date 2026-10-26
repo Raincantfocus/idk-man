@@ -116,7 +116,7 @@ func _menu() -> void:
 
 func _settings_footer() -> void:
 	text("M  AUDIO " + ("OFF" if game.sound.muted else "ON"), Vector2(48, 850), 12, muted)
-	text("G  GORE " + ("ON" if game.gore_enabled else "OFF"), Vector2(222, 850), 12, muted)
+	text("G  GORE " + (["OFF", "REDUCED", "FULL"][game.gore_level]), Vector2(222, 850), 12, muted)
 	text("H  CAMERA MOTION " + ("ON" if game.camera_motion > 0 else "OFF"), Vector2(390, 850), 12, muted)
 	text("[ / ]  SENSITIVITY %.1f" % (game.mouse_sensitivity * 1000), Vector2(668, 850), 12, muted)
 	right("GODOT 4.6   /   PLAYABLE PROTOTYPE", Vector2(1392, 850), 12, muted)

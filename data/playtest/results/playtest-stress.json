@@ -1,0 +1,19 @@
+{
+  "average_frame_ms": 2187.65633333333,
+  "decals": 96,
+  "draw_calls": 1882.0,
+  "driver": "gl_compatibility",
+  "enemies": 30,
+  "notes": "Software-rendered llvmpipe; fixed world clock; full real warehouse, 30 living enemies, six dying actors, 96 pools. Not a target-PC benchmark.",
+  "peak_active_ragdolls": 6,
+  "peak_corpses": 6,
+  "primitives": 12938386.0,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "samples": 150,
+  "valid_hardware_performance": false,
+  "viewport": [
+    960,
+    600
+  ],
+  "worst_frame_ms": 4590.324
+}

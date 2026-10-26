@@ -1,0 +1,7 @@
+{
+  "scripts/ragdoll/anatomical_actor.gd": "fd0980823a14abcd72aa5cf95a2f8804a729436c92cd08dfbb0b5b8a3b9d6b6e",
+  "scripts/death/death_actor.gd": "917a3f057b0cd1c11f268306fc6fb6dd2c836fe1da9c0ab9392154bd33fd304f",
+  "scripts/death/ragdoll_budget.gd": "f20ec1de202a74728ddace3cbd7c37f252662d50928b19a59ee6fafcf3516484",
+  "scripts/death/clearance_query.gd": "222e9d250b49fd9369c2c438e1313970ffe4fbf1e174725972d54a741fc237e2",
+  "data/ragdoll/settings.json": "84a59c42e2d80ba5afe2dc3623222ef73350c328e7e851222e1b4d8bd395773e"
+}

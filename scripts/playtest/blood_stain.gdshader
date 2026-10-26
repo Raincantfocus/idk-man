@@ -1,0 +1,1 @@
+shader_type spatial; render_mode cull_disabled; void fragment(){vec2 p=UV*2.0-1.0; float a=atan(p.y,p.x); float edge=.78+.10*sin(a*7.0)+.07*cos(a*13.0); if(length(p)>edge) discard; ALBEDO=vec3(.12,.009,.006); ROUGHNESS=.22+.22*length(p); }

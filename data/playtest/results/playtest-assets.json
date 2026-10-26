@@ -1,0 +1,15 @@
+{
+  "bones": 72,
+  "draw_call_note": "surfaces are submissions per pass, not whole-frame draw calls; shadows/lights add passes",
+  "lod": "single imported review LOD; no distance LOD switching",
+  "materials": 3,
+  "shared_by_roles": [
+    "rusher",
+    "enforcer",
+    "shield",
+    "flusher",
+    "elite"
+  ],
+  "surfaces": 3,
+  "triangles": 71673
+}

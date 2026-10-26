@@ -1,0 +1,17 @@
+{
+  "animated_corpses": 3,
+  "corpses": [
+    "FROZEN",
+    "FROZEN",
+    "FROZEN"
+  ],
+  "debug_tools": true,
+  "engine": "4.6.3-stable (official)",
+  "kills": 3,
+  "loaded_clips": 14,
+  "pass": true,
+  "errors": 0,
+  "warnings": 0,
+  "windows_execution": "not tested: no Windows runtime",
+  "release_debug_scripts_excluded": true
+}

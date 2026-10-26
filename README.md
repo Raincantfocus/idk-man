@@ -8,7 +8,11 @@ A playable first-person survival prototype in **Godot 4.6.3**, built from the [t
 
 ![Warehouse overview](docs/warehouse-overview.png)
 
-Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER_PIPELINE_PHASE_1.md). Run `godot --path . scenes/characters/character_review.tscn` to inspect the CC0 human bodies, five shape presets and explicit LODs. Tactical gear, textures, correctives and wound seams remain open gates; playable enemies have not been switched to these unfinished assets.
+Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER_PIPELINE_PHASE_1.md). Run `godot --path . scenes/characters/character_review.tscn` to inspect the CC0 human bodies, five shape presets and explicit LODs. Tactical gear, textures, correctives and wound seams remain open gates; the playable test now uses a shared review soldier fallback; full role variants remain unfinished.
+
+## Playable integration test (2026-10-26)
+
+The real wave game now defaults to the unpolished human review model. See [playtest notes, build commands and known gaps](docs/PLAYABLE_TEST_BUILD.md). All five roles currently share a named soldier fallback; new-body severing is wound-only, while F9 enables legacy enemies and dismemberment. Windows debug/release archives are in `downloads/`.
 
 ## Play
 

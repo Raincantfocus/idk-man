@@ -38,6 +38,14 @@ func _physics_process(dt: float) -> void:
 	remove_from_group("blood_drop")
 	var stains := get_tree().get_nodes_in_group("blood_stain")
 	if stains.size() >= 64: stains[0].free()
+	if game.presentation != null:
+		var ledger = game.presentation.blood_budget
+		var lease: int = ledger.reserve(&"decals", get_instance_id(), 1, func():
+			if not is_queued_for_deletion(): queue_free())
+		if lease < 0:
+			queue_free()
+			return
+		tree_exiting.connect(func(): ledger.release(lease))
 	add_to_group("blood_stain")
 	global_position = hit.position + hit.normal * 0.004
 	global_basis = Basis(Quaternion(Vector3.UP, hit.normal))
@@ -45,8 +53,11 @@ func _physics_process(dt: float) -> void:
 	var plane := PlaneMesh.new()
 	plane.size = Vector2(0.13, 0.24) * clampf(velocity.length() / 5.0, 0.6, 2.0)
 	mesh.mesh = plane
-	var shader := Shader.new()
-	shader.code = "shader_type spatial; render_mode cull_disabled; void fragment(){vec2 p=UV*2.0-1.0; float a=atan(p.y,p.x); float edge=.78+.10*sin(a*7.0)+.07*cos(a*13.0); if(length(p)>edge) discard; ALBEDO=vec3(.12,.009,.006); ROUGHNESS=.22+.22*length(p); }"
-	var wet := ShaderMaterial.new()
-	wet.shader = shader
-	mesh.material_override = wet
+	mesh.material_override = stain_material()
+
+static var shared_stain: ShaderMaterial
+static func stain_material() -> ShaderMaterial:
+	if shared_stain == null:
+		shared_stain = ShaderMaterial.new()
+		shared_stain.shader = preload("res://scripts/playtest/blood_stain.gdshader")
+	return shared_stain

@@ -20,6 +20,7 @@ var hud
 var sound
 var menu_camera := Camera3D.new()
 var rng := RandomNumberGenerator.new()
+var cosmetic_rng := RandomNumberGenerator.new()
 var state: String = "menu"
 var wave: int = 0
 var score: int = 0
@@ -46,6 +47,8 @@ var message_time: float = 0
 var pickup_flash: float = 0
 var last_damage_direction := Vector3.ZERO
 var gore_enabled: bool = true
+var gore_level: int = 1
+var presentation: Node
 var camera_motion: float = 1
 var mouse_sensitivity: float = 0.0022
 var purchased: Array[String] = []
@@ -65,6 +68,7 @@ const PRACTICE_KINDS := ["enforcer", "rusher", "shield", "flusher", "elite"]
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	rng.seed = 17042
+	cosmetic_rng.seed = 17043
 	balance = JSON.parse_string(FileAccess.get_file_as_string("res://data/trial_balance.json"))
 	_bind_inputs()
 	_load_settings()
@@ -93,6 +97,9 @@ func _ready() -> void:
 	hud = HudScript.new()
 	hud.game = self
 	layer.add_child(hud)
+	presentation = preload("res://scripts/playtest/runtime.gd").new()
+	add_child(presentation)
+	presentation.setup(self)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture="):
@@ -166,8 +173,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			sound.muted = not sound.muted
 			_save_settings()
 		elif event.physical_keycode == KEY_G:
-			gore_enabled = not gore_enabled
-			_save_settings()
+			set_gore_level((gore_level + 1) % 3)
 		elif event.physical_keycode == KEY_H:
 			camera_motion = 0 if camera_motion > 0 else 1
 			_save_settings()
@@ -275,6 +281,7 @@ func start_run(training: bool = false) -> void:
 	get_tree().paused = false
 	Engine.time_scale = 1
 	if arena.has_method("reset_map"): arena.reset_map()
+	if presentation != null: presentation.reset_run()
 	practice = training
 	practice_route = 0
 	practice_dummy_index = 0
@@ -304,6 +311,7 @@ func start_run(training: bool = false) -> void:
 	effect_count = 0
 	purchased.clear()
 	rng.seed = 17042
+	cosmetic_rng.seed = 17043
 	if practice:
 		state = "combat"
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -423,8 +431,8 @@ func spawn_enemy(kind: String, point: Vector3):
 	var enemy = EnemyScript.new()
 	enemy.process_mode = Node.PROCESS_MODE_PAUSABLE
 	add_child(enemy)
-	enemy.setup(self, kind)
 	enemy.position = point
+	enemy.setup(self, kind)
 	if wave > 10:
 		enemy.health *= minf(1.3, 1 + (wave - 10) * 0.03)
 		enemy.max_health = enemy.health
@@ -622,7 +630,7 @@ func impact(point: Vector3, color: Color, count: int) -> void:
 	for i in range(mini(count, 90 - effect_count)):
 		var instance := MeshInstance3D.new()
 		var box := BoxMesh.new()
-		box.size = Vector3.ONE * rng.randf_range(0.025, 0.075)
+		box.size = Vector3.ONE * cosmetic_rng.randf_range(0.025, 0.075)
 		instance.mesh = box
 		instance.material_override = arena.material(color, 0, 0.2)
 		instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
@@ -631,7 +639,7 @@ func impact(point: Vector3, color: Color, count: int) -> void:
 		instance.position = point
 		effect_count += 1
 		var tween := instance.create_tween().set_parallel(true)
-		tween.tween_property(instance, "position", point + Vector3(rng.randf_range(-0.6, 0.6), rng.randf_range(-0.3, 0.7), rng.randf_range(-0.6, 0.6)), 0.25)
+		tween.tween_property(instance, "position", point + Vector3(cosmetic_rng.randf_range(-0.6, 0.6), cosmetic_rng.randf_range(-0.3, 0.7), cosmetic_rng.randf_range(-0.6, 0.6)), 0.25)
 		tween.tween_property(instance, "scale", Vector3.ZERO, 0.35)
 		tween.chain().tween_callback(func():
 			effect_count = maxi(0, effect_count - 1)
@@ -667,7 +675,8 @@ func _load_settings() -> void:
 	var config := ConfigFile.new()
 	if config.load("user://profile.cfg") == OK:
 		best_score = config.get_value("trial", "best", 0)
-		gore_enabled = config.get_value("settings", "gore", true)
+		gore_level = clampi(int(config.get_value("settings", "gore_level", 1)), 0, 2)
+		gore_enabled = gore_level > 0
 		camera_motion = config.get_value("settings", "camera_motion", 1.0)
 		mouse_sensitivity = config.get_value("settings", "sensitivity", 0.0022)
 
@@ -677,6 +686,7 @@ func _save_settings() -> void:
 	var config := ConfigFile.new()
 	config.set_value("trial", "best", best_score)
 	config.set_value("settings", "gore", gore_enabled)
+	config.set_value("settings", "gore_level", gore_level)
 	config.set_value("settings", "camera_motion", camera_motion)
 	config.set_value("settings", "sensitivity", mouse_sensitivity)
 	config.set_value("settings", "muted", sound.muted)
@@ -690,7 +700,7 @@ func _save_score() -> void:
 
 func blood_burst(point: Vector3, direction: Vector3, count: int = 8) -> void:
 	if not gore_enabled or is_test: return
-	for i in mini(count, 12):
+	for i in mini(count if gore_level == 2 else maxi(1,count/2), 12):
 		var drops := get_tree().get_nodes_in_group("blood_drop")
 		if drops.size() >= 48: drops[0].free()
 		var drop = preload("res://scripts/blood_drop.gd").new()
@@ -699,3 +709,9 @@ func blood_burst(point: Vector3, direction: Vector3, count: int = 8) -> void:
 		drop.global_position = point
 		var spread := Vector3(sin(i * 2.4), cos(i * 1.7), sin(i * 3.1)) * 0.45
 		drop.velocity = (direction.normalized() + spread).normalized() * (3.0 + i * 0.6)
+
+func set_gore_level(level: int) -> void:
+	gore_level = clampi(level, 0, 2)
+	gore_enabled = gore_level > 0
+	if presentation != null: presentation.set_gore(gore_level)
+	_save_settings()

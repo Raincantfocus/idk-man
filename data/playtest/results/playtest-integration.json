@@ -1,0 +1,209 @@
+{
+  "checks": [
+    {
+      "check": "Off/Full identical kills, score, credits, drops and gameplay RNG; duplicate lethal calls ignored",
+      "pass": true
+    },
+    {
+      "check": "Legacy Off/Full rewards and gameplay RNG identical",
+      "pass": true
+    },
+    {
+      "check": "Wave 1 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 2 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 3 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 4 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 5 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 6 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 7 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 8 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 9 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "Wave 10 resolves via real director",
+      "pass": true
+    },
+    {
+      "check": "All five roles spawned through director",
+      "pass": true
+    },
+    {
+      "check": "Pause freezes corpse clock",
+      "pass": true
+    },
+    {
+      "check": "Restart node count stable",
+      "pass": true
+    },
+    {
+      "check": "Old model toggle works",
+      "pass": true
+    },
+    {
+      "check": "New model toggle works",
+      "pass": true
+    }
+  ],
+  "economy": {
+    "full": {
+      "credits": 0,
+      "drops": [
+        "health",
+        "health",
+        "health",
+        "ammo",
+        "health",
+        "health",
+        "armor",
+        "ammo"
+      ],
+      "kills": 5,
+      "rng": -5619958169121644969,
+      "score": 1906
+    },
+    "off": {
+      "credits": 0,
+      "drops": [
+        "health",
+        "health",
+        "health",
+        "ammo",
+        "health",
+        "health",
+        "armor",
+        "ammo"
+      ],
+      "kills": 5,
+      "rng": -5619958169121644969,
+      "score": 1906
+    }
+  },
+  "focus_world_delta": 0.0,
+  "legacy_economy": {
+    "full": {
+      "credits": 0,
+      "drops": [
+        "health",
+        "health",
+        "health",
+        "ammo",
+        "health",
+        "health",
+        "armor",
+        "ammo"
+      ],
+      "kills": 5,
+      "rng": -5619958169121644969,
+      "score": 1906
+    },
+    "off": {
+      "credits": 0,
+      "drops": [
+        "health",
+        "health",
+        "health",
+        "ammo",
+        "health",
+        "health",
+        "armor",
+        "ammo"
+      ],
+      "kills": 5,
+      "rng": -5619958169121644969,
+      "score": 1906
+    }
+  },
+  "restart_nodes": {
+    "after": 1332,
+    "before": 1332
+  },
+  "scope": "Real-map automated integration; accelerated director clock and scripted lethal hits, not a difficulty playthrough",
+  "waves": [
+    {
+      "kills": 8,
+      "state": "shop",
+      "steps": 76,
+      "wave": 1
+    },
+    {
+      "kills": 12,
+      "state": "shop",
+      "steps": 111,
+      "wave": 2
+    },
+    {
+      "kills": 14,
+      "state": "shop",
+      "steps": 93,
+      "wave": 3
+    },
+    {
+      "kills": 16,
+      "state": "shop",
+      "steps": 93,
+      "wave": 4
+    },
+    {
+      "kills": 17,
+      "state": "shop",
+      "steps": 97,
+      "wave": 5
+    },
+    {
+      "kills": 22,
+      "state": "shop",
+      "steps": 117,
+      "wave": 6
+    },
+    {
+      "kills": 24,
+      "state": "shop",
+      "steps": 125,
+      "wave": 7
+    },
+    {
+      "kills": 25,
+      "state": "shop",
+      "steps": 125,
+      "wave": 8
+    },
+    {
+      "kills": 29,
+      "state": "shop",
+      "steps": 153,
+      "wave": 9
+    },
+    {
+      "kills": 30,
+      "state": "complete",
+      "steps": 161,
+      "wave": 10
+    }
+  ],
+  "focus_measurement_note": "The legacy field sampled handoff_elapsed while the actor was animating; use lifecycle.json, which samples animation plus handoff time and validates Focus and the focus-loss signal."
+}
