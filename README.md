@@ -2,11 +2,12 @@
 
 A playable first-person survival prototype in **Godot 4.6.3**, built from the [technical design](docs/PROJECT_ZERO_LINE_TECHNICAL_DESIGN.md). Sprint, slide, wall-run, dash, slow the world, break enemy sight with Shroud, and run over recovery drops to survive ten waves and an endless continuation.
 
-**Version 0.9 — warehouse revamp:** a 60 × 30 m multi-tier warehouse with office fallback, loading docks, four slide ramps, catwalks, wall-run lanes, mantle chains, forklift cover, and a rideable zipline. Waves change the arena; shootable crane loads and fuel barrels, pulsing electric grates, fixed resupply stations, and telegraphed breaches add tactical choices. Existing human enemies, weapons, dismemberment, and PBR surfaces remain in place.
+**Current map — restored classic arena:** the previous 96 × 80 m industrial arena is back, with ground, 4.2 m galleries and 8.4 m observation/gantry routes. The downhill chute, wall-run lane, slide tunnel and mantle/vault bays are restored. New enemies, animations and gore remain enabled.
 
-**Try it:** enter Movement Lab and press **V** to visit nine new route checkpoints. Hold **Space** near the north catwalk zipline anchor to ride down. Start the trial to test the wave-3 obstruction, wave-6 emergency lighting, and wave-9 pit. See the [complete warehouse layout](docs/WAREHOUSE_LAYOUT.md) for the object inventory, spawn table, wave events, assumptions, and map.
+**Try it:** enter Movement Lab and press **V** to visit the nine classic route checkpoints. The warehouse revamp is retained only as an archived test fixture.
 
-![Warehouse overview](docs/warehouse-overview.png)
+![Restored arena](docs/restored-arena.png)
+
 
 Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER_PIPELINE_PHASE_1.md). Run `godot --path . scenes/characters/character_review.tscn` to inspect the CC0 human bodies, five shape presets and explicit LODs. Tactical gear, textures, correctives and wound seams remain open gates; the playable test now uses a shared review soldier fallback; full role variants remain unfinished.
 
@@ -34,7 +35,7 @@ Open the server in a desktop browser with WebGL 2, then click **Enter the Trial*
 
 Click **Enter the Trial** or press **Enter** to start. Between waves, buy upgrades or press Enter to deploy. Clearing wave 10 unlocks endless continuation. Losing opens a results screen with instant redeployment.
 
-Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between nine practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. The older route documents describe the previous arena; use the [warehouse layout](docs/WAREHOUSE_LAYOUT.md) for current geometry. See the [route guide](docs/PHASE_1_MOVEMENT.md), [mantle/vault notes](docs/PHASE_2_TRAVERSAL_AND_ART.md), and [slope/elite notes](docs/PHASE_2_SLOPES_AND_ELITE.md). The command-line equivalent is `godot --path . -- --movement-lab`.
+Click **Movement Lab / Free Practice** to explore without waves. Three stationary targets occupy the different levels. Press **T** to place another target in front of you and refill health, armor, ability energy, magazines, ammunition reserves, and dash charges. Press **V** to cycle between nine practice checkpoints. The HUD shows movement speed and height. Practice does not submit a best score. The route documents below describe the restored arena. See the [route guide](docs/PHASE_1_MOVEMENT.md), [mantle/vault notes](docs/PHASE_2_TRAVERSAL_AND_ART.md), and [slope/elite notes](docs/PHASE_2_SLOPES_AND_ELITE.md). The command-line equivalent is `godot --path . -- --movement-lab`.
 
 ## Controls
 
@@ -61,7 +62,7 @@ Slide-kicks stagger enemies in front of you. Shooting or dealing melee/kick dama
 
 ## Implemented
 
-- A 60 × 30 m warehouse with connected floor and 4.5 m catwalk/office routes, four slide ramps, mantle chains, wall-run lanes, and a zipline.
+- A 96 × 80 m arena with three elevations, galleries, gantries, a downhill slide chute, mantle/vault bays and wall-run lanes.
 - Accelerated movement, buffered jumps, bounded air momentum, crouching/sliding, slide-kicks, wall-running, and swept directional dashes.
 - Collision-checked mantles up to 1.85 m above your feet and vaults across shallow cover up to 1.4 m high. Focus preserves traversal speed, and weapons remain usable.
 - Five authored industrial mesh types with shared PBR atlases, normal maps, roughness/metallic/AO maps, mipmaps, and compressed texture imports. Original creators and modifications are credited in the [third-party notices](THIRD_PARTY_NOTICES.md).

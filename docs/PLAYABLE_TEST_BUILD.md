@@ -1,6 +1,6 @@
 # Playable integration test — 2026-10-26
 
-This runs the real warehouse wave game in Godot 4.6.3, not the animation review. Art is unapproved. Start with the Windows Debug build for testing. Extract the ZIP before running `zero-line.exe`. The release build omits debug controls/overlay. Windows executables were exported here, but Windows execution has not been tested; the Linux debug export is smoke-tested separately.
+This runs the wave game in the restored classic arena in Godot 4.6.3, not the animation review. Art is unapproved. Start with the Windows Debug build for testing. Extract the ZIP before running `zero-line.exe`. The release build omits debug controls/overlay. Windows executables were exported here, but Windows execution has not been tested; the Linux debug export is smoke-tested separately.
 
 ## Download
 
@@ -95,3 +95,11 @@ On Windows, create these directories in Explorer or with `New-Item -ItemType Dir
 ## Acceptance status
 
 Playable integration and automated lifecycle/economy tests pass. Art, full 22-zone anatomy, all requested variant dimensions, target-hardware performance, native Windows execution and OS focus-loss automation are explicitly unfinished. No new art polish or anatomical ragdoll changes were made.
+
+## Restored arena update
+
+The default map is restored exactly from `250e510`: 96 × 80 m, with 4.2 m galleries, an 8.4 m observation deck/gantries and the downhill chute. The warehouse geometry remains in `tests/fixtures/arena_warehouse.gd` for its historical tests. Enemies, animation, gore, weapons and movement code are unchanged.
+
+Current-map checks: gameplay 47/47, Phase 1 movement lab 38/38, traversal 21/21 and slopes 10/10. The gameplay and Phase 1 harnesses each report an ObjectDB cleanup warning at exit; neither reports runtime errors. Native overview captured and inspected in llvmpipe (not a hardware performance measurement). The Linux export loads 14 clips, produces 3 kills and 3 gore fragments, and performs one handoff per corpse; after the probe, 2 corpses are frozen and 1 remains simulating. Windows debug/release exports succeeded; Windows execution remains untested.
+
+The restored-map integration run also passed all ten waves, five-role director spawning, Off/Full reward parity, pause, restart and old/new enemy toggles (accelerated director with scripted kills, not a balance playthrough).

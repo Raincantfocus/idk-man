@@ -1,7 +1,7 @@
 {
-  "animated_corpses": 3,
+  "animated_corpses": 2,
   "corpses": [
-    "FROZEN",
+    "RAGDOLL",
     "FROZEN",
     "FROZEN"
   ],
@@ -14,5 +14,6 @@
   "errors": 0,
   "warnings": 0,
   "windows_execution": "not tested: no Windows runtime",
-  "release_debug_scripts_excluded": true
+  "release_debug_scripts_excluded": true,
+  "map": "restored 96 x 80 m classic arena"
 }

@@ -22,7 +22,6 @@ func settle() -> void:
 func run() -> void:
 	game = load("res://scenes/main.tscn").instantiate()
 	game.is_test = true
-	game.arena_factory = preload("res://tests/fixtures/arena_v08.gd")
 	root.add_child(game)
 	game.set_process(false)
 	game.start_run()
