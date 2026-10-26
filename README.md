@@ -12,7 +12,7 @@ Character pipeline work is available separately: [Phase 1 report](docs/CHARACTER
 
 ## Playable integration test (2026-10-26)
 
-The real wave game now defaults to the unpolished human review model. See [playtest notes, build commands and known gaps](docs/PLAYABLE_TEST_BUILD.md). All five roles currently share a named soldier fallback; new-body severing is wound-only, while F9 enables legacy enemies and dismemberment. Windows debug/release archives are in `downloads/`.
+The real wave game now defaults to the unpolished human review model. See [playtest notes, build commands and known gaps](docs/PLAYABLE_TEST_BUILD.md). All five roles currently share a named soldier fallback; new bodies support corpse head/arm/leg cuts with tissue caps, while F9 enables legacy enemies for comparison. Windows debug/release archives are in `downloads/`.
 
 ## Play
 

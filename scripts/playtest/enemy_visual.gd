@@ -12,6 +12,7 @@ var dead: bool = false
 var last_state: String = ""
 var trauma := preload("res://scripts/trauma/zone_trauma_state.gd").new()
 var hit_sequence: int = 0
+var gore: Node
 
 func setup_live(enemy: Node3D, service: Node) -> void:
  owner_enemy=enemy;runtime=service;kind=enemy.kind
@@ -35,6 +36,7 @@ func setup_live(enemy: Node3D, service: Node) -> void:
  animator.configure(actor.skeleton,load("res://data/animation/actorcore_library.res"),load("res://data/animation/animation_profile.tres"))
  trauma.configure(runtime.zone_definitions,int(look.get_meta("seed",1)))
  runtime.apply_look(actor,look)
+ gore=preload("res://scripts/playtest/gore_presenter.gd").new();actor.add_child(gore);gore.setup(actor,runtime,int(look.get_meta("seed",1)))
  runtime.log_once(kind+":model","FALLBACK",kind+": shared review body/fatigues/carrier; role kit, headgear and build swaps unavailable")
  request_state("idle")
 
@@ -56,12 +58,13 @@ func on_attack() -> void:
  animator.on_attack()
 func resolved_hit(amount: float, point: Vector3, headshot: bool) -> void:
  hit_sequence+=1
+ gore.hit(amount,point,headshot,amount>=owner_enemy.health)
  var zone: StringName=&"head" if headshot else &"chest" if point.y-owner_enemy.global_position.y>1.0 else &"abdomen"
  var weapon: StringName=&"shotgun" if runtime.game.player.weapon_index==1 else &"rifle"
  trauma.apply_hit(hit_sequence,zone,amount,weapon,point.distance_to(runtime.game.player.global_position),amount,(point-runtime.game.player.global_position).normalized(),Vector3.UP)
  if runtime.game.gore_level>0:
   runtime.wound(actor,point)
-  if trauma.states.get(zone,0)==4:runtime.log_once("sever:"+String(zone),"FALLBACK","New-rig "+String(zone)+" sever -> wound/blood: authored cap-to-skinned-body joining is unapproved; old-enemy toggle retains legacy severing")
+
  request_state("flinch")
 func die(point: Vector3) -> Node3D:
  if dead:return null
@@ -82,4 +85,5 @@ func die(point: Vector3) -> Node3D:
  runtime.ensure_ragdoll_slot()
  actor.begin_death(direction,tags,direction*2.2)
  runtime.register_corpse(actor)
+ gore.on_death()
  return actor

@@ -44,3 +44,7 @@ func set_gore_mode(mode: int) -> void:
  gore_mode=clampi(mode,0,2)
  if gore_mode==0:
   while not entries.is_empty():release(entries[0].id)
+func forget(id: int) -> void:
+ # Called when a render object is already leaving the tree; do not recycle it again.
+ for i: int in entries.size():
+  if entries[i].id==id:entries.remove_at(i);return

@@ -456,5 +456,12 @@
       "models/carrier.glb"
     ],
     "note": "Existing reviewed derivatives copied without new modeling. Existing MakeHuman and user-supplied clothing provenance/license records above apply. Shared fallback for all roles, not finished variants."
+  },
+  "playable_gore": {
+    "date": "2026-10-26",
+    "caps": "Previously authored neck/upper-arm/thigh rifle LOD1 caps from zero-line-neck-rework-review.zip and zero-line-body-zone-review.zip",
+    "atlas": "Byte-identical atlas sets deduplicated into assets/playtest_gore/caps/shared",
+    "mesh_splitting": "Runtime derivatives of the current licensed review body/fatigues/carrier; original provenance and licenses continue to apply",
+    "scope": "Five major corpse cuts; not approved 22-zone anatomy"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "regions": {
+    "neck": "neck_rifle_0_LOD1.glb",
+    "upper_arm": "upper_arm_rifle_0_LOD1.glb",
+    "thigh": "thigh_rifle_0_LOD1.glb"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "actual_gibs": 16,
+  "budget_gibs": 16,
+  "cut_times": [
+    {
+      "cut_ms": 10.949,
+      "mode": 1,
+      "role": "rusher"
+    },
+    {
+      "cut_ms": 11.714,
+      "mode": 1,
+      "role": "enforcer"
+    },
+    {
+      "cut_ms": 13.495,
+      "mode": 1,
+      "role": "shield"
+    },
+    {
+      "cut_ms": 12.952,
+      "mode": 1,
+      "role": "flusher"
+    },
+    {
+      "cut_ms": 10.686,
+      "mode": 1,
+      "role": "elite"
+    },
+    {
+      "cut_ms": 11.961,
+      "mode": 2,
+      "role": "rusher"
+    },
+    {
+      "cut_ms": 11.689,
+      "mode": 2,
+      "role": "enforcer"
+    },
+    {
+      "cut_ms": 10.919,
+      "mode": 2,
+      "role": "shield"
+    },
+    {
+      "cut_ms": 12.967,
+      "mode": 2,
+      "role": "flusher"
+    },
+    {
+      "cut_ms": 15.936,
+      "mode": 2,
+      "role": "elite"
+    }
+  ],
+  "frozen_hit_forwarders": 16,
+  "full": {
+    "credits": 0,
+    "drops": [
+      "health",
+      "health",
+      "health",
+      "ammo",
+      "health",
+      "health",
+      "armor",
+      "ammo"
+    ],
+    "kills": 5,
+    "rng": -5619958169121644969,
+    "score": 1906
+  },
+  "last_warm_head_cut_ms": 12.497,
+  "off": {
+    "credits": 0,
+    "drops": [
+      "health",
+      "health",
+      "health",
+      "ammo",
+      "health",
+      "health",
+      "armor",
+      "ammo"
+    ],
+    "kills": 5,
+    "rng": -5619958169121644969,
+    "score": 1906
+  },
+  "off_clears_gibs": true,
+  "reduced": {
+    "credits": 0,
+    "drops": [
+      "health",
+      "health",
+      "health",
+      "ammo",
+      "health",
+      "health",
+      "armor",
+      "ammo"
+    ],
+    "kills": 5,
+    "rng": -5619958169121644969,
+    "score": 1906
+  },
+  "restart_nodes": [
+    1314,
+    1314
+  ],
+  "settled_hit_sever_pass": true
+}

@@ -25,6 +25,7 @@ func setup(owner_game: Node) -> void:
  game=owner_game;get_window().focus_exited.connect(_on_focus_exited);process_mode=Node.PROCESS_MODE_PAUSABLE;rng.seed=778431
  rig_settings=JSON.parse_string(FileAccess.get_file_as_string("res://data/ragdoll/settings.json"));rig_settings.collision_mask=17;rig_settings.prop_mask=0;ragdoll_budget.configure(rig_settings)
  clip_catalogue=JSON.parse_string(FileAccess.get_file_as_string("res://data/ragdoll/clearance_report.json"))
+ preload("res://scripts/playtest/gore_presenter.gd").load_cache()
  zone_definitions=preload("res://scripts/trauma/zone_library.gd").read_all()
  new_enemies=bool(ProjectSettings.get_setting("zero_line/playtest/new_enemies",true))
  if OS.is_debug_build():
@@ -107,6 +108,8 @@ func wound(actor: Node,point: Vector3) -> void:
 func set_gore(mode: int) -> void:
  blood_budget.set_gore_mode(mode)
  if mode==0:
+  for actor: Node in corpse_nodes:
+   if is_instance_valid(actor) and actor.has_meta("gore_presenter"):actor.get_meta("gore_presenter").restore()
   # Legacy caps are attached to fragmented bodies; remove those cosmetic corpses
   # rather than leaving visible cuts after selecting Off.
   for corpse: Node in game.corpses:

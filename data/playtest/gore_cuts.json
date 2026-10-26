@@ -1,0 +1,7 @@
+{
+ "head":{"normal":[0,1,0],"distance":1.61,"side":0,"bone":"Head","cap":"neck","zone":"head","mass":4.5},
+ "left_arm":{"normal":[1,0,0],"distance":0.31,"side":0,"bone":"LeftUpperArm","cap":"upper_arm","zone":"left_upper_arm","mass":3.0},
+ "right_arm":{"normal":[-1,0,0],"distance":0.31,"side":0,"bone":"RightUpperArm","cap":"upper_arm","zone":"right_upper_arm","mass":3.0},
+ "left_leg":{"normal":[0,-1,0],"distance":-0.66,"side":1,"bone":"LeftUpperLeg","cap":"thigh","zone":"left_thigh","mass":7.0},
+ "right_leg":{"normal":[0,-1,0],"distance":-0.66,"side":-1,"bone":"RightUpperLeg","cap":"thigh","zone":"right_thigh","mass":7.0}
+}

@@ -13,8 +13,8 @@ For release, download `downloads/Get-Zero-Line.ps1` and run `powershell -NoProfi
 - All five existing wave roles use the imported human review body with fatigues and carrier. All five are explicitly **SharedSoldierFallback**: role-specific kits, helmets, four selectable base bodies and body-shape swaps are not ready. Thirty-six palette combinations use a separate seeded cosmetic RNG and an appearance Resource retained by the corpse. These are color combinations, not six authored camouflage patterns. No uniform scaling is added to new enemies.
 - Existing authored hold/run blending, fire and reload clips are connected. Idle, patrol/advance, strafe, cover, flinch, stagger, dash, bash and grenade states use a logged hold/run fallback where a dedicated clip is missing. The AI has no new reload or cover behavior. No new animation clips were authored.
 - Death hands off to the existing anatomical ragdoll with obstruction checks. Left deaths use the right-side clip without mirroring. Flying death remains shotgun/high-caliber only. Animation can be skipped when geometry blocks it.
-- Cosmetic trauma state accumulation, four wound marks per body, blood drops, surface stains and corpse pools are connected. **New-body limb severing, matched caps, open fractures and cavities are not integrated:** unvalidated joins degrade to wounds/blood. F9 enables the old enemies and their legacy severing/caps. New-body severing is not being claimed complete.
-- Gore defaults to Reduced on a fresh profile. G in menus or F8 in debug cycles Off / Reduced / Full and saves to `user://profile.cfg`. Off removes marks, drops and pools, and clears legacy fragmented corpses. Reduced lowers drop counts; Full enables the existing higher counts, not unfinished anatomy.
+- Cosmetic trauma state accumulation, four wound marks per body, blood drops, surface stains and corpse pools are connected. **New-model corpse severing now supports head, left/right arm and left/right leg.** Actual body/clothing triangles are cut, detached pieces retain their current skinned pose and materials, and authored LOD1 tissue caps cover the two ends. At most four cuts per corpse and 16 active pieces are permitted. Remaining regions, open fractures, cavities, shotgun head-pop and weapon-specific cap variants remain unfinished. See [new-model gore validation](NEW_MODEL_GORE.md).
+- Gore defaults to Reduced on a fresh profile. G in menus or F8 in debug cycles Off / Reduced / Full and saves to `user://profile.cfg`. Off restores intact new-model meshes, removes caps/fragments, marks, drops and pools, and clears legacy fragmented corpses. Reduced lowers drop counts; Full enables the existing higher counts, not unfinished anatomy.
 - New corpses: 18 retained, at most six pending/simulating deaths; when a seventh needs a slot, an unsupported oldest corpse can be removed instead of freezing in midair. Shared surface-stain/pool ceiling: 96; drops: 48; stains additionally limited to 64. Legacy severing is limited to 16 detached parts and four per corpse. Switching models clears corpses to avoid mixing their simulation budgets.
 
 ## Implementation changes and frozen systems
@@ -33,7 +33,7 @@ During menu loading, a small viewport warms body/gear, animation/ragdoll resourc
 |---|---|
 | F1 / F2 / F3 / F4 / F5 | Spawn Rusher / Enforcer / Shield / Flusher / Elite at the crosshair |
 | F6 | Kill nearest enemy through the authoritative damage path |
-| Shift+F6 | Same lethal head hit; legacy enemies sever, new enemies log wound-only fallback |
+| Shift+F6 | Lethal head hit plus a left-arm cut on new enemies |
 | F7 | Cycle forced death clip; flying still requires an eligible weapon |
 | F8 | Cycle saved gore level |
 | F9 | Switch living enemies between old/new presentation and clear corpses |
@@ -73,11 +73,11 @@ On Windows, create these directories in Explorer or with `New-Item -ItemType Dir
 
 ## Known issues, ranked by playtest impact
 
-1. **Missing new-body severing/role kits** — `scripts/playtest/enemy_visual.gd`: all roles share one model, shields/weapons are not represented by finished role gear. Use F9 for legacy visual comparison; do not judge final readability or gore from this build.
+1. **Incomplete gore/role kits** — `scripts/playtest/enemy_visual.gd`: all roles share one model, shields/weapons are not represented by finished role gear. Use F9 for legacy visual comparison; do not judge final readability, seam quality or full anatomy from this build.
 2. **High geometry and spawn costs** — `models/`, `scripts/clipping/apply_patch.gd`: single 71.7k-triangle LOD, repeated patch application, no crowd optimization; expect hitches and poor low-end performance.
 3. **Existing ragdoll roughness** — frozen `scripts/ragdoll/anatomical_actor.gd`: contact penetration, guard interventions and pose corrections remain. Busy fights can evict unsupported bodies to preserve the six-body limit.
 4. **Incomplete animations and skin/gear fit** — `scripts/playtest/enemy_visual.gd`, imported clothing: missing states use hold/run; held weapon/role props and corrective approval remain incomplete. Left deaths reuse right clips.
-5. **Legacy comparison limitations** — `scripts/ragdoll.gd`: simple caps and ignored Jolt pin-bias warnings. Windows runtime and target hardware frame cost remain untested. Debug overlay shows approximate frame timing; full profiling is separate.
+5. **Legacy comparison limitations** — `scripts/ragdoll.gd`: simple caps and ignored Jolt pin-bias warnings. Windows runtime and target hardware frame cost remain untested. Debug overlay shows approximate frame timing; full profiling is separate. New-model cuts still have first-use CPU costs and approximately fitted seams.
 
 ## Playtest checklist
 
@@ -88,10 +88,10 @@ On Windows, create these directories in Explorer or with `New-Item -ItemType Dir
 5. Press F7 and test shotgun flying death; ordinary rifle fire must not select it.
 6. Cycle Off/Reduced/Full; check settings survive restart and kills still award normally.
 7. Compare F9 old/new; expect the same living enemies/health and cleared corpses.
-8. Use Shift+F6 on old enemies to test existing severing; new enemies currently show wounds/blood only.
+8. Use Shift+F6 on new enemies to test head/arm separation; shoot a corpse’s remaining limbs to accumulate further cosmetic trauma.
 9. Pause, tab away, resume and restart; report moving corpses during pause or old entities left behind.
 10. Play a dense wave and record GPU/CPU, resolution, FPS, worst hitch and debug counters; attach `godot.log` and `playtest-events.log` for failures.
 
 ## Acceptance status
 
-Playable integration and automated lifecycle/economy tests pass. Art, new-body severing, all requested variant dimensions, target-hardware performance, native Windows execution and OS focus-loss automation are explicitly unfinished. No new art polish or anatomical ragdoll changes were made.
+Playable integration and automated lifecycle/economy tests pass. Art, full 22-zone anatomy, all requested variant dimensions, target-hardware performance, native Windows execution and OS focus-loss automation are explicitly unfinished. No new art polish or anatomical ragdoll changes were made.

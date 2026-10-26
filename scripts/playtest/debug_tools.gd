@@ -36,7 +36,8 @@ func _unhandled_input(event: InputEvent) -> void:
   for enemy: Node3D in game.enemies:
    if is_instance_valid(enemy) and (nearest==null or enemy.global_position.distance_squared_to(game.player.global_position)<nearest.global_position.distance_squared_to(game.player.global_position)):nearest=enemy
   if nearest!=null:nearest.take_damage(100000,nearest.global_position+Vector3.UP*1.7,true,true)
-  if event.shift_pressed:service.log_once("debug_sever","FALLBACK","New mesh sever unavailable: wound-only. F9 old enemies enables existing limb severing.")
+  if event.shift_pressed and nearest!=null and nearest.animated_visual.has_method("die"):
+   nearest.animated_visual.gore.sever("left_arm",Vector3.LEFT)
  elif key==KEY_F7:
   var ids: Array[String]=[""]
   for entry: Dictionary in service.clip_catalogue:ids.append(String(entry.id))
@@ -47,7 +48,7 @@ func _unhandled_input(event: InputEvent) -> void:
  elif key==KEY_F11:Engine.time_scale=.25 if Engine.time_scale==1.0 else 1.0
 
 func legacy_gibs() -> int:
- var total: int=0
+ var total: int=service.blood_budget.total(&"gibs")
  for corpse: Node in service.game.corpses:
   if is_instance_valid(corpse):total+=corpse.severed.size()
  return total
