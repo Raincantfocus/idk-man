@@ -1,0 +1,8256 @@
+{
+  "source": "ally_mex_a.blend",
+  "blender": "5.0.1",
+  "unit_scale": 1.0,
+  "bounds_scene_units": [
+    70.39359092712402,
+    103.74864196777344,
+    186.41308030486107
+  ],
+  "height_z_m": 186.41308030486107,
+  "triangles": 65656,
+  "material_slots": 40,
+  "unique_materials": 40,
+  "meshes": [
+    {
+      "name": "CastMesh",
+      "vertices": 6682,
+      "triangles": 11114,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_milsim_shadow_company_jacket"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.7004149276181124,
+      "world_surface_area_scene_units2": 14836.1585514605,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.001",
+      "vertices": 1907,
+      "triangles": 3496,
+      "quads": 0,
+      "materials": [
+        "al_qatala_urban_jeans_dropleg"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.677511349087581,
+      "world_surface_area_scene_units2": 13862.287841260732,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.002",
+      "vertices": 3969,
+      "triangles": 5954,
+      "quads": 0,
+      "materials": [
+        "sp_hero_kyle_vest_convoy"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.7922298807825428,
+      "world_surface_area_scene_units2": 9002.079325890414,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.003",
+      "vertices": 1533,
+      "triangles": 1422,
+      "quads": 0,
+      "materials": [
+        "spetsnaz_pistol_holster"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.5938587112905225,
+      "world_surface_area_scene_units2": 3020.9482579835667,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.004",
+      "vertices": 1241,
+      "triangles": 1542,
+      "quads": 0,
+      "materials": [
+        "sp_ally_sas_hydration_1_1"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.8904718099802267,
+      "world_surface_area_scene_units2": 2756.958447262043,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.005",
+      "vertices": 658,
+      "triangles": 1088,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_rodion_boot_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.1829268150031567,
+      "world_surface_area_scene_units2": 2254.3732077118198,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.006",
+      "vertices": 1764,
+      "triangles": 2200,
+      "quads": 0,
+      "materials": [
+        "sp_ally_sas_crye_pouch_mag_ar_quad_1_1"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.6530453569430392,
+      "world_surface_area_scene_units2": 1685.7668888988105,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.007",
+      "vertices": 3454,
+      "triangles": 6008,
+      "quads": 0,
+      "materials": [
+        "grinch_gloves_tan"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.3403519513085485,
+      "world_surface_area_scene_units2": 1441.0842688603152,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.008",
+      "vertices": 653,
+      "triangles": 768,
+      "quads": 0,
+      "materials": [
+        "spetsnaz_dump_pouch"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.6521365405060351,
+      "world_surface_area_scene_units2": 1429.1559751399695,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.009",
+      "vertices": 949,
+      "triangles": 1272,
+      "quads": 0,
+      "materials": [
+        "wyatt_fannypack"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.7739097629673779,
+      "world_surface_area_scene_units2": 1269.866702657508,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.010",
+      "vertices": 1260,
+      "triangles": 1192,
+      "quads": 0,
+      "materials": [
+        "iskra_med_pouch"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.9938237436435884,
+      "world_surface_area_scene_units2": 828.4506254913179,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.011",
+      "vertices": 687,
+      "triangles": 942,
+      "quads": 0,
+      "materials": [
+        "sp_ally_mex_sf_radio_pouch_bk"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.1872857566922903,
+      "world_surface_area_scene_units2": 679.5192679343882,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.012",
+      "vertices": 1370,
+      "triangles": 1188,
+      "quads": 0,
+      "materials": [
+        "hero_ghost_m14_incen_grenade_3_1"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.9655817087041214,
+      "world_surface_area_scene_units2": 597.6490921290105,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.013",
+      "vertices": 264,
+      "triangles": 296,
+      "quads": 0,
+      "materials": [
+        "ar_mag"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.616890016128309,
+      "world_surface_area_scene_units2": 592.7984076103946,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.014",
+      "vertices": 701,
+      "triangles": 994,
+      "quads": 0,
+      "materials": [
+        "sp_ally_sas_dump_pouch_rolled_cqc_2_1"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.6188266817480326,
+      "world_surface_area_scene_units2": 571.560835732686,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.015",
+      "vertices": 1026,
+      "triangles": 1148,
+      "quads": 0,
+      "materials": [
+        "buckle_master_urban"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.16547805894515477,
+      "world_surface_area_scene_units2": 509.31249105039774,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.016",
+      "vertices": 448,
+      "triangles": 368,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_milsim_shadow_company_mag_extension_ar"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 3.863396347500384,
+      "world_surface_area_scene_units2": 441.8738499125197,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.017",
+      "vertices": 598,
+      "triangles": 653,
+      "quads": 0,
+      "materials": [
+        "tourniquet_rolled"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.7395250975387171,
+      "world_surface_area_scene_units2": 437.6083789059642,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.018",
+      "vertices": 552,
+      "triangles": 524,
+      "quads": 0,
+      "materials": [
+        "sp_ally_mex_sf_radio_mbtir_tan"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.6279410018469207,
+      "world_surface_area_scene_units2": 260.42669385595883,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.019",
+      "vertices": 577,
+      "triangles": 862,
+      "quads": 0,
+      "materials": [
+        "mp_western_dday_hydration_nozzle_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.7291968129575253,
+      "world_surface_area_scene_units2": 246.12885497246126,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.020",
+      "vertices": 180,
+      "triangles": 144,
+      "quads": 0,
+      "materials": [
+        "smg_pistol_mag"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.9867626870982349,
+      "world_surface_area_scene_units2": 205.6553393615011,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.021",
+      "vertices": 1241,
+      "triangles": 1630,
+      "quads": 0,
+      "materials": [
+        "radio"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.16728814132511616,
+      "world_surface_area_scene_units2": 167.61889067769738,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.022",
+      "vertices": 1196,
+      "triangles": 932,
+      "quads": 0,
+      "materials": [
+        "buckle_master_coyote"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.15685188584029675,
+      "world_surface_area_scene_units2": 142.1040347918829,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.023",
+      "vertices": 1455,
+      "triangles": 1332,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_milsim_shadow_company_ptt"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.2427359973080456,
+      "world_surface_area_scene_units2": 128.01206062215718,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.024",
+      "vertices": 242,
+      "triangles": 192,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_kreuger_canteen_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.09626510739326477,
+      "world_surface_area_scene_units2": 120.83309019223489,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.025",
+      "vertices": 451,
+      "triangles": 428,
+      "quads": 0,
+      "materials": [
+        "pararescue_shears_tan"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.4081478194275405,
+      "world_surface_area_scene_units2": 112.09662793127151,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.026",
+      "vertices": 536,
+      "triangles": 504,
+      "quads": 0,
+      "materials": [
+        "chemlight_a_yellow"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.5606759708025493,
+      "world_surface_area_scene_units2": 112.06232420080602,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.027",
+      "vertices": 268,
+      "triangles": 256,
+      "quads": 0,
+      "materials": [
+        "hero_alex_carabiner_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.29906305065378547,
+      "world_surface_area_scene_units2": 92.33535547351383,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.028",
+      "vertices": 648,
+      "triangles": 540,
+      "quads": 0,
+      "materials": [
+        "zip_tie_white"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 2.0990144461393356,
+      "world_surface_area_scene_units2": 77.58520657760228,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.029",
+      "vertices": 534,
+      "triangles": 532,
+      "quads": 0,
+      "materials": [
+        "parts_keyring_carabiner"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.5216114928480238,
+      "world_surface_area_scene_units2": 21.169340862672836,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.030",
+      "vertices": 36,
+      "triangles": 22,
+      "quads": 0,
+      "materials": [
+        "usmc_ir_patch"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.8600214868783951,
+      "world_surface_area_scene_units2": 14.37683905679436,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.031",
+      "vertices": 3425,
+      "triangles": 4972,
+      "quads": 0,
+      "materials": [
+        "sp_ally_sas_helmet_1_1"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.735448801307939,
+      "world_surface_area_scene_units2": 2628.8790394361763,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.032",
+      "vertices": 1786,
+      "triangles": 3084,
+      "quads": 0,
+      "materials": [
+        "mp_bale_5_balaclava"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.616427568718791,
+      "world_surface_area_scene_units2": 2524.434838196586,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.033",
+      "vertices": 2319,
+      "triangles": 3064,
+      "quads": 0,
+      "materials": [
+        "al_qatala_headphone_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.8345712497830391,
+      "world_surface_area_scene_units2": 950.2811458892729,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.034",
+      "vertices": 1425,
+      "triangles": 2688,
+      "quads": 0,
+      "materials": [
+        "head_sc_m_acosta"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.18828558828681707,
+      "world_surface_area_scene_units2": 421.8287764367154,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.035",
+      "vertices": 421,
+      "triangles": 399,
+      "quads": 0,
+      "materials": [
+        "mp_eastern_rodion_v3_helmet_light_a"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.833959741765284,
+      "world_surface_area_scene_units2": 132.60138707748428,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.036",
+      "vertices": 667,
+      "triangles": 752,
+      "quads": 0,
+      "materials": [
+        "shooting_glasses_frame"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.5082177727017552,
+      "world_surface_area_scene_units2": 98.04777371935306,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.037",
+      "vertices": 314,
+      "triangles": 552,
+      "quads": 0,
+      "materials": [
+        "head_sc_m_acosta_eyes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 1.7601129412651062,
+      "world_surface_area_scene_units2": 50.21454013555955,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.038",
+      "vertices": 312,
+      "triangles": 424,
+      "quads": 0,
+      "materials": [
+        "head_shared_eyelashes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 2.380940020084381,
+      "world_surface_area_scene_units2": 23.644217407049076,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    },
+    {
+      "name": "CastMesh.039",
+      "vertices": 172,
+      "triangles": 178,
+      "quads": 0,
+      "materials": [
+        "russian_pilot_helmet_glass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_area_sum": 0.5676704170182347,
+      "world_surface_area_scene_units2": 117.57449949857553,
+      "shape_keys": [],
+      "armatures": [
+        "body_sp_ally_mex_sf_a_LOD0"
+      ],
+      "unweighted_vertices": 0,
+      "over_four_weights": 0,
+      "non_manifold_edges": null
+    }
+  ],
+  "rigs": [
+    {
+      "name": "body_sp_ally_mex_sf_a_LOD0",
+      "bones": 311,
+      "deform": 311,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bone_names": [
+        "tag_origin",
+        "tag_sync",
+        "j_shield_ri",
+        "j_mainroot",
+        "j_spinelower",
+        "j_spineupper",
+        "j_spine4",
+        "j_neck",
+        "j_head",
+        "j_helmet",
+        "tag_helmetlight",
+        "j_visor",
+        "j_visor_inner",
+        "bone_e20fc863",
+        "bone_8f025b39",
+        "tag_eye",
+        "j_temple_le",
+        "j_temple_ri",
+        "bone_4ba72b56",
+        "bone_5d968ab0",
+        "bone_5f968dd6",
+        "bone_9b2ddeca",
+        "bone_9a2ddd37",
+        "bone_992ddba4",
+        "bone_982dda11",
+        "bone_972dd87e",
+        "bone_962dd6eb",
+        "bone_fa5c879b",
+        "bone_fb5c892e",
+        "bone_fc5c8ac1",
+        "bone_4aee4fd",
+        "bone_fdaed9f8",
+        "bone_aedeb1",
+        "bone_ffaedd1e",
+        "bone_2aee1d7",
+        "j_helmet_hide",
+        "j_brow_le_1",
+        "j_brow_le_2",
+        "j_brow_le_3",
+        "j_brow_ri_1",
+        "j_brow_ri_2",
+        "j_brow_ri_3",
+        "j_cheek_le_1",
+        "j_cheek_le_2",
+        "j_cheek_puff_le",
+        "j_cheek_puff_ri",
+        "j_cheek_ri_1",
+        "j_cheek_ri_2",
+        "j_chin",
+        "j_eye_lid_bot_le",
+        "j_eye_lid_bot_ri",
+        "j_eye_lid_top_le",
+        "j_eye_lid_top_le_1",
+        "j_eye_lid_top_ri",
+        "j_eye_lid_top_ri_1",
+        "j_eyeball_le",
+        "j_eyeball_ri",
+        "j_eyelash_bot_le_1",
+        "j_eyelash_bot_le_2",
+        "j_eyelash_bot_ri_1",
+        "j_eyelash_bot_ri_2",
+        "j_eyelash_top_le_1",
+        "j_eyelash_top_le_2",
+        "j_eyelash_top_ri_1",
+        "j_eyelash_top_ri_2",
+        "j_forehead",
+        "j_forehead_le_1",
+        "j_forehead_ri_1",
+        "j_furrow_le",
+        "j_furrow_ri",
+        "j_insidegum",
+        "j_insidegum_le_1",
+        "j_insidegum_ri_1",
+        "j_levator_le_1",
+        "j_levator_le_2",
+        "j_levator_ri_1",
+        "j_levator_ri_2",
+        "j_lip_bot",
+        "j_lip_bot_le_1",
+        "j_lip_bot_le_2",
+        "j_lip_bot_le_3",
+        "j_lip_bot_le_4",
+        "j_lip_bot_ri_1",
+        "j_lip_bot_ri_2",
+        "j_lip_bot_ri_3",
+        "j_lip_bot_ri_4",
+        "j_lip_inside_le_1",
+        "j_lip_inside_ri_1",
+        "j_lip_top",
+        "j_lip_top_le_1",
+        "j_lip_top_le_2",
+        "j_lip_top_le_3",
+        "j_lip_top_le_4",
+        "j_lip_top_ri_1",
+        "j_lip_top_ri_2",
+        "j_lip_top_ri_3",
+        "j_lip_top_ri_4",
+        "j_mouthcorner_le",
+        "j_mouthcorner_ri",
+        "j_nasolabial_le_1",
+        "j_nasolabial_le_2",
+        "j_nasolabial_le_3",
+        "j_nasolabial_le_4",
+        "j_nasolabial_ri_1",
+        "j_nasolabial_ri_2",
+        "j_nasolabial_ri_3",
+        "j_nasolabial_ri_4",
+        "j_nose_tip",
+        "j_periorbital_le_1",
+        "j_periorbital_le_2",
+        "j_periorbital_le_3",
+        "j_periorbital_ri_1",
+        "j_periorbital_ri_2",
+        "j_periorbital_ri_3",
+        "j_underchin",
+        "j_underlip",
+        "j_uppergum",
+        "j_upperlip",
+        "j_jaw",
+        "j_clavicle_le",
+        "j_shoulder_le",
+        "j_elbow_le",
+        "j_wrist_le",
+        "tag_accessory_left",
+        "j_metamid_le_1",
+        "j_mid_le_1",
+        "j_mid_le_2",
+        "j_mid_le_3",
+        "j_thumb_le_1",
+        "j_thumb_le_2",
+        "j_thumb_le_3",
+        "j_metaindex_le_1",
+        "j_index_le_1",
+        "j_index_le_2",
+        "j_index_le_3",
+        "j_metapinky_le_1",
+        "j_pinky_le_1",
+        "j_pinky_le_2",
+        "j_pinky_le_3",
+        "j_metaring_le_1",
+        "j_ring_le_1",
+        "j_ring_le_2",
+        "j_ring_le_3",
+        "tag_ik_wrist_loc_le",
+        "j_wristfronttwist1_le",
+        "tag_wrist_attach_le",
+        "j_elbowdq_le",
+        "j_shield_le",
+        "j_shouldertwist_le",
+        "tag_reflector_arm_le",
+        "j_proc_shoulder_le",
+        "j_gun_adjust_le",
+        "tag_weapon_left",
+        "j_teres_le",
+        "j_clavicle_ri",
+        "j_shoulder_ri",
+        "j_elbow_ri",
+        "j_wrist_ri",
+        "tag_accessory_right",
+        "j_metamid_ri_1",
+        "j_mid_ri_1",
+        "j_mid_ri_2",
+        "j_mid_ri_3",
+        "j_thumb_ri_1",
+        "j_thumb_ri_2",
+        "j_thumb_ri_3",
+        "j_metaindex_ri_1",
+        "j_index_ri_1",
+        "j_index_ri_2",
+        "j_index_ri_3",
+        "j_metapinky_ri_1",
+        "j_pinky_ri_1",
+        "j_pinky_ri_2",
+        "j_pinky_ri_3",
+        "j_metaring_ri_1",
+        "j_ring_ri_1",
+        "j_ring_ri_2",
+        "j_ring_ri_3",
+        "tag_ik_wrist_loc_ri",
+        "j_elbowdq_ri",
+        "j_wristfronttwist1_ri",
+        "j_shouldertwist_ri",
+        "tag_reflector_arm_ri",
+        "j_proc_shoulder_ri",
+        "j_gun_adjust",
+        "j_gun",
+        "tag_weapon_right",
+        "j_teres_ri",
+        "tag_inhand",
+        "tag_shield_back",
+        "tag_weapon_chest",
+        "j_proc_lift_clavicle_le",
+        "j_proc_rot_clavicle_le",
+        "j_proc_target_clavicle_le",
+        "j_proc_lift_clavicle_ri",
+        "j_proc_rot_clavicle_ri",
+        "j_proc_target_clavicle_ri",
+        "j_proc_spinelift",
+        "j_proc_spine4",
+        "j_chest",
+        "tag_stowed_back3",
+        "bone_ac8b7fa6",
+        "bone_ab8b7e13",
+        "bone_aa8b7c80",
+        "bone_94f259e9",
+        "bone_91f25530",
+        "bone_92f256c3",
+        "bone_d8d11c2b",
+        "bone_d9d11dbe",
+        "bone_dad11f51",
+        "bone_e01f3abf",
+        "tag_carry_attach",
+        "bone_d7d0c5b7",
+        "j_cosmetic_combox",
+        "bone_5e968c43",
+        "j_cosmetic_1",
+        "j_cosmetic_2",
+        "j_cosmetic_4",
+        "tag_stowed_back",
+        "tag_stowed_back2",
+        "j_cosmetic_37",
+        "j_cosmetic_38",
+        "j_cosmetic_41",
+        "j_cosmetic_42",
+        "j_cosmetic_45",
+        "j_cosmetic_46",
+        "j_cosmetic_47",
+        "j_cosmetic_48",
+        "j_cosmetic_49",
+        "j_cosmetic_50",
+        "j_cosmetic_5",
+        "j_cosmetic_6",
+        "j_cosmetic_7",
+        "j_cosmetic_9",
+        "j_cosmetic_10",
+        "j_cosmetic_11",
+        "j_proc_spineupper",
+        "j_proc_spineupperlift",
+        "j_proc_stowed_chest",
+        "tag_stowed_chest",
+        "bone_21241c99",
+        "bone_1d588988",
+        "bone_354e4cd4",
+        "bone_384e518d",
+        "bone_8ea093cf",
+        "j_fannypack",
+        "bone_a12ebdaa",
+        "j_knife",
+        "bone_f12a564f",
+        "bone_f22a57e2",
+        "j_radio",
+        "bone_744601d3",
+        "bone_75460366",
+        "tag_stowed_chest2",
+        "j_cosmetic_20",
+        "j_cosmetic_22",
+        "j_cosmetic_26",
+        "j_cosmetic_27",
+        "j_cosmetic_29",
+        "j_cosmetic_30",
+        "j_dummy_slingcenteraim",
+        "j_sling_pivot",
+        "j_sling_target",
+        "j_proc_dummy_spinelift",
+        "j_spinelower_lift",
+        "j_proc_spinelower",
+        "j_proc_spinelower2",
+        "j_proc_spinelower3",
+        "j_groinprotector",
+        "j_proc_spinelower_lift",
+        "j_proc_spinelower_swivel",
+        "j_proc_spinelower_swivel_lift",
+        "j_cosmetic_33",
+        "j_cosmetic_34",
+        "j_cosmetic_35",
+        "j_cosmetic_36",
+        "j_hip_le",
+        "j_knee_le",
+        "j_ankle_le",
+        "j_ball_le",
+        "j_kneedq_le",
+        "j_hiptwist_le",
+        "j_hipholster_le",
+        "j_hip_proc_le",
+        "j_hip_ri",
+        "j_knee_ri",
+        "j_ankle_ri",
+        "j_ball_ri",
+        "j_kneedq_ri",
+        "j_hiptwist_ri",
+        "j_hipholster_ri",
+        "tag_stowed_thigh",
+        "j_hip_proc_ri",
+        "tag_stowed_hip_rear",
+        "j_dummy_knee_dist",
+        "j_proc_hip_lift_le",
+        "j_proc_hip_lift_aim_le",
+        "j_proc_hip_lift_ri",
+        "j_proc_hip_lift_aim_ri",
+        "j_crotch",
+        "bone_f29ef312",
+        "bone_bac5961",
+        "bone_bb65a802",
+        "bone_ecb621b1",
+        "bone_e9b61cf8",
+        "bone_eab61e8b",
+        "bone_efb6266a",
+        "j_ik_foot_root",
+        "tag_ik_foot_loc_le",
+        "tag_ik_foot_loc_ri",
+        "j_antislide_ik"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "$black.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.001",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.002",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.003",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.004",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.005",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.006",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.007",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.008",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.009",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.010",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.011",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.012",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.013",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.014",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.015",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.016",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.017",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.018",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.019",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.020",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.021",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.022",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.023",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.024",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.025",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.026",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.027",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.028",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.029",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.030",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.031",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.032",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.033",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.035",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$black.tiff.036",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.001",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.002",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.003",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.004",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.005",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.006",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.007",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.008",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.009",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.010",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.011",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.012",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.013",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.014",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.015",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.016",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.017",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.018",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.019",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.020",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.021",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.022",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.023",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.024",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.025",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.026",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.027",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.028",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.029",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.030",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.031",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.032",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.033",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.034",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.035",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.036",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.037",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.038",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.039",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.040",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.041",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.042",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.043",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.044",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.045",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.046",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.047",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.048",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.049",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.050",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.051",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.052",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.053",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.054",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.055",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.056",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.057",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.058",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.059",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.060",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.061",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.062",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.063",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.064",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.065",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.066",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.067",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.068",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.069",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.070",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.071",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.072",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.073",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.074",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.075",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.076",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.077",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.078",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.079",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.080",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.081",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.082",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.083",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.084",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.085",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.086",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.087",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.088",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.089",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.090",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.091",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.092",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.093",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.094",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.095",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.096",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.097",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.098",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.099",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.100",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.101",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.102",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.103",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.104",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.105",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.106",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.107",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.108",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.109",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$identitypackednog.tiff.110",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.001",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.002",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.003",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.004",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.005",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.006",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.007",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.008",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.009",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.010",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.011",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.012",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.013",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.014",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.015",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.016",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.017",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.018",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.019",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.020",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.021",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.022",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.023",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.024",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.025",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.026",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.027",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.028",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.029",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.030",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.031",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.032",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.033",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.034",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.035",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.036",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.037",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.038",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.039",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.040",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "$white.tiff.042",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "al_qatala_headphone_a_c&usmc_headset_s~1079430799658791253.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "al_qatala_urban_jeans_dropleg_c&defaultspec~9076661581049064242.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "al_qatala_urban_jeans_dropleg_n&al_qatala_urban_jeans_dropleg_g~10418169515908982146.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "base_eye_blue_n_hlf&white~8065500304785381598.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "base_eye_brown_c&white~4686892719477836402.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_c&defaultspec~15666556895550299369.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_c&defaultspec~15666556895550299369.tiff.001",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_n&buckle_master_g~12832439084404237939.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_n&buckle_master_g~12832439084404237939.tiff.001",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_scatter&buckle_master_m~7068022757628407229.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "buckle_master_scatter&buckle_master_m~7068022757628407229.tiff.001",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "chemlight_a_n&chemlight_a_g~3848247352564271282.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "chemlight_a_yellow_c&defaultspec~7249983414753855274.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "dark_eyelashes_strip_c~16826180274168421144.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "dark_eyelashes_strip_n&black&black~16848863817368760060.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "domino_helmet_n&domino_helmet_g~14904582332572977835.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "grinch_gloves_tan_c&defaultspec~12467998164550861241.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "head_sc_m_acosta_c&head_sc_m_acosta_s~11232591107715366439.tiff",
+      "size": [
+        1024,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "head_sc_m_acosta_n&head_sc_m_acosta_g~1508987464826004827.tiff",
+      "size": [
+        1024,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "hero_alex_boot_a_n&hero_alex_boot_a_g~4518018293493454387.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "hero_alex_carabiner_a_c&sa_militia_carabiner_s~2218098346281516695.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "hero_alex_dump_pouch_rolled_coyote_scatter&hero_alex_dump_pouch_rolled_coyote_m~12526398049779715705.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "hero_alex_hydration_a_n&hero_alex_hydration_a_g~4682879009045672279.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "hero_ghost_m14_incen_grenade_3_1_c&m18_smoke_grenade_s~6107037700718419517.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "image_193c8de97eb1131a.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "image_6c99715c182feb7e.tiff",
+      "size": [
+        1024,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "iskra_med_pouch_c&defaultspec~13531119510984645193.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "m14_incen_grenade_n&m14_incen_grenade_g~1958964341710244910.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "marine_raider_jacket_hood_down_n&mp_eastern_milsim_shadow_company_jacket_g~17559677904724244220.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_bale_5_balaclava_c&parts_headgear_balaclava_split_hood_up_s~13179424797656046070.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_kreuger_canteen_a_c&mp_eastern_syd_canteen_a_s~12933624413346160673.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_company_jacket_c&mp_eastern_milsim_shadow_company_jacket_s~16966535373999483472.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_mag_extension_ar_c&mp_eastern_milsim_shadow_mag_extension_ar_s~6091291819787732149.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_mag_extension_ar_n&mp_eastern_milsim_shadow_mag_extension_ar_g~12256738319849031948.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_ptt_c&mp_eastern_milsim_shadow_ptt_s~1788318063178241922.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_ptt_n&mp_eastern_milsim_shadow_ptt_g~2182430139592550076.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_rodion_5_boot_a_yellow_black_z&mp_eastern_rodion_5_boot_a_yellow_black_m~13309083551090296510.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_rodion_boot_a_c&hero_alex_boot_a_s~2438760186911539982.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_rodion_v3_helmet_light_a_c&defaultspec~15074168586334963647.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_eastern_syd_canteen_a_n&mp_eastern_syd_canteen_a_g~4304846441337697810.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_kilgore_vest_iw9_1_1_z&mp_kilgore_vest_iw9_1_1_m~650568295389807990.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_ramstein_raider_jacket_iw9_3_1_z&mp_ramstein_raider_jacket_iw9_3_1_m~1625293198411309219.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_western_dday_hydration_nozzle_a_c&defaultspec~8561325858420944884.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_western_dday_hydration_nozzle_a_n&hero_alex_hydration_nozzle_a_g~11880360545713430756.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "mp_western_dday_hydration_nozzle_a_z&hero_alex_hydration_nozzle_a_m~2789959444289751774.tiff",
+      "size": [
+        256,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "pararescue_marker_scatter~17961624183892268932.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "pararescue_shears_c&pararescue_shears_s~2705260103236349323.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "pararescue_shears_n&pararescue_shears_g~2311451693220793889.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "pararescue_shears_scatter~13279587071634473026.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_ar_mag_c&parts_ar_mag_s~6923464689342295764.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_ar_mag_n&parts_ar_mag_g~17261469427623163281.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_ar_mag_z~2380411138297588477.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_headgear_balaclava_split_hood_up_n&parts_headgear_balaclava_split_hood_up_o&parts_headgear_balaclava_~14754216157013287512.tiff",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_keyring_carabiner_c&parts_keyring_carabiner_s~7215160854270435042.tiff",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_keyring_carabiner_n&parts_keyring_carabiner_o&parts_keyring_carabiner_g~18072505609280523169.tiff",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_pouch_mag_ar_quad_ronin_n&parts_pouch_mag_ar_quad_ronin_g~8010178652144335113.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_pouch_mag_ar_ronin_n&parts_pouch_mag_ar_ronin_g~5993727122869531752.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "parts_pouch_mag_ar_ronin_z&parts_pouch_mag_ar_ronin_m~14595768445192194430.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "pilot_gloves_n&pilot_gloves_g~17369448390328362113.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_c&radio_s~6827217463097608871.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_c~13519596426859823439.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_maps_working_scatter_scatter~17186765091763205943.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_mbitr_n&radio_mbitr_g~5297898918689213275.tiff",
+      "size": [
+        512,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_mbitr_z~4962023497717470562.tiff",
+      "size": [
+        256,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "radio_n&radio_g~6205585214080348354.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false
+    },
+    {
+      "name": "sa_militia_carabiner_n&sa_militia_carabiner_g~3521578605767849031.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "sas_urban_hydration_a_scatter&white~14367650725239809056.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "seal_team_v3_helmet_light_a_n&seal_team_v3_helmet_light_a_g~5220333041297409204.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "seal_team_v3_helmet_light_a_scatter~15735897175115588835.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_c&defaultspec~18041604901332488418.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_c&mp_bale_shooting_glasses_s~2882076676234184684.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_c~16046804556779944464.tiff",
+      "size": [
+        4,
+        4
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_n&shooting_glasses_g~14054312871954368180.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_n&shooting_glasses_g~14054312871954368180.tiff.001",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "shooting_glasses_scatter~18308302163309795747.tiff",
+      "size": [
+        256,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "smg_pistol_mag_c&smg_pistol_mag_s~3447251461203332412.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "smg_pistol_mag_n&smg_pistol_mag_g~11265020304087782058.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_mex_sf_radio_mbtir_tan_c&radio_mbitr_s~14213723482542199789.tiff",
+      "size": [
+        512,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_mex_sf_radio_pouch_bk_c&defaultspec~16019460423258186237.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_sas_dump_pouch_rolled_cqc_2_1_c&defaultspec~15970795476277464260.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_sas_helmet_1_1_c&domino_helmet_s~10010702276368221635.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_sas_hydration_1_1_c&hero_alex_hydration_a_s~15414978200015888580.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_ally_sas_pouch_mag_ar_quad_1_1_c&defaultspec~12395675302304765432.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "sp_hero_kyle_vest_guidance_c&defaultspec~11527224785094601145.tiff",
+      "size": [
+        2048,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_dump_pouch_c&defaultspec~13306210861301690954.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_dump_pouch_n&spetsnaz_dump_pouch_g~8559221151267603954.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_med_pouch_n&spetsnaz_med_pouch_g~10771518883076244453.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_med_pouch_z&spetsnaz_med_pouch_m~15778580481787172986.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_pistol_holster_a_c&defaultspec~13165386127414855431.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "spetsnaz_pistol_holster_a_n&spetsnaz_pistol_holster_a_g~9356793275871216896.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "tourniquet_c&tourniquet_s~7924947404027276281.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "tourniquet_n&tourniquet_g~16944765420586198841.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "tourniquet_scatter&tourniquet_m~16112958188307655484.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_dump_pouch_rolled_n&usmc_dump_pouch_rolled_g~2257497080073950848.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_fannypack_brown_scatter&usmc_fannypack_brown_m~15273492105602958626.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_fannypack_n&usmc_fannypack_g~11568984610228934873.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_headset_n&usmc_headset_g~7125929321519968607.tiff",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_headset_scatter~2329387699600269012.tiff",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_ir_patch_c&defaultspec~15063502238587402863.tiff",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_ir_patch_n&usmc_ir_patch_g~16931950221824956524.tiff",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true
+    },
+    {
+      "name": "usmc_vest_n&usmc_vest_g~10676877561454095741.tiff",
+      "size": [
+        2048,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&mp_eastern_syd_canteen_a_m~12961337177686406863.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&mp_ronin_mag_pouch_quad_iw9_1_1_m~13079513921206475565.tiff",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&usmc_ir_patch_z~15516057224744105085.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&white~14373238124404268617.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&white~14373238124404268617.tiff.001",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&white~14373238124404268617.tiff.002",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "white&white~14373238124404268617.tiff.003",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "white~12733197405993348844.tiff",
+      "size": [
+        1,
+        1
+      ],
+      "packed": true
+    },
+    {
+      "name": "wyatt_fannypack_c&defaultspec~6217817322562961030.tiff",
+      "size": [
+        1024,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "zip_tie_c&defaultspec~9171918875712910549.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    },
+    {
+      "name": "zip_tie_n&zip_tie_g~18353608924723218932.tiff",
+      "size": [
+        256,
+        256
+      ],
+      "packed": true
+    }
+  ],
+  "material_nodes": [
+    {
+      "name": "al_qatala_headphone_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "al_qatala_headphone_a_c&usmc_headset_s~1079430799658791253.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "usmc_headset_n&usmc_headset_g~7125929321519968607.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.040",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "usmc_headset_scatter~2329387699600269012.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.033",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.099",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.100",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.101",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "al_qatala_urban_jeans_dropleg",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "al_qatala_urban_jeans_dropleg_c&defaultspec~9076661581049064242.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "al_qatala_urban_jeans_dropleg_n&al_qatala_urban_jeans_dropleg_g~10418169515908982146.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.002",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.003",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.004",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.005",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ar_mag",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "parts_ar_mag_c&parts_ar_mag_s~6923464689342295764.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "parts_ar_mag_n&parts_ar_mag_g~17261469427623163281.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.015",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "parts_ar_mag_z~2380411138297588477.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.013",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.039",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.040",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.041",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "buckle_master_coyote",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "buckle_master_c&defaultspec~15666556895550299369.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "buckle_master_n&buckle_master_g~12832439084404237939.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.025",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "buckle_master_scatter&buckle_master_m~7068022757628407229.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.022",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.066",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.067",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.068",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "buckle_master_urban",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "buckle_master_c&defaultspec~15666556895550299369.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "buckle_master_n&buckle_master_g~12832439084404237939.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.017",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "buckle_master_scatter&buckle_master_m~7068022757628407229.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.015",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.045",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.046",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.047",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chemlight_a_yellow",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "chemlight_a_yellow_c&defaultspec~7249983414753855274.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "chemlight_a_n&chemlight_a_g~3848247352564271282.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.030",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white~12733197405993348844.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.026",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.078",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.079",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.080",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grinch_gloves_tan",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "grinch_gloves_tan_c&defaultspec~12467998164550861241.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "pilot_gloves_n&pilot_gloves_g~17369448390328362113.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.008",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&white~14373238124404268617.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.007",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.021",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.022",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.023",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "head_sc_m_acosta",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "head_sc_m_acosta_c&head_sc_m_acosta_s~11232591107715366439.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Diffuse Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Diffuse Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "head_sc_m_acosta_n&head_sc_m_acosta_g~1508987464826004827.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "image_6c99715c182feb7e.tiff",
+          "outputs": [
+            [
+              "Alpha",
+              "Group",
+              "SSS Alpha"
+            ],
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.102",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.103",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.104",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "head_sc_m_acosta_eyes",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "base_eye_brown_c&white~4686892719477836402.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Diffuse Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Diffuse Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "base_eye_blue_n_hlf&white~8065500304785381598.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "head_shared_eyelashes",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "image_193c8de97eb1131a.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Diffuse Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Diffuse Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "dark_eyelashes_strip_n&black&black~16848863817368760060.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "dark_eyelashes_strip_c~16826180274168421144.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Hair Mask"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hero_alex_carabiner_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "hero_alex_carabiner_a_c&sa_militia_carabiner_s~2218098346281516695.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "sa_militia_carabiner_n&sa_militia_carabiner_g~3521578605767849031.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.031",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.032",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.027",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.081",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.082",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.083",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hero_ghost_m14_incen_grenade_3_1",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "hero_ghost_m14_incen_grenade_3_1_c&m18_smoke_grenade_s~6107037700718419517.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "m14_incen_grenade_n&m14_incen_grenade_g~1958964341710244910.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.013",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.014",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.012",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.036",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.037",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.038",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iskra_med_pouch",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "iskra_med_pouch_c&defaultspec~13531119510984645193.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "spetsnaz_med_pouch_n&spetsnaz_med_pouch_g~10771518883076244453.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.011",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "spetsnaz_med_pouch_z&spetsnaz_med_pouch_m~15778580481787172986.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.010",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.030",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.031",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.032",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_bale_5_balaclava",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_bale_5_balaclava_c&parts_headgear_balaclava_split_hood_up_s~13179424797656046070.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "parts_headgear_balaclava_split_hood_up_n&parts_headgear_balaclava_split_hood_up_o&parts_headgear_balaclava_~14754216157013287512.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.039",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&white~14373238124404268617.tiff.003",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.032",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.096",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.097",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.098",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_kreuger_canteen_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_kreuger_canteen_a_c&mp_eastern_syd_canteen_a_s~12933624413346160673.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "mp_eastern_syd_canteen_a_n&mp_eastern_syd_canteen_a_g~4304846441337697810.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.028",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&mp_eastern_syd_canteen_a_m~12961337177686406863.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.024",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.072",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.073",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.074",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_company_jacket",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_milsim_shadow_company_jacket_c&mp_eastern_milsim_shadow_company_jacket_s~16966535373999483472.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "marine_raider_jacket_hood_down_n&mp_eastern_milsim_shadow_company_jacket_g~17559677904724244220.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "mp_ramstein_raider_jacket_iw9_3_1_z&mp_ramstein_raider_jacket_iw9_3_1_m~1625293198411309219.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.002",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_company_mag_extension_ar",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_milsim_shadow_mag_extension_ar_c&mp_eastern_milsim_shadow_mag_extension_ar_s~6091291819787732149.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "mp_eastern_milsim_shadow_mag_extension_ar_n&mp_eastern_milsim_shadow_mag_extension_ar_g~12256738319849031948.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.018",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.019",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.016",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.048",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.049",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.050",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_milsim_shadow_company_ptt",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_milsim_shadow_ptt_c&mp_eastern_milsim_shadow_ptt_s~1788318063178241922.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "mp_eastern_milsim_shadow_ptt_n&mp_eastern_milsim_shadow_ptt_g~2182430139592550076.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.026",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.027",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.023",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.069",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.070",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.071",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_rodion_boot_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_rodion_boot_a_c&hero_alex_boot_a_s~2438760186911539982.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "hero_alex_boot_a_n&hero_alex_boot_a_g~4518018293493454387.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.006",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "mp_eastern_rodion_5_boot_a_yellow_black_z&mp_eastern_rodion_5_boot_a_yellow_black_m~13309083551090296510.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.005",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.015",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.016",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.017",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_eastern_rodion_v3_helmet_light_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_eastern_rodion_v3_helmet_light_a_c&defaultspec~15074168586334963647.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "seal_team_v3_helmet_light_a_n&seal_team_v3_helmet_light_a_g~5220333041297409204.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.042",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "seal_team_v3_helmet_light_a_scatter~15735897175115588835.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.035",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.105",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.106",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.107",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mp_western_dday_hydration_nozzle_a",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "mp_western_dday_hydration_nozzle_a_c&defaultspec~8561325858420944884.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "mp_western_dday_hydration_nozzle_a_n&hero_alex_hydration_nozzle_a_g~11880360545713430756.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.022",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "mp_western_dday_hydration_nozzle_a_z&hero_alex_hydration_nozzle_a_m~2789959444289751774.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.019",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.057",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.058",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.059",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pararescue_shears_tan",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "pararescue_shears_c&pararescue_shears_s~2705260103236349323.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "pararescue_shears_n&pararescue_shears_g~2311451693220793889.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.029",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "pararescue_shears_scatter~13279587071634473026.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.025",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.075",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.076",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.077",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parts_keyring_carabiner",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "parts_keyring_carabiner_c&parts_keyring_carabiner_s~7215160854270435042.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "parts_keyring_carabiner_n&parts_keyring_carabiner_o&parts_keyring_carabiner_g~18072505609280523169.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.034",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.035",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.029",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.087",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.088",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.089",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "radio",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "radio_c&radio_s~6827217463097608871.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "radio_n&radio_g~6205585214080348354.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "radio_c~13519596426859823439.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "radio_maps_working_scatter_scatter~17186765091763205943.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.021",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.063",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.064",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.065",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "russian_pilot_helmet_glass",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "shooting_glasses_c&mp_bale_shooting_glasses_s~2882076676234184684.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Diffuse Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "shooting_glasses_n&shooting_glasses_g~14054312871954368180.tiff.001",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "shooting_glasses_frame",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "shooting_glasses_c&defaultspec~18041604901332488418.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "shooting_glasses_n&shooting_glasses_g~14054312871954368180.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "shooting_glasses_c~16046804556779944464.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "shooting_glasses_scatter~18308302163309795747.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.036",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.108",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.109",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.110",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "smg_pistol_mag",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "smg_pistol_mag_c&smg_pistol_mag_s~3447251461203332412.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "smg_pistol_mag_n&smg_pistol_mag_g~11265020304087782058.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.023",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.024",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.020",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.060",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.061",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.062",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_mex_sf_radio_mbtir_tan",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_mex_sf_radio_mbtir_tan_c&radio_mbitr_s~14213723482542199789.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "radio_mbitr_n&radio_mbitr_g~5297898918689213275.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.021",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "radio_mbitr_z~4962023497717470562.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.018",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.054",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.055",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.056",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_mex_sf_radio_pouch_bk",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_mex_sf_radio_pouch_bk_c&defaultspec~16019460423258186237.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "parts_pouch_mag_ar_ronin_n&parts_pouch_mag_ar_ronin_g~5993727122869531752.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.012",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "parts_pouch_mag_ar_ronin_z&parts_pouch_mag_ar_ronin_m~14595768445192194430.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.011",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.033",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.034",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.035",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_sas_crye_pouch_mag_ar_quad_1_1",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_sas_pouch_mag_ar_quad_1_1_c&defaultspec~12395675302304765432.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "parts_pouch_mag_ar_quad_ronin_n&parts_pouch_mag_ar_quad_ronin_g~8010178652144335113.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.007",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&mp_ronin_mag_pouch_quad_iw9_1_1_m~13079513921206475565.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.006",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.018",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.019",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.020",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_sas_dump_pouch_rolled_cqc_2_1",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_sas_dump_pouch_rolled_cqc_2_1_c&defaultspec~15970795476277464260.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "usmc_dump_pouch_rolled_n&usmc_dump_pouch_rolled_g~2257497080073950848.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.016",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "hero_alex_dump_pouch_rolled_coyote_scatter&hero_alex_dump_pouch_rolled_coyote_m~12526398049779715705.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.014",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.042",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.043",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.044",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_sas_helmet_1_1",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_sas_helmet_1_1_c&domino_helmet_s~10010702276368221635.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "domino_helmet_n&domino_helmet_g~14904582332572977835.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.037",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "$white.tiff.038",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.031",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.093",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.094",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.095",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_ally_sas_hydration_1_1",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_ally_sas_hydration_1_1_c&hero_alex_hydration_a_s~15414978200015888580.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "hero_alex_hydration_a_n&hero_alex_hydration_a_g~4682879009045672279.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.005",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "sas_urban_hydration_a_scatter&white~14367650725239809056.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.004",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.012",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.013",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.014",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sp_hero_kyle_vest_convoy",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "sp_hero_kyle_vest_guidance_c&defaultspec~11527224785094601145.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "usmc_vest_n&usmc_vest_g~10676877561454095741.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.003",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "mp_kilgore_vest_iw9_1_1_z&mp_kilgore_vest_iw9_1_1_m~650568295389807990.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.002",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.006",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.007",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.008",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spetsnaz_dump_pouch",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "spetsnaz_dump_pouch_c&defaultspec~13306210861301690954.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "spetsnaz_dump_pouch_n&spetsnaz_dump_pouch_g~8559221151267603954.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.009",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&white~14373238124404268617.tiff.002",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.008",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.024",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.025",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.026",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spetsnaz_pistol_holster",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "spetsnaz_pistol_holster_a_c&defaultspec~13165386127414855431.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "spetsnaz_pistol_holster_a_n&spetsnaz_pistol_holster_a_g~9356793275871216896.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.004",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&white~14373238124404268617.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.003",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.009",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.010",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.011",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tourniquet_rolled",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "tourniquet_c&tourniquet_s~7924947404027276281.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "tourniquet_n&tourniquet_g~16944765420586198841.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.020",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "tourniquet_scatter&tourniquet_m~16112958188307655484.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.017",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.051",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.052",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.053",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "usmc_ir_patch",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "usmc_ir_patch_c&defaultspec~15063502238587402863.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "usmc_ir_patch_n&usmc_ir_patch_g~16931950221824956524.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.036",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "white&usmc_ir_patch_z~15516057224744105085.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.030",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.090",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.091",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.092",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wyatt_fannypack",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "wyatt_fannypack_c&defaultspec~6217817322562961030.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "usmc_fannypack_n&usmc_fannypack_g~11568984610228934873.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.010",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "usmc_fannypack_brown_scatter&usmc_fannypack_brown_m~15273492105602958626.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.009",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.027",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.028",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.029",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "zip_tie_white",
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "zip_tie_c&defaultspec~9171918875712910549.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Base Color"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Specular/Metallic"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "zip_tie_n&zip_tie_g~18353608924723218932.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "$white.tiff.033",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Mask Color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.003",
+          "image": "pararescue_marker_scatter~17961624183892268932.tiff",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Detail Mask"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Activate Detail"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.004",
+          "image": "$black.tiff.028",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Light color"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.005",
+          "image": "$identitypackednog.tiff.084",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21161"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21161"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.006",
+          "image": "$identitypackednog.tiff.085",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21162"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21162"
+            ]
+          ]
+        },
+        {
+          "node": "Image Texture.007",
+          "image": "$identitypackednog.tiff.086",
+          "outputs": [
+            [
+              "Color",
+              "Group",
+              "Normal \u21163"
+            ],
+            [
+              "Alpha",
+              "Group",
+              "Normal Alpha \u21163"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [],
+  "height_interpretation": "Blender scene scale is 1.0, but geometry is centimeter-sized. Review renders apply 0.01 unit conversion; no body-shape edits.",
+  "review_height_m_if_centimeters": 1.8641308030486108,
+  "status": "intake only; not integrated or approved for gameplay"
+}

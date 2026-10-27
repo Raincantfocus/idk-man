@@ -463,5 +463,46 @@
     "atlas": "Byte-identical atlas sets deduplicated into assets/playtest_gore/caps/shared",
     "mesh_splitting": "Runtime derivatives of the current licensed review body/fatigues/carrier; original provenance and licenses continue to apply",
     "scope": "Five major corpse cuts; not approved 22-zone anatomy"
-  }
+  },
+  "additional_enemy_intake_2026_10_27": [
+    {
+      "name": "ally_mex_a",
+      "parts": 6,
+      "bytes": 139148001,
+      "crc32": "103d7e40",
+      "sha256": "1496e8296018fbc2de20f101e1b578cdc51aea51ff043b554a011403dd45c4f4",
+      "source": "user-supplied split ZIP on 2026-10-27",
+      "license": "User-supplied; archive contains a Blender project only, no license document. Not an ambientCG asset.",
+      "triangles": 65656,
+      "bones": 311,
+      "unique_materials": 40,
+      "status": "audited source; not wired into runtime"
+    },
+    {
+      "name": "ally_mex_b",
+      "parts": 7,
+      "bytes": 167475040,
+      "crc32": "b4d939ee",
+      "sha256": "11420400ef3339d84f5e63cb27c4ef5c721e5daeef8410cbdbd3dd17b901427d",
+      "source": "user-supplied split ZIP on 2026-10-27",
+      "license": "User-supplied; archive contains a Blender project only, no license document. Not an ambientCG asset.",
+      "triangles": 68173,
+      "bones": 362,
+      "unique_materials": 36,
+      "status": "audited source; not wired into runtime"
+    },
+    {
+      "name": "ally_mex_d",
+      "parts": 6,
+      "bytes": 154039376,
+      "crc32": "55c49594",
+      "sha256": "7d630d4cae08c2da35dea65146494adcc89c547ebda6e7378f5a0d420132f204",
+      "source": "user-supplied split ZIP on 2026-10-27",
+      "license": "User-supplied; archive contains a Blender project only, no license document. Not an ambientCG asset.",
+      "triangles": 72213,
+      "bones": 368,
+      "unique_materials": 42,
+      "status": "audited source; not wired into runtime"
+    }
+  ]
 }
