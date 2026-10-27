@@ -1,0 +1,57 @@
+[
+  {
+    "doubleSided": true,
+    "name": "Metal",
+    "normalTexture": {
+      "index": 0
+    },
+    "pbrMetallicRoughness": {
+      "baseColorFactor": [
+        0.280204862924867,
+        0.280204862924867,
+        0.280204862924867,
+        1.0
+      ]
+    }
+  },
+  {
+    "doubleSided": true,
+    "emissiveFactor": [
+      0.3867828934557934,
+      0.7838073560645249,
+      1.0
+    ],
+    "extensions": {
+      "KHR_materials_emissive_strength": {
+        "emissiveStrength": 10.0
+      }
+    },
+    "name": "Emissive"
+  },
+  {
+    "doubleSided": true,
+    "extensions": {
+      "KHR_materials_specular": {
+        "specularColorFactor": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "specularFactor": 1.0
+      }
+    },
+    "name": "WetConcrete",
+    "normalTexture": {
+      "index": 3
+    },
+    "pbrMetallicRoughness": {
+      "baseColorTexture": {
+        "index": 1
+      },
+      "metallicFactor": 0.646617,
+      "metallicRoughnessTexture": {
+        "index": 2
+      }
+    }
+  }
+]
