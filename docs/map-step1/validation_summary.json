@@ -1,0 +1,17 @@
+{
+  "source_hashes_match": true,
+  "opening_samples": 6440,
+  "blocked_opening_samples": 0,
+  "doorways": 7,
+  "mantle_notches": 1,
+  "physics_capsule_sweeps_performed": false,
+  "footprint_m": [
+    11.85997760295868,
+    23.332109928131104
+  ],
+  "export_bytes": 20174272,
+  "export_sha256": "5d5c7d7c4cca40c8f2aa185b12d92781037893df88732d7aa62c55e12bb1d406",
+  "source_triangles": 735094,
+  "export_triangles": 735094,
+  "status": "Step 1 review geometry; no warehouse placement, no runtime hookup"
+}

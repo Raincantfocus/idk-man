@@ -1,0 +1,114 @@
+[
+  {
+    "name": "west room",
+    "raw_plane_axis": 0,
+    "raw_plane": -2.82,
+    "raw_lateral_center": 0.00415,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "east room",
+    "raw_plane_axis": 0,
+    "raw_plane": 2.44,
+    "raw_lateral_center": 0.039298345,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "left cell front",
+    "raw_plane_axis": 2,
+    "raw_plane": -0.96,
+    "raw_lateral_center": -0.8030932,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "right cell front",
+    "raw_plane_axis": 2,
+    "raw_plane": -0.96,
+    "raw_lateral_center": 0.15261895,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "left cell side",
+    "raw_plane_axis": 0,
+    "raw_plane": -1.215,
+    "raw_lateral_center": -1.6163,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "right cell side",
+    "raw_plane_axis": 0,
+    "raw_plane": 0.715,
+    "raw_lateral_center": -1.6163,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "cell divider",
+    "raw_plane_axis": 0,
+    "raw_plane": -0.2455,
+    "raw_lateral_center": -1.4324,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      0.03,
+      2.07
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  },
+  {
+    "name": "north mantle notch",
+    "raw_plane_axis": 0,
+    "raw_plane": 1.615,
+    "raw_lateral_center": 1.284,
+    "sampled_width_m": 1.03,
+    "sampled_height_range_m": [
+      1.25,
+      2.75
+    ],
+    "samples": 805,
+    "blocked_samples": 0,
+    "first_blocked": []
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "layout_scale": 3.0,
+  "yaw_degrees": 90.0,
+  "floor_raw_y": -0.142391,
+  "partition_height_m": 2.8,
+  "door_width_m": 1.05,
+  "door_height_m": 2.1,
+  "car_length_m": 4.0,
+  "pallet_long_side_m": 1.2,
+  "pallet_stack_gap_m": 0.002,
+  "approved_exception": "After uniform layout scaling, edit copies of partition/door vertices to human dimensions; original sources remain unchanged.",
+  "placement_status": "not placed into warehouse; Step 2 review remains required",
+  "room_peak_height_m": 3.0
+}
