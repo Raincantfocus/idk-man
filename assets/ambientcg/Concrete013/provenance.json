@@ -1,0 +1,74 @@
+{
+  "asset_id": "Concrete013",
+  "declared_source": "https://ambientcg.com/view?id=Concrete013",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "Concrete013_1K-PNG.zip",
+  "archive_sha256": "842d01d4e9928a9ee8889d1d63f3416bc1bbbe7b1533bf67fd5a3f4149300f30",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "Concrete013_1K-PNG_Color.png",
+      "sha256": "d87a3ce4e2e31536264394899b43653fbdb9368f021736b272b1e6820c608b8d",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "Concrete013_1K-PNG_NormalGL.png",
+      "sha256": "aa97cbbd3e595086551b4103d1767d4b7eeb3af7f22fda49216933aa63357ed9",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "Concrete013_1K-PNG_NormalDX.png",
+      "sha256": "d9fe884205cee90d3ace618d0a7d84524fb6d9f09f843b5dad1061b3c7d955a0",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    "ao": {
+      "archive_member": "Concrete013_1K-PNG_AmbientOcclusion.png",
+      "sha256": "81eab3309c609221b3badc262a690f2f1039f498e7419d94c950cc7e30c03da7",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    "roughness": {
+      "archive_member": "Concrete013_1K-PNG_Roughness.png",
+      "sha256": "b9c14ee1ece74d4f33844385d68abfb2e8684b5928256acce3b14015b44a202b",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    "height": {
+      "archive_member": "Concrete013_1K-PNG_Displacement.png",
+      "sha256": "247006c4c09ba4f9d64c4a66a7ce5e6361daa2dae682d94f6fbd07cd82e002f6",
+      "size": [
+        1024,
+        512
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    512
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": null,
+    "metallic": 0
+  },
+  "output_sha256": {
+    "albedo.png": "6e8701f855a25f3545ae20b08ad7df8fc937f0846a144c106368bc178a049369",
+    "normal.png": "7d573b36af88ef2cae76874795076e76b1cd4982cb5218d73d464660c6f1344c",
+    "orm.png": "7ab7802f826a04f66737851da9bd38903b0be2d13520c40f0d70b5fedaa12867",
+    "height.png": "e16327799c23b8a007486b0b4925e89b847f501b178b16c1fe520bd21d5e2a6a"
+  }
+}

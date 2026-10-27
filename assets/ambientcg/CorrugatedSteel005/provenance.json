@@ -1,0 +1,82 @@
+{
+  "asset_id": "CorrugatedSteel005",
+  "declared_source": "https://ambientcg.com/view?id=CorrugatedSteel005",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "CorrugatedSteel005_1K-PNG.zip",
+  "archive_sha256": "26896417a243c041d761240afc582ddcbfe5038b74ff8641e9ae8a4792f166ea",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_Color.png",
+      "sha256": "11cb3dd739126e7cc8e86d0ad78ae2d23d3990dbbc0e2f5efec216b754c23556",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_NormalGL.png",
+      "sha256": "bf8ac689f4b37df024d6a832a5212116c0eda67ef31fa9b982cf2102fb6054cf",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_NormalDX.png",
+      "sha256": "613e7d7302784d3c501f6c4336c45f960904449cf9387012b60ee678f5b60dc0",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "ao": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_AmbientOcclusion.png",
+      "sha256": "dbc413fad5104014e2b5d1bb2703df16e9145394f36eaf10a1fab237836422a3",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_Roughness.png",
+      "sha256": "babd322f5aa327eccc9eebf0f79c01ae876ed5cf358295141c57e604c5bf06c2",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_Metalness.png",
+      "sha256": "00f4e50cff04bc659eddac6dc81f3412d073995f97b2bc5d727e456309a4d1ab",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "CorrugatedSteel005_1K-PNG_Displacement.png",
+      "sha256": "61c414e91092dbe37945046b620c524b00a152b29645d683ffa22b794ba01739",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": null,
+    "metallic": null
+  },
+  "output_sha256": {
+    "albedo.png": "318311ffae018c521ce0e4a794298715a973726d4c4f748d2eeb70a9c02b2d14",
+    "normal.png": "445110fff3acd492cf5ffecfba0fd7a6534fd07f668a5a5fe4b4f2a2f998b2b9",
+    "orm.png": "7125d15854e0eafd2c35e02e3dea8d1efdf9df17b836d550ef5a61efc368886f",
+    "height.png": "7215503e7fee134f98610c4cec82f330236b5033f5a137a305bca69221f392ac"
+  }
+}

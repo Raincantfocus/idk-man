@@ -1,0 +1,66 @@
+{
+  "asset_id": "Concrete034",
+  "declared_source": "https://ambientcg.com/view?id=Concrete034",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "Concrete034_2K-PNG.zip",
+  "archive_sha256": "7c722c87a3b0b62d4a09a9457443ce98b420c5267728d917bf8cec41b7976254",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "Concrete034_2K-PNG_Color.png",
+      "sha256": "cfad2c674b48894c7544ee43484a9568daeced29434064f78393a0a943ea38ea",
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "Concrete034_2K-PNG_NormalGL.png",
+      "sha256": "dcac6ceeb207a34af8c5892097f6c3199a597100f6bfc94d8c3752db8019853e",
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "Concrete034_2K-PNG_NormalDX.png",
+      "sha256": "788179032a52b4675d45d5e6f2bcba04551e069b2f159b62f75fe7beb2228364",
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "Concrete034_2K-PNG_Roughness.png",
+      "sha256": "31ccb3bf4eabbffeb0d953b78f2f7812943c586dbc4344051c18ad0e21761e0a",
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "Concrete034_2K-PNG_Displacement.png",
+      "sha256": "c5b5b5c8aec146579cf38f5f02b5b508ec6a9bdcba5ae95b8fde6f524052d191",
+      "size": [
+        2048,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    2048,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": 1,
+    "metallic": 0
+  },
+  "output_sha256": {
+    "albedo.png": "0596e70a4fd3fd9602a8c896cc3b33822c4e86e414e73ef6569d339f4bb868e7",
+    "normal.png": "0325c706107d00d112ef59d36243140b7d7323861cec1db8b9d78662fefa1962",
+    "orm.png": "babcd57606dd4872ec43776fce6c5bce3f9a15acff106ed37e45af34821a9c2c",
+    "height.png": "366cecb216716ab151a86846b43f3318b4e70ee1c427432df7d5921ca28d9917"
+  }
+}

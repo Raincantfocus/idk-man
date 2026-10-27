@@ -13,6 +13,10 @@ func pbr(stem: String, world_scale: float = 0.0) -> StandardMaterial3D:
 	var key := stem + str(world_scale)
 	if materials.has(key):
 		return materials[key]
+	if preload("ambient_materials.gd").SETS.has(stem):
+		var replacement: StandardMaterial3D=preload("ambient_materials.gd").make(stem,world_scale)
+		materials[key]=replacement
+		return replacement
 	var mat := StandardMaterial3D.new()
 	mat.resource_name = stem
 	mat.albedo_texture = load(ROOT + stem + "_albedo.png")
@@ -49,7 +53,7 @@ func add_model(parent: Node3D, model_name: String, foot: Vector3, size: Vector3)
 	instance.position = foot - Vector3(bounds.get_center().x, bounds.position.y, bounds.get_center().z) * instance.scale
 	for surface in mesh.mesh.get_surface_count():
 		var original := mesh.mesh.surface_get_material(surface)
-		var mat: StandardMaterial3D = pbr("mid_cargo_box")
+		var mat: StandardMaterial3D = pbr("tile_default_metal" if model_name in ["gas_cylinder", "industrial_drum"] else "mid_cargo_box")
 		if original != null and "emitter" in original.resource_name:
 			mat = StandardMaterial3D.new()
 			mat.albedo_color = Color("efb968")

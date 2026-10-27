@@ -1,4 +1,26 @@
-# ambientCG texture rollout — awaiting source packs
+# ambientCG materials installed
+
+The nine user-supplied archives are imported at native resolution: eight 1K sets and Concrete034 at 2K. Original channel files and archive hashes are recorded in assets/ambientcg/*/provenance.json. OpenGL normals, mipmaps and packed linear ORM are used. No source image is upscaled.
+
+| Set | Runtime application |
+|---|---|
+| Concrete013 | Generic concrete surfaces |
+| Concrete047A | Arena walls |
+| Concrete034 | Main floor |
+| Metal029 | Structural steel, weapon metal, cylinders and drums |
+| CorrugatedSteel005 | Painted-metal/utility wall panels |
+| DiamondPlate008C | Slide ramps and anti-slip surfaces |
+| Plastic006 | Cargo props and weapon polymer |
+| Leather026 | Named leather/glove first-person material slots |
+| Fabric019 | First-person sleeves; additional normal detail on existing enemy clothing materials |
+
+Enemy UV-specific color maps are retained. Skin, wound, tissue and blood textures remain authored: these packs contain no biological replacements. The additional ally_mex characters still require rig/atlas/gore integration and are not activated by this material update. Leather binding is based on imported material slot names; this is not a full rebake of every boot or glove.
+
+Native Compatibility arena capture inspected after correcting overbright concrete and disabling excessive normal intensity. This is a software-rendered overview, not target-GPU performance or close-up approval of every surface. Gameplay regression: 47/47. Windows exports are generated but cannot be executed here; Linux exported smoke checks animation, gore and startup.
+
+![Updated arena](ambientcg-arena.png)
+
+# Earlier intake notes (superseded by installed sets above)
 
 Requested scope: arena, props, weapons, character clothing/gear, skin and gore. No ambientCG images have been downloaded or installed yet. HTTPS requests to ambientcg.com, its API, docs.ambientcg.com and the official acg-download.struffelproductions.com host all returned tunnel 403 errors in this environment on 2026-10-27. The current playable build therefore retains its existing textures.
 

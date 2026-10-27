@@ -72,7 +72,9 @@ func apply_look(actor: Node,look: Resource) -> void:
   var color_id: int=index%6 if "carrier" in String(mesh.name).to_lower() else index/6
   var key: String=source.albedo_texture.resource_path+str(color_id)
   if not shared_materials.has(key):
-   var material: ORMMaterial3D=source.duplicate();material.albedo_color=palette[color_id];shared_materials[key]=material
+   var material: ORMMaterial3D=source.duplicate();material.albedo_color=palette[color_id]
+   material.detail_enabled=true;material.detail_normal=load("res://assets/ambientcg/Fabric019/normal.png")
+   shared_materials[key]=material
   mesh.material_override=shared_materials[key]
 func prepare_death_clip(actor: Node,tags: PackedStringArray) -> void:
  if not OS.is_debug_build() or forced_clip.is_empty():return

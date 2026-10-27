@@ -1,0 +1,66 @@
+{
+  "asset_id": "Leather026",
+  "declared_source": "https://ambientcg.com/view?id=Leather026",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "Leather026_1K-PNG.zip",
+  "archive_sha256": "4b414d8b61fee0bb6b58714facf3ef20010a7b18b6c8d98043994056ed38a8a1",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "Leather026_1K-PNG_Color.png",
+      "sha256": "5596ee21d1a43ee57d6d75ae294243aac83e26457ce969ccf8b88ff5fd697598",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "Leather026_1K-PNG_NormalGL.png",
+      "sha256": "3ad5309aabfc09410ad3150fe60f7673dfac1b9668d551596d7484a9c9c43116",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "Leather026_1K-PNG_NormalDX.png",
+      "sha256": "c670e973341c4adf947f8d1d66ba876391a556e6430a14debb9975e98eb7697f",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "Leather026_1K-PNG_Roughness.png",
+      "sha256": "04b7d169d7655f023bfd0d6589069033649dd888cb5134ecfa83dcde6f4cff5d",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "Leather026_1K-PNG_Displacement.png",
+      "sha256": "fd85956ff9b77f2875e3b30aad7bac63f1653ecc598ec33fecf619f11c5e96ec",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": 1,
+    "metallic": 0
+  },
+  "output_sha256": {
+    "albedo.png": "a0070e7213883141902f3745d3054d8db79903eccf1db27a8da2f0ac9c31ae9c",
+    "normal.png": "75561fd61878c11e1b5b0d13fdea7aa18b9f8aa95a670ca6ce7fd3915b196c53",
+    "orm.png": "59992a2201c7e7294e69e76dff5b8d63cad314f575a7787b0872e7c0a7b7c8c3",
+    "height.png": "672b91bc29e561e8090739acc8a796e35f8a33555343c5f3c48c66ab6332ffc1"
+  }
+}

@@ -1,6 +1,10 @@
 extends RefCounted
-## Original 2K tileable PBR maps, shared textures with per-instance tint.
+## Supplied ambientCG materials; authored biological maps remain as fallbacks.
 static func make(stem: String, tint: Color = Color.WHITE, scale: float = 3.0) -> StandardMaterial3D:
+	if preload("ambient_materials.gd").SETS.has(stem):
+		var replacement: StandardMaterial3D=preload("ambient_materials.gd").make(stem,scale)
+		replacement.albedo_color=tint
+		return replacement
 	var mat := StandardMaterial3D.new()
 	var root := "res://assets/surfaces/" + stem
 	mat.resource_name = stem + "_pbr"

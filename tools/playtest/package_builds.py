@@ -16,6 +16,8 @@ for mode, folder in [('debug', 'windows-debug'), ('release', 'windows')]:
         z.write(root / 'docs/PLAYTEST_RELEASE_NOTES.md', 'READ_ME_FIRST.md')
         z.write(root / 'docs/NEW_MODEL_GORE.md', 'NEW_MODEL_GORE.md')
         z.write(root / 'docs/BULLET_WOUNDS.md', 'BULLET_WOUNDS.md')
+        z.write(root / 'docs/AMBIENTCG_TEXTURE_ROLLOUT.md', 'AMBIENTCG_TEXTURE_ROLLOUT.md')
+        z.write(root / 'docs/ambientcg-arena.png', 'ambientcg-arena.png')
         z.write(root / 'docs/wound-captures/compatibility.png', 'wound-captures/compatibility.png')
         for image in (root/'docs/new-gore-captures').glob('*.png'):z.write(image,'new-gore-captures/'+image.name)
         z.write(root / 'THIRD_PARTY_NOTICES.md', 'THIRD_PARTY_NOTICES.md')

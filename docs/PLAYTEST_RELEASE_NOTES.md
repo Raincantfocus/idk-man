@@ -14,3 +14,5 @@ Map rollback: the classic 96 × 80 m arena is restored, including galleries, gan
 The ten-wave automated integration run passed on the restored map.
 
 Bullet wounds now use bone-attached textured effects and a preallocated FIFO pool (50 per character, 128 global). Compatibility uses parallax patches; native Decal nodes are selected on Forward+/Mobile. Surface-query cost and extreme-joint clipping remain limitations; see BULLET_WOUNDS.md.
+
+Nine supplied ambientCG PBR sets now cover arena surfaces, prop materials and first-person material slots. Fabric019 supplies clothing detail. Skin and gore remain authored.

@@ -1,0 +1,66 @@
+{
+  "asset_id": "Plastic006",
+  "declared_source": "https://ambientcg.com/view?id=Plastic006",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "Plastic006_1K-PNG.zip",
+  "archive_sha256": "b62ee8687044cfa7e12c2b894b54df38d40a7d3d7f2f6aafc9fe051bed445f66",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "Plastic006_1K-PNG_Color.png",
+      "sha256": "367c1d064fb126245df9c68a9400e8b15a5610ae9551dcc2fa0d51203bbe0477",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "Plastic006_1K-PNG_NormalGL.png",
+      "sha256": "e904e9429b85cb7e6a22b54a7dac6298500710594930497dff1e3cea6e188e96",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "Plastic006_1K-PNG_NormalDX.png",
+      "sha256": "b1e23e31507a39237a398ce751afa33e5f5bdc791bbfb1118c09a5e6788856f7",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "Plastic006_1K-PNG_Roughness.png",
+      "sha256": "17f268d8ce50e9ed5a5404bdffb0681bcb1acae376681d686bb03c0de7ea642e",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "Plastic006_1K-PNG_Displacement.png",
+      "sha256": "616ffee8dc3a30f5fdb7be5aa9cd6f99496bc3382e15fc975c970802c6c975ed",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": 1,
+    "metallic": 0
+  },
+  "output_sha256": {
+    "albedo.png": "ab1c6d1d381ffbab734e534ff64d3a1bfa5f9277ba526abbd95205def996850f",
+    "normal.png": "7c7c976bc200ef4bec1db34315e1a5fd678fdb09f5e6e6be86bff6b7e7a978e6",
+    "orm.png": "88c7964641d6c1861a9dc65b729999bb2492f02c2a0b69d7efe8c603e8f339a7",
+    "height.png": "cb93e17b1e9cb33cca2675a5a39febc3ecc7d84d2b19d43229bd13591e79bbc9"
+  }
+}

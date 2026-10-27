@@ -1,33 +1,43 @@
 {
   "debug": {
-    "zip_bytes": 152320301,
-    "zip_sha256": "5a767925064734147c067584b84a1e6c36a67607ed4060cc0b0c078fcde0fd67",
+    "zip_bytes": 198733853,
+    "zip_sha256": "4a5a43e74e3be00fd7808b95bb40daf25ec7bbfeaa5993354f54f302866ce2f6",
     "parts": [
       {
         "name": "zero-line-windows-debug.zip.part01",
         "bytes": 83886080,
-        "sha256": "7ba7cb804ffb334d00ef633faf95018dc98cb55415ff9d5d8caf034701f63306"
+        "sha256": "9a3b7e8955b9cf3db020e98be707884fae20d08ba5b97ab0a69a89f1fff58f70"
       },
       {
         "name": "zero-line-windows-debug.zip.part02",
-        "bytes": 68434221,
-        "sha256": "95cd41b0092cb699a04b8ae71afddb6b1c6d720e37f5d6dd63663a127388f06d"
+        "bytes": 83886080,
+        "sha256": "cf405ad3b8a25af434457de4068ec1c0b72cc36fe11ffb676a653bc5c1ea02f4"
+      },
+      {
+        "name": "zero-line-windows-debug.zip.part03",
+        "bytes": 30961693,
+        "sha256": "bfa054db37dad67821181f2fa6be2bf788998954c6a1db95ca0354eb65353707"
       }
     ]
   },
   "release": {
-    "zip_bytes": 154854619,
-    "zip_sha256": "30fef828fe22fe5d34502f2ed03d45b71249294df57d476a0a0bafdcbc372351",
+    "zip_bytes": 201262136,
+    "zip_sha256": "fd7d8c397f48974c962cf186b1104f3f4dd6a1e8594ae519edf31ae85942e20b",
     "parts": [
       {
         "name": "zero-line-windows-release.zip.part01",
         "bytes": 83886080,
-        "sha256": "43fd84e0a9ec48c65a8298b67dc9e896f900b293633b570e3530cab13f20c86f"
+        "sha256": "298994073c9351e27aa869357a9c40ebf57b4a0672831f1e133f6ff9288718c0"
       },
       {
         "name": "zero-line-windows-release.zip.part02",
-        "bytes": 70968539,
-        "sha256": "f978625da0815900341b2f7f563b1983b69789276a8047fa76f443f8d9ac9ef6"
+        "bytes": 83886080,
+        "sha256": "7058a9bb46b8c119aaf9b6fe2cff3bb07e460c013cbdee1130a0a07c5df9d051"
+      },
+      {
+        "name": "zero-line-windows-release.zip.part03",
+        "bytes": 33489976,
+        "sha256": "d985c0c6b8d70364c4cab327a5cf0bc471253c4ba948da57ebf8ce7fe6bc1a47"
       }
     ]
   }

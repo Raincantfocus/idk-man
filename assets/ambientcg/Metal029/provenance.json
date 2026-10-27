@@ -1,0 +1,74 @@
+{
+  "asset_id": "Metal029",
+  "declared_source": "https://ambientcg.com/view?id=Metal029",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "Metal029_1K-PNG.zip",
+  "archive_sha256": "84582c196c985bdf052fc659616c3e291433fccf2c12be6d75d62ea6c2c28d9e",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "Metal029_1K-PNG_Color.png",
+      "sha256": "dfbe8f3a8e1e1188d0e84b85119d070870e06431f1686eaa65f649d84bf39568",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "Metal029_1K-PNG_NormalGL.png",
+      "sha256": "ac9f996a92da379c48c33541a55bc3231b0234faeebf9b298764786a5fb9c58d",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "Metal029_1K-PNG_NormalDX.png",
+      "sha256": "93f5777c17767b0d0a3e1ad3809243ecddb46f86806cab90afa11f7cb3557e0b",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "Metal029_1K-PNG_Roughness.png",
+      "sha256": "f7b0bbdb2baffa7f070df8108a16a32f3e5835950e2fd13050d70bce44ead7e3",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "archive_member": "Metal029_1K-PNG_Metalness.png",
+      "sha256": "00ea19c189bff9fbc94eb31c0998f4b7c72d11d628d084b02861f83fb16fe450",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "Metal029_1K-PNG_Displacement.png",
+      "sha256": "6ff2d7db6c65caf80627e74a7232ccd3e0f2b9160b381525cfe570b1c13f609a",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": 1,
+    "metallic": null
+  },
+  "output_sha256": {
+    "albedo.png": "f8f39c05eb51cdf28962177b8ab84146bc9648b8b3c1a44e73a41aa23e5db925",
+    "normal.png": "ee26c9be580c7075880ec51cf5ccaa6801e57645706cade011fd032dc0ee70dc",
+    "orm.png": "47a7d001913b97ceb591678a5e45358648857c2a07efdb552eaca3d12ea12698",
+    "height.png": "6bb5e45c04c58b2c679e2551b9a1a4ffe2e940554a2eeb97dc72590c433ec763"
+  }
+}

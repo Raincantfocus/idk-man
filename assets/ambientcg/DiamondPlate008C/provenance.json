@@ -1,0 +1,82 @@
+{
+  "asset_id": "DiamondPlate008C",
+  "declared_source": "https://ambientcg.com/view?id=DiamondPlate008C",
+  "license": "CC0 1.0 (ambientCG published licensing; supplied archive not authenticated against the blocked catalog)",
+  "license_reference": "https://docs.ambientcg.com/license/",
+  "archive_name": "DiamondPlate008C_1K-PNG.zip",
+  "archive_sha256": "708be8943cfd4c3ac8e03bbe0d8dfe584b002b9c6cc092b252814bb11fcfcba0",
+  "source_maps": {
+    "albedo": {
+      "archive_member": "DiamondPlate008C_1K-PNG_Color.png",
+      "sha256": "fcd7544c5f5155b56435c49bd4270c992da1b7c2640516ab9267c97b40b47c0f",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_gl": {
+      "archive_member": "DiamondPlate008C_1K-PNG_NormalGL.png",
+      "sha256": "f87aff6cf09c3263a604bcee70952f36ee85e645febf44ba1c12f27bf22761cb",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "normal_dx": {
+      "archive_member": "DiamondPlate008C_1K-PNG_NormalDX.png",
+      "sha256": "5390ccc3cdd86c8db751f752db2e508ba70d113709472fedfdb6aef3d06641c0",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "ao": {
+      "archive_member": "DiamondPlate008C_1K-PNG_AmbientOcclusion.png",
+      "sha256": "f661c453dfdfaca025fba81e89e716da1a03b7c31ef6d317a45fab601a8199b7",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "roughness": {
+      "archive_member": "DiamondPlate008C_1K-PNG_Roughness.png",
+      "sha256": "5c2e473f162b5b3977ea4b750b75c0adebab736e49cdbc52ed19e88f6ea2a61c",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "metallic": {
+      "archive_member": "DiamondPlate008C_1K-PNG_Metalness.png",
+      "sha256": "658ac664f4d42a3b122bf53a1844125dace07212c7c32bf12fd90dca308a2573",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "height": {
+      "archive_member": "DiamondPlate008C_1K-PNG_Displacement.png",
+      "sha256": "62f7cd6dac5a37073570b86d957c9991e9c9b640ae945bad073d3988394ff832",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "output_size": [
+    1024,
+    1024
+  ],
+  "normal_conversion": "OpenGL source; green unchanged",
+  "orm_channels": "R=AO, G=roughness, B=metallic; sampled as linear data",
+  "defaults": {
+    "ao": null,
+    "metallic": null
+  },
+  "output_sha256": {
+    "albedo.png": "d72c53a95944455235a2daa66cd4fc2591162ec3a8b332eed3528db18fd83e15",
+    "normal.png": "4fee9e1091b0f12773ffef6b968909cea04ae3b5af6d111136c021109e420eb8",
+    "orm.png": "c55a1a7c17c1c5c110e253dc2ce02f3f64e3593daf649e72b6876734e7bf5261",
+    "height.png": "92864c8e7fedbed10bcde7955ef5df3b18c366821e1b4956735930967c4e388a"
+  }
+}
