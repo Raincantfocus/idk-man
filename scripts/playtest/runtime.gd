@@ -64,18 +64,9 @@ func reserve_look(enemy: Node3D,role: String) -> Resource:
  look.base_body_id=&"review_body_fallback";look.camo_id=StringName("palette_%d_not_camo"%index);look.headgear_id=&"bare_fallback"
  look.build=Vector4.ZERO;look.set_meta("palette",index);look.set_meta("seed",sequence+778431)
  return look
-func apply_look(actor: Node,look: Resource) -> void:
- var index: int=int(look.get_meta("palette"))
- for mesh: MeshInstance3D in actor.presentation.find_children("*","MeshInstance3D",true,false):
-  if not mesh.material_override is ORMMaterial3D:continue
-  var source: ORMMaterial3D=mesh.material_override
-  var color_id: int=index%6 if "carrier" in String(mesh.name).to_lower() else index/6
-  var key: String=source.albedo_texture.resource_path+str(color_id)
-  if not shared_materials.has(key):
-   var material: ORMMaterial3D=source.duplicate();material.albedo_color=palette[color_id]
-   material.detail_enabled=true;material.detail_normal=load("res://assets/ambientcg/Fabric019/normal.png")
-   shared_materials[key]=material
-  mesh.material_override=shared_materials[key]
+func apply_look(_actor: Node,_look: Resource) -> void:
+ # Preserve source character and gear materials, including their authored colors.
+ pass
 func prepare_death_clip(actor: Node,tags: PackedStringArray) -> void:
  if not OS.is_debug_build() or forced_clip.is_empty():return
  var filtered: Array=actor.clips.filter(func(c: Resource)->bool:return String(c.id)==forced_clip and (not c.flying or tags.has("shotgun") or tags.has("high_caliber")))

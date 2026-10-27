@@ -1,5 +1,7 @@
 # ambientCG materials installed
 
+Current preference: ambientCG is retained on arena/environment props only. Character and first-person materials use their original source textures and colors; weapon, sleeve, glove and clothing overrides described in the earlier table below have been removed.
+
 The nine user-supplied archives are imported at native resolution: eight 1K sets and Concrete034 at 2K. Original channel files and archive hashes are recorded in assets/ambientcg/*/provenance.json. OpenGL normals, mipmaps and packed linear ORM are used. No source image is upscaled.
 
 | Set | Runtime application |

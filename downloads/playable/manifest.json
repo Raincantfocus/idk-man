@@ -1,12 +1,12 @@
 {
   "debug": {
-    "zip_bytes": 198733853,
-    "zip_sha256": "4a5a43e74e3be00fd7808b95bb40daf25ec7bbfeaa5993354f54f302866ce2f6",
+    "zip_bytes": 198733402,
+    "zip_sha256": "66abf67f9da3b1de0b1ffd0543d266daa183636026c3dd5fd7e6c74384114b66",
     "parts": [
       {
         "name": "zero-line-windows-debug.zip.part01",
         "bytes": 83886080,
-        "sha256": "9a3b7e8955b9cf3db020e98be707884fae20d08ba5b97ab0a69a89f1fff58f70"
+        "sha256": "1b373d0e7e580fd0ba9ee8ee3dadc8b9da2327cb03714a6f9d59da2a4e637cfc"
       },
       {
         "name": "zero-line-windows-debug.zip.part02",
@@ -15,29 +15,29 @@
       },
       {
         "name": "zero-line-windows-debug.zip.part03",
-        "bytes": 30961693,
-        "sha256": "bfa054db37dad67821181f2fa6be2bf788998954c6a1db95ca0354eb65353707"
+        "bytes": 30961242,
+        "sha256": "d47a0b9a9e7bf0a2574fa13146fee87b37a0026f6f9d963569dbe546e572d97b"
       }
     ]
   },
   "release": {
-    "zip_bytes": 201262136,
-    "zip_sha256": "fd7d8c397f48974c962cf186b1104f3f4dd6a1e8594ae519edf31ae85942e20b",
+    "zip_bytes": 201260896,
+    "zip_sha256": "5f6df8aee5bcb28d65c2d4b649fd2fd97e3a7a798f206298ac1db8dbd7d4e535",
     "parts": [
       {
         "name": "zero-line-windows-release.zip.part01",
         "bytes": 83886080,
-        "sha256": "298994073c9351e27aa869357a9c40ebf57b4a0672831f1e133f6ff9288718c0"
+        "sha256": "43f6ba532fae3832dfde64c02419305db6a32aec6daf2a1306329a3948a77929"
       },
       {
         "name": "zero-line-windows-release.zip.part02",
         "bytes": 83886080,
-        "sha256": "7058a9bb46b8c119aaf9b6fe2cff3bb07e460c013cbdee1130a0a07c5df9d051"
+        "sha256": "bd35ceed69172f1ae2dcc291405522796d0661cbbb9d22d0dd508057de2c9cfa"
       },
       {
         "name": "zero-line-windows-release.zip.part03",
-        "bytes": 33489976,
-        "sha256": "d985c0c6b8d70364c4cab327a5cf0bc471253c4ba948da57ebf8ce7fe6bc1a47"
+        "bytes": 33488736,
+        "sha256": "91e35e3f6891410c6d5e23fde65f6f3c69f64f9aa81d04f48e302bb3b177cfe6"
       }
     ]
   }

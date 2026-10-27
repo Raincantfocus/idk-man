@@ -44,18 +44,7 @@ func setup(owner_player) -> void:
 		rest[bone] = {"id": id, "pose": skeleton.get_bone_global_rest(id)}
 	for mesh in find_children("*", "MeshInstance3D", true, false):
 		mesh.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
-		for surface in mesh.mesh.get_surface_count():
-			var original: Material = mesh.mesh.surface_get_material(surface)
-			if original != null and "woven sleeve" in original.resource_name:
-				var fabric: StandardMaterial3D = preload("res://scripts/ambient_materials.gd").make("cloth", 12)
-				mesh.set_surface_override_material(surface, fabric)
-			if original != null and ("glove" in original.resource_name.to_lower() or "leather" in original.resource_name.to_lower()):
-				mesh.set_surface_override_material(surface,preload("res://scripts/ambient_materials.gd").make("leather",8))
-			if original is StandardMaterial3D and ("steel" in original.resource_name or "finish" in original.resource_name or "polymer" in original.resource_name):
-				var stem := "plastic" if "polymer" in original.resource_name else "steel"
-				var mat: StandardMaterial3D = preload("res://scripts/surface_library.gd").make(stem, Color("777e83"), 8)
-				material_refs.append(mat)
-				mesh.set_surface_override_material(surface, mat)
+		# Imported weapon, glove and sleeve materials remain authoritative.
 	var flash_mesh := QuadMesh.new()
 	flash_mesh.size = Vector2(0.17, 0.17)
 	muzzle_flash.mesh = flash_mesh
