@@ -1,0 +1,97 @@
+====================================================================================================
+DETAILED SPATIAL SCHEMATIC & COORDINATE MAP
+Grid Resolution: 1 meter = 1 unit | Origin (0,0,0) = Northwest Corner of Warehouse Floor
+====================================================================================================
+
+0.0m +-----------------------------------------------------------------------------------+
+     |                                                                                   |
+     |                              NORTH ENTRY STAGING ZONE                             |
+     |                       Bounds: X[0.0 to 16.0m], Z[0.0 to -12.0m]                    |
+     |                                                                                   |
+     |   +-----------------------+                                                       |
+     |   | NORTH WOOD PLATFORM   |         [WOODEN BARRICADE]                            |
+     |   | X: 2.00m -> 5.50m     |         Position: (X=8.00m, Y=0.0m, Z=-4.00m)          |
+     |   | Z: -2.00m -> -9.00m   |                                 [WOOD CRATES]         |
+     |   | Deck Y: +2.50m        |                                 (X=11.50m, Z=-3.50m)  |
+     |   | [Stairs @ Z=-9.50m]   |     [SEDAN WRECK]                                     |
+     |   +-----------------------+     Rotation: Vector3(0, rad(30), 0)                  |
+     |                                 Position: (X=5.50m, Y=0.0m, Z=-7.50m)             |
+     |                                                             +------------------+  |
+     |                                                             | STORAGE CONTAINER|  |
+     |                                 [PALLET & BENCH]            | X: 12.50m->14.50m|  |
+     |                                 (X=8.00m, Y=0.0m, Z=-8.50m) | Z: -6.00m->-10.0m|  |
+     |                                                             +------------------+  |
+     |                                                                                   |
+-12.0m + - - - - - - - - - - - - - - - - - - [EXIT DOOR NORTH] - - - - - - - - - - - - +
+     |                                       Position: (X=8.00m, Y=0.0m, Z=-12.00m)      |
+     |                                                                                   |
+     |                             KILL HOUSE CORE (Centered)                            |
+     |                   [Watchtower / Origin Anchor @ X=8.00m, Z=-23.50m]               |
+     |                   Kill House Bounds: X[2.40 to 13.60m], Z[-12.0 to -34.5m]         |
+     |                                                                                   |
+-34.5m + - - - - - - - - - - - - - - - - - - [EXIT DOOR SOUTH] - - - - - - - - - - - - +
+     |                                       Position: (X=8.00m, Y=0.0m, Z=-34.50m)      |
+     |                                                                                   |
+     |   +-----------------------+                                                       |
+     |   | SOUTH WOOD PLATFORM   |         [CONCRETE BARRIER]                            |
+     |   | X: 2.00m -> 5.50m     |         Position: (X=8.50m, Y=0.0m, Z=-37.00m)        |
+     |   | Z: -38.00m -> -45.00m |                                 [FORKLIFT]            |
+     |   | Deck Y: +2.50m        |                                 (X=12.00m, Z=-37.5m)  |
+     |   | [Stairs @ Z=-37.00m]  |     [TRUCK/VAN WRECK]                                 |
+     |   +-----------------------+     Rotation: Vector3(0, rad(-45), 0)                 |
+     |                                 Position: (X=6.00m, Y=0.0m, Z=-39.50m)            |
+     |                                                             +------------------+  |
+     |                                                             | CARGO CONTAINER  |  |
+     |                                 [COUCHE & CRATE STACK]      | X: 13.00m->15.00m|  |
+     |                                 (X=8.50m, Y=0.0m, Z=-42.50m)| Z: -39.5m->-44.5m|  |
+     |                                                             +------------------+  |
+     |                                                                                   |
+     |                               SOUTH REAR STAGING ZONE                             |
+     |                       Bounds: X[0.0 to 16.0m], Z[-34.5 to -47.0m]                  |
+     |                                                                                   |
+-47.0m +-----------------------------------------------------------------------------------+
+     0.0m      2.0m      4.0m      6.0m      8.0m      10.0m     12.0m     14.0m     16.0m
+
+====================================================================================================
+EXPLICIT NODE SPECIFICATIONS & TRANSFORMS
+====================================================================================================
+
+1. KILL HOUSE EGRESS CUTOUTS (DOORS)
+   - North Exit Door Frame (`StaticBody3D`):
+     * Position: `Vector3(8.00, 0.00, -12.00)`
+     * Dimensions / Opening: Width = 1.20m, Height = 2.20m, Wall Thickness = 0.15m.
+     * Action: Clear wall geometry at this bounds coordinate to build an open archway with physical frame colliders. Re-bake NavMesh region.
+   - South Exit Door Frame (`StaticBody3D`):
+     * Position: `Vector3(8.00, 0.00, -34.50)`
+     * Dimensions / Opening: Width = 1.20m, Height = 2.20m, Wall Thickness = 0.15m.
+     * Action: Clear wall geometry at this bounds coordinate to build an open archway with physical frame colliders. Re-bake NavMesh region.
+
+2. NORTH STAGING ZONE ASSETS (Z = 0.00m to -12.00m)
+   - North Wood Platform (`Node3D` / Mezzanine):
+     * Footprint Bounds: X = 2.00m to 5.50m (Width: 3.50m), Z = -2.00m to -9.00m (Length: 7.00m).
+     * Deck Elevation: Y = +2.50m (Supported via wooden post colliders every 2.33m).
+     * Stair Flight: Width = 1.20m, base start position at `Vector3(3.75, 0.00, -10.50)` ramping up south-to-north to platform floor level `Vector3(3.75, 2.50, -9.00)` at a 32-degree incline.
+     * Guard Rails & Half-Walls: 1.10m high wooden barriers along outer edges (`X = 5.50m` and `Z = -2.00m`).
+     * Observation Window Slits: Two glassless cutouts (1.00m wide x 0.80m tall) embedded in the south half-wall at `Z = -9.00m`, centered at `Y = +3.10m`.
+     * Internal Deck Cover: L-shaped wooden partition located on platform deck at local coordinates `X = 3.50m`, spanning `Z = -4.00m` to `-6.50m` (Height: 1.20m).
+   - Ground Obstacles & Cover (North Staging):
+     * `WoodenBarricade`: Type `StaticBody3D`, Position `Vector3(8.00, 0.00, -4.00)`, Size `Vector3(2.00, 1.30, 0.20)`, Rotation `Vector3.ZERO`.
+     * `IndustrialCrates`: Type `StaticBody3D`, Position `Vector3(11.50, 0.00, -3.50)`, Size `Vector3(1.20, 1.40, 1.20)` (Stacked cargo boxes).
+     * `SedanWreck`: Type `StaticBody3D`, Position `Vector3(5.50, 0.00, -7.50)`, Size `Vector3(4.50, 1.45, 1.80)`, Rotation `Vector3(0, deg_to_rad(30.0), 0)`.
+     * `StorageContainer`: Type `StaticBody3D`, Footprint Bounds: X = 12.50m to 14.50m, Z = -6.00m to -10.00m, Height = 2.60m, Rotation `Vector3.ZERO`.
+     * `PalletAndBench`: Type `StaticBody3D`, Position `Vector3(8.00, 0.00, -8.50)`, Stacked wooden pallets and an overturned bench acting as low soft cover.
+
+3. SOUTH REAR STAGING ZONE ASSETS (Z = -34.50m to -47.00m)
+   - South Wood Platform (`Node3D` / Mezzanine):
+     * Footprint Bounds: X = 2.00m to 5.50m (Width: 3.50m), Z = -38.00m to -45.00m (Length: 7.00m).
+     * Deck Elevation: Y = +2.50m.
+     * Stair Flight: Width = 1.20m, base start position at `Vector3(3.75, 0.00, -36.00)` ramping up north-to-south to platform floor level `Vector3(3.75, 2.50, -38.00)` at a 32-degree incline.
+     * Guard Rails & Half-Walls: 1.10m high wooden barriers along outer edges (`X = 5.50m` and `Z = -45.00m`).
+     * Observation Window Slits: Two glassless cutouts (1.00m wide x 0.80m tall) embedded in the north half-wall at `Z = -38.00m`, centered at `Y = +3.10m`.
+     * Internal Deck Cover: Straight partition wall on deck along `Z = -41.50m` from `X = 2.00m` to `4.20m` (Height: 1.20m).
+   - Ground Obstacles & Cover (South Staging):
+     * `ConcreteBarrier`: Type `StaticBody3D`, Position `Vector3(8.50, 0.00, -37.00)`, Size `Vector3(2.40, 1.10, 0.60)`, Rotation `Vector3(0, deg_to_rad(-5.0), 0)`.
+     * `Forklift`: Type `StaticBody3D`, Position `Vector3(12.00, 0.00, -37.50)`, Size `Vector3(2.40, 2.10, 1.20)`, Rotation `Vector3(0, deg_to_rad(90.0), 0)`.
+     * `TruckWreck`: Type `StaticBody3D`, Position `Vector3(6.00, 0.00, -39.50)`, Size `Vector3(5.20, 1.90, 2.10)`, Rotation `Vector3(0, deg_to_rad(-45.0), 0)`.
+     * `CargoContainer`: Type `StaticBody3D`, Footprint Bounds: X = 13.00m to 15.00m, Z = -39.50m to -44.50m, Height = 2.60m, Rotation `Vector3.ZERO`.
+     * `CouchAndCrates`: Type `StaticBody3D`, Position `Vector3(8.50, 0.00, -42.50)`, Combination of a worn upholstered couch and dual wooden crates for hybrid cover.

@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "name": "Killhouse",
+      "author": "_.quve",
+      "url": "https://sketchfab.com/3d-models/killhouse-a2ce333ba32548d5b454131f6016c961",
+      "license": "CC-BY-4.0",
+      "source_sha256": "65a9345cabc22df069cffb81d7b5bcaf57d3e9c301c4c1ac8937277fdb2372a5"
+    },
+    {
+      "name": "Warehouse FBX Model Free",
+      "author": "Nicholas-3D",
+      "url": "https://sketchfab.com/3d-models/warehouse-fbx-model-free-daa7fd3ff88945298d00045ca40a4c03",
+      "license": "CC-BY-4.0",
+      "source_sha256": "c3a45d814ce024156a0ff7a1488d5937893928ec33df24c720aaff69676bfc6a"
+    }
+  ],
+  "derivative_sha256": "652229d4b16266f593dd852ce4e4a1c2a8671b0d1aa0254cbd30049057a28e4d",
+  "changes_report": "docs/map-step3/STEP_3_REVIEW.md",
+  "new_geometry": "Timber platforms/stairs/rails/cover/frames authored in tools/maps/build_hangar_step3.py",
+  "source_files_unchanged": true
+}

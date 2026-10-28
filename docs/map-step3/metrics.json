@@ -1,0 +1,9 @@
+{
+  "total_triangles": 747354,
+  "killhouse_triangles": 728520,
+  "meshes": 37,
+  "optimization_status": "Over 120k killhouse target; Step 5 pending",
+  "renderer": "Godot 4.6.3 Compatibility; Mesa llvmpipe software",
+  "valid_target_hardware_frame_times": false,
+  "full_physics_or_nav_tests": false
+}

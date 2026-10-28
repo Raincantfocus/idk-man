@@ -1,0 +1,42 @@
+{
+  "reimported_triangles": 747354,
+  "meshes": 37,
+  "killhouse_below_floor": [],
+  "killhouse_coplanar_floor_triangles": [],
+  "openings": [
+    {
+      "opening": "north",
+      "samples": 805,
+      "blocked": 0,
+      "tested_triangles": 139,
+      "sampled_width_m": 1.18,
+      "sampled_y_m": [
+        0.03,
+        2.1700000000000004
+      ]
+    },
+    {
+      "opening": "south",
+      "samples": 805,
+      "blocked": 0,
+      "tested_triangles": 30,
+      "sampled_width_m": 1.18,
+      "sampled_y_m": [
+        0.03,
+        2.1700000000000004
+      ]
+    },
+    {
+      "opening": "warehouse_entry",
+      "samples": 805,
+      "blocked": 0,
+      "tested_triangles": 2,
+      "sampled_width_m": 7.680000000000001,
+      "sampled_y_m": [
+        0.03,
+        2.77
+      ]
+    }
+  ],
+  "physics_capsule_sweeps": false
+}

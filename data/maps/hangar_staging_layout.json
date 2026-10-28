@@ -1,0 +1,253 @@
+{
+  "status": "Step 3 built: shell, platforms and egress frames; other staging assets pending",
+  "approved_plan": "A",
+  "warehouse_floor_z_bounds": [
+    -46.150013,
+    0
+  ],
+  "layout_translation_m": [
+    8,
+    0,
+    -23.07500648498535
+  ],
+  "layout_scale": 2.91,
+  "platforms": [
+    {
+      "id": "north",
+      "x_bounds": [
+        2.25,
+        5.5
+      ],
+      "z_bounds": [
+        -8.8,
+        -2
+      ],
+      "deck_y_m": 1.8,
+      "deck_thickness_m": 0.16,
+      "stairs_width_m": 1.2,
+      "stairs_top": [
+        3.75,
+        1.8,
+        -8.8
+      ],
+      "stairs_base": [
+        3.75,
+        0,
+        -11.680602152273892
+      ],
+      "stairs_angle_degrees": 32,
+      "stairs_run_m": 2.880602152273891,
+      "roof_probe": {
+        "minimum_overhead_y_m": 3.7322323322296143,
+        "critical_xz": [
+          3.05,
+          -4.65
+        ],
+        "samples": 9042,
+        "missing": 0
+      },
+      "standing_capsule_height_m": 1.72,
+      "sampled_head_gap_m": 0.21223233222961424,
+      "status": "built_untextured_full_collision_pending",
+      "window_slits": "Two 1.0 x 0.8 m slits on far end, away from stair opening",
+      "guard_rails_height_m": 1.1
+    },
+    {
+      "id": "south",
+      "x_bounds": [
+        2.25,
+        5.5
+      ],
+      "z_bounds": [
+        -45,
+        -38.2
+      ],
+      "deck_y_m": 1.8,
+      "deck_thickness_m": 0.16,
+      "stairs_width_m": 1.2,
+      "stairs_top": [
+        3.75,
+        1.8,
+        -38.2
+      ],
+      "stairs_base": [
+        3.75,
+        0,
+        -35.31939784772611
+      ],
+      "stairs_angle_degrees": 32,
+      "stairs_run_m": 2.880602152273891,
+      "roof_probe": {
+        "minimum_overhead_y_m": 3.732236862182617,
+        "critical_xz": [
+          3.05,
+          -38.25
+        ],
+        "samples": 9042,
+        "missing": 0
+      },
+      "standing_capsule_height_m": 1.72,
+      "sampled_head_gap_m": 0.21223686218261717,
+      "status": "built_untextured_full_collision_pending",
+      "window_slits": "Two 1.0 x 0.8 m slits on far end, away from stair opening",
+      "guard_rails_height_m": 1.1
+    }
+  ],
+  "egress": [
+    {
+      "id": "north",
+      "position": [
+        8,
+        0,
+        -12
+      ],
+      "width": 1.2,
+      "height": 2.2,
+      "depth": 1.6
+    },
+    {
+      "id": "south",
+      "position": [
+        8,
+        0,
+        -34.5
+      ],
+      "width": 1.2,
+      "height": 2.2,
+      "depth": 1.6
+    }
+  ],
+  "staging_props": [
+    {
+      "id": "WoodenBarricade",
+      "position": [
+        8,
+        0,
+        -4
+      ],
+      "size": [
+        2,
+        1.3,
+        0.2
+      ],
+      "status": "author_mesh"
+    },
+    {
+      "id": "IndustrialCrates",
+      "position": [
+        11.5,
+        0,
+        -3.5
+      ],
+      "size": [
+        1.2,
+        1.4,
+        1.2
+      ],
+      "status": "source_mesh_review"
+    },
+    {
+      "id": "SedanWreck",
+      "position": [
+        8.2,
+        0,
+        -7.5
+      ],
+      "yaw_degrees": 30,
+      "status": "duplicate_supplied_car_later",
+      "length_m": 4
+    },
+    {
+      "id": "StorageContainer",
+      "x_bounds": [
+        11.75,
+        13.75
+      ],
+      "z_bounds": [
+        -10,
+        -6
+      ],
+      "height": 2.6,
+      "status": "author_mesh"
+    },
+    {
+      "id": "PalletAndBench",
+      "position": [
+        10,
+        0,
+        -10.5
+      ],
+      "status": "pallet_available_bench_asset_missing"
+    },
+    {
+      "id": "ConcreteBarrier",
+      "position": [
+        8.5,
+        0,
+        -36.4
+      ],
+      "size": [
+        2.4,
+        1.1,
+        0.6
+      ],
+      "yaw_degrees": -5,
+      "status": "author_mesh"
+    },
+    {
+      "id": "Forklift",
+      "position": [
+        12,
+        0,
+        -37.5
+      ],
+      "size": [
+        2.4,
+        2.1,
+        1.2
+      ],
+      "yaw_degrees": 90,
+      "status": "asset_missing"
+    },
+    {
+      "id": "TruckWreck",
+      "position": [
+        8.3,
+        0,
+        -39.5
+      ],
+      "size": [
+        5.2,
+        1.9,
+        2.1
+      ],
+      "yaw_degrees": -45,
+      "status": "asset_missing_source_box_not_verified_as_truck"
+    },
+    {
+      "id": "CargoContainer",
+      "x_bounds": [
+        11.75,
+        13.75
+      ],
+      "z_bounds": [
+        -44.5,
+        -39.5
+      ],
+      "height": 2.6,
+      "status": "author_mesh"
+    },
+    {
+      "id": "CouchAndCrates",
+      "position": [
+        8.5,
+        0,
+        -43
+      ],
+      "status": "couch_asset_missing"
+    }
+  ],
+  "removed_source_shell_faces": 8,
+  "removed_room_ceiling_faces": 29,
+  "egress_frame_colliders_built": true
+}

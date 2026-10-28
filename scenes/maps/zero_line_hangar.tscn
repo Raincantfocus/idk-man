@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/maps/hangar/zero_line_hangar_step3.glb" id="1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="SkyMaterial_review"]
+sky_top_color = Color(0.25, 0.32, 0.42, 1)
+sky_horizon_color = Color(0.55, 0.60, 0.65, 1)
+ground_bottom_color = Color(0.20, 0.22, 0.25, 1)
+ground_horizon_color = Color(0.50, 0.52, 0.55, 1)
+
+[sub_resource type="Sky" id="Sky_review"]
+sky_material = SubResource("SkyMaterial_review")
+
+[sub_resource type="Environment" id="Environment_review"]
+background_mode = 2
+sky = SubResource("Sky_review")
+background_color = Color(0.12, 0.15, 0.18, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.8, 0.86, 1, 1)
+ambient_light_energy = 0.75
+reflected_light_source = 1
+
+[sub_resource type="BoxShape3D" id="EgressPost"]
+size = Vector3(0.12, 2.2, 0.15)
+
+[sub_resource type="BoxShape3D" id="EgressLintel"]
+size = Vector3(1.44, 0.12, 0.15)
+
+[node name="ZeroLineHangar" type="Node3D"]
+metadata/stage = "Step 3 review. Materials, optimization, full collision and navigation pending."
+
+[node name="SuppliedBuildingsAndPlatforms" parent="." instance=ExtResource("1")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_review")
+
+[node name="ReviewSun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-65, -25, 0)
+light_energy = 0.8
+
+[node name="ReviewCamera" type="Camera3D" parent="."]
+position = Vector3(8, 1.65, -1)
+current = true
+far = 100.0
+
+[node name="ReviewOverlay" type="CanvasLayer" parent="."]
+
+[node name="StageLabel" type="Label" parent="ReviewOverlay"]
+offset_left = 20.0
+offset_top = 16.0
+text = "HANGAR — STEP 3 REVIEW\nShell + timber platforms. Other staging props pending.\nNo combat hookup / full collision / navigation yet."
+
+[node name="EgressFrameColliders" type="StaticBody3D" parent="."]
+
+[node name="NorthLeft" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(7.34, 1.1, -12)
+shape = SubResource("EgressPost")
+
+[node name="NorthRight" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(8.66, 1.1, -12)
+shape = SubResource("EgressPost")
+
+[node name="NorthLintel" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(8, 2.26, -12)
+shape = SubResource("EgressLintel")
+
+[node name="SouthLeft" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(7.34, 1.1, -34.5)
+shape = SubResource("EgressPost")
+
+[node name="SouthRight" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(8.66, 1.1, -34.5)
+shape = SubResource("EgressPost")
+
+[node name="SouthLintel" type="CollisionShape3D" parent="EgressFrameColliders"]
+position = Vector3(8, 2.26, -34.5)
+shape = SubResource("EgressLintel")
+
+[node name="Attribution" type="Label" parent="ReviewOverlay"]
+offset_left = 20.0
+offset_top = 842.0
+text = "Killhouse — _.quve | Warehouse FBX Model Free — Nicholas-3D\nCC BY 4.0; modified for ZERO-LINE. Sources and changes: CREDITS.md"

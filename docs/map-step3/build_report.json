@@ -1,0 +1,184 @@
+{
+  "blender": "5.0.1",
+  "triangles": 747354,
+  "mesh_objects": 37,
+  "edits": [
+    {
+      "object": "Object_2",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 110
+    },
+    {
+      "object": "Object_3",
+      "removed_floor_faces": 16,
+      "egress_removed_fragments": 0,
+      "triangles_after": 200
+    },
+    {
+      "object": "Object_4",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 36993
+    },
+    {
+      "object": "Object_5",
+      "removed_floor_faces": 127,
+      "egress_removed_fragments": 0,
+      "triangles_after": 14627
+    },
+    {
+      "object": "Object_6",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 7786
+    },
+    {
+      "object": "Object_7",
+      "removed_floor_faces": 146,
+      "egress_removed_fragments": 428,
+      "triangles_after": 7340
+    },
+    {
+      "object": "Object_8",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 9828
+    },
+    {
+      "object": "Object_9",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 8960
+    },
+    {
+      "object": "Object_10",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 1932
+    },
+    {
+      "object": "Object_11",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 6104
+    },
+    {
+      "object": "Object_12",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 6444
+    },
+    {
+      "object": "Object_13",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 4044
+    },
+    {
+      "object": "Object_14",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 4144
+    },
+    {
+      "object": "Object_15",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 5464
+    },
+    {
+      "object": "Object_16",
+      "removed_floor_faces": 4,
+      "egress_removed_fragments": 82,
+      "triangles_after": 4141
+    },
+    {
+      "object": "Object_17",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43461
+    },
+    {
+      "object": "Object_18",
+      "removed_floor_faces": 6,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43351
+    },
+    {
+      "object": "Object_19",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43360
+    },
+    {
+      "object": "Object_20",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43366
+    },
+    {
+      "object": "Object_21",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43360
+    },
+    {
+      "object": "Object_22",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43373
+    },
+    {
+      "object": "Object_23",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43492
+    },
+    {
+      "object": "Object_24",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 43480
+    },
+    {
+      "object": "Object_25",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 2020
+    },
+    {
+      "object": "Object_26",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 94860
+    },
+    {
+      "object": "Object_27",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 99455
+    },
+    {
+      "object": "Object_28",
+      "removed_floor_faces": 0,
+      "egress_removed_fragments": 0,
+      "triangles_after": 66825
+    },
+    {
+      "object": "NurbsPath.005_Metal_0",
+      "door_panel_faces_removed": 4
+    },
+    {
+      "object": "NurbsPath.005_Emissive_0",
+      "door_panel_faces_removed": 0
+    },
+    {
+      "object": "NurbsPath.005_WetConcrete_0",
+      "door_panel_faces_removed": 0
+    }
+  ],
+  "platforms_built": 2,
+  "egress_frames_built": 2,
+  "stage": "3; materials, optimization, collision and navigation pending"
+}
