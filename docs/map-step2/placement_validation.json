@@ -1,0 +1,2566 @@
+{
+  "method": "Projected triangle-overlap extrema: upward vertical intersections with lowest Metal surface above 2.5 m, including ribs. Vertical edges included. Not Jolt tests; fixtures and colliders remain pending.",
+  "roof_triangles": 4782,
+  "revised_layout_scale": 2.91,
+  "relative_scale": 0.97,
+  "warehouse_rib_intrusion_m": 0.200001,
+  "floor_y_m": 0,
+  "required_clearance_m": 0.3,
+  "plans": [
+    {
+      "id": "centered",
+      "tower_upper_factor": 0.55,
+      "translation_m": [
+        8,
+        0,
+        -23.07500648498535
+      ],
+      "entry_staging_m": 11.758933169841766,
+      "rear_staging_m": 11.758933169841768,
+      "side_alleys_m": [
+        2.047909862565041,
+        2.047909862565041
+      ],
+      "before": [
+        {
+          "min_clearance_m": -0.14693078425578143,
+          "critical_point": [
+            13.723102948069572,
+            4.1707016080617905,
+            -12.400004410313624
+          ],
+          "ray_extrema": 2428,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 0,
+          "max_height_m": 4.1707016026769255,
+          "pending_shell_removal": true
+        },
+        {
+          "min_clearance_m": 1.0162345099976764,
+          "critical_point": [
+            3.1346925848170155,
+            2.715999108011647,
+            -14.076188180446625
+          ],
+          "ray_extrema": 1326,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 17,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162338938524451,
+          "critical_point": [
+            12.997652796681583,
+            2.7159997358829346,
+            -14.103455832004547
+          ],
+          "ray_extrema": 784,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 18,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6049523227260725,
+          "critical_point": [
+            9.15721607208252,
+            2.717996977869376,
+            -16.208289995193482
+          ],
+          "ray_extrema": 4814,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 19,
+          "max_height_m": 2.909998541981777,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.236358552095803,
+          "critical_point": [
+            8.86591297417879,
+            2.715967297554016,
+            -16.186599786281587
+          ],
+          "ray_extrema": 344,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 20,
+          "max_height_m": 2.7159672393636507,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1792189772646378,
+          "critical_point": [
+            9.815329748988152,
+            2.715967554757947,
+            -16.186599786281587
+          ],
+          "ray_extrema": 344,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 21,
+          "max_height_m": 2.715967554757947,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7358109898701621,
+          "critical_point": [
+            3.7501855232531947,
+            2.7159998812527477,
+            -16.600008010864258
+          ],
+          "ray_extrema": 458,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 32,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3021475295477591,
+          "critical_point": [
+            2.259514288306236,
+            2.715999400571053,
+            -16.662008259296417
+          ],
+          "ray_extrema": 554,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 41,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740176654906175,
+          "critical_point": [
+            13.75208913743496,
+            2.7159999999999993,
+            -17.0709703040123
+          ],
+          "ray_extrema": 376,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 43,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.240818225635207,
+          "critical_point": [
+            8.668255889415741,
+            2.7159999999999997,
+            -18.5158366894722
+          ],
+          "ray_extrema": 238,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 44,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5746025511893809,
+          "critical_point": [
+            13.132095575928687,
+            2.7159999999999993,
+            -18.5487674677372
+          ],
+          "ray_extrema": 104,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 45,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1600084223999763,
+          "critical_point": [
+            10.083832722306251,
+            2.7159999999999997,
+            -19.11315346121788
+          ],
+          "ray_extrema": 544,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 46,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5791806623225635,
+          "critical_point": [
+            12.963982369595662,
+            2.7159999499599174,
+            -19.28450495603945
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 47,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3524751927147607,
+          "critical_point": [
+            2.4150763028860096,
+            2.7159999077402226,
+            -20.838103637705238
+          ],
+          "ray_extrema": 5043,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 48,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1836181866308375,
+          "critical_point": [
+            9.15721607208252,
+            3.139331699691184,
+            -21.974230984449388
+          ],
+          "ray_extrema": 1202,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 49,
+          "max_height_m": 3.1393317526374434,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": -0.19328386086677796,
+          "critical_point": [
+            9.15721607208252,
+            4.516233747188799,
+            -21.974230984449388
+          ],
+          "ray_extrema": 1202,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 50,
+          "max_height_m": 4.5162338530812836,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.42181335567474854,
+          "critical_point": [
+            7.875566407754086,
+            4.547364572266159,
+            -21.974230984449388
+          ],
+          "ray_extrema": 312,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 51,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.41812593817390376,
+          "critical_point": [
+            8.286686466634274,
+            4.547364572266159,
+            -21.974230984449388
+          ],
+          "ray_extrema": 262,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 52,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.41338515203729376,
+          "critical_point": [
+            8.495284356623888,
+            4.547364572266159,
+            -21.974230984449388
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 53,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.40864437969758516,
+          "critical_point": [
+            8.703881639540196,
+            4.547364572266159,
+            -21.974230984449388
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 54,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4039035925754817,
+          "critical_point": [
+            8.912479572892188,
+            4.547364572266159,
+            -21.974230984449388
+          ],
+          "ray_extrema": 230,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 55,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": -0.22441468594413738,
+          "critical_point": [
+            9.02828311920166,
+            4.547364572266159,
+            -21.974231313365777
+          ],
+          "ray_extrema": 758,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 56,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": -0.22441473743885876,
+          "critical_point": [
+            9.15721607208252,
+            4.54736462376088,
+            -22.070295333862305
+          ],
+          "ray_extrema": 467,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 57,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.36761158296582774,
+          "critical_point": [
+            9.538272592425347,
+            4.547364919165191,
+            -21.974231591522695
+          ],
+          "ray_extrema": 230,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 58,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.3527120386375193,
+          "critical_point": [
+            9.746870439052582,
+            4.547364919165191,
+            -21.974231591522695
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 59,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.5025558980022948,
+          "critical_point": [
+            8.104363186359405,
+            4.467078261077404,
+            -22.028516173362732
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 60,
+          "max_height_m": 4.467078260162888,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.44059271100984887,
+          "critical_point": [
+            9.640547273159028,
+            4.467078611254692,
+            -22.028516173362732
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 61,
+          "max_height_m": 4.46707860706192,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5441750286755713,
+          "critical_point": [
+            8.073668779432774,
+            3.426156722009182,
+            -22.054492579996587
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 62,
+          "max_height_m": 3.4261567187104793,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4823113184664263,
+          "critical_point": [
+            9.629388225078582,
+            3.426157065609512,
+            -22.054492579996587
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 63,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.8967929131809287,
+          "critical_point": [
+            9.15721607208252,
+            3.426156973141093,
+            -22.06673257709237
+          ],
+          "ray_extrema": 1152,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 64,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162344191232342,
+          "critical_point": [
+            3.1338569168041492,
+            2.716000164972512,
+            -22.38312182813883
+          ],
+          "ray_extrema": 1728,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 65,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.588040754300688,
+          "critical_point": [
+            12.840929341912268,
+            2.7159999999999993,
+            -25.20001220703125
+          ],
+          "ray_extrema": 376,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 66,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.44059290168981846,
+          "critical_point": [
+            9.640547273159028,
+            4.467078611254692,
+            -23.567721056938172
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 67,
+          "max_height_m": 4.46707860706192,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.5025560826602407,
+          "critical_point": [
+            8.104363186359405,
+            4.467078261077404,
+            -23.57754003405571
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 68,
+          "max_height_m": 4.467078260162888,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.896793290905384,
+          "critical_point": [
+            9.15721607208252,
+            3.426156973141093,
+            -23.62245124221536
+          ],
+          "ray_extrema": 904,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 69,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740183230205973,
+          "critical_point": [
+            2.247910862565041,
+            2.715999403205031,
+            -26.90121158003807
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 70,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3791779343703512,
+          "critical_point": [
+            13.7361435765028,
+            2.7159999999999993,
+            -27.821111149787903
+          ],
+          "ray_extrema": 870,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 71,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6049539744853973,
+          "critical_point": [
+            6.973980586616749,
+            2.7179968655109406,
+            -29.89745126565097
+          ],
+          "ray_extrema": 5445,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 72,
+          "max_height_m": 2.9099984407889785,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.173418019909815,
+          "critical_point": [
+            6.103413141965866,
+            2.715965688228607,
+            -29.06413572072983
+          ],
+          "ray_extrema": 632,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 74,
+          "max_height_m": 2.7159656623921697,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.2345141767975862,
+          "critical_point": [
+            7.052830610573292,
+            2.7159663438796997,
+            -29.06413572072983
+          ],
+          "ray_extrema": 776,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 75,
+          "max_height_m": 2.7159662931807618,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.01623633420708,
+          "critical_point": [
+            3.1486373092570403,
+            2.7159993358826418,
+            -30.13380790710449
+          ],
+          "ray_extrema": 1469,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 93,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162359087342479,
+          "critical_point": [
+            12.99765396118164,
+            2.715999761355474,
+            -30.352572844028472
+          ],
+          "ray_extrema": 894,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 94,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.745461485957624,
+          "critical_point": [
+            7.888280050649773,
+            3.224005470255433,
+            -22.701252914220095
+          ],
+          "ray_extrema": 12336,
+          "uncovered_entities": 0,
+          "mesh": "Object_9",
+          "component": -1,
+          "max_height_m": 3.224005470255432,
+          "pending_shell_removal": false
+        }
+      ],
+      "proposed_after": [
+        {
+          "min_clearance_m": -0.14693078425578143,
+          "critical_point": [
+            13.723102948069572,
+            4.1707016080617905,
+            -12.400004410313624
+          ],
+          "ray_extrema": 2428,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 0,
+          "max_height_m": 4.1707016026769255,
+          "pending_shell_removal": true
+        },
+        {
+          "min_clearance_m": 1.0162345099976764,
+          "critical_point": [
+            3.1346925848170155,
+            2.715999108011647,
+            -14.076188180446625
+          ],
+          "ray_extrema": 1326,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 17,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162338938524451,
+          "critical_point": [
+            12.997652796681583,
+            2.7159997358829346,
+            -14.103455832004547
+          ],
+          "ray_extrema": 784,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 18,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6049523227260725,
+          "critical_point": [
+            9.15721607208252,
+            2.717996977869376,
+            -16.208289995193482
+          ],
+          "ray_extrema": 4814,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 19,
+          "max_height_m": 2.909998541981777,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.236358552095803,
+          "critical_point": [
+            8.86591297417879,
+            2.715967297554016,
+            -16.186599786281587
+          ],
+          "ray_extrema": 344,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 20,
+          "max_height_m": 2.7159672393636507,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1792189772646378,
+          "critical_point": [
+            9.815329748988152,
+            2.715967554757947,
+            -16.186599786281587
+          ],
+          "ray_extrema": 344,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 21,
+          "max_height_m": 2.715967554757947,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7358109898701621,
+          "critical_point": [
+            3.7501855232531947,
+            2.7159998812527477,
+            -16.600008010864258
+          ],
+          "ray_extrema": 458,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 32,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3021475295477591,
+          "critical_point": [
+            2.259514288306236,
+            2.715999400571053,
+            -16.662008259296417
+          ],
+          "ray_extrema": 554,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 41,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740176654906175,
+          "critical_point": [
+            13.75208913743496,
+            2.7159999999999993,
+            -17.0709703040123
+          ],
+          "ray_extrema": 376,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 43,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.240818225635207,
+          "critical_point": [
+            8.668255889415741,
+            2.7159999999999997,
+            -18.5158366894722
+          ],
+          "ray_extrema": 238,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 44,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5746025511893809,
+          "critical_point": [
+            13.132095575928687,
+            2.7159999999999993,
+            -18.5487674677372
+          ],
+          "ray_extrema": 104,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 45,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1600084223999763,
+          "critical_point": [
+            10.083832722306251,
+            2.7159999999999997,
+            -19.11315346121788
+          ],
+          "ray_extrema": 544,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 46,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5791806623225635,
+          "critical_point": [
+            12.963982369595662,
+            2.7159999499599174,
+            -19.28450495603945
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 47,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3524751927147607,
+          "critical_point": [
+            2.4150763028860096,
+            2.7159999077402226,
+            -20.838103637705238
+          ],
+          "ray_extrema": 5043,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 48,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.24631745149187,
+          "critical_point": [
+            9.15721607208252,
+            3.0766324348301515,
+            -21.974230984449388
+          ],
+          "ray_extrema": 1202,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 49,
+          "max_height_m": 3.076632463950594,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4890213253681819,
+          "critical_point": [
+            9.15721607208252,
+            3.8339285609538396,
+            -21.974230984449388
+          ],
+          "ray_extrema": 1202,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 50,
+          "max_height_m": 3.833928619194706,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1181274131945198,
+          "critical_point": [
+            7.875566407754086,
+            3.8510505147463876,
+            -21.974230984449388
+          ],
+          "ray_extrema": 312,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 51,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.114439995693675,
+          "critical_point": [
+            8.286686466634274,
+            3.8510505147463876,
+            -21.974230984449388
+          ],
+          "ray_extrema": 262,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 52,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.109699209557065,
+          "critical_point": [
+            8.495284356623888,
+            3.8510505147463876,
+            -21.974230984449388
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 53,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1049584372173564,
+          "critical_point": [
+            8.703881639540196,
+            3.8510505147463876,
+            -21.974230984449388
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 54,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.100217650095253,
+          "critical_point": [
+            8.912479572892188,
+            3.8510505147463876,
+            -21.974230984449388
+          ],
+          "ray_extrema": 230,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 55,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4718993715756339,
+          "critical_point": [
+            9.02828311920166,
+            3.8510505147463876,
+            -21.974231313365777
+          ],
+          "ray_extrema": 758,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 56,
+          "max_height_m": 3.8510505147463876,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4718993432535372,
+          "critical_point": [
+            9.15721607208252,
+            3.8510505430684843,
+            -22.070295333862305
+          ],
+          "ray_extrema": 467,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 57,
+          "max_height_m": 3.851050705540855,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0639257965901638,
+          "critical_point": [
+            9.538272592425347,
+            3.851050705540855,
+            -21.974231591522695
+          ],
+          "ray_extrema": 230,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 58,
+          "max_height_m": 3.851050705540855,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0490262522618554,
+          "critical_point": [
+            9.746870439052582,
+            3.851050705540855,
+            -21.974231591522695
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 59,
+          "max_height_m": 3.851050705540855,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1627411158596557,
+          "critical_point": [
+            8.104363186359405,
+            3.806893043220043,
+            -22.028516173362732
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 60,
+          "max_height_m": 3.8068930430895884,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1007780778788216,
+          "critical_point": [
+            9.640547273159028,
+            3.8068932443857193,
+            -22.028516173362732
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 61,
+          "max_height_m": 3.8068932338840558,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7359455553939895,
+          "critical_point": [
+            8.073668779432774,
+            3.2343861952907638,
+            -22.054492579996587
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 62,
+          "max_height_m": 3.2343861952907638,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6740819979907067,
+          "critical_point": [
+            9.629388225078582,
+            3.2343863860852315,
+            -22.054492579996587
+          ],
+          "ray_extrema": 248,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 63,
+          "max_height_m": 3.2343863860852315,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0885635510944205,
+          "critical_point": [
+            9.15721607208252,
+            3.234386335227601,
+            -22.06673257709237
+          ],
+          "ray_extrema": 1152,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 64,
+          "max_height_m": 3.2343863860852315,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162344191232342,
+          "critical_point": [
+            3.1338569168041492,
+            2.716000164972512,
+            -22.38312182813883
+          ],
+          "ray_extrema": 1728,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 65,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.588040754300688,
+          "critical_point": [
+            12.840929341912268,
+            2.7159999999999993,
+            -25.20001220703125
+          ],
+          "ray_extrema": 376,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 66,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1007782790604548,
+          "critical_point": [
+            9.640547273159028,
+            3.8068932338840558,
+            -23.567721056938172
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 67,
+          "max_height_m": 3.8068932338840558,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.1627413005176015,
+          "critical_point": [
+            8.104363186359405,
+            3.806893043220043,
+            -23.57754003405571
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 68,
+          "max_height_m": 3.8068930430895884,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0885639288188758,
+          "critical_point": [
+            9.15721607208252,
+            3.234386335227601,
+            -23.62245124221536
+          ],
+          "ray_extrema": 904,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 69,
+          "max_height_m": 3.2343863860852315,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740183230205973,
+          "critical_point": [
+            2.247910862565041,
+            2.715999403205031,
+            -26.90121158003807
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 70,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3791779343703512,
+          "critical_point": [
+            13.7361435765028,
+            2.7159999999999993,
+            -27.821111149787903
+          ],
+          "ray_extrema": 870,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 71,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6049539744853973,
+          "critical_point": [
+            6.973980586616749,
+            2.7179968655109406,
+            -29.89745126565097
+          ],
+          "ray_extrema": 5445,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 72,
+          "max_height_m": 2.9099984407889785,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.173418019909815,
+          "critical_point": [
+            6.103413141965866,
+            2.715965688228607,
+            -29.06413572072983
+          ],
+          "ray_extrema": 632,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 74,
+          "max_height_m": 2.7159656623921697,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.2345141767975862,
+          "critical_point": [
+            7.052830610573292,
+            2.7159663438796997,
+            -29.06413572072983
+          ],
+          "ray_extrema": 776,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 75,
+          "max_height_m": 2.7159662931807618,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.01623633420708,
+          "critical_point": [
+            3.1486373092570403,
+            2.7159993358826418,
+            -30.13380790710449
+          ],
+          "ray_extrema": 1469,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 93,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162359087342479,
+          "critical_point": [
+            12.99765396118164,
+            2.715999761355474,
+            -30.352572844028472
+          ],
+          "ray_extrema": 894,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 94,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.745461485957624,
+          "critical_point": [
+            7.888280050649773,
+            3.224005470255433,
+            -22.701252914220095
+          ],
+          "ray_extrema": 12336,
+          "uncovered_entities": 0,
+          "mesh": "Object_9",
+          "component": -1,
+          "max_height_m": 3.224005470255432,
+          "pending_shell_removal": false
+        }
+      ]
+    },
+    {
+      "id": "front_staging",
+      "tower_upper_factor": 0.8,
+      "translation_m": [
+        8,
+        0,
+        -26.07500648498535
+      ],
+      "entry_staging_m": 14.758933169841766,
+      "rear_staging_m": 8.758933169841768,
+      "side_alleys_m": [
+        2.047909862565041,
+        2.047909862565041
+      ],
+      "before": [
+        {
+          "min_clearance_m": -0.43846772511832377,
+          "critical_point": [
+            12.99765247765412,
+            4.170701514367436,
+            -14.758933169841766
+          ],
+          "ray_extrema": 2416,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 0,
+          "max_height_m": 4.1707016026769255,
+          "pending_shell_removal": true
+        },
+        {
+          "min_clearance_m": 1.3740178729913826,
+          "critical_point": [
+            2.247910862565041,
+            2.7159988068193694,
+            -17.076188180446625
+          ],
+          "ray_extrema": 884,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 17,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3744641229549215,
+          "critical_point": [
+            13.750709173083305,
+            2.7159999999999993,
+            -17.10345583200455
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 18,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.9758981100679738,
+          "critical_point": [
+            9.123545831320467,
+            2.909998480344791,
+            -20.04488189786744
+          ],
+          "ray_extrema": 3410,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 19,
+          "max_height_m": 2.909998541981777,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.236358872949804,
+          "critical_point": [
+            8.86591297417879,
+            2.715967297554016,
+            -19.186599786281587
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 20,
+          "max_height_m": 2.7159672393636507,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1792192704078666,
+          "critical_point": [
+            9.815329748988152,
+            2.7159675547579525,
+            -19.186599786281587
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 21,
+          "max_height_m": 2.715967554757947,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.809987687366307,
+          "critical_point": [
+            3.7501852220296863,
+            2.7159998812527477,
+            -18.6879039812088
+          ],
+          "ray_extrema": 222,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 32,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.377771582303252,
+          "critical_point": [
+            2.259514288306236,
+            2.715999400571053,
+            -19.438692700862884
+          ],
+          "ray_extrema": 444,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 41,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740177917136913,
+          "critical_point": [
+            13.75208913743496,
+            2.7159999999999993,
+            -20.0709703040123
+          ],
+          "ray_extrema": 444,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 43,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.240818558165366,
+          "critical_point": [
+            8.668255889415741,
+            2.7159999999999997,
+            -21.5158366894722
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 44,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5746027536540046,
+          "critical_point": [
+            13.132095575928687,
+            2.7159999999999993,
+            -21.5487674677372
+          ],
+          "ray_extrema": 154,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 45,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6069502290285564,
+          "critical_point": [
+            9.139861115284978,
+            2.7159996614996746,
+            -22.113153743752015
+          ],
+          "ray_extrema": 748,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 46,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.016234592097025,
+          "critical_point": [
+            12.980297182711169,
+            2.7159999564658923,
+            -22.284504952935425
+          ],
+          "ray_extrema": 716,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 47,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.016234487195745,
+          "critical_point": [
+            3.1355230732837027,
+            2.716000165568785,
+            -22.568739776611327
+          ],
+          "ray_extrema": 5156,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 48,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6920209941910764,
+          "critical_point": [
+            9.698799071498943,
+            3.1393317526374434,
+            -25.00001335144043
+          ],
+          "ray_extrema": 1314,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 49,
+          "max_height_m": 3.1393317526374434,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.3151189061357318,
+          "critical_point": [
+            9.698798898049427,
+            4.5162338530812836,
+            -25.00001335144043
+          ],
+          "ray_extrema": 1314,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 50,
+          "max_height_m": 4.5162338530812836,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.34981591631268305,
+          "critical_point": [
+            7.875566407754086,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 914,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 51,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.34612891576261795,
+          "critical_point": [
+            8.286686458442528,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 672,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 52,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.3413886690368173,
+          "critical_point": [
+            8.495284348432142,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 542,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 53,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.33664843609202943,
+          "critical_point": [
+            8.703881631978584,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 54,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.33190818840948655,
+          "critical_point": [
+            8.912479564070308,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 55,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.32525149047515356,
+          "critical_point": [
+            9.12107741195799,
+            4.547364572266159,
+            -25.00001335144043
+          ],
+          "ray_extrema": 997,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 56,
+          "max_height_m": 4.547364572266159,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.3103522000649912,
+          "critical_point": [
+            9.329675344049745,
+            4.547364919165191,
+            -25.00001335144043
+          ],
+          "ray_extrema": 560,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 57,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.29545330592781927,
+          "critical_point": [
+            9.538272584863913,
+            4.547364919165191,
+            -25.00001335144043
+          ],
+          "ray_extrema": 542,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 58,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.2805543685209244,
+          "critical_point": [
+            9.746870431491148,
+            4.547364919165191,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 59,
+          "max_height_m": 4.547364919165191,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4305584006602361,
+          "critical_point": [
+            8.104363186359405,
+            4.467078261077404,
+            -25.15564963877201
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 60,
+          "max_height_m": 4.467078260162888,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.3684347245316628,
+          "critical_point": [
+            9.640547273159028,
+            4.467078611254692,
+            -25.028516173362732
+          ],
+          "ray_extrema": 276,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 61,
+          "max_height_m": 4.46707860706192,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4721774494776776,
+          "critical_point": [
+            8.073668779432774,
+            3.426156722009182,
+            -25.054492579996587
+          ],
+          "ray_extrema": 888,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 62,
+          "max_height_m": 3.4261567187104793,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4101532964240415,
+          "critical_point": [
+            9.629388225078582,
+            3.426157065609512,
+            -25.09387426786831
+          ],
+          "ray_extrema": 352,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 63,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4142156203755651,
+          "critical_point": [
+            9.572512220740318,
+            3.426157065609512,
+            -25.104042944014072
+          ],
+          "ray_extrema": 384,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 64,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4281001696497437,
+          "critical_point": [
+            2.4150763028860096,
+            2.7159999077402226,
+            -25.38312182813883
+          ],
+          "ray_extrema": 1176,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 65,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6622125628414501,
+          "critical_point": [
+            12.840929341912268,
+            2.7159999999999993,
+            -26.53777033649385
+          ],
+          "ray_extrema": 172,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 66,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.4405932831584263,
+          "critical_point": [
+            9.640547273159028,
+            4.467078611254692,
+            -26.567721056938172
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 67,
+          "max_height_m": 4.46707860706192,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.5025564164461578,
+          "critical_point": [
+            8.104363186359405,
+            4.467078261077404,
+            -26.57754003405571
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 68,
+          "max_height_m": 4.467078260162888,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4597403556210353,
+          "critical_point": [
+            9.123546600341797,
+            3.426156965644364,
+            -26.622451229096082
+          ],
+          "ray_extrema": 696,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 69,
+          "max_height_m": 3.426157065609512,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162360038608687,
+          "critical_point": [
+            3.148637648877184,
+            2.715999666228853,
+            -29.90121158003807
+          ],
+          "ray_extrema": 784,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 70,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162360066805904,
+          "critical_point": [
+            12.997653619696111,
+            2.7159997487805136,
+            -30.821111149787903
+          ],
+          "ray_extrema": 1253,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 71,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4129530021903065,
+          "critical_point": [
+            6.989073753356934,
+            2.9099983146431896,
+            -30.987397894859313
+          ],
+          "ray_extrema": 4567,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 72,
+          "max_height_m": 2.9099984407889785,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1734183650702468,
+          "critical_point": [
+            6.103413141965866,
+            2.715965688228607,
+            -32.06413572072983
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 74,
+          "max_height_m": 2.7159656623921697,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.2345145649014606,
+          "critical_point": [
+            7.052830610573292,
+            2.715966293180762,
+            -32.06413572072983
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 75,
+          "max_height_m": 2.7159662931807618,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740195171602525,
+          "critical_point": [
+            2.247910862565041,
+            2.7159990053418652,
+            -33.13380790710449
+          ],
+          "ray_extrema": 816,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 93,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.301269557662076,
+          "critical_point": [
+            13.743207134604454,
+            2.7159999999999993,
+            -33.488832008838656
+          ],
+          "ray_extrema": 620,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 94,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7454618197434426,
+          "critical_point": [
+            7.888280050649773,
+            3.224005470255432,
+            -25.701252914220095
+          ],
+          "ray_extrema": 12336,
+          "uncovered_entities": 0,
+          "mesh": "Object_9",
+          "component": -1,
+          "max_height_m": 3.224005470255432,
+          "pending_shell_removal": false
+        }
+      ],
+      "proposed_after": [
+        {
+          "min_clearance_m": -0.43846772511832377,
+          "critical_point": [
+            12.99765247765412,
+            4.170701514367436,
+            -14.758933169841766
+          ],
+          "ray_extrema": 2416,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 0,
+          "max_height_m": 4.1707016026769255,
+          "pending_shell_removal": true
+        },
+        {
+          "min_clearance_m": 1.3740178729913826,
+          "critical_point": [
+            2.247910862565041,
+            2.7159988068193694,
+            -17.076188180446625
+          ],
+          "ray_extrema": 884,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 17,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3744641229549215,
+          "critical_point": [
+            13.750709173083305,
+            2.7159999999999993,
+            -17.10345583200455
+          ],
+          "ray_extrema": 512,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 18,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.9758981100679738,
+          "critical_point": [
+            9.123545831320467,
+            2.909998480344791,
+            -20.04488189786744
+          ],
+          "ray_extrema": 3410,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 19,
+          "max_height_m": 2.909998541981777,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.236358872949804,
+          "critical_point": [
+            8.86591297417879,
+            2.715967297554016,
+            -19.186599786281587
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 20,
+          "max_height_m": 2.7159672393636507,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1792192704078666,
+          "critical_point": [
+            9.815329748988152,
+            2.7159675547579525,
+            -19.186599786281587
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 21,
+          "max_height_m": 2.715967554757947,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.809987687366307,
+          "critical_point": [
+            3.7501852220296863,
+            2.7159998812527477,
+            -18.6879039812088
+          ],
+          "ray_extrema": 222,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 32,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.377771582303252,
+          "critical_point": [
+            2.259514288306236,
+            2.715999400571053,
+            -19.438692700862884
+          ],
+          "ray_extrema": 444,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 41,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740177917136913,
+          "critical_point": [
+            13.75208913743496,
+            2.7159999999999993,
+            -20.0709703040123
+          ],
+          "ray_extrema": 444,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 43,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.240818558165366,
+          "critical_point": [
+            8.668255889415741,
+            2.7159999999999997,
+            -21.5158366894722
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 44,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5746027536540046,
+          "critical_point": [
+            13.132095575928687,
+            2.7159999999999993,
+            -21.5487674677372
+          ],
+          "ray_extrema": 154,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 45,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6069502290285564,
+          "critical_point": [
+            9.139861115284978,
+            2.7159996614996746,
+            -22.113153743752015
+          ],
+          "ray_extrema": 748,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 46,
+          "max_height_m": 2.7159999999999997,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.016234592097025,
+          "critical_point": [
+            12.980297182711169,
+            2.7159999564658923,
+            -22.284504952935425
+          ],
+          "ray_extrema": 716,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 47,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.016234487195745,
+          "critical_point": [
+            3.1355230732837027,
+            2.716000165568785,
+            -22.568739776611327
+          ],
+          "ray_extrema": 5156,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 48,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7198873447185652,
+          "critical_point": [
+            9.698799071498943,
+            3.1114654021099546,
+            -25.00001335144043
+          ],
+          "ray_extrema": 1314,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 49,
+          "max_height_m": 3.1114654021099546,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6183656767519885,
+          "critical_point": [
+            9.698798898049427,
+            4.212987082465027,
+            -25.00001335144043
+          ],
+          "ray_extrema": 1314,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 50,
+          "max_height_m": 4.212987082465027,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6592888307659148,
+          "critical_point": [
+            7.875566407754086,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 914,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 51,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6556018302158497,
+          "critical_point": [
+            8.286686458442528,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 672,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 52,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6508615834900491,
+          "critical_point": [
+            8.495284348432142,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 542,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 53,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6461213505452612,
+          "critical_point": [
+            8.703881631978584,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 54,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6413811028627183,
+          "critical_point": [
+            8.912479564070308,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 55,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6347244049283853,
+          "critical_point": [
+            9.12107741195799,
+            4.237891657812927,
+            -25.00001335144043
+          ],
+          "ray_extrema": 997,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 56,
+          "max_height_m": 4.237891657812927,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6198251838980298,
+          "critical_point": [
+            9.329675344049745,
+            4.2378919353321525,
+            -25.00001335144043
+          ],
+          "ray_extrema": 560,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 57,
+          "max_height_m": 4.2378919353321525,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6049262897608578,
+          "critical_point": [
+            9.538272584863913,
+            4.2378919353321525,
+            -25.00001335144043
+          ],
+          "ray_extrema": 542,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 58,
+          "max_height_m": 4.2378919353321525,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.590027352353963,
+          "critical_point": [
+            9.746870431491148,
+            4.2378919353321525,
+            -25.00001335144043
+          ],
+          "ray_extrema": 456,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 59,
+          "max_height_m": 4.2378919353321525,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.7239740513856008,
+          "critical_point": [
+            8.104363186359405,
+            4.173662610352039,
+            -25.15564963877201
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 60,
+          "max_height_m": 4.17366260813031,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.6618504497628335,
+          "critical_point": [
+            9.640547273159028,
+            4.173662886023521,
+            -25.028516173362732
+          ],
+          "ray_extrema": 276,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 61,
+          "max_height_m": 4.173662885649536,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5574087965184762,
+          "critical_point": [
+            8.073668779432774,
+            3.3409253749683834,
+            -25.18639378115558
+          ],
+          "ray_extrema": 888,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 62,
+          "max_height_m": 3.3409253749683834,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4953847095459438,
+          "critical_point": [
+            9.629388225078582,
+            3.3409256524876096,
+            -25.09387426786831
+          ],
+          "ray_extrema": 352,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 63,
+          "max_height_m": 3.3409256524876096,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4994470334974674,
+          "critical_point": [
+            9.572512220740318,
+            3.3409256524876096,
+            -25.104042944014072
+          ],
+          "ray_extrema": 384,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 64,
+          "max_height_m": 3.3409256524876096,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4281001696497437,
+          "critical_point": [
+            2.4150763028860096,
+            2.7159999077402226,
+            -25.38312182813883
+          ],
+          "ray_extrema": 1176,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 65,
+          "max_height_m": 2.7160008757817304,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.6622125628414501,
+          "critical_point": [
+            12.840929341912268,
+            2.7159999999999993,
+            -26.53777033649385
+          ],
+          "ray_extrema": 172,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 66,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.7340090083895969,
+          "critical_point": [
+            9.640547273159028,
+            4.173662886023521,
+            -26.567721056938172
+          ],
+          "ray_extrema": 168,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 67,
+          "max_height_m": 4.173662885649536,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 0.7959720671715225,
+          "critical_point": [
+            8.104363186359405,
+            4.173662610352039,
+            -26.57754003405571
+          ],
+          "ray_extrema": 236,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 68,
+          "max_height_m": 4.17366260813031,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.5449717487499082,
+          "critical_point": [
+            9.123546600341797,
+            3.340925572515491,
+            -26.622451229096082
+          ],
+          "ray_extrema": 696,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 69,
+          "max_height_m": 3.3409256524876096,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162360038608687,
+          "critical_point": [
+            3.148637648877184,
+            2.715999666228853,
+            -29.90121158003807
+          ],
+          "ray_extrema": 784,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 70,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.0162360066805904,
+          "critical_point": [
+            12.997653619696111,
+            2.7159997487805136,
+            -30.821111149787903
+          ],
+          "ray_extrema": 1253,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 71,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.4129530021903065,
+          "critical_point": [
+            6.989073753356934,
+            2.9099983146431896,
+            -30.987397894859313
+          ],
+          "ray_extrema": 4567,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 72,
+          "max_height_m": 2.9099984407889785,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.1734183650702468,
+          "critical_point": [
+            6.103413141965866,
+            2.715965688228607,
+            -32.06413572072983
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 74,
+          "max_height_m": 2.7159656623921697,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 2.2345145649014606,
+          "critical_point": [
+            7.052830610573292,
+            2.715966293180762,
+            -32.06413572072983
+          ],
+          "ray_extrema": 200,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 75,
+          "max_height_m": 2.7159662931807618,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.3740195171602525,
+          "critical_point": [
+            2.247910862565041,
+            2.7159990053418652,
+            -33.13380790710449
+          ],
+          "ray_extrema": 816,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 93,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.301269557662076,
+          "critical_point": [
+            13.743207134604454,
+            2.7159999999999993,
+            -33.488832008838656
+          ],
+          "ray_extrema": 620,
+          "uncovered_entities": 0,
+          "mesh": "Object_16",
+          "component": 94,
+          "max_height_m": 2.7159999999999993,
+          "pending_shell_removal": false
+        },
+        {
+          "min_clearance_m": 1.7454618197434426,
+          "critical_point": [
+            7.888280050649773,
+            3.224005470255432,
+            -25.701252914220095
+          ],
+          "ray_extrema": 12336,
+          "uncovered_entities": 0,
+          "mesh": "Object_9",
+          "component": -1,
+          "max_height_m": 3.224005470255432,
+          "pending_shell_removal": false
+        }
+      ]
+    }
+  ],
+  "proposed_prop_moves": [
+    {
+      "mesh": "Object_17",
+      "rotation_rows": [
+        [
+          -7.71990890601387e-09,
+          -0.9614922894424314,
+          -0.2748319074320733
+        ],
+        [
+          1.1777820319888288e-05,
+          0.2748319074129236,
+          -0.9614922893757688
+        ],
+        [
+          0.9999999999306416,
+          -3.244343456780875e-06,
+          1.1322161746671606e-05
+        ]
+      ],
+      "translation_before_layout_placement_m": [
+        2.6320723095342613,
+        -6.615569467692394,
+        -7.3272486901656
+      ],
+      "min": [
+        3.5355460199381357,
+        0.7434252450791599,
+        -2.548593056912372
+      ],
+      "max": [
+        4.735546019938136,
+        0.8901271823690138,
+        -1.7521048037815223
+      ]
+    },
+    {
+      "mesh": "Object_23",
+      "rotation_rows": [
+        [
+          -9.894896857671542e-09,
+          -0.9614922894576083,
+          -0.27483190737897656
+        ],
+        [
+          1.1797220127118813e-05,
+          0.2748319073597398,
+          -0.9614922893907327
+        ],
+        [
+          0.9999999999304126,
+          -3.2517663763484168e-06,
+          1.1340216755916128e-05
+        ]
+      ],
+      "translation_before_layout_placement_m": [
+        2.651506841444177,
+        -6.398876455958738,
+        -7.327249348985429
+      ],
+      "min": [
+        3.535546019938137,
+        0.8921271823690136,
+        -2.54859318935796
+      ],
+      "max": [
+        4.735546019938137,
+        1.0388300215466044,
+        -1.7521046713359336
+      ]
+    },
+    {
+      "mesh": "Object_24",
+      "rotation_rows": [
+        [
+          -9.806169397241916e-09,
+          -0.9614923061402865,
+          -0.2748318490150541
+        ],
+        [
+          1.1796431206911873e-05,
+          0.274831848995821,
+          -0.9614923060734198
+        ],
+        [
+          0.9999999999304221,
+          -3.251463556835635e-06,
+          1.1339482797809457e-05
+        ]
+      ],
+      "translation_before_layout_placement_m": [
+        2.613088257816682,
+        -6.3845816664668655,
+        -7.327247769293897
+      ],
+      "min": [
+        3.535546019938136,
+        1.040830021546605,
+        -2.548593055630402
+      ],
+      "max": [
+        4.735546019938136,
+        1.1875317053330665,
+        -1.7521048050634915
+      ]
+    }
+  ],
+  "pallet_stack_height_m": 1.1875317053330665,
+  "pallet_stack_gap_m": 0.002
+}
