@@ -15,8 +15,9 @@
       "source_sha256": "c3a45d814ce024156a0ff7a1488d5937893928ec33df24c720aaff69676bfc6a"
     }
   ],
-  "derivative_sha256": "652229d4b16266f593dd852ce4e4a1c2a8671b0d1aa0254cbd30049057a28e4d",
+  "derivative_sha256": "231c2d8f8f93869b19100bd27d2a488b525cff0d63faa1fd790600205d1adf9d",
   "changes_report": "docs/map-step3/STEP_3_REVIEW.md",
-  "new_geometry": "Timber platforms/stairs/rails/cover/frames authored in tools/maps/build_hangar_step3.py",
-  "source_files_unchanged": true
+  "new_geometry": "Timber platforms/stairs/rails/cover/frames authored in tools/maps/build_hangar_step3.py; approved killhouse perimeter uses shared warehouse Metal material",
+  "source_files_unchanged": true,
+  "latest_change_report": "docs/killhouse-enclosure/REVIEW.md"
 }

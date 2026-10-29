@@ -1,5 +1,7 @@
 # Step 3 — Option A shell and staging platforms
 
+**Later revision:** the user requested a killhouse perimeter. See [enclosure update](../killhouse-enclosure/REVIEW.md) for current geometry and measurements; the screenshots/counts below document the earlier Step 3 state.
+
 The user approved Option A and supplied a staging schematic. The new scene is **`scenes/maps/zero_line_hangar.tscn`**. Open it in Godot 4.6.3 and press F6 for the fixed-camera review. The current combat map is unchanged. This scene does not yet have full collision, navigation, spawn relocation or combat hookup.
 
 ## Built

@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="PackedScene" path="res://assets/maps/hangar/zero_line_hangar_step3.glb" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/maps/killhouse_perimeter_collision.tscn" id="2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="SkyMaterial_review"]
 sky_top_color = Color(0.25, 0.32, 0.42, 1)
@@ -53,30 +55,32 @@ text = "HANGAR — STEP 3 REVIEW\nShell + timber platforms. Other staging props 
 [node name="EgressFrameColliders" type="StaticBody3D" parent="."]
 
 [node name="NorthLeft" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(7.34, 1.1, -12)
+position = Vector3(7.34, 1.1, -11.833933169841766)
 shape = SubResource("EgressPost")
 
 [node name="NorthRight" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(8.66, 1.1, -12)
+position = Vector3(8.66, 1.1, -11.833933169841766)
 shape = SubResource("EgressPost")
 
 [node name="NorthLintel" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(8, 2.26, -12)
+position = Vector3(8, 2.26, -11.833933169841766)
 shape = SubResource("EgressLintel")
 
 [node name="SouthLeft" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(7.34, 1.1, -34.5)
+position = Vector3(7.34, 1.1, -34.425)
 shape = SubResource("EgressPost")
 
 [node name="SouthRight" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(8.66, 1.1, -34.5)
+position = Vector3(8.66, 1.1, -34.425)
 shape = SubResource("EgressPost")
 
 [node name="SouthLintel" type="CollisionShape3D" parent="EgressFrameColliders"]
-position = Vector3(8, 2.26, -34.5)
+position = Vector3(8, 2.26, -34.425)
 shape = SubResource("EgressLintel")
 
 [node name="Attribution" type="Label" parent="ReviewOverlay"]
 offset_left = 20.0
 offset_top = 842.0
 text = "Killhouse — _.quve | Warehouse FBX Model Free — Nicholas-3D\nCC BY 4.0; modified for ZERO-LINE. Sources and changes: CREDITS.md"
+
+[node name="KillhousePerimeterCollision" parent="." instance=ExtResource("2")]

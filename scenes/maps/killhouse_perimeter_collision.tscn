@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3]
+
+[sub_resource type="BoxShape3D" id="West"]
+size = Vector3(0.150000000, 2.716000000, 22.741066830)
+
+[sub_resource type="BoxShape3D" id="East"]
+size = Vector3(0.150000000, 2.716000000, 22.741066830)
+
+[sub_resource type="BoxShape3D" id="NorthLeft"]
+size = Vector3(4.882089137, 2.716000000, 0.150000000)
+
+[sub_resource type="BoxShape3D" id="NorthRight"]
+size = Vector3(4.882089137, 2.716000000, 0.150000000)
+
+[sub_resource type="BoxShape3D" id="NorthHeader"]
+size = Vector3(1.440000000, 0.396000000, 0.150000000)
+
+[sub_resource type="BoxShape3D" id="SouthLeft"]
+size = Vector3(4.882089137, 2.716000000, 0.150000000)
+
+[sub_resource type="BoxShape3D" id="SouthRight"]
+size = Vector3(4.882089137, 2.716000000, 0.150000000)
+
+[sub_resource type="BoxShape3D" id="SouthHeader"]
+size = Vector3(1.440000000, 0.396000000, 0.150000000)
+
+[node name="KillhousePerimeterCollision" type="StaticBody3D"]
+
+[node name="West" type="CollisionShape3D" parent="."]
+position = Vector3(2.322910863, 1.358000000, -23.129466585)
+shape = SubResource("West")
+
+[node name="East" type="CollisionShape3D" parent="."]
+position = Vector3(13.677089137, 1.358000000, -23.129466585)
+shape = SubResource("East")
+
+[node name="NorthLeft" type="CollisionShape3D" parent="."]
+position = Vector3(4.838955431, 1.358000000, -11.833933170)
+shape = SubResource("NorthLeft")
+
+[node name="NorthRight" type="CollisionShape3D" parent="."]
+position = Vector3(11.161044569, 1.358000000, -11.833933170)
+shape = SubResource("NorthRight")
+
+[node name="NorthHeader" type="CollisionShape3D" parent="."]
+position = Vector3(8.000000000, 2.518000000, -11.833933170)
+shape = SubResource("NorthHeader")
+
+[node name="SouthLeft" type="CollisionShape3D" parent="."]
+position = Vector3(4.838955431, 1.358000000, -34.425000000)
+shape = SubResource("SouthLeft")
+
+[node name="SouthRight" type="CollisionShape3D" parent="."]
+position = Vector3(11.161044569, 1.358000000, -34.425000000)
+shape = SubResource("SouthRight")
+
+[node name="SouthHeader" type="CollisionShape3D" parent="."]
+position = Vector3(8.000000000, 2.518000000, -34.425000000)
+shape = SubResource("SouthHeader")

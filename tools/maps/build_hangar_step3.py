@@ -105,10 +105,22 @@ for p in layout['platforms']:
 bpy.ops.object.select_all(action='DESELECT')
 for obj in added:obj.select_set(True)
 bpy.context.view_layer.objects.active=added[0];bpy.ops.object.join();bpy.context.object.name='Staging_TimberPlatforms'
-# Egress marker frames are added without new enclosing walls.
+# Egress frames align with the requested perimeter openings.
 for p in layout['egress']:
  x,y,z=p['position'];w=p['width'];h=p['height']
  timber(p['id']+'_EgressLeft',[x-w/2-.06,h/2,z],[.12,h,.15]);timber(p['id']+'_EgressRight',[x+w/2+.06,h/2,z],[.12,h,.15]);timber(p['id']+'_EgressLintel',[x,h+.06,z],[w+.24,.12,.15])
+# User-approved enclosure only around the killhouse. Share the actual warehouse
+# material; do not modify any existing interior, prop or platform material.
+if 'killhouse_enclosure' in layout:
+ verts=[];faces=[]
+ for segment in layout['killhouse_enclosure']['segments']:
+  c=np.array(segment['center']);half=np.array(segment['size'])/2;start=len(verts)
+  for offset in [(-1,-1,-1),(1,-1,-1),(1,1,-1),(-1,1,-1),(-1,-1,1),(1,-1,1),(1,1,1),(-1,1,1)]:
+   q=c+np.array(offset)*half;verts.append((float(q[0]),float(-q[2]),float(q[1])))
+  for f in [(0,3,2,1),(4,5,6,7),(3,7,6,2),(0,4,7,3),(1,2,6,5)]:faces.append(tuple(start+i for i in f))
+ mesh=bpy.data.meshes.new('Killhouse_Perimeter');mesh.from_pydata(verts,[],faces);mesh.update()
+ obj=bpy.data.objects.new('Killhouse_Perimeter',mesh);bpy.context.collection.objects.link(obj)
+ mesh.materials.append(bpy.data.materials['Metal'])
 meshes=[o for o in bpy.context.scene.objects if o.type=='MESH'];tot=0
 for obj in meshes:
  if wood not in obj.data.materials.values():continue

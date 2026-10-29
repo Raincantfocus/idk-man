@@ -9,7 +9,10 @@ for row in rows:
   count=int(np.all(np.abs(t[:,:,1])<.001,axis=1).sum())
   if count:floors.append({'mesh':row['name'],'triangles':count})
 t=np.concatenate(tris);results=[]
-for name,z,w,h,depth in [('north',-12,1.2,2.2,1.6),('south',-34.5,1.2,2.2,1.6),('warehouse_entry',0,7.7,2.8,.4)]:
+openings=[('north',-12,1.2,2.2,1.6),('south',-34.5,1.2,2.2,1.6)]
+if len(sys.argv)>4:
+ cfg=json.loads(Path(sys.argv[4]).read_text());openings=[(e['id'],e['position'][2],e['width'],e['height'],e['depth']) for e in cfg['egress']]
+for name,z,w,h,depth in openings+[('warehouse_entry',0,7.7,2.8,.4)]:
  # Ray from either side of finite opening prism, all actual exported meshes.
  keep=(t[:,:,0].max(1)>=8-w/2)&(t[:,:,0].min(1)<=8+w/2)&(t[:,:,1].min(1)<=h)&(t[:,:,2].min(1)<=z+depth/2)&(t[:,:,2].max(1)>=z-depth/2)
  q=t[keep];e1=q[:,1]-q[:,0];e2=q[:,2]-q[:,0];direction=np.array([0,0,1]);p=np.cross(np.broadcast_to(direction,e2.shape),e2);det=np.einsum('ij,ij->i',e1,p);valid=np.abs(det)>1e-9;inv=np.divide(1,det,out=np.zeros_like(det),where=valid);blocked=0
