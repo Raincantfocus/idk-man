@@ -1,0 +1,170 @@
+{
+	"doors": [
+		{
+			"center": "(-5.0, 0.91, -6.4)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-5.0, 0.91, -4.1)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-5.0, 0.91, 4.1)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-5.0, 0.91, 6.4)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(5.0, 0.91, -6.4)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(5.0, 0.91, -4.1)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(5.0, 0.91, 4.1)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(5.0, 0.91, 6.4)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-10.0, 0.91, 0.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(10.0, 0.91, 0.0)",
+			"clear": true,
+			"fraction": 1.0
+		}
+	],
+	"engine": "4.6.3-stable (official)",
+	"errors": [],
+	"navigation_polygons": 1030,
+	"routes": [
+		{
+			"closest": "(0.0, 0.2, 31.5)",
+			"connected": true,
+			"end": "(-0.0, 0.2, 31.5)",
+			"name": "BRAVO APPROACH",
+			"path_points": 2
+		},
+		{
+			"closest": "(0.0, 0.2, -31.5)",
+			"connected": true,
+			"end": "(-0.0, 0.2, -31.5)",
+			"name": "ALPHA APPROACH",
+			"path_points": 41
+		},
+		{
+			"closest": "(-48.35, 4.2, 0.000002)",
+			"connected": true,
+			"end": "(-48.35, 4.2, 0.0)",
+			"name": "WEST CATWALK",
+			"path_points": 32
+		},
+		{
+			"closest": "(48.25, 4.2, 0.0)",
+			"connected": true,
+			"end": "(48.25, 4.2, 0.000002)",
+			"name": "EAST CATWALK",
+			"path_points": 19
+		},
+		{
+			"closest": "(0.0, 6.2, 0.0)",
+			"connected": true,
+			"end": "(0.0, 6.2, -0.0)",
+			"name": "CENTRAL TOWER",
+			"path_points": 27
+		},
+		{
+			"closest": "(-32.0, 0.2, -12.0)",
+			"connected": true,
+			"end": "(-32.0, 0.2, -12.0)",
+			"name": "WEST AISLES",
+			"path_points": 31
+		},
+		{
+			"closest": "(38.0, 0.2, 14.0)",
+			"connected": true,
+			"end": "(38.0, 0.2, 14.0)",
+			"name": "EAST VEHICLES",
+			"path_points": 21
+		}
+	],
+	"spawns": [
+		{
+			"connected": true,
+			"path_points": 49,
+			"point": "(-40.0, 0.05, -31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 42,
+			"point": "(-24.0, 0.05, -31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 29,
+			"point": "(0.0, 0.05, -31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 46,
+			"point": "(28.0, 0.05, -31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 15,
+			"point": "(-40.0, 0.05, 31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 10,
+			"point": "(-24.0, 0.05, 31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 2,
+			"point": "(0.0, 0.05, 31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 9,
+			"point": "(28.0, 0.05, 31.5)"
+		},
+		{
+			"connected": true,
+			"path_points": 29,
+			"point": "(-43.0, 0.05, 0.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 30,
+			"point": "(43.0, 0.05, 0.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 36,
+			"point": "(-24.0, 0.05, -19.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 17,
+			"point": "(24.0, 0.05, 19.0)"
+		}
+	]
+}

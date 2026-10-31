@@ -20,22 +20,32 @@ func setup(owner_player: CharacterBody3D) -> void:
 func ray(from: Vector3, to: Vector3) -> Dictionary:
 	return player.get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(from, to, 1))
 
-func clear_at(foot: Vector3) -> bool:
+func clear_at(foot: Vector3, low_profile: bool = false) -> bool:
 	var query := PhysicsShapeQueryParameters3D.new()
-	query.shape = player.standing_shape
-	query.transform = Transform3D(Basis.IDENTITY, foot + Vector3.UP * (player.standing_shape.height/2))
+	query.shape = player.capsule.shape if low_profile else player.standing_shape
+	query.transform = Transform3D(Basis.IDENTITY, foot + Vector3.UP * (query.shape.height/2))
 	query.collision_mask = player.collision_mask
 	query.exclude = [player.get_rid()]
 	query.margin = 0.005
 	return player.get_world_3d().direct_space_state.intersect_shape(query, 1).is_empty()
 
-func path_clear(route: PackedVector3Array) -> bool:
+func path_clear(route: PackedVector3Array, low_profile: bool = false) -> bool:
+	var saved_height: float = player.capsule.shape.height
+	var saved_y: float = player.capsule.position.y
+	if low_profile:
+		player.capsule.shape.height = 1.0
+		player.capsule.position.y = .5
+	var clear := true
 	for i in range(1, route.size()):
 		var pose := player.global_transform
 		pose.origin = route[i - 1]
 		if player.test_move(pose, route[i] - route[i - 1]):
-			return false
-	return clear_at(route[-1])
+			clear = false
+			break
+	clear = clear and clear_at(route[-1],low_profile)
+	player.capsule.shape.height = saved_height
+	player.capsule.position.y = saved_y
+	return clear
 
 func find_route(direction: Vector3) -> Dictionary:
 	if direction.length_squared() < 0.5 or player.capsule.shape.height < 1.7:
@@ -46,6 +56,18 @@ func find_route(direction: Vector3) -> Dictionary:
 	if face.is_empty():
 		face = ray(start + Vector3.UP, start + Vector3.UP + direction * REACH)
 	if face.is_empty() or face.collider.get_meta("surface_tag","") == "NO_GRIP" or absf(face.normal.y) > 0.2 or face.normal.dot(-direction) < 0.6:
+		return {}
+	# Explicit map-tagged windows only: tuck through the 1.2m aperture.
+	# The standard standing vault path and all weapon/gameplay tuning stay intact.
+	if face.collider.has_meta("vault_window_top"):
+		var sill_y: float = face.collider.get_meta("vault_window_top")
+		var peak := Vector3(start.x,sill_y+.035,start.z)
+		var beyond: Vector3 = face.position+direction*1.25
+		var floor_hit := ray(Vector3(beyond.x,sill_y,beyond.z),Vector3(beyond.x,start.y-1.25,beyond.z))
+		if not floor_hit.is_empty() and floor_hit.normal.y>.85:
+			var landing: Vector3 = floor_hit.position+Vector3.UP*.035
+			var route := PackedVector3Array([start,peak,Vector3(landing.x,peak.y,landing.z),landing])
+			if path_clear(route,true):return {"kind":"WINDOW VAULT","points":route,"low_profile":true}
 		return {}
 	var probe: Vector3 = face.position + direction * 0.48
 	var top := ray(Vector3(probe.x, start.y + MAX_HEIGHT + 0.08, probe.z), Vector3(probe.x, start.y + MIN_HEIGHT, probe.z))
@@ -79,6 +101,10 @@ func try_start(direction: Vector3) -> bool:
 	var plan := find_route(direction)
 	if plan.is_empty():
 		return false
+	if plan.get("low_profile",false):
+		player.capsule.shape.height = 1.0
+		player.capsule.position.y = .5
+		player.camera.position.y = .9
 	kind = plan.kind
 	points = plan.points
 	total_length = 0

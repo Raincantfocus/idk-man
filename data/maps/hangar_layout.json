@@ -1,0 +1,5138 @@
+{
+ "meta": {
+  "name": "Zero-Line hangar arena",
+  "units": "metres",
+  "axes": "x east, z north, y up; origin at floor centre; rot_deg is CCW seen from above, long axis at rot 0 along +x",
+  "symmetry": "180 degree rotation about the origin (west/east spawns are equal)",
+  "player_capsule_radius": 0.34,
+  "note": "walls/objects with a,b are segments (length from a to b, thickness given); objects with center+size are oriented boxes [L,W,H]"
+ },
+ "warehouse": {
+  "interior": [
+   160.0,
+   100.0
+  ],
+  "clear_height": 14.0,
+  "x_range": [
+   -80.0,
+   80.0
+  ],
+  "z_range": [
+   -50.0,
+   50.0
+  ]
+ },
+ "perimeter": {
+  "x": [
+   -30.0,
+   30.0
+  ],
+  "z": [
+   -16.0,
+   16.0
+  ],
+  "wall_height": 3.4,
+  "open_top": true
+ },
+ "rooms": [
+  {
+   "id": "A1",
+   "bounds": [
+    -22,
+    -16,
+    -14,
+    -8
+   ],
+   "role": "room"
+  },
+  {
+   "id": "A2",
+   "bounds": [
+    -22,
+    -8,
+    -14,
+    8
+   ],
+   "role": "wide room / main E-W lane"
+  },
+  {
+   "id": "A3",
+   "bounds": [
+    -22,
+    8,
+    -14,
+    16
+   ],
+   "role": "room"
+  },
+  {
+   "id": "B1",
+   "bounds": [
+    -14,
+    -16,
+    -6,
+    -8
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "B2",
+   "bounds": [
+    -14,
+    -8,
+    -6,
+    8
+   ],
+   "role": "wide room / main E-W lane"
+  },
+  {
+   "id": "B3",
+   "bounds": [
+    -14,
+    8,
+    -6,
+    16
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "C1",
+   "bounds": [
+    -6,
+    -16,
+    6,
+    -8
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "C2",
+   "bounds": [
+    -6,
+    -8,
+    6,
+    8
+   ],
+   "role": "hub (player start, open atrium)"
+  },
+  {
+   "id": "C3",
+   "bounds": [
+    -6,
+    8,
+    6,
+    16
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "D1",
+   "bounds": [
+    6,
+    -16,
+    14,
+    -8
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "D2",
+   "bounds": [
+    6,
+    -8,
+    14,
+    8
+   ],
+   "role": "wide room / main E-W lane"
+  },
+  {
+   "id": "D3",
+   "bounds": [
+    6,
+    8,
+    14,
+    16
+   ],
+   "role": "dead-end room (cover, ambush)"
+  },
+  {
+   "id": "E1",
+   "bounds": [
+    14,
+    -16,
+    22,
+    -8
+   ],
+   "role": "room"
+  },
+  {
+   "id": "E2",
+   "bounds": [
+    14,
+    -8,
+    22,
+    8
+   ],
+   "role": "wide room / main E-W lane"
+  },
+  {
+   "id": "E3",
+   "bounds": [
+    14,
+    8,
+    22,
+    16
+   ],
+   "role": "room"
+  },
+  {
+   "id": "HALL_W",
+   "bounds": [
+    -30,
+    -16,
+    -22,
+    16
+   ],
+   "role": "west breach hall: enemy spawns W_SPAWN_A/B, two exterior doors"
+  },
+  {
+   "id": "HALL_E",
+   "bounds": [
+    22,
+    -16,
+    30,
+    16
+   ],
+   "role": "east breach hall: enemy spawns E_SPAWN_A/B, two exterior doors"
+  }
+ ],
+ "walls": [
+  {
+   "id": "W001",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -30.0,
+    -16.0
+   ],
+   "b": [
+    -10.8,
+    -16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W002",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -9.2,
+    -16.0
+   ],
+   "b": [
+    9.2,
+    -16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W003",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    10.8,
+    -16.0
+   ],
+   "b": [
+    30.0,
+    -16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W004",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -30.0,
+    16.0
+   ],
+   "b": [
+    -10.8,
+    16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W005",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -9.2,
+    16.0
+   ],
+   "b": [
+    9.2,
+    16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W006",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    10.8,
+    16.0
+   ],
+   "b": [
+    30.0,
+    16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W007",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -30.0,
+    -16.0
+   ],
+   "b": [
+    -30.0,
+    -10.2
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W008",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -30.0,
+    -7.8
+   ],
+   "b": [
+    -30.0,
+    7.8
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W009",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    -30.0,
+    10.2
+   ],
+   "b": [
+    -30.0,
+    16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W010",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    30.0,
+    -16.0
+   ],
+   "b": [
+    30.0,
+    -10.2
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W011",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    30.0,
+    -7.8
+   ],
+   "b": [
+    30.0,
+    7.8
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W012",
+   "kind": "perimeter",
+   "material": "concrete",
+   "a": [
+    30.0,
+    10.2
+   ],
+   "b": [
+    30.0,
+    16.0
+   ],
+   "height": 3.4,
+   "thickness": 0.4
+  },
+  {
+   "id": "W013",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    -22.0,
+    -16.0
+   ],
+   "b": [
+    -22.0,
+    -12.7
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W014",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    -22.0,
+    -11.3
+   ],
+   "b": [
+    -22.0,
+    -1.2
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W015",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    -22.0,
+    1.2
+   ],
+   "b": [
+    -22.0,
+    11.3
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W016",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    -22.0,
+    12.7
+   ],
+   "b": [
+    -22.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W017",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    22.0,
+    -16.0
+   ],
+   "b": [
+    22.0,
+    -12.7
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W018",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    22.0,
+    -11.3
+   ],
+   "b": [
+    22.0,
+    -1.2
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W019",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    22.0,
+    1.2
+   ],
+   "b": [
+    22.0,
+    11.3
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W020",
+   "kind": "hall_wall",
+   "material": "concrete",
+   "a": [
+    22.0,
+    12.7
+   ],
+   "b": [
+    22.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W021",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    -16.0
+   ],
+   "b": [
+    -14.0,
+    -12.6
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W022",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    -11.4
+   ],
+   "b": [
+    -14.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W023",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    -8.0
+   ],
+   "b": [
+    -14.0,
+    2.5
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W024",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    5.5
+   ],
+   "b": [
+    -14.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W025",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    8.0
+   ],
+   "b": [
+    -14.0,
+    11.4
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W026",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    12.6
+   ],
+   "b": [
+    -14.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W027",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    -16.0
+   ],
+   "b": [
+    -6.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W028",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    -8.0
+   ],
+   "b": [
+    -6.0,
+    -5.5
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W029",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    -2.5
+   ],
+   "b": [
+    -6.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W030",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    8.0
+   ],
+   "b": [
+    -6.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W031",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    -16.0
+   ],
+   "b": [
+    6.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W032",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    -8.0
+   ],
+   "b": [
+    6.0,
+    2.5
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W033",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    5.5
+   ],
+   "b": [
+    6.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W034",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    8.0
+   ],
+   "b": [
+    6.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W035",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    -16.0
+   ],
+   "b": [
+    14.0,
+    -12.6
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W036",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    -11.4
+   ],
+   "b": [
+    14.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W037",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    -8.0
+   ],
+   "b": [
+    14.0,
+    -5.5
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W038",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    -2.5
+   ],
+   "b": [
+    14.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W039",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    8.0
+   ],
+   "b": [
+    14.0,
+    11.4
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W040",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    12.6
+   ],
+   "b": [
+    14.0,
+    16.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W041",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -22.0,
+    -8.0
+   ],
+   "b": [
+    -18.6,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W042",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -17.4,
+    -8.0
+   ],
+   "b": [
+    -14.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W043",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    -8.0
+   ],
+   "b": [
+    -6.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W044",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    -8.0
+   ],
+   "b": [
+    -0.6,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W045",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    0.6,
+    -8.0
+   ],
+   "b": [
+    6.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W046",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    -8.0
+   ],
+   "b": [
+    14.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W047",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    -8.0
+   ],
+   "b": [
+    17.4,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W048",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    18.6,
+    -8.0
+   ],
+   "b": [
+    22.0,
+    -8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W049",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -22.0,
+    8.0
+   ],
+   "b": [
+    -18.6,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W050",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -17.4,
+    8.0
+   ],
+   "b": [
+    -14.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W051",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -14.0,
+    8.0
+   ],
+   "b": [
+    -6.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W052",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    -6.0,
+    8.0
+   ],
+   "b": [
+    -0.6,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W053",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    0.6,
+    8.0
+   ],
+   "b": [
+    6.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W054",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    6.0,
+    8.0
+   ],
+   "b": [
+    14.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W055",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    14.0,
+    8.0
+   ],
+   "b": [
+    17.4,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  },
+  {
+   "id": "W056",
+   "kind": "partition",
+   "material": "plaster",
+   "a": [
+    18.6,
+    8.0
+   ],
+   "b": [
+    22.0,
+    8.0
+   ],
+   "height": 3.0,
+   "thickness": 0.25
+  }
+ ],
+ "openings": [
+  {
+   "id": "W01",
+   "type": "window",
+   "center": [
+    -10.0,
+    -16.0
+   ],
+   "width": 1.6,
+   "height": 1.2,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "W02",
+   "type": "window",
+   "center": [
+    10.0,
+    -16.0
+   ],
+   "width": 1.6,
+   "height": 1.2,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "W03",
+   "type": "window",
+   "center": [
+    -10.0,
+    16.0
+   ],
+   "width": 1.6,
+   "height": 1.2,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "W04",
+   "type": "window",
+   "center": [
+    10.0,
+    16.0
+   ],
+   "width": 1.6,
+   "height": 1.2,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "E05",
+   "type": "exterior_door",
+   "center": [
+    -30.0,
+    -9.0
+   ],
+   "width": 2.4,
+   "height": 2.6,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "E06",
+   "type": "exterior_door",
+   "center": [
+    -30.0,
+    9.0
+   ],
+   "width": 2.4,
+   "height": 2.6,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "E07",
+   "type": "exterior_door",
+   "center": [
+    30.0,
+    -9.0
+   ],
+   "width": 2.4,
+   "height": 2.6,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "E08",
+   "type": "exterior_door",
+   "center": [
+    30.0,
+    9.0
+   ],
+   "width": 2.4,
+   "height": 2.6,
+   "wall_kind": "perimeter"
+  },
+  {
+   "id": "H09",
+   "type": "hall_door",
+   "center": [
+    -22.0,
+    -12.0
+   ],
+   "width": 1.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "H10",
+   "type": "hall_door",
+   "center": [
+    -22.0,
+    0.0
+   ],
+   "width": 2.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "H11",
+   "type": "hall_door",
+   "center": [
+    -22.0,
+    12.0
+   ],
+   "width": 1.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "H12",
+   "type": "hall_door",
+   "center": [
+    22.0,
+    -12.0
+   ],
+   "width": 1.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "H13",
+   "type": "hall_door",
+   "center": [
+    22.0,
+    0.0
+   ],
+   "width": 2.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "H14",
+   "type": "hall_door",
+   "center": [
+    22.0,
+    12.0
+   ],
+   "width": 1.4,
+   "height": 2.2,
+   "wall_kind": "hall_wall"
+  },
+  {
+   "id": "D15",
+   "type": "door",
+   "center": [
+    -14.0,
+    -12.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "O16",
+   "type": "opening",
+   "center": [
+    -14.0,
+    4.0
+   ],
+   "width": 3.0,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D17",
+   "type": "door",
+   "center": [
+    -14.0,
+    12.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "O18",
+   "type": "opening",
+   "center": [
+    -6.0,
+    -4.0
+   ],
+   "width": 3.0,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "O19",
+   "type": "opening",
+   "center": [
+    6.0,
+    4.0
+   ],
+   "width": 3.0,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D20",
+   "type": "door",
+   "center": [
+    14.0,
+    -12.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "O21",
+   "type": "opening",
+   "center": [
+    14.0,
+    -4.0
+   ],
+   "width": 3.0,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D22",
+   "type": "door",
+   "center": [
+    14.0,
+    12.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D23",
+   "type": "door",
+   "center": [
+    -18.0,
+    -8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D24",
+   "type": "door",
+   "center": [
+    0.0,
+    -8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D25",
+   "type": "door",
+   "center": [
+    18.0,
+    -8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D26",
+   "type": "door",
+   "center": [
+    -18.0,
+    8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D27",
+   "type": "door",
+   "center": [
+    0.0,
+    8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  },
+  {
+   "id": "D28",
+   "type": "door",
+   "center": [
+    18.0,
+    8.0
+   ],
+   "width": 1.2,
+   "height": 2.2,
+   "wall_kind": "partition"
+  }
+ ],
+ "objects": [
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -26.0,
+    -4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER001"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -26.0,
+    4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER002"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -28.8,
+    -13.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU003"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -28.8,
+    13.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU004"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -19.0,
+    -13.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU005"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -16.5,
+    -10.0
+   ],
+   "b": [
+    -16.5,
+    -13.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO006"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -11.0,
+    -14.4
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU007"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -7.4,
+    -10.4
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU008"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -3.0,
+    -14.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU009"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -1.2,
+    -12.0
+   ],
+   "b": [
+    -1.2,
+    -9.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO010"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -20.0,
+    4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU011"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -18.0,
+    -4.5
+   ],
+   "b": [
+    -18.0,
+    -1.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO012"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -16.5,
+    4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER013"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -10.0,
+    5.6
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU014"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -12.0,
+    -4.5
+   ],
+   "b": [
+    -8.0,
+    -4.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO015"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -19.5,
+    14.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU016"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -16.5,
+    10.0
+   ],
+   "b": [
+    -16.5,
+    13.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO017"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -11.0,
+    14.4
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU018"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -7.4,
+    10.4
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU019"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -3.0,
+    14.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU020"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -1.2,
+    12.0
+   ],
+   "b": [
+    -1.2,
+    9.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO021"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -4.5,
+    -3.8
+   ],
+   "b": [
+    -1.5,
+    -3.8
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO022"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -1.8,
+    3.5
+   ],
+   "b": [
+    -1.8,
+    6.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO023"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -4.3,
+    5.8
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU024"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -4.2,
+    -0.2
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU025"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -34.5,
+    9.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER026"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -38.5,
+    13.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER027"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -38.5,
+    4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER028"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -34.5,
+    -9.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER029"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -38.5,
+    -4.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER030"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -38.5,
+    -13.5
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER031"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -63.0,
+    11.0
+   ],
+   "b": [
+    -58.7,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO032"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -57.3,
+    11.0
+   ],
+   "b": [
+    -45.0,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO033"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -63.0,
+    -11.0
+   ],
+   "b": [
+    -50.7,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO034"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -49.3,
+    -11.0
+   ],
+   "b": [
+    -45.0,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO035"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -63.0,
+    -11.0
+   ],
+   "b": [
+    -63.0,
+    -0.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO036"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -63.0,
+    0.7
+   ],
+   "b": [
+    -63.0,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO037"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -45.0,
+    -11.0
+   ],
+   "b": [
+    -45.0,
+    -5.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO038"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -45.0,
+    -4.3
+   ],
+   "b": [
+    -45.0,
+    4.3
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO039"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -45.0,
+    5.7
+   ],
+   "b": [
+    -45.0,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO040"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -54.0,
+    -11.0
+   ],
+   "b": [
+    -54.0,
+    -3.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO041"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -54.0,
+    3.0
+   ],
+   "b": [
+    -54.0,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO042"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -63.0,
+    0.0
+   ],
+   "b": [
+    -58.0,
+    0.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO043"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -50.0,
+    0.0
+   ],
+   "b": [
+    -45.0,
+    0.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO044"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -60.0,
+    6.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU045"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -48.0,
+    -7.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU046"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    -58.0,
+    -6.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF047"
+  },
+  {
+   "type": "box_truck",
+   "center": [
+    -70.0,
+    27.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    8.0,
+    2.5,
+    3.2
+   ],
+   "y_base": 0.0,
+   "id": "BOX048"
+  },
+  {
+   "type": "car",
+   "center": [
+    -62.0,
+    31.0
+   ],
+   "rot_deg": 25,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR049"
+  },
+  {
+   "type": "car",
+   "center": [
+    -58.0,
+    21.0
+   ],
+   "rot_deg": -15,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR050"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    -66.0,
+    38.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC051"
+  },
+  {
+   "type": "semi_trailer",
+   "center": [
+    -70.0,
+    -30.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    13.6,
+    2.5,
+    4.0
+   ],
+   "y_base": 0.0,
+   "id": "SEM052"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    -66.0,
+    -20.0
+   ],
+   "rot_deg": 80,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC053"
+  },
+  {
+   "type": "car",
+   "center": [
+    -60.0,
+    -26.0
+   ],
+   "rot_deg": 10,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR054"
+  },
+  {
+   "type": "car",
+   "center": [
+    -56.0,
+    -35.0
+   ],
+   "rot_deg": -30,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR055"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -52.0,
+    24.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU056"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    -52.0,
+    22.6
+   ],
+   "rot_deg": 0,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF057"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -50.0,
+    -23.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU058"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -41.0,
+    24.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU059"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -62.0,
+    -41.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER060"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -59.0,
+    -41.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER061"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -56.0,
+    -41.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER062"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -53.0,
+    -41.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER063"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -50.0,
+    -41.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER064"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -45.0,
+    28.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER065"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -45.0,
+    31.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER066"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -45.0,
+    34.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER067"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -46.0,
+    14.0
+   ],
+   "b": [
+    -46.0,
+    22.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA068"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -46.0,
+    38.0
+   ],
+   "b": [
+    -46.0,
+    46.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA069"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -46.0,
+    -14.0
+   ],
+   "b": [
+    -46.0,
+    -26.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA070"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -76.0,
+    -14.0
+   ],
+   "b": [
+    -68.0,
+    -14.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA071"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -42.0,
+    31.0
+   ],
+   "b": [
+    -39.0,
+    31.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO072"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -40.0,
+    -30.0
+   ],
+   "b": [
+    -40.0,
+    -33.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO073"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -40.0,
+    40.0
+   ],
+   "b": [
+    -37.0,
+    40.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO074"
+  },
+  {
+   "type": "semi_trailer",
+   "center": [
+    -12.0,
+    28.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    13.6,
+    2.5,
+    4.0
+   ],
+   "y_base": 0.0,
+   "id": "SEM075"
+  },
+  {
+   "type": "box_truck",
+   "center": [
+    14.0,
+    33.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    8.0,
+    2.5,
+    3.2
+   ],
+   "y_base": 0.0,
+   "id": "BOX076"
+  },
+  {
+   "type": "car",
+   "center": [
+    22.0,
+    26.0
+   ],
+   "rot_deg": 30,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR077"
+  },
+  {
+   "type": "car",
+   "center": [
+    -24.0,
+    34.0
+   ],
+   "rot_deg": -20,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR078"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    2.0,
+    38.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC079"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -1.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER080"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    1.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER081"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    4.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER082"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    7.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER083"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    10.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER084"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    13.5,
+    24.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER085"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -12.0,
+    38.0
+   ],
+   "b": [
+    -5.7,
+    38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO086"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -4.3,
+    38.0
+   ],
+   "b": [
+    0.0,
+    38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO087"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -12.0,
+    46.0
+   ],
+   "b": [
+    -12.0,
+    42.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO088"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -12.0,
+    41.3
+   ],
+   "b": [
+    -12.0,
+    38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO089"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    0.0,
+    38.0
+   ],
+   "b": [
+    0.0,
+    42.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO090"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -7.0,
+    41.5
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU091"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -26.0,
+    24.0
+   ],
+   "rot_deg": 0,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU092"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    -26.0,
+    22.6
+   ],
+   "rot_deg": 0,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF093"
+  },
+  {
+   "type": "couch",
+   "center": [
+    24.0,
+    40.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU094"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    18.0,
+    38.0
+   ],
+   "b": [
+    18.0,
+    46.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA095"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -28.0,
+    28.0
+   ],
+   "b": [
+    -28.0,
+    38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA096"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    8.0,
+    27.5
+   ],
+   "b": [
+    8.0,
+    35.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA097"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    20.0,
+    30.0
+   ],
+   "b": [
+    23.0,
+    30.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO098"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -20.0,
+    20.0
+   ],
+   "b": [
+    -20.0,
+    23.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO099"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    12.0,
+    41.0
+   ],
+   "rot_deg": 90,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER100"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    26.0,
+    4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER101"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    26.0,
+    -4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER102"
+  },
+  {
+   "type": "couch",
+   "center": [
+    28.8,
+    13.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU103"
+  },
+  {
+   "type": "couch",
+   "center": [
+    28.8,
+    -13.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU104"
+  },
+  {
+   "type": "couch",
+   "center": [
+    19.0,
+    13.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU105"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    16.5,
+    10.0
+   ],
+   "b": [
+    16.5,
+    13.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO106"
+  },
+  {
+   "type": "couch",
+   "center": [
+    11.0,
+    14.4
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU107"
+  },
+  {
+   "type": "couch",
+   "center": [
+    7.4,
+    10.4
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU108"
+  },
+  {
+   "type": "couch",
+   "center": [
+    3.0,
+    14.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU109"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    1.2,
+    12.0
+   ],
+   "b": [
+    1.2,
+    9.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO110"
+  },
+  {
+   "type": "couch",
+   "center": [
+    20.0,
+    -4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU111"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    18.0,
+    4.5
+   ],
+   "b": [
+    18.0,
+    1.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO112"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    16.5,
+    -4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER113"
+  },
+  {
+   "type": "couch",
+   "center": [
+    10.0,
+    -5.6
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU114"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    12.0,
+    4.5
+   ],
+   "b": [
+    8.0,
+    4.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO115"
+  },
+  {
+   "type": "couch",
+   "center": [
+    19.5,
+    -14.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU116"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    16.5,
+    -10.0
+   ],
+   "b": [
+    16.5,
+    -13.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO117"
+  },
+  {
+   "type": "couch",
+   "center": [
+    11.0,
+    -14.4
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU118"
+  },
+  {
+   "type": "couch",
+   "center": [
+    7.4,
+    -10.4
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU119"
+  },
+  {
+   "type": "couch",
+   "center": [
+    3.0,
+    -14.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU120"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    1.2,
+    -12.0
+   ],
+   "b": [
+    1.2,
+    -9.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO121"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    4.5,
+    3.8
+   ],
+   "b": [
+    1.5,
+    3.8
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO122"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    1.8,
+    -3.5
+   ],
+   "b": [
+    1.8,
+    -6.5
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO123"
+  },
+  {
+   "type": "couch",
+   "center": [
+    4.3,
+    -5.8
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU124"
+  },
+  {
+   "type": "couch",
+   "center": [
+    4.2,
+    0.2
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU125"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    34.5,
+    -9.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER126"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    38.5,
+    -13.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER127"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    38.5,
+    -4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER128"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    34.5,
+    9.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER129"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    38.5,
+    4.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER130"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    38.5,
+    13.5
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER131"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    63.0,
+    -11.0
+   ],
+   "b": [
+    58.7,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO132"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    57.3,
+    -11.0
+   ],
+   "b": [
+    45.0,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO133"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    63.0,
+    11.0
+   ],
+   "b": [
+    50.7,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO134"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    49.3,
+    11.0
+   ],
+   "b": [
+    45.0,
+    11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO135"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    63.0,
+    11.0
+   ],
+   "b": [
+    63.0,
+    0.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO136"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    63.0,
+    -0.7
+   ],
+   "b": [
+    63.0,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO137"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    45.0,
+    11.0
+   ],
+   "b": [
+    45.0,
+    5.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO138"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    45.0,
+    4.3
+   ],
+   "b": [
+    45.0,
+    -4.3
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO139"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    45.0,
+    -5.7
+   ],
+   "b": [
+    45.0,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO140"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    54.0,
+    11.0
+   ],
+   "b": [
+    54.0,
+    3.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO141"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    54.0,
+    -3.0
+   ],
+   "b": [
+    54.0,
+    -11.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO142"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    63.0,
+    -0.0
+   ],
+   "b": [
+    58.0,
+    -0.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO143"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    50.0,
+    -0.0
+   ],
+   "b": [
+    45.0,
+    -0.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO144"
+  },
+  {
+   "type": "couch",
+   "center": [
+    60.0,
+    -6.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU145"
+  },
+  {
+   "type": "couch",
+   "center": [
+    48.0,
+    7.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU146"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    58.0,
+    6.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF147"
+  },
+  {
+   "type": "box_truck",
+   "center": [
+    70.0,
+    -27.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    8.0,
+    2.5,
+    3.2
+   ],
+   "y_base": 0.0,
+   "id": "BOX148"
+  },
+  {
+   "type": "car",
+   "center": [
+    62.0,
+    -31.0
+   ],
+   "rot_deg": 205,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR149"
+  },
+  {
+   "type": "car",
+   "center": [
+    58.0,
+    -21.0
+   ],
+   "rot_deg": 165,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR150"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    66.0,
+    -38.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC151"
+  },
+  {
+   "type": "semi_trailer",
+   "center": [
+    70.0,
+    30.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    13.6,
+    2.5,
+    4.0
+   ],
+   "y_base": 0.0,
+   "id": "SEM152"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    66.0,
+    20.0
+   ],
+   "rot_deg": 260,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC153"
+  },
+  {
+   "type": "car",
+   "center": [
+    60.0,
+    26.0
+   ],
+   "rot_deg": 190,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR154"
+  },
+  {
+   "type": "car",
+   "center": [
+    56.0,
+    35.0
+   ],
+   "rot_deg": 150,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR155"
+  },
+  {
+   "type": "couch",
+   "center": [
+    52.0,
+    -24.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU156"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    52.0,
+    -22.6
+   ],
+   "rot_deg": 180,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF157"
+  },
+  {
+   "type": "couch",
+   "center": [
+    50.0,
+    23.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU158"
+  },
+  {
+   "type": "couch",
+   "center": [
+    41.0,
+    -24.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU159"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    62.0,
+    41.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER160"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    59.0,
+    41.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER161"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    56.0,
+    41.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER162"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    53.0,
+    41.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER163"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    50.0,
+    41.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER164"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    45.0,
+    -28.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER165"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    45.0,
+    -31.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER166"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    45.0,
+    -34.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER167"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    46.0,
+    -14.0
+   ],
+   "b": [
+    46.0,
+    -22.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA168"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    46.0,
+    -38.0
+   ],
+   "b": [
+    46.0,
+    -46.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA169"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    46.0,
+    14.0
+   ],
+   "b": [
+    46.0,
+    26.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA170"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    76.0,
+    14.0
+   ],
+   "b": [
+    68.0,
+    14.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA171"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    42.0,
+    -31.0
+   ],
+   "b": [
+    39.0,
+    -31.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO172"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    40.0,
+    30.0
+   ],
+   "b": [
+    40.0,
+    33.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO173"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    40.0,
+    -40.0
+   ],
+   "b": [
+    37.0,
+    -40.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO174"
+  },
+  {
+   "type": "semi_trailer",
+   "center": [
+    12.0,
+    -28.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    13.6,
+    2.5,
+    4.0
+   ],
+   "y_base": 0.0,
+   "id": "SEM175"
+  },
+  {
+   "type": "box_truck",
+   "center": [
+    -14.0,
+    -33.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    8.0,
+    2.5,
+    3.2
+   ],
+   "y_base": 0.0,
+   "id": "BOX176"
+  },
+  {
+   "type": "car",
+   "center": [
+    -22.0,
+    -26.0
+   ],
+   "rot_deg": 210,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR177"
+  },
+  {
+   "type": "car",
+   "center": [
+    24.0,
+    -34.0
+   ],
+   "rot_deg": 160,
+   "size": [
+    4.5,
+    1.8,
+    1.5
+   ],
+   "y_base": 0.0,
+   "id": "CAR178"
+  },
+  {
+   "type": "pickup",
+   "center": [
+    -2.0,
+    -38.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    5.3,
+    2.0,
+    1.9
+   ],
+   "y_base": 0.0,
+   "id": "PIC179"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    1.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER180"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -1.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER181"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -4.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER182"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -7.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER183"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -10.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER184"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -13.5,
+    -24.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER185"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    12.0,
+    -38.0
+   ],
+   "b": [
+    5.7,
+    -38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO186"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    4.3,
+    -38.0
+   ],
+   "b": [
+    -0.0,
+    -38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO187"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    12.0,
+    -46.0
+   ],
+   "b": [
+    12.0,
+    -42.7
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO188"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    12.0,
+    -41.3
+   ],
+   "b": [
+    12.0,
+    -38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO189"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -0.0,
+    -38.0
+   ],
+   "b": [
+    -0.0,
+    -42.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO190"
+  },
+  {
+   "type": "couch",
+   "center": [
+    7.0,
+    -41.5
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU191"
+  },
+  {
+   "type": "couch",
+   "center": [
+    26.0,
+    -24.0
+   ],
+   "rot_deg": 180,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU192"
+  },
+  {
+   "type": "coffee_table",
+   "center": [
+    26.0,
+    -22.6
+   ],
+   "rot_deg": 180,
+   "size": [
+    1.2,
+    0.6,
+    0.45
+   ],
+   "y_base": 0.0,
+   "id": "COF193"
+  },
+  {
+   "type": "couch",
+   "center": [
+    -24.0,
+    -40.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    2.0,
+    0.9,
+    0.85
+   ],
+   "y_base": 0.0,
+   "id": "COU194"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -18.0,
+    -38.0
+   ],
+   "b": [
+    -18.0,
+    -46.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA195"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    28.0,
+    -28.0
+   ],
+   "b": [
+    28.0,
+    -38.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA196"
+  },
+  {
+   "type": "chain_fence",
+   "a": [
+    -8.0,
+    -27.5
+   ],
+   "b": [
+    -8.0,
+    -35.0
+   ],
+   "height": 2.4,
+   "thickness": 0.08,
+   "y_base": 0.0,
+   "id": "CHA197"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -20.0,
+    -30.0
+   ],
+   "b": [
+    -23.0,
+    -30.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO198"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    20.0,
+    -20.0
+   ],
+   "b": [
+    20.0,
+    -23.0
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO199"
+  },
+  {
+   "type": "jersey_barrier",
+   "center": [
+    -12.0,
+    -41.0
+   ],
+   "rot_deg": 270,
+   "size": [
+    3.0,
+    0.6,
+    0.8
+   ],
+   "y_base": 0.0,
+   "id": "JER200"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -29.883,
+    -37.658
+   ],
+   "b": [
+    -31.383,
+    -35.06
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO201"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -31.383,
+    -35.06
+   ],
+   "b": [
+    -33.981,
+    -36.56
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO202"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    29.883,
+    37.658
+   ],
+   "b": [
+    31.383,
+    35.06
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO203"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    31.383,
+    35.06
+   ],
+   "b": [
+    33.981,
+    36.56
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO204"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -66.399,
+    -42.72
+   ],
+   "b": [
+    -66.399,
+    -39.72
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO205"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -66.399,
+    -39.72
+   ],
+   "b": [
+    -69.399,
+    -39.72
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO206"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    66.399,
+    42.72
+   ],
+   "b": [
+    66.399,
+    39.72
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO207"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    66.399,
+    39.72
+   ],
+   "b": [
+    69.399,
+    39.72
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO208"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -28.696,
+    -44.606
+   ],
+   "b": [
+    -30.817,
+    -42.485
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO209"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -30.817,
+    -42.485
+   ],
+   "b": [
+    -32.939,
+    -44.606
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO210"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    28.696,
+    44.606
+   ],
+   "b": [
+    30.817,
+    42.485
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO211"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    30.817,
+    42.485
+   ],
+   "b": [
+    32.939,
+    44.606
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO212"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    31.466,
+    -44.992
+   ],
+   "b": [
+    29.345,
+    -42.871
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO213"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    29.345,
+    -42.871
+   ],
+   "b": [
+    27.224,
+    -44.992
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO214"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -31.466,
+    44.992
+   ],
+   "b": [
+    -29.345,
+    42.871
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO215"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -29.345,
+    42.871
+   ],
+   "b": [
+    -27.224,
+    44.992
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO216"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -75.928,
+    33.519
+   ],
+   "b": [
+    -73.33,
+    35.019
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO217"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -73.33,
+    35.019
+   ],
+   "b": [
+    -74.83,
+    37.617
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO218"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    75.928,
+    -33.519
+   ],
+   "b": [
+    73.33,
+    -35.019
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO219"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    73.33,
+    -35.019
+   ],
+   "b": [
+    74.83,
+    -37.617
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO220"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -48.21,
+    -31.82
+   ],
+   "b": [
+    -48.21,
+    -28.82
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO221"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    -48.21,
+    -28.82
+   ],
+   "b": [
+    -51.21,
+    -28.82
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO222"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    48.21,
+    31.82
+   ],
+   "b": [
+    48.21,
+    28.82
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO223"
+  },
+  {
+   "type": "wood_wall",
+   "a": [
+    48.21,
+    28.82
+   ],
+   "b": [
+    51.21,
+    28.82
+   ],
+   "height": 2.4,
+   "thickness": 0.15,
+   "y_base": 0.0,
+   "id": "WOO224"
+  }
+ ],
+ "platforms": [
+  {
+   "id": "SP1",
+   "kind": "sniper",
+   "center": [
+    -58.0,
+    44.0
+   ],
+   "size": [
+    12.0,
+    8.0
+   ],
+   "top_y": 6.0,
+   "rot_deg": 0.0,
+   "features": [
+    "back wall z=48 side height 2.4 m with 3 windows (1.2 m wide, sill 1.1 m)",
+    "west parapet 1.2 m wooden cover",
+    "interior wooden wall 3 m long at x=-58 from z=42 to z=45 (cover), 2 couches",
+    "open front toward the yard (z=40 side) with 1.0 m parapet"
+   ]
+  },
+  {
+   "id": "OV_N",
+   "kind": "overlook",
+   "center": [
+    0.0,
+    47.0
+   ],
+   "size": [
+    40.0,
+    4.0
+   ],
+   "top_y": 5.0,
+   "rot_deg": 0.0,
+   "features": [
+    "steel railing 1.1 m on the free sides",
+    "two wooden cover walls 3 m on the catwalk"
+   ]
+  },
+  {
+   "id": "OV_W",
+   "kind": "overlook",
+   "center": [
+    -77.0,
+    0.0
+   ],
+   "size": [
+    6.0,
+    24.0
+   ],
+   "top_y": 5.0,
+   "rot_deg": 0.0,
+   "features": [
+    "steel railing 1.1 m on the east and ends",
+    "one wooden cover wall 3 m"
+   ]
+  },
+  {
+   "id": "SP2",
+   "kind": "sniper",
+   "center": [
+    58.0,
+    -44.0
+   ],
+   "size": [
+    12.0,
+    8.0
+   ],
+   "top_y": 6.0,
+   "rot_deg": 0.0,
+   "features": [
+    "back wall z=48 side height 2.4 m with 3 windows (1.2 m wide, sill 1.1 m)",
+    "west parapet 1.2 m wooden cover",
+    "interior wooden wall 3 m long at x=-58 from z=42 to z=45 (cover), 2 couches",
+    "open front toward the yard (z=40 side) with 1.0 m parapet"
+   ]
+  },
+  {
+   "id": "OV_S",
+   "kind": "overlook",
+   "center": [
+    -0.0,
+    -47.0
+   ],
+   "size": [
+    40.0,
+    4.0
+   ],
+   "top_y": 5.0,
+   "rot_deg": 0.0,
+   "features": [
+    "steel railing 1.1 m on the free sides",
+    "two wooden cover walls 3 m on the catwalk"
+   ]
+  },
+  {
+   "id": "OV_E",
+   "kind": "overlook",
+   "center": [
+    77.0,
+    -0.0
+   ],
+   "size": [
+    6.0,
+    24.0
+   ],
+   "top_y": 5.0,
+   "rot_deg": 0.0,
+   "features": [
+    "steel railing 1.1 m on the east and ends",
+    "one wooden cover wall 3 m"
+   ]
+  }
+ ],
+ "ramps": [
+  {
+   "id": "R_SP1",
+   "to": "SP1",
+   "from_ground": [
+    -31.0,
+    41.1
+   ],
+   "to_platform_edge": [
+    -52.0,
+    41.1
+   ],
+   "width": 2.2,
+   "rise": 6.0,
+   "length": 21.0,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVN_W",
+   "to": "OV_N",
+   "from_ground": [
+    -37.5,
+    47.0
+   ],
+   "to_platform_edge": [
+    -20.0,
+    47.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVN_E",
+   "to": "OV_N",
+   "from_ground": [
+    37.5,
+    47.0
+   ],
+   "to_platform_edge": [
+    20.0,
+    47.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVW",
+   "to": "OV_W",
+   "from_ground": [
+    -78.9,
+    29.5
+   ],
+   "to_platform_edge": [
+    -78.9,
+    12.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_SP2",
+   "to": "SP2",
+   "from_ground": [
+    31.0,
+    -41.1
+   ],
+   "to_platform_edge": [
+    52.0,
+    -41.1
+   ],
+   "width": 2.2,
+   "rise": 6.0,
+   "length": 21.0,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVS_W",
+   "to": "OV_S",
+   "from_ground": [
+    37.5,
+    -47.0
+   ],
+   "to_platform_edge": [
+    20.0,
+    -47.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVS_E",
+   "to": "OV_S",
+   "from_ground": [
+    -37.5,
+    -47.0
+   ],
+   "to_platform_edge": [
+    -20.0,
+    -47.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  },
+  {
+   "id": "R_OVE",
+   "to": "OV_E",
+   "from_ground": [
+    78.9,
+    -29.5
+   ],
+   "to_platform_edge": [
+    78.9,
+    -12.0
+   ],
+   "width": 2.2,
+   "rise": 5.0,
+   "length": 17.5,
+   "slope_deg": 15.9
+  }
+ ],
+ "spawns": [
+  {
+   "id": "W_SPAWN_A",
+   "pos": [
+    -27.0,
+    9.0
+   ],
+   "faces": "east"
+  },
+  {
+   "id": "W_SPAWN_B",
+   "pos": [
+    -27.0,
+    -9.0
+   ],
+   "faces": "east"
+  },
+  {
+   "id": "E_SPAWN_A",
+   "pos": [
+    27.0,
+    -9.0
+   ],
+   "faces": "west"
+  },
+  {
+   "id": "E_SPAWN_B",
+   "pos": [
+    27.0,
+    9.0
+   ],
+   "faces": "west"
+  }
+ ],
+ "player_start": [
+  0.0,
+  0.0
+ ],
+ "wallrun_lanes": [
+  {
+   "id": "WR_N",
+   "a": [
+    -26,
+    16.2
+   ],
+   "b": [
+    26,
+    16.2
+   ],
+   "free_depth_m": 6.0,
+   "wall_height": 3.4
+  },
+  {
+   "id": "WR_S",
+   "a": [
+    26,
+    -16.2
+   ],
+   "b": [
+    -26,
+    -16.2
+   ],
+   "free_depth_m": 6.0,
+   "wall_height": 3.4
+  }
+ ],
+ "mantle_windows": [
+  {
+   "center": [
+    -10.0,
+    -16.0
+   ],
+   "width": 1.6,
+   "sill": 1.1,
+   "head": 2.3
+  },
+  {
+   "center": [
+    10.0,
+    -16.0
+   ],
+   "width": 1.6,
+   "sill": 1.1,
+   "head": 2.3
+  },
+  {
+   "center": [
+    -10.0,
+    16.0
+   ],
+   "width": 1.6,
+   "sill": 1.1,
+   "head": 2.3
+  },
+  {
+   "center": [
+    10.0,
+    16.0
+   ],
+   "width": 1.6,
+   "sill": 1.1,
+   "head": 2.3
+  }
+ ],
+ "stats": {
+  "prop_counts": {
+   "jersey_barrier": 48,
+   "couch": 44,
+   "wood_wall": 86,
+   "coffee_table": 6,
+   "box_truck": 4,
+   "car": 12,
+   "pickup": 6,
+   "semi_trailer": 4,
+   "chain_fence": 14
+  },
+  "line_of_sight_eye_1.6m": {
+   "inside": {
+    "typical_sightline_m": 5.0,
+    "longest_sightline_median_m": 15.9,
+    "longest_sightline_p90_m": 39.0
+   },
+   "outside": {
+    "typical_sightline_m": 24.0,
+    "longest_sightline_median_m": 77.0,
+    "longest_sightline_p90_m": 120.0
+   }
+  },
+  "validation": {
+   "overlaps": [],
+   "outside_bounds": [],
+   "conservative (all props block)": {
+    "reachable_m2": 14461,
+    "total_clear_m2": 14461,
+    "unreachable_targets": [],
+    "pockets_over_4m2": []
+   },
+   "low props are mantle-able": {
+    "reachable_m2": 14788,
+    "total_clear_m2": 14788,
+    "unreachable_targets": [],
+    "pockets_over_4m2": []
+   },
+   "door_widths": [
+    [
+     "door",
+     1.2
+    ],
+    [
+     "exterior_door",
+     2.4
+    ],
+    [
+     "hall_door",
+     1.4
+    ],
+    [
+     "hall_door",
+     2.4
+    ],
+    [
+     "opening",
+     3.0
+    ],
+    [
+     "window",
+     1.6
+    ]
+   ]
+  }
+ }
+}

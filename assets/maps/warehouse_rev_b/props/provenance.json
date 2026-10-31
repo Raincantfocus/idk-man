@@ -1,0 +1,73 @@
+{
+  "source_car": {
+    "author": "_.quve",
+    "license": "CC-BY-4.0",
+    "url": "https://sketchfab.com/3d-models/killhouse-a2ce333ba32548d5b454131f6016c961"
+  },
+  "assets": [
+    {
+      "name": "car",
+      "triangles": 5549,
+      "materials": 1,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling; car derived from supplied Killhouse CC-BY-4.0"
+    },
+    {
+      "name": "container",
+      "triangles": 3604,
+      "materials": 2,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "dumpster",
+      "triangles": 460,
+      "materials": 3,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "pallet",
+      "triangles": 1056,
+      "materials": 1,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "crate",
+      "triangles": 924,
+      "materials": 1,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "barrel",
+      "triangles": 360,
+      "materials": 2,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "barrier",
+      "triangles": 28,
+      "materials": 1,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "forklift",
+      "triangles": 856,
+      "materials": 3,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "truck",
+      "triangles": 876,
+      "materials": 5,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    }
+  ],
+  "quality": "Readable authored prototype meshes; not purchased photoreal production assets"
+}

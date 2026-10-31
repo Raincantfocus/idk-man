@@ -1,0 +1,218 @@
+{
+	"doors": [
+		{
+			"center": "(-30.0, 0.91, 9.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-30.0, 0.91, -9.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(30.0, 0.91, 9.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(30.0, 0.91, -9.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-22.0, 0.91, 12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-22.0, 0.91, 0.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-22.0, 0.91, -12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(22.0, 0.91, 12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(22.0, 0.91, 0.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(22.0, 0.91, -12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-14.0, 0.91, 12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-14.0, 0.91, -4.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-14.0, 0.91, -12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-6.0, 0.91, 4.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(6.0, 0.91, -4.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(14.0, 0.91, 12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(14.0, 0.91, 4.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(14.0, 0.91, -12.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-18.0, 0.91, 8.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(0.0, 0.91, 8.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(18.0, 0.91, 8.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(-18.0, 0.91, -8.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(0.0, 0.91, -8.0)",
+			"clear": true,
+			"fraction": 1.0
+		},
+		{
+			"center": "(18.0, 0.91, -8.0)",
+			"clear": true,
+			"fraction": 1.0
+		}
+	],
+	"engine": "4.6.3-stable (official)",
+	"errors": [],
+	"navigation_polygons": 2546,
+	"routes": [
+		{
+			"closest": "(0.0, 0.2, 0.0)",
+			"connected": true,
+			"end": "(-0.000001, 0.2, -0.0)",
+			"name": "CENTRAL HUB",
+			"path_points": 2
+		},
+		{
+			"closest": "(-27.0, 0.2, -9.0)",
+			"connected": true,
+			"end": "(-27.0, 0.2, -9.0)",
+			"name": "WEST BREACH",
+			"path_points": 27
+		},
+		{
+			"closest": "(27.0, 0.2, 9.0)",
+			"connected": true,
+			"end": "(27.0, 0.2, 9.0)",
+			"name": "EAST BREACH",
+			"path_points": 30
+		},
+		{
+			"closest": "(-55.0, 6.2, -44.0)",
+			"connected": true,
+			"end": "(-55.0, 6.2, -44.0)",
+			"name": "NORTH SNIPER",
+			"path_points": 52
+		},
+		{
+			"closest": "(55.0, 6.2, 44.0)",
+			"connected": true,
+			"end": "(55.0, 6.2, 44.0)",
+			"name": "SOUTH SNIPER",
+			"path_points": 58
+		},
+		{
+			"closest": "(0.0, 5.2, -47.0)",
+			"connected": true,
+			"end": "(0.0, 5.2, -47.0)",
+			"name": "NORTH OVERLOOK",
+			"path_points": 67
+		},
+		{
+			"closest": "(-76.0, 5.2, 5.0)",
+			"connected": true,
+			"end": "(-76.0, 5.2, 5.0)",
+			"name": "WEST OVERLOOK",
+			"path_points": 69
+		},
+		{
+			"closest": "(0.0, 5.2, 47.0)",
+			"connected": true,
+			"end": "(0.0, 5.2, 47.0)",
+			"name": "SOUTH OVERLOOK",
+			"path_points": 71
+		},
+		{
+			"closest": "(76.0, 5.2, -5.0)",
+			"connected": true,
+			"end": "(76.0, 5.2, -5.0)",
+			"name": "EAST OVERLOOK",
+			"path_points": 77
+		}
+	],
+	"spawns": [
+		{
+			"connected": true,
+			"path_points": 26,
+			"point": "(-27.0, 0.05, -9.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 30,
+			"point": "(-27.0, 0.05, 9.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 28,
+			"point": "(27.0, 0.05, 9.0)"
+		},
+		{
+			"connected": true,
+			"path_points": 33,
+			"point": "(27.0, 0.05, -9.0)"
+		}
+	],
+	"stair_headroom": {
+		"blocked": [],
+		"samples": 456
+	}
+}

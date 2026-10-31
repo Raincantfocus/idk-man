@@ -1,0 +1,40 @@
+{
+	"renderer": "Compatibility / llvmpipe software; frame times invalid for target hardware",
+	"views": [
+		{
+			"draw_calls": 2292.0,
+			"rendered_primitives": 323655.0,
+			"view": "overview"
+		},
+		{
+			"draw_calls": 2123.0,
+			"rendered_primitives": 230940.0,
+			"view": "mid_approach"
+		},
+		{
+			"draw_calls": 658.0,
+			"rendered_primitives": 144688.0,
+			"view": "west_aisles"
+		},
+		{
+			"draw_calls": 1530.0,
+			"rendered_primitives": 202569.0,
+			"view": "east_vehicles"
+		},
+		{
+			"draw_calls": 674.0,
+			"rendered_primitives": 98232.0,
+			"view": "tower_top"
+		},
+		{
+			"draw_calls": 1526.0,
+			"rendered_primitives": 127056.0,
+			"view": "killhouse_rooms"
+		},
+		{
+			"draw_calls": 2110.0,
+			"rendered_primitives": 173185.0,
+			"view": "plan_cutaway"
+		}
+	]
+}

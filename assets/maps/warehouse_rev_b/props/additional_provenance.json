@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "name": "couch",
+      "triangles": 484,
+      "materials": 2,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "coffee_table",
+      "triangles": 220,
+      "materials": 2,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "pickup",
+      "triangles": 920,
+      "materials": 4,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    },
+    {
+      "name": "semi_trailer",
+      "triangles": 1680,
+      "materials": 3,
+      "origin": "ground centre",
+      "authorship": "original scripted modeling for ZERO-LINE"
+    }
+  ],
+  "quality": "Original prototype props, not photoreal production assets"
+}

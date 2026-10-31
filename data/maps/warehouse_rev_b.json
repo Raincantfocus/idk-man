@@ -1,0 +1,1371 @@
+{
+  "revision": "PDF Rev B",
+  "bounds": [
+    100,
+    70
+  ],
+  "shell_height": 8,
+  "killhouse": [
+    30,
+    15,
+    3.5
+  ],
+  "tower": [
+    6,
+    6,
+    6
+  ],
+  "catwalk_height": 4,
+  "props": [
+    {
+      "id": "AlphaCar1",
+      "zone": "Alpha",
+      "kind": "car",
+      "position": [
+        -35,
+        0,
+        -29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "AlphaCar2",
+      "zone": "Alpha",
+      "kind": "car",
+      "position": [
+        -12,
+        0,
+        -29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "AlphaCar3",
+      "zone": "Alpha",
+      "kind": "car",
+      "position": [
+        16,
+        0,
+        -29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "AlphaWall1",
+      "zone": "Alpha",
+      "kind": "lowwall",
+      "position": [
+        -24,
+        0,
+        -28.5
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "AlphaWall2",
+      "zone": "Alpha",
+      "kind": "lowwall",
+      "position": [
+        28,
+        0,
+        -28.5
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "AlphaDumpster",
+      "zone": "Alpha",
+      "kind": "dumpster",
+      "position": [
+        0,
+        0,
+        -28.5
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoCar1",
+      "zone": "Bravo",
+      "kind": "car",
+      "position": [
+        -35,
+        0,
+        29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoCar2",
+      "zone": "Bravo",
+      "kind": "car",
+      "position": [
+        -12,
+        0,
+        29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoCar3",
+      "zone": "Bravo",
+      "kind": "car",
+      "position": [
+        16,
+        0,
+        29
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoWall1",
+      "zone": "Bravo",
+      "kind": "lowwall",
+      "position": [
+        -24,
+        0,
+        28.5
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoWall2",
+      "zone": "Bravo",
+      "kind": "lowwall",
+      "position": [
+        28,
+        0,
+        28.5
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "BravoDumpster",
+      "zone": "Bravo",
+      "kind": "dumpster",
+      "position": [
+        0,
+        0,
+        28.5
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-P1",
+      "zone": "West",
+      "kind": "pallet",
+      "position": [
+        -44,
+        0,
+        -18
+      ],
+      "size": [
+        2.4,
+        0.8,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "W-P2",
+      "zone": "West",
+      "kind": "pallet",
+      "position": [
+        -29,
+        0,
+        -18
+      ],
+      "size": [
+        2.4,
+        0.8,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "W-P3",
+      "zone": "West",
+      "kind": "pallet",
+      "position": [
+        -34,
+        0,
+        17
+      ],
+      "size": [
+        2.4,
+        0.8,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "W-CR1",
+      "zone": "West",
+      "kind": "crate",
+      "position": [
+        -39,
+        0,
+        -18
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-CR2",
+      "zone": "West",
+      "kind": "crate",
+      "position": [
+        -39,
+        0,
+        -13
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-CR3",
+      "zone": "West",
+      "kind": "crate",
+      "position": [
+        -42,
+        0,
+        16
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-CR4",
+      "zone": "West",
+      "kind": "crate",
+      "position": [
+        -37,
+        0,
+        16
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-F1",
+      "zone": "West",
+      "kind": "forklift",
+      "position": [
+        -44,
+        0,
+        -5
+      ],
+      "size": [
+        2.4,
+        2.2,
+        1.5
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-D1",
+      "zone": "West",
+      "kind": "dumpster",
+      "position": [
+        -34,
+        0,
+        -7
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-L1",
+      "zone": "West",
+      "kind": "lowwall",
+      "position": [
+        -35,
+        0,
+        3
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-W1",
+      "zone": "West",
+      "kind": "woodwall",
+      "position": [
+        -28,
+        0,
+        9
+      ],
+      "size": [
+        4,
+        2.4,
+        0.2
+      ],
+      "yaw_degrees": 90,
+      "bullet_permeable": false
+    },
+    {
+      "id": "W-B1",
+      "zone": "West",
+      "kind": "barrel",
+      "position": [
+        -45,
+        0,
+        22
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "W-B2",
+      "zone": "West",
+      "kind": "barrel",
+      "position": [
+        -44,
+        0,
+        22
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "W-B3",
+      "zone": "West",
+      "kind": "barrel",
+      "position": [
+        -44.5,
+        0,
+        23
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-CN1",
+      "zone": "Mid",
+      "kind": "container",
+      "position": [
+        -16,
+        0,
+        -19
+      ],
+      "size": [
+        6,
+        2.6,
+        2.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-CN2",
+      "zone": "Mid",
+      "kind": "container",
+      "position": [
+        16,
+        0,
+        -19
+      ],
+      "size": [
+        6,
+        2.6,
+        2.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-CN3",
+      "zone": "Mid",
+      "kind": "container",
+      "position": [
+        -16,
+        0,
+        19
+      ],
+      "size": [
+        6,
+        2.6,
+        2.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-CN4",
+      "zone": "Mid",
+      "kind": "container",
+      "position": [
+        16,
+        0,
+        19
+      ],
+      "size": [
+        6,
+        2.6,
+        2.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-C1",
+      "zone": "Mid",
+      "kind": "car",
+      "position": [
+        -20,
+        0,
+        -4
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-C2",
+      "zone": "Mid",
+      "kind": "car",
+      "position": [
+        20,
+        0,
+        -4
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-C3",
+      "zone": "Mid",
+      "kind": "car",
+      "position": [
+        -20,
+        0,
+        4
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-C4",
+      "zone": "Mid",
+      "kind": "car",
+      "position": [
+        20,
+        0,
+        4
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-B1",
+      "zone": "Mid",
+      "kind": "barrier",
+      "position": [
+        -15,
+        0,
+        -12
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-B2",
+      "zone": "Mid",
+      "kind": "barrier",
+      "position": [
+        15,
+        0,
+        -12
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-B3",
+      "zone": "Mid",
+      "kind": "barrier",
+      "position": [
+        -15,
+        0,
+        12
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-B4",
+      "zone": "Mid",
+      "kind": "barrier",
+      "position": [
+        15,
+        0,
+        12
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-D1",
+      "zone": "Mid",
+      "kind": "dumpster",
+      "position": [
+        -21,
+        0,
+        -10
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-D2",
+      "zone": "Mid",
+      "kind": "dumpster",
+      "position": [
+        21,
+        0,
+        -10
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-D3",
+      "zone": "Mid",
+      "kind": "dumpster",
+      "position": [
+        -21,
+        0,
+        10
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-D4",
+      "zone": "Mid",
+      "kind": "dumpster",
+      "position": [
+        21,
+        0,
+        10
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "M-BR1",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        -8,
+        0,
+        -11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR2",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        -7,
+        0,
+        -11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR3",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        -8,
+        0,
+        11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR4",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        -7,
+        0,
+        11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR5",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        7,
+        0,
+        -11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR6",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        8,
+        0,
+        -11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR7",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        7,
+        0,
+        11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "M-BR8",
+      "zone": "Mid",
+      "kind": "barrel",
+      "position": [
+        8,
+        0,
+        11
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "E-T1",
+      "zone": "East",
+      "kind": "truck",
+      "position": [
+        33,
+        0,
+        -19
+      ],
+      "size": [
+        5,
+        2.8,
+        2.5
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-T2",
+      "zone": "East",
+      "kind": "truck",
+      "position": [
+        43,
+        0,
+        20
+      ],
+      "size": [
+        5,
+        2.8,
+        2.5
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-B1",
+      "zone": "East",
+      "kind": "barrier",
+      "position": [
+        31,
+        0,
+        -7
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-B2",
+      "zone": "East",
+      "kind": "barrier",
+      "position": [
+        44,
+        0,
+        -7
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-B3",
+      "zone": "East",
+      "kind": "barrier",
+      "position": [
+        31,
+        0,
+        -3
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-B4",
+      "zone": "East",
+      "kind": "barrier",
+      "position": [
+        44,
+        0,
+        -3
+      ],
+      "size": [
+        5,
+        1.2,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-C1",
+      "zone": "East",
+      "kind": "car",
+      "position": [
+        38,
+        0,
+        4
+      ],
+      "size": [
+        3.5,
+        1.5,
+        1.8
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-CN1",
+      "zone": "East",
+      "kind": "container",
+      "position": [
+        34,
+        0,
+        10
+      ],
+      "size": [
+        6,
+        2.6,
+        2.4
+      ],
+      "yaw_degrees": 90,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-D1",
+      "zone": "East",
+      "kind": "dumpster",
+      "position": [
+        44,
+        0,
+        -13
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-D2",
+      "zone": "East",
+      "kind": "dumpster",
+      "position": [
+        44,
+        0,
+        13
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-L1",
+      "zone": "East",
+      "kind": "lowwall",
+      "position": [
+        36,
+        0,
+        22
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "E-F1",
+      "zone": "East",
+      "kind": "fence",
+      "position": [
+        32,
+        0,
+        3
+      ],
+      "size": [
+        5,
+        2,
+        0.1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "R1a",
+      "zone": "Killhouse",
+      "kind": "barrel",
+      "position": [
+        -12,
+        0,
+        -5
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "R1b",
+      "zone": "Killhouse",
+      "kind": "barrel",
+      "position": [
+        -11,
+        0,
+        -5
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "R2",
+      "zone": "Killhouse",
+      "kind": "crate",
+      "position": [
+        0,
+        0,
+        -1.5
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "R3",
+      "zone": "Killhouse",
+      "kind": "lowwall",
+      "position": [
+        10,
+        0,
+        -5
+      ],
+      "size": [
+        5,
+        1.2,
+        0.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "R4",
+      "zone": "Killhouse",
+      "kind": "pallet",
+      "position": [
+        -11,
+        0,
+        5
+      ],
+      "size": [
+        2.4,
+        0.8,
+        1
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "R5",
+      "zone": "Killhouse",
+      "kind": "dumpster",
+      "position": [
+        0,
+        0,
+        1.5
+      ],
+      "size": [
+        2,
+        1.4,
+        1.4
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    },
+    {
+      "id": "R6a",
+      "zone": "Killhouse",
+      "kind": "barrel",
+      "position": [
+        12,
+        0,
+        5
+      ],
+      "size": [
+        0.6,
+        1,
+        0.6
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": true
+    },
+    {
+      "id": "R6b",
+      "zone": "Killhouse",
+      "kind": "crate",
+      "position": [
+        10,
+        0,
+        5
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "yaw_degrees": 0,
+      "bullet_permeable": false
+    }
+  ],
+  "spawns": [
+    {
+      "id": "Alpha1",
+      "team": "Alpha",
+      "position": [
+        -35,
+        0.05,
+        -31.5
+      ],
+      "yaw_degrees": 180
+    },
+    {
+      "id": "Alpha2",
+      "team": "Alpha",
+      "position": [
+        -24,
+        0.05,
+        -31.5
+      ],
+      "yaw_degrees": 180
+    },
+    {
+      "id": "Alpha3",
+      "team": "Alpha",
+      "position": [
+        0,
+        0.05,
+        -31.5
+      ],
+      "yaw_degrees": 180
+    },
+    {
+      "id": "Alpha4",
+      "team": "Alpha",
+      "position": [
+        28,
+        0.05,
+        -31.5
+      ],
+      "yaw_degrees": 180
+    },
+    {
+      "id": "Bravo1",
+      "team": "Bravo",
+      "position": [
+        -35,
+        0.05,
+        31.5
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "id": "Bravo2",
+      "team": "Bravo",
+      "position": [
+        -24,
+        0.05,
+        31.5
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "id": "Bravo3",
+      "team": "Bravo",
+      "position": [
+        0,
+        0.05,
+        31.5
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "id": "Bravo4",
+      "team": "Bravo",
+      "position": [
+        28,
+        0.05,
+        31.5
+      ],
+      "yaw_degrees": 0
+    }
+  ],
+  "internal_doors": [
+    {
+      "axis": "x",
+      "x": -5,
+      "z": -6.4,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": -5,
+      "z": -4.1,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": -5,
+      "z": 4.1,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": -5,
+      "z": 6.4,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": 5,
+      "z": -6.4,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": 5,
+      "z": -4.1,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": 5,
+      "z": 4.1,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "x",
+      "x": 5,
+      "z": 6.4,
+      "width": 1.6,
+      "height": 3.5
+    },
+    {
+      "axis": "z",
+      "x": -10,
+      "z": 0,
+      "width": 2.0,
+      "height": 2.4
+    },
+    {
+      "axis": "z",
+      "x": 10,
+      "z": 0,
+      "width": 2.0,
+      "height": 2.4
+    }
+  ],
+  "decisions": [
+    "Written six-room 30x15 killhouse replaces older 15x15 blueprint tower",
+    "Asset-table quantities used: 4 mid cars, 11 cars total",
+    "North is negative Z; origin centre; geometry in metres",
+    "Keep current wave gameplay pending user TDM decision"
+  ]
+}

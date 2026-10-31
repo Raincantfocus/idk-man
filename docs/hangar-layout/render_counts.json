@@ -1,0 +1,35 @@
+{
+	"renderer": "Compatibility / llvmpipe software; frame times invalid for target hardware",
+	"views": [
+		{
+			"draw_calls": 829.0,
+			"rendered_primitives": 97274.0,
+			"view": "hub"
+		},
+		{
+			"draw_calls": 1526.0,
+			"rendered_primitives": 163131.0,
+			"view": "west_breach"
+		},
+		{
+			"draw_calls": 1960.0,
+			"rendered_primitives": 298121.0,
+			"view": "north_sniper"
+		},
+		{
+			"draw_calls": 1712.0,
+			"rendered_primitives": 193793.0,
+			"view": "yard"
+		},
+		{
+			"draw_calls": 2060.0,
+			"rendered_primitives": 249114.0,
+			"view": "overview"
+		},
+		{
+			"draw_calls": 2280.0,
+			"rendered_primitives": 172330.0,
+			"view": "plan_cutaway"
+		}
+	]
+}

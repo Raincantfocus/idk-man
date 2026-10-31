@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/hangar_layout.gd" id="1"]
+[node name="HangarLayout" type="Node3D"]
+script = ExtResource("1")
+auto_build = true
+[node name="ReviewCamera" type="Camera3D" parent="."]
+position = Vector3(-25, 9, 20)
+current = true
+far = 300.0

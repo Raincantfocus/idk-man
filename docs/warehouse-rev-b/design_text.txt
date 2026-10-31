@@ -1,0 +1,468 @@
+DESIGN DOCUMENT · REV B                                                   GODOT 4.6.3 · MW2019 CLEAN
+
+
+
+
+LEVEL DESIGN BLUEPRINT
+
+
+
+
+WAREHOUSE:
+3-LANE TDM ARENA
+A 100 m × 70 m Call of Duty-style deathmatch map
+
+
+A huge industrial warehouse rebuilt for run-and-gun TDM flow: classic 3-lane layout
+(west close-quarters / mid long-sightline / east vehicle lane), symmetric Alpha/Bravo
+spawns on opposite short sides, a central mid tower as the contested power position,
+two wall-mounted catwalks for rotational verticality, and a full cover ecosystem tuned for
+headglitches and mantle play — cars, dumpsters, shipping containers, pallets, crates,
+forklifts, and concrete barriers.
+
+
+
+
+FOOTPRINT                    AREA                      INNER KILLHOUSE             LANES
+
+100 × 70 m                   7,000 m²                  30×15 m sideways            3 classic
+
+SHEET 01 — BLUEPRINT + AI PROMPT + GODOT NOTES                             SCALE 1:100 · SYMMETRIC TDM
+02 · FLOOR PLAN                                                                              WAREHOUSE 3-LANE TDM
+
+
+TOP-DOWN FLOOR PLAN
+
+
+Blueprint — 1:100
+
+
+
+
+                   Cyanotype top-down view · Grid 1 cell = 1 m · Bold line = 5 m · All dimensions in meters
+
+
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                        PA G E 0 2
+03 · MAP OVERVIEW                                                                                            WAREHOUSE 3-LANE TDM
+
+
+CONCEPT
+
+
+Map Overview
+The map is a single huge warehouse shell, 100 meters wide and 70 meters deep, capped with two long strip skylights that
+cast bright daylight pools on the action zone. Inside, a classic CoD 3-lane layout runs north-south: the west lane is close-
+quarters crate-and-pallet aisles, the mid lane is a long open sightline anchored by a central mid tower, and the east lane is a
+vehicle lane with trucks and concrete barriers. Team Alpha spawns on the north short side, Team Bravo mirrors on the south.
+Both spawns have four spread points and immediate cover so no one dies in the first two seconds.
+
+The inner killhouse is the map's power position — a 30 m × 15 m building (sideways, long axis east-west) laid out as a maze
+of 6 rooms in a 2×3 grid, with a big central tower (6 m × 6 m, +6 m) in the dead center. Every room has cover inside (barrels,
+crates, low walls, pallets, dumpsters) and 2–3 doorways connecting it to adjacent rooms, so no single defender can lock it
+down. The central tower has 4 entries (N, S, E, W) and gives 360° view from the top. Two catwalks run along the east and
+west warehouse walls at +4 m, giving rotational verticality — they exist for flanking, not camping.
+
+
+
+   7,000 m²                                3                                8                                   ~3 min
+   TO TAL F LOO R AR EA                    DIS TIN CT LA NE S               S PAWN P O IN T S ( 4+ 4)           AV G T D M M AT CH
+
+
+
+
+DESIGN PILLARS
+    3-lane flow. Each lane has a distinct personality (CQB / long-range / vehicle). Players can commit to a lane or rotate via
+    cross-passages at the north and south action zone.
+    Symmetric balance. Alpha and Bravo spawns are mirror-imaged. No side gets a shorter rotation to the mid tower.
+    Power position is contestable. The mid tower has four stair entries and is exposed from the catwalks. Holding it requires
+    team support, not a single camper.
+    Headglitch-friendly cover. Cars, low walls, and concrete barriers are placed at chest height so players can shoot over
+    them while crouching — the core CoD cover loop.
+    Fast movement routes. Catwalks and stacked containers provide mantle and climb paths. No dead-ends — every cover
+    cluster has a flank exit.
+    Light as info. Two skylight strips cast hard-edged pools on the action zone. Players crossing them are visible from the
+    tower top and the catwalks.
+
+
+   G A M E P L AY N O T E
+   The skylights are open roof frames with safety grating, not glass. They cannot be shot through but they silhouette anyone crossing the
+   light pool below. The central tower (inside the sideways killhouse) is positioned between the two skylight strips so a player holding the
+   tower top is backlit from both spawns. The 30 m building blocks the direct spawn-to-spawn sightline through the mid lane — attackers
+   must go around or through the killhouse maze, creating natural engagement zones on the north and south approaches.
+
+
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                                                PA G E 0 3
+04 · ZONE BREAKDOWN                                                                                      WAREHOUSE 3-LANE TDM
+
+
+SIX ZONES
+
+
+Zone-by-Zone Breakdown
+
+   1. Team Alpha Spawn — North                                                                                      10 M × 100 M
+
+   Four Alpha spawn points spread across the 100 m width, each behind a car or low wall so players don't die in the first 2
+   seconds. A dumpster anchors the center for mantle play. The spawn zone is open enough to push into any of the three lanes
+   immediately.
+
+
+   2. West Lane — Close-Quarters Aisles                                                                               25 M × 50 M
+
+   Crate stacks and pallet rows create winding aisles for SMG and shotgun play. A forklift and dumpster provide mid-height cover,
+   and a wood wall subdivides the lane. Barrel clusters near the south approach give shoot-through cover. Two cross-passages
+   connect to the mid lane — one north, one south — so flankers can rotate without backtracking.
+
+     3× PALLET STACK           4× CRATE STACK            1× FORKLIFT      1× DUMPSTER     1× LOW WALL    1× WOOD WALL
+
+
+     3× BARREL         2× CROSS-PASSAGE
+
+
+
+   3. Mid Lane — Long Sightline + Tower                                                                               50 M × 50 M
+
+   The main engagement lane. A 50 m sightline runs from Alpha spawn to the tower's north face, and from the tower's south face
+   to Bravo spawn — the extended 30 m tower blocks direct spawn-to-spawn shots. Two shipping containers flank each
+   approach, with cars and concrete barriers for headglitches. Dumpsters and barrel clusters give mantle points alongside the
+   tower's long walls. Tower holders can shoot both approaches but are exposed from four stair entries and two catwalk bridges.
+
+     4× SHIPPING CONTAINER              6× CAR (HEADGLITCH)            4× CONCRETE BARRIER    4× DUMPSTER     8× BARREL
+
+
+     1× MID TOWER (15×30 M)
+
+
+
+   4. East Lane — Vehicle Lane                                                                                        25 M × 50 M
+
+   Long open sightline for assault rifles and LMGs. Two trucks provide long full-body cover, with concrete barriers creating low
+   headglitch positions between them. A shipping container mid-lane breaks the sightline for flankers. A metal fence partially
+   divides the south approach — vision-piercing only, blocks movement but not bullets. Two cross-passages connect to the mid
+   lane, mirroring the west lane's rotation options.
+
+     2× TRUCK         4× CONCRETE BARRIER                1× CAR   1× SHIPPING CONTAINER      2× DUMPSTER     1× LOW WALL
+
+
+     1× METAL FENCE           2× CROSS-PASSAGE
+
+
+
+   5. Inner Killhouse — Maze + Central Tower 30 M × 15 M (SIDEWAYS) · 6 ROOMS + CENTRAL TOWER
+   30×15 m building (long axis east-west) as a killhouse maze: 6 rooms in a 2×3 grid (R1 NW, R2 N-middle, R3 NE, R4 SW, R5
+   S-middle, R6 SE). A central tower (6×6 m, +6 m) sits dead center with 4 entries (N, S, E, W). 10 internal doorways connect
+   adjacent rooms — every room has 2–3 passages. Every room has cover: R1 barrels, R2 crate, R3 low wall, R4 pallet, R5
+   dumpster, R6 barrels+crate. Four outer entries (N, S stair + W, E doorway). Central tower = 360° power position, accessible
+   only through the maze.
+
+     30×15 M BUILDING (SIDEWAYS)               6 ROOMS (2×3 GRID)         CENTRAL TOWER 6×6 M (+6 M)    10 INTERNAL PASSAGES
+
+
+     COVER IN EVERY ROOM               4 TOWER ENTRIES (N/S/E/W)           360° VIEW FROM TOWER
+
+
+
+
+   6. Team Bravo Spawn — South                                                                                      10 M × 100 M
+
+   Mirror of Alpha — four Bravo spawns, same cover. Symmetric; same 2s spawn protection.
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                                       PA G E 0 4
+05 · ASSET LIST                                                                                               WAREHOUSE 3-LANE TDM
+
+
+MODELING REFERENCE
+
+
+Cover & Asset List
+Every cover piece on the blueprint, numbered by zone. Each row = one Godot scene instance. Cover heights: low (≤1.2 m) =
+headglitch, mid (1.2–2.0 m) = blocks body, full (≥2.0 m) = blocks all.
+
+ ID           ZONE                  ASSET                            MATERIAL        DIMS (W×D×H M)             NOTES
+
+ A-           Alpha Spawn           Spawn Point ×4                   MARKER3D        0.5 × 0.5 × 0.0            Spread E-W, 2s spawn
+ S1..4                                                                                                          protection
+ A-           Alpha Spawn           Car ×3                           PAINTED METAL   3.5 × 1.8 × 1.5            Headglitch cover, hood-facing
+ C1..3                                                                                                          lane
+ A-           Alpha Spawn           Low Wall ×2                      CONCRETE        5.0 × 0.4 × 1.2            Chest-height headglitch
+ L1..2                                                               (PAINTED)
+
+ A-D1         Alpha Spawn           Dumpster                         PAINTED STEEL   2.0 × 1.4 × 1.4            Mantle point, mid cover
+ W-           West Lane             Pallet Stack ×3                  WOOD            2.4 × 1.0 × 0.8            Low cover, aisle divider
+ P1..3
+ W-           West Lane             Crate Stack ×4                   PLYWOOD         2.0 × 2.0 × 2.0            Full cover, climbable to catwalk
+ CR1..4
+ W-F1         West Lane             Forklift                         PAINTED STEEL   2.4 × 1.5 × 2.2            Mid cover with vision gaps
+ W-D1         West Lane             Dumpster                         PAINTED STEEL   2.0 × 1.4 × 1.4            Mantle point
+ W-L1         West Lane             Low Wall                         CONCRETE        5.0 × 0.4 × 1.2            Headglitch near south
+                                                                     (PAINTED)                                  approach
+ W-W1         West Lane             Wood Wall                        PLYWOOD ON      4.0 × 0.2 × 2.4            Sub-divider, full cover
+                                                                     FRAME
+ W-           West Lane             Barrel ×3                        PAINTED STEEL   0.6 × 0.6 × 1.0            Low cover, shoot-through
+ B1..3
+ M-           Mid Lane              Shipping Container ×4            CORRUGATED      6.0 × 2.4 × 2.6            Full cover, climbable to catwalk
+ CN1..4                                                              STEEL
+
+ M-           Mid Lane              Car ×4                           PAINTED METAL   3.5 × 1.8 × 1.5            Headglitch flanking tower
+ C1..4
+ M-           Mid Lane              Concrete Barrier ×4              CONCRETE        5.0 × 1.0 × 1.2            Low cover, headglitch
+ B1..4                                                               (JERSEY)
+
+ M-           Mid Lane              Dumpster ×4                      PAINTED STEEL   2.0 × 1.4 × 1.4            Mantle points, mid cover
+ D1..4
+ M-           Mid Lane              Barrel ×8                        PAINTED STEEL   0.6 × 0.6 × 1.0            Low cover clusters
+ BR1..8
+ E-           East Lane             Truck ×2                         METAL / GLASS   5.0 × 2.5 × 2.8            Long full-body cover
+ T1..2
+ E-           East Lane             Concrete Barrier ×4              CONCRETE        5.0 × 1.0 × 1.2            Low cover between trucks
+ B1..4                                                               (JERSEY)
+
+ E-C1         East Lane             Car                              PAINTED METAL   3.5 × 1.8 × 1.5            Headglitch mid-lane
+ E-CN1        East Lane             Shipping Container               CORRUGATED      6.0 × 2.4 × 2.6            Full cover, breaks sightline
+                                                                     STEEL
+ E-           East Lane             Dumpster ×2                      PAINTED STEEL   2.0 × 1.4 × 1.4            Mantle points
+ D1..2
+ E-L1         East Lane             Low Wall                         CONCRETE        5.0 × 0.4 × 1.2            Headglitch near south
+                                                                     (PAINTED)
+ E-F1         East Lane             Metal Fence                      CHAIN-LINK ON   5.0 × 0.1 × 2.0            Vision-piercing, bullet-piercing
+                                                                     STEEL
+ K-01         Inner Killhouse       Building (30×15 m sideways, 6-   CONCRETE +      30.0 × 15.0 × 3.5          2×3 grid, 10 passages
+                                    room maze)                       STEEL
+
+ K-02         Inner Killhouse       Central Tower (6×6 m, +6 m)      CONCRETE +      6.0 × 6.0 × 6.0            Dead center, 4 entries, 360°
+                                                                     STEEL
+ K-           Inner Killhouse       Doorways ×10 + Room Cover ×6     MIXED           var.                       2–3 passages/room; cover in
+ 03..20                             + Entries ×4                                                                every room
+ CW-          Catwalks              Wall Catwalk ×2 + Stairs ×4      STEEL GRATING   40.0 × 1.5 / 1.5 × 4.0     +4 m, E/W walls, 2N + 2S
+ 01..06                                                                                                         access
+ B-           Bravo Spawn           Spawn ×4 + Cover                 MIXED           var.                       Mirror of Alpha
+ S1..4
+
+
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                                                    PA G E 0 5
+06 · AI CONCEPT PROMPT                                                                       WAREHOUSE 3-LANE TDM
+
+
+R E A D Y- T O - PA S T E
+
+
+AI Image Generation Prompt
+Paste the prompt below into Midjourney v6, SDXL, or Flux for an interior concept render. Tuned for the MW2019 clean
+aesthetic and the 3-lane TDM layout — encodes the warehouse shell, mid tower power position, catwalks, skylights, lane
+structure, and CoD-style cover ecosystem so the AI produces a usable reference render rather than a generic warehouse.
+
+M A S T E R P R O M P T — W I D E I N T E R I O R E S TA B L I S H I N G S H O T
+
+  Midj ou r ne y v6 · --a r 16 : 9 - - s tyle r aw - - v 6
+
+
+
+   Interior wide-angle establishing shot of a massive modern warehouse converted into a Call of Duty-style
+   multiplayer TDM arena, 100 meters by 70 meters, polished concrete floor with faded painted safety lane markings.
+   Two long horizontal skylight strips in the high steel-truss ceiling cast bright pools of natural daylight onto
+   the action zone below. The interior is divided into three parallel lanes running north-south: a west close-
+   quarters lane of stacked wooden pallets and plywood crate aisles, a wide central mid lane anchored by an inner
+   killhouse building in the dead center, and an east vehicle lane with parked delivery trucks and concrete jersey
+   barriers. The inner killhouse is a 30 by 15 meter concrete-and-steel building oriented sideways (long axis east-
+   west), laid out as a maze of 6 rooms in a 2 by 3 grid, with 10 internal doorways connecting adjacent rooms so
+   every room has 2 to 3 passages to its neighbors. A big central tower 6 by 6 meters rises to 6 meters height in
+   the dead center of the killhouse, with stair entries on all four faces giving 360 degree views from the top.
+   Every room has cover inside: barrels, crate stacks, low concrete walls, pallet stacks, and dumpsters. Two narrow
+   steel catwalks run along the east and west warehouse walls at 4 meters height, providing rotational verticality.
+   Scattered cover throughout the lanes: shipping containers, sedans with hoods at chest height for headglitches,
+   dumpsters, forklifts, oil drums, low concrete walls, and chain-link fence panels. Symmetric team spawns on the
+   north and south short walls, each with four spawn points behind car cover. Modern Warfare 2019 clean aesthetic,
+   SWAT training facility, dust motes in the skylight beams, photo-realistic, 35mm lens, eye-level three-quarter
+   angle, cinematic composition, high detail, color graded cool blue-gray with warm skylight highlights, Unreal
+   Engine 5 render quality, 8k.
+
+
+
+VARIANT PROMPTS
+VA R I A N T A — T O P - D O W N O R T H O G R A P H I C
+
+  SD XL · 1 53 6× 1 02 4
+
+
+
+   Top-down orthographic floor plan render of a 100 by 70 meter Call of Duty-style multiplayer TDM warehouse map,
+   classic 3-lane layout with west close-quarters crate aisles, central mid lane with a two-story mid tower power
+   position, and east vehicle lane with trucks and barriers. Two long horizontal skylight strips in the roof cast
+   daylight pools on the action zone. Symmetric team spawns on north and south short walls. Cover of shipping
+   containers, sedans, dumpsters, forklifts, oil drums, low concrete walls, and pallets scattered through the
+   lanes. Two steel catwalks run along the east and west walls. Modern Warfare 2019 clean aesthetic, polished
+   concrete floor with painted safety lines, cyanotype blueprint color palette with navy background and cyan-white
+   linework, ultra detailed, isometric lighting from above, video game level design concept.
+
+
+VA R I A N T B — M I D T O W E R P O V
+
+  Midj ou r ne y v6 · --a r 16 : 9 - - s tyle r aw
+
+
+
+   First-person view from the top of the central tower (6 by 6 meters, 6 meters tall) in the dead center of a 30 by
+   15 meter inner killhouse building oriented sideways, in the center of a massive Call of Duty-style TDM warehouse
+   arena, looking down 360 degrees through open window frames at the maze of 6 rooms below. The killhouse is a 2 by
+   3 grid of rooms with 10 internal doorways, every room containing cover. Two skylight strips cast bright daylight
+   pools across the polished concrete floor on the north and south approaches. Cover of shipping containers,
+   sedans, dumpsters, and concrete barriers scattered through the lanes. Steel catwalks run along the east and west
+   walls at 4 meters height. Symmetric team spawns at the north and south ends. Modern Warfare 2019 clean
+   aesthetic, dust in the light beams, photo-realistic, 50mm lens, cool blue-gray color grade with warm skylight
+   highlights, cinematic, Unreal Engine 5 render quality, 8k.
+
+
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                            PA G E 0 6
+07 · GODOT 4.6.3 NOTES                                                                            WAREHOUSE 3-LANE TDM
+
+
+I M P L E M E N TAT I O N G U I D E
+
+
+Godot 4.6.3 Scene Notes
+Build notes for Godot 4.6.3. The map is one main scene with nested child scenes per zone, so a designer can hide/show
+zones without unloading the whole warehouse.
+
+Scene Tree Structure
+
+   Warehouse_Main (Node3D)
+   ├─ Shell/                  Floor (100×70m concrete) + Walls_N/S/E/W (8m steel) + Roof_Trusses
+   ├─ Skylights/              2× Area3D + OmniLight3D + VolumetricFog god-rays
+   ├─ Lanes/
+   │ ├─ West_Lane/            Cover_Group (pallets, crates, forklift, dumpster, barrels, walls)
+   │ ├─ Mid_Lane/             Cover_Group (containers, cars, barriers, dumpsters, barrels) + Mid_Tower
+   │ └─ East_Lane/            Cover_Group (trucks, barriers, container, dumpster, fence)
+   ├─ Inner_Killhouse/        KillhouseBuilding.tscn (30×15m sideways, 6-room maze) + CentralTower.tscn (6×6m, +6m) +
+   Room_Doorways ×10 + Room_Cover ×6 + Entries ×4
+   ├─ Catwalks/               West_Catwalk + East_Catwalk (+4m) + Stairs ×4 (2N + 2S)
+   ├─ Spawns/
+   │ ├─ Alpha_Spawn/          SpawnPoint ×4 (team=ALPHA) + Cover_Group
+   │ └─ Bravo_Spawn/          SpawnPoint ×4 (team=BRAVO) + Cover_Group
+   ├─ Lighting/               WorldEnvironment + DirectionalLight3D (baked) + ReflectionProbe ×4
+   ├─ Navigation/             NavigationRegion3D (baked navmesh, includes tower + catwalks)
+   └─ TDM_Manager             score, spawn rotation, round timer
+
+
+
+Geometry — CSG vs Imported Mesh
+
+    Shell + lane dividers + tower structure: CSG boxes for greybox — fast iteration, collision auto-generates with
+     use_collision = true . Promote to glTF meshes once layout is signed off.
+    Cars, trucks, dumpsters, containers, crates, pallets, forklifts, barrels: Always imported glTF meshes. Reuse one
+     Car.tscn for all 7 cars on the map, one Container.tscn for all 5 containers, etc.
+
+    Inner killhouse: Two scenes — KillhouseBuilding.tscn (30×15 m sideways outer building with 6 rooms in 2×3
+    grid, 10 internal doorways, 4 outer entries) and CentralTower.tscn (6×6 m tower in dead center, +6 m, 4 entries
+    N/S/E/W, 4 top-floor windows, snap Marker3D on top). Each room gets its own cover instance (barrels, crate, low wall,
+    pallet, dumpster).
+    Catwalks: One Catwalk.tscn with the walkway mesh, railing mesh, and stair collider. Instance twice (E and W walls).
+    Skylights: Open rectangles in the roof mesh + transparent emissive panel below for the light shaft. No glass — open
+    frames with safety grating only.
+
+Collision Layers
+
+    8 layers: World, Cover, Player, Enemy, Projectiles, Triggers, Navigation, Skylight Shaft. Cover splits into Full
+    (containers/tower/trucks — block all), Low (barriers/cars — headglitch, block body below 1.2m), Shoot-Through
+    (barrels/fences/pallets — block movement only). Bullet raycast respects the split.
+
+TDM Logic, Navigation & Performance
+
+    TDM spawn manager picks spawn by team + min-distance-from-enemy. If all spawns within 20m of enemy, fall back to
+    danger spawn with 2s invulnerability. Symmetric — Alpha and Bravo use the same logic.
+    Anti-spawn-trap: 3 lanes fork immediately out of each spawn, so campers cannot lock a single exit. Spawn cover gives
+    headglitch defense without trapping players.
+    Mid tower contest: 4 stair entries + 8 window frames. Any player on top is exposed from ≥3 angles. Area3D triggers
+    "Tower Held" callout when one team has 2+ players for 5s.
+    Catwalk rotation: 1.5m wide, no cover, waist-high railings. One-way mantle at tower bridge.
+    TDM score: +100/kill, +25 for tower hold (per 5s). First to 100 kills or 5-min timer wins.
+    Navmesh + Lighting: NavigationRegion3D over 100×70m floor; separate regions on tower top + catwalks via Link3D.
+    VolumetricFog 0.04–0.06; SDFGI low; skylights 3–5× ambient.
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                                  PA G E 0 7
+08 · TEXTURE SITES                                                                                            WAREHOUSE 3-LANE TDM
+
+
+FREE CC0 / CC-BY SOURCES
+
+
+Free Texture Site Guide
+All four sites below are free, allow commercial use, and provide PBR texture sets (albedo, normal, roughness, AO, height,
+metallic). No per-asset crediting required, and most offer bulk downloads so you can pull an entire category at once.
+
+
+   1. Poly Haven                                                                                               polyhaven.com/textures
+
+   CC0 · 8K MAX · PBR FULL SET · FREE FOR COMMERCIAL USE
+
+   The gold standard. Every texture is a complete PBR set with up to 8K resolution. Use their bulk download page to grab entire
+   categories. For this MW2019 warehouse: concrete (floor + barriers), corrugated metal (walls + shipping containers), plywood (crates +
+   pallets), and steel (catwalks + tower). They also have HDRIs for the skylight lighting setup.
+
+     CONCRETE FLOOR              CORRUGATED STEEL WALLS           SHIPPING CONTAINER           PLYWOOD CRATES            STEEL CATWALK
+
+
+     HDRI FOR SKYLIGHTS
+
+
+
+
+   2. AmbientCG                                                                                                             ambientcg.com
+
+   CC0 · 8K MAX · PBR FULL SET · BULK ZIP DOWNLOADS
+
+   Largest CC0 library after Poly Haven. Strong on painted metal (cars, trucks, dumpsters, forklifts, barrels), wood (pallets, crates), and
+   chain-link (fences, skylight grating). Every texture comes as a ZIP with all PBR maps in multiple resolutions (1K/2K/4K/8K) so you can
+   pick the right size per asset.
+
+     PAINTED METAL (CARS/TRUCKS)                 DUMPSTER STEEL       PALLET WOOD          CHAIN-LINK FENCE         SAFETY GRATING
+
+
+
+
+   3. ShareTextures                                                                                                   sharetextures.com
+
+   CC0 / CC-BY · 4K-8K · PBR FULL SET · FREE TIER COVERS COMMERCIAL USE
+
+   Heavily organized by material category — best site when you know exactly what surface you need. For this map: "painted concrete
+   with yellow safety line" (floor lane markings), "polished concrete with oil stains" (action zone floor), "rusty truck paint" (east lane
+   vehicles), and "industrial steel grating" (catwalk treads). Their industrial and vehicle categories are particularly strong.
+
+     PAINTED SAFETY LINES              OIL-STAINED CONCRETE        RUSTY TRUCK PAINT           STEEL GRATING         INDUSTRIAL GRIME
+
+
+
+
+   4. Texture Haven (now part of Poly Haven)                                   polyhaven.com/textures (filter: "industrial")
+
+   CC0 · 8K · PBR · SAME ARCHIVE, EASIER CATEGORY FILTER
+
+   Texture Haven merged into Poly Haven; the legacy URL redirects. Mentioned separately because the old "Texture Haven" name still
+   surfaces in tutorials. Use the Poly Haven industrial filter to find the corrugated metal, rusty steel, and concrete panels that originally
+   carried the Texture Haven label — these are the highest-quality entries in the archive and are exactly what a Modern Warfare 2019-
+   style warehouse needs. Note: many older tutorials also reference cc0textures.com — that's the former name of AmbientCG (entry #2
+   above); same library, same license.
+
+     RUSTY STEEL PANELS              WAREHOUSE INTERIOR METAL           CONCRETE BLOCK WALLS
+
+
+
+   R E C O M M E N D E D PA C K & G O D O T I M P O R T
+   Pull from Poly Haven (concrete, corrugated metal, plywood, steel, HDRI), AmbientCG (painted metal, wood, chain-link),
+   ShareTextures (industrial/safety). Drop into res://textures/<category>/ , use StandardMaterial3D ORM workflow (albedo
+   → Albedo/Texture; pack AO/Roughness/Metallic into one ORM; normal → Normal/Texture). Enable VRAM compression + mipmaps
+   on all PBR maps — the 7,000 m² warehouse needs mipmapping for frame rate.
+
+
+
+
+WA R E H O U S E 3 - L A N E T D M — D E S I G N D O C                                                                                 PA G E 0 8
+

@@ -1,6 +1,6 @@
 extends Node3D
 
-const ArenaScript = preload("res://scripts/arena.gd")
+const ArenaScript = preload("res://scripts/hangar_layout.gd")
 const PlayerScript = preload("res://scripts/player.gd")
 const EnemyScript = preload("res://scripts/enemy.gd")
 const ProjectileScript = preload("res://scripts/projectile.gd")
@@ -87,10 +87,10 @@ func _ready() -> void:
 	add_child(player)
 	player.setup(self)
 	player.position = arena.PLAYER_START
-	menu_camera.position = Vector3(0, 11, -12)
+	menu_camera.position = Vector3(-36, 6.8, 26)
 	menu_camera.fov = 73
 	add_child(menu_camera)
-	menu_camera.look_at(Vector3(0, 2, 3))
+	menu_camera.look_at(Vector3(0, 2.5, 0))
 	menu_camera.current = true
 	var layer := CanvasLayer.new()
 	add_child(layer)
@@ -187,8 +187,8 @@ func _unhandled_input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	var dt := delta / maxf(Engine.time_scale, 0.01)
 	if state == "menu":
-		menu_camera.position.x = 0 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
-		menu_camera.look_at(Vector3(0, 2, 3))
+		menu_camera.position.x = -36 + sin(Time.get_ticks_msec() * 0.00012) * 0.6
+		menu_camera.look_at(Vector3(0, 2.5, 0))
 	if is_playing():
 		elapsed += dt
 		message_time = maxf(0, message_time - dt)
@@ -433,6 +433,7 @@ func spawn_enemy(kind: String, point: Vector3):
 	add_child(enemy)
 	enemy.position = point
 	enemy.setup(self, kind)
+	if arena.has_method("configure_enemy"): arena.configure_enemy(enemy)
 	if wave > 10:
 		enemy.health *= minf(1.3, 1 + (wave - 10) * 0.03)
 		enemy.max_health = enemy.health
