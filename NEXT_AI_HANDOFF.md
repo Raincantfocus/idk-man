@@ -31,3 +31,6 @@ Previous supplied character models keep original textures per user. Gameplay sep
 
 ## Immediate next action
 Review/compile and test final window-vault modification, then launch current game with --movement-lab and --showcase. Continue finishing map integration, not the superseded PDF design. User requested this checkpoint publication now, so unfinished checks are explicitly recorded here.
+
+## Full external workspace backup
+The user additionally requested publication of everything in the environment. A separate `environment-snapshot-2026-10-31` branch stores a split compressed archive of 6,854 workspace files (15.01 GB before compression), including original uploads, external model intake working files, builds, diagnostics, and this project. Read that branch's README.md and inventory.json. Completion is indicated by its final SHA256SUMS file; verify every part before extraction. This backup excludes installed virtual environments, dependency/Godot caches, Git history, credential files, and runtime files. The active source branch remains zero-line-prototype. Snapshot contents may predate this handoff addendum; use current source branch for latest code.
